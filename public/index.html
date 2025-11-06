@@ -189,29 +189,33 @@ const AUTO_DELAY_MS = 1000;
 
 async function loadSubjects() {
   try {
-    const response = await fetch('/json/');
-    const text = await response.text();
-    const regex = /href="([^"]+\.json)"/g;
-    let match, files = [];
-    while ((match = regex.exec(text)) !== null) files.push(match[1]);
+    // 1. Busca o arquivo de índice (manifesto)
+    const response = await fetch('/json/index.json');
+    if (!response.ok) {
+      throw new Error('Falha ao carregar o índice de matérias (index.json)');
+    }
+
+    // 2. Lê o JSON com a lista de matérias
+    const subjects = await response.json(); // Isso será um array [ { name: "...", file: "..." } ]
 
     const select = document.getElementById('subjectSelect');
-    select.innerHTML = '';
+    select.innerHTML = ''; // Limpa o "Carregando..."
 
-    if (files.length === 0) {
-      select.innerHTML = '<option value="">Nenhum arquivo encontrado</option>';
+    if (subjects.length === 0) {
+      select.innerHTML = '<option value="">Nenhuma matéria encontrada</option>';
     } else {
       select.innerHTML = '<option value="">Selecione a matéria</option>';
-      files.forEach(f => {
-        const name = f.replace('.json', '').replace(/_/g, ' ');
+      
+      // 3. Itera sobre o array de matérias para criar as opções
+      subjects.forEach(subject => {
         const opt = document.createElement('option');
-        opt.value = f;
-        opt.textContent = name.charAt(0).toUpperCase() + name.slice(1);
+        opt.value = subject.file; // Ex: "quiz.json"
+        opt.textContent = subject.name; // Ex: "Matemática"
         select.appendChild(opt);
       });
     }
   } catch (err) {
-    console.error('Erro ao listar /json:', err);
+    console.error('Erro ao carregar matérias:', err);
     const select = document.getElementById('subjectSelect');
     select.innerHTML = '<option value="">Erro ao carregar lista</option>';
   }
@@ -352,3 +356,4 @@ loadSubjects();
 </script>
 </body>
 </html>
+
