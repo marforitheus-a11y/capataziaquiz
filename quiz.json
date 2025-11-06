@@ -1,0 +1,40 @@
+[
+    {
+        "id": 3586967,
+        "disciplina": "Matematica",
+        "assunto": "N/I",
+        "banca": "Instituto Consulplan",
+        "instituicao": "Prefeitura de Vermelho Novo - MG",
+        "ano": 2025,
+        "cargo": "N/I",
+        "nivel": "N/I",
+        "modalidade": "Múltipla Escolha",
+        "enunciado": "A Secretaria de Cultura está construindo um novo teatro municipal, cujo telhado terá o formato de uma semiesfera. Sabendo que o raio dessa semiesfera é de 6 metros, qual será o volume interno do telhado, em metros cúbicos? (Considere π = 3.)",
+        "alternativas": {
+            "A": "108 m³.",
+            "B": "216 m³.",
+            "C": "324 m³.",
+            "D": "432 m³."
+        },
+        "resposta_correta": "D"
+    },
+    {
+        "id": 3586966,
+        "disciplina": "Matematica",
+        "assunto": "N/I",
+        "banca": "Instituto Consulplan",
+        "instituicao": "Prefeitura de Vermelho Novo - MG",
+        "ano": 2025,
+        "cargo": "N/I",
+        "nivel": "N/I",
+        "modalidade": "Múltipla Escolha",
+        "enunciado": "A Secretaria de Educação está organizando a montagem de kits escolares para os alunos da rede municipal. Sabe-se que 5 servidores conseguem montar 900 kits em 4 dias, trabalhando 6 horas por dia. Dessa forma, para montar 2.700 kits em 6 dias, trabalhando 5 horas por dia, quantos servidores igualmente eficientes serão necessários?",
+        "alternativas": {
+            "A": "8.",
+            "B": "10.",
+            "C": "12.",
+            "D": "14."
+        },
+        "resposta_correta": "C"
+    }
+]
