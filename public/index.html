@@ -1,354 +1,240 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Quiz de Questões</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Improvisado</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f5f6fa;
+      color: #2f3640;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
 
-<!-- Fonte moderna -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    h1 {
+      color: #273c75;
+      font-weight: 600;
+    }
 
-<style>
-:root {
-  --primary: #0984e3;
-  --primary-light: #74b9ff;
-  --correct: #00b894;
-  --wrong: #d63031;
-  --bg: #f5f6fa;
-  --text: #2d3436;
-  --radius: 12px;
-}
+    select,
+    button,
+    input {
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      margin: 10px;
+    }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  margin: 0;
-  padding: 0;
-}
+    #question-container {
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+      max-width: 700px;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
 
-.container {
-  max-width: 720px;
-  margin: 40px auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  animation: fadeIn 0.4s ease-in-out;
-}
+    .option {
+      display: block;
+      padding: 10px;
+      margin: 6px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+    .option:hover {
+      background: #f1f2f6;
+    }
 
-h1 {
-  text-align: center;
-  font-weight: 600;
-  color: var(--primary);
-  letter-spacing: 0.5px;
-}
+    .correct {
+      background: #4cd137;
+      color: white;
+    }
 
-h2 {
-  font-size: 1.15rem;
-  font-weight: 500;
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
+    .incorrect {
+      background: #e84118;
+      color: white;
+    }
 
-h3 {
-  font-weight: 500;
-  font-size: 1.1rem;
-}
+    .hidden {
+      display: none;
+    }
 
-.meta {
-  font-size: 0.9em;
-  color: #777;
-  text-align: center;
-  margin-bottom: 10px;
-}
+    #controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-.start-screen {
-  text-align: center;
-}
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-select, input {
-  padding: 10px 14px;
-  margin: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.95rem;
-  outline: none;
-  transition: 0.2s;
-}
+    #refazerBtn {
+      background: #273c75;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
 
-select:focus, input:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(9,132,227,0.15);
-}
-
-button {
-  padding: 12px 24px;
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  transition: background-color 0.2s, transform 0.1s;
-}
-
-button:hover {
-  background-color: var(--primary-light);
-  transform: translateY(-1px);
-}
-
-.options {
-  list-style: none;
-  padding: 0;
-}
-
-.option {
-  background: #f1f2f6;
-  padding: 12px 18px;
-  margin: 8px 0;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-  font-size: 0.95rem;
-}
-
-.option:hover {
-  background: #dfe6e9;
-  transform: scale(1.01);
-}
-
-.correct {
-  background-color: #c8e6c9 !important;
-  border: 1px solid var(--correct);
-}
-
-.wrong {
-  background-color: #ffe0e0 !important;
-  border: 1px solid var(--wrong);
-}
-
-.feedback {
-  margin-top: 10px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.feedback.correct { color: var(--correct); }
-.feedback.wrong { color: var(--wrong); }
-
-.result {
-  text-align: center;
-  margin-top: 20px;
-}
-</style>
+    #refazerBtn:hover {
+      background: #40739e;
+    }
+  </style>
 </head>
+
 <body>
-<div class="container">
-  <h1>Marfori Corporations</h1>
-    <center><h2>Simulado OGMO - CAPATAZIA</h2></center>
-  <!-- Tela inicial -->
-  <div id="startScreen" class="start-screen">
-    <p>Selecione a matéria e a quantidade de questões:</p>
+  <h1>🎯 Quiz Improvisado</h1>
 
-    <div>
-      <label for="subjectSelect">Matéria:</label>
-      <select id="subjectSelect">
-        <option value="">Carregando...</option>
-      </select>
-    </div>
+  <div id="controls">
+    <select id="subjectSelect">
+      <option value="">Carregando matérias...</option>
+    </select>
 
-    <div>
-      <label for="questionCount">Quantidade:</label>
-      <input type="number" id="questionCount" min="1" placeholder="Ex: 5">
-    </div>
+    <label for="questionCount">Qtd.:</label>
+    <input type="number" id="questionCount" min="1" max="50" value="5" />
 
-    <button id="startBtn">Iniciar Quiz</button>
+    <button id="startBtn" onclick="startQuiz()">Iniciar</button>
+    <button id="refazerBtn" class="hidden" onclick="resetQuiz()">Refazer</button>
   </div>
 
-  <!-- Área do quiz -->
-  <div id="quiz" style="display:none;"></div>
-</div>
+  <div id="question-container"></div>
+  <div id="result"></div>
 
-<script>
-let allQuestions = [];
-let questions = [];
-let currentQuestion = 0;
-let userAnswers = {};
-let lockSelection = false;
-const AUTO_DELAY_MS = 1000;
+  <script>
+    let questions = [];
+    let currentQuestion = 0;
+    let score = 0;
+    let subjectSelected = "";
 
-async function loadSubjects() {
-  try {
-    const response = await fetch('/json/');
-    const text = await response.text();
-    const regex = /href="([^"]+\.json)"/g;
-    let match, files = [];
-    while ((match = regex.exec(text)) !== null) files.push(match[1]);
+    async function loadSubjects() {
+      const select = document.getElementById("subjectSelect");
+      select.innerHTML = "";
 
-    const select = document.getElementById('subjectSelect');
-    select.innerHTML = '';
+      try {
+        // Obtém a lista de arquivos da pasta json usando uma API pública do GitHub Pages/Vercel
+        const response = await fetch("json/");
+        if (!response.ok) throw new Error("Falha ao carregar lista");
 
-    if (files.length === 0) {
-      select.innerHTML = '<option value="">Nenhum arquivo encontrado</option>';
-    } else {
-      select.innerHTML = '<option value="">Selecione a matéria</option>';
-      files.forEach(f => {
-        const name = f.replace('.json', '').replace(/_/g, ' ');
-        const opt = document.createElement('option');
-        opt.value = f;
-        opt.textContent = name.charAt(0).toUpperCase() + name.slice(1);
-        select.appendChild(opt);
-      });
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const links = [...doc.querySelectorAll("a")]
+          .map((a) => a.getAttribute("href"))
+          .filter((href) => href.endsWith(".json"));
+
+        if (links.length === 0) {
+          select.innerHTML = '<option value="">Nenhum tema encontrado</option>';
+          return;
+        }
+
+        select.innerHTML =
+          '<option value="">Selecione a matéria</option>' +
+          links
+            .map(
+              (file) =>
+                `<option value="${file}">${file.replace(".json", "").toUpperCase()}</option>`
+            )
+            .join("");
+      } catch (err) {
+        console.error("Erro ao carregar matérias:", err);
+        select.innerHTML = '<option value="">Erro ao carregar temas</option>';
+      }
     }
-  } catch (err) {
-    console.error('Erro ao listar /json:', err);
-    const select = document.getElementById('subjectSelect');
-    select.innerHTML = '<option value="">Erro ao carregar lista</option>';
-  }
-}
 
-async function loadQuizFile(filename) {
-  const response = await fetch(`/json/${filename}`);
-  if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
-  const data = await response.json();
-  allQuestions = data;
-  return data;
-}
+    async function startQuiz() {
+      subjectSelected = document.getElementById("subjectSelect").value;
+      const count = parseInt(document.getElementById("questionCount").value);
+      const container = document.getElementById("question-container");
+      const refazerBtn = document.getElementById("refazerBtn");
+      refazerBtn.classList.add("hidden");
 
-document.getElementById('startBtn').addEventListener('click', async () => {
-  const subject = document.getElementById('subjectSelect').value;
-  const count = parseInt(document.getElementById('questionCount').value);
+      if (!subjectSelected) {
+        alert("Selecione uma matéria!");
+        return;
+      }
 
-  if (!subject) {
-    alert('Selecione uma matéria.');
-    return;
-  }
-  if (isNaN(count) || count < 1) {
-    alert('Digite uma quantidade válida.');
-    return;
-  }
+      try {
+        const res = await fetch(`json/${subjectSelected}`);
+        const data = await res.json();
 
-  try {
-    const data = await loadQuizFile(subject);
-    startQuiz(data, count);
-  } catch (e) {
-    alert('Erro ao carregar o arquivo da matéria selecionada.');
-    console.error(e);
-  }
-});
-
-function startQuiz(data, count) {
-  const shuffled = data.sort(() => 0.5 - Math.random());
-  questions = shuffled.slice(0, count);
-  currentQuestion = 0;
-  userAnswers = {};
-  document.getElementById('startScreen').style.display = 'none';
-  document.getElementById('quiz').style.display = 'block';
-  renderQuestion();
-}
-
-function renderQuestion() {
-  const quizDiv = document.getElementById("quiz");
-  const q = questions[currentQuestion];
-  lockSelection = false;
-
-  const optionsHtml = Object.entries(q.alternativas).map(([key, value]) => `
-    <li class="option" data-key="${key}" onclick="selectOption('${q.id}', '${key}', this)">
-      ${key}) ${value}
-    </li>
-  `).join('');
-
-  quizDiv.innerHTML = `
-    <div class="meta">
-      <strong>Disciplina:</strong> ${q.disciplina} • 
-      <strong>Banca:</strong> ${q.banca} • 
-      <strong>Ano:</strong> ${q.ano}
-    </div>
-    <div class="question">
-      <h2>${currentQuestion + 1}. ${q.enunciado}</h2>
-      <ul class="options">${optionsHtml}</ul>
-      <div id="feedback"></div>
-    </div>
-  `;
-}
-
-function selectOption(questionId, optionKey, element) {
-  if (lockSelection) return;
-  lockSelection = true;
-  const q = questions.find(x => x.id == questionId);
-  const correct = q.resposta_correta;
-  userAnswers[questionId] = optionKey;
-
-  const parent = element.parentElement;
-  const options = parent.querySelectorAll('.option');
-  options.forEach(opt => {
-    const key = opt.getAttribute('data-key');
-    if (key === correct) opt.classList.add('correct');
-    if (key === optionKey && optionKey !== correct) opt.classList.add('wrong');
-    opt.setAttribute('aria-disabled', 'true');
-  });
-
-  const feedbackDiv = document.getElementById('feedback');
-  if (optionKey === correct) {
-    feedbackDiv.innerHTML = `<p class="feedback correct">✅ Correto!</p>`;
-  } else {
-    feedbackDiv.innerHTML = `<p class="feedback wrong">❌ Errado! Resposta correta: ${correct}) ${q.alternativas[correct]}</p>`;
-  }
-
-  setTimeout(() => {
-    if (currentQuestion < questions.length - 1) {
-      currentQuestion++;
-      renderQuestion();
-    } else {
-      showResults();
+        questions = shuffle(data).slice(0, count);
+        currentQuestion = 0;
+        score = 0;
+        showQuestion();
+      } catch (err) {
+        container.innerHTML = "<p>❌ Erro ao carregar questões.</p>";
+        console.error(err);
+      }
     }
-  }, AUTO_DELAY_MS);
-}
 
-function showResults() {
-  let correctCount = 0;
-  let resultHTML = "<h2>Resultado Final</h2>";
+    function showQuestion() {
+      const container = document.getElementById("question-container");
+      const result = document.getElementById("result");
+      result.textContent = "";
 
-  questions.forEach(q => {
-    const user = userAnswers[q.id];
-    const right = q.resposta_correta;
-    if (user === right) correctCount++;
+      if (currentQuestion >= questions.length) {
+        container.innerHTML = `<h2>✅ Fim do Quiz!</h2>
+        <p>Acertos: ${score}/${questions.length}</p>`;
+        document.getElementById("refazerBtn").classList.remove("hidden");
+        return;
+      }
 
-    resultHTML += `
-      <div class="question">
+      const q = questions[currentQuestion];
+      container.innerHTML = `
         <h3>${q.enunciado}</h3>
-        <ul class="options">
-          ${Object.entries(q.alternativas).map(([k,v]) => {
-            const classes = [];
-            if (k === right) classes.push('correct');
-            if (user === k && user !== right) classes.push('wrong');
-            return `<li class="option ${classes.join(' ')}">${k}) ${v}</li>`;
-          }).join('')}
-        </ul>
-      </div>`;
-  });
+        ${Object.entries(q.alternativas)
+          .map(
+            ([key, value]) =>
+              `<div class="option" onclick="selectOption('${key}', this)">${key}) ${value}</div>`
+          )
+          .join("")}
+      `;
+    }
 
-  resultHTML += `
-    <div class='result'>
-      <h3>Você acertou ${correctCount} de ${questions.length} questões.</h3>
-      <button id="retryBtn">Refazer</button>
-    </div>`;
+    function selectOption(option, element) {
+      const q = questions[currentQuestion];
+      const options = document.querySelectorAll(".option");
+      options.forEach((opt) => (opt.onclick = null));
 
-  document.querySelector(".container").innerHTML = resultHTML;
-  document.getElementById('retryBtn').addEventListener('click', () => location.reload());
-}
+      const correct = option === q.resposta_correta;
 
-loadSubjects();
-</script>
+      element.classList.add(correct ? "correct" : "incorrect");
+      if (correct) score++;
+
+      setTimeout(() => {
+        currentQuestion++;
+        showQuestion();
+      }, 800);
+    }
+
+    function shuffle(array) {
+      return array.sort(() => Math.random() - 0.5);
+    }
+
+    function resetQuiz() {
+      document.getElementById("question-container").innerHTML = "";
+      document.getElementById("result").textContent = "";
+      document.getElementById("refazerBtn").classList.add("hidden");
+      startQuiz();
+    }
+
+    loadSubjects();
+  </script>
 </body>
 </html>
