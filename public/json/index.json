@@ -3,4 +3,8 @@
     "name": "Matematica",
     "file": "MATEMATICA.json"
   }
+  {
+    "name": "Decreto 8.033",
+    "file": "Decreto 8033.json"
+  }
 ]
