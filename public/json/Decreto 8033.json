@@ -298,5 +298,405 @@
       "E": "Houver aprovação unânime do Conselho de Autoridade Portuária da região, mesmo que exista impedimento locacional."
     },
     "resposta_correta": "A"
+  },
+  {
+    "id": 5000016,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "De acordo com o Art. 2º do Decreto nº 8.033/2013, compete ao poder concedente, sem prejuízo de outras atribuições:",
+    "alternativas": {
+      "A": "Arbitrar, na esfera administrativa, os conflitos de interesses não solucionados entre a administração do porto e a arrendatária.",
+      "B": "Apurar, de oficio, práticas abusivas ou tratamentos discriminatórios, ressalvadas as competências da Lei nº 12.529/2011.",
+      "C": "Elaborar o plano geral de outorgas do setor portuário.",
+      "D": "Estabelecer o regulamento de exploração do porto, observadas as diretrizes da Antaq.",
+      "E": "Decidir sobre conflitos que envolvam agentes que atuam no porto organizado, em primeira instância."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000017,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Nos termos do Art. 4º do Decreto nº 8.033/2013, compete à administração do porto:",
+    "alternativas": {
+      "A": "Aprovar a transferência de controle societário de contratos de arrendamento.",
+      "B": "Conduzir e aprovar os estudos de viabilidade técnica, econômica e ambiental do objeto da concessão.",
+      "C": "Elaborar o plano geral de outorgas do setor portuário.",
+      "D": "Estabelecer o regulamento de exploração do porto, observadas as diretrizes do poder concedente.",
+      "E": "Arbitrar, em grau de recurso, os conflitos entre agentes que atuem no porto organizado."
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": 5000018,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 8º do Decreto nº 8.033/2013 lista elementos que o edital de licitação para concessão e arrendamento disporá. Qual das seguintes opções NÃO é um item obrigatório do edital conforme este artigo?",
+    "alternativas": {
+      "A": "O objeto, a área, o prazo e a possibilidade de prorrogação do contrato.",
+      "B": "A relação dos bens afetos ao arrendamento ou à concessão.",
+      "C": "A minuta do contrato de arrendamento ou de concessão e seus anexos.",
+      "D": "As regras para pedido de esclarecimento, impugnação administrativa e interposição de recursos.",
+      "E": "A lista de operadores portuários pré-qualificados para executar o contrato."
+    },
+    "resposta_correta": "E"
+  },
+  {
+    "id": 5000019,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Conforme o Art. 10º, Parágrafo único, do Decreto nº 8.033/2013, para a qualificação técnica nas licitações de arrendamento, o edital poderá estabelecer que o licitante assuma o compromisso de:",
+    "alternativas": {
+      "A": "Contratar exclusivamente trabalhadores portuários avulsos registrados no OGMO.",
+      "B": "Obter sua pré-qualificação como operador portuário ou contratar um operador portuário pré-qualificado.",
+      "C": "Apresentar garantia de proposta em valor não inferior a 50% do investimento previsto.",
+      "D": "Demonstrar patrimônio líquido mínimo correspondente a 20% do valor do contrato.",
+      "E": "Ter sede administrativa obrigatoriamente no município onde se localiza o porto."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000020,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 11º do Decreto nº 8.033/2013 estabelece o prazo mínimo para a apresentação de propostas, contado da data de publicação do edital, e a antecedência da audiência pública. Quais são esses prazos, respectivamente?",
+    "alternativas": {
+      "A": "30 dias para propostas; audiência pública com 10 dias úteis de antecedência de sua realização.",
+      "B": "45 dias para propostas; audiência pública com 15 dias úteis de antecedência da publicação do edital.",
+      "C": "30 dias para propostas; audiência pública com 15 dias úteis de antecedência da data prevista para a publicação do edital.",
+      "D": "60 dias para propostas; audiência pública com 30 dias de antecedência de sua realização.",
+      "E": "15 dias para propostas; audiência pública com 5 dias úteis de antecedência da publicação do edital."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000021,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Segundo o Art. 14 do Decreto nº 8.033/2013, o procedimento licitatório terá fase recursal única. Em que momento essa fase ocorre?",
+    "alternativas": {
+      "A": "Imediatamente após a publicação do edital, para impugnação de suas cláusulas.",
+      "B": "Após a classificação das propostas, mas antes da análise de habilitação.",
+      "C": "Após a habilitação do vencedor, exceto na hipótese de inversão de fases.",
+      "D": "Somente após a adjudicação do objeto pelo poder concedente.",
+      "E": "A qualquer tempo, desde que antes da assinatura do contrato."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000022,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 20 do Decreto nº 8.033/2013 define o objeto do contrato de concessão. Assinale a alternativa que descreve uma das possibilidades de objeto previstas.",
+    "alternativas": {
+      "A": "Apenas o desempenho das funções da administração do porto, vedada a exploração das instalações.",
+      "B": "Apenas a exploração direta das instalações portuárias, sem as funções de administração.",
+      "C": "O desempenho das funções da administração do porto e a exploração direta e indireta das instalações portuárias.",
+      "D": "A exploração indireta das instalações portuárias, sendo obrigatória a exploração direta simultânea.",
+      "E": "O desempenho parcial das funções de administração do porto, sendo obrigatória a exploração direta de, no mínimo, 50% das instalações."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000023,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Conforme o Art. 21 do Decreto nº 8.033/2013, os contratos celebrados entre a concessionária e terceiros serão regidos pelas normas de direito privado. O que a celebração desses contratos NÃO estabelece?",
+    "alternativas": {
+      "A": "A necessidade de observância das normas aplicáveis aos serviços concedidos.",
+      "B": "Qualquer relação jurídica entre os terceiros e o poder concedente.",
+      "C": "A limitação da vigência dos contratos de terceiros ao prazo da concessão.",
+      "D": "A observância das condições do edital de licitação e do contrato de concessão.",
+      "E": "A submissão às atividades regulatória e fiscalizatória da Antaq."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000024,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 27 do Decreto nº 8.033/2013 trata dos documentos que os interessados em obter autorização de instalação portuária devem apresentar à Antaq. Qual dos itens a seguir NÃO é exigido no memorial descritivo (Inciso I) deste artigo?",
+    "alternativas": {
+      "A": "Descrição da poligonal das áreas por meio de coordenadas georreferenciadas.",
+      "B": "Descrição dos acessos terrestres e aquaviários existentes e a serem construídos.",
+      "C": "Estudo de impacto ambiental (EIA) e respectivo relatório (RIMA) aprovados pelo órgão ambiental competente.",
+      "D": "Especificação da embarcação-tipo por berço.",
+      "E": "Cronograma fisico e financeiro para a implantação da instalação portuária."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000025,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 29 do Decreto nº 8.033/2013 define os parâmetros que devem constar obrigatoriamente no instrumento de abertura de chamada ou anúncio públicos. O perfil de cargas a serem movimentadas será classificado em modalidades. Qual das seguintes NÃO é uma modalidade listada no § 1º?",
+    "alternativas": {
+      "A": "Granel sólido.",
+      "B": "Granel líquido e gasoso.",
+      "C": "Carga geral.",
+      "D": "Carga neogranel.",
+      "E": "Carga conteinerizada."
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": 5000026,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 30 do Decreto nº 8.033/2013 define 'viabilidade locacional' para os fins do decreto. O que se considera 'viabilidade locacional'?",
+    "alternativas": {
+      "A": "A comprovação de que a instalação portuária está em conformidade com o plano diretor municipal.",
+      "B": "A possibilidade da implantação física de duas ou mais instalações portuárias na mesma região geográfica que não gere impedimento operacional a qualquer uma delas.",
+      "C": "A análise da Antaq que aprova a localização da instalação com base em critérios de menor impacto ambiental.",
+      "D": "A existência de acessos terrestres e aquaviários adequados para a instalação pretendida, conforme parecer da autoridade marítima.",
+      "E": "A distância mínima de 10 quilômetros entre novas instalações portuárias concorrentes."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000027,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "De acordo com o Art. 33, após encerrada a chamada pública ou processo seletivo, os interessados terão um prazo para apresentar documentos à Antaq. Qual é esse prazo e qual documento NÃO está listado no Art. 33?",
+    "alternativas": {
+      "A": "Prazo de 90 dias; Parecer favorável da autoridade marítima.",
+      "B": "Prazo de 60 dias; Plano de Desenvolvimento e Zoneamento (PDZ) da instalação.",
+      "C": "Prazo de 90 dias; Documentação comprobatória de regularidade perante o FGTS.",
+      "D": "Prazo de 30 dias; Garantias de execução a serem firmadas.",
+      "E": "Prazo de 90 dias; Licença ambiental de instalação (LI)."
+    },
+    "resposta_correta": "E"
+  },
+  {
+    "id": 5000028,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 35 do Decreto nº 8.033/2013 estabelece casos que não dependerão da celebração de novo contrato de adesão, bastando a aprovação pelo poder concedente. Qual das alternativas abaixo é um desses casos?",
+    "alternativas": {
+      "A": "A alteração do tipo de carga movimentada, em qualquer hipótese.",
+      "B": "A transferência de titularidade da autorização, desde que preservadas as condições do contrato original.",
+      "C": "A ampliação da área da instalação portuária que exceda a trinta por cento da área original.",
+      "D": "A prorrogação do prazo de autorização além do limite legal.",
+      "E": "A redução da capacidade de movimentação da instalação."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000029,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Conforme o Art. 36, o Conselho de Autoridade Portuária é um órgão consultivo da administração do porto. Compete a este conselho sugerir:",
+    "alternativas": {
+      "A": "A anulação de contratos de arrendamento por descumprimento de metas.",
+      "B": "Alterações no plano de desenvolvimento e zoneamento do porto.",
+      "C": "A nomeação do diretor-presidente da administração do porto.",
+      "D": "O valor das tarifas portuárias, em caráter terminativo.",
+      "E": "A abertura de processo seletivo para autorização de novos terminais."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000030,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "De acordo com o Art. 37, § 3º, do Decreto nº 8.033/2013, qual é o prazo de mandato dos membros do Conselho de Autoridade Portuária e como se dá a recondução?",
+    "alternativas": {
+      "A": "Mandato de dois anos, permitida a recondução uma única vez, por igual período.",
+      "B": "Mandato de três anos, permitida a recondução por mais dois períodos.",
+      "C": "Mandato de dois anos, vedada a recondução.",
+      "D": "Mandato de um ano, permitidas reconduções ilimitadas.",
+      "E": "Mandato de quatro anos, vedada a recondução."
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 5000031,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 38, § 3º, do Decreto nº 8.033/2013, trata da Diretoria-Executiva do OGMO. Qual o prazo de gestão dos diretores e quem os designa?",
+    "alternativas": {
+      "A": "Prazo de 2 anos, designados pela Antaq.",
+      "B": "Prazo de 3 anos, designados pelos operadores portuários que atuam no porto.",
+      "C": "Prazo de 3 anos, designados pelo Conselho de Supervisão do OGMO.",
+      "D": "Prazo de 2 anos, designados pelo poder concedente.",
+      "E": "Prazo indeterminado, designados em convenção coletiva."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000032,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 39 institui o Fórum Nacional Permanente para Qualificação do Trabalhador Portuário. Qual das seguintes entidades NÃO integra o Fórum como representante do governo, conforme o § 1º, Inciso I?",
+    "alternativas": {
+      "A": "Ministério do Trabalho e Emprego, que o coordenará.",
+      "B": "Secretaria de Portos da Presidência da República.",
+      "C": "Ministério da Educação.",
+      "D": "Comando da Marinha.",
+      "E": "Agência Nacional de Transportes Aquaviários - Antaq."
+    },
+    "resposta_correta": "E"
+  },
+  {
+    "id": 5000033,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 44 do Decreto nº 8.033/2013 prevê que a Antaq disciplinará, após consulta pública, as condições de acesso por qualquer interessado, em caráter excepcional, às instalações portuárias arrendadas, autorizadas ou exploradas pela concessionária, assegurando:",
+    "alternativas": {
+      "A": "Gratuidade no acesso, por se tratar de serviço público.",
+      "B": "Remuneração adequada a seu titular.",
+      "C": "Prioridade de atracação sobre as operações regulares do titular.",
+      "D": "Acesso irrestrito, desde que não haja operações do titular no momento.",
+      "E": "Uma cota mínima de 10% da capacidade da instalação para uso de terceiros."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000034,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Sobre o Art. 41 do Decreto nº 8.033/2013, que trata da participação de representantes no conselho de administração da administração do porto (entidade sob controle estatal), é correto afirmar que:",
+    "alternativas": {
+      "A": "A indicação do representante da classe trabalhadora recairá sobre qualquer trabalhador portuário avulso.",
+      "B": "A indicação dos representantes das classes empresarial e trabalhadora será feita diretamente pelo poder concedente.",
+      "C": "A indicação do representante da classe trabalhadora e seu suplente recairá obrigatoriamente sobre empregado da entidade sob controle estatal.",
+      "D": "A participação de representantes da classe empresarial e trabalhadora é vedada em entidades sob controle estatal.",
+      "E": "Os representantes estão isentos dos critérios e exigências legais para o cargo de conselheiro de administração."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000035,
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Regulamenta a Lei nº 12.815/2013 (Lei dos Portos)",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "De acordo com o Art. 6º, § 3º, do Decreto nº 8.033/2013, o poder concedente poderá autorizar a elaboração, por qualquer interessado, dos estudos de viabilidade técnica, econômica e ambiental. Caso esses estudos sejam utilizados para a licitação, o que deverá ser assegurado?",
+    "alternativas": {
+      "A": "A preferência do interessado na licitação, como critério de desempate.",
+      "B": "A contratação direta do interessado, dispensando-se a licitação.",
+      "C": "O ressarcimento dos dispêndios correspondentes ao interessado que elaborou os estudos.",
+      "D": "A anulação dos estudos, pois a elaboração deve ser exclusiva do poder concedente.",
+      "E": "O pagamento de uma taxa de 5% sobre o valor do contrato ao elaborador dos estudos, paga pelo vencedor da licitação."
+    },
+    "resposta_correta": "C"
   }
 ]
