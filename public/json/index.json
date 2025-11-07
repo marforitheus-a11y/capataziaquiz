@@ -22,5 +22,10 @@
   {
     "name": "Decreto 8033 atualizado",
     "file": "Decreto 8033 atualizado.json"
+  },
+  {
+    "name": "Teste",
+    "file": "teste.json"
   }
+  
 ]
