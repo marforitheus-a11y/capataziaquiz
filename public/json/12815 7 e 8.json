@@ -1,0 +1,162 @@
+[
+  {
+    "id": "5000018",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização de Instalações Portuárias",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Nos termos do Art. 8º, § 1º, a autorização de instalação portuária é formalizada por contrato de adesão, que conterá as cláusulas essenciais do Art. 5º-C (arrendamento), com exceção de uma. Assinale a alternativa que corresponde à cláusula dispensada.",
+    "alternativas": {
+      "A": "A cláusula relativa ao objeto, à área e ao prazo.",
+      "B": "A cláusula relativa ao valor do contrato e aos critérios e procedimentos de revisão e reajuste.",
+      "C": "A cláusula relativa às hipóteses de extinção do contrato.",
+      "D": "A cláusula relativa ao acesso à instalação pelo poder concedente e pela Antaq.",
+      "E": "A cláusula relativa aos investimentos de responsabilidade do contratado."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": "5000019",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização de Instalações Portuárias",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "A autorização de instalação portuária terá prazo de até 25 anos. De acordo com o Art. 8º, § 2º, sua prorrogação por períodos sucessivos está condicionada a quais requisitos cumulativos?",
+    "alternativas": {
+      "A": "A manutenção da atividade portuária e a promoção de investimentos para expansão e modernização, na forma do regulamento.",
+      "B": "A manutenção da atividade portuária e a inexistência de sanções aplicadas pela ANTAQ nos últimos 5 anos.",
+      "C": "A promoção de investimentos e a apresentação de garantias de execução, independentemente da manutenção da atividade.",
+      "D": "A autorização prévia do poder concedente e a consulta à autoridade aduaneira e ao poder público municipal.",
+      "E": "A comprovação de que o mercado se tornou consolidado e a manutenção da atividade portuária."
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": "5000020",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização de Instalações Portuárias",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Conforme os Art. 9º e 10, o processo para obtenção de autorização de instalação portuária pode ser iniciado de duas formas. Assinale a alternativa que as descreve corretamente.",
+    "alternativas": {
+      "A": "Apenas por requerimento do interessado à ANTAQ, que então abre um anúncio público.",
+      "B": "Apenas por determinação do poder concedente à ANTAQ, que então abre uma chamada pública.",
+      "C": "Por requerimento do interessado à ANTAQ (gerando anúncio público) ou por determinação do poder concedente à ANTAQ (gerando chamada pública).",
+      "D": "Por requerimento do interessado ao poder concedente, que determina à ANTAQ a abertura de processo seletivo.",
+      "E": "Por determinação da ANTAQ, de ofício, ou por requerimento do poder público municipal."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": "5000021",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização de Instalações Portuárias",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Nos termos do Art. 12, § 2º, a ANTAQ deverá promover processo seletivo público para a autorização de instalações portuárias quando:",
+    "alternativas": {
+      "A": "O processo de chamada ou anúncio público for concluído com a participação de um único interessado.",
+      "B": "Sempre que houver mais de uma proposta, independentemente de outros fatores.",
+      "C": "Houver mais de uma proposta e impedimento locacional que inviabilize sua implantação concomitante.",
+      "D": "Houver mais de uma proposta, mesmo sem impedimento locacional, para garantir a melhor tarifa.",
+      "E": "O poder concedente determinar, em consonância com as diretrizes de planejamento, mesmo havendo um só interessado."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": "5000022",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização de Instalações Portuárias",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 8º define as modalidades de instalações portuárias localizadas fora da área do porto organizado a serem exploradas mediante autorização. Assinale a alternativa que NÃO corresponde a uma dessas modalidades.",
+    "alternativas": {
+      "A": "Terminal de uso privado.",
+      "B": "Estação de transbordo de carga.",
+      "C": "Instalação portuária pública de pequeno porte.",
+      "D": "Terminal de arrendamento de contêineres.",
+      "E": "Instalação portuária de turismo."
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": "5000023",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização de Instalações Portuárias",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "De acordo com o Art. 14, a celebração do contrato de concessão, arrendamento ou a expedição de autorização devem ser precedidas de certas providências. Qual das alternativas abaixo NÃO é um requisito prévio listado no Art. 14?",
+    "alternativas": {
+      "A": "Consulta à autoridade aduaneira.",
+      "B": "Consulta ao respectivo poder público municipal.",
+      "C": "Emissão, pelo órgão licenciador, do termo de referência para os estudos ambientais.",
+      "D": "Audiência pública prévia conduzida pela ANTAQ para validar a viabilidade locacional.",
+      "E": "Todas as alternativas (A, B e C) são requisitos listados no Art. 14."
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": "5000024",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização de Instalações Portuárias",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Conforme o Art. 11, Parágrafo único, o interessado em obter uma autorização de instalação portuária deverá, além de outros documentos, apresentar um instrumento jurídico que lhe assegure:",
+    "alternativas": {
+      "A": "A garantia de movimentação mínima de carga, atestada por transportadoras.",
+      "B": "O direito de uso e fruição do respectivo terreno (ex: título de propriedade ou cessão de direito real).",
+      "C": "A comprovação de regularidade fiscal perante a União, Estados e Município.",
+      "D": "O cronograma de investimentos para expansão, aprovado pela ANTAQ.",
+      "E": "O contrato prévio com a autoridade aduaneira para alfandegamento da área."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": "5000025",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização de Instalações Portuárias",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Segundo o Art. 12, § 1º, o poder concedente poderá expedir diretamente as autorizações de instalação portuária, dispensando o processo seletivo público, em duas situações específicas. Quais são elas?",
+    "alternativas": {
+      "A": "Quando o interessado for órgão público ou quando a instalação for de pequeno porte.",
+      "B": "Quando o processo tiver um único interessado; ou, havendo vários, se a instalação for de turismo.",
+      "C": "Quando o processo tiver um único interessado; ou, havendo vários, se não houver impedimento locacional à implantação de todas as propostas.",
+      "D": "Quando a ANTAQ assim o determinar; ou quando o poder municipal aprovar diretamente o projeto.",
+      "E": "Quando o interessado já possuir o direito de uso do terreno; ou quando o investimento for 100% privado."
+    },
+    "resposta_correta": "C"
+  }
+]
