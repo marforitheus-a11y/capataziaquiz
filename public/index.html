@@ -67,7 +67,6 @@ h3 {
   text-align: center;
   margin-bottom: 10px;
 }
-.question h2 { white-space: pre-line; }  
 
 .start-screen {
   text-align: center;
@@ -182,6 +181,19 @@ button:hover {
 
 .pdf-list a:hover {
   text-decoration: underline;
+}
+
+/* --- COMENTÁRIOS DAS QUESTÕES --- */
+.comentario {
+  background: #f9fbff;
+  border-left: 4px solid var(--primary);
+  margin-top: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #2d3436;
+  line-height: 1.5;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 </style>
 </head>
@@ -308,6 +320,8 @@ function renderQuestion() {
   const q = questions[currentQuestion];
   lockSelection = false;
 
+  const formattedEnunciado = q.enunciado.replace(/\n/g, "<br>");
+
   const optionsHtml = Object.entries(q.alternativas).map(([key, value]) => `
     <li class="option" data-key="${key}" onclick="selectOption('${q.id}', '${key}', this)">
       ${key}) ${value}
@@ -321,7 +335,7 @@ function renderQuestion() {
       <strong>Ano:</strong> ${q.ano}
     </div>
     <div class="question">
-      <h2>${currentQuestion + 1}. ${q.enunciado}</h2>
+      <h2>${currentQuestion + 1}. ${formattedEnunciado}</h2>
       <ul class="options">${optionsHtml}</ul>
       <div id="feedback"></div>
     </div>
@@ -370,7 +384,7 @@ function showResults() {
 
     resultHTML += `
       <div class="question">
-        <h3>${q.enunciado}</h3>
+        <h3>${q.enunciado.replace(/\n/g, "<br>")}</h3>
         <ul class="options">
           ${Object.entries(q.alternativas).map(([k,v]) => {
             const classes = [];
@@ -379,6 +393,7 @@ function showResults() {
             return `<li class="option ${classes.join(' ')}">${k}) ${v}</li>`;
           }).join('')}
         </ul>
+        ${q.comentario ? `<div class="comentario"><strong>Comentário:</strong> ${q.comentario}</div>` : ""}
       </div>`;
   });
 
@@ -427,4 +442,3 @@ loadPDFs();
 </script>
 </body>
 </html>
-
