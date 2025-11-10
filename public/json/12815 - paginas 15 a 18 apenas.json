@@ -1,6 +1,6 @@
 [
   {
-    "id": "700016",
+    "id": "700031",
     "disciplina": "Legislação Federal",
     "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
     "banca": "IDCAP (Simulado)",
@@ -8,19 +8,19 @@
     "ano": "2025",
     "cargo": "Analista Portuário (Simulado)",
     "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "De acordo com o Art. 33 da Lei 12.815/2013, que trata das competências do órgão de gestão de mão de obra (OGMO), assinale a alternativa CORRETA.",
+    "enunciado": "Conforme o Art. 32 da Lei nº 12.815/2013, compete ao órgão de gestão de mão de obra (OGMO) manter, com EXCLUSIVIDADE:",
     "alternativas": {
-      "A": "O órgão responde, em qualquer hipótese, por prejuízos causados pelos trabalhadores portuários avulsos aos tomadores dos seus serviços.",
-      "B": "O órgão responde, solidariamente com os operadores portuários, pela remuneração devida ao trabalhador portuário avulso e pelas indenizações decorrentes de acidente de trabalho.",
-      "C": "O órgão não pode exigir dos operadores portuários garantia prévia dos respectivos pagamentos para atender a requisição de trabalhadores.",
-      "D": "O exercício das atribuições pelo OGMO implica vínculo empregatício com o trabalhador portuário avulso, nos termos do Art. 34.",
-      "E": "O órgão responde, de forma subsidiária, pela remuneração devida ao trabalhador portuário avulso."
+      "A": "O treinamento e a habilitação profissional do trabalhador portuário.",
+      "B": "O cadastro do trabalhador portuário e o registro do trabalhador portuário avulso.",
+      "C": "A expedição dos documentos de identificação do trabalhador portuário.",
+      "D": "O estabelecimento do número de vagas para acesso ao registro.",
+      "E": "A arrecadação e o repasse dos valores devidos pelos operadores portuários."
     },
-    "resposta_correta": "B"
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 32, inciso II, estabelece que compete ao OGMO 'manter, com exclusividade, o cadastro do trabalhador portuário e o registro do trabalhador portuário avulso'. As demais alternativas (A, C, D, E) listam outras atribuições do OGMO, presentes nos incisos III, VI, V e VII do mesmo artigo, mas a lei não atribui a elas o caráter de exclusividade."
   },
   {
-    "id": "700017",
+    "id": "700032",
     "disciplina": "Legislação Federal",
     "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
     "banca": "IDCAP (Simulado)",
@@ -28,19 +28,59 @@
     "ano": "2025",
     "cargo": "Analista Portuário (Simulado)",
     "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "Conforme o Art. 40 da Lei 12.815/2013, que dispõe sobre a contratação de trabalho portuário (capatazia, estiva, etc.), analise as proposições a seguir.\n\nI. O operador portuário pode locar ou tomar mão de obra sob o regime de trabalho temporário (Lei nº 6.019/1974) para essas atividades.\nII. A contratação de trabalhadores portuários com vínculo empregatício por prazo indeterminado será feita exclusivamente dentre trabalhadores portuários avulsos registrados.\nIII. As atividades de estiva e capatazia são consideradas idênticas para fins legais, sendo definidas conjuntamente.\n\nAssinale a alternativa CORRETA:",
+    "enunciado": "A respeito da relação jurídica entre o OGMO e o trabalhador portuário avulso, assinale a alternativa CORRETA, nos termos do Art. 34.",
+    "alternativas": {
+      "A": "O exercício das atribuições pelo OGMO gera vínculo empregatício de prazo determinado.",
+      "B": "O exercício das atribuições pelo OGMO gera vínculo empregatício de prazo indeterminado.",
+      "C": "O exercício das atribuições pelo OGMO não implica vínculo empregatício com o trabalhador.",
+      "D": "O OGMO só estabelece vínculo empregatício se o trabalhador for cedido em caráter permanente.",
+      "E": "O exercício das atribuições pelo OGMO gera vínculo empregatício de natureza intermitente."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 34 é taxativo ao afirmar que: 'O exercício das atribuições previstas nos arts. 32 e 33 pelo órgão de gestão de mão de obra do trabalho portuário avulso não implica vínculo empregatício com trabalhador portuário avulso.' As demais alternativas (A, B, D, E) estão incorretas por sugerirem a existência ou a possibilidade de formação de um vínculo empregatício direto decorrente das atividades de gestão do OGMO, o que é expressamente negado pela lei."
+  },
+  {
+    "id": "700033",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 40, § 1º, a atividade de fiscalização da entrada e saída de pessoas a bordo das embarcações atracadas ou fundeadas ao largo, bem como da movimentação de mercadorias nos portalós e rampas, é definida como:",
+    "alternativas": {
+      "A": "Estiva",
+      "B": "Capatazia",
+      "C": "Conferência de Carga",
+      "D": "Vigilância de Embarcações",
+      "E": "Bloco"
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O enunciado descreve exatamente a atividade de 'Vigilância de Embarcações', conforme o Art. 40, § 1º, inciso V. A 'Estiva' (A) é a movimentação nos porões ou conveses (Inciso II). A 'Capatazia' (B) é a movimentação nas instalações em terra (Inciso I). A 'Conferência de Carga' (C) é a contagem e verificação (Inciso III). O 'Bloco' (E) é a limpeza e conservação da embarcação (Inciso VI)."
+  },
+  {
+    "id": "700034",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Analise as proposições sobre a hierarquia das normas no trabalho portuário avulso, com base nos Art. 32 e Art. 36:\n\nI. A gestão da mão de obra do trabalho portuário avulso deve observar, prioritariamente, as normas internas do OGMO.\nII. Caso celebrado acordo ou convenção coletiva de trabalho, o disposto no instrumento precederá o órgão gestor.\nIII. A celebração de convenção coletiva dispensa a intervenção do OGMO nas relações entre capital e trabalho no porto.\n\nAssinale a alternativa CORRETA:",
     "alternativas": {
       "A": "Somente a proposição I está correta.",
-      "B": "Somente a proposição II está correta.",
+      "B": "Somente as proposições II e III estão corretas.",
       "C": "Somente as proposições I e II estão corretas.",
-      "D": "Somente as proposições II e III estão corretas.",
+      "D": "Somente as proposições I e III estão corretas.",
       "E": "Todas as proposições estão corretas."
     },
-    "resposta_correta": "B"
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. A Proposição I está incorreta, pois o Art. 36 determina a observância do 'contrato, convenção ou acordo coletivo de trabalho'. A Proposição II está correta, conforme o Art. 32, parágrafo único: 'o disposto no instrumento precederá o órgão gestor'. A Proposição III também está correta, sendo a consequência do mesmo Art. 32, parágrafo único: '[o instrumento] dispensará sua intervenção nas relações entre capital e trabalho no porto.' Logo, II e III estão corretas."
   },
   {
-    "id": "700018",
+    "id": "700035",
     "disciplina": "Legislação Federal",
     "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
     "banca": "IDCAP (Simulado)",
@@ -48,256 +88,15 @@
     "ano": "2025",
     "cargo": "Analista Portuário (Simulado)",
     "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "O Art. 37 da Lei 12.815/2013 estabelece mecanismos para solução de litígios no âmbito do OGMO. Sobre o tema, assinale a alternativa INCORRETA.",
+    "enunciado": "De acordo com o Art. 38, que trata da estrutura do OGMO, qual das seguintes competências pertence à Diretoria Executiva, e não ao Conselho de Supervisão?",
     "alternativas": {
-      "A": "Deve ser constituída, no âmbito do órgão, uma comissão paritária para solucionar litígios.",
-      "B": "Em caso de impasse, as partes devem recorrer à arbitragem de ofertas finais.",
-      "C": "Firmado o compromisso arbitral, não será admitida a desistência de qualquer das partes.",
-      "D": "O laudo arbitral proferido para solução da pendência constitui título executivo extrajudicial.",
-      "E": "As ações relativas aos créditos decorrentes da relação de trabalho avulso prescrevem em 5 (cinco) anos, independentemente de qualquer outro prazo."
+      "A": "Fiscalizar a gestão dos diretores e examinar os livros e papéis do órgão.",
+      "B": "Deliberar sobre o número de vagas para acesso ao registro do trabalhador portuário avulso.",
+      "C": "Editar as normas a que se refere o art. 42 (seleção e registro).",
+      "D": "Representar o órgão e praticar os atos necessários ao seu funcionamento regular, no silêncio do estatuto.",
+      "E": "Ser composto por 3 (três) membros titulares e seus suplentes."
     },
-    "resposta_correta": "E"
-  },
-  {
-    "id": "700019",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "Relacione as atividades do trabalho portuário (Coluna 1), conforme definidas no Art. 40, § 1º da Lei 12.815/2013, às suas respectivas descrições (Coluna 2).\n\nColuna 1\n1. Capatazia\n2. Estiva\n3. Conferência de Carga\n4. Conserto de Carga\n\nColuna 2\n( ) Reparo e restauração das embalagens de mercadorias, reembalagem e marcação.\n( ) Atividade de movimentação de mercadorias nas instalações dentro do porto, compreendendo o recebimento, transporte interno e entrega.\n( ) Contagem de volumes, anotação de suas características, procedência ou destino, e verificação do estado das mercadorias.\n( ) Atividade de movimentação de mercadorias nos conveses ou nos porões das embarcações, quando realizados com equipamentos de bordo.\n\nAssinale a alternativa que contém a sequência CORRETA de cima para baixo:",
-    "alternativas": {
-      "A": "4, 1, 3, 2",
-      "B": "1, 2, 3, 4",
-      "C": "2, 4, 1, 3",
-      "D": "3, 1, 4, 2",
-      "E": "4, 3, 1, 2"
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": "700020",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "A Lei 12.815/2013 diferencia o 'cadastro' (Art. 41, I) do 'registro' (Art. 41, II) do trabalhador portuário, ambos mantidos pelo OGMO. Sobre essa distinção, é CORRETO afirmar que:",
-    "alternativas": {
-      "A": "O ingresso no registro independe da prévia inscrição no cadastro.",
-      "B": "O ingresso no registro depende de prévia seleção e inscrição no cadastro, obedecidas a disponibilidade de vagas e a ordem cronológica de inscrição no cadastro.",
-      "C": "A inscrição no cadastro dependerá de prévia seleção e da disponibilidade de vagas.",
-      "D": "O cadastro é destinado aos trabalhadores com vínculo empregatício, enquanto o registro é destinado aos trabalhadores avulsos.",
-      "E": "A inscrição no cadastro e o registro do trabalhador portuário extinguem-se unicamente por morte."
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": "700021",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "Conforme o Art. 32 da Lei nº 12.815/2013, os operadores portuários devem constituir em cada porto organizado um órgão de gestão de mão de obra (OGMO). Assinale a alternativa que NÃO corresponde a uma das destinações desse órgão.",
-    "alternativas": {
-      "A": "Administrar o fornecimento da mão de obra do trabalhador portuário e do trabalhador portuário avulso.",
-      "B": "Manter, com exclusividade, o cadastro do trabalhador portuário e o registro do trabalhador portuário avulso.",
-      "C": "Estabelecer o número de vagas, a forma e a periodicidade para acesso ao registro do trabalhador portuário avulso.",
-      "D": "Arrecadar e repassar os valores devidos pelos operadores portuários relativos à remuneração do trabalhador avulso.",
-      "E": "Responder por prejuízos causados pelos trabalhadores portuários avulsos aos tomadores dos seus serviços."
-    },
-    "resposta_correta": "E"
-  },
-  {
-    "id": "700022",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "Nos termos do Art. 32, parágrafo único, da Lei nº 12.815/2013, caso seja celebrado contrato, acordo ou convenção coletiva de trabalho entre trabalhadores e tomadores de serviços:",
-    "alternativas": {
-      "A": "O disposto no instrumento precederá o órgão gestor e dispensará sua intervenção nas relações entre capital e trabalho no porto.",
-      "B": "O órgão gestor deverá ratificar o instrumento para que ele tenha validade nas relações entre capital e trabalho no porto.",
-      "C": "O instrumento coletivo complementará as decisões do órgão gestor, que permanecerá como interventor obrigatório.",
-      "D": "O órgão gestor atuará como mediador obrigatório na celebração de tais contratos ou acordos.",
-      "E": "O instrumento coletivo será nulo, pois as relações de trabalho portuário são competência exclusiva do OGMO."
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": "700023",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "O Art. 33, I, da Lei 12.815/2013 prevê a aplicação de normas disciplinares pelo OGMO. Analise as penalidades a seguir:\n\nI. Repreensão verbal ou por escrito.\nII. Suspensão do registro pelo período de 10 (dez) a 30 (trinta) dias.\nIII. Cancelamento do registro.\nIV. Multa pecuniária revertida ao fundo de amparo ao trabalhador.\n\nAssinale a alternativa CORRETA:",
-    "alternativas": {
-      "A": "Somente as proposições I, II e III estão corretas.",
-      "B": "Somente as proposições I e IV estão corretas.",
-      "C": "Somente as proposições II, III e IV estão corretas.",
-      "D": "Somente as proposições I, II e IV estão corretas.",
-      "E": "Todas as proposições estão corretas."
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": "700024",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "Sobre a estrutura do OGMO, conforme Art. 38, é CORRETO afirmar que:",
-    "alternativas": {
-      "A": "O conselho de supervisão será composto por 5 (cinco) membros.",
-      "B": "O prazo de gestão da diretoria executiva será de 2 (dois) anos, vedada a redesignação.",
-      "C": "O prazo de gestão da diretoria executiva será de 3 (três) anos, permitida a redesignação.",
-      "D": "É vedado aos membros do conselho de supervisão serem designados para cargos de diretores.",
-      "E": "A diretoria executiva será composta por, no mínimo, 3 (três) diretores."
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": "700025",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "Quanto à natureza jurídica do OGMO, o Art. 39 da Lei nº 12.815/2013 estabelece que:",
-    "alternativas": {
-      "A": "É uma entidade privada com fins lucrativos, destinada a agenciar mão de obra.",
-      "B": "É reputado de utilidade pública, sendo-lhe vedado ter fins lucrativos ou prestar serviços a terceiros.",
-      "C": "É uma autarquia federal vinculada à Secretaria de Portos.",
-      "D": "É uma sociedade de economia mista, podendo prestar serviços a terceiros para garantir sua sustentabilidade.",
-      "E": "É reputado de utilidade pública, devendo, no entanto, buscar o lucro para investir na formação profissional."
-    },
-    "resposta_correta": "B"
-  },
-  {
-    "id": "700026",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "Conforme o Art. 40, § 1º, a atividade de limpeza e conservação de embarcações mercantes e de seus tanques, incluindo batimento de ferrugem, pintura e reparos de pequena monta, é definida como:",
-    "alternativas": {
-      "A": "Capatazia",
-      "B": "Estiva",
-      "C": "Conserto de Carga",
-      "D": "Bloco",
-      "E": "Vigilância de Embarcações"
-    },
-    "resposta_correta": "D"
-  },
-  {
-    "id": "700027",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "O Art. 40, § 5º (incluído pela Lei nº 14.047/2020), trata da multifuncionalidade. Segundo este dispositivo:",
-    "alternativas": {
-      "A": "Trabalhadores avulsos podem desempenhar quaisquer das atividades (capatazia, estiva, etc.), desde que possuam qualificação, vedada a exigência de novo registro, independentemente de acordo coletivo.",
-      "B": "A multifuncionalidade só é permitida se expressamente prevista em acordo ou convenção coletiva de trabalho.",
-      "C": "O trabalhador avulso deve realizar um novo registro no OGMO para cada atividade (estiva, conferência, etc.) que desejar exercer.",
-      "D": "A multifuncionalidade é restrita, permitindo que um trabalhador exerça no máximo duas das atividades listadas.",
-      "E": "A qualificação necessária para a multifuncionalidade só pode ser obtida mediante treinamento no exterior."
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": "700028",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "O Art. 43 dispõe sobre a negociação das condições do trabalho avulso. O parágrafo único deste artigo determina que a negociação contemplará:",
-    "alternativas": {
-      "A": "A garantia de renda mínima inserida na Convenção nº 137 da Organização Internacional do Trabalho (OIT).",
-      "B": "A participação nos lucros e resultados dos operadores portuários.",
-      "C": "Um plano de aposentadoria privada custeado integralmente pelo OGMO.",
-      "D": "A exclusividade de contratação de trabalhadores sindicalizados.",
-      "E": "A vedação da multifuncionalidade, protegendo as categorias profissionais."
-    },
-    "resposta_correta": "A"
-  },
-  {
-    "id": "700029",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "Nos termos do Art. 44, aos titulares de instalações portuárias sujeitas a regime de autorização (fora do porto organizado), é facultada:",
-    "alternativas": {
-      "A": "A requisição de trabalhadores avulsos diretamente ao sindicato, sem intervenção do OGMO.",
-      "B": "A contratação de trabalhadores sob o regime de trabalho temporário (Lei nº 6.019/1974).",
-      "C": "A contratação de trabalhadores a prazo indeterminado, observado o disposto no contrato, convenção ou acordo coletivo de trabalho.",
-      "D": "A utilização exclusiva de mão de obra estrangeira, mediante autorização da autoridade marítima.",
-      "E": "A contratação de trabalhadores a prazo indeterminado, sendo vedada a observância de acordos coletivos."
-    },
-    "resposta_correta": "C"
-  },
-  {
-    "id": "700030",
-    "disciplina": "Legislação Federal",
-    "assunto": "Lei nº 12.815/2013 - Do Trabalho Portuário",
-    "banca": "IDCAP (Simulado)",
-    "instituicao": "Simulado Concurso Portuário",
-    "ano": "2025",
-    "cargo": "Analista Portuário (Simulado)",
-    "nivel": "Superior",
-    "modalidade": "Múltipla Escolha",
-    "enunciado": "O Art. 37, § 4º, estabelece o prazo prescricional para as ações relativas aos créditos decorrentes da relação de trabalho avulso. Esse prazo é de:",
-    "alternativas": {
-      "A": "2 (dois) anos após o término do contrato de trabalho.",
-      "B": "5 (cinco) anos, não havendo limite temporal após o cancelamento do registro.",
-      "C": "5 (cinco) anos até o limite de 2 (dois) anos após o cancelamento do registro ou do cadastro no OGMO.",
-      "D": "2 (dois) anos até o limite de 2 (dois) anos após o cancelamento do registro ou do cadastro no OGMO.",
-      "E": "5 (cinco) anos, contados da data do efetivo prejuízo, independentemente do registro."
-    },
-    "resposta_correta": "C"
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 38, § 4º, compete 'a qualquer diretor a representação do órgão e a prática dos atos necessários ao seu funcionamento regular', sendo esta uma atribuição da Diretoria Executiva. As alternativas A, B e C são competências expressas do Conselho de Supervisão, listadas no Art. 38, § 1º (incisos III, I e II, respectivamente). A alternativa E é uma característica da composição do Conselho de Supervisão (Art. 38, § 1º), e não uma competência da Diretoria."
   }
 ]
-
