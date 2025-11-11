@@ -25,23 +25,28 @@ function renderQuestion() {
   `;
 }
 
+/* ====== SUBSTITUA SUA FUNÇÃO showResults() EM js/ui.js POR ESTA ====== */
+
 function showResults() {
   let correctCount = 0;
   const errorsByDiscipline = {}; 
+  const wrongQuestions = []; // <-- NOVO: Array para guardar questões erradas
 
   // 1. Processar dados para os gráficos
   questions.forEach(q => {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
-    const topic = getErrorTopic(q); 
+    const topic = getErrorTopic(q); // Função do helpers.js
 
     if (user === right) {
       correctCount++;
     } else {
+      // É um erro, registrar para o gráfico de barras
       if (!errorsByDiscipline[topic]) {
         errorsByDiscipline[topic] = 0;
       }
       errorsByDiscipline[topic]++;
+      wrongQuestions.push(q); // <-- NOVO: Adiciona a questão errada ao array
     }
   });
 
@@ -63,15 +68,23 @@ function showResults() {
     <hr style="border:0; border-top: 2px solid #f0f3f7; margin: 25px 0;">
   `;
 
-  // Resumo e Botão de Refazer
+  // Resumo e Botões de Ação
   resultHTML += `
     <div class='result' style="padding-bottom: 20px;">
       <h3>Você acertou ${correctCount} de ${questions.length} questões.</h3>
-      <button id="retryBtn">Refazer</button>
+      
+      <div class="button-row" style="justify-content: center; margin-top: 15px;">
+        <button id="retryBtn">Refazer</button>
+        
+        <button id="printErrorsBtn" class="button-ghost" style="${wrongQuestions.length === 0 ? 'display:none;' : ''}">
+          Imprimir Erradas (${wrongQuestions.length})
+        </button>
+      </div>
     </div>`;
 
-  // Lista de Questões
+  // Lista de Questões (como antes)
   questions.forEach((q, index) => {
+    // ... (O restante deste loop continua o mesmo) ...
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
     resultHTML += `
@@ -99,10 +112,23 @@ function showResults() {
 
   // 4. Renderizar Gráficos e Adicionar Listener
   requestAnimationFrame(() => {
+    
+    // Listener do botão Refazer
     const btn = document.getElementById('retryBtn');
     if (btn) btn.addEventListener('click', () => location.reload());
 
+    // <-- NOVO: Listener para o botão de impressão -->
+    const printBtn = document.getElementById('printErrorsBtn');
+    if (printBtn) {
+      printBtn.addEventListener('click', () => {
+        // Chama a nova função que vamos criar
+        generatePrintPage(wrongQuestions); 
+      });
+    }
+    // <-- FIM DA NOVA SEÇÃO -->
+
     // --- Renderizar Gráfico de Pizza ---
+    // ... (o código dos gráficos permanece o mesmo) ...
     const pizzaCtx = document.getElementById('pizzaChart');
     if (pizzaCtx) {
       new Chart(pizzaCtx, {
@@ -110,7 +136,6 @@ function showResults() {
         data: {
           labels: ['Acertos', 'Erros'],
           datasets: [{
-            label: 'Desempenho',
             data: [correctCount, wrongCount],
             backgroundColor: ['#00b894', '#d63031'], 
             hoverOffset: 4
