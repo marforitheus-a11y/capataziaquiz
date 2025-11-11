@@ -1,0 +1,202 @@
+[
+  {
+    "id": "700036",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Das Infrações e Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 47 da Lei 12.815/2013, que lista as penas aplicáveis às infrações, assinale a alternativa que NÃO apresenta uma penalidade prevista neste artigo.",
+    "alternativas": {
+      "A": "Advertência.",
+      "B": "Multa.",
+      "C": "Prisão simples do responsável pela operação.",
+      "D": "Proibição de ingresso na área do porto por período de 30 (trinta) a 180 (cento e oitenta) dias.",
+      "E": "Cancelamento do credenciamento do operador portuário."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta por ser a exceção. O Art. 47 prevê sanções administrativas (I - advertência; II - multa; III - proibição de ingresso; IV - suspensão; V - cancelamento), mas não penalidades de restrição de liberdade, como a prisão (C), que pertence à esfera criminal. As demais alternativas (A, B, D, E) estão listadas nos incisos I, II, III e V, respectivamente."
+  },
+  {
+    "id": "700037",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Das Infrações e Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do Art. 46, parágrafo único, quem responde pela infração portuária?",
+    "alternativas": {
+      "A": "Exclusivamente o operador portuário credenciado.",
+      "B": "Exclusivamente a administração do porto, por responsabilidade objetiva.",
+      "C": "Qualquer pessoa física ou jurídica que, intervindo na operação, concorra para sua prática ou dela se beneficie, conjunta ou isoladamente.",
+      "D": "Apenas o comandante da embarcação, por ser a autoridade máxima na operação.",
+      "E": "A Antaq, por falha na fiscalização."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C é a correta, pois é a transcrição quase literal do parágrafo único do Art. 46, que define a responsabilidade de forma ampla. As demais alternativas (A, B, D) restringem indevidamente a responsabilidade a um único agente, enquanto a E imputa a responsabilidade ao órgão fiscalizador, o que não consta no artigo."
+  },
+  {
+    "id": "700038",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Das Infrações e Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 50, as importâncias pecuniárias resultantes da aplicação das multas previstas na Lei 12.815/2013 reverterão para qual entidade?",
+    "alternativas": {
+      "A": "A Antaq.",
+      "B": "A Secretaria de Portos da Presidência da República.",
+      "C": "A administração do porto onde ocorreu a infração.",
+      "D": "O Fundo de Marinha Mercante.",
+      "E": "O Tesouro Nacional."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 50 é explícito ao afirmar que os valores 'reverterão para a Antaq', fazendo referência à Lei nº 10.233/2001. As demais opções (B, C, D, E) são incorretas."
+  },
+  {
+    "id": "700039",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Do Programa de Dragagem",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 54 define a 'dragagem por resultado'. Sobre os contratos desta modalidade, assinale a alternativa CORRETA.",
+    "alternativas": {
+      "A": "A duração será de até 5 (cinco) anos, improrrogável.",
+      "B": "A duração será de até 10 (dez) anos, improrrogável.",
+      "C": "A duração será de até 10 (dez) anos, prorrogável por igual período.",
+      "D": "A prestação de garantia pelo contratado é facultativa.",
+      "E": "É vedada a contratação de dragagem por resultado para mais de um porto no mesmo contrato."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, conforme o Art. 54, § 3º: 'A duração dos contratos [...] será de até 10 (dez) anos, improrrogável'. A A está errada no prazo. A C erra ao afirmar ser 'prorrogável'. A D está errada, pois o § 2º torna a garantia 'obrigatória'. A E está errada, pois o § 1º permite 'contemplar mais de um porto'."
+  },
+  {
+    "id": "700040",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Do Programa de Dragagem",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do Art. 55, as embarcações destinadas à dragagem sujeitam-se a um regime jurídico específico. Assinale a alternativa CORRETA.",
+    "alternativas": {
+      "A": "Submetem-se ao disposto na Lei nº 9.432/1997 e às normas da Antaq.",
+      "B": "Submetem-se às normas da autoridade marítima e também ao disposto na Lei nº 9.432/1997.",
+      "C": "Não se submetem às normas da autoridade marítima, apenas à Lei nº 9.432/1997.",
+      "D": "Sujeitam-se às normas específicas de segurança da navegação da autoridade marítima e não se submetem ao disposto na Lei nº 9.432/1997.",
+      "E": "São isentas de quaisquer normas de segurança, por se tratar de atividade de engenharia."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D é a correta. O Art. 55 estabelece essa dupla condição: (1) 'sujeitam-se às normas específicas de segurança da navegação estabelecidas pela autoridade marítima' e (2) 'não se submetem ao disposto na Lei nº 9.432/1997'. As demais alternativas (A, B, C, E) contradizem essa disposição."
+  },
+  {
+    "id": "700041",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Disposições Finais e Transitórias",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 57 trata da prorrogação antecipada de contratos de arrendamento firmados sob a vigência da Lei n° 8.630/1993. A efetivação dessa prorrogação dependerá:",
+    "alternativas": {
+      "A": "Exclusivamente do critério do poder concedente, independentemente de novos investimentos.",
+      "B": "Da aceitação expressa de obrigação de realizar investimentos, segundo plano aprovado pelo poder concedente.",
+      "C": "Apenas de o contrato possuir previsão expressa de prorrogação, sendo a antecipação um direito automático.",
+      "D": "Da realização de nova licitação na modalidade Regime Diferenciado de Contratações (RDC).",
+      "E": "De autorização prévia da Antaq e da autoridade marítima."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 57, § 1º, condiciona a prorrogação antecipada à 'aceitação expressa de obrigação de realizar investimentos'. A A está incorreta, pois ignora a contrapartida de investimento. A C está incorreta, pois a antecipação é uma faculdade ('a critério do poder concedente', caput) e não um direito automático. A D (nova licitação) não é mencionada no Art. 57."
+  },
+  {
+    "id": "700042",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Disposições Finais e Transitórias",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 62, o inadimplemento de tarifas portuárias e outras obrigações financeiras perante a administração do porto e a Antaq, declarado em decisão final, gera uma consequência direta para a empresa inadimplente. Qual é essa consequência?",
+    "alternativas": {
+      "A": "A imediata cassação de todas as autorizações e arrendamentos vigentes.",
+      "B": "A impossibilidade de celebrar ou prorrogar contratos de concessão e arrendamento, bem como obter novas autorizações.",
+      "C": "A obrigação de utilizar a arbitragem para dirimir o litígio, vedada a via judicial.",
+      "D": "A aplicação de multa em dobro, mas sem impedir a participação em novas licitações.",
+      "E": "O impedimento se aplica apenas à empresa inadimplente, não afetando suas controladoras ou controladas."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B é a correta, conforme o caput do Art. 62. A inadimplência 'impossibilita a inadimplente de celebrar ou prorrogar contratos [...] bem como obter novas autorizações'. A A está incorreta (a lei fala em impedir novos atos, não em cassar os vigentes). A C está incorreta (o § 1º diz que 'poderá ser utilizada a arbitragem', sendo facultativa). A E está incorreta (o § 2º estende o impedimento às controladoras, controladas, etc.)."
+  },
+  {
+    "id": "700043",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Do Programa de Dragagem",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 53 institui o Programa Nacional de Dragagem Portuária e Hidroviária II (PNDPH II). Segundo o § 1º deste artigo, o programa abrange diversas atividades, EXCETO:",
+    "alternativas": {
+      "A": "Obras e serviços de engenharia de dragagem para manutenção ou ampliação.",
+      "B": "A construção de embarcações do tipo draga para a frota nacional.",
+      "C": "O serviço de sinalização e balizamento, incluindo a aquisição de sinais náuticos.",
+      "D": "O monitoramento ambiental das áreas dragadas.",
+      "E": "O gerenciamento da execução dos serviços e obras de dragagem."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B é a exceção correta. O § 1º do Art. 53 lista o escopo do programa: dragagem (I), sinalização (II), monitoramento ambiental (III) e gerenciamento (IV). A construção de embarcações (B) não está listada como uma atividade do PNDPH II, embora as dragas sejam definidas no § 2º."
+  },
+  {
+    "id": "700044",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Disposições Finais e Transitórias",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 48 trata da aplicação de penalidades quando, no mesmo processo, são apuradas duas ou mais infrações. Neste caso, as penas serão aplicadas cumulativamente, DESDE QUE:",
+    "alternativas": {
+      "A": "As infrações sejam idênticas.",
+      "B": "O infrator seja reincidente.",
+      "C": "As infrações não sejam idênticas.",
+      "D": "O valor da multa ultrapasse 100 salários mínimos.",
+      "E": "As infrações tenham ocorrido em portos organizados distintos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O caput do Art. 48 estabelece a aplicação cumulativa das penas 'se as infrações não forem idênticas'. A alternativa A (idênticas) define o oposto do requisito legal, tratando-se, na verdade, de infração continuada (Art. 48, § 2º). As demais (B, D, E) são condições não mencionadas no artigo."
+  },
+  {
+    "id": "700045",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Disposições Finais e Transitórias",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 65, foram transferidas à Secretaria de Portos da Presidência da República competências que eram do Ministério dos Transportes e do DNIT, relativas a:",
+    "alternativas": {
+      "A": "Portos fluviais e lacustres, sem nenhuma exceção.",
+      "B": "Portos fluviais e lacustres, exceto as competências relativas a instalações portuárias públicas de pequeno porte.",
+      "C": "Apenas as instalações portuárias públicas de pequeno porte.",
+      "D": "Toda a fiscalização de contratos de arrendamento, que antes era da Antaq.",
+      "E": "A gestão das Companhias Docas, que antes era do Ministério da Fazenda."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 65 é claro ao transferir as competências sobre 'portos fluviais e lacustres', mas estabelece a ressalva: 'exceto as competências relativas a instalações portuárias públicas de pequeno porte'. A alternativa A ignora a exceção. A C diz respeito exatamente à exceção. A D e E estão incorretas."
+  }
+]
