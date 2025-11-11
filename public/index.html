@@ -523,21 +523,39 @@ document.getElementById('clearSelection').addEventListener('click', () => {
  * Tenta extrair um tópico de erro (ex: "Art. 5") do texto da questão.
  * Se não encontrar, usa a disciplina da questão como fallback.
  */
+/* ====== SUBSTITUA SUA FUNÇÃO getErrorTopic POR ESTA ====== */
+
+/**
+ * Tenta extrair um tópico de erro (ex: "Art. 5") do texto da questão.
+ * Se não encontrar, tenta extrair Leis/Decretos.
+ * Se não encontrar, usa a disciplina da questão como fallback.
+ */
 function getErrorTopic(question) {
   // Texto onde vamos procurar (enunciado ou comentário)
   const textToSearch = `${question.enunciado || ''} ${question.comentario || ''}`;
   
-  // Regex para encontrar "Art." ou "Artigo" (case-insensitive) seguido de um número
-  const regex = /(Art\.|Artigo)\s+(\d+)/i;
-  const match = textToSearch.match(regex);
+  // 1. Prioridade 1: Buscar "Art." ou "Artigo"
+  // Regex: (Art.|Artigo) [espaço] [numero]
+  const regexArtigo = /(Art\.|Artigo)\s+(\d+)/i;
+  const matchArtigo = textToSearch.match(regexArtigo);
+  if (matchArtigo) {
+    // Encontrou "Art. 5"
+    // matchArtigo[2] é o grupo que captura apenas os dígitos (\d+)
+    return `Art. ${matchArtigo[2]}`;
+  }
 
-  if (match) {
-    // Se encontrar, retorna "Art. [numero]" (ex: "Art. 5")
-    // match[2] é o grupo que captura apenas os dígitos (\d+)
-    return `Art. ${match[2]}`;
+  // 2. Prioridade 2: Buscar "Lei X" ou "Decreto X" (apenas se não houver artigo)
+  // Regex: (Lei|Decreto) [espaço] [opcional "nº"] [espaço] [numero de 3 a 6 dígitos]
+  const regexLeiDecreto = /(Lei|Decreto)\s+(?:Nº?\s*)?(\d{3,6}\b)/i;
+  const matchLeiDecreto = textToSearch.match(regexLeiDecreto);
+  if (matchLeiDecreto) {
+    // Encontrou "Lei 12345" ou "Decreto 8033"
+    // matchLeiDecreto[1] é "Lei" ou "Decreto"
+    // matchLeiDecreto[2] é o número
+    return `${matchLeiDecreto[1]} ${matchLeiDecreto[2]}`;
   }
   
-  // Se não encontrar, retorna a disciplina ou "Outros"
+  // 3. Prioridade 3: Fallback para a disciplina
   return question.disciplina || 'Outros';
 }
 /* ====== quiz core (adaptado do seu código) ====== */
@@ -787,6 +805,7 @@ loadPDFs();
 </script>
 </body>
 </html>
+
 
 
 
