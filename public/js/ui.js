@@ -187,6 +187,10 @@ function clearSelectionUI() {
  * Gera uma nova página com as questões erradas e abre a janela de impressão.
  * @param {Array} questionsToPrint - Um array de objetos de questão (apenas as erradas).
  */
+
+}
+@param {Array} questionsToPrint - Um array de objetos de questão (apenas as erradas).
+ */
 function generatePrintPage(questionsToPrint) {
   let printHtml = `
     <!DOCTYPE html>
@@ -282,5 +286,4 @@ function generatePrintPage(questionsToPrint) {
   setTimeout(() => {
     printWindow.print();
   }, 250);
-}
 }
