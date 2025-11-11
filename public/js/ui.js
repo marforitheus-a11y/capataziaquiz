@@ -181,4 +181,106 @@ function clearSelectionUI() {
   document.getElementById('selectedSummary').textContent = 'Nenhuma selecionada';
   // remover destaque
   document.querySelectorAll('.subitem.selected').forEach(el => el.classList.remove('selected'));
+  /* ====== ADICIONE ESTA NOVA FUNÇÃO AO FINAL DE js/ui.js ====== */
+
+/**
+ * Gera uma nova página com as questões erradas e abre a janela de impressão.
+ * @param {Array} questionsToPrint - Um array de objetos de questão (apenas as erradas).
+ */
+function generatePrintPage(questionsToPrint) {
+  let printHtml = `
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <title>Revisão de Questões</title>
+      <style>
+        body {
+          font-family: "Poppins", sans-serif;
+          line-height: 1.6;
+          margin: 40px;
+          color: #2d3436;
+        }
+        .flashcard {
+          page-break-inside: avoid; /* Evita que o card quebre entre páginas */
+          border: 1px solid #ccc;
+          border-radius: 12px;
+          padding: 16px 20px;
+          margin-bottom: 20px;
+          background: #fdfdfd;
+        }
+        .question {
+          font-weight: 600;
+          font-size: 1.1rem;
+          margin-bottom: 14px;
+        }
+        .answer {
+          background: #f0f7ff;
+          border-left: 4px solid #0984e3; /* Cor primária */
+          padding: 12px 16px;
+          border-radius: 8px;
+          font-size: 1rem;
+        }
+        .answer strong {
+          color: #00b894; /* Cor correta */
+          font-weight: 600;
+        }
+        .comment {
+          font-style: italic;
+          font-size: 0.95rem;
+          color: #555;
+          margin-top: 12px;
+          padding-top: 12px;
+          border-top: 1px dashed #eee;
+        }
+        h1 {
+          color: #0984e3;
+        }
+        @media print {
+          body { margin: 25px; }
+          h1 { font-size: 1.5rem; }
+          .flashcard { border: 1px solid #aaa; box-shadow: none; }
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Revisão de Questões Erradas</h1>
+      <p>Total de ${questionsToPrint.length} questões para revisar.</p>
+      <hr>
+    `;
+
+  // Loop nas questões e cria um "card" para cada
+  questionsToPrint.forEach((q, index) => {
+    const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
+    const correctAnswerKey = q.resposta_correta;
+    const correctAnswerText = (q.alternativas && q.alternativas[correctAnswerKey]) ? q.alternativas[correctAnswerKey] : 'N/A';
+    const formattedComentario = (q.comentario || '').replace(/\n/g, '<br>');
+
+    printHtml += `
+      <div class="flashcard">
+        <div class="question">${index + 1}. ${formattedEnunciado}</div>
+        <div class="answer">
+          <strong>Resposta Correta: ${correctAnswerKey})</strong> ${correctAnswerText}
+        </div>
+        ${q.comentario ? `<div class="comment"><strong>Comentário:</strong> ${formattedComentario}</div>` : ''}
+      </div>
+    `;
+  });
+
+  printHtml += `
+    </body>
+    </html>
+  `;
+
+  // Abrir em uma nova janela e chamar a impressão
+  const printWindow = window.open('', '_blank');
+  printWindow.document.open();
+  printWindow.document.write(printHtml);
+  printWindow.document.close();
+  
+  // Chamar a impressão (um pequeno delay ajuda a garantir que o CSS carregou)
+  setTimeout(() => {
+    printWindow.print();
+  }, 250);
+}
 }
