@@ -1,0 +1,302 @@
+[
+  {
+    "id": "700046",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme os Art. 2º e 3º do Decreto 8.033/2013, no processo de transferência de controle societário de um contrato de arrendamento, as competências do Poder Concedente (Secretaria de Portos) e da Antaq são, respectivamente:",
+    "alternativas": {
+      "A": "Aprovar; e analisar a proposta de investimentos.",
+      "B": "Analisar; e aprovar a análise.",
+      "C": "Aprovar, após prévia análise da Antaq; e analisar a transferência.",
+      "D": "Analisar e aprovar; e arbitrar conflitos decorrentes da transferência.",
+      "E": "Aprovar; e aprovar, em grau de recurso."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 2º, IV, define como competência do Poder Concedente 'aprovar a transferência [...] previamente analisados pela Antaq'. O Art. 3º, I, define como competência da Antaq 'analisar a transferência'. As demais alternativas invertem ou confundem essas duas atribuições (analisar vs. aprovar)."
+  },
+  {
+    "id": "700047",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Decreto 8.033/2013 distribui a competência para arbitrar conflitos. Compete à Administração do Porto (Art. 4º) 'decidir sobre conflitos que envolvam agentes que atuam no porto organizado', enquanto compete à Antaq (Art. 3º):",
+    "alternativas": {
+      "A": "Arbitrar, em grau de recurso, os conflitos entre agentes.",
+      "B": "Decidir todos os conflitos em instância única.",
+      "C": "Abster-se de conflitos entre agentes, que são de competência exclusiva da Administração do Porto.",
+      "D": "Apurar práticas abusivas, mas não arbitrar conflitos entre agentes.",
+      "E": "Decidir em primeira instância, cabendo recurso à Administração do Porto."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 4º, II, estabelece a primeira instância (Adm. do Porto), e o Art. 3º, IV, estabelece a competência da Antaq para 'arbitrar, em grau de recurso, os conflitos entre agentes'. A alternativa E inverte a hierarquia. As demais estão incorretas."
+  },
+  {
+    "id": "700048",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação (EVTEA)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 6º, § 1º, os estudos prévios de viabilidade (EVTEA) poderão ser realizados em versão simplificada, conforme disciplinado pela Antaq, EXCETO quando:",
+    "alternativas": {
+      "A": "Não haja alteração substancial da destinação da área.",
+      "B": "Não haja alteração substancial das atividades desempenhadas.",
+      "C": "Houver alteração substancial da destinação da área.",
+      "D": "O objeto e as condições da concessão permitirem.",
+      "E": "O prazo do contrato for inferior a 10 anos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C é a correta (a exceção). O Art. 6º, § 1º, permite a simplificação nos casos dos incisos I (sem alteração substancial de destinação), II (sem alteração substancial de atividades) e III. Se houver alteração substancial (Alternativa C), o EVTEA não poderá ser simplificado. A alternativa E não é um critério mencionado no artigo."
+  },
+  {
+    "id": "700049",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação (EVTEA)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 6º, § 3º, prevê que o poder concedente pode autorizar qualquer interessado a elaborar os EVTEA. Caso esses estudos sejam utilizados para a licitação, o decreto assegura ao interessado:",
+    "alternativas": {
+      "A": "O direito de preferência na contratação.",
+      "B": "O ressarcimento dos dispêndios correspondentes.",
+      "C": "Um bônus de 10% na pontuação de sua proposta.",
+      "D": "A dispensa da apresentação de garantia de proposta.",
+      "E": "O ressarcimento, apenas se ele vencer a licitação."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 6º, § 3º, estabelece que, se os estudos forem utilizados, o poder concedente 'deverá assegurar o ressarcimento dos dispêndios correspondentes'. A lei não prevê direito de preferência (A), bônus (C) ou dispensa de garantia (D) por esse motivo. O ressarcimento é devido pelo uso do estudo, não pela vitória (E)."
+  },
+  {
+    "id": "700050",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação (Critérios)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 9º (com redação dada pelo Decreto 8.464/2015) lista os critérios para julgamento nas licitações de concessão e arrendamento. Assinale a alternativa que NÃO é um critério previsto neste artigo.",
+    "alternativas": {
+      "A": "Maior capacidade de movimentação.",
+      "B": "Menor tarifa.",
+      "C": "Maior valor de investimento.",
+      "D": "Maior valor de outorga.",
+      "E": "Menor prazo de vigência do contrato."
+    },
+    "resposta_correta": "E",
+    "comentario": "A alternativa E é a correta (a exceção). O Art. 9º lista sete critérios, incluindo 'Maior capacidade de movimentação' (I), 'Menor tarifa' (II), 'Maior valor de investimento' (IV) e 'Maior valor de outorga' (VII). 'Menor prazo de vigência' (E) não é um critério de julgamento listado."
+  },
+  {
+    "id": "700051",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação (Habilitação)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 10, parágrafo único, para a qualificação técnica nas licitações de arrendamento, o edital poderá estabelecer que o licitante assuma o compromisso de:",
+    "alternativas": {
+      "A": "Obter sua pré-qualificação como operador portuário ou contratar um operador pré-qualificado.",
+      "B": "Comprovar experiência prévia de, no mínimo, 10 anos em operação portuária.",
+      "C": "Ser obrigatoriamente um operador portuário já pré-qualificado no momento da publicação do edital.",
+      "D": "Apresentar um EVTEA próprio, independentemente do estudo oficial.",
+      "E": "Depositar uma garantia de proposta equivalente a 50% do investimento."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 10, parágrafo único, incisos I e II, flexibiliza a qualificação técnica, permitindo ao licitante se comprometer a 'obter sua pré-qualificação' (I) ou 'contratar um operador portuário pré-qualificado' (II). A C está errada, pois contradiz o inciso I (o compromisso pode ser futuro). As demais são exigências não previstas neste artigo."
+  },
+  {
+    "id": "700052",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação (Prazos)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre os prazos do procedimento licitatório definidos no Art. 11, assinale a alternativa CORRETA.",
+    "alternativas": {
+      "A": "O prazo mínimo para apresentação de propostas é de 45 dias.",
+      "B": "A audiência pública deve ser convocada com antecedência mínima de 10 dias úteis de sua realização.",
+      "C": "A audiência pública deve ocorrer com antecedência mínima de 10 dias úteis da data de publicação do edital.",
+      "D": "O prazo mínimo para apresentação de propostas é de 30 dias úteis.",
+      "E": "Modificações no edital não precisam ser divulgadas, se não alterarem o valor."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, conforme o Art. 11, § 3º ('convocar, com antecedência mínima de dez dias úteis'). A A está errada (Art. 11, caput, diz 30 dias, não 45). A C está errada (o § 3º diz que a audiência deve *ocorrer* com antecedência de 15 dias úteis do edital). A D está errada (o caput fala em 30 dias, não 30 dias úteis). A E está errada (o § 2º exige divulgação, exceto se não comprometer a formulação das propostas)."
+  },
+  {
+    "id": "700053",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 14 estabelece que o procedimento licitatório terá fase recursal única. Isto significa que:",
+    "alternativas": {
+      "A": "Não há direito de recurso neste procedimento.",
+      "B": "O recurso só pode ser apresentado contra o resultado final, após a adjudicação.",
+      "C": "Os recursos referentes ao julgamento das propostas e à habilitação do vencedor são analisados em um único momento.",
+      "D": "Há uma fase recursal para propostas e outra, separada, para habilitação.",
+      "E": "O recurso é julgado em instância única pela comissão de licitação, sem recurso à Antaq."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 14, § 1º, define que a fase recursal única analisará 'os recursos referentes ao julgamento das propostas ou lances e à habilitação do vencedor'. A D contradiz a 'fase única'. A E contradiz o Art. 15, que direciona o recurso à Diretoria da Antaq."
+  },
+  {
+    "id": "700054",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Exauridos os recursos, o Art. 16 determina que o processo é encaminhado ao Poder Concedente. Qual das seguintes ações NÃO é uma competência do Poder Concedente nesta fase?",
+    "alternativas": {
+      "A": "Anular o procedimento por vício insanável.",
+      "B": "Revogar o procedimento por motivo de conveniência e oportunidade.",
+      "C": "Adjudicar o objeto.",
+      "D": "Determinar o retorno dos autos para saneamento de irregularidades supríveis.",
+      "E": "Reconsiderar a decisão da Antaq sobre o recurso e julgar o mérito recursal."
+    },
+    "resposta_correta": "E",
+    "comentario": "A alternativa E é a exceção correta. O Art. 16 lista as competências do Poder Concedente: I (saneamento), II (anular), III (revogar) e IV (adjudicar). Rejulgar o recurso (E), cuja decisão foi proferida pela Antaq (Art. 15), não é uma das opções listadas para o Poder Concedente nesta etapa."
+  },
+  {
+    "id": "700055",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 17, se o licitante vencedor convocado não assinar o contrato no prazo, o Poder Concedente poderá determinar à Antaq que:",
+    "alternativas": {
+      "A": "Inicie obrigatoriamente um novo procedimento licitatório.",
+      "B": "Convoque os remanescentes, na ordem de classificação, para celebrar o contrato nas condições ofertadas pelo vencedor.",
+      "C": "Convoque o segundo colocado para negociar novas condições, mais vantajosas que as do vencedor.",
+      "D": "Revogue a licitação, sendo vedado convocar os remanescentes.",
+      "E": "Prorrogue automaticamente o prazo do vencedor por mais 30 dias."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, conforme o Art. 17, § 1º, inciso II. Uma das opções é 'convocar os licitantes remanescentes, na ordem de classificação, para a celebração do contrato nas condições ofertadas pelo licitante vencedor'. A A está errada (não é obrigatório). A D está errada (revogar é opção, mas convocar também é). A C está errada (as condições devem ser as do vencedor, conforme o inciso II; a renegociação só ocorre nos termos do § 2º, se ninguém aceitar)."
+  },
+  {
+    "id": "700056",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Contratos",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 19 define o prazo dos contratos de concessão e de arrendamento como sendo de:",
+    "alternativas": {
+      "A": "Até 35 anos, prorrogável uma única vez, por igual período.",
+      "B": "Até 25 anos, prorrogável uma única vez, por período não superior ao originalmente contratado.",
+      "C": "Até 25 anos, improrrogável.",
+      "D": "Até 10 anos, prorrogável por até 70 anos.",
+      "E": "Prazo indeterminado, mediante investimentos contínuos."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, pois é a transcrição literal do Art. 19 do decreto fornecido ('prazo de até vinte e cinco anos, prorrogável uma única vez, por período não superior ao originalmente contratado'). As demais alternativas divergem do texto legal apresentado."
+  },
+  {
+    "id": "700057",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Contratos",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 20 define o objeto do contrato de concessão de porto organizado. Qual das opções abaixo é uma possibilidade prevista?",
+    "alternativas": {
+      "A": "Apenas a exploração direta das instalações, sem as funções de administração.",
+      "B": "O desempenho das funções da administração do porto e a exploração indireta das instalações, vedada a sua exploração direta.",
+      "C": "Apenas a exploração indireta das instalações, sendo as funções de administração exercidas pela Antaq.",
+      "D": "O desempenho total das funções de administração, sendo vedada qualquer exploração, direta ou indireta, das instalações.",
+      "E": "A exploração direta e indireta das instalações, sendo a administração exercida pelo Poder Concedente."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, conforme o Art. 20, inciso II. O inciso I permite (Adm + direta/indireta) e o inciso III permite (Adm total/parcial, vedada exploração). As alternativas A, C, D e E apresentam arranjos não previstos no Art. 20."
+  },
+  {
+    "id": "700058",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Contratos",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre os contratos celebrados entre a concessionária e terceiros (Art. 21), é CORRETO afirmar que:",
+    "alternativas": {
+      "A": "São regidos por normas de direito público e criam relação jurídica entre o terceiro e o poder concedente.",
+      "B": "São regidos por normas de direito privado, mas sua vigência pode ultrapassar o prazo da concessão.",
+      "C": "São regidos por normas de direito privado e escapam da atividade fiscalizatória da Antaq.",
+      "D": "São regidos por normas de direito privado, não criam relação jurídica entre o terceiro e o poder concedente, e a Antaq mantém a fiscalização.",
+      "E": "Dependem de licitação (RDC) para serem celebrados, conforme Art. 5º."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Art. 21, caput, afirma que são regidos por 'direito privado', 'não se estabelecendo qualquer relação jurídica entre os terceiros e o poder concedente', 'sem prejuízo das atividades regulatória e fiscalizatória da Antaq'. A A está errada (direito privado). A B está errada (Art. 21, § 2º, limita a vigência). A C está errada (Antaq fiscaliza)."
+  },
+  {
+    "id": "700059",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Contratos",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 24 (com redação do Dec. 8.464/2015) permite a expansão da área do arrendamento (aditivo) sem nova licitação, mas impõe uma condição estrita. Qual?",
+    "alternativas": {
+      "A": "A expansão deve ser de, no máximo, 10% da área original.",
+      "B": "O arrendatário deve pagar um novo valor de outorga, calculado pela Antaq.",
+      "C": "Deve ser comprovada a inviabilidade técnica, operacional ou econômica de realização de licitação de novo arrendamento.",
+      "D": "O arrendatário deve comprovar que a área adjacente está ociosa há mais de 5 anos.",
+      "E": "A expansão deve ocorrer nos primeiros 5 anos do contrato original."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 24 é taxativo ao condicionar a expansão (que é uma exceção à regra de licitação) à 'comprovada a inviabilidade técnica, operacional ou econômica de realização de licitação de novo arrendamento'. As demais alternativas (A, B, D, E) são condições não previstas neste artigo."
+  },
+  {
+    "id": "700060",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 18, o prazo para apresentação de impugnações ao edital e pedidos de esclarecimento é de:",
+    "alternativas": {
+      "A": "Até 5 dias úteis contados da publicação do edital.",
+      "B": "Até 10 dias úteis contados da publicação do edital.",
+      "C": "Com antecedência mínima de 5 dias úteis da data de abertura das propostas.",
+      "D": "Com antecedência mínima de 15 dias úteis da data de abertura das propostas.",
+      "E": "A qualquer tempo, desde que antes da sessão de abertura."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta, conforme o Art. 18, inciso I: 'pedidos de esclarecimento e impugnações ao edital, com antecedência mínima de cinco dias úteis da data de abertura das propostas'. As demais alternativas apresentam prazos ou marcos temporais incorretos."
+  }
+]
