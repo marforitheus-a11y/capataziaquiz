@@ -1,0 +1,162 @@
+[
+  {
+    "id": "5000010",
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Uso Temporário e Licitações",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Segundo o Art. 5º-D, o contrato de uso temporário de áreas e instalações portuárias para cargas com mercado não consolidado possui regras específicas. Assinale a alternativa correta sobre este contrato.",
+    "alternativas": {
+      "A": "Terá o prazo de até 24 meses, prorrogável por igual período, mediante autorização da ANTAQ.",
+      "B": "Os investimentos vinculados ao contrato, realizados pelo interessado, serão indenizados ao final do prazo de 48 meses.",
+      "C": "Sua pactuação depende de licitação prévia, na modalidade leilão, conduzida pela administração do porto.",
+      "D": "Terá o prazo improrrogável de até 48 meses, e os investimentos ocorrerão exclusivamente a expensas do interessado, sem direito a indenização.",
+      "E": "Só pode ser pactuado após 24 meses de exploração, se verificado que o mercado da carga se consolidou."
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": "5000011",
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Uso Temporário e Licitações",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Na hipótese de haver mais de um interessado no uso temporário (Art. 5º-D) e não havendo disponibilidade física para alocar todos, a administração do porto organizado deverá:",
+    "alternativas": {
+      "A": "Realizar licitação na modalidade concorrência, conforme a Lei de Licitações.",
+      "B": "Dar preferência ao interessado que protocolou o pedido primeiro, em respeito ao princípio da anterioridade.",
+      "C": "Promover processo seletivo simplificado, assegurando isonomia e impessoalidade.",
+      "D": "Encaminhar o caso à ANTAQ para que ela decida qual projeto melhor atende ao interesse público.",
+      "E": "Dividir a área disponível proporcionalmente entre os interessados, independentemente do projeto."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": "5000012",
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Uso Temporário e Licitações",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Conforme o Art. 5º-D, § 4º, a administração do porto organizado adotará as medidas necessárias ao encaminhamento de proposta de licitação da área e das instalações existentes, após:",
+    "alternativas": {
+      "A": "O término do prazo improrrogável de 48 meses do contrato de uso temporário.",
+      "B": "24 meses de eficácia do uso temporário, ou em prazo inferior por solicitação do contratado, e verificada a viabilidade.",
+      "C": "Determinação expressa da ANTAQ, independentemente do prazo decorrido.",
+      "D": "Comprovação de que o mercado da carga tornou-se consolidado, a qualquer tempo.",
+      "E": "12 meses de contrato, desde que o interessado renuncie ao direito de indenização pelos investimentos."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": "5000013",
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Uso Temporário e Licitações",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "De acordo com o Art. 6º, nas licitações dos contratos de concessão e arrendamento, NÃO é considerado um critério de julgamento expressamente listado na lei:",
+    "alternativas": {
+      "A": "A maior capacidade de movimentação.",
+      "B": "A menor tarifa.",
+      "C": "O menor tempo de movimentação de carga.",
+      "D": "O maior valor de outorga ou bônus pela assinatura.",
+      "E": "A combinação entre menor tarifa e maior capacidade de movimentação."
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": "5000014",
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Uso Temporário e Licitações",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Sobre a competência para a realização dos procedimentos licitatórios de concessão e arrendamento (Art. 6º), assinale a alternativa INCORRETA.",
+    "alternativas": {
+      "A": "Compete à ANTAQ, com base nas diretrizes do poder concedente, realizar os procedimentos licitatórios.",
+      "B": "Os editais das licitações serão elaborados pela ANTAQ, observadas as diretrizes do poder concedente.",
+      "C": "As licitações poderão ser realizadas na modalidade leilão.",
+      "D": "O poder concedente poderá transferir as competências de elaboração do edital e realização da licitação à Administração do Porto.",
+      "E": "A ANTAQ é a única competente para elaborar os editais, sendo vedada a transferência dessa competência específica."
+    },
+    "resposta_correta": "E"
+  },
+  {
+    "id": "5000015",
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Uso Temporário e Licitações",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 6º, § 5º, prevê que o poder concedente poderá determinar a transferência de competências licitatórias à Administração do Porto. Tal transferência:",
+    "alternativas": {
+      "A": "É restrita aos portos delegados aos Estados ou Municípios.",
+      "B": "Pode ser feita tanto para portos delegados quanto para não delegados.",
+      "C": "Refere-se apenas à realização do procedimento, mas não à elaboração do edital, que é privativa da ANTAQ.",
+      "D": "Só pode ocorrer se a ANTAQ concordar expressamente com a transferência.",
+      "E": "É automática para todos os portos organizados que possuem Conselho de Autoridade Portuária."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": "5000016",
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Uso Temporário e Licitações",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "A expansão de área arrendada para área contígua, conforme o Art. 6º, § 6º:",
+    "alternativas": {
+      "A": "Depende de autorização da ANTAQ, desde que a medida traga eficiência na operação.",
+      "B": "É vedada, exigindo-se nova licitação para a área contígua.",
+      "C": "Aplica-se a contratos de concessão, mediante requerimento do concessionário.",
+      "D": "Pode ser autorizada pelo poder concedente, mediante requerimento do arrendatário, se trouxer comprovada eficiência.",
+      "E": "Pode ser autorizada pela Administração do Porto, desde que a área contígua esteja ociosa há mais de 24 meses."
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": "5000017",
+    "disciplina": "Legislação Federal",
+    "assunto": "Decreto nº 8.033/2013 - Uso Temporário e Licitações",
+    "banca": "Simulado Concurso Portuário",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Nos termos do Art. 7º, a utilização em caráter excepcional de instalações portuárias arrendadas ou exploradas pela concessionária:",
+    "alternativas": {
+      "A": "É vedada, pois viola o contrato de arrendamento ou concessão.",
+      "B": "Pode ser disciplinada pela ANTAQ, e o titular do contrato cederá o uso sem remuneração, por ser de interesse público.",
+      "C": "Pode ser disciplinada pelo poder concedente, assegurada a remuneração adequada ao titular do contrato.",
+      "D": "Pode ser disciplinada pela ANTAQ, por qualquer interessado, assegurada a remuneração adequada ao titular do contrato.",
+      "E": "Pode ser disciplinada pela Administração do Porto, desde que o titular do contrato concorde com os termos."
+    },
+    "resposta_correta": "D"
+  }
+]

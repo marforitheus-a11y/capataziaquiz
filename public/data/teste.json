@@ -1,0 +1,202 @@
+[
+  {
+    "id": 5000001,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "De acordo com o Art. 1º da Lei nº 12.815/2013, a exploração indireta dos portos e instalações portuárias pela União ocorrerá da seguinte forma:",
+    "alternativas": {
+      "A": "Mediante concessão e arrendamento de bem público, tanto para portos organizados quanto para instalações fora da área do porto organizado.",
+      "B": "Mediante autorização, tanto para portos organizados quanto para instalações fora da área do porto organizado.",
+      "C": "Mediante concessão e arrendamento de bem público para o porto organizado e suas instalações, e mediante autorização para as instalações portuárias localizadas fora da área do porto organizado.",
+      "D": "Mediante autorização para o porto organizado e suas instalações, e mediante concessão e arrendamento de bem público para as instalações portuárias localizadas fora da área do porto organizado.",
+      "E": "Exclusivamente mediante concessão, não sendo previstos os regimes de arrendamento ou autorização."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000002,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Conforme a Lei nº 12.815/2013, Art. 2º, Inciso I, define-se \"porto organizado\" como:",
+    "alternativas": {
+      "A": "A instalação portuária explorada mediante autorização e localizada fora da área do porto organizado, utilizada para movimentação de cargas.",
+      "B": "O bem público construído e aparelhado para atender a necessidades de navegação, movimentação de passageiros ou movimentação e armazenagem de mercadorias, e cujo tráfego e operações portuárias estejam sob jurisdição de autoridade portuária.",
+      "C": "A cessão onerosa de área e infraestrutura públicas localizadas dentro do porto organizado, para exploração por prazo determinado.",
+      "D": "A instalação localizada dentro ou fora da área do porto organizado, utilizada exclusivamente para o transbordo de mercadorias.",
+      "E": "A área delimitada por ato do Poder Executivo que compreende as instalações portuárias e a infraestrutura de proteção e de acesso ao porto."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000003,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "A Lei nº 12.815/2013 define diferentes tipos de instalações portuárias localizadas fora da área do porto organizado. Assinale a alternativa que descreve corretamente a \"estação de transbordo de cargas\":",
+    "alternativas": {
+      "A": "Instalação portuária explorada mediante autorização, utilizada em embarque, desembarque e trânsito de passageiros e tripulantes de turismo.",
+      "B": "Instalação portuária explorada mediante autorização, localizada fora da área do porto organizado e utilizada exclusivamente para operação de transbordo de mercadorias em embarcações de navegação interior ou cabotagem.",
+      "C": "Instalação portuária explorada mediante autorização, localizada fora do porto organizado e utilizada em movimentação de passageiros ou mercadorias em embarcações de navegação interior.",
+      "D": "Instalação portuária explorada mediante autorização e localizada fora da área do porto organizado, sem restrição ao tipo de operação.",
+      "E": "Instalação portuária explorada mediante arrendamento, utilizada para movimentação ou armazenagem de mercadorias destinadas a transporte aquaviário."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000004,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "No âmbito da Lei nº 12.815/2013, os regimes de exploração de portos e instalações portuárias incluem concessão, arrendamento e autorização. Sobre esses regimes, é correto afirmar que:",
+    "alternativas": {
+      "A": "A autorização é a cessão onerosa de área e infraestrutura públicas localizadas *dentro* do porto organizado.",
+      "B": "O arrendamento é a outorga de direito à exploração de instalação portuária localizada *fora* da área do porto organizado.",
+      "C": "A concessão é a cessão onerosa do porto organizado, com vistas à sua administração e exploração de infraestrutura por prazo determinado.",
+      "D": "A autorização é a transferência da administração do porto organizado para Municípios ou Estados.",
+      "E": "O arrendamento se aplica a instalações fora da área do porto, enquanto a autorização se aplica a áreas dentro do porto organizado."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000005,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 2º da Lei nº 12.815/2013 traz definições importantes. Qual das seguintes alternativas apresenta a definição correta de \"instalação portuária\"?",
+    "alternativas": {
+      "A": "É sinônimo de \"porto organizado\", referindo-se ao bem público sob jurisdição da autoridade portuária.",
+      "B": "Instalação localizada dentro ou fora da área do porto organizado e utilizada em movimentação de passageiros, ou em movimentação ou armazenagem de mercadorias, destinadas ou provenientes de transporte aquaviário.",
+      "C": "Pessoa jurídica pré-qualificada para exercer as atividades de movimentação de passageiros ou mercadorias dentro da área do porto organizado.",
+      "D": "A área delimitada pelo Poder Executivo que compreende a infraestrutura de proteção e acesso ao porto.",
+      "E": "Exclusivamente a instalação localizada fora da área do porto organizado, explorada mediante autorização, como o terminal de uso privado."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000006,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Segundo a Lei nº 12.815/2013, o \"operador portuário\" é definido como:",
+    "alternativas": {
+      "A": "A pessoa jurídica que detém a concessão para administrar e explorar a infraestrutura do porto organizado.",
+      "B": "A entidade responsável pela transferência, mediante convênio, da administração do porto para Municípios ou Estados.",
+      "C": "A pessoa jurídica que recebe a autorização para explorar uma instalação portuária localizada fora da área do porto organizado.",
+      "D": "A pessoa jurídica pré-qualificada para exercer as atividades de movimentação de passageiros ou movimentação e armazenagem de mercadorias, destinadas ou provenientes de transporte aquaviário, dentro da área do porto organizado.",
+      "E": "A autoridade pública responsável pela jurisdição do tráfego e das operações no porto organizado."
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": 5000007,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 1º, § 3º da Lei nº 12.815/2013 estabelece uma condição para a outorga de concessões, arrendamentos e autorizações. Assinale a alternativa que reflete essa condição.",
+    "alternativas": {
+      "A": "A outorga será feita preferencialmente a empresas públicas ou sociedades de economia mista.",
+      "B": "A outorga será feita a pessoa jurídica que demonstre capacidade para seu desempenho, por sua conta e risco.",
+      "C": "A outorga depende de aprovação prévia do Congresso Nacional para cada caso.",
+      "D": "A outorga será feita exclusivamente a pessoa jurídica de direito público interno.",
+      "E": "A outorga será feita a pessoa física ou jurídica, desde que apresente garantia de modicidade tarifária."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000008,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Com base nas definições da Lei nº 12.815/2013, qual a diferença fundamental entre um \"terminal de uso privado\" e um \"operador portuário\"?",
+    "alternativas": {
+      "A": "Não há diferença, ambos são sinônimos para a exploração de instalações portuárias.",
+      "B": "O terminal de uso privado opera *dentro* da área do porto organizado, e o operador portuário atua *fora* dela.",
+      "C": "O terminal de uso privado é uma instalação portuária explorada mediante autorização *fora* da área do porto, enquanto o operador portuário é uma pessoa jurídica pré-qualificada para atuar *dentro* da área do porto organizado.",
+      "D": "O terminal de uso privado destina-se exclusivamente a passageiros, e o operador portuário, exclusivamente a cargas.",
+      "E": "O terminal de uso privado é explorado mediante arrendamento, e o operador portuário, mediante concessão."
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 5000009,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 3º da Lei nº 12.815/2013 estabelece as diretrizes para a exploração dos portos e instalações portuárias. Assinale a alternativa que NÃO corresponde a uma dessas diretrizes:",
+    "alternativas": {
+      "A": "Expansão, modernização e otimização da infraestrutura e da superestrutura.",
+      "B": "Estímulo à modernização e ao aprimoramento da gestão, à valorização e qualificação da mão de obra.",
+      "C": "Garantia da modicidade e da publicidade das tarifas e preços, da qualidade da atividade e da efetividade dos direitos dos usuários.",
+      "D": "Promoção da segurança da navegação na entrada e na saída das embarcações dos portos.",
+      "E": "Centralização da administração portuária exclusivamente na esfera federal, vedada a delegação a Estados ou Municípios."
+    },
+    "resposta_correta": "E"
+  },
+  {
+    "id": 5000010,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "A Lei nº 12.815/2013 diferencia \"arrendamento\" de \"autorização\". A distinção principal é que o arrendamento é a cessão onerosa de área e infraestrutura públicas localizadas __________, enquanto a autorização é a outorga de direito à exploração de instalação portuária localizada __________.",
+    "alternativas": {
+      "A": "fora da área do porto organizado / dentro do porto organizado",
+      "B": "dentro do porto organizado / fora da área do porto organizado",
+      "C": "dentro do porto organizado / também dentro do porto organizado, mas sem licitação",
+      "D": "fora da área do porto organizado / também fora da área do porto organizado, mas para pequeno porte",
+      "E": "em portos públicos / em portos privados"
+    },
+    "resposta_correta": "B"
+  }
+]
