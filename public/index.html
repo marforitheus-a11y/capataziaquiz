@@ -517,6 +517,29 @@ document.getElementById('clearSelection').addEventListener('click', () => {
   clearSelectionUI();
 });
 
+  /* ====== ADICIONE ESTA NOVA FUNÇÃO ====== */
+
+/**
+ * Tenta extrair um tópico de erro (ex: "Art. 5") do texto da questão.
+ * Se não encontrar, usa a disciplina da questão como fallback.
+ */
+function getErrorTopic(question) {
+  // Texto onde vamos procurar (enunciado ou comentário)
+  const textToSearch = `${question.enunciado || ''} ${question.comentario || ''}`;
+  
+  // Regex para encontrar "Art." ou "Artigo" (case-insensitive) seguido de um número
+  const regex = /(Art\.|Artigo)\s+(\d+)/i;
+  const match = textToSearch.match(regex);
+
+  if (match) {
+    // Se encontrar, retorna "Art. [numero]" (ex: "Art. 5")
+    // match[2] é o grupo que captura apenas os dígitos (\d+)
+    return `Art. ${match[2]}`;
+  }
+  
+  // Se não encontrar, retorna a disciplina ou "Outros"
+  return question.disciplina || 'Outros';
+}
 /* ====== quiz core (adaptado do seu código) ====== */
 function startQuiz(data, count) {
   const shuffled = data.slice().sort(() => 0.5 - Math.random());
@@ -595,17 +618,19 @@ function showResults() {
   questions.forEach(q => {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
-    // Usar 'disciplina' como o "artigo"
-    const discipline = q.disciplina || 'Outros'; 
+    
+    // ===== ALTERAÇÃO 1: Usar a nova função para agrupar erros =====
+    const topic = getErrorTopic(q); 
+    // =============================================================
 
     if (user === right) {
       correctCount++;
     } else {
       // É um erro, registrar para o gráfico de barras
-      if (!errorsByDiscipline[discipline]) {
-        errorsByDiscipline[discipline] = 0;
+      if (!errorsByDiscipline[topic]) {
+        errorsByDiscipline[topic] = 0;
       }
-      errorsByDiscipline[discipline]++;
+      errorsByDiscipline[topic]++;
     }
   });
 
@@ -614,20 +639,16 @@ function showResults() {
   // 2. Construir o HTML dos Resultados
   let resultHTML = `
     <h2>Resultado Final</h2>
-
     <div class="charts-container" style="display: flex; gap: 20px; margin: 24px 0; flex-wrap: wrap; justify-content: center;">
-      
       <div class="chart-box" style="flex: 1; min-width: 250px; max-width: 350px; background: #fbfdff; padding: 15px; border-radius: 10px; border: 1px solid #eef3fb;">
         <h3 style="margin-top:0; text-align:center; color: #27455a;">Desempenho Geral</h3>
         <canvas id="pizzaChart"></canvas>
       </div>
-      
       <div class="chart-box" style="flex: 1.5; min-width: 300px; max-width: 500px; background: #fbfdff; padding: 15px; border-radius: 10px; border: 1px solid #eef3fb;">
         <h3 style="margin-top:0; text-align:center; color: #27455a;">Tópicos com Erros</h3>
         <canvas id="barChart"></canvas>
       </div>
     </div>
-
     <hr style="border:0; border-top: 2px solid #f0f3f7; margin: 25px 0;">
   `;
 
@@ -642,7 +663,6 @@ function showResults() {
   questions.forEach((q, index) => {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
-
     resultHTML += `
       <div class="question" style="text-align:left; margin-bottom:14px; background: #fdfdfd; padding: 10px; border-radius: 8px; border: 1px solid #f1f6fb;">
         <h3 style="margin:6px 0 10px 0; font-size: 1rem;">${index + 1}. ${(q.enunciado || '').replace(/\n/g, "<br>")}</h3>
@@ -651,12 +671,9 @@ function showResults() {
             const classes = [];
             if (k === right) classes.push('correct');
             if (user === k && user !== right) classes.push('wrong');
-            
-            // Determinar estilo de fundo para o resultado (sem hover)
-            let bgStyle = '#f1f2f6'; // Padrão
-            if (k === right) bgStyle = '#daf7e8'; // Correta
-            else if (user === k) bgStyle = '#ffe7e7'; // Errada marcada
-            
+            let bgStyle = '#f1f2f6'; 
+            if (k === right) bgStyle = '#daf7e8'; 
+            else if (user === k) bgStyle = '#ffe7e7'; 
             return `<li class="option ${classes.join(' ')}" style="cursor:default; transform:none; background: ${bgStyle};">${k}) ${v}</li>`;
           }).join('')}
         </ul>
@@ -667,7 +684,6 @@ function showResults() {
   // 3. Renderizar o HTML na área do quiz
   const quizDiv = document.getElementById("quiz");
   quizDiv.innerHTML = resultHTML;
-  // Rolar para o topo dos resultados
   quizDiv.scrollIntoView({ behavior: 'smooth' });
 
   // 4. Renderizar Gráficos e Adicionar Listener (após o DOM atualizar)
@@ -687,7 +703,9 @@ function showResults() {
           datasets: [{
             label: 'Desempenho',
             data: [correctCount, wrongCount],
-            backgroundColor: ['var(--correct)', 'var(--wrong)'], // Usando suas variáveis CSS
+            // ===== ALTERAÇÃO 2: Cores corrigidas (trocadas de 'var(...)' para hex) =====
+            backgroundColor: ['#00b894', '#d63031'], 
+            // =========================================================================
             hoverOffset: 4
           }]
         },
@@ -700,31 +718,30 @@ function showResults() {
 
     // --- Renderizar Gráfico de Barras ---
     const barCtx = document.getElementById('barChart');
-    const errorEntries = Object.entries(errorsByDiscipline); // [ ['Lei 123', 2], ['Decreto 456', 1] ]
+    const errorEntries = Object.entries(errorsByDiscipline); 
     
     if (barCtx && errorEntries.length > 0) {
       new Chart(barCtx, {
-        type: 'bar', // Gráfico de barras
+        type: 'bar', 
         data: {
-          labels: errorEntries.map(entry => entry[0]), // Nomes das disciplinas
+          labels: errorEntries.map(entry => entry[0]), // Nomes dos tópicos (ex: "Art. 5")
           datasets: [{
             label: 'Quantidade de Erros',
             data: errorEntries.map(entry => entry[1]), // Contagem de erros
-            backgroundColor: 'rgba(214, 48, 49, 0.6)', // Vermelho (errado) com transparência
-            borderColor: 'var(--wrong)',
+            backgroundColor: 'rgba(214, 48, 49, 0.6)', 
+            // ===== ALTERAÇÃO 3: Cor da borda corrigida =====
+            borderColor: '#d63031',
+            // ===============================================
             borderWidth: 1
           }]
         },
         options: {
-          // indexAxis: 'y', // Descomente para barras horizontais
           responsive: true,
-          plugins: { legend: { display: false } }, // Esconde a legenda (desnecessária)
+          plugins: { legend: { display: false } }, 
           scales: {
-            y: { // Eixo Y (contagem)
+            y: { 
               beginAtZero: true,
-              ticks: {
-                stepSize: 1 // Mostrar apenas números inteiros
-              }
+              ticks: { stepSize: 1 }
             }
           }
         }
@@ -732,7 +749,7 @@ function showResults() {
     } else if (barCtx) {
       // Se não houver erros, mostrar uma mensagem
       barCtx.parentElement.innerHTML += '<p style="text-align:center; color:var(--muted); margin-top:20px;">Nenhum erro registrado. Parabéns!</p>';
-      barCtx.remove(); // Remove o canvas vazio
+      barCtx.remove(); 
     }
   });
 }
@@ -770,5 +787,6 @@ loadPDFs();
 </script>
 </body>
 </html>
+
 
 
