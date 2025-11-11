@@ -217,56 +217,68 @@ function generatePrintPage(questionsToPrint) {
         }
 
         .card-container {
+          /* --- MUDANÇAS AQUI --- */
+          max-width: 500px; /* Define uma largura máxima para o card */
+          margin: 15px auto; /* Centraliza o card na página */
+          /* --- FIM DAS MUDANÇAS --- */
+          
           width: 100%;
-          page-break-inside: avoid; /* Evita que o card quebre entre páginas */
-          margin-bottom: 20px;
-          border-radius: 12px;
+          page-break-inside: avoid;
+          margin-bottom: 15px;
+          border-radius: 10px;
           border: 1px solid #aaa;
           background: #fff;
-          overflow: hidden; /* Para o radius funcionar */
+          overflow: hidden;
         }
         
         .card-front, .card-back {
-          padding: 18px 22px;
-          min-height: 100px;
+          /* --- MUDANÇAS AQUI --- */
+          padding: 14px 18px; /* Reduz o preenchimento */
+          min-height: 70px;  /* Reduz a altura mínima */
+          /* --- FIM DAS MUDANÇAS --- */
           box-sizing: border-box; 
         }
 
         .card-front {
-          /* A FRENTE do card */
+          /* --- MUDANÇAS AQUI --- */
           font-weight: 500;
-          font-size: 1.1rem;
+          font-size: 0.95rem; /* Reduz a fonte da pergunta */
+          /* --- FIM DAS MUDANÇAS --- */
         }
 
         .card-back {
-          /* O VERSO do card */
-          border-top: 2px dashed #aaa; /* Linha para dobrar */
+          border-top: 2px dashed #aaa;
           background: #fdfdfd;
         }
         
         .answer-title {
+          /* --- MUDANÇAS AQUI --- */
           font-weight: 600;
-          color: #00b894; /* Verde (correto) */
-          font-size: 1.1rem;
+          color: #00b894;
+          font-size: 0.95rem; /* Reduz a fonte da resposta */
+          /* --- FIM DAS MUDANÇAS --- */
         }
         
         .comment {
+          /* --- MUDANÇAS AQUI --- */
           font-style: italic;
-          font-size: 0.95rem;
+          font-size: 0.9rem; /* Reduz a fonte do comentário */
+          margin-top: 10px;
+          padding-top: 10px;
+          /* --- FIM DAS MUDANÇAS --- */
           color: #555;
-          margin-top: 12px;
-          padding-top: 12px;
           border-top: 1px solid #eee;
         }
 
         h1 {
-          color: #0984e3; /* Azul (primário) */
+          color: #0984e3;
           text-align: center;
+          font-size: 1.8rem; /* Reduz o título principal */
         }
         
         p.info {
           text-align: center;
-          font-size: 1.1rem;
+          font-size: 1rem; /* Reduz o texto de info */
           padding-bottom: 10px;
           border-bottom: 2px solid #eee;
         }
@@ -277,9 +289,11 @@ function generatePrintPage(questionsToPrint) {
             background: #fff;
           }
           h1 { font-size: 1.5rem; }
+          p.info { font-size: 0.9rem; }
           .card-container {
             border: 1px solid #aaa;
             box-shadow: none;
+            max-width: 90%; /* Ocupa mais da página de impressão */
           }
           .card-back {
              background: #fdfdfd;
@@ -295,8 +309,8 @@ function generatePrintPage(questionsToPrint) {
       </p>
     `;
 
-  // Loop nas questões e cria um "card" para cada
-  questionsToPrint.forEach((q) => { // Removido o 'index' pois não é mais usado
+  // O loop de geração de HTML permanece o mesmo
+  questionsToPrint.forEach((q) => { 
     const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
     const correctAnswerKey = q.resposta_correta;
     const correctAnswerText = (q.alternativas && q.alternativas[correctAnswerKey]) ? q.alternativas[correctAnswerKey] : 'N/A';
@@ -324,13 +338,12 @@ function generatePrintPage(questionsToPrint) {
     </html>
   `;
 
-  // Abrir em uma nova janela e chamar a impressão
+  // A lógica de abertura da janela permanece a mesma
   const printWindow = window.open('', '_blank');
   printWindow.document.open();
   printWindow.document.write(printHtml);
   printWindow.document.close();
   
-  // Chamar a impressão (delay para carregar o CSS)
   setTimeout(() => {
     printWindow.print();
   }, 250);
