@@ -228,9 +228,8 @@ function generatePrintPage(questionsToPrint) {
         
         .card-front, .card-back {
           padding: 18px 22px;
-          /* Garante que o tamanho seja o mesmo */
           min-height: 100px;
-          box-sizing: border-box; /* Garante que padding não afete a altura */
+          box-sizing: border-box; 
         }
 
         .card-front {
@@ -273,7 +272,6 @@ function generatePrintPage(questionsToPrint) {
         }
 
         @media print {
-          /* Otimizações para impressão */
           body { 
             margin: 15px;
             background: #fff;
@@ -298,7 +296,7 @@ function generatePrintPage(questionsToPrint) {
     `;
 
   // Loop nas questões e cria um "card" para cada
-  questionsToPrint.forEach((q, index) => {
+  questionsToPrint.forEach((q) => { // Removido o 'index' pois não é mais usado
     const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
     const correctAnswerKey = q.resposta_correta;
     const correctAnswerText = (q.alternativas && q.alternativas[correctAnswerKey]) ? q.alternativas[correctAnswerKey] : 'N/A';
@@ -307,7 +305,7 @@ function generatePrintPage(questionsToPrint) {
     printHtml += `
       <div class="card-container">
         <div class="card-front">
-          <strong>${index + 1}.</strong> ${formattedEnunciado}
+          ${formattedEnunciado}
         </div>
         
         <div class="card-back">
