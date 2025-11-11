@@ -189,8 +189,6 @@ function clearSelectionUI() {
  */
 
 }
-@param {Array} questionsToPrint - Um array de objetos de questão (apenas as erradas).
- */
 function generatePrintPage(questionsToPrint) {
   let printHtml = `
     <!DOCTYPE html>
