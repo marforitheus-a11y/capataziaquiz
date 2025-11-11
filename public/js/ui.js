@@ -359,4 +359,4 @@ function generatePrintPage(questionsToPrint) {
   setTimeout(() => {
     printWindow.print();
   }, 250);
-}
+
