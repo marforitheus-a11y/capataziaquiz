@@ -298,5 +298,308 @@
     },
     "resposta_correta": "C",
     "comentario": "A alternativa C está correta, conforme o Art. 18, inciso I: 'pedidos de esclarecimento e impugnações ao edital, com antecedência mínima de cinco dias úteis da data de abertura das propostas'. As demais alternativas apresentam prazos ou marcos temporais incorretos."
+  },
+  {
+    "id": "700061",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 2º e 3º, a realização de investimentos NÃO previstos nos contratos de concessão ou de arrendamento depende de:",
+    "alternativas": {
+      "A": "Aprovação exclusiva da Antaq, que analisará o impacto regulatório.",
+      "B": "Aprovação do poder concedente, previamente analisados pela Antaq.",
+      "C": "Aprovação exclusiva do poder concedente, sem necessidade de análise da Antaq.",
+      "D": "Análise da administração do porto e aprovação da Antaq.",
+      "E": "Análise do poder concedente e aprovação final da Antaq."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 2º, V, compete ao Poder Concedente 'aprovar' os investimentos não previstos. Conforme o Art. 3º, II, compete à Antaq 'analisar' essas propostas. Portanto, a Antaq analisa previamente e o Poder Concedente aprova. As demais alternativas invertem ou omitem competências."
+  },
+  {
+    "id": "700062",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do Art. 3º, compete à Antaq apurar, de ofício ou mediante provocação, práticas abusivas ou tratamentos discriminatórios, ressalvadas as competências de qual órgão?",
+    "alternativas": {
+      "A": "Do Poder Concedente (Secretaria de Portos).",
+      "B": "Da Administração do Porto.",
+      "C": "Do CADE (Conselho Administrativo de Defesa Econômica), conforme a Lei nº 12.529/2011.",
+      "D": "Do Ministério Público Federal.",
+      "E": "Do Tribunal Marítimo."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 3º, V, é explícito ao ressalvar 'as competências previstas na Lei nº 12.529, de 30 de novembro de 2011', que é a lei de regência do CADE, órgão responsável pela defesa da concorrência."
+  },
+  {
+    "id": "700063",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 4º, compete à administração do porto estabelecer o regulamento de exploração do porto, observadas as diretrizes:",
+    "alternativas": {
+      "A": "Da Antaq.",
+      "B": "Do poder concedente.",
+      "C": "Do CADE.",
+      "D": "Do Tribunal de Contas da União.",
+      "E": "Definidas pelos próprios arrendatários."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 4º, I, afirma que compete à administração do porto 'estabelecer o regulamento de exploração do porto, observadas as diretrizes do poder concedente'. O Poder Concedente, conforme o Art. 1º, Parágrafo único, é a Secretaria de Portos."
+  },
+  {
+    "id": "700064",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 5º define a legislação aplicável à licitação para concessão e arrendamento. Qual regime é mencionado como aplicável preferencialmente, além da Lei 12.815/2013?",
+    "alternativas": {
+      "A": "O Regime Diferenciado de Contratações Públicas (RDC - Lei nº 12.462/2011).",
+      "B": "A Lei Geral de Licitações (Lei nº 8.666/1993), de forma principal.",
+      "C": "O Pregão Eletrônico (Lei nº 10.520/2002).",
+      "D": "A Lei das Estatais (Lei nº 13.303/2016).",
+      "E": "A Lei Geral de Concessões (Lei nº 8.987/1995)."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 5º cita expressamente a Lei nº 12.815/2013, a Lei nº 12.462/2011 (RDC) e o Decreto nº 7.581/2011 (que regulamenta o RDC). A Lei 8.666/1993 só é mencionada no Art. 10 de forma subsidiária para habilitação."
+  },
+  {
+    "id": "700065",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Edital da Licitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 8º, parágrafo único, o edital de licitação poderá impor ao vencedor uma obrigação de indenizar o antigo titular. Esta indenização refere-se:",
+    "alternativas": {
+      "A": "A todo o investimento já realizado, independentemente de amortização.",
+      "B": "Aos lucros cessantes do antigo titular.",
+      "C": "À parcela não amortizada dos investimentos realizados em bens afetos, desde que aprovados pelo poder concedente.",
+      "D": "Aos custos da desmobilização do antigo titular.",
+      "E": "Aos salários dos funcionários do antigo titular, que devem ser absorvidos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 8º, parágrafo único, é específico ao limitar a indenização 'à parcela não amortizada dos investimentos realizados em bens afetos [...] desde que tenham sido aprovados pelo poder concedente'. As demais alternativas não correspondem ao texto legal."
+  },
+  {
+    "id": "700066",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Critérios de Julgamento",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 9º, § 2º, define os tipos de capacidade de movimentação. A 'quantidade máxima de carga que pode ser movimentada na instalação portuária durante certo período de tempo e em nível adequado de serviço' é definida como:",
+    "alternativas": {
+      "A": "Capacidade Estática.",
+      "B": "Capacidade Dinâmica.",
+      "C": "Capacidade Efetiva.",
+      "D": "Capacidade Nominal.",
+      "E": "Capacidade de Armazenagem."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Esta é a definição de Capacidade Dinâmica, conforme o Art. 9º, § 2º, II. A 'Capacidade Estática' (I) é a máxima armazenada a qualquer tempo. A 'Capacidade Efetiva' (III) é a quantidade *efetivamente* movimentada (e não a máxima)."
+  },
+  {
+    "id": "700067",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 12 do Decreto 8.033/2013 estabelece que o procedimento licitatório observará as fases e a ordem previstas no Art. 12 da Lei nº 12.462/2011 (RDC). Qual das seguintes sequências de fases (com inversão) é comumente associada ao RDC?",
+    "alternativas": {
+      "A": "Habilitação; Julgamento de Propostas; Abertura dos Envelopes; Recurso.",
+      "B": "Julgamento de Propostas; Habilitação; Declaração do Vencedor; Fase Recursal Única.",
+      "C": "Habilitação; Classificação; Julgamento; Homologação.",
+      "D": "Julgamento de Propostas; Fase Recursal; Habilitação; Fase Recursal Novamente.",
+      "E": "Publicação do Edital; Audiência Pública; Julgamento; Contratação."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O RDC (Lei 12.462) é conhecido por permitir (e o Decreto 8.033 incentiva) a inversão de fases, onde primeiro ocorre o Julgamento das Propostas (preço/técnica) e somente o vencedor (ou os primeiros classificados) é chamado para a Habilitação (análise de documentos), seguida de uma fase recursal única (Art. 14 do Decreto)."
+  },
+  {
+    "id": "700068",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Após o encerramento da fase de apresentação de propostas e a classificação inicial, o Art. 13 permite que a comissão de licitação:",
+    "alternativas": {
+      "A": "Anule a proposta do primeiro colocado se ela for muito baixa.",
+      "B": "Negocie condições mais vantajosas com os licitantes, seguindo a ordem de classificação.",
+      "C": "Encerre o certame e declare o vencedor, sendo vedada qualquer negociação.",
+      "D": "Inverta a ordem de classificação para negociar com o licitante que apresentou a proposta mais alta.",
+      "E": "Negocie apenas com o primeiro colocado, sendo vedado negociar com os demais."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 13, § 1º, faculta à comissão 'negociar condições mais vantajosas'. O § 2º determina que essa negociação siga 'a ordem de classificação das propostas'. A C e E estão incorretas pois a negociação é permitida e pode seguir a ordem (não apenas o primeiro). A D está incorreta."
+  },
+  {
+    "id": "700069",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 15, o recurso contra o julgamento ou habilitação é dirigido à Diretoria da Antaq, por intermédio da comissão de licitação. Ao receber o recurso, a comissão de licitação:",
+    "alternativas": {
+      "A": "Deve encaminhá-lo imediatamente à Antaq, pois não pode rever seus próprios atos.",
+      "B": "Pode reconsiderar sua decisão em até cinco dias úteis ou, no mesmo prazo, encaminhar à Antaq.",
+      "C": "Tem o prazo de 30 dias para reconsiderar sua decisão, antes de encaminhar à Antaq.",
+      "D": "Deve notificar o Poder Concedente para que este decida sobre a reconsideração.",
+      "E": "Deve suspender a licitação e aguardar o trânsito em julgado na esfera judicial."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 15, § 1º, concede à comissão o 'juízo de retratação', podendo ela 'reconsiderar sua decisão em até cinco dias úteis' ou, no mesmo prazo, instruir o recurso e enviá-lo à Antaq. A A está incorreta, pois a reconsideração é prevista."
+  },
+  {
+    "id": "700070",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 17 trata da hipótese de o vencedor não assinar o contrato. Se o Poder Concedente optar por convocar os remanescentes (inciso II do § 1º) e nenhum deles aceitar as condições do vencedor, o Poder Concedente poderá:",
+    "alternativas": {
+      "A": "Declarar a licitação fracassada e iniciar um novo processo obrigatoriamente.",
+      "B": "Convocar os licitantes remanescentes, na ordem, para contratar nas condições por eles ofertadas (suas próprias propostas).",
+      "C": "Aplicar a sanção ao vencedor e reabrir o prazo para que ele assine o contrato.",
+      "D": "Contratar diretamente o segundo colocado, pelo valor que ele ofertou, sem consultar os demais.",
+      "E": "Revogar a licitação, pois a negociação das propostas originais é vedada após a fase de lances."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Esta é a previsão do Art. 17, § 2º. Fracassada a convocação dos remanescentes nas condições do vencedor (prevista no § 1º, II), o § 2º permite a convocação nas condições originais ofertadas pelos remanescentes, desde que melhores que o mínimo do edital."
+  },
+  {
+    "id": "700071",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Procedimento Licitatório",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do Art. 18, o prazo para apresentação de representações (relativas a atos de que não caiba recurso hierárquico) é de:",
+    "alternativas": {
+      "A": "Cinco dias úteis, contado da data da intimação.",
+      "B": "Três dias úteis, contado da data do ato.",
+      "C": "Cinco dias úteis, contado da publicação do edital.",
+      "D": "Dez dias úteis, contado da data da intimação.",
+      "E": "Até a data de adjudicação do objeto."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 18, inciso II, define o prazo de 'cinco dias úteis, contado da data da intimação' para as representações. O inciso I trata das impugnações ao edital, que têm um prazo diferente."
+  },
+  {
+    "id": "700072",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Contratos",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 21, § 2º, os contratos celebrados entre a concessionária de um porto e terceiros (ex: arrendatários dentro da concessão) terão sua vigência máxima limitada:",
+    "alternativas": {
+      "A": "Ao prazo de 5 anos, renováveis.",
+      "B": "Ao prazo máximo de 25 anos, independentemente do prazo da concessão.",
+      "C": "Ao prazo previsto para a concessão.",
+      "D": "Ao prazo do mandato da diretoria da concessionária.",
+      "E": "A 10 anos, por força do Art. 19."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 21, § 2º, é explícito: 'Os contratos celebrados entre a concessionária e terceiros terão sua vigência máxima limitada ao prazo previsto para a concessão'. Isso impede que a concessionária crie obrigações para o Poder Concedente após o término do seu próprio contrato."
+  },
+  {
+    "id": "700073",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Contratos",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "No caso de uma concessão de porto organizado, o Art. 22 trata dos contratos de arrendamento vigentes (firmados antes da concessão). Segundo o artigo:",
+    "alternativas": {
+      "A": "Todos os contratos vigentes são automaticamente extintos no ato da concessão.",
+      "B": "Os contratos poderão ter sua titularidade transferida à concessionária, que deverá respeitar os termos originais.",
+      "C": "Os contratos são mantidos com o Poder Concedente, e a concessionária não tem relação com eles.",
+      "D": "A concessionária é obrigada a renegociar todos os contratos vigentes, aplicando novas tarifas.",
+      "E": "A transferência da titularidade reforça a aplicação das normas de direito público sobre os contratos."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 22, caput, permite a transferência da titularidade dos contratos vigentes para a concessionária. O § 1º obriga a concessionária a 'respeitar os termos contratuais originalmente pactuados'. A alternativa E está incorreta, pois o § 2º afirma o oposto ('afasta a aplicação das normas de direito público')."
+  },
+  {
+    "id": "700074",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Contratos",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 23 estabelece que os contratos de concessão e arrendamento deverão resguardar o direito de passagem de infraestrutura de terceiros na área, mediante:",
+    "alternativas": {
+      "A": "Justa indenização.",
+      "B": "Autorização da administração do porto, sem indenização.",
+      "C": "Pagamento de tarifa pública, definida pela Antaq.",
+      "D": "Gratuidade, por se tratar de área pública.",
+      "E": "Permissão expressa do titular do contrato, que pode recusar."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 23 prevê o direito de passagem 'conforme disciplinado pela Antaq e mediante justa indenização'. A D (gratuidade) e B (sem indenização) estão incorretas."
+  },
+  {
+    "id": "700075",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre o relatório de que trata o § 5º do art. 57 da Lei nº 12.815/2013 (relatório anual ao Congresso), o Decreto 8.033/2013 atribui as competências de:",
+    "alternativas": {
+      "A": "Elaboração e encaminhamento direto ao Congresso pela Antaq.",
+      "B": "Elaboração pela Antaq e encaminhamento ao Congresso pelo Poder Concedente.",
+      "C": "Elaboração pelo Poder Concedente e análise pela Antaq.",
+      "D": "Elaboração e encaminhamento direto pelo Poder Concedente, sem participação da Antaq.",
+      "E": "Elaboração pela Administração do Porto e encaminhamento pela Antaq."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 3º, VI, estabelece que compete à Antaq 'elaborar o relatório'. O Art. 2º, VII, estabelece que compete ao Poder Concedente 'aprovar e encaminhar ao Congresso Nacional o relatório'. Portanto, Antaq elabora e Poder Concedente aprova e encaminha."
   }
+]
+
+  
 ]
