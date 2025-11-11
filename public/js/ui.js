@@ -29,31 +29,49 @@ function renderQuestion() {
 
 // -------------------------------------------------------------------
 
+/* ====== SUBSTITUA SUA FUNÇÃO showResults() POR ESTA VERSÃO DE TESTE ====== */
+
 function showResults() {
   let correctCount = 0;
   const errorsByDiscipline = {}; 
-  const wrongQuestions = []; // <-- Array para guardar questões erradas
+  const wrongQuestions = []; 
+
+  console.log("--- INICIANDO showResults() ---"); // TESTE
+  console.log("Total de questões no quiz:", questions.length); // TESTE
 
   // 1. Processar dados para os gráficos
-  questions.forEach(q => {
+  questions.forEach((q, index) => {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
-    const topic = getErrorTopic(q); // Função do helpers.js
+    const topic = getErrorTopic(q); 
 
     if (user === right) {
       correctCount++;
+      console.log(`Questão ${index + 1}: CORRETA`); // TESTE
     } else {
       // É um erro
       if (!errorsByDiscipline[topic]) {
         errorsByDiscipline[topic] = 0;
       }
       errorsByDiscipline[topic]++;
-      // ESTA LINHA É A MAIS IMPORTANTE: Só adiciona se estiver errada
-      wrongQuestions.push(q); 
+      wrongQuestions.push(q);
+      
+      // ESTA É A LINHA DE TESTE MAIS IMPORTANTE
+      console.log(`Questão ${index + 1}: ERRADA. Adicionando ao array. Enunciado:`, q.enunciado);
     }
   });
 
   const wrongCount = questions.length - correctCount;
+  
+  // TESTE FINAL ANTES DE IMPRIMIR
+  console.log("--- VERIFICAÇÃO FINAL ---");
+  console.log("Total de acertos:", correctCount);
+  console.log("Total de erros:", wrongCount);
+  console.log("Array 'wrongQuestions' que será enviado para impressão:", wrongQuestions);
+  
+  // ---------------------------------------------------
+  // O RESTANTE DA FUNÇÃO (HTML, GRÁFICOS) É IGUAL
+  // ---------------------------------------------------
 
   // 2. Construir o HTML dos Resultados
   let resultHTML = `
@@ -83,7 +101,7 @@ function showResults() {
       </div>
     </div>`;
 
-  // Lista de Questões (Esta lista no site MOSTRA TODAS, o que é normal)
+  // Lista de Questões
   questions.forEach((q, index) => {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
@@ -113,37 +131,31 @@ function showResults() {
   // 4. Renderizar Gráficos e Adicionar Listener
   requestAnimationFrame(() => {
     
-    // Listener do botão Refazer
     const btn = document.getElementById('retryBtn');
     if (btn) btn.addEventListener('click', () => location.reload());
 
-    // Listener para o botão de impressão
     const printBtn = document.getElementById('printErrorsBtn');
     if (printBtn) {
       printBtn.addEventListener('click', () => {
-        // Envia APENAS as questões erradas para a impressão
+        // A função generatePrintPage usará o array que testamos
         generatePrintPage(wrongQuestions); 
       });
     }
 
-    // --- Renderizar Gráfico de Pizza ---
+    // --- Gráfico de Pizza ---
     const pizzaCtx = document.getElementById('pizzaChart');
     if (pizzaCtx) {
       new Chart(pizzaCtx, {
         type: 'doughnut',
         data: {
           labels: ['Acertos', 'Erros'],
-          datasets: [{
-            data: [correctCount, wrongCount],
-            backgroundColor: ['#00b894', '#d63031'], 
-            hoverOffset: 4
-          }]
+          datasets: [{ data: [correctCount, wrongCount], backgroundColor: ['#00b894', '#d63031'], hoverOffset: 4 }]
         },
         options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
       });
     }
 
-    // --- Renderizar Gráfico de Barras ---
+    // --- Gráfico de Barras ---
     const barCtx = document.getElementById('barChart');
     const errorEntries = Object.entries(errorsByDiscipline); 
     
@@ -172,9 +184,6 @@ function showResults() {
     }
   });
 }
-
-// -------------------------------------------------------------------
-
 /* ====== seleção de subitem (UI) ====== */
 function clearSelectionUI() {
   selectedFile = null;
