@@ -1,0 +1,102 @@
+[
+  {
+    "id": 5000001,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Com base no Art. 2º da Lei nº 12.815/2013, que apresenta as definições para os fins da lei, relacione CORRETAMENTE a Coluna 1 com a Coluna 2:\n\nColuna 1\n(1) Porto organizado\n(2) Terminal de uso privado\n(3) Estação de transbordo de cargas\n(4) Operador portuário\n\nColuna 2\n( ) Pessoa jurídica pré-qualificada para exercer as atividades de movimentação de passageiros ou movimentação e armazenagem de mercadorias, destinadas ou provenientes de transporte aquaviário, dentro da área do porto organizado.\n( ) Instalação portuária explorada mediante autorização e localizada fora da área do porto organizado.\n( ) Bem público construído e aparelhado para atender a necessidades de navegação, de movimentação de passageiros ou de movimentação e armazenagem de mercadorias, e cujo tráfego e operações portuárias estejam sob jurisdição de autoridade portuária.\n( ) Instalação portuária explorada mediante autorização, localizada fora da área do porto organizado e utilizada exclusivamente para operação de transbordo de mercadorias em embarcações de navegação interior ou cabotagem.\n\nAssinale a alternativa que possui a sequência CORRETA, de cima para baixo:",
+    "alternativas": {
+      "A": "1, 2, 3, 4",
+      "B": "4, 2, 1, 3",
+      "C": "2, 4, 1, 3",
+      "D": "3, 1, 2, 4",
+      "E": "4, 1, 3, 2"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000002,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "De acordo com o Art. 17 da Lei nº 12.815/2013, compete à administração do porto organizado, denominada autoridade portuária. Analise as afirmativas abaixo e classifique-as em Verdadeiras (V) ou Falsas (F):\n\n( ) Pré-qualificar os operadores portuários, de acordo com as normas estabelecidas pelo poder concedente.\n( ) Arrecadar os valores das tarifas relativas às suas atividades.\n( ) Celebrar os contratos de concessão e arrendamento e expedir as autorizações de instalação portuária.\n( ) Promover a remoção de embarcações ou cascos de embarcações que possam prejudicar o acesso ao porto.\n( ) Organizar a guarda portuária, em conformidade com a regulamentação expedida pelo poder concedente.\n\nAssinale a alternativa que contém a sequência CORRETA, de cima para baixo:",
+    "alternativas": {
+      "A": "V, V, V, V, V",
+      "B": "F, V, F, V, F",
+      "C": "V, F, V, F, V",
+      "D": "V, V, F, V, V",
+      "E": "F, F, V, V, F"
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": 5000003,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 5º da Lei nº 12.815/2013 elenca as cláusulas essenciais aos contratos de concessão. Assinale a alternativa que apresenta uma cláusula que NÃO é considerada essencial por este artigo:",
+    "alternativas": {
+      "A": "Ao objeto, à área e ao prazo.",
+      "B": "Aos investimentos de responsabilidade do contratado.",
+      "C": "À reversão de bens.",
+      "D": "Às garantias para adequada execução do contrato.",
+      "E": "Aos critérios de seleção e registro do trabalhador portuário avulso."
+    },
+    "resposta_correta": "E"
+  },
+  {
+    "id": 5000004,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "Conforme o § 1º do Art. 40 da Lei nº 12.815/2013, assinale a alternativa que define CORRETAMENTE a atividade de ESTIVA:",
+    "alternativas": {
+      "A": "Atividade de movimentação de mercadorias nas instalações dentro do porto, compreendendo o recebimento, conferência, transporte interno, abertura de volumes para a conferência aduaneira, manipulação, arrumação e entrega.",
+      "B": "Atividade de movimentação de mercadorias nos conveses ou nos porões das embarcações principais ou auxiliares, incluindo o transbordo, arrumação, peação e despeação, bem como o carregamento e a descarga, quando realizados com equipamentos de bordo.",
+      "C": "Reparo e restauração das embalagens de mercadorias, nas operações de carregamento e descarga de embarcações, reembalagem, marcação, remarcação, carimbagem, etiquetagem, abertura de volumes para vistoria e posterior recomposição.",
+      "D": "Atividade de fiscalização da entrada e saída de pessoas a bordo das embarcações atracadas ou fundeadas ao largo, bem como da movimentação de mercadorias nos portalós, rampas, porões, conveses, plataformas e em outros locais da embarcação.",
+      "E": "Atividade de limpeza e conservação de embarcações mercantes e de seus tanques, incluindo batimento de ferrugem, pintura, reparos de pequena monta e serviços correlatos."
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5000005,
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Lei dos Portos",
+    "banca": "Banca Simulada",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": 2025,
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "modalidade": "Múltipla Escolha",
+    "enunciado": "O Art. 32 da Lei nº 12.815/2013 determina que os operadores portuários devem constituir em cada porto organizado um órgão de gestão de mão de obra (OGMO), destinado a diversas finalidades. Analise as proposições abaixo sobre essas finalidades:\n\nI. Administrar o fornecimento da mão de obra do trabalhador portuário e do trabalhador portuário avulso.\nII. Manter, com exclusividade, o cadastro do trabalhador portuário e o registro do trabalhador portuário avulso.\nIII. Aplicar penalidades de cancelamento do registro em caso de transgressão disciplinar.\nIV. Arrecadar e repassar aos beneficiários os valores devidos pelos operadores portuários relativos à remuneração do trabalhador portuário avulso.\n\nAssinale a alternativa CORRETA:",
+    "alternativas": {
+      "A": "Somente as proposições I e II são verdadeiras.",
+      "B": "Somente as proposições III e IV são verdadeiras.",
+      "C": "As proposições I, II, III e IV são verdadeiras.",
+      "D": "As proposições I, II e IV são verdadeiras.",
+      "E": "Somente a proposição IV é verdadeira."
+    },
+    "resposta_correta": "D"
+  }
+]
