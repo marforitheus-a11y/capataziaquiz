@@ -27,10 +27,12 @@ function renderQuestion() {
 
 /* ====== SUBSTITUA SUA FUNÇÃO showResults() EM js/ui.js POR ESTA ====== */
 
+/* ====== 1. SUBSTITUA SUA FUNÇÃO showResults() EM js/ui.js POR ESTA ====== */
+
 function showResults() {
   let correctCount = 0;
   const errorsByDiscipline = {}; 
-  const wrongQuestions = []; // <-- NOVO: Array para guardar questões erradas
+  const wrongQuestions = []; // <-- Array para guardar questões erradas
 
   // 1. Processar dados para os gráficos
   questions.forEach(q => {
@@ -41,12 +43,13 @@ function showResults() {
     if (user === right) {
       correctCount++;
     } else {
-      // É um erro, registrar para o gráfico de barras
+      // É um erro
       if (!errorsByDiscipline[topic]) {
         errorsByDiscipline[topic] = 0;
       }
       errorsByDiscipline[topic]++;
-      wrongQuestions.push(q); // <-- NOVO: Adiciona a questão errada ao array
+      // ESTA LINHA É A MAIS IMPORTANTE: Só adiciona se estiver errada
+      wrongQuestions.push(q); 
     }
   });
 
@@ -72,19 +75,16 @@ function showResults() {
   resultHTML += `
     <div class='result' style="padding-bottom: 20px;">
       <h3>Você acertou ${correctCount} de ${questions.length} questões.</h3>
-      
       <div class="button-row" style="justify-content: center; margin-top: 15px;">
         <button id="retryBtn">Refazer</button>
-        
         <button id="printErrorsBtn" class="button-ghost" style="${wrongQuestions.length === 0 ? 'display:none;' : ''}">
           Imprimir Erradas (${wrongQuestions.length})
         </button>
       </div>
     </div>`;
 
-  // Lista de Questões (como antes)
+  // Lista de Questões (Esta lista no site MOSTRA TODAS, o que é normal)
   questions.forEach((q, index) => {
-    // ... (O restante deste loop continua o mesmo) ...
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
     resultHTML += `
@@ -117,18 +117,16 @@ function showResults() {
     const btn = document.getElementById('retryBtn');
     if (btn) btn.addEventListener('click', () => location.reload());
 
-    // <-- NOVO: Listener para o botão de impressão -->
+    // Listener para o botão de impressão
     const printBtn = document.getElementById('printErrorsBtn');
     if (printBtn) {
       printBtn.addEventListener('click', () => {
-        // Chama a nova função que vamos criar
+        // Envia APENAS as questões erradas para a impressão
         generatePrintPage(wrongQuestions); 
       });
     }
-    // <-- FIM DA NOVA SEÇÃO -->
 
     // --- Renderizar Gráfico de Pizza ---
-    // ... (o código dos gráficos permanece o mesmo) ...
     const pizzaCtx = document.getElementById('pizzaChart');
     if (pizzaCtx) {
       new Chart(pizzaCtx, {
@@ -195,62 +193,139 @@ function generatePrintPage(questionsToPrint) {
     <html lang="pt-BR">
     <head>
       <meta charset="UTF-8">
-      <title>Revisão de Questões</title>
+      <title>Revisão de Questões (Flashcards)</title>
       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        
         body {
           font-family: "Poppins", sans-serif;
-          line-height: 1.6;
-          margin: 40px;
+          line-height: 1.5;
+          margin: 20px;
           color: #2d3436;
+          background: #f5f6fa;
         }
-        .flashcard {
+
+        .card-container {
+          width: 100%;
           page-break-inside: avoid; /* Evita que o card quebre entre páginas */
-          border: 1px solid #ccc;
-          border-radius: 12px;
-          padding: 16px 20px;
           margin-bottom: 20px;
+          border-radius: 12px;
+          border: 1px solid #aaa;
+          background: #fff;
+          overflow: hidden; /* Para o radius funcionar */
+        }
+        
+        .card-front, .card-back {
+          padding: 18px 22px;
+          /* Garante que o tamanho seja o mesmo */
+          min-height: 100px;
+          box-sizing: border-box; /* Garante que padding não afete a altura */
+        }
+
+        .card-front {
+          /* A FRENTE do card */
+          font-weight: 500;
+          font-size: 1.1rem;
+        }
+
+        .card-back {
+          /* O VERSO do card */
+          border-top: 2px dashed #aaa; /* Linha para dobrar */
           background: #fdfdfd;
         }
-        .question {
+        
+        .answer-title {
           font-weight: 600;
+          color: #00b894; /* Verde (correto) */
           font-size: 1.1rem;
-          margin-bottom: 14px;
         }
-        .answer {
-          background: #f0f7ff;
-          border-left: 4px solid #0984e3; /* Cor primária */
-          padding: 12px 16px;
-          border-radius: 8px;
-          font-size: 1rem;
-        }
-        .answer strong {
-          color: #00b894; /* Cor correta */
-          font-weight: 600;
-        }
+        
         .comment {
           font-style: italic;
           font-size: 0.95rem;
           color: #555;
           margin-top: 12px;
           padding-top: 12px;
-          border-top: 1px dashed #eee;
+          border-top: 1px solid #eee;
         }
+
         h1 {
-          color: #0984e3;
+          color: #0984e3; /* Azul (primário) */
+          text-align: center;
         }
+        
+        p.info {
+          text-align: center;
+          font-size: 1.1rem;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #eee;
+        }
+
         @media print {
-          body { margin: 25px; }
+          /* Otimizações para impressão */
+          body { 
+            margin: 15px;
+            background: #fff;
+          }
           h1 { font-size: 1.5rem; }
-          .flashcard { border: 1px solid #aaa; box-shadow: none; }
+          .card-container {
+            border: 1px solid #aaa;
+            box-shadow: none;
+          }
+          .card-back {
+             background: #fdfdfd;
+          }
         }
       </style>
     </head>
     <body>
-      <h1>Revisão de Questões Erradas</h1>
-      <p>Total de ${questionsToPrint.length} questões para revisar.</p>
-      <hr>
+      <h1>Flashcards para Revisão</h1>
+      <p class="info">
+        Total de ${questionsToPrint.length} questões para revisar.<br>
+        <strong>Instrução:</strong> Imprima, recorte cada card e dobre na linha pontilhada.
+      </p>
     `;
 
+  // Loop nas questões e cria um "card" para cada
+  questionsToPrint.forEach((q, index) => {
+    const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
+    const correctAnswerKey = q.resposta_correta;
+    const correctAnswerText = (q.alternativas && q.alternativas[correctAnswerKey]) ? q.alternativas[correctAnswerKey] : 'N/A';
+    const formattedComentario = (q.comentario || '').replace(/\n/g, '<br>');
+
+    printHtml += `
+      <div class="card-container">
+        <div class="card-front">
+          <strong>${index + 1}.</strong> ${formattedEnunciado}
+        </div>
+        
+        <div class="card-back">
+          <div class="answer-title">
+            Resposta: ${correctAnswerKey}) ${correctAnswerText}
+          </div>
+          
+          ${q.comentario ? `<div class="comment"><strong>Comentário:</strong> ${formattedComentario}</div>` : ''}
+        </div>
+      </div>
+    `;
+  });
+
+  printHtml += `
+    </body>
+    </html>
+  `;
+
+  // Abrir em uma nova janela e chamar a impressão
+  const printWindow = window.open('', '_blank');
+  printWindow.document.open();
+  printWindow.document.write(printHtml);
+  printWindow.document.close();
+  
+  // Chamar a impressão (delay para carregar o CSS)
+  setTimeout(() => {
+    printWindow.print();
+  }, 250);
+}
   // Loop nas questões e cria um "card" para cada
   questionsToPrint.forEach((q, index) => {
     const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
