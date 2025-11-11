@@ -242,7 +242,7 @@ function generatePrintPage(questionsToPrint) {
         .card-front {
           /* --- MUDANÇAS AQUI --- */
           font-weight: 500;
-          font-size: 0.95rem; /* Reduz a fonte da pergunta */
+          font-size: 0.55rem; /* Reduz a fonte da pergunta */
           /* --- FIM DAS MUDANÇAS --- */
         }
 
@@ -255,14 +255,14 @@ function generatePrintPage(questionsToPrint) {
           /* --- MUDANÇAS AQUI --- */
           font-weight: 600;
           color: #00b894;
-          font-size: 0.95rem; /* Reduz a fonte da resposta */
+          font-size: 0.55rem; /* Reduz a fonte da resposta */
           /* --- FIM DAS MUDANÇAS --- */
         }
         
         .comment {
           /* --- MUDANÇAS AQUI --- */
           font-style: italic;
-          font-size: 0.9rem; /* Reduz a fonte do comentário */
+          font-size: 0.5rem; /* Reduz a fonte do comentário */
           margin-top: 10px;
           padding-top: 10px;
           /* --- FIM DAS MUDANÇAS --- */
