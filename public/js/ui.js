@@ -181,7 +181,7 @@ function clearSelectionUI() {
   document.getElementById('selectedSummary').textContent = 'Nenhuma selecionada';
   // remover destaque
   document.querySelectorAll('.subitem.selected').forEach(el => el.classList.remove('selected'));
-} // <-- O '}' FOI CORRIGIDO E MOVIDO PARA AQUI.
+}
 
 // -------------------------------------------------------------------
 
@@ -328,5 +328,3 @@ function generatePrintPage(questionsToPrint) {
     printWindow.print();
   }, 250);
 }
-
-// <-- TODO O CÓDIGO DUPLICADO E ANTIGO FOI REMOVIDO DAQUI. -->
