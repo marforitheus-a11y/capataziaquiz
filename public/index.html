@@ -3,69 +3,72 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- A tag <title> será traduzida via JS -->
   <title>Quiz de Questões</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="easterEggOverlay" style="display: none;">
-    
+
+  <!-- (O HTML do vídeo de vitória permanece o mesmo) -->
+  <div id="easterEggOverlay" style="display: none;">
     <video id="easterEggVideo" src="/video/parabens.mp4" loop></video>
-    
-    <p id="unmuteText" style="display:none;">
-      O navegador bloqueou o som. <strong>Clique para ativar.</strong>
-    </p>
-    <button id="closeEasterEgg">Fechar</button>
+    <p id="unmuteText" style="display:none;"></p>
   </div>
+
   <div class="container">
-    <h1>Marfori Corporations</h1>
+    <h1 data-translate-key="mainTitle">Marfori Corporations</h1>
     <div class="subtitle-area">
-      <h2 class="subtitle">Simulado OGMO - CAPATAZIA</h2>
+      <h2 class="subtitle" data-translate-key="subTitle">Simulado OGMO - CAPATAZIA</h2>
     </div>
 
     <div class="top-area">
+      <!-- left: folder panel -->
       <div class="folder-panel" id="folderPanel">
-        <div style="font-weight:600; margin-bottom:8px; color:#27455a;">Selecione a matéria / parte:</div>
-        <div id="foldersLoading" style="color:var(--muted)">Carregando...</div>
+        <div style="font-weight:600; margin-bottom:8px; color:#27455a;" data-translate-key="selectSubject">Selecione a matéria / parte:</div>
+        <div id="foldersLoading" style="color:var(--muted)" data-translate-key="loading">Carregando...</div>
         <div id="foldersRoot" style="display:none"></div>
       </div>
 
+      <!-- right: controls -->
       <div class="controls">
-        <label>Matéria selecionada</label>
-        <div id="selectedSummary" class="select-summary">Nenhuma selecionada</div>
+        <label data-translate-key="selectedLabel">Matéria selecionada</label>
+        <div id="selectedSummary" class="select-summary" data-translate-key="noneSelected">Nenhuma selecionada</div>
 
-        <label for="questionCount">Quantidade de questões</label>
+        <label for="questionCount" data-translate-key="questionCountLabel">Quantidade de questões</label>
         <input type="number" id="questionCount" min="1" placeholder="Ex: 5">
 
         <div class="button-row">
-          <button id="startBtn">Iniciar Quiz</button>
-          <button id="clearSelection" class="button-ghost">Limpar</button>
+          <button id="startBtn" data-translate-key="startButton">Iniciar Quiz</button>
+          <button id="clearSelection" class="button-ghost" data-translate-key="clearButton">Limpar</button>
         </div>
 
-        <div style="font-size:0.9rem; color:var(--muted); margin-top:8px;">
+        <div style="font-size:0.9rem; color:var(--muted); margin-top:8px;" data-translate-key="hintText">
           Dica: clique na pasta para abrir/fechar. Depois clique na parte/página para selecionar.
         </div>
       </div>
     </div>
 
+    <!-- quiz area -->
     <div id="quiz" class="quiz-area" style="display:none;"></div>
 
+    <!-- PDF -->
     <div class="pdf-section">
-      <h3 style="margin:0 0 10px 0; color:#27455a;">📚 Conteúdos em PDF</h3>
+      <h3 style="margin:0 0 10px 0; color:#27455a;" data-translate-key="pdfTitle">📚 Conteúdos em PDF</h3>
       <ul id="pdfList" class="pdf-list">
-        <li>Carregando PDFs...</li>
+        <li data-translate-key="loadingPDFs">Carregando PDFs...</li>
       </ul>
     </div>
   </div>
 
+  <!-- Ordem dos scripts é crucial! translator.js é o novo -->
   <script src="js/helpers.js"></script>
+  <script src="js/translator.js"></script> <!-- NOVO ARQUIVO -->
   <script src="js/ui.js"></script>
   <script src="js/main.js"></script>
+  <!-- (Se você ainda tem o app.js ou gate.js, ajuste a ordem) -->
 
 </body>
 </html>
-
