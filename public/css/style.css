@@ -10,14 +10,39 @@
 }
 
 * { box-sizing: border-box; }
-
 body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+
+  /* --- ADICIONE/SUBSTITUA COM ESTAS LINHAS --- */
+
+  /* Cor de fallback caso a imagem não carregue */
+  background-color: var(--bg); 
+  
+  /* Caminho para a imagem e uma sobreposição escura para legibilidade */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/fundo.jpg');
+  
+  /* Faz a imagem cobrir toda a tela */
+  background-size: cover;
+  
+  /* Centraliza a imagem */
+  background-position: center center;
+  
+  /* Impede a imagem de rolar com a página */
+  background-attachment: fixed;
+  
+  /* Impede a imagem de se repetir */
+  background-repeat: no-repeat;
+}
+/* body {
   font-family: "Poppins", sans-serif;
   background: var(--bg);
   color: var(--text);
   margin: 0;
   padding: 0;
-}
+}*/
 
 .container {
   max-width: 920px;
@@ -298,3 +323,4 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   .top-area { grid-template-columns: 1fr; }
   .controls { order: 2; }
 }
+
