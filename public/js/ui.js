@@ -1,4 +1,4 @@
-/* ====== CÓDIGO COMPLETO PARA: js/ui.js ====== */
+/* ====== CÓDIGO COMPLETO E CORRIGIDO PARA: js/ui.js ====== */
 // (selectedSubjects é uma var global definida em main.js)
 
 function renderQuestion() {
@@ -103,6 +103,16 @@ function showResults() {
   });
   const wrongCount = wrongQuestions.length;
   const unansweredCount = questions.length - correctCount - wrongCount;
+
+  // =========================================================
+  // Adicionando a chamada do vídeo de 100%
+  // =========================================================
+  if (correctCount === questions.length && questions.length > 0) {
+    // Atraso de 100ms para o DOM começar a renderizar os resultados por baixo
+    setTimeout(playVictoryVideo, 100); 
+  }
+  // =========================================================
+
 
   // 2. Construir o HTML dos Resultados
   // --- MUDANÇA AQUI: Adiciona data-translate-key ---
@@ -260,17 +270,21 @@ function updateSelectedSummary() {
 // -------------------------------------------------------------------
 
 /**
- * MODIFICADO: generatePrintPage agora usa o tradutor
+ * ===================================================================
+ * ===== FUNÇÃO generatePrintPage CORRIGIDA (com SVGs e Estilos) =====
+ * ===================================================================
+ * Gera uma nova página com as questões erradas em formato de flashcard (frente/verso).
+ * @param {Array} questionsToPrint - Um array de objetos de questão (apenas as erradas).
  */
 function generatePrintPage(questionsToPrint) {
   
   // Pega o dicionário do idioma atual
   const dict = translations[currentLang];
-
-  // --- Ícones SVG (sem alteração) ---
-  const iconQuestion = `<svg ...></svg>`; // (código completo omitido por brevidade)
-  const iconAnswer = `<svg ...></svg>`;
-  const iconComment = `<svg ...></svg>`;
+  
+  // --- CORREÇÃO: Ícones SVG completos ---
+  const iconQuestion = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>`;
+  const iconAnswer = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`;
+  const iconComment = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>`;
 
   let printHtml = `
     <!DOCTYPE html>
@@ -279,19 +293,144 @@ function generatePrintPage(questionsToPrint) {
       <meta charset="UTF-8">
       <title>${dict.printTitle}</title>
       <style>
-        /* ... (todo o seu CSS de flashcard sem alteração) ... */
+        /* Importa a fonte Poppins que você já usa */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        
+        /* Variáveis de cor do seu site (para consistência) */
+        :root {
+          --primary: #0984e3;
+          --correct: #00b894;
+          --bg-light: #f5f6fa;
+          --text-dark: #2d3436;
+          --text-light: #555;
+        }
+
+        body {
+          font-family: "Poppins", sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 20px;
+          color: var(--text-dark);
+          background: var(--bg-light); /* Fundo da página */
+        }
+        
+        h1 {
+          color: var(--primary);
+          text-align: center;
+          font-weight: 700;
+        }
+        
+        p.info {
+          text-align: center;
+          font-size: 1.1rem;
+          padding-bottom: 15px;
+          border-bottom: 2px solid #eee;
+          margin-bottom: 30px;
+        }
+
+        /* O Card Container */
+        .card-container {
+          width: 100%;
+          max-width: 700px; /* Largura máxima do card */
+          margin: 20px auto;
+          page-break-inside: avoid; /* Evita que o card quebre na impressão */
+          border-radius: 12px;
+          background: #ffffff;
+          border: 1px solid #e0e0e0;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+          overflow: hidden; /* Para o radius funcionar */
+        }
+        
+        /* Tag de Título (Pergunta, Resposta, etc.) */
+        .card-tag {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 0.9rem;
+          font-weight: 600;
+          padding: 4px 12px;
+          border-radius: 99px;
+          margin-bottom: 12px;
+          color: white;
+        }
+        
+        .card-tag svg {
+          stroke: white;
+        }
+
+        /* --- Frente do Card --- */
+        .card-front {
+          padding: 25px 30px;
+        }
+        
+        .tag-question {
+          background-color: var(--primary);
+        }
+        
+        .question-text {
+          font-size: 1.1rem;
+          font-weight: 500;
+          color: var(--text-dark);
+        }
+
+        /* --- Verso do Card --- */
+        .card-back {
+          padding: 25px 30px;
+          background: #fdfdfd;
+          border-top: 2px dashed #ddd; /* Linha de dobra sutil */
+        }
+        
+        .answer-wrapper {
+          margin-bottom: 20px;
+        }
+        
+        .tag-answer {
+          background-color: var(--correct);
+        }
+        
+        .answer-text {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: var(--correct);
+        }
+        
+        .tag-comment {
+          background-color: #777;
+        }
+
+        .comment-text {
+          font-size: 0.95rem;
+          color: var(--text-light);
+          font-style: italic;
+        }
+        
+        /* Otimizações para Impressão */
+        @media print {
+          body { 
+            margin: 15px;
+            background: #fff;
+            padding: 0;
+          }
+          h1 { font-size: 1.5rem; }
+          p.info { font-size: 0.9rem; }
+          .card-container {
+            border: 1px solid #aaa;
+            box-shadow: none;
+            max-width: 100%;
+          }
+        }
       </style>
     </head>
     <body>
       <h1>${dict.printTitle}</h1>
       <p class="info" data-translate-key="printInfo" data-total="${questionsToPrint.length}">
-        ${dict.printInfo.replace('{total}', questionsToPrint.length)}
+        ${dict.printInfo.replace('{total}', questionsToPrint.length)}<br>
+        <strong>Instrução:</strong> Imprima, recorte cada card e dobre na linha tracejada.
       </p>
     `;
 
-  // Loop nas questões
+  // Loop nas questões e cria um "card" para cada
   questionsToPrint.forEach((q) => { 
-    // ... (código de formatação de texto sem alteração) ...
     const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
     const correctAnswerKey = q.resposta_correta;
     const correctAnswerText = (q.alternativas && q.alternativas[correctAnswerKey]) ? q.alternativas[correctAnswerKey] : 'N/A';
@@ -303,7 +442,8 @@ function generatePrintPage(questionsToPrint) {
         <div class="card-front">
           <div class="card-tag tag-question">
             ${iconQuestion}
-            <span>${dict.feedbackQuestion || 'PERGUNTA'}</span> <!-- (Adicionar 'feedbackQuestion' ao dict se quiser) -->
+            <!-- Adicionei a tradução aqui -->
+            <span>${dict.feedbackQuestion || 'PERGUNTA'}</span> 
           </div>
           <div class="question-text">
             ${formattedEnunciado}
@@ -312,9 +452,11 @@ function generatePrintPage(questionsToPrint) {
         
         <!-- VERSO (Resposta) -->
         <div class="card-back">
+          <!-- Seção da Resposta Correta -->
           <div class="answer-wrapper">
             <div class="card-tag tag-answer">
               ${iconAnswer}
+              <!-- Usei a tradução do 'feedbackWrong' para pegar "Resposta correta" -->
               <span>${dict.feedbackWrong.split(':')[0] || 'RESPOSTA CORRETA'}</span>
             </div>
             <div class="answer-text">
@@ -322,10 +464,12 @@ function generatePrintPage(questionsToPrint) {
             </div>
           </div>
           
+          <!-- Seção do Comentário (só aparece se existir) -->
           ${q.comentario ? `
             <div class="comment-wrapper">
               <div class="card-tag tag-comment">
                 ${iconComment}
+                <!-- Usei a tradução de 'feedbackComment' -->
                 <span>${dict.feedbackComment.replace(':','')}</span>
               </div>
               <div class="comment-text">
@@ -352,4 +496,60 @@ function generatePrintPage(questionsToPrint) {
   setTimeout(() => {
     printWindow.print();
   }, 250);
+}
+
+// -------------------------------------------------------------------
+// ADICIONANDO A FUNÇÃO DE VÍDEO (QUE ESTAVA FALTANDO)
+// -------------------------------------------------------------------
+
+/* ====== FUNÇÃO DO VÍDEO DE VITÓRIA ====== */
+function playVictoryVideo() {
+  const overlay = document.getElementById('easterEggOverlay');
+  const video = document.getElementById('easterEggVideo');
+  const unmuteText = document.getElementById('unmuteText');
+
+  if (!overlay || !video) {
+    console.error("Elementos do vídeo de vitória não encontrados.");
+    return;
+  }
+  
+  overlay.style.display = 'flex';
+  video.volume = 1.0; // Define o volume máximo
+
+  // Tenta tocar o vídeo
+  const playPromise = video.play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(() => {
+      // Autoplay com som funcionou! (Raro)
+      unmuteText.style.display = 'none';
+    }).catch(error => {
+      // Autoplay com som FALHOU (Normal).
+      // Toca o vídeo mutado e pede interação do usuário.
+      console.warn("Autoplay com som bloqueado. Tocando mutado.", error);
+      video.muted = true;
+      video.play();
+      unmuteText.style.display = 'block'; // Mostra "Clique para ativar o som"
+      unmuteText.textContent = "O navegador bloqueou o som. Clique para ativar.";
+      
+      // Listener para desmutar ao clicar no overlay ou no texto
+      overlay.addEventListener('click', () => {
+        video.muted = false;
+        video.volume = 1.0;
+        unmuteText.style.display = 'none';
+      }, { once: true }); // {once: true} remove o listener após o primeiro clique
+    });
+  }
+  
+  // Listener do botão de fechar (caso você o adicione de volta)
+  const closeBtn = document.getElementById('closeEasterEgg'); // Pode ser null
+  if(closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // Impede que o clique feche E desmute ao mesmo tempo
+      video.pause();
+      video.currentTime = 0; // Reseta o vídeo
+      overlay.style.display = 'none';
+      unmuteText.style.display = 'none'; // Esconde o texto ao fechar
+    });
+  }
 }
