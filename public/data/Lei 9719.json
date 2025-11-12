@@ -1,5 +1,297 @@
 [
   {
+    "id": "700106",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 10, I, da Lei 9.719/1998, qual é a multa prevista para a infração ao caput do art. 7º (não exibir as listas de escalação diária)?",
+    "alternativas": {
+      "A": "De R$ 173,00 a R$ 1.730,00.",
+      "B": "De R$ 575,00 a R$ 5.750,00.",
+      "C": "De R$ 345,00 a R$ 3.450,00.",
+      "D": "Um salário mínimo, por trabalhador."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta, pois corresponde exatamente ao valor estipulado no Art. 10, I. A B é a multa por infração às normas de segurança (Art. 10, II). A C é a multa por infração às normas de saúde (Art. 10, II) ou por trabalhador irregular (Art. 10, III)."
+  },
+  {
+    "id": "700107",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 10, II, a multa por infração às normas de SEGURANÇA do trabalho portuário (Art. 9º) é:",
+    "alternativas": {
+      "A": "De R$ 173,00 a R$ 1.730,00.",
+      "B": "De R$ 575,00 a R$ 5.750,00.",
+      "C": "De R$ 345,00 a R$ 3.450,00.",
+      "D": "Aplicada em dobro, independentemente da situação."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 10, II, diferencia as multas do Art. 9º: a de segurança é de R$ 575,00 a R$ 5.750,00. A alternativa C refere-se à multa de saúde, que é menor. A A refere-se à infração do Art. 7º, caput."
+  },
+  {
+    "id": "700108",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 10, III, prevê uma multa 'por trabalhador em situação irregular'. Qual o valor dessa multa?",
+    "alternativas": {
+      "A": "De R$ 173,00 a R$ 1.730,00.",
+      "B": "De R$ 575,00 a R$ 5.750,00.",
+      "C": "De R$ 345,00 a R$ 3.450,00.",
+      "D": "Um salário mínimo, fixo."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 10, III, estabelece o valor de R$ 345,00 a R$ 3.450,00, e é crucial notar que ela é aplicada 'por trabalhador em situação irregular', o que a diferencia das multas dos incisos I e II."
+  },
+  {
+    "id": "700109",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 10, parágrafo único, qual dos seguintes fatores NÃO é utilizado para graduar a multa?",
+    "alternativas": {
+      "A": "A natureza da infração.",
+      "B": "A extensão da infração.",
+      "C": "A intenção de quem a praticou.",
+      "D": "O porte econômico do operador portuário."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D é a exceção correta. O parágrafo único do Art. 10 menciona expressamente 'natureza', 'extensão' e 'intenção' (A, B, C) como critérios de graduação. O porte econômico da empresa (D) não é mencionado no artigo."
+  },
+  {
+    "id": "700110",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O parágrafo único do Art. 10 determina que as multas serão aplicadas em dobro em certas situações. Assinale a alternativa que NÃO é uma dessas situações.",
+    "alternativas": {
+      "A": "Reincidência.",
+      "B": "Oposição à fiscalização.",
+      "C": "Desacato à autoridade.",
+      "D": "Infração cometida durante a noite."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D é a exceção correta. O parágrafo único do Art. 10 lista três agravantes que dobram a multa: 'reincidência', 'oposição à fiscalização' e 'desacato à autoridade' (A, B, C). Infração noturna (D) não é um critério mencionado."
+  },
+  {
+    "id": "700111",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Benefício Assistencial",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 10-A institui um benefício assistencial. Qual dos seguintes NÃO é um requisito para o trabalhador portuário avulso recebê-lo?",
+    "alternativas": {
+      "A": "Ter mais de 60 (sessenta) anos.",
+      "B": "Não cumprir os requisitos para aposentadoria (arts. 42, 48, 52 e 57 da Lei 8.213).",
+      "C": "Não possuir meios para prover a sua subsistência.",
+      "D": "Ter contribuído por pelo menos 15 anos ao INSS."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D é a exceção correta. O Art. 10-A lista os requisitos: idade superior a 60 anos (A), não ter direito às aposentadorias (B) e não ter meios de subsistência (C). O benefício é assistencial, ou seja, independe de um tempo mínimo de contribuição (D), sendo justamente para quem não conseguiu os requisitos de aposentadoria."
+  },
+  {
+    "id": "700112",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Benefício Assistencial",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Qual o valor do benefício assistencial mensal previsto no Art. 10-A?",
+    "alternativas": {
+      "A": "Exatamente 1 (um) salário mínimo.",
+      "B": "Até 1 (um) salário mínimo.",
+      "C": "Metade de 1 (um) salário mínimo.",
+      "D": "Dois salários mínimos, por se tratar de atividade de risco."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 10-A é sutil ao definir o valor como 'de até 1 (um) salário mínimo', indicando que pode ser o teto, mas não necessariamente o valor fixo em todas as situações, conforme regulamento."
+  },
+  {
+    "id": "700113",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Benefício Assistencial",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o parágrafo único do Art. 10-A, o benefício assistencial pode ser acumulado com qual outro benefício?",
+    "alternativas": {
+      "A": "Aposentadoria por invalidez.",
+      "B": "Aposentadoria por tempo de contribuição.",
+      "C": "Pensão por morte deixada por cônjuge.",
+      "D": "Assistência médica e pensão especial de natureza indenizatória."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O parágrafo único do Art. 10-A veda a acumulação com 'qualquer outro no âmbito da seguridade social' (o que inclui A, B e C), mas abre exceção 'salvo os da assistência médica e da pensão especial de natureza indenizatória'."
+  },
+  {
+    "id": "700114",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Processo",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 12 estabelece que o processo de autuação e imposição das multas da Lei 9.719/1998 obedecerá ao disposto em quais legislações?",
+    "alternativas": {
+      "A": "Ao Código de Processo Civil.",
+      "B": "À Lei de Processo Administrativo Federal (Lei 9.784/1999).",
+      "C": "Ao Título VII da CLT ou à legislação previdenciária, conforme o caso.",
+      "D": "Exclusivamente à Lei 12.815/2013 e regulamentação da Antaq.",
+      "E": "Ao Código Penal, por se tratar de infração."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 12 direciona o rito processual das multas para o 'Título VII da Consolidação das Leis do Trabalho' (que trata das multas trabalhistas) ou para a 'legislação previdenciária', dependendo da natureza da infração (trabalhista ou previdenciária)."
+  },
+  {
+    "id": "700115",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Aplicabilidade",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 13, as disposições da Lei 9.719/1998 também se aplicam a quem?",
+    "alternativas": {
+      "A": "Exclusivamente aos operadores portuários com contrato de arrendamento.",
+      "B": "Apenas ao órgão gestor de mão-de-obra (OGMO).",
+      "C": "Aos requisitantes de mão-de-obra de trabalhador avulso que não sejam operadores portuários.",
+      "D": "Aos sindicatos dos trabalhadores portuários.",
+      "E": "Aos armadores e agências de navegação."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 13 expande o escopo da lei, que foca na relação Operador-OGMO-Trabalhador, para incluir também outros 'requisitantes de mão-de-obra' (como um importador/exportador que requisite TPA) mesmo que não sejam operadores portuários."
+  },
+  {
+    "id": "700116",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Fiscalização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 14 define os órgãos competentes pela fiscalização do cumprimento da Lei 9.719/1998. Quais são eles?",
+    "alternativas": {
+      "A": "A Antaq e a Autoridade Marítima.",
+      "B": "O Ministério do Trabalho e o INSS.",
+      "C": "O Ministério do Trabalho e a Antaq.",
+      "D": "O INSS e a Receita Federal.",
+      "E": "A administração do porto e o OGMO."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 14 é explícito ao atribuir a competência da fiscalização desta lei (que trata de pagamentos, encargos e segurança) ao 'Ministério do Trabalho' (atual MTE/Auditores Fiscais do Trabalho) e ao 'INSS' (atual Receita Federal no que tange à arrecadação)."
+  },
+  {
+    "id": "700117",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Fiscalização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Ainda sobre o Art. 14, quem deve colaborar com os Agentes da Inspeção do Trabalho e Fiscais do INSS em sua ação fiscalizadora?",
+    "alternativas": {
+      "A": "As autoridades de que trata o art. 3o da Lei no 8.630, de 1993.",
+      "B": "Os operadores portuários estrangeiros.",
+      "C": "Os trabalhadores portuários avulsos.",
+      "D": "A Polícia Federal e a Receita Federal.",
+      "E": "Os sindicatos patronais."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 14 determina que as 'autoridades de que trata o art. 3o da Lei no 8.630, de 1993' (que incluem a Administração do Porto/Autoridade Portuária, Autoridade Marítima, Aduaneira, etc.) devem 'colaborar' com a fiscalização trabalhista e previdenciária."
+  },
+  {
+    "id": "700118",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A multa por infração ao parágrafo único do art. 7º (responsabilidade pela exatidão das listas de escalação) se enquadra em qual dispositivo do Art. 10?",
+    "alternativas": {
+      "A": "Inciso I (R$ 173,00 a R$ 1.730,00).",
+      "B": "Inciso II (R$ 575,00 a R$ 5.750,00).",
+      "C": "Inciso III (R$ 345,00 a R$ 3.450,00), por trabalhador.",
+      "D": "No parágrafo único (aplicação em dobro).",
+      "E": "Não há multa específica para o parágrafo único do art. 7º."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 10, III, especifica que a multa de R$ 345,00 a R$ 3.450,00 (por trabalhador) se aplica à infração 'ao parágrafo único do art. 7º e aos demais artigos'. A alternativa A (Inciso I) refere-se apenas ao *caput* do art. 7º."
+  },
+  {
+    "id": "700119",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Penalidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Se um infrator, após ser multado por oposição à fiscalização (Art. 10, p. único), cometer a mesma infração novamente, ele será considerado:",
+    "alternativas": {
+      "A": "Reincidente, e a multa será aplicada em dobro novamente.",
+      "B": "Reincidente, mas a multa não pode ser duplicada duas vezes.",
+      "C": "Em desacato, e a multa será triplicada.",
+      "D": "Inimputável, pois já foi penalizado.",
+      "E": "Em oposição continuada, mantendo-se o valor da primeira multa."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O parágrafo único do Art. 10 lista 'reincidência' como um dos motivos para aplicação em dobro. A oposição à fiscalização é outro motivo. Se o infrator é reincidente *em* uma oposição à fiscalização, ambas as condições para duplicar a multa estão presentes. A lei não impede a aplicação da dobra pela reincidência, mesmo que a infração original já tenha sido agravada."
+  },
+  {
+    "id": "700120",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Benefício Assistencial",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 10-A, ao mencionar os requisitos de aposentadoria não cumpridos, cita diversos artigos da Lei 8.213/1991 (Lei de Benefícios da Previdência). Estes artigos referem-se, em geral, a quais tipos de aposentadoria?",
+    "alternativas": {
+      "A": "Aposentadoria por invalidez, por idade, por tempo de contribuição e especial.",
+      "B": "Apenas aposentadoria especial (art. 57).",
+      "C": "Apenas aposentadoria por idade (art. 48).",
+      "D": "Aposentadoria por invalidez (art. 42) e auxílio-doença.",
+      "E": "Aposentadoria por tempo de contribuição (art. 52) e pensão por morte."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. Embora a questão não exija saber o conteúdo de outra lei, ela testa a compreensão do Art. 10-A. Os artigos citados (42, 48, 52, 57 da Lei 8.213) correspondem, respectivamente, à Aposentadoria por Invalidez, Aposentadoria por Idade, Aposentadoria por Tempo de Contribuição (na regra antiga) e Aposentadoria Especial. O benefício assistencial é para quem não atingiu *nenhuma* dessas modalidades."
+  },
+  {
     "id": "700091",
     "disciplina": "Legislação Federal",
     "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
