@@ -262,7 +262,7 @@ function generatePrintPage(questionsToPrint) {
         .comment {
           /* --- MUDANÇAS AQUI --- */
           font-style: italic;
-          font-size: 0.5rem; /* Reduz a fonte do comentário */
+          font-size: 0.3rem; /* Reduz a fonte do comentário */
           margin-top: 10px;
           padding-top: 10px;
           /* --- FIM DAS MUDANÇAS --- */
