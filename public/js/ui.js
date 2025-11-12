@@ -1,4 +1,5 @@
-/* ====== CÓDIGO COMPLETO E CORRIGIDO PARA: js/ui.js ====== */
+/* ====== CÓDIGO COMPLETO PARA: js/ui.js ====== */
+// (selectedSubjects é uma var global definida em main.js)
 
 function renderQuestion() {
   const quizDiv = document.getElementById("quiz");
@@ -29,49 +30,29 @@ function renderQuestion() {
 
 // -------------------------------------------------------------------
 
-/* ====== SUBSTITUA SUA FUNÇÃO showResults() POR ESTA VERSÃO DE TESTE ====== */
-
 function showResults() {
   let correctCount = 0;
   const errorsByDiscipline = {}; 
   const wrongQuestions = []; 
 
-  console.log("--- INICIANDO showResults() ---"); // TESTE
-  console.log("Total de questões no quiz:", questions.length); // TESTE
-
   // 1. Processar dados para os gráficos
-  questions.forEach((q, index) => {
+  questions.forEach(q => {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
     const topic = getErrorTopic(q); 
 
     if (user === right) {
       correctCount++;
-      console.log(`Questão ${index + 1}: CORRETA`); // TESTE
     } else {
-      // É um erro
       if (!errorsByDiscipline[topic]) {
         errorsByDiscipline[topic] = 0;
       }
       errorsByDiscipline[topic]++;
-      wrongQuestions.push(q);
-      
-      // ESTA É A LINHA DE TESTE MAIS IMPORTANTE
-      console.log(`Questão ${index + 1}: ERRADA. Adicionando ao array. Enunciado:`, q.enunciado);
+      wrongQuestions.push(q); 
     }
   });
 
   const wrongCount = questions.length - correctCount;
-  
-  // TESTE FINAL ANTES DE IMPRIMIR
-  console.log("--- VERIFICAÇÃO FINAL ---");
-  console.log("Total de acertos:", correctCount);
-  console.log("Total de erros:", wrongCount);
-  console.log("Array 'wrongQuestions' que será enviado para impressão:", wrongQuestions);
-  
-  // ---------------------------------------------------
-  // O RESTANTE DA FUNÇÃO (HTML, GRÁFICOS) É IGUAL
-  // ---------------------------------------------------
 
   // 2. Construir o HTML dos Resultados
   let resultHTML = `
@@ -137,7 +118,6 @@ function showResults() {
     const printBtn = document.getElementById('printErrorsBtn');
     if (printBtn) {
       printBtn.addEventListener('click', () => {
-        // A função generatePrintPage usará o array que testamos
         generatePrintPage(wrongQuestions); 
       });
     }
@@ -149,7 +129,11 @@ function showResults() {
         type: 'doughnut',
         data: {
           labels: ['Acertos', 'Erros'],
-          datasets: [{ data: [correctCount, wrongCount], backgroundColor: ['#00b894', '#d63031'], hoverOffset: 4 }]
+          datasets: [{
+            data: [correctCount, wrongCount],
+            backgroundColor: ['#00b894', '#d63031'], 
+            hoverOffset: 4
+          }]
         },
         options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
       });
@@ -184,19 +168,43 @@ function showResults() {
     }
   });
 }
+
+// -------------------------------------------------------------------
+
 /* ====== seleção de subitem (UI) ====== */
 function clearSelectionUI() {
-  selectedFile = null;
-  document.getElementById('selectedSummary').textContent = 'Nenhuma selecionada';
-  // remover destaque
+  // MUDANÇA: Limpa o array global e remove a classe de todos
+  selectedSubjects = []; 
   document.querySelectorAll('.subitem.selected').forEach(el => el.classList.remove('selected'));
+  
+  // MUDANÇA: Chama a nova função de atualização
+  updateSelectedSummary();
 }
+
+/**
+ * NOVO: Atualiza o texto do sumário com base no array 'selectedSubjects'.
+ */
+function updateSelectedSummary() {
+  const summaryDiv = document.getElementById('selectedSummary');
+  
+  if (selectedSubjects.length === 0) {
+    summaryDiv.textContent = 'Nenhuma selecionada';
+  } else if (selectedSubjects.length === 1) {
+    // Se for só 1, mostra o nome
+    summaryDiv.textContent = selectedSubjects[0].name;
+  } else {
+    // Se for > 1, mostra um resumo
+    const total = selectedSubjects.reduce((acc, s) => acc + s.count, 0);
+    summaryDiv.textContent = `${selectedSubjects.length} matérias selecionadas (${total} questões)`;
+  }
+}
+
 
 // -------------------------------------------------------------------
 
 /**
  * Gera uma nova página com as questões erradas em formato de flashcard (frente/verso).
- * @param {Array} questionsToPrint - Um array de objetos de questão (apenas as erradas).
+ * (Esta função não sofreu alterações)
  */
 function generatePrintPage(questionsToPrint) {
   let printHtml = `
@@ -309,7 +317,7 @@ function generatePrintPage(questionsToPrint) {
       </p>
     `;
 
-  // O loop de geração de HTML permanece o mesmo
+  // Loop nas questões e cria um "card" para cada
   questionsToPrint.forEach((q) => { 
     const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
     const correctAnswerKey = q.resposta_correta;
@@ -327,7 +335,7 @@ function generatePrintPage(questionsToPrint) {
             Resposta: ${correctAnswerKey}) ${correctAnswerText}
           </div>
           
-          ${q.comentario ? `<div class="comment"><strong>Comentário:</strong> ${formattedComentario}</div>` : ''}
+          ${q.comimpresse? `<div class="comment"><strong>Comentário:</strong> ${formattedComentario}</div>` : ''}
         </div>
       </div>
     `;
@@ -338,7 +346,7 @@ function generatePrintPage(questionsToPrint) {
     </html>
   `;
 
-  // A lógica de abertura da janela permanece a mesma
+  // Abrir em uma nova janela e chamar a impressão
   const printWindow = window.open('', '_blank');
   printWindow.document.open();
   printWindow.document.write(printHtml);
