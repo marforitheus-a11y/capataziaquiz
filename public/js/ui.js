@@ -318,7 +318,55 @@ function generatePrintPage(questionsToPrint) {
         <strong>Instrução:</strong> Imprima, recorte cada card e dobre na linha pontilhada.
       </p>
     `;
+/* ====== ADICIONE ESTA NOVA FUNÇÃO AO FINAL DE js/ui.js ====== */
 
+function playVictoryVideo() {
+  const overlay = document.getElementById('easterEggOverlay');
+  const video = document.getElementById('easterEggVideo');
+  const closeBtn = document.getElementById('closeEasterEgg');
+  const unmuteText = document.getElementById('unmuteText');
+
+  if (!overlay || !video) {
+    console.error("Elementos do vídeo de vitória não encontrados.");
+    return;
+  }
+  
+  overlay.style.display = 'flex';
+  video.volume = 1.0; // Define o volume máximo
+
+  // Tenta tocar o vídeo
+  const playPromise = video.play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(() => {
+      // Autoplay com som funcionou! (Raro)
+      unmuteText.style.display = 'none';
+    }).catch(error => {
+      // Autoplay com som FALHOU (Normal).
+      // Toca o vídeo mutado e pede interação do usuário.
+      console.warn("Autoplay com som bloqueado. Tocando mutado.", error);
+      video.muted = true;
+      video.play();
+      unmuteText.style.display = 'block'; // Mostra "Clique para ativar o som"
+      
+      // Listener para desmutar ao clicar no overlay ou no texto
+      overlay.addEventListener('click', () => {
+        video.muted = false;
+        video.volume = 1.0;
+        unmuteText.style.display = 'none';
+      }, { once: true }); // {once: true} remove o listener após o primeiro clique
+    });
+  }
+  
+  // Listener do botão de fechar
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Impede que o clique feche E desmute ao mesmo tempo
+    video.pause();
+    video.currentTime = 0; // Reseta o vídeo
+    overlay.style.display = 'none';
+    unmuteText.style.display = 'none'; // Esconde o texto ao fechar
+  });
+}
   // Loop nas questões e cria um "card" para cada
   questionsToPrint.forEach((q) => { 
     const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
