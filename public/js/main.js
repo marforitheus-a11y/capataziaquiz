@@ -260,6 +260,8 @@ document.getElementById('startBtn').addEventListener('click', async () => {
 
 document.getElementById('clearSelection').addEventListener('click', () => {
   clearSelectionUI(); // Função do ui.js
+loadSubjects();
+loadPDFs();
 });
 
 
