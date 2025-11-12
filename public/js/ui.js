@@ -1,11 +1,6 @@
-/* ====== CÓDIGO COMPLETO E CORRIGIDO PARA: js/ui.js ====== */
+/* ====== CÓDIGO COMPLETO PARA: js/ui.js ====== */
 // (selectedSubjects é uma var global definida em main.js)
 
-/**
- * NOVO: renderQuestion foi totalmente reescrito.
- * Agora ele verifica o estado da questão (respondida ou não)
- * antes de decidir o que mostrar.
- */
 function renderQuestion() {
   const quizDiv = document.getElementById("quiz");
   const q = questions[currentQuestion];
@@ -85,9 +80,6 @@ function renderQuestion() {
   `;
 }
 
-// -------------------------------------------------------------------
-// O restante do arquivo (showResults, updateSelectedSummary, etc.)
-// permanece o mesmo. Apenas colei eles aqui para garantir.
 // -------------------------------------------------------------------
 
 function showResults() {
@@ -191,7 +183,6 @@ function showResults() {
     }
 
     // --- Gráfico de Pizza ---
-    // NOVO: Adiciona "Não respondidas" ao gráfico
     const pizzaCtx = document.getElementById('pizzaChart');
     if (pizzaCtx) {
       new Chart(pizzaCtx, {
@@ -267,9 +258,19 @@ function updateSelectedSummary() {
 // -------------------------------------------------------------------
 
 /**
+ * ===================================================================
+ * ===== NOVA FUNÇÃO generatePrintPage COM REDESIGN COMPLETO =====
+ * ===================================================================
  * Gera uma nova página com as questões erradas em formato de flashcard (frente/verso).
+ * @param {Array} questionsToPrint - Um array de objetos de questão (apenas as erradas).
  */
 function generatePrintPage(questionsToPrint) {
+  
+  // --- Ícones SVG (embutidos para não precisar de arquivos) ---
+  const iconQuestion = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>`;
+  const iconAnswer = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`;
+  const iconComment = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>`;
+
   let printHtml = `
     <!DOCTYPE html>
     <html lang="pt-BR">
@@ -277,86 +278,130 @@ function generatePrintPage(questionsToPrint) {
       <meta charset="UTF-8">
       <title>Revisão de Questões (Flashcards)</title>
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        /* Importa a fonte Poppins que você já usa */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
         
+        /* Variáveis de cor do seu site (para consistência) */
+        :root {
+          --primary: #0984e3;
+          --correct: #00b894;
+          --bg-light: #f5f6fa;
+          --text-dark: #2d3436;
+          --text-light: #555;
+        }
+
         body {
           font-family: "Poppins", sans-serif;
-          line-height: 1.5;
-          margin: 20px;
-          color: #2d3436;
-          background: #f5f6fa;
-        }
-
-        .card-container {
-          max-width: 500px; 
-          margin: 15px auto; 
-          width: 100%;
-          page-break-inside: avoid;
-          margin-bottom: 15px;
-          border-radius: 10px;
-          border: 1px solid #aaa;
-          background: #fff;
-          overflow: hidden;
+          line-height: 1.6;
+          margin: 0;
+          padding: 20px;
+          color: var(--text-dark);
+          background: var(--bg-light); /* Fundo da página */
         }
         
-        .card-front, .card-back {
-          padding: 14px 18px; 
-          min-height: 70px;  
-          box-sizing: border-box; 
-        }
-
-        .card-front {
-          font-weight: 500;
-          font-size: 0.95rem; 
-        }
-
-        .card-back {
-          border-top: 2px dashed #aaa;
-          background: #fdfdfd;
-        }
-        
-        .answer-title {
-          font-weight: 600;
-          color: #00b894;
-          font-size: 0.95rem; 
-        }
-        
-        .comment {
-          font-style: italic;
-          font-size: 0.9rem; 
-          margin-top: 10px;
-          padding-top: 10px;
-          color: #555;
-          border-top: 1px solid #eee;
-        }
-
         h1 {
-          color: #0984e3;
+          color: var(--primary);
           text-align: center;
-          font-size: 1.8rem; 
+          font-weight: 700;
         }
         
         p.info {
           text-align: center;
-          font-size: 1rem; 
-          padding-bottom: 10px;
+          font-size: 1.1rem;
+          padding-bottom: 15px;
           border-bottom: 2px solid #eee;
+          margin-bottom: 30px;
         }
 
+        /* O Card Container */
+        .card-container {
+          width: 100%;
+          max-width: 700px; /* Largura máxima do card */
+          margin: 20px auto;
+          page-break-inside: avoid; /* Evita que o card quebre na impressão */
+          border-radius: 12px;
+          background: #ffffff;
+          border: 1px solid #e0e0e0;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+          overflow: hidden; /* Para o radius funcionar */
+        }
+        
+        /* Tag de Título (Pergunta, Resposta, etc.) */
+        .card-tag {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 0.9rem;
+          font-weight: 600;
+          padding: 4px 12px;
+          border-radius: 99px;
+          margin-bottom: 12px;
+          color: white;
+        }
+        
+        .card-tag svg {
+          stroke: white;
+        }
+
+        /* --- Frente do Card --- */
+        .card-front {
+          padding: 25px 30px;
+        }
+        
+        .tag-question {
+          background-color: var(--primary);
+        }
+        
+        .question-text {
+          font-size: 1.1rem;
+          font-weight: 500;
+          color: var(--text-dark);
+        }
+
+        /* --- Verso do Card --- */
+        .card-back {
+          padding: 25px 30px;
+          background: #fdfdfd;
+          border-top: 2px dashed #ddd; /* Linha de dobra sutil */
+        }
+        
+        .answer-wrapper {
+          margin-bottom: 20px;
+        }
+        
+        .tag-answer {
+          background-color: var(--correct);
+        }
+        
+        .answer-text {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: var(--correct);
+        }
+        
+        .tag-comment {
+          background-color: #777;
+        }
+
+        .comment-text {
+          font-size: 0.95rem;
+          color: var(--text-light);
+          font-style: italic;
+        }
+        
+        /* Otimizações para Impressão */
         @media print {
           body { 
             margin: 15px;
             background: #fff;
+            padding: 0;
           }
           h1 { font-size: 1.5rem; }
           p.info { font-size: 0.9rem; }
           .card-container {
             border: 1px solid #aaa;
             box-shadow: none;
-            max-width: 90%;
-          }
-          .card-back {
-             background: #fdfdfd;
+            max-width: 100%;
           }
         }
       </style>
@@ -365,7 +410,7 @@ function generatePrintPage(questionsToPrint) {
       <h1>Flashcards para Revisão</h1>
       <p class="info">
         Total de ${questionsToPrint.length} questões para revisar.<br>
-        <strong>Instrução:</strong> Imprima, recorte cada card e dobre na linha pontilhada.
+        <strong>Instrução:</strong> Imprima, recorte cada card e dobre na linha tracejada.
       </p>
     `;
 
@@ -378,16 +423,42 @@ function generatePrintPage(questionsToPrint) {
 
     printHtml += `
       <div class="card-container">
+        <!-- FRENTE (Pergunta) -->
         <div class="card-front">
-          ${formattedEnunciado}
+          <div class="card-tag tag-question">
+            ${iconQuestion}
+            <span>PERGUNTA</span>
+          </div>
+          <div class="question-text">
+            ${formattedEnunciado}
+          </div>
         </div>
         
+        <!-- VERSO (Resposta) -->
         <div class="card-back">
-          <div class="answer-title">
-            Resposta: ${correctAnswerKey}) ${correctAnswerText}
+          <!-- Seção da Resposta Correta -->
+          <div class="answer-wrapper">
+            <div class="card-tag tag-answer">
+              ${iconAnswer}
+              <span>RESPOSTA CORRETA</span>
+            </div>
+            <div class="answer-text">
+              ${correctAnswerKey}) ${correctAnswerText}
+            </div>
           </div>
           
-          ${q.comentario ? `<div class="comment"><strong>Comentário:</strong> ${formattedComentario}</div>` : ''}
+          <!-- Seção do Comentário (só aparece se existir) -->
+          ${q.comentario ? `
+            <div class="comment-wrapper">
+              <div class="card-tag tag-comment">
+                ${iconComment}
+                <span>COMENTÁRIO</span>
+              </div>
+              <div class="comment-text">
+                ${formattedComentario}
+              </div>
+            </div>
+          ` : ''}
         </div>
       </div>
     `;
@@ -408,6 +479,3 @@ function generatePrintPage(questionsToPrint) {
     printWindow.print();
   }, 250);
 }
-
-// A função playVictoryVideo foi removida, já que não foi mencionada
-// na última solicitação de "voltar".
