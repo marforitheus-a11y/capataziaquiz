@@ -188,7 +188,7 @@ function selectOption(questionId, optionKey) {
   
   // --- MUDANÇA AQUI ---
   // Verifica se a resposta está correta para mudar o idioma
-  const q = questions.find(q => q.id === questionId);
+  const q = questions.find(item => item.id == questionId); // (Note o ==)
   const isCorrect = (optionKey === q.resposta_correta);
   
   if (isCorrect) {
