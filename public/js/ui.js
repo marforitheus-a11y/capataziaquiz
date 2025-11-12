@@ -53,7 +53,9 @@ function showResults() {
   });
 
   const wrongCount = questions.length - correctCount;
-
+if (correctCount === questions.length && questions.length > 0) {
+    // Atraso de 100ms para o DOM começar a renderizar os resultados por baixo
+    setTimeout(playVictoryVideo, 100);
   // 2. Construir o HTML dos Resultados
   let resultHTML = `
     <h2>Resultado Final</h2>
