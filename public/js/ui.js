@@ -254,7 +254,7 @@ function generatePrintPage(questionsToPrint) {
 
         .card-front {
           font-weight: 500;
-          font-size: 0.95rem; /* Fonte original, 0.55 era muito pequeno */
+          font-size: 0.55rem; /* Fonte original, 0.55 era muito pequeno */
         }
 
         .card-back {
@@ -265,12 +265,12 @@ function generatePrintPage(questionsToPrint) {
         .answer-title {
           font-weight: 600;
           color: #00b894;
-          font-size: 0.95rem; /* Fonte original */
+          font-size: 0.55rem; /* Fonte original */
         }
         
         .comment {
           font-style: italic;
-          font-size: 0.9rem; /* Fonte original, 0.3 era ilegível */
+          font-size: 0.35rem;
           margin-top: 10px;
           padding-top: 10px;
           color: #555;
