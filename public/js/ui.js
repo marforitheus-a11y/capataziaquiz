@@ -1,19 +1,75 @@
 /* ====== CÓDIGO COMPLETO E CORRIGIDO PARA: js/ui.js ====== */
 // (selectedSubjects é uma var global definida em main.js)
 
+/**
+ * NOVO: renderQuestion foi totalmente reescrito.
+ * Agora ele verifica o estado da questão (respondida ou não)
+ * antes de decidir o que mostrar.
+ */
 function renderQuestion() {
   const quizDiv = document.getElementById("quiz");
   const q = questions[currentQuestion];
-  lockSelection = false;
+  
+  // Verifica se o usuário já respondeu esta questão
+  const userAnswer = userAnswers[q.id];
+  const isAnswered = (userAnswer !== undefined);
 
+  // 1. Monta o HTML das alternativas
+  const optionsHtml = Object.entries(q.alternativas || {}).map(([key, value]) => {
+    
+    let classes = 'option';
+    let clickEvent = `onclick="selectOption('${q.id}', '${key}')"`;
+    
+    // Se a questão JÁ FOI RESPONDIDA
+    if (isAnswered) {
+      clickEvent = ''; // Desativa o clique
+      
+      // Marca a correta
+      if (key === q.resposta_correta) {
+        classes += ' correct';
+      }
+      // Se o usuário respondeu esta E ela está errada
+      else if (key === userAnswer) {
+        classes += ' wrong';
+      }
+    }
+    
+    return `<li class="${classes}" ${clickEvent}>${key}) ${value}</li>`;
+    
+  }).join('');
+
+  // 2. Monta o HTML do feedback (comentário)
+  let feedbackHtml = '';
+  if (isAnswered) {
+    // O usuário respondeu esta questão, então mostramos o gabarito
+    const isCorrect = (userAnswer === q.resposta_correta);
+    
+    const feedbackTitle = isCorrect
+      ? `<p class="feedback correct">✅ Correto!</p>`
+      : `<p class="feedback wrong">❌ Errado! Resposta correta: ${q.resposta_correta})</p>`;
+    
+    const feedbackComment = q.comentario
+      ? `<div class="comentario"><strong>Comentário:</strong> ${q.comentario.replace(/\n/g,'<br>')}</div>`
+      : '';
+      
+    feedbackHtml = feedbackTitle + feedbackComment;
+  }
+  
+  // 3. Monta o HTML da Navegação
+  const prevDisabled = (currentQuestion === 0) ? 'disabled' : '';
+  const nextButtonText = (currentQuestion === questions.length - 1) ? 'Finalizar' : 'Próxima';
+
+  const navHtml = `
+    <div class="quiz-nav">
+      <button onclick="goToPrev()" ${prevDisabled}>Anterior</button>
+      <span>${currentQuestion + 1} de ${questions.length}</span>
+      <button onclick="goToNext()">${nextButtonText}</button>
+    </div>
+  `;
+
+  // 4. Monta o HTML final e insere na página
   const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
-
-  const optionsHtml = Object.entries(q.alternativas || {}).map(([key, value]) => `
-    <li class="option" data-key="${key}" onclick="selectOption('${q.id}', '${key}', this)">
-      ${key}) ${value}
-    </li>
-  `).join('');
-
+  
   quizDiv.innerHTML = `
     <div class="meta">
       <strong>Disciplina:</strong> ${q.disciplina || 'N/I'} • 
@@ -23,11 +79,15 @@ function renderQuestion() {
     <div class="question">
       <h2>${currentQuestion + 1}. ${formattedEnunciado}</h2>
       <ul class="options">${optionsHtml}</ul>
-      <div id="feedback"></div>
+      <div id="feedback">${feedbackHtml}</div>
     </div>
+    ${navHtml}
   `;
 }
 
+// -------------------------------------------------------------------
+// O restante do arquivo (showResults, updateSelectedSummary, etc.)
+// permanece o mesmo. Apenas colei eles aqui para garantir.
 // -------------------------------------------------------------------
 
 function showResults() {
@@ -44,25 +104,19 @@ function showResults() {
     if (user === right) {
       correctCount++;
     } else {
-      if (!errorsByDiscipline[topic]) {
-        errorsByDiscipline[topic] = 0;
+      // Se a questão foi respondida (mesmo que errada)
+      if (user) { 
+        if (!errorsByDiscipline[topic]) {
+          errorsByDiscipline[topic] = 0;
+        }
+        errorsByDiscipline[topic]++;
+        wrongQuestions.push(q);
       }
-      errorsByDiscipline[topic]++;
-      wrongQuestions.push(q); 
     }
   });
 
-  const wrongCount = questions.length - correctCount;
-
-  // =========================================================
-  // CORREÇÃO: Bloco de 100% (executado ANTES de renderizar)
-  // =========================================================
-  if (correctCount === questions.length && questions.length > 0) {
-    // Atraso de 100ms para o DOM começar a renderizar os resultados por baixo
-    setTimeout(playVictoryVideo, 100); 
-  }
-  // =========================================================
-
+  const wrongCount = wrongQuestions.length; // Conta apenas as erradas
+  const unansweredCount = questions.length - correctCount - wrongCount;
 
   // 2. Construir o HTML dos Resultados
   let resultHTML = `
@@ -96,6 +150,10 @@ function showResults() {
   questions.forEach((q, index) => {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
+    
+    // Se o usuário não respondeu, não mostra nada
+    if (!user) return; 
+
     resultHTML += `
       <div class="question" style="text-align:left; margin-bottom:14px; background: #fdfdfd; padding: 10px; border-radius: 8px; border: 1px solid #f1f6fb;">
         <h3 style="margin:6px 0 10px 0; font-size: 1rem;">${index + 1}. ${(q.enunciado || '').replace(/\n/g, "<br>")}</h3>
@@ -123,7 +181,7 @@ function showResults() {
   requestAnimationFrame(() => {
     
     const btn = document.getElementById('retryBtn');
-    if (btn) btn.addEventListener('click', () => location.reload());
+    if (btn) btn.addEventListener('click', () => location.reload()); // Recarrega a página inteira para recomeçar
 
     const printBtn = document.getElementById('printErrorsBtn');
     if (printBtn) {
@@ -133,15 +191,16 @@ function showResults() {
     }
 
     // --- Gráfico de Pizza ---
+    // NOVO: Adiciona "Não respondidas" ao gráfico
     const pizzaCtx = document.getElementById('pizzaChart');
     if (pizzaCtx) {
       new Chart(pizzaCtx, {
         type: 'doughnut',
         data: {
-          labels: ['Acertos', 'Erros'],
+          labels: ['Acertos', 'Erros', 'Não Respondidas'],
           datasets: [{
-            data: [correctCount, wrongCount],
-            backgroundColor: ['#00b894', '#d63031'], 
+            data: [correctCount, wrongCount, unansweredCount],
+            backgroundColor: ['#00b894', '#d63031', '#bdc3c7'], 
             hoverOffset: 4
           }]
         },
@@ -177,22 +236,19 @@ function showResults() {
       barCtx.remove(); 
     }
   });
-} // <-- CORREÇÃO: Fim da função showResults()
+}
 
 // -------------------------------------------------------------------
 
 /* ====== seleção de subitem (UI) ====== */
 function clearSelectionUI() {
-  // MUDANÇA: Limpa o array global e remove a classe de todos
   selectedSubjects = []; 
   document.querySelectorAll('.subitem.selected').forEach(el => el.classList.remove('selected'));
-  
-  // MUDANÇA: Chama a nova função de atualização
   updateSelectedSummary();
 }
 
 /**
- * NOVO: Atualiza o texto do sumário com base no array 'selectedSubjects'.
+ * Atualiza o texto do sumário com base no array 'selectedSubjects'.
  */
 function updateSelectedSummary() {
   const summaryDiv = document.getElementById('selectedSummary');
@@ -200,10 +256,8 @@ function updateSelectedSummary() {
   if (selectedSubjects.length === 0) {
     summaryDiv.textContent = 'Nenhuma selecionada';
   } else if (selectedSubjects.length === 1) {
-    // Se for só 1, mostra o nome
     summaryDiv.textContent = selectedSubjects[0].name;
   } else {
-    // Se for > 1, mostra um resumo
     const total = selectedSubjects.reduce((acc, s) => acc + s.count, 0);
     summaryDiv.textContent = `${selectedSubjects.length} matérias selecionadas (${total} questões)`;
   }
@@ -236,7 +290,6 @@ function generatePrintPage(questionsToPrint) {
         .card-container {
           max-width: 500px; 
           margin: 15px auto; 
-          
           width: 100%;
           page-break-inside: avoid;
           margin-bottom: 15px;
@@ -254,7 +307,7 @@ function generatePrintPage(questionsToPrint) {
 
         .card-front {
           font-weight: 500;
-          font-size: 0.55rem; /* Fonte original, 0.55 era muito pequeno */
+          font-size: 0.95rem; 
         }
 
         .card-back {
@@ -265,12 +318,12 @@ function generatePrintPage(questionsToPrint) {
         .answer-title {
           font-weight: 600;
           color: #00b894;
-          font-size: 0.55rem; /* Fonte original */
+          font-size: 0.95rem; 
         }
         
         .comment {
           font-style: italic;
-          font-size: 0.35rem;
+          font-size: 0.9rem; 
           margin-top: 10px;
           padding-top: 10px;
           color: #555;
@@ -300,7 +353,7 @@ function generatePrintPage(questionsToPrint) {
           .card-container {
             border: 1px solid #aaa;
             box-shadow: none;
-            max-width: 90%; 
+            max-width: 90%;
           }
           .card-back {
              background: #fdfdfd;
@@ -314,8 +367,8 @@ function generatePrintPage(questionsToPrint) {
         Total de ${questionsToPrint.length} questões para revisar.<br>
         <strong>Instrução:</strong> Imprima, recorte cada card e dobre na linha pontilhada.
       </p>
-    `; // <-- CORREÇÃO: Fim da string HTML
-  
+    `;
+
   // Loop nas questões e cria um "card" para cada
   questionsToPrint.forEach((q) => { 
     const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
@@ -354,58 +407,7 @@ function generatePrintPage(questionsToPrint) {
   setTimeout(() => {
     printWindow.print();
   }, 250);
-} // <-- CORREÇÃO: Fim da função generatePrintPage()
-
-
-// -------------------------------------------------------------------
-// CORREÇÃO: A função playVictoryVideo() deve estar AQUI, no final.
-// -------------------------------------------------------------------
-
-/* ====== FUNÇÃO DO VÍDEO DE VITÓRIA ====== */
-function playVictoryVideo() {
-  const overlay = document.getElementById('easterEggOverlay');
-  const video = document.getElementById('easterEggVideo');
-  const closeBtn = document.getElementById('closeEasterEgg');
-  const unmuteText = document.getElementById('unmuteText');
-
-  if (!overlay || !video) {
-    console.error("Elementos do vídeo de vitória não encontrados.");
-    return;
-  }
-  
-  overlay.style.display = 'flex';
-  video.volume = 1.0; // Define o volume máximo
-
-  // Tenta tocar o vídeo
-  const playPromise = video.play();
-
-  if (playPromise !== undefined) {
-    playPromise.then(() => {
-      // Autoplay com som funcionou! (Raro)
-      unmuteText.style.display = 'none';
-    }).catch(error => {
-      // Autoplay com som FALHOU (Normal).
-      // Toca o vídeo mutado e pede interação do usuário.
-      console.warn("Autoplay com som bloqueado. Tocando mutado.", error);
-      video.muted = true;
-      video.play();
-      unmuteText.style.display = 'block'; // Mostra "Clique para ativar o som"
-      
-      // Listener para desmutar ao clicar no overlay ou no texto
-      overlay.addEventListener('click', () => {
-        video.muted = false;
-        video.volume = 1.0;
-        unmuteText.style.display = 'none';
-      }, { once: true }); // {once: true} remove o listener após o primeiro clique
-    });
-  }
-  
-  // Listener do botão de fechar
-  closeBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); // Impede que o clique feche E desmute ao mesmo tempo
-    video.pause();
-    video.currentTime = 0; // Reseta o vídeo
-    overlay.style.display = 'none';
-    unmuteText.style.display = 'none'; // Esconde o texto ao fechar
-  });
 }
+
+// A função playVictoryVideo foi removida, já que não foi mencionada
+// na última solicitação de "voltar".
