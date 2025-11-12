@@ -6,24 +6,21 @@ let userAnswers = {};
 let lockSelection = false;
 const AUTO_DELAY_MS = 1000;
 
-let subjectsIndex = []; // conteúdo de /json/index.json (array de {name,file})
-let selectedFile = null; // arquivo json selecionado
-
+let subjectsIndex = []; 
+// NOVO: Alterado para um array para suportar multisseleção
+let selectedSubjects = []; 
 
 /* ====== Carregar Dados (API/JSON) ====== */
 
 async function loadSubjects() {
   try {
-    // ATUALIZE ESTE CAMINHO!
     const res = await fetch('/data/index.json'); 
     if (!res.ok) throw new Error('Falha ao carregar index.json');
     const subjects = await res.json();
     subjectsIndex = subjects;
 
-    // para cada subject, vamos buscar o json e contar questões
     const enriched = await Promise.all(subjects.map(async s => {
       try {
-        // ATUALIZE ESTE CAMINHO!
         const r = await fetch(`/data/${s.file}`); 
         if (!r.ok) throw new Error();
         const data = await r.json();
@@ -45,8 +42,7 @@ async function loadSubjects() {
     const root = document.getElementById('foldersRoot');
     root.innerHTML = '';
     Object.keys(groups).sort().forEach(groupName => {
-      const arr = groups[groupName];
-      // criar elemento da pasta
+      const arr = groups[groupName]; // 'arr' contém todos os subitens desta pasta
       const folder = document.createElement('div');
       folder.className = 'folder';
       folder.innerHTML = `
@@ -67,18 +63,24 @@ async function loadSubjects() {
         const li = document.createElement('li');
         li.className = 'subitem';
         li.innerHTML = `<div class="name">${sub.name}</div><div class="meta">${sub.count} questões</div>`;
+        
+        // MUDANÇA: Lógica de clique do subitem (toggle)
         li.addEventListener('click', (e) => {
-          e.stopPropagation();
-          selectSubitem(sub); // Função abaixo
+          e.stopPropagation(); // Impede que o clique dispare o clique do 'header'
+          toggleSelectSubitem(sub, li); // Nova função
         });
         sublist.appendChild(li);
       });
 
-      // toggle open on header click
+      // MUDANÇA: Lógica de clique do header (abrir/fechar E selecionar/desmarcar todos)
       const header = folder.querySelector('.folder-header');
       header.addEventListener('click', () => {
+        // 1. Abrir/fechar
         const isOpen = folder.classList.toggle('open');
         sublist.style.display = isOpen ? 'block' : 'none';
+        
+        // 2. Selecionar/Desmarcar todos os filhos
+        toggleSelectFolder(arr, folder); // Nova função
       });
 
       root.appendChild(folder);
@@ -93,18 +95,16 @@ async function loadSubjects() {
 }
 
 async function loadQuizFile(filename) {
-  // ATUALIZE ESTE CAMINHO!
   const response = await fetch(`/data/${filename}`);
   if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
   const data = await response.json();
-  allQuestions = data;
+  // Não definimos allQuestions aqui, apenas retornamos os dados
   return data;
 }
 
 async function loadPDFs() {
   const list = document.getElementById('pdfList');
   try {
-    // ATUALIZE ESTE CAMINHO!
     const response = await fetch('/data/pdf/index.json');
     if (!response.ok) throw new Error('Erro ao carregar lista de PDFs');
     const pdfs = await response.json();
@@ -132,21 +132,64 @@ async function loadPDFs() {
 
 /* ====== Lógica do Quiz (Controladores) ====== */
 
-function selectSubitem(sub) {
-  // marca visualmente o selecionado
-  document.querySelectorAll('.subitem.selected').forEach(el => el.classList.remove('selected'));
-
-  // encontrar o elemento correspondente (compara nome e file)
-  const subitems = Array.from(document.querySelectorAll('.subitem'));
-  const target = subitems.find(si => si.querySelector('.name') && si.querySelector('.name').textContent.trim() === sub.name);
-  if (target) target.classList.add('selected');
-
-  selectedFile = sub.file;
-  document.getElementById('selectedSummary').textContent = `${sub.name} — ${sub.count} questões`;
+/**
+ * NOVO: Adiciona ou remove um único subitem da seleção.
+ */
+function toggleSelectSubitem(sub, element) {
+  const index = selectedSubjects.findIndex(s => s.file === sub.file);
+  
+  if (index > -1) {
+    // Já selecionado -> remover
+    selectedSubjects.splice(index, 1);
+    element.classList.remove('selected');
+  } else {
+    // Não selecionado -> adicionar
+    selectedSubjects.push(sub);
+    element.classList.add('selected');
+  }
+  
+  updateSelectedSummary(); // Função da ui.js
 }
 
+/**
+ * NOVO: Seleciona ou desmarca todos os subitens de uma pasta.
+ */
+function toggleSelectFolder(subsInFolder, folderElement) {
+  const subitemElements = folderElement.querySelectorAll('.subitem');
+  
+  // Verifica se todos na pasta já estão selecionados
+  const allAlreadySelected = subsInFolder.every(
+    sub => selectedSubjects.find(s => s.file === sub.file)
+  );
+
+  if (allAlreadySelected) {
+    // --- DESMARCAR TODOS ---
+    subsInFolder.forEach(sub => {
+      const index = selectedSubjects.findIndex(s => s.file === sub.file);
+      if (index > -1) {
+        selectedSubjects.splice(index, 1);
+      }
+    });
+    subitemElements.forEach(el => el.classList.remove('selected'));
+  } else {
+    // --- MARCAR TODOS ---
+    subsInFolder.forEach(sub => {
+      const index = selectedSubjects.findIndex(s => s.file === sub.file);
+      if (index === -1) { // Adiciona apenas se não estiver lá
+        selectedSubjects.push(sub);
+      }
+    });
+    subitemElements.forEach(el => el.classList.add('selected'));
+  }
+
+  updateSelectedSummary(); // Função da ui.js
+}
+
+
 function startQuiz(data, count) {
-  const shuffled = data.slice().sort(() => 0.5 - Math.random());
+  // 'data' agora é o array combinado de todas as questões
+  allQuestions = data; // Atualiza o allQuestions com a lista combinada
+  const shuffled = allQuestions.slice().sort(() => 0.5 - Math.random());
   questions = shuffled.slice(0, count);
   currentQuestion = 0;
   userAnswers = {};
@@ -158,6 +201,7 @@ function startQuiz(data, count) {
 function selectOption(questionId, optionKey, element) {
   if (lockSelection) return;
   lockSelection = true;
+  // MUDANÇA: Procura em 'questions' (o array do quiz atual)
   const q = questions.find(x => x.id == questionId);
   const correct = q.resposta_correta;
   userAnswers[questionId] = optionKey;
@@ -191,14 +235,25 @@ function selectOption(questionId, optionKey, element) {
 
 document.getElementById('startBtn').addEventListener('click', async () => {
   const count = parseInt(document.getElementById('questionCount').value);
-  if (!selectedFile) return alert('Selecione uma matéria/parte no painel à esquerda.');
+  
+  // MUDANÇA: Verifica o array 'selectedSubjects'
+  if (selectedSubjects.length === 0) return alert('Selecione pelo menos uma matéria.');
   if (isNaN(count) || count < 1) return alert('Digite uma quantidade válida.');
 
   try {
-    const data = await loadQuizFile(selectedFile);
-    startQuiz(data, count);
+    // MUDANÇA: Carrega TODOS os arquivos selecionados em paralelo
+    const allFilesData = await Promise.all(
+      selectedSubjects.map(sub => loadQuizFile(sub.file))
+    );
+    
+    // MUDANÇA: Combina os arrays de questões em um só
+    const combinedQuestions = allFilesData.flat(); // .flat() junta [[1,2], [3,4]] em [1,2,3,4]
+
+    // Inicia o quiz com o array combinado
+    startQuiz(combinedQuestions, count);
+    
   } catch (e) {
-    alert('Erro ao carregar o arquivo da parte selecionada.');
+    alert('Erro ao carregar os arquivos de quiz.');
     console.error(e);
   }
 });
