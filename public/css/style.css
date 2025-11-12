@@ -368,6 +368,27 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 #closeEasterEgg:hover {
   background-color: var(--primary-light);
 }
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 2px solid #f0f3f7;
+}
+
+.quiz-nav button {
+  /* Reutiliza o estilo 'button' que você já tem */
+  padding: 10px 18px;
+  font-size: 0.95rem;
+}
+
+.quiz-nav button:disabled {
+  background-color: var(--muted);
+  cursor: not-allowed;
+  transform: none;
+}
+
 
 
 
