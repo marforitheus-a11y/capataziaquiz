@@ -1,13 +1,12 @@
 /* ====== Estado Global ====== */
 let allQuestions = [];
 let questions = [];
-let currentQuestion = 0;
+let currentQuestion = 0; // Agora é o "ponteiro" da questão atual
 let userAnswers = {};
-let lockSelection = false;
-const AUTO_DELAY_MS = 1000;
+let lockSelection = false; // Não vamos mais usar isso, mas pode ficar
 
+// Removido AUTO_DELAY_MS, não é mais necessário
 let subjectsIndex = []; 
-// NOVO: Alterado para um array para suportar multisseleção
 let selectedSubjects = []; 
 
 /* ====== Carregar Dados (API/JSON) ====== */
@@ -42,7 +41,7 @@ async function loadSubjects() {
     const root = document.getElementById('foldersRoot');
     root.innerHTML = '';
     Object.keys(groups).sort().forEach(groupName => {
-      const arr = groups[groupName]; // 'arr' contém todos os subitens desta pasta
+      const arr = groups[groupName]; 
       const folder = document.createElement('div');
       folder.className = 'folder';
       folder.innerHTML = `
@@ -64,23 +63,19 @@ async function loadSubjects() {
         li.className = 'subitem';
         li.innerHTML = `<div class="name">${sub.name}</div><div class="meta">${sub.count} questões</div>`;
         
-        // MUDANÇA: Lógica de clique do subitem (toggle)
         li.addEventListener('click', (e) => {
-          e.stopPropagation(); // Impede que o clique dispare o clique do 'header'
-          toggleSelectSubitem(sub, li); // Nova função
+          e.stopPropagation(); 
+          toggleSelectSubitem(sub, li); 
         });
         sublist.appendChild(li);
       });
 
-      // MUDANÇA: Lógica de clique do header (abrir/fechar E selecionar/desmarcar todos)
+      // Lógica de clique do header
       const header = folder.querySelector('.folder-header');
       header.addEventListener('click', () => {
-        // 1. Abrir/fechar
         const isOpen = folder.classList.toggle('open');
         sublist.style.display = isOpen ? 'block' : 'none';
-        
-        // 2. Selecionar/Desmarcar todos os filhos
-        toggleSelectFolder(arr, folder); // Nova função
+        toggleSelectFolder(arr, folder); 
       });
 
       root.appendChild(folder);
@@ -98,7 +93,6 @@ async function loadQuizFile(filename) {
   const response = await fetch(`/data/${filename}`);
   if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
   const data = await response.json();
-  // Não definimos allQuestions aqui, apenas retornamos os dados
   return data;
 }
 
@@ -132,18 +126,13 @@ async function loadPDFs() {
 
 /* ====== Lógica do Quiz (Controladores) ====== */
 
-/**
- * NOVO: Adiciona ou remove um único subitem da seleção.
- */
 function toggleSelectSubitem(sub, element) {
   const index = selectedSubjects.findIndex(s => s.file === sub.file);
   
   if (index > -1) {
-    // Já selecionado -> remover
     selectedSubjects.splice(index, 1);
     element.classList.remove('selected');
   } else {
-    // Não selecionado -> adicionar
     selectedSubjects.push(sub);
     element.classList.add('selected');
   }
@@ -151,19 +140,14 @@ function toggleSelectSubitem(sub, element) {
   updateSelectedSummary(); // Função da ui.js
 }
 
-/**
- * NOVO: Seleciona ou desmarca todos os subitens de uma pasta.
- */
 function toggleSelectFolder(subsInFolder, folderElement) {
   const subitemElements = folderElement.querySelectorAll('.subitem');
   
-  // Verifica se todos na pasta já estão selecionados
   const allAlreadySelected = subsInFolder.every(
     sub => selectedSubjects.find(s => s.file === sub.file)
   );
 
   if (allAlreadySelected) {
-    // --- DESMARCAR TODOS ---
     subsInFolder.forEach(sub => {
       const index = selectedSubjects.findIndex(s => s.file === sub.file);
       if (index > -1) {
@@ -172,10 +156,9 @@ function toggleSelectFolder(subsInFolder, folderElement) {
     });
     subitemElements.forEach(el => el.classList.remove('selected'));
   } else {
-    // --- MARCAR TODOS ---
     subsInFolder.forEach(sub => {
       const index = selectedSubjects.findIndex(s => s.file === sub.file);
-      if (index === -1) { // Adiciona apenas se não estiver lá
+      if (index === -1) { 
         selectedSubjects.push(sub);
       }
     });
@@ -187,47 +170,57 @@ function toggleSelectFolder(subsInFolder, folderElement) {
 
 
 function startQuiz(data, count) {
-  // 'data' agora é o array combinado de todas as questões
-  allQuestions = data; // Atualiza o allQuestions com a lista combinada
+  allQuestions = data; 
   const shuffled = allQuestions.slice().sort(() => 0.5 - Math.random());
   questions = shuffled.slice(0, count);
   currentQuestion = 0;
-  userAnswers = {};
+  userAnswers = {}; // Reseta as respostas
   document.getElementById('quiz').style.display = 'block';
   document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
   renderQuestion(); // Função do ui.js
 }
 
-function selectOption(questionId, optionKey, element) {
-  if (lockSelection) return;
-  lockSelection = true;
-  // MUDANÇA: Procura em 'questions' (o array do quiz atual)
-  const q = questions.find(x => x.id == questionId);
-  const correct = q.resposta_correta;
+/**
+ * NOVA LÓGICA: selectOption apenas registra a resposta e
+ * renderiza novamente a questão no estado "respondido".
+ */
+function selectOption(questionId, optionKey) {
+  // Se a questão já foi respondida, não faz nada
+  if (userAnswers[questionId]) {
+    return;
+  }
+  
+  // Registra a resposta do usuário
   userAnswers[questionId] = optionKey;
+  
+  // Renderiza a mesma questão novamente, agora com a resposta
+  renderQuestion();
+}
 
-  const parent = element.parentElement;
-  const options = parent.querySelectorAll('.option');
-  options.forEach(opt => {
-    const key = opt.getAttribute('data-key');
-    if (key === correct) opt.classList.add('correct');
-    if (key === optionKey && optionKey !== correct) opt.classList.add('wrong');
-    opt.setAttribute('aria-disabled', 'true');
-  });
 
-  const feedbackDiv = document.getElementById('feedback');
-  feedbackDiv.innerHTML = optionKey === correct
-    ? `<p class="feedback correct">✅ Correto!</p>`
-    : `<p class="feedback wrong">❌ Errado! Resposta correta: ${correct}) ${q.alternativas[correct]}</p>`;
+/**
+ * NOVO: Função para o botão "Próxima / Finalizar".
+ */
+function goToNext() {
+  if (currentQuestion < questions.length - 1) {
+    // Ainda há questões, avança
+    currentQuestion++;
+    renderQuestion();
+  } else {
+    // É a última questão, mostra os resultados
+    showResults();
+  }
+}
 
-  setTimeout(() => {
-    if (currentQuestion < questions.length - 1) {
-      currentQuestion++;
-      renderQuestion(); // Função do ui.js
-    } else {
-      showResults(); // Função do ui.js
-    }
-  }, AUTO_DELAY_MS);
+/**
+ * NOVO: Função para o botão "Anterior".
+ */
+function goToPrev() {
+  if (currentQuestion > 0) {
+    // Volta uma questão
+    currentQuestion--;
+    renderQuestion();
+  }
 }
 
 
@@ -236,20 +229,15 @@ function selectOption(questionId, optionKey, element) {
 document.getElementById('startBtn').addEventListener('click', async () => {
   const count = parseInt(document.getElementById('questionCount').value);
   
-  // MUDANÇA: Verifica o array 'selectedSubjects'
   if (selectedSubjects.length === 0) return alert('Selecione pelo menos uma matéria.');
   if (isNaN(count) || count < 1) return alert('Digite uma quantidade válida.');
 
   try {
-    // MUDANÇA: Carrega TODOS os arquivos selecionados em paralelo
     const allFilesData = await Promise.all(
       selectedSubjects.map(sub => loadQuizFile(sub.file))
     );
     
-    // MUDANÇA: Combina os arrays de questões em um só
-    const combinedQuestions = allFilesData.flat(); // .flat() junta [[1,2], [3,4]] em [1,2,3,4]
-
-    // Inicia o quiz com o array combinado
+    const combinedQuestions = allFilesData.flat(); 
     startQuiz(combinedQuestions, count);
     
   } catch (e) {
@@ -259,9 +247,10 @@ document.getElementById('startBtn').addEventListener('click', async () => {
 });
 
 document.getElementById('clearSelection').addEventListener('click', () => {
-  clearSelectionUI(); // Função do ui.js
+  clearSelectionUI(); // Função da ui.js
 });
 
-// Iniciar a aplicação
+// A inicialização (loadSubjects/loadPDFs) é chamada pelo seu 'gate.js' ou 'app.js',
+// Se você removeu esses arquivos, descomente as 2 linhas abaixo:
 loadSubjects();
 loadPDFs();
