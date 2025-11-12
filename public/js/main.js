@@ -1,17 +1,16 @@
 /* ====== Estado Global ====== */
 let allQuestions = [];
 let questions = [];
-let currentQuestion = 0; // Agora é o "ponteiro" da questão atual
+let currentQuestion = 0; 
 let userAnswers = {};
-let lockSelection = false; // Não vamos mais usar isso, mas pode ficar
+let lockSelection = false; 
 
-// Removido AUTO_DELAY_MS, não é mais necessário
 let subjectsIndex = []; 
 let selectedSubjects = []; 
 
 /* ====== Carregar Dados (API/JSON) ====== */
-
 async function loadSubjects() {
+  // ... (código existente sem alterações)
   try {
     const res = await fetch('/data/index.json'); 
     if (!res.ok) throw new Error('Falha ao carregar index.json');
@@ -88,14 +87,13 @@ async function loadSubjects() {
     document.getElementById('foldersLoading').textContent = 'Erro ao carregar matérias.';
   }
 }
-
+// ... (código existente loadQuizFile, loadPDFs sem alterações)
 async function loadQuizFile(filename) {
   const response = await fetch(`/data/${filename}`);
   if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
   const data = await response.json();
   return data;
 }
-
 async function loadPDFs() {
   const list = document.getElementById('pdfList');
   try {
@@ -123,9 +121,9 @@ async function loadPDFs() {
   }
 }
 
-
 /* ====== Lógica do Quiz (Controladores) ====== */
 
+// ... (código existente toggleSelectSubitem, toggleSelectFolder sem alterações)
 function toggleSelectSubitem(sub, element) {
   const index = selectedSubjects.findIndex(s => s.file === sub.file);
   
@@ -139,7 +137,6 @@ function toggleSelectSubitem(sub, element) {
   
   updateSelectedSummary(); // Função da ui.js
 }
-
 function toggleSelectFolder(subsInFolder, folderElement) {
   const subitemElements = folderElement.querySelectorAll('.subitem');
   
@@ -167,8 +164,7 @@ function toggleSelectFolder(subsInFolder, folderElement) {
 
   updateSelectedSummary(); // Função da ui.js
 }
-
-
+// ... (código existente startQuiz sem alterações)
 function startQuiz(data, count) {
   allQuestions = data; 
   const shuffled = allQuestions.slice().sort(() => 0.5 - Math.random());
@@ -181,18 +177,27 @@ function startQuiz(data, count) {
 }
 
 /**
- * NOVA LÓGICA: selectOption apenas registra a resposta e
- * renderiza novamente a questão no estado "respondido".
+ * MODIFICADO: Agora chama a função setLanguage
  */
 function selectOption(questionId, optionKey) {
-  // Se a questão já foi respondida, não faz nada
   if (userAnswers[questionId]) {
     return;
   }
   
-  // Registra a resposta do usuário
   userAnswers[questionId] = optionKey;
   
+  // --- MUDANÇA AQUI ---
+  // Verifica se a resposta está correta para mudar o idioma
+  const q = questions.find(q => q.id === questionId);
+  const isCorrect = (optionKey === q.resposta_correta);
+  
+  if (isCorrect) {
+    setLanguage('pt-BR'); // Função do translator.js
+  } else {
+    setLanguage('ja-JP'); // Função do translator.js
+  }
+  // --- FIM DA MUDANÇA ---
+
   // Renderiza a mesma questão novamente, agora com a resposta
   renderQuestion();
 }
@@ -203,11 +208,11 @@ function selectOption(questionId, optionKey) {
  */
 function goToNext() {
   if (currentQuestion < questions.length - 1) {
-    // Ainda há questões, avança
     currentQuestion++;
     renderQuestion();
   } else {
-    // É a última questão, mostra os resultados
+    // Ao finalizar, reverte para o Português
+    setLanguage('pt-BR'); 
     showResults();
   }
 }
@@ -217,7 +222,6 @@ function goToNext() {
  */
 function goToPrev() {
   if (currentQuestion > 0) {
-    // Volta uma questão
     currentQuestion--;
     renderQuestion();
   }
@@ -225,7 +229,7 @@ function goToPrev() {
 
 
 /* ====== Inicialização e Event Listeners ====== */
-
+// ... (código existente dos listeners sem alterações)
 document.getElementById('startBtn').addEventListener('click', async () => {
   const count = parseInt(document.getElementById('questionCount').value);
   
@@ -250,7 +254,9 @@ document.getElementById('clearSelection').addEventListener('click', () => {
   clearSelectionUI(); // Função da ui.js
 });
 
-// A inicialização (loadSubjects/loadPDFs) é chamada pelo seu 'gate.js' ou 'app.js',
-// Se você removeu esses arquivos, descomente as 2 linhas abaixo:
+
+// ... (código existente de inicialização sem alterações)
+// (Assumindo que você removeu o 'gate.js' e 'app.js' e está iniciando
+// o app diretamente. Se não, essas linhas devem estar no seu app.js)
 loadSubjects();
 loadPDFs();
