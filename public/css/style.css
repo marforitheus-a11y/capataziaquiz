@@ -16,25 +16,22 @@ body {
   margin: 0;
   padding: 0;
 
-  /* --- ADICIONE/SUBSTITUA COM ESTAS LINHAS --- */
-
-  /* Cor de fallback caso a imagem não carregue */
-  background-color: var(--bg); 
+  background-color: var(--bg); /* Cor de fallback caso a imagem não carregue */
   
-  /* Caminho para a imagem e uma sobreposição escura para legibilidade */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/fundo.jpg');
+  /* Mantemos o gradiente se quiser uma leve sobreposição ou retire-o se quiser a imagem "pura" */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../img/fundo.jpg');
+  /* OU, se quiser a imagem sem nenhuma sobreposição: */
+  /* background-image: url('../img/fundo.jpg'); */
   
-  /* Faz a imagem cobrir toda a tela */
-  background-size: cover;
-  
-  /* Centraliza a imagem */
-  background-position: center center;
-  
-  /* Impede a imagem de rolar com a página */
-  background-attachment: fixed;
-  
-  /* Impede a imagem de se repetir */
-  background-repeat: no-repeat;
+  /* --- MUDANÇAS PARA MOSAICO E IMAGEM MENOR --- */
+  background-size: 200px 200px; /* Altere para o tamanho desejado da imagem (largura altura) */
+                                /* Ex: '200px 200px' para quadrados de 200px, ou 'auto' para usar o tamanho original */
+                                /* Ou '20%' para usar 20% da largura da tela */
+  background-repeat: repeat;    /* Faz a imagem se repetir */
+  background-position: top left; /* Onde o mosaico começa (geralmente top left) */
+  background-attachment: scroll; /* Imagem rola com a página (se preferir) */
+  /* Se você quiser que o mosaico fique fixo, mude para: background-attachment: fixed; */
+  /* --- FIM DAS MUDANÇAS --- */
 }
 /* body {
   font-family: "Poppins", sans-serif;
@@ -323,4 +320,5 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   .top-area { grid-template-columns: 1fr; }
   .controls { order: 2; }
 }
+
 
