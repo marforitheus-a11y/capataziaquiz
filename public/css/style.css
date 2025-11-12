@@ -320,12 +320,25 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   .top-area { grid-template-columns: 1fr; }
   .controls { order: 2; }
 }
-#verificationGate {
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Garante que ele fique na frente de todo o resto */
+  z-index: 9999; 
+  
+  /* Fundo semi-transparente para escurecer o site atrás */
+  background: rgba(245, 246, 250, 0.85); /* Cor --bg com opacidade */
+  backdrop-filter: blur(5px); /* Efeito de desfoque (opcional) */
+  
+  /* --- FIM DAS MUDANÇAS --- */
+  
+  /* Isso permanece igual (para centralizar o container) */
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: var(--bg);
   padding: 20px;
 }
 
@@ -359,7 +372,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   border-radius: 8px;
   margin: 15px auto;
   border: 1px solid #ddd;
-  transform: scaleX(-1); /* Espelha o vídeo (mais natural) */
+  transform: scaleX(-1); /* Espelha o vídeo */
 }
 
 /* Mensagens de Status */
@@ -376,7 +389,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   color: var(--correct);
 }
 
-/* Spinner de Carregamento (CSS puro) */
+/* Spinner de Carregamento */
 .spinner {
   display: block;
   width: 50px;
@@ -403,11 +416,11 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   from { opacity: 1; }
   to { opacity: 0; transform: scale(0.95); }
 }
-/* Keyframe 'fadeIn' já existe, mas garantindo */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 
 
 
