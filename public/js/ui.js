@@ -1,4 +1,4 @@
-/* ====== CÓDIGO COMPLETO PARA: js/ui.js ====== */
+/* ====== CÓDIGO COMPLETO E CORRIGIDO PARA: js/ui.js ====== */
 // (selectedSubjects é uma var global definida em main.js)
 
 function renderQuestion() {
@@ -53,9 +53,17 @@ function showResults() {
   });
 
   const wrongCount = questions.length - correctCount;
-if (correctCount === questions.length && questions.length > 0) {
+
+  // =========================================================
+  // CORREÇÃO: Bloco de 100% (executado ANTES de renderizar)
+  // =========================================================
+  if (correctCount === questions.length && questions.length > 0) {
     // Atraso de 100ms para o DOM começar a renderizar os resultados por baixo
-    setTimeout(playVictoryVideo, 100);
+    setTimeout(playVictoryVideo, 100); 
+  }
+  // =========================================================
+
+
   // 2. Construir o HTML dos Resultados
   let resultHTML = `
     <h2>Resultado Final</h2>
@@ -169,7 +177,7 @@ if (correctCount === questions.length && questions.length > 0) {
       barCtx.remove(); 
     }
   });
-}
+} // <-- CORREÇÃO: Fim da função showResults()
 
 // -------------------------------------------------------------------
 
@@ -206,7 +214,6 @@ function updateSelectedSummary() {
 
 /**
  * Gera uma nova página com as questões erradas em formato de flashcard (frente/verso).
- * (Esta função não sofreu alterações)
  */
 function generatePrintPage(questionsToPrint) {
   let printHtml = `
@@ -227,10 +234,8 @@ function generatePrintPage(questionsToPrint) {
         }
 
         .card-container {
-          /* --- MUDANÇAS AQUI --- */
-          max-width: 500px; /* Define uma largura máxima para o card */
-          margin: 15px auto; /* Centraliza o card na página */
-          /* --- FIM DAS MUDANÇAS --- */
+          max-width: 500px; 
+          margin: 15px auto; 
           
           width: 100%;
           page-break-inside: avoid;
@@ -242,18 +247,14 @@ function generatePrintPage(questionsToPrint) {
         }
         
         .card-front, .card-back {
-          /* --- MUDANÇAS AQUI --- */
-          padding: 14px 18px; /* Reduz o preenchimento */
-          min-height: 70px;  /* Reduz a altura mínima */
-          /* --- FIM DAS MUDANÇAS --- */
+          padding: 14px 18px; 
+          min-height: 70px;  
           box-sizing: border-box; 
         }
 
         .card-front {
-          /* --- MUDANÇAS AQUI --- */
           font-weight: 500;
-          font-size: 0.55rem; /* Reduz a fonte da pergunta */
-          /* --- FIM DAS MUDANÇAS --- */
+          font-size: 0.95rem; /* Fonte original, 0.55 era muito pequeno */
         }
 
         .card-back {
@@ -262,20 +263,16 @@ function generatePrintPage(questionsToPrint) {
         }
         
         .answer-title {
-          /* --- MUDANÇAS AQUI --- */
           font-weight: 600;
           color: #00b894;
-          font-size: 0.55rem; /* Reduz a fonte da resposta */
-          /* --- FIM DAS MUDANÇAS --- */
+          font-size: 0.95rem; /* Fonte original */
         }
         
         .comment {
-          /* --- MUDANÇAS AQUI --- */
           font-style: italic;
-          font-size: 0.3rem; /* Reduz a fonte do comentário */
+          font-size: 0.9rem; /* Fonte original, 0.3 era ilegível */
           margin-top: 10px;
           padding-top: 10px;
-          /* --- FIM DAS MUDANÇAS --- */
           color: #555;
           border-top: 1px solid #eee;
         }
@@ -283,12 +280,12 @@ function generatePrintPage(questionsToPrint) {
         h1 {
           color: #0984e3;
           text-align: center;
-          font-size: 1.8rem; /* Reduz o título principal */
+          font-size: 1.8rem; 
         }
         
         p.info {
           text-align: center;
-          font-size: 1rem; /* Reduz o texto de info */
+          font-size: 1rem; 
           padding-bottom: 10px;
           border-bottom: 2px solid #eee;
         }
@@ -303,7 +300,7 @@ function generatePrintPage(questionsToPrint) {
           .card-container {
             border: 1px solid #aaa;
             box-shadow: none;
-            max-width: 90%; /* Ocupa mais da página de impressão */
+            max-width: 90%; 
           }
           .card-back {
              background: #fdfdfd;
@@ -317,9 +314,54 @@ function generatePrintPage(questionsToPrint) {
         Total de ${questionsToPrint.length} questões para revisar.<br>
         <strong>Instrução:</strong> Imprima, recorte cada card e dobre na linha pontilhada.
       </p>
-    `;
-/* ====== ADICIONE ESTA NOVA FUNÇÃO AO FINAL DE js/ui.js ====== */
+    `; // <-- CORREÇÃO: Fim da string HTML
+  
+  // Loop nas questões e cria um "card" para cada
+  questionsToPrint.forEach((q) => { 
+    const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
+    const correctAnswerKey = q.resposta_correta;
+    const correctAnswerText = (q.alternativas && q.alternativas[correctAnswerKey]) ? q.alternativas[correctAnswerKey] : 'N/A';
+    const formattedComentario = (q.comentario || '').replace(/\n/g, '<br>');
 
+    printHtml += `
+      <div class="card-container">
+        <div class="card-front">
+          ${formattedEnunciado}
+        </div>
+        
+        <div class="card-back">
+          <div class="answer-title">
+            Resposta: ${correctAnswerKey}) ${correctAnswerText}
+          </div>
+          
+          ${q.comentario ? `<div class="comment"><strong>Comentário:</strong> ${formattedComentario}</div>` : ''}
+        </div>
+      </div>
+    `;
+  });
+
+  printHtml += `
+    </body>
+    </html>
+  `;
+
+  // Abrir em uma nova janela e chamar a impressão
+  const printWindow = window.open('', '_blank');
+  printWindow.document.open();
+  printWindow.document.write(printHtml);
+  printWindow.document.close();
+  
+  setTimeout(() => {
+    printWindow.print();
+  }, 250);
+} // <-- CORREÇÃO: Fim da função generatePrintPage()
+
+
+// -------------------------------------------------------------------
+// CORREÇÃO: A função playVictoryVideo() deve estar AQUI, no final.
+// -------------------------------------------------------------------
+
+/* ====== FUNÇÃO DO VÍDEO DE VITÓRIA ====== */
 function playVictoryVideo() {
   const overlay = document.getElementById('easterEggOverlay');
   const video = document.getElementById('easterEggVideo');
@@ -366,43 +408,4 @@ function playVictoryVideo() {
     overlay.style.display = 'none';
     unmuteText.style.display = 'none'; // Esconde o texto ao fechar
   });
-}
-  // Loop nas questões e cria um "card" para cada
-  questionsToPrint.forEach((q) => { 
-    const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
-    const correctAnswerKey = q.resposta_correta;
-    const correctAnswerText = (q.alternativas && q.alternativas[correctAnswerKey]) ? q.alternativas[correctAnswerKey] : 'N/A';
-    const formattedComentario = (q.comentario || '').replace(/\n/g, '<br>');
-
-    printHtml += `
-      <div class="card-container">
-        <div class="card-front">
-          ${formattedEnunciado}
-        </div>
-        
-        <div class="card-back">
-          <div class="answer-title">
-            Resposta: ${correctAnswerKey}) ${correctAnswerText}
-          </div>
-          
-          ${q.comimpresse? `<div class="comment"><strong>Comentário:</strong> ${formattedComentario}</div>` : ''}
-        </div>
-      </div>
-    `;
-  });
-
-  printHtml += `
-    </body>
-    </html>
-  `;
-
-  // Abrir em uma nova janela e chamar a impressão
-  const printWindow = window.open('', '_blank');
-  printWindow.document.open();
-  printWindow.document.write(printHtml);
-  printWindow.document.close();
-  
-  setTimeout(() => {
-    printWindow.print();
-  }, 250);
 }
