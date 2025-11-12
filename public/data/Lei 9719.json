@@ -1,4 +1,604 @@
 [
+  {
+    "id": "700091",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 2º, I, da Lei 9.719/1998, qual é o prazo para o operador portuário recolher ao OGMO os valores devidos pelos serviços executados pelo trabalhador avulso?",
+    "alternativas": {
+      "A": "Quarenta e oito horas da realização do serviço.",
+      "B": "Vinte e quatro horas da realização do serviço.",
+      "C": "No dia 2 do mês seguinte ao da prestação do serviço.",
+      "D": "Sete dias após o término da operação do navio.",
+      "E": "Até o primeiro dia útil subsequente ao serviço."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 2º, I, estabelece o prazo de 'vinte e quatro horas da realização do serviço' para o operador portuário repassar os valores ao OGMO. A alternativa A (48h) é o prazo do OGMO para pagar ao trabalhador (Art. 2º, § 1º). A C é o prazo para depósito do 13º/férias (Art. 2º, § 3º)."
+  },
+  {
+    "id": "700092",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 2º, § 1º, da Lei 9.719/1998, qual o prazo para o OGMO efetuar o pagamento da remuneração (pelos serviços executados) diretamente ao trabalhador portuário avulso?",
+    "alternativas": {
+      "A": "Vinte e quatro horas após o término do serviço.",
+      "B": "Vinte e quatro horas após o recebimento dos valores do operador portuário.",
+      "C": "Quarenta e oito horas após o término do serviço.",
+      "D": "No dia 2 do mês seguinte ao da prestação do serviço.",
+      "E": "Imediatamente após a realização do serviço."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 2º, § 1º, define que 'O pagamento da remuneração [...] será feito no prazo de quarenta e oito horas após o término do serviço'. A alternativa A (24h) é o prazo do operador para pagar ao OGMO."
+  },
+  {
+    "id": "700093",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 2º, § 2º, da Lei 9.719/1998, determina como o OGMO deve administrar as parcelas de férias e décimo terceiro salário. Assinale a alternativa CORRETA.",
+    "alternativas": {
+      "A": "Os valores devem ser pagos mensalmente junto com a remuneração normal.",
+      "B": "O OGMO deve depositar as parcelas em contas individuais vinculadas, abertas em instituição bancária.",
+      "C": "O operador portuário deposita esses valores diretamente na conta do trabalhador.",
+      "D": "Os valores são mantidos em um fundo único do OGMO e pagos apenas em dezembro e nas férias.",
+      "E": "Os valores são repassados ao sindicato da categoria para administração."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 2º, § 2º, exige que o OGMO deposite essas parcelas 'separada e respectivamente, em contas individuais vinculadas' em instituição bancária. A alternativa A é incorreta, pois a lei manda separar esses valores."
+  },
+  {
+    "id": "700094",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Qual é o prazo limite para o OGMO efetuar os depósitos de férias e décimo terceiro salário nas contas individuais vinculadas, conforme o Art. 2º, § 3º?",
+    "alternativas": {
+      "A": "No prazo de 48 horas após o término do serviço.",
+      "B": "No prazo de 24 horas após o término do serviço.",
+      "C": "No dia 2 do mês seguinte ao da prestação do serviço.",
+      "D": "No último dia útil do mês da prestação do serviço.",
+      "E": "Juntamente com o pagamento da remuneração."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 2º, § 3º, é específico: 'Os depósitos [...] serão efetuados no dia 2 do mês seguinte ao da prestação do serviço', com a regra de prorrogação para o próximo dia útil se for o caso."
+  },
+  {
+    "id": "700095",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 2º, § 4º, da Lei 9.719/1998, a responsabilidade do operador portuário e do OGMO pelo pagamento dos encargos trabalhistas e contribuições previdenciárias é:",
+    "alternativas": {
+      "A": "Solidariamente responsáveis, vedada a invocação do benefício de ordem.",
+      "B": "Subsidiariamente responsáveis, respondendo o OGMO apenas se o operador não pagar.",
+      "C": "Exclusiva do operador portuário, sendo o OGMO mero repassador.",
+      "D": "Exclusiva do OGMO, que administra os fundos.",
+      "E": "Solidariamente responsáveis, mas com permissão de invocação do benefício de ordem."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 2º, § 4º, define que ambos são 'solidariamente responsáveis', o que significa que o credor (INSS, por exemplo) pode cobrar de qualquer um deles. O texto ainda reforça: 'vedada a invocação do benefício de ordem', impedindo que um exija que o outro seja cobrado primeiro."
+  },
+  {
+    "id": "700096",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 3º, § 1º, da Lei 9.719/1998, estabelece uma consequência para o trabalhador portuário avulso que for cedido permanentemente a um operador portuário ou se associar a uma cooperativa de operadores. Qual é essa consequência?",
+    "alternativas": {
+      "A": "Ele perde o registro no OGMO imediatamente.",
+      "B": "Ele deixará de concorrer à escala como avulso enquanto durar a cessão ou associação.",
+      "C": "Ele passa a receber seus pagamentos diretamente do operador, e não mais do OGMO.",
+      "D": "Ele deve pagar uma taxa de inatividade ao OGMO.",
+      "E": "Ele perde o direito às férias e 13º salário depositados na conta vinculada."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 3º, § 1º, afirma que, nestas situações, 'o trabalhador deixará de concorrer à escala como avulso'. Ele mantém o registro (Art. 3º, caput), mas fica 'suspenso' da escala de rodízio."
+  },
+  {
+    "id": "700097",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 3º, § 2º, da Lei 9.719/1998, estabelece uma vedação ao OGMO. Assinale a alternativa que corresponde a essa proibição.",
+    "alternativas": {
+      "A": "É vedado ao OGMO manter o registro de trabalhador associado a cooperativa.",
+      "B": "É vedado ao OGMO efetuar o pagamento da remuneração com atraso superior a 48 horas.",
+      "C": "É vedado ao OGMO ceder trabalhador portuário avulso cadastrado a operador portuário, em caráter permanente.",
+      "D": "É vedado ao OGMO permitir a escalação de trabalhador em sistema de rodízio.",
+      "E": "É vedado ao OGMO alterar os prazos de pagamento."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta e é a transcrição da vedação encontrada no Art. 3º, § 2º. (Obs: Embora a Lei 12.815/2013 tenha alterado essa dinâmica no Art. 35, esta questão baseia-se estritamente no texto fornecido da Lei 9.719/98)."
+  },
+  {
+    "id": "700098",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 4º, o trabalhador portuário avulso cadastrado no OGMO tem um direito específico em relação aos trabalhadores registrados. Qual é esse direito?",
+    "alternativas": {
+      "A": "O direito de ter preferência na escala sobre os registrados.",
+      "B": "O direito de concorrer à escala diária complementando a equipe de trabalho do quadro dos registrados.",
+      "C": "O direito de receber o mesmo salário-base de um trabalhador registrado.",
+      "D": "O direito de vetar a contratação de novos trabalhadores registrados.",
+      "E": "O direito de não ser escalado para complementar equipes de registrados."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, conforme o Art. 4º. Isso significa que, se uma equipe de trabalhadores registrados (com vínculo) precisar de mais gente, o avulso cadastrado pode ser escalado para completar essa equipe."
+  },
+  {
+    "id": "700099",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 5º da Lei 9.719/1998 (com as alterações da Lei 14.047/2020) define o método de escalação dos trabalhadores avulsos. Qual é o método OBRIGATÓRIO?",
+    "alternativas": {
+      "A": "Escalação presencial, em sistema de rodízio, no posto de escalação.",
+      "B": "Escalação por meio eletrônico, sendo vedada a escalação presencial.",
+      "C": "Escalação por telefone, desde que registrada em ata.",
+      "D": "Escalação mista, permitindo presencial ou eletrônica, a critério do trabalhador.",
+      "E": "Escalação feita diretamente pelo operador portuário, comunicada ao OGMO."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 5º, § 1º, determina que a escalação será por 'meio eletrônico'. O § 3º é enfático: 'Fica vedada a escalação presencial'. A alternativa A era a regra antes da alteração legislativa."
+  },
+  {
+    "id": "700100",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 5º, § 2º, estabelece requisitos para o meio eletrônico de escalação. O sistema deve ser:",
+    "alternativas": {
+      "A": "Aberto ao público e de baixo custo.",
+      "B": "Desenvolvido pelo sindicato da categoria.",
+      "C": "Inviolável e tecnicamente seguro.",
+      "D": "Acessível apenas por computadores do OGMO.",
+      "E": "Auditável apenas pelo Ministério do Trabalho."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 5º, § 2º, exige que o meio eletrônico adotado 'deverá ser inviolável e tecnicamente seguro', para garantir a lisura do processo de rodízio."
+  },
+  {
+    "id": "700101",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 6º, parágrafo único, o trabalhador portuário avulso só fará jus à remuneração se:",
+    "alternativas": {
+      "A": "Seu nome constar na escala diária, mesmo que não compareça por motivo de saúde.",
+      "B": "Estiver presente no porto, aguardando a escalação.",
+      "C": "Constante da escala diária, estiver em efetivo serviço.",
+      "D": "Seu nome constar na escala e ele comparecer ao local, mesmo que o navio não opere.",
+      "E": "For sindicalizado e estiver com as contribuições em dia."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O parágrafo único do Art. 6º vincula a remuneração à presença na escala E ao 'efetivo serviço'. A alternativa D é uma pegadinha comum; se ele comparece mas não há 'efetivo serviço', as regras de remuneração podem ser outras (ex: 'espera'), mas o artigo 6º condiciona a remuneração 'pelo serviço' ao 'efetivo serviço'."
+  },
+  {
+    "id": "700102",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De quem é a responsabilidade exclusiva pela exatidão dos dados lançados nas listas de escalação diária, assegurando que não haja preterição ou simultaneidade? (Art. 7º)",
+    "alternativas": {
+      "A": "Do operador portuário.",
+      "B": "Do sindicato da categoria.",
+      "C": "Do Ministério do Trabalho.",
+      "D": "Do órgão gestor de mão-de-obra (OGMO).",
+      "E": "Do trabalhador, que deve conferir sua escalação."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Art. 7º, parágrafo único, atribui 'exclusivamente ao órgão gestor de mão-de-obra a responsabilidade pela exatidão dos dados', incluindo a garantia contra preterição (pular a vez) e simultaneidade (ser escalado em dois lugares ao mesmo tempo)."
+  },
+  {
+    "id": "700103",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 8º da Lei 9.719/1998 estabelece um intervalo mínimo entre duas jornadas de trabalho do avulso. Qual é esse intervalo?",
+    "alternativas": {
+      "A": "Oito horas consecutivas.",
+      "B": "Onze horas consecutivas.",
+      "C": "Vinte e quatro horas consecutivas.",
+      "D": "Doze horas consecutivas.",
+      "E": "Trinta e seis horas consecutivas."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 8º estipula um 'intervalo mínimo de onze horas consecutivas entre duas jornadas', alinhando-se à regra geral da CLT, 'salvo em situações excepcionais' previstas em acordo ou convenção."
+  },
+  {
+    "id": "700104",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Os prazos de pagamento de 24h (Operador -> OGMO) e 48h (OGMO -> Trabalhador) podem ser alterados? (Art. 2º)",
+    "alternativas": {
+      "A": "Não, pois são prazos legais e imutáveis.",
+      "B": "Sim, podem ser alterados mediante convenção coletiva, observados os prazos legais dos encargos.",
+      "C": "Sim, mas apenas por decisão da administração do porto.",
+      "D": "Sim, mas apenas o prazo de 48 horas pode ser alterado; o de 24 horas não.",
+      "E": "Não, exceto em caso de greve, com autorização judicial."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 2º, § 5º, permite expressamente que os prazos 'podem ser alterados mediante convenção coletiva', com a ressalva de que os prazos de recolhimento dos encargos fiscais e previdenciários (ex: INSS) devem ser respeitados."
+  },
+  {
+    "id": "700105",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 9º, a quem compete 'cumprir e fazer cumprir as normas concernentes a saúde e segurança do trabalho portuário'?",
+    "alternativas": {
+      "A": "Exclusivamente ao Ministério do Trabalho, que edita as normas.",
+      "B": "Exclusivamente ao OGMO, que escala o trabalhador.",
+      "C": "Exclusivamente ao operador portuário, que supervisiona o serviço.",
+      "D": "Ao OGMO, ao operador portuário e ao empregador, conforme o caso.",
+      "E": "Apenas ao trabalhador, que deve usar o EPI."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Art. 9º, caput, atribui essa competência de forma concorrente 'ao órgão gestor de mão-de-obra, ao operador portuário e ao empregador, conforme o caso'. O parágrafo único apenas diz que o Ministério do Trabalho edita as normas, mas a responsabilidade de cumpri-las é compartilhada."
+  },
+  {
+    "id": "700091",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 2º, I, da Lei 9.719/1998, qual é o prazo que o operador portuário tem para recolher ao OGMO os valores devidos pelos serviços executados pelo trabalhador avulso?",
+    "alternativas": {
+      "A": "No prazo de quarenta e oito horas da realização do serviço.",
+      "B": "No prazo de vinte e quatro horas da realização do serviço.",
+      "C": "Até o dia 2 do mês seguinte à prestação do serviço.",
+      "D": "No prazo de 72 horas após o término do serviço.",
+      "E": "Imediatamente após o término do serviço."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 2º, I, estabelece que o recolhimento pelo operador portuário ao OGMO deve ocorrer 'no prazo de vinte e quatro horas da realização do serviço'. A alternativa A (48h) é o prazo do OGMO pagar ao trabalhador (Art. 2º, § 1º). A C (dia 2) é o prazo para depósito do 13º/férias (Art. 2º, § 3º)."
+  },
+  {
+    "id": "700092",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 2º, § 1º, qual é o prazo que o OGMO tem para efetuar o pagamento da remuneração pelos serviços executados diretamente ao trabalhador portuário avulso?",
+    "alternativas": {
+      "A": "No prazo de vinte e quatro horas após o término do serviço.",
+      "B": "No prazo de quarenta e oito horas após o término do serviço.",
+      "C": "No dia 2 do mês seguinte ao da prestação do serviço.",
+      "D": "No prazo de 24 horas após o recebimento dos valores do operador portuário.",
+      "E": "No prazo de 11 horas após o término da jornada."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 2º, § 1º, determina que 'O pagamento da remuneração pelos serviços executados será feito no prazo de quarenta e oito horas após o término do serviço'. A alternativa A (24h) é o prazo do operador pagar ao OGMO (Art. 2º, I). A C (dia 2) refere-se ao depósito de 13º/férias."
+  },
+  {
+    "id": "700093",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 2º, § 2º, da Lei 9.719/1998, estabelece a forma de pagamento das parcelas de férias e décimo terceiro salário. Assinale a alternativa CORRETA.",
+    "alternativas": {
+      "A": "São pagas diretamente ao trabalhador junto com a remuneração do serviço.",
+      "B": "São depositadas em contas individuais vinculadas, em instituição bancária de livre escolha do OGMO.",
+      "C": "São pagas ao sindicato da categoria, que faz o repasse.",
+      "D": "São depositadas no Fundo de Garantia do Tempo de Serviço (FGTS).",
+      "E": "São pagas em espécie no posto de escalação, no prazo de 48 horas."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 2º, § 2º, é claro ao determinar que o OGMO 'depositará as parcelas referentes às férias e ao décimo terceiro salário [...] em contas individuais vinculadas [...] em instituição bancária de sua livre escolha'. A A está incorreta, pois são pagamentos separados da remuneração diária. As demais estão incorretas."
+  },
+  {
+    "id": "700094",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Qual é o prazo limite para o OGMO depositar as parcelas de 13º salário e férias nas contas individuais vinculadas, conforme o Art. 2º, § 3º?",
+    "alternativas": {
+      "A": "No dia 2 do mês seguinte ao da prestação do serviço.",
+      "B": "48 horas após o término do serviço.",
+      "C": "24 horas após o recebimento do operador portuário.",
+      "D": "Junto com a remuneração do serviço.",
+      "E": "No dia 5 de cada mês."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 2º, § 3º, especifica que 'Os depósitos [...] serão efetuados no dia 2 do mês seguinte ao da prestação do serviço'. As B e D são relativas à remuneração. As C e E não estão previstas."
+  },
+  {
+    "id": "700095",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 2º, § 4º, pelo pagamento dos encargos trabalhistas, contribuições previdenciárias e demais obrigações devidas à Seguridade Social, a responsabilidade do operador portuário e do OGMO é:",
+    "alternativas": {
+      "A": "Solidária, vedada a invocação do benefício de ordem.",
+      "B": "Subsidiária, respondendo o OGMO apenas se o operador não pagar.",
+      "C": "Exclusiva do operador portuário, que deve recolher tudo.",
+      "D": "Exclusiva do OGMO, que administra os valores.",
+      "E": "Inexistente, pois a responsabilidade é do trabalhador avulso."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 2º, § 4º, afirma que ambos 'são solidariamente responsáveis' e veda 'a invocação do benefício de ordem'. Isso significa que o credor (INSS, etc.) pode cobrar de qualquer um dos dois. A B (subsidiária) é o oposto. A C e D estão erradas, pois a responsabilidade é compartilhada (solidária)."
+  },
+  {
+    "id": "700096",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Os prazos de pagamento ao trabalhador (48h) e de recolhimento ao OGMO (24h), previstos no Art. 2º, podem ser alterados? (Art. 2º, § 5º)",
+    "alternativas": {
+      "A": "Não, em nenhuma hipótese, pois são prazos legais.",
+      "B": "Sim, mediante convenção coletiva, observados os prazos legais dos encargos fiscais e previdenciários.",
+      "C": "Sim, por decisão unilateral do OGMO, desde que comunicado ao sindicato.",
+      "D": "Sim, por decisão do operador portuário, se o navio atrasar.",
+      "E": "Não, exceto os prazos fiscais, que podem ser negociados."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 2º, § 5º, permite expressamente que os prazos 'podem ser alterados mediante convenção coletiva', com a ressalva de que se deve observar 'o prazo legal para recolhimento dos encargos fiscais, trabalhistas e previdenciários'. A A está errada. A C e D estão erradas, pois a alteração deve ser bilateral (convenção)."
+  },
+  {
+    "id": "700097",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 3º, se um trabalhador portuário avulso (registrado) for cedido a um operador portuário em caráter permanente, qual a consequência para ele?",
+    "alternativas": {
+      "A": "Ele é excluído do registro do OGMO.",
+      "B": "Ele deixa de concorrer à escala como avulso enquanto durar a cessão.",
+      "C": "Ele passa a concorrer à escala com prioridade.",
+      "D": "O OGMO é multado por permitir a cessão.",
+      "E": "Ele continua concorrendo à escala normalmente, acumulando funções."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 3º, I, diz que o OGMO *mantém* o registro, e o § 1º complementa: 'Enquanto durar a cessão [...] o trabalhador deixará de concorrer à escala como avulso'. A A está errada (o registro é mantido). A C e E estão incorretas."
+  },
+  {
+    "id": "700098",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O que dispõe o Art. 4º da Lei 9.719/1998 sobre o trabalhador portuário avulso cadastrado?",
+    "alternativas": {
+      "A": "Que ele é proibido de trabalhar na mesma equipe que trabalhadores registrados.",
+      "B": "Que ele tem o direito de concorrer à escala diária complementando a equipe de trabalho do quadro dos registrados.",
+      "C": "Que ele só pode ser escalado se faltarem trabalhadores registrados.",
+      "D": "Que ele deve ter um intervalo de 11 horas de descanso.",
+      "E": "Que sua escalação deve ser presencial."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 4º assegura ao TPA avulso cadastrado 'o direito de concorrer à escala diária complementando a equipe de trabalho do quadro dos registrados'. A C está incorreta (ele complementa, não apenas substitui). A D é o Art. 8º. A E é vedada pelo Art. 5º."
+  },
+  {
+    "id": "700099",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A escalação do trabalhador portuário avulso, conforme o Art. 5º (com as alterações da Lei 14.047/2020), deve ser feita:",
+    "alternativas": {
+      "A": "Pelo operador portuário, em sistema de rodízio.",
+      "B": "Pelo OGMO, em sistema de rodízio, e obrigatoriamente por meio eletrônico.",
+      "C": "Pelo OGMO, obrigatoriamente em posto de escalação presencial.",
+      "D": "Pelo sindicato da categoria, por meio eletrônico.",
+      "E": "Pelo OGMO, em sistema de rodízio, preferencialmente por meio eletrônico, mas permitida a presencial."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 5º, caput, diz que a escalação é feita pelo OGMO em rodízio. Os §§ 1º e 3º (incluídos pela Lei 14.047) determinam que será 'por meio eletrônico' e que fica 'vedada a escalação presencial'. A C e E estão erradas por causa da vedação à escalação presencial."
+  },
+  {
+    "id": "700100",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De quem é a responsabilidade de verificar a presença, no local de trabalho, dos trabalhadores constantes da escala diária, segundo o Art. 6º?",
+    "alternativas": {
+      "A": "Exclusivamente do OGMO.",
+      "B": "Exclusivamente do operador portuário.",
+      "C": "Do operador portuário e do OGMO.",
+      "D": "Do Ministério do Trabalho.",
+      "E": "Do próprio trabalhador, que assina uma lista."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 6º, caput, estabelece que cabe 'ao operador portuário e ao órgão gestor de mão-de-obra verificar a presença'. A A e B estão incorretas por citarem 'exclusivamente'."
+  },
+  {
+    "id": "700101",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 6º, parágrafo único, estabelece uma condição para o trabalhador avulso fazer jus à remuneração. Qual é?",
+    "alternativas": {
+      "A": "Bastar constar da escala diária, mesmo que não compareça.",
+      "B": "Estar em efetivo serviço, além de constar da escala diária.",
+      "C": "Ter o registro ativo no OGMO, independentemente da escala.",
+      "D": "Comparecer ao posto de escalação presencial.",
+      "E": "Ser filiado ao sindicato da categoria."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O parágrafo único do Art. 6º é claro: 'Somente fará jus à remuneração o trabalhador avulso que, constante da escala diária, estiver em efetivo serviço'. A A está errada, pois apenas constar da escala não garante o pagamento se ele não trabalhar."
+  },
+  {
+    "id": "700102",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 7º, parágrafo único, de quem é a responsabilidade exclusiva pela exatidão dos dados lançados nas listas de escalação diária?",
+    "alternativas": {
+      "A": "Do operador portuário, que solicita a mão de obra.",
+      "B": "Do trabalhador portuário, que se habilita.",
+      "C": "Do Ministério do Trabalho, que fiscaliza.",
+      "D": "Do órgão gestor de mão-de-obra (OGMO).",
+      "E": "Do sindicato da categoria."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Art. 7º, parágrafo único, afirma que 'Caberá exclusivamente ao órgão gestor de mão-de-obra a responsabilidade pela exatidão dos dados lançados nas listas diárias'. A A está incorreta, pois o operador apenas solicita, mas o OGMO é responsável pela lista."
+  },
+  {
+    "id": "700103",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Qual é o intervalo mínimo entre duas jornadas de trabalho do TPA avulso, que deve ser observado na escalação diária, segundo o Art. 8º?",
+    "alternativas": {
+      "A": "Oito horas.",
+      "B": "Onze horas consecutivas.",
+      "C": "Vinte e quatro horas.",
+      "D": "Doze horas.",
+      "E": "Não há intervalo mínimo, aplica-se o rodízio."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 8º estabelece 'um intervalo mínimo de onze horas consecutivas entre duas jornadas', ressalvando exceções previstas em convenção coletiva. Este é o intervalo interjornada padrão."
+  },
+  {
+    "id": "700104",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 9º define que 'cumprir e fazer cumprir as normas concernentes a saúde e segurança do trabalho portuário' é competência:",
+    "alternativas": {
+      "A": "Exclusiva do OGMO.",
+      "B": "Exclusiva do operador portuário.",
+      "C": "Exclusiva do Ministério do Trabalho.",
+      "D": "Do OGMO, do operador portuário e do empregador, conforme o caso.",
+      "E": "Exclusiva do trabalhador, que deve usar EPI."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Art. 9º atribui a competência de forma compartilhada: 'Compete ao órgão gestor de mão-de-obra, ao operador portuário e ao empregador, conforme o caso'. As alternativas A, B e C erram ao usar 'exclusiva'."
+  },
+  {
+    "id": "700105",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 9.719/1998 - Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre a escalação do TPA, de acordo com o Art. 5º e seus parágrafos (incluídos pela Lei 14.047/2020), assinale a alternativa INCORRETA.",
+    "alternativas": {
+      "A": "A escalação será feita pelo OGMO em sistema de rodízio.",
+      "B": "A escalação será feita por meio eletrônico.",
+      "C": "O meio eletrônico deve ser inviolável e tecnicamente seguro.",
+      "D": "O trabalhador pode habilitar-se sem comparecer ao posto de escalação.",
+      "E": "A escalação presencial é permitida em situações excepcionais."
+    },
+    "resposta_correta": "E",
+    "comentario": "A alternativa E está INCORRETA. O Art. 5º, § 3º, é taxativo: 'Fica vedada a escalação presencial de trabalhadores portuários'. A lei não abre exceções. As alternativas A (caput), B (§ 1º), C (§ 2º) e D (§ 1º) estão todas corretas."
+    }
     {
         "id": 3587008,
         "disciplina": "Legislação Federal",
