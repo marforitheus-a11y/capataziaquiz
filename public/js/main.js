@@ -262,6 +262,4 @@ document.getElementById('clearSelection').addEventListener('click', () => {
   clearSelectionUI(); // Função do ui.js
 });
 
-// Iniciar a aplicação
-loadSubjects();
-loadPDFs();
+
