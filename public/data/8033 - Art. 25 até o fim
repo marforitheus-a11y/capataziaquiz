@@ -1,0 +1,302 @@
+[
+  {
+    "id": "700076",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 26, são modalidades de instalações portuárias localizadas fora da área do porto organizado, exploradas mediante autorização, EXCETO:",
+    "alternativas": {
+      "A": "Terminal de uso privado.",
+      "B": "Estação de transbordo de carga.",
+      "C": "Terminal de contêineres (TECON).",
+      "D": "Instalação portuária pública de pequeno porte.",
+      "E": "Instalação portuária de turismo."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C é a correta (exceção). O Art. 26 lista as modalidades em seus incisos: I (Terminal de uso privado), II (Estação de transbordo), III (Instalação pública de pequeno porte) e IV (Turismo). 'Terminal de contêineres' (TECON) é um tipo de carga (Art. 29, § 1º, IV), e não uma modalidade de autorização listada no Art. 26."
+  },
+  {
+    "id": "700077",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 26, § 1º, estabelece um prazo para o início da operação da instalação portuária autorizada, contado da celebração do contrato de adesão. Qual é esse prazo e sua regra de prorrogação?",
+    "alternativas": {
+      "A": "Prazo de 2 anos, improrrogável.",
+      "B": "Prazo de 3 anos, prorrogável uma única vez, por igual período.",
+      "C": "Prazo de 3 anos, prorrogável por até 10 anos.",
+      "D": "Prazo de 5 anos, improrrogável.",
+      "E": "Prazo de 5 anos, prorrogável por mais 5 anos."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 26, § 1º, é claro ao definir o prazo de 'três anos, contado da data de celebração do contrato de adesão, prorrogável uma única vez, por igual período, a critério do poder concedente'. As demais alternativas erram o prazo ou a regra de prorrogação."
+  },
+  {
+    "id": "700078",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Quando um interessado protocola um requerimento de autorização na Antaq (Art. 27), qual é o primeiro procedimento que a agência deve adotar após receber e constatar a conformidade dos documentos?",
+    "alternativas": {
+      "A": "Encaminhar o pedido diretamente ao Poder Concedente para aprovação imediata.",
+      "B": "Promover, em até dez dias, a abertura de processo de anúncio público, com prazo de trinta dias.",
+      "C": "Realizar uma audiência pública para discutir o impacto do terminal na região.",
+      "D": "Solicitar parecer da autoridade marítima, que tem 15 dias para responder.",
+      "E": "Iniciar um processo seletivo público para escolher a melhor proposta."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 27, Parágrafo único, II, determina que, estando a documentação em conformidade, a Antaq deve 'promover, em até dez dias, a abertura de processo de anúncio público, com prazo de trinta dias'. O parecer da autoridade marítima (D) só é exigido ao final do processo (Art. 33, IV). O processo seletivo (E) só ocorre se houver inviabilidade locacional (Art. 32)."
+  },
+  {
+    "id": "700079",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 30 define 'viabilidade locacional'. Segundo o decreto, o que significa este termo?",
+    "alternativas": {
+      "A": "A capacidade financeira do interessado de implantar a instalação.",
+      "B": "A possibilidade da implantação física de duas ou mais instalações na mesma região que não gere impedimento operacional a qualquer uma delas.",
+      "C": "A adequação da proposta às diretrizes do planejamento do setor portuário.",
+      "D": "A existência de acessos terrestres e aquaviários adequados na região.",
+      "E": "A aprovação do município (Prefeitura) quanto à localização do terminal."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, sendo a definição literal do parágrafo único do Art. 30. A viabilidade locacional refere-se especificamente à compatibilidade física e operacional de múltiplos terminais na mesma região, e não à capacidade financeira (A) ou à adequação política (C), embora esta última também seja analisada (Art. 30, caput)."
+  },
+  {
+    "id": "700080",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 31, a autorização poderá ser expedida diretamente (sem processo seletivo público) em duas hipóteses. Uma delas é quando o processo de chamada ou anúncio públicos for concluído com um único interessado. Qual é a outra?",
+    "alternativas": {
+      "A": "Quando não existir impedimento locacional à implantação concomitante de todas as instalações solicitadas.",
+      "B": "Quando o investimento global for inferior a R$ 100 milhões.",
+      "C": "Quando se tratar de uma Instalação Portuária de Turismo.",
+      "D": "Quando o interessado já possuir o título de propriedade da área há mais de 10 anos.",
+      "E": "Quando o requerente for uma entidade da administração pública indireta."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 31 lista as duas hipóteses: I (um único interessado) e II ('não existir impedimento locacional à implantação concomitante de todas as instalações portuárias solicitadas'). Se todos 'cabem' (sem impedimento locacional), não há necessidade de processo seletivo para escolher apenas um. As demais (B, C, D, E) não são hipóteses previstas neste artigo."
+  },
+  {
+    "id": "700081",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 32 trata da situação de inviabilidade locacional. Se, mesmo após a reformulação das propostas, o impedimento locacional for mantido, caberá à Antaq:",
+    "alternativas": {
+      "A": "Indeferir todas as propostas e arquivar o processo.",
+      "B": "Promover processo seletivo público para seleção da melhor proposta.",
+      "C": "Encaminhar o processo ao Poder Concedente para que ele decida qual proposta autorizar.",
+      "D": "Autorizar a proposta que foi protocolada primeiro (critério cronológico).",
+      "E": "Realizar uma audiência pública para que os interessados cheguem a um consenso."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 32, § 2º, estabelece que, mantido o impedimento (ou seja, 'não cabem todos'), caberá à Antaq 'promover processo seletivo público para seleção da melhor proposta'. As demais alternativas (A, C, D, E) são procedimentos incorretos."
+  },
+  {
+    "id": "700082",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 35 trata de alterações que não dependem de um novo contrato de adesão, bastando aprovação do Poder Concedente. Qual das seguintes situações se enquadra nisso?",
+    "alternativas": {
+      "A": "A transferência de titularidade da autorização, desde que preservadas as condições do contrato original.",
+      "B": "A expansão da área da instalação portuária em 50% da área original.",
+      "C": "A alteração do tipo de carga movimentada, que exige obrigatoriamente um novo contrato.",
+      "D": "A prorrogação do prazo do contrato de adesão.",
+      "E": "A mudança da instalação para uma nova região geográfica."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 35, inciso I, prevê expressamente a 'transferência de titularidade' como um caso que não exige novo contrato, desde que as condições originais sejam mantidas. A B está errada (o parágrafo único, II, limita a 25%). A C está errada (o parágrafo único, I, prevê dispensa de nova autorização, e não novo contrato). A D e E são alterações substanciais que exigiriam novo processo ou aditivo complexo."
+  },
+  {
+    "id": "700083",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Conselho de Autoridade Portuária",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Conselho de Autoridade Portuária (CAP), definido no Art. 36, é um órgão da administração do porto com natureza:",
+    "alternativas": {
+      "A": "Deliberativa e executiva.",
+      "B": "Consultiva.",
+      "C": "Normativa e fiscalizatória.",
+      "D": "Arbitral e de mediação.",
+      "E": "Disciplinar e punitiva."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 36, caput, define o CAP como um 'órgão consultivo da administração do porto'. O § 1º reforça isso ao listar suas competências, todas iniciadas com o verbo 'sugerir'. As demais alternativas (deliberativa, normativa, etc.) estão incorretas."
+  },
+  {
+    "id": "700084",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Conselho de Autoridade Portuária",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre a composição do CAP (Art. 37), qual bloco possui o maior número de representantes?",
+    "alternativas": {
+      "A": "A classe empresarial (arrendatários, operadores, usuários).",
+      "B": "A classe dos trabalhadores portuários (avulsos e demais).",
+      "C": "O Poder Público (União, Marinha, Adm. Porto, Estado, Municípios).",
+      "D": "A classe empresarial e a classe dos trabalhadores têm o mesmo número de representantes.",
+      "E": "O Poder Público e a classe empresarial têm o mesmo número de representantes."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Poder Público (Inciso I) possui: 4 (União) + 1 (Marinha) + 1 (Adm. Porto) + 1 (Estado) + 1 (Municípios) = 8 representantes. A classe empresarial (Inciso II) possui: 2 + 1 + 1 = 4 representantes. A classe dos trabalhadores (Inciso III) possui: 2 + 2 = 4 representantes. Portanto, o Poder Público tem o maior número."
+  },
+  {
+    "id": "700085",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Conselho de Autoridade Portuária",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 37, § 3º, estabelece o mandato dos membros do CAP. Qual é o prazo e a regra de recondução?",
+    "alternativas": {
+      "A": "Mandato de 2 anos, admitida a recondução uma única vez, por igual período.",
+      "B": "Mandato de 3 anos, permitida a redesignação (recondução) ilimitada.",
+      "C": "Mandato de 2 anos, vedada a recondução.",
+      "D": "Mandato de 4 anos, coincidindo com o mandato do Governador do Estado.",
+      "E": "Mandato vitalício, enquanto representante da entidade de classe."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Art. 37, § 3º, define o mandato 'de dois anos, admitida a recondução uma única vez, por igual período'. Esta regra é diferente da Diretoria-Executiva do OGMO (Art. 38, § 3º) que é de 3 anos com redesignação permitida (sem limite de 1 vez)."
+  },
+  {
+    "id": "700086",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 38, o Conselho de Supervisão do OGMO será composto por 3 membros. Como é a distribuição desses membros?",
+    "alternativas": {
+      "A": "Um indicado pela classe econômica, um pela classe trabalhadora e um pela administração do porto.",
+      "B": "Três membros indicados exclusivamente pelas categorias econômicas (operadores portuários).",
+      "C": "Dois indicados pelas categorias econômicas e um indicado pelas categorias profissionais (trabalhadores).",
+      "D": "Dois indicados pelas categorias profissionais (trabalhadores) e um indicado pelas categorias econômicas.",
+      "E": "Três membros indicados pelo Poder Concedente para fiscalizar o OGMO."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 38, § 1º, define a composição: 'dois indicados pelas entidades de classe [...] categorias econômicas' (Inciso I) e 'um indicado pelas entidades de classe [...] categorias profissionais' (Inciso II). A alternativa D inverte a proporção."
+  },
+  {
+    "id": "700087",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 38, § 3º, a Diretoria-Executiva do OGMO será composta por diretores designados e destituíveis:",
+    "alternativas": {
+      "A": "Pelo Conselho de Supervisão do OGMO.",
+      "B": "Pelo Poder Concedente (Secretaria de Portos).",
+      "C": "Pela Antaq, após processo seletivo.",
+      "D": "Pelos operadores portuários que atuam no respectivo porto.",
+      "E": "Pelas entidades de classe dos trabalhadores portuários."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Art. 38, § 3º, é explícito ao afirmar que os diretores são 'designados e destituíveis, a qualquer tempo, pelos operadores portuários que atuam no respectivo porto organizado'. O § 4º apenas permite que, se houver mais de um diretor, um *possa* ser indicado pelos trabalhadores, mas a designação (e destituição) é prerrogativa dos operadores."
+  },
+  {
+    "id": "700088",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Fórum e SINE-PORTO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 39 institui o Fórum Nacional Permanente para Qualificação do Trabalhador Portuário. Qual órgão é responsável por coordenar este fórum?",
+    "alternativas": {
+      "A": "A Secretaria de Portos da Presidência da República.",
+      "B": "O Ministério do Trabalho e Emprego.",
+      "C": "O Ministério da Educação.",
+      "D": "O Comando da Marinha.",
+      "E": "A Antaq."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 39, § 1º, inciso I, alínea 'a', lista o 'Ministério do Trabalho e Emprego, que o coordenará'. A Secretaria de Portos (A) participa, mas não coordena (alínea 'b')."
+  },
+  {
+    "id": "700089",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Fórum e SINE-PORTO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 40, § 2º (redação do Dec. 8.071/2013), os trabalhadores portuários avulsos inscritos no OGMO e constantes no SINE-PORTO terão preferência de acesso a quê?",
+    "alternativas": {
+      "A": "Às vagas de trabalho com vínculo empregatício nos terminais autorizados.",
+      "B": "A programas de formação ou qualificação profissional oferecidos no âmbito do SINE ou do Pronatec.",
+      "C": "A cargos na Diretoria-Executiva do OGMO.",
+      "D": "A financiamento habitacional pela Caixa Econômica Federal.",
+      "E": "À escala de trabalho nos navios de turismo."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 40, § 2º, concede a esses trabalhadores 'preferência no acesso a programas de formação ou qualificação profissional oferecidos no âmbito do SINE ou do Pronatec'. As demais alternativas não estão previstas neste artigo."
+  },
+  {
+    "id": "700090",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Disposições Finais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 41 trata da participação de representantes no conselho de administração da administração do porto (Companhia Docas). O § 2º estabelece que a indicação do representante da classe trabalhadora recairá obrigatoriamente sobre:",
+    "alternativas": {
+      "A": "Um trabalhador portuário avulso indicado pelo OGMO.",
+      "B": "Um membro do Conselho de Autoridade Portuária (CAP).",
+      "C": "Empregado da entidade sob controle estatal (da própria Companhia Docas).",
+      "D": "Qualquer trabalhador portuário, avulso ou com vínculo, atuante no porto.",
+      "E": "Um membro indicado pelo Ministério do Trabalho e Emprego."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 41, § 2º, é uma regra específica (conhecida como 'representante dos empregados no conselho') que determina que a indicação 'recairá obrigatoriamente sobre empregado da entidade sob controle estatal'. O § 1º diz que o CAP indica, mas a indicação deve seguir a regra do § 2º."
+  }
+]
