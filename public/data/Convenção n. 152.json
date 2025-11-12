@@ -1,0 +1,302 @@
+[
+  {
+    "id": "800106",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Área de Aplicação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Artigo 1º da Convenção 152 da OIT, quem deverá ser consultado quando da elaboração ou revisão da definição nacional de 'trabalhos portuários'?",
+    "alternativas": {
+      "A": "Exclusivamente a autoridade competente.",
+      "B": "Apenas as organizações de empregadores.",
+      "C": "As organizações de empregadores e trabalhadores interessados.",
+      "D": "A Repartição Internacional do Trabalho (OIT).",
+      "E": "A autoridade marítima e a autoridade aduaneira."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Artigo 1º, § 1º, segunda parte, estabelece que 'As organizações de empregadores e trabalhadores interessados deverão ser consultadas quando da elaboração ou revisão dessa definição'."
+  },
+  {
+    "id": "800107",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Área de Aplicação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 2º, § 1º, permite que um Membro conceda isenções totais ou parciais da Convenção em certos casos, como tráfico irregular e limitado. Quais são as duas condições cumulativas para isso?",
+    "alternativas": {
+      "A": "Os trabalhos serem efetuados em condições seguras e a autoridade competente ter se certificado disso após consulta às partes interessadas.",
+      "B": "Os navios terem baixo calado e os trabalhos serem efetuados em condições seguras.",
+      "C": "Haver consulta prévia à OIT e os trabalhos serem efetuados por, no máximo, 10 trabalhadores.",
+      "D": "A autoridade competente se certificar da isenção e os trabalhadores receberem um adicional de risco.",
+      "E": "Os trabalhos serem efetuados em condições seguras e a isenção ser publicada em relatório para a OIT."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O Artigo 2º, § 1º, alíneas 'a' e 'b', exige que: a) 'os trabalhos sejam efetuados em condições seguras'; e b) 'a autoridade competente tenha se certificado, após consulta às organizações de empregadores e de trabalhadores interessadas, que a isenção pode razoavelmente ser concedida'."
+  },
+  {
+    "id": "800108",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Área de Aplicação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Artigo 2º, § 3º, as derrogações (isenções) e as modificações importantes devem ser justificadas em qual documento?",
+    "alternativas": {
+      "A": "No Diário Oficial do Membro, apenas.",
+      "B": "Numa declaração conjunta assinada por empregadores e trabalhadores.",
+      "C": "Nos relatórios sobre a aplicação da Convenção apresentados à OIT.",
+      "D": "Na ata de fundação do Conselho de Autoridade Portuária.",
+      "E": "Em um laudo técnico assinado por uma 'pessoa competente'."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Artigo 2º, § 3º, estabelece que as derrogações, modificações e suas razões 'deverão ser indicadas nos relatórios sobre a aplicação da Convenção que devem ser apresentados por força do Artigo 22 da Constituição da Organização Internacional do Trabalho'."
+  },
+  {
+    "id": "800109",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Definições",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 3º da Convenção 152 define vários termos. Como é definida a 'pessoa competente'?",
+    "alternativas": {
+      "A": "Toda pessoa designada pelo empregador para assegurar a execução de uma função.",
+      "B": "Toda pessoa que tenha os conhecimentos e experiência requeridos para uma função e seja aceitável pela autoridade competente.",
+      "C": "Toda pessoa autorizada pelo capitão do navio para realizar uma tarefa específica.",
+      "D": "Toda pessoa que possua um diploma universitário na área de segurança do trabalho.",
+      "E": "Toda pessoa que seja membro do sindicato dos trabalhadores portuários."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Artigo 3º, alínea 'b', define 'pessoa competente' como 'toda pessoa que tenha os conhecimentos e experiência requeridos para o cumprimento de uma ou várias funções específicas, e aceitável enquanto tal pela autoridade competente'."
+  },
+  {
+    "id": "800110",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Definições",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 3º distingue 'pessoa competente', 'pessoa responsável' e 'pessoa autorizada'. Qual delas é definida como designada pelo empregador ou capitão para *assegurar a execução* de uma função, possuindo a *autoridade* necessária para isso?",
+    "alternativas": {
+      "A": "Pessoa competente.",
+      "B": "Pessoa responsável.",
+      "C": "Pessoa autorizada.",
+      "D": "Pessoa qualificada.",
+      "E": "Pessoa designada."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Artigo 3º, alínea 'c', define 'pessoa responsável' como aquela 'designada pelo empregador, o capitão [...] para assegurar a execução' e que tenha a 'autoridade exigida' para tal. A 'pessoa autorizada' (d) apenas *realiza* a tarefa, e a 'competente' (b) é aceitável pela autoridade."
+  },
+  {
+    "id": "800111",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Definições",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Como o Artigo 3º, alínea 'f', define 'acessório de estivagem'?",
+    "alternativas": {
+      "A": "Todo aparelho de carga, fixo ou móvel, usado para levantar ou arriar cargas.",
+      "B": "Rampas de cais acionadas pela força motriz.",
+      "C": "Todo acessório por meio do qual uma carga pode ser fixada num aparelho de içar, mas que não seja parte integrante do aparelho ou da carga.",
+      "D": "Dispositivos de levantamento que formam parte integrante da carga, como olhais em contêineres.",
+      "E": "Cordames e correntes utilizados na construção dos aparelhos de içar."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta, sendo a definição literal do Art. 3º, 'f'. A alternativa A é a definição de 'aparelhos de içar' (e). A D é especificamente excluída pela definição ('que não seja parte integrante [...] da carga')."
+  },
+  {
+    "id": "800112",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Definições",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 3º, alínea 'g', define o termo 'navio'. Qual tipo de embarcação é expressamente EXCLUÍDO dessa definição?",
+    "alternativas": {
+      "A": "Barcos de pesca.",
+      "B": "Hovercrafts.",
+      "C": "Botes de descarga e lanchões.",
+      "D": "Vasos de guerra.",
+      "E": "Barcaças."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Artigo 3º, 'g', lista vários tipos de embarcações (B, C, E) e conclui: 'com exclusão dos vasos de guerra'. Barcos de pesca (A) são mencionados no Art. 2º (isenções), mas não excluídos da definição de 'navio' no Art. 3º."
+  },
+  {
+    "id": "800113",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Disposições Gerais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 4º, § 1º, alínea 'a', exige que a legislação nacional disponha sobre medidas de segurança e salubridade. Isso inclui:",
+    "alternativas": {
+      "A": "A organização e manutenção dos locais de trabalho, materiais e métodos de trabalho seguros.",
+      "B": "Apenas o fornecimento de EPI, quando o risco não puder ser evitado.",
+      "C": "Apenas a informação e formação dos trabalhadores.",
+      "D": "Apenas a elaboração de procedimentos de emergência.",
+      "E": "A obrigatoriedade de fiscalização médica e primeiros socorros."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. A alínea 'a' do § 1º do Art. 4º foca na 'organização e manutenção dos locais de trabalho e dos materiais bem como a utilização de métodos de trabalho que ofereçam garantias de segurança e salubridade'. As alternativas B, C, D e E são medidas listadas em *outras* alíneas (d, c, f, e) do mesmo parágrafo, mas a A responde especificamente à alínea 'a'."
+  },
+  {
+    "id": "800114",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Disposições Gerais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Artigo 4º, § 1º, alínea 'd', o fornecimento de EPI e vestuário de proteção aos trabalhadores é exigido quando:",
+    "alternativas": {
+      "A": "Em todas as situações, independentemente do risco.",
+      "B": "Quando o trabalhador solicitar por escrito.",
+      "C": "Quando não tiver sido possível prevenir, de outra maneira, os riscos de acidente ou prejuízos para a saúde.",
+      "D": "Apenas em operações com substâncias perigosas.",
+      "E": "Apenas para trabalhadores não sindicalizados."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. A alínea 'd' do § 1º do Art. 4º estabelece o princípio da proteção coletiva como prioritária, indicando o EPI 'quando não tiver possível prevenir, de outra maneira, os riscos'. A A está incorreta (o EPI é a última barreira). A B, D e E são restrições incorretas."
+  },
+  {
+    "id": "800115",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Disposições Gerais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 4º, § 2º, lista uma série de tópicos que as medidas de implementação da Convenção devem visar. Qual dos seguintes tópicos NÃO está expressamente listado?",
+    "alternativas": {
+      "A": "O transporte dos trabalhadores.",
+      "B": "A abertura e fechamento das escotilhas e o trabalho nos porões.",
+      "C": "O nível de ruído máximo e vibração nos equipamentos.",
+      "D": "A luta contra os incêndios e as explosões e sua prevenção.",
+      "E": "A declaração e a investigação em caso de acidente de trabalho."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C é a exceção correta. O Art. 4º, § 2º, lista: (A) na alínea 'd', (B) na alínea 'e', (D) na alínea 'b', e (E) na alínea 's'. Embora a Convenção 152 seja sobre segurança e higiene em geral (e tenha sido inspirada pela Convenção 148 sobre ruído e vibração, citada no preâmbulo), o Art. 4º, § 2º, não lista 'nível de ruído e vibração' (C) como um tópico específico, embora liste 'outros riscos do ambiente de trabalho' (l)."
+  },
+  {
+    "id": "800116",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Disposições Gerais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 4º, § 2º, alínea 'i', determina que as medidas devem visar o teste, exame, inspeção e certificação de quais itens?",
+    "alternativas": {
+      "A": "Apenas dos aparelhos de içar.",
+      "B": "Apenas dos acessórios de estivagem (como correntes e cordame).",
+      "C": "Dos aparelhos de içar, dos acessórios de estivagem e das lingas e dispositivos que formam parte integrante da carga.",
+      "D": "Apenas das instalações sanitárias e banheiros.",
+      "E": "Dos coletes salva-vidas e equipamentos de proteção individual."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. A alínea 'i' do § 2º do Art. 4º é abrangente, incluindo 'os aparelhos de içar, dos acessórios de estivagem (inclusive as correntes e cordame) bem como as lingas e outros dispositivos de levantamento que formam parte integrante da carga'."
+  },
+  {
+    "id": "800117",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Disposições Gerais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Artigo 4º, § 3º, como deve ser assegurada a aplicação prática das prescrições da Convenção?",
+    "alternativas": {
+      "A": "Exclusivamente por meio de leis federais aprovadas pelo Congresso.",
+      "B": "Por ou apoiar-se em normas técnicas ou compêndios de diretrizes práticas aprovadas pela autoridade competente.",
+      "C": "Seguindo estritamente as recomendações da Repartição Internacional do Trabalho (OIT).",
+      "D": "Através de negociação direta entre o trabalhador e o empregador, caso a caso.",
+      "E": "Apenas por meio da fiscalização da autoridade marítima."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 4º, § 3º, flexibiliza a forma de implementação, afirmando que a aplicação prática 'deverá ser assegurada por ou apoiar-se em normas técnicas ou compêndios de diretrizes práticas aprovadas pela autoridade competente, ou por outros métodos adequados'."
+  },
+  {
+    "id": "800118",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Disposições Gerais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 1º define 'trabalhos portuários' como o conjunto de operações de carregamento ou descarregamento de um navio e operações conexas. Quem deve fixar a definição exata dessas operações?",
+    "alternativas": {
+      "A": "A Organização Internacional do Trabalho (OIT).",
+      "B": "A legislação ou prática nacionais.",
+      "C": "O capitão de cada navio.",
+      "D": "O operador portuário.",
+      "E": "A autoridade marítima."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Artigo 1º, § 1º, estabelece que 'a definição de tais operações deverá ser fixada pela legislação ou prática nacionais', e não pela OIT (A) ou por agentes privados (C, D). A consulta aos interessados (empregadores e trabalhadores) é obrigatória nesse processo."
+  },
+  {
+    "id": "800119",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Definições",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 2º, § 2º, permite que 'exigências particulares da III parte' sejam modificadas, desde que a autoridade competente se certifique de que as modificações garantem:",
+    "alternativas": {
+      "A": "Redução de custos para o empregador.",
+      "B": "Maior velocidade na operação portuária.",
+      "C": "Vantagens equivalentes e que a proteção não seja inferior à aplicação integral.",
+      "D": "Que as modificações estão alinhadas com a prática de outros países.",
+      "E": "Que os trabalhadores concordaram em abrir mão da proteção em troca de bônus."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 2º, § 2º, permite a modificação (não a isenção total do § 1º) se a autoridade competente, após consulta, 'se tiver certificado que as modificações garantem vantagens equivalentes e de que, em seu conjunto, a proteção dessa maneira assegurada não for inferior àquela que resultaria da aplicação integral'."
+  },
+  {
+    "id": "800120",
+    "disciplina": "Legislação Internacional",
+    "assunto": "OIT Convenção 152 - Definições",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Artigo 4º, § 1º, alínea 'e' e 'f', exige que a legislação nacional disponha sobre quais medidas de resposta?",
+    "alternativas": {
+      "A": "Apenas o fornecimento de EPI e vestuário.",
+      "B": "Apenas a formação e controle dos trabalhadores.",
+      "C": "A organização de primeiros socorros e salvamento, e a elaboração de procedimentos para situações de emergência.",
+      "D": "A organização de locais de trabalho seguros e meios de acesso.",
+      "E": "Apenas a investigação de acidentes de trabalho."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. A alínea 'e' do § 1º do Art. 4º trata da 'organização e manutenção dos meios adequados e suficientes de primeiros socorros e salvamento'. A alínea 'f' trata da 'elaboração e estabelecimento de procedimentos adequados destinados a fazer frente a todas as situações de emergência'."
+  }
+]
