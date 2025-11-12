@@ -365,47 +365,28 @@ function generatePrintPage(questionsToPrint) {
 function playVictoryVideo() {
   const overlay = document.getElementById('easterEggOverlay');
   const video = document.getElementById('easterEggVideo');
-  const closeBtn = document.getElementById('closeEasterEgg');
-  const unmuteText = document.getElementById('unmuteText');
+  
+  // Link de destino (o que você forneceu)
+  const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=5513997964227&text=Boa%20noite%20minha%20linda,%20saudades!";
 
   if (!overlay || !video) {
     console.error("Elementos do vídeo de vitória não encontrados.");
     return;
   }
   
-  overlay.style.display = 'flex';
-  video.volume = 1.0; // Define o volume máximo
-
-  // Tenta tocar o vídeo
-  const playPromise = video.play();
-
-  if (playPromise !== undefined) {
-    playPromise.then(() => {
-      // Autoplay com som funcionou! (Raro)
-      unmuteText.style.display = 'none';
-    }).catch(error => {
-      // Autoplay com som FALHOU (Normal).
-      // Toca o vídeo mutado e pede interação do usuário.
-      console.warn("Autoplay com som bloqueado. Tocando mutado.", error);
-      video.muted = true;
-      video.play();
-      unmuteText.style.display = 'block'; // Mostra "Clique para ativar o som"
-      
-      // Listener para desmutar ao clicar no overlay ou no texto
-      overlay.addEventListener('click', () => {
-        video.muted = false;
-        video.volume = 1.0;
-        unmuteText.style.display = 'none';
-      }, { once: true }); // {once: true} remove o listener após o primeiro clique
-    });
-  }
-  
-  // Listener do botão de fechar
-  closeBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); // Impede que o clique feche E desmute ao mesmo tempo
-    video.pause();
-    video.currentTime = 0; // Reseta o vídeo
-    overlay.style.display = 'none';
-    unmuteText.style.display = 'none'; // Esconde o texto ao fechar
+  overlay.style.display = 'flex'; // Mostra o overlay
+  video.muted = true; // Toca mutado para garantir o autoplay
+  video.volume = 1.0; 
+  video.play().catch(error => {
+    // Mesmo se o play falhar (ex: vídeo não encontrado), o timer continua
+    console.warn("Não foi possível tocar o vídeo, mas o redirecionamento ocorrerá.", error);
   });
+
+  // Inicia o timer de 3 segundos (3000ms)
+  setTimeout(() => {
+    // Redireciona o usuário
+    window.location.href = WHATSAPP_LINK;
+  }, 3000); 
+  
+  // Não precisamos mais dos listeners de 'unmute' ou 'close'
 }
