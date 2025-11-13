@@ -64,6 +64,14 @@
   </div>
 
   <!-- Ordem dos scripts é crucial! translator.js é o novo -->
+  <script type="module">
+    // Importa as funções que precisamos
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+    // Disponibiliza para o resto do site
+    window.firebaseModules = { initializeApp, getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion };
+  </script>
   <script src="js/helpers.js"></script>
   <script src="js/translator.js"></script> <!-- NOVO ARQUIVO -->
   <script src="js/ui.js"></script>
@@ -72,3 +80,4 @@
 
 </body>
 </html>
+
