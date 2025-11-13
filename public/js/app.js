@@ -1,10 +1,10 @@
-/* ====== Lógica Principal com Firebase (COM GRÁFICO DE TEMPO) ====== */
+/* ====== Lógica Principal com Firebase (COM CHAT e Sintaxe v8 CORRIGIDA) ====== */
 
 // --- 1. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
 // ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
 const firebaseConfig = {
-  apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
+ apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
   authDomain: "capatazia-4391a.firebaseapp.com",
   projectId: "capatazia-4391a",
   storageBucket: "capatazia-4391a.firebasestorage.app",
@@ -14,10 +14,13 @@ const firebaseConfig = {
 };
 // ======================================================
 
+
 // --- 2. INICIALIZAÇÃO DO FIREBASE (Sintaxe v8/compat) ---
 let db;
 try {
+  // A 'initializeApp' está no objeto 'firebase'
   firebase.initializeApp(firebaseConfig);
+  // O 'getFirestore' é chamado como 'firebase.firestore()'
   db = firebase.firestore();
   console.log("Firebase conectado com sucesso!"); 
 } catch (error) {
@@ -37,6 +40,7 @@ let stopPresenceListener = () => {};
 let stopNotificationListener = () => {};
 let stopMessagesListener = () => {};
 
+// Fotos de Perfil
 const profilePics = {
   ithalo: '/video/ithalo.jpg',
   matheus: '/video/matheus.jpg'
@@ -45,27 +49,18 @@ const profilePics = {
 let otherUserIsOnline = false;
 let myUnreadCount = 0;
 
-// --- FUNÇÃO HELPER DE DATA (Nova) ---
-/**
- * Retorna uma string YYYY-MM-DD para a data de hoje (no fuso horário local).
- */
+// --- FUNÇÃO HELPER DE DATA ---
 function getTodayString() {
   const today = new Date();
   const year = today.getFullYear();
   const month = (today.getMonth() + 1).toString().padStart(2, '0');
   const day = today.getDate().toString().padStart(2, '0');
-  return `${year}-${month}-${day}`; // Ex: "2025-11-13"
+  return `${year}-${month}-${day}`;
 }
-/**
- * Gera um array de datas (YYYY-MM-DD) entre duas datas.
- */
 function getDateRange(startDate, endDate) {
   const dates = [];
-  let currentDate = new Date(startDate.getTime()); // Clona a data de início
-
-  // Ajusta para o início do dia para evitar problemas de fuso horário
+  let currentDate = new Date(startDate.getTime());
   currentDate.setUTCHours(0, 0, 0, 0);
-
   while (currentDate <= endDate) {
     dates.push(currentDate.toISOString().split('T')[0]);
     currentDate.setDate(currentDate.getDate() + 1);
@@ -76,7 +71,7 @@ function getDateRange(startDate, endDate) {
 // Espera o HTML carregar
 document.addEventListener('DOMContentLoaded', () => {
   
-  // (Definição de todos os seus elementos HTML (userGate, chatHead, etc.))
+  // Elementos
   const userGate = document.getElementById('userGate');
   const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
@@ -99,7 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 1. SELEÇÃO DE UTILIZADOR ---
   async function selectUser(userName) {
-    if (!db) return;
+    if (!db) {
+      console.error("Banco de dados não inicializado.");
+      return;
+    }
     
     currentUser = userName;
     otherUser = (currentUser === 'ithalo') ? 'matheus' : 'ithalo';
@@ -107,21 +105,29 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (currentUserDisplay) currentUserDisplay.textContent = userName;
     
+    // CORREÇÃO v8: db.collection(...).doc(...)
     userDocRef = db.collection("users").doc(currentUser); 
     otherUserDocRef = db.collection("users").doc(otherUser);
     
     if (userGate) userGate.style.opacity = 0.5;
 
     try {
+      // CORREÇÃO v8: userDocRef.get()
       const docSnap = await userDocRef.get();
-      if (!docSnap.exists()) {
+
+      // CORREÇÃO v8: 'docSnap.exists' é uma propriedade, não uma função
+      if (docSnap.exists) { // <--- ESTA ERA A LINHA DO ERRO (117)
+        console.log("Dados recuperados do Firebase:", docSnap.data());
+      } else {
+        console.log("Novo usuário! Criando registro no banco...");
+        // CORREÇÃO v8: userDocRef.set(...)
         await userDocRef.set({
           name: userName,
-          createdAt: new Date().toISOString(), // Salva a data de criação
+          createdAt: new Date().toISOString(),
           stats: { totalQuestions: 0, correct: 0, wrong: 0 },
           errorTopics: {},
           unreadMessagesFrom: {},
-          dailyPerformance: {} // NOVO: Mapa para o gráfico de linha
+          dailyPerformance: {}
         });
       }
 
@@ -131,12 +137,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (typeof loadSubjects === 'function') {
         loadSubjects(userName);
         loadPDFs();
+      } else {
+        console.error("Função loadSubjects() não encontrada.");
       }
       
       showTab('simulado');
       
       startPresenceHeartbeat();
-      startChatListeners(); 
+      startChatListeners();
       
     } catch (error) {
       console.error("Erro ao conectar no Firebase (Firestore):", error);
@@ -158,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function updatePresence() {
     if (!userDocRef) return;
     try {
+      // CORREÇÃO v8: Usa a sintaxe v8 para timestamp
       await userDocRef.update({
         lastActivity: firebase.firestore.FieldValue.serverTimestamp() 
       });
@@ -167,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- 3. LÓGICA DE ESCUTA (Refatorada) ---
-  
   function startChatListeners() {
     if (!otherUserDocRef || !userDocRef) return;
     
@@ -175,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stopNotificationListener();
 
     // Listener 1: Escuta o OUTRO utilizador (para status online)
+    // CORREÇÃO v8: usa a sintaxe .onSnapshot()
     stopPresenceListener = otherUserDocRef.onSnapshot((doc) => {
       let isOnline = false;
       if (doc.exists) {
@@ -193,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Listener 2: Escuta o MEU documento (para mensagens não lidas)
+    // CORREÇÃO v8: usa a sintaxe .onSnapshot()
     stopNotificationListener = userDocRef.onSnapshot((doc) => {
       let unreadCount = 0;
       if (doc.exists) {
@@ -205,8 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 4. LÓGICA DE UI DO CHAT (Refatorada) ---
-  
+  // --- 4. LÓGICA DE UI DO CHAT ---
   function updateChatHead() {
     if (otherUserIsOnline) {
       chatHead.style.display = 'block';
@@ -224,26 +233,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-  // (O resto da UI do chat: Abrir, Fechar)
   chatHead.addEventListener('click', () => {
     chatWidget.style.display = 'flex';
     chatWithUser.textContent = `Chat com ${otherUser}`;
     listenForMessages();
     const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
+    // CORREÇÃO v8: .update()
     userDocRef.update({ [myUnreadMapKey]: 0 });
   });
+
   closeChatBtn.addEventListener('click', () => {
     chatWidget.style.display = 'none';
     stopMessagesListener(); 
   });
   
   // --- 5. LÓGICA DE MENSAGENS (Enviar/Receber) ---
-  
   function listenForMessages() {
     stopMessagesListener(); 
+    
+    // CORREÇÃO v8: db.collection(...).doc(...).collection(...)
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     const q = chatCollectionRef.orderBy("timestamp", "asc");
 
+    // CORREÇÃO v8: .onSnapshot()
     stopMessagesListener = q.onSnapshot((querySnapshot) => {
       chatMessages.innerHTML = ''; 
       querySnapshot.forEach((doc) => {
@@ -266,51 +278,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const text = chatTextInput.value;
     if (text.trim() === "") return;
     chatTextInput.value = ''; 
+
+    // CORREÇÃO v8: db.collection(...).add()
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
       senderId: currentUser,
       text: text,
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
+    
     const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
+    // CORREÇÃO v8: .update() e .increment()
     await otherUserDocRef.update({
       [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
     });
   }
+
   chatSendBtn.addEventListener('click', sendMessage);
   chatTextInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
 
 
   // --- 6. SALVAR PROGRESSO (MODIFICADO) ---
-  
   window.saveQuestionProgress = async (questionData, isCorrect) => {
     if (!userDocRef) return; 
 
-    // Pega a data de hoje (ex: "2025-11-13")
     const today = getTodayString();
-    
-    // Define a chave de estatística (acerto ou erro)
     const statsKey = isCorrect ? 'correct' : 'wrong';
 
     let updateData = {
-      // Atualiza o 'lastActivity'
       lastActivity: firebase.firestore.FieldValue.serverTimestamp()
     };
     
-    // --- ATUALIZA OS CONTADORES TOTAIS ---
-    // (ex: stats.correct: increment(1))
+    // Contadores Totais
     updateData[`stats.${statsKey}`] = firebase.firestore.FieldValue.increment(1);
     updateData['stats.totalQuestions'] = firebase.firestore.FieldValue.increment(1);
     
-    // --- ATUALIZA OS CONTADORES DIÁRIOS ---
-    // (ex: dailyPerformance.2025-11-13.correct: increment(1))
+    // Contadores Diários
+    // (A sintaxe de 'increment' com notação de ponto lida com campos inexistentes)
     updateData[`dailyPerformance.${today}.${statsKey}`] = firebase.firestore.FieldValue.increment(1);
 
-
-    // --- ATUALIZA TÓPICOS DE ERRO ---
+    // Tópicos de Erro
     if (!isCorrect && typeof getErrorTopic === 'function') {
       const topic = getErrorTopic(questionData, questionData.sourceFile);
-      // (ex: errorTopics.Art. 5: increment(1))
       updateData[`errorTopics.${topic}`] = firebase.firestore.FieldValue.increment(1);
     }
     
@@ -321,18 +330,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } catch (e) {
       console.error("Erro ao salvar progresso:", e);
-      // Se der erro (provavelmente porque 'dailyPerformance' ou 'errorTopics' não existem),
-      // tentamos de novo com 'set merge:true' (que é mais lento, mas cria os campos)
-      if (e.code === 'invalid-argument') {
-         console.warn("Tentando salvar com 'merge'...");
-         // Remove os campos de 'increment' e tenta salvar o objeto inteiro
-         // (Isto é uma lógica de fallback mais complexa, vamos manter simples por agora)
-      }
+      // Fallback (se o erro for por campos não existentes, o que 'increment' devia resolver)
+      // Esta lógica é complexa, por agora vamos só logar o erro.
     }
   };
 
-  // --- 7. LÓGICA DE ABAS (MODIFICADO) ---
-  
+  // --- 7. LÓGICA DE ABAS ---
   function showTab(tabName) {
     if (tabName === 'simulado') {
       if (quizContainer) quizContainer.style.display = 'block';
@@ -344,25 +347,22 @@ document.addEventListener('DOMContentLoaded', () => {
       if (desempenhoContainer) desempenhoContainer.style.display = 'block';
       if (navSimulado) navSimulado.classList.remove('active');
       if (navDesempenho) navDesempenho.classList.add('active');
-      
-      // *** CHAMA A FUNÇÃO DE DESENHAR GRÁFICOS ***
       loadPerformanceData();
     }
   }
   
-  // --- 8. CARREGAR DESEMPENHO (MODIFICADO) ---
-  
+  // --- 8. CARREGAR DESEMPENHO ---
   async function loadPerformanceData() {
     if (!userDocRef) return;
-    const snap = await userDocRef.get();
-    if (!snap.exists) {
+    const snap = await userDocRef.get(); // CORREÇÃO v8: .get()
+    if (!snap.exists) { // CORREÇÃO v8: .exists
       console.error("Documento do usuário não encontrado.");
       return;
     }
 
     const data = snap.data();
     
-    // --- Gráfico 1 & 2 (Pizza e Barras) - Sem alteração ---
+    // Gráfico 1 & 2 (Pizza e Barras)
     const stats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
     const unanswered = stats.totalQuestions - stats.correct - stats.wrong;
     const pizzaCtx = document.getElementById('totalPizzaChart');
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (barCtx) {
         if (window.Chart && barCtx.chart) barCtx.chart.destroy(); 
         const errorTopics = data.errorTopics || {};
-        const errorEntries = Object.entries(errorTopics).sort((a, b) => b[1] - a[1]); // Ordena do maior para o menor
+        const errorEntries = Object.entries(errorTopics).sort((a, b) => b[1] - a[1]);
         if (errorEntries.length > 0) {
           barCtx.chart = new Chart(barCtx, {
             type: 'bar',
@@ -411,23 +411,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // --- Gráfico 3 (Linha do Tempo) - NOVO ---
+    // Gráfico 3 (Linha do Tempo)
     const timeCtx = document.getElementById('timeSeriesChart');
     if (timeCtx) {
       if (window.Chart && timeCtx.chart) timeCtx.chart.destroy(); 
 
-      // 1. Definir o período
-      // Usa a data de hoje (13/11/2025) como data "atual"
       const startDate = data.createdAt ? new Date(data.createdAt) : new Date("2025-11-13T12:00:00-03:00");
-      const deadline = new Date("2025-12-13T12:00:00-03:00"); // A sua data limite
+      const deadline = new Date("2025-12-13T12:00:00-03:00"); 
       
-      const labels = getDateRange(startDate, deadline); // Helper function
+      const labels = getDateRange(startDate, deadline);
       const dailyData = data.dailyPerformance || {};
       
       let runningCorrect = 0;
       let runningTotal = 0;
       
-      // 2. Processar os dados
       const performanceData = labels.map(date => {
         const day = dailyData[date];
         
@@ -436,38 +433,33 @@ document.addEventListener('DOMContentLoaded', () => {
           runningTotal += (day.correct || 0) + (day.wrong || 0);
         }
         
-        // Se ainda não estudou, a % é 0 (ou a anterior, se preferir)
         if (runningTotal === 0) {
           return 0;
         }
         
-        // Retorna a % de acerto *acumulada* até aquele dia
         return (runningCorrect / runningTotal) * 100;
       });
       
-      // 3. Desenhar o gráfico
       timeCtx.chart = new Chart(timeCtx, {
         type: 'line',
         data: {
-          labels: labels, // O eixo X (datas)
+          labels: labels,
           datasets: [{
             label: 'Taxa de Acerto Acumulada (%)',
-            data: performanceData, // O eixo Y (percentagem)
+            data: performanceData,
             fill: true,
-            borderColor: 'rgb(9, 132, 227)', // Cor --primary
+            borderColor: 'rgb(9, 132, 227)',
             backgroundColor: 'rgba(9, 132, 227, 0.1)',
             tension: 0.1
           }]
         },
         options: {
           responsive: true,
-          plugins: {
-            legend: { display: false }
-          },
+          plugins: { legend: { display: false } },
           scales: {
             y: {
               beginAtZero: true,
-              max: 100, // A % vai até 100
+              max: 100,
               ticks: {
                 callback: function(value) { return value + '%' }
               }
@@ -478,11 +470,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- Listeners de Abas (sem alteração) ---
+  // --- Listeners de Abas ---
   if (navSimulado) navSimulado.addEventListener('click', (e) => { e.preventDefault(); showTab('simulado'); });
   if (navDesempenho) navDesempenho.addEventListener('click', (e) => { e.preventDefault(); showTab('desempenho'); });
 
-  // --- Função de Reset (sem alteração) ---
+  // --- Função de Reset ---
   window.resetMyProgress = async () => {
     if (!userDocRef || !currentUser) {
       console.error("ERRO: Por favor, faça login primeiro.");
@@ -492,7 +484,7 @@ document.addEventListener('DOMContentLoaded', () => {
       stats: { totalQuestions: 0, correct: 0, wrong: 0 },
       errorTopics: {},
       unreadMessagesFrom: {},
-      dailyPerformance: {} // Zera o novo gráfico
+      dailyPerformance: {}
     };
     console.warn(`ATENÇÃO: Você está prestes a apagar TODO o progresso de '${currentUser}'.`);
     console.log("Se tem a certeza, copie e cole o seguinte comando e prima Enter:");
