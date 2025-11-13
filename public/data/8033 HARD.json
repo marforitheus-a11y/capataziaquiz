@@ -1,0 +1,397 @@
+[
+  {
+    "id": "800133",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Disposições Preliminares",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do Art. 1º do Decreto 8.033/2013, este decreto tem como objeto de sua regulamentação:",
+    "alternativas": {
+      "A": "Exclusivamente o disposto na Lei nº 12.815, de 5 de junho de 2013.",
+      "B": "O disposto na Lei nº 12.815/2013 e, subsidiariamente, as demais disposições legais sobre exploração portuária.",
+      "C": "O disposto na Lei nº 12.815/2013 e as demais disposições legais que regulam a exploração de portos e instalações.",
+      "D": "Exclusivamente as disposições legais que regulam a exploração de portos, excluindo-se as instalações portuárias privadas."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta, conforme o Art. 1º. A armadilha está na A, que usa 'Exclusivamente', e na B, que usa 'subsidiariamente'. O decreto regulamenta a Lei 12.815 E (em conjunto, não de forma subsidiária) as 'demais disposições legais' sobre o tema."
+  },
+  {
+    "id": "800134",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Disposições Preliminares",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O parágrafo único do Art. 1º define que o poder concedente será exercido 'por intermédio' da Secretaria de Portos. Isso significa que:",
+    "alternativas": {
+      "A": "A Secretaria de Portos é, para todos os efeitos legais, o próprio poder concedente.",
+      "B": "A Secretaria de Portos atua como o meio pelo qual o poder concedente (União) exerce suas competências.",
+      "C": "O poder concedente é a Antaq, que atua por intermédio da Secretaria de Portos.",
+      "D": "O poder concedente delega plenamente suas funções, tornando a Secretaria de Portos a única autoridade."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. A expressão 'por intermédio de' indica que a Secretaria de Portos é o órgão que executa as ações do poder concedente (que é a União), mas não se confunde com ele em sua totalidade (A, D). A C está errada, pois a Antaq é a agência reguladora, não o poder concedente."
+  },
+  {
+    "id": "800135",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "No que tange a investimentos não previstos em contratos de concessão ou arrendamento, o Art. 2º e o Art. 3º estabelecem uma divisão de tarefas. Assinale a alternativa que descreve CORRETAMENTE o fluxo:",
+    "alternativas": {
+      "A": "Compete à Antaq (Art. 3º) aprovar os investimentos, desde que previamente analisados pelo poder concedente (Art. 2º).",
+      "B": "Compete ao poder concedente (Art. 2º) analisar os investimentos, encaminhando-os para aprovação da Antaq (Art. 3º).",
+      "C": "Compete ao poder concedente (Art. 2º) aprovar os investimentos, que devem ser previamente analisados pela Antaq (Art. 3º).",
+      "D": "Compete à Antaq (Art. 3º) analisar e aprovar os investimentos, cabendo ao poder concedente (Art. 2º) apenas a homologação."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Esta questão troca os verbos 'analisar' e 'aprovar'. Conforme o Art. 2º, V, o Poder Concedente 'aprova' os investimentos. Conforme o Art. 3º, II, a Antaq 'analisa' as propostas. O fluxo correto é: Antaq analisa, Poder Concedente aprova."
+  },
+  {
+    "id": "800136",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 2º define as competências do poder concedente. Assinale a alternativa que contém uma competência INCORRETA ou mal atribuída ao poder concedente:",
+    "alternativas": {
+      "A": "Elaborar o plano geral de outorgas do setor portuário.",
+      "B": "Disciplinar conteúdo, forma e periodicidade de atualização dos planos de desenvolvimento e zoneamento (PDZ).",
+      "C": "Conduzir e aprovar os estudos de viabilidade técnica (EVTEA) do objeto da concessão.",
+      "D": "Aprovar a transferência de controle societário de arrendamentos, previamente analisados pela administração do porto."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está incorreta. Embora o poder concedente de fato aprove a transferência (Art. 2º, IV), a análise prévia é feita pela ANTAQ, e não pela 'administração do porto'. As alternativas A (Art. 2º, I), B (Art. 2º, II) e C (Art. 2º, VI) são competências corretas do poder concedente."
+  },
+  {
+    "id": "800137",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 3º detalha as competências da Antaq. No caso de um conflito entre dois agentes que atuam no porto (ex: dois operadores portuários sobre prioridade de atracação), compete à Antaq:",
+    "alternativas": {
+      "A": "Arbitrar, em grau de recurso, o conflito.",
+      "B": "Arbitrar, na esfera administrativa, o conflito não solucionado entre os agentes.",
+      "C": "Apurar a prática abusiva, mas se abster de arbitrar o conflito, que cabe à administração do porto.",
+      "D": "Arbitrar o conflito apenas se houver controvérsia sobre o contrato de arrendamento.",
+      "E": "Decidir em primeira instância, cabendo recurso ao poder concedente."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. Esta questão confunde os incisos III e IV do Art. 3º. O inciso III (B) fala em arbitrar conflitos 'entre a administração do porto e a arrendatária'. O inciso IV (A) fala em arbitrar 'em grau de recurso' os conflitos 'entre agentes que atuem no porto'. A primeira instância desse conflito (entre agentes) cabe à Adm. do Porto (Art. 4º, II)."
+  },
+  {
+    "id": "800138",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 3º, V, a competência da Antaq para apurar práticas abusivas ou tratamentos discriminatórios:",
+    "alternativas": {
+      "A": "É absoluta, prevalecendo sobre a de qualquer outro órgão.",
+      "B": "Depende de provocação, não podendo ser exercida de ofício.",
+      "C": "É exercida, ressalvadas as competências do CADE (Lei nº 12.529/2011).",
+      "D": "É exercida de forma concorrente com o CADE (Lei nº 12.529/2011).",
+      "E": "Limita-se a práticas discriminatórias, não incluindo práticas abusivas."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 3º, V, afirma que a Antaq apurará 'ressalvadas as competências previstas na Lei nº 12.529' (Lei do CADE). Isso significa que a competência do CADE é preservada, e a Antaq atua em sua esfera regulatória. A alternativa D (concorrente) é uma armadilha, pois 'ressalvadas' indica preservação de competência, não concorrência. A B está errada (pode ser 'de ofício')."
+  },
+  {
+    "id": "800139",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 4º, I, define que compete à administração do porto 'estabelecer o regulamento de exploração do porto'. A elaboração deste regulamento é:",
+    "alternativas": {
+      "A": "Livre, baseada na autonomia da administração do porto.",
+      "B": "Subordinada às normas técnicas da Antaq.",
+      "C": "Dependente de aprovação prévia do poder concedente.",
+      "D": "Limitada pela observância das diretrizes do poder concedente.",
+      "E": "Livre, desde que observadas as diretrizes da Antaq."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Art. 4º, I, diz que a adm. do porto estabelece o regulamento, 'observadas as diretrizes do poder concedente'. Isso é diferente de 'aprovação prévia' (C). A armadilha é trocar 'poder concedente' por 'Antaq' (B, E), o que está incorreto, pois o Art. 2º, III, atribui ao poder concedente a definição dessas diretrizes."
+  },
+  {
+    "id": "800140",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Competências",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 4º e seu parágrafo único, no caso de uma concessão de porto organizado, as competências da administração do porto (como a de 'decidir sobre conflitos entre agentes' do inciso II):",
+    "alternativas": {
+      "A": "São automaticamente transferidas para a concessionária, em sua totalidade.",
+      "B": "São extintas, passando todas a ser exercidas pela Antaq.",
+      "C": "São mantidas integralmente pela administração do porto (estatal), mesmo que o porto seja concedido.",
+      "D": "O contrato de concessão é que disciplinará a extensão e a forma do exercício dessas competências.",
+      "E": "São automaticamente transferidas ao poder concedente, que as exercerá por intermédio da concessionária."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O parágrafo único do Art. 4º é a chave: 'Nas concessões de porto organizado, o contrato disciplinará a extensão e a forma do exercício das competências da administração do porto'. Isso significa que a transferência não é automática (A), nem são extintas (B) ou mantidas (C); elas serão negociadas e definidas no contrato."
+  },
+  {
+    "id": "800141",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 5º define o regime jurídico das licitações de concessão e arrendamento. Assinale a alternativa que indica uma lei que NÃO é citada no Art. 5º como regente principal ou subsidiária do procedimento.",
+    "alternativas": {
+      "A": "Lei nº 12.815/2013 (Lei dos Portos).",
+      "B": "Lei nº 12.462/2011 (RDC).",
+      "C": "Decreto nº 7.581/2011 (Regulamento do RDC).",
+      "D": "Lei nº 8.666/1993 (Lei Geral de Licitações)."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Esta é uma armadilha de referência cruzada. O Art. 5º cita as Leis 12.815 e 12.462, e o Decreto 7.581. A Lei 8.666/1993 (D) NÃO é mencionada no Art. 5º. Ela só aparece no Art. 10, e apenas para regular a fase de habilitação, não o procedimento como um todo."
+  },
+  {
+    "id": "800142",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O parágrafo único do Art. 5º trata da hipótese de transferência da competência de licitar para a administração do porto. Nesse caso, a Antaq:",
+    "alternativas": {
+      "A": "Fica dispensada de acompanhar os atos, pois a competência foi transferida.",
+      "B": "Deve acompanhar os atos e procedimentos, e a adm. do porto observará o decreto.",
+      "C": "Fica responsável apenas por homologar o resultado, sem acompanhar os atos.",
+      "D": "Deve acompanhar os atos, mas a adm. do porto fica dispensada de observar o Decreto 8.033.",
+      "E": "Assume a licitação, pois a transferência de competência é vedada."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O parágrafo único do Art. 5º diz que a adm. do porto 'deverá observar o disposto neste Decreto', e que isso ocorre 'sem prejuízo do acompanhamento dos atos e procedimentos pela Antaq'. As alternativas A e D criam exceções que a lei veda ('sem prejuízo' significa que o acompanhamento é mantido)."
+  },
+  {
+    "id": "800143",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - EVTEA",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 6º, § 1º, permite a realização de EVTEA em versão simplificada em certas hipóteses. Assinale a alternativa CORRETA sobre essas hipóteses.",
+    "alternativas": {
+      "A": "A versão simplificada é permitida se, cumulativamente, não houver alteração de destinação (I) e não houver alteração de atividades (II).",
+      "B": "A versão simplificada é permitida se não houver alteração substancial da destinação da área (I), mesmo que haja alteração substancial das atividades (II).",
+      "C": "A versão simplificada é vedada em qualquer hipótese se houver alteração das condições da concessão, mesmo que permitida pelo poder concedente (III).",
+      "D": "A versão simplificada só é permitida se não houver alteração substancial da destinação (I), das atividades (II) E das condições (III).",
+      "E": "A versão simplificada é vedada se houver alteração substancial da destinação da área, exceto se a Antaq dispensar o EVTEA completo."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O § 1º do Art. 6º lista três hipóteses alternativas (uso do 'ou'). Isso significa que basta uma delas para permitir a simplificação. A alternativa B descreve o inciso I. Se o inciso I ('não haja alteração... da destinação') for atendido, a simplificação é permitida, mesmo que o inciso II ('não haja alteração... das atividades') não seja. As alternativas A e D estão erradas por exigir cumulatividade ('E')."
+  },
+  {
+    "id": "800144",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - EVTEA",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 6º, § 3º, permite que um interessado elabore os EVTEA. Caso esses estudos sejam utilizados na licitação, o que o poder concedente deve assegurar?",
+    "alternativas": {
+      "A": "O direito de preferência do interessado na licitação.",
+      "B": "O ressarcimento dos dispêndios, que será pago pelo vencedor da licitação.",
+      "C": "O ressarcimento dos dispêndios, sem especificar quem será o pagador.",
+      "D": "O ressarcimento, desde que o interessado vença a licitação.",
+      "E": "A anulação da licitação, pois a elaboração por interessado é vedada."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 6º, § 3º, afirma que o poder concedente 'deverá assegurar o ressarcimento dos dispêndios correspondentes'. O texto legal não especifica se o pagamento virá do poder concedente ou do vencedor (B). A (direito de preferência) não está na lei. A D está errada (o ressarcimento é pelo uso do estudo, não pela vitória)."
+  },
+  {
+    "id": "800145",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 7º estipula que, definido o objeto da licitação, a Antaq deverá adotar as providências de qual artigo da Lei 12.815/2013?",
+    "alternativas": {
+      "A": "Do Art. 6º (expansão de áreas).",
+      "B": "Do Art. 14 (anúncio público e chamada pública).",
+      "C": "Do Art. 40 (trabalho portuário).",
+      "D": "Do Art. 57 (prorrogação antecipada).",
+      "E": "Do Art. 32 (OGMO)."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Esta é uma questão de memorização de referência. O Art. 7º faz referência direta ao 'art. 14 da Lei nº 12.815, de 2013'. O Art. 14 da Lei 12.815 trata do anúncio público ou da chamada pública para identificar interessados em autorizações (embora o Art. 7 do Decreto esteja no capítulo de arrendamento, ele remete a este procedimento)."
+  },
+  {
+    "id": "800146",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Licitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 7º inicia com a expressão 'Definido o objeto da licitação...'. Com base no Art. 2º deste Decreto, a quem compete a definição do objeto (através da condução e aprovação dos EVTEA)?",
+    "alternativas": {
+      "A": "À Antaq, que define o objeto e inicia o certame.",
+      "B": "Ao poder concedente.",
+      "C": "À administração do porto.",
+      "D": "Ao interessado que elaborou os estudos (Art. 6º, § 3º).",
+      "E": "Ao Congresso Nacional, por se tratar de outorga."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 7º não diz quem define o objeto, mas o Art. 2º (competências do Poder Concedente), inciso VI, afirma que compete a ele 'conduzir e aprovar [...] os estudos de viabilidade técnica, econômica e ambiental do objeto da concessão ou do arrendamento'. Logo, o poder concedente define o objeto."
+  },
+  {
+    "id": "800147",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Edital de Licitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O parágrafo único do Art. 8º trata da indenização de investimentos do antigo titular. O edital PODE impor ao vencedor a obrigação de indenizar:",
+    "alternativas": {
+      "A": "A parcela total dos investimentos realizados, amortizados ou não, desde que aprovados pela Antaq.",
+      "B": "A parcela não amortizada dos investimentos, desde que tenham sido aprovados pelo poder concedente.",
+      "C": "A parcela não amortizada dos investimentos, independentemente de aprovação prévia.",
+      "D": "A parcela total dos investimentos, desde que aprovados pelo poder concedente.",
+      "E": "A parcela não amortizada, desde que aprovados pela Antaq e homologados pelo poder concedente."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O parágrafo único do Art. 8º é muito específico: a indenização é sobre a 'parcela não amortizada' (excluindo A e D) e 'desde que tenham sido aprovados pelo poder concedente' (excluindo C). A alternativa E adiciona a 'Antaq', que não é mencionada no artigo para essa finalidade."
+  },
+  {
+    "id": "800148",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Edital de Licitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 8º lista o que o edital deve conter. Assinale a alternativa que descreve INCORRETAMENTE ou de forma incompleta um dos itens.",
+    "alternativas": {
+      "A": "O objeto, a área, o prazo e a possibilidade de prorrogação do contrato.",
+      "B": "A relação dos bens afetos ao arrendamento ou à concessão.",
+      "C": "A minuta do contrato de arrendamento ou de concessão e seus anexos.",
+      "D": "Os critérios e a relação de documentos para aferir a capacidade técnica e econômico-financeira.",
+      "E": "As regras para pedido de esclarecimento, vedada a impugnação administrativa."
+    },
+    "resposta_correta": "E",
+    "comentario": "A alternativa E está incorreta. O Art. 8º, VI, determina que o edital disporá sobre 'as regras para pedido de esclarecimento, impugnação administrativa e interposição de recursos'. A alternativa E veda a impugnação, contradizendo diretamente o texto da lei."
+  },
+  {
+    "id": "800149",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Critérios de Julgamento",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 9º, § 2º, define 'Capacidade de Movimentação'. A 'quantidade de carga movimentada na instalação portuária, durante certo período de tempo e em nível adequado de serviço' refere-se à capacidade:",
+    "alternativas": {
+      "A": "Estática.",
+      "B": "Dinâmica.",
+      "C": "Efetiva.",
+      "D": "Nominal.",
+      "E": "Operacional."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Esta é uma armadilha clássica. O inciso II (Dinâmica) é a 'quantidade *máxima* de carga que *pode ser* movimentada'. O inciso III (Efetiva) é a 'quantidade de carga *movimentada*' (ou seja, o que de fato ocorreu). O enunciado usa 'movimentada', referindo-se à Efetiva."
+  },
+  {
+    "id": "800150",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Critérios de Julgamento",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 10, parágrafo único, flexibiliza a qualificação técnica nas licitações de arrendamento, permitindo que o edital estabeleça que o licitante:",
+    "alternativas": {
+      "A": "Deve comprovar, no ato da licitação, ser um operador portuário pré-qualificado.",
+      "B": "Deve assumir o compromisso de se pré-qualificar e, cumulativamente, contratar um operador pré-qualificado.",
+      "C": "Fica dispensado da pré-qualificação, desde que cumpra integralmente as metas de qualidade do contrato.",
+      "D": "Pode assumir o compromisso de obter sua pré-qualificação (Inciso I) ou o de contratar um operador pré-qualificado (Inciso II).",
+      "E": "Pode contratar um operador portuário, mesmo que este não seja pré-qualificado, desde que o faça antes do início da operação."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O parágrafo único do Art. 10 apresenta duas opções (uso do 'ou'). O licitante pode assumir o compromisso futuro de se qualificar (I) ou o compromisso de contratar alguém que já o seja (II). A A está errada (é um compromisso futuro, não uma exigência prévia). A B está errada (é 'ou', não 'e'). A E está errada (exige que o contratado seja 'pré-qualificado')."
+  },
+  {
+    "id": "800151",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Habilitação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 10, caput, determina que na fase de habilitação das licitações do Decreto 8.033/2013, será aplicado, no que couber, o disposto nos arts. 27 a 33 da Lei nº 8.666/1993. Isso significa que:",
+    "alternativas": {
+      "A": "A modalidade da licitação será o Convite ou a Tomada de Preços, conforme os arts. 27-33 da Lei 8.666.",
+      "B": "Os critérios de julgamento da licitação (Art. 9º) são substituídos pelos da Lei 8.666.",
+      "C": "Os documentos exigidos para qualificação jurídica, fiscal, técnica e econômico-financeira seguirão o padrão da Lei 8.666.",
+      "D": "O regime de licitação adotado é o da Lei 8.666, e não o RDC (Lei 12.462).",
+      "E": "O RDC (Lei 12.462) é usado para a licitação, mas a fase de habilitação é regida subsidiariamente pelo Decreto 7.581."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 10 é específico: ele importa da Lei 8.666 apenas os artigos 27 a 33, que tratam dos *documentos de habilitação*. A D está errada, pois o Art. 5º define que o regime principal é o RDC (Lei 12.462). A A está errada (as modalidades são do RDC). A B está errada (os critérios são do Art. 9º)."
+  },
+  {
+    "id": "800152",
+    "disciplina": "Legislação Portuária",
+    "assunto": "Decreto 8.033/2013 - Critérios de Julgamento",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 9º, § 3º, o critério 'menor tempo de movimentação' poderá corresponder ao 'menor tempo médio de atendimento de uma embarcação de referência'. A definição de 'embarcação de referência':",
+    "alternativas": {
+      "A": "É irrelevante, pois o que importa é o tempo médio de todas as cargas.",
+      "B": "Deve ser fixada no edital de licitação.",
+      "C": "É definida pela Antaq em resolução específica, válida para todos os portos.",
+      "D": "É definida pela administração do porto, após o julgamento das propostas.",
+      "E": "Corresponde ao maior navio que já atracou no porto (navio-recorde)."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 9º, § 3º, inciso III, complementa as opções I e II, afirmando que podem ser usados 'outros critérios de aferição da eficiência [...], conforme fixado no edital'. Isso significa que a definição exata do critério (como o tipo de 'embarcação de referência' do inciso II) deve constar no edital, para garantir a objetividade do julgamento (Art. 8º, caput)."
+  }
+]
