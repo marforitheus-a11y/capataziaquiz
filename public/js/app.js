@@ -131,13 +131,15 @@ window.saveQuestionProgress = async (questionData, isCorrect) => {
 
     // --- CORREÇÃO DA LÓGICA DE SALVAMENTO ---
     if (!isCorrect && typeof getErrorTopic === 'function') {
-        // --- MUDANÇA AQUI ---
         // Passa a questão E o seu ficheiro de origem
         const topic = getErrorTopic(questionData, questionData.sourceFile); 
-        // --- FIM DA MUDANÇA ---
         
         const currentTopicCount = currentErrorTopics[topic] || 0;
-    }
+        
+        // Atualiza o mapa de erros
+        currentErrorTopics[topic] = currentTopicCount + 1;
+        updateData.errorTopics = currentErrorTopics; // Salva o mapa inteiro
+      }
     // --- FIM DA CORREÇÃO ---
 
     await userDocRef.update(updateData);
