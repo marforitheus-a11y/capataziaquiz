@@ -483,6 +483,98 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   opacity: 1;
   transform: scale(1.05); /* Leve zoom ao passar o mouse */
 }
+/* ================================ */
+/* ===== ESTILOS DA NAVEGAÇÃO (Corrigido e Moderno) ===== */
+/* ================================ */
+
+.main-nav {
+  width: 100%;
+  background: #fff;
+  border-bottom: 2px solid #f0f3f7;
+  padding: 0 40px; /* Adiciona mais padding lateral */
+  margin-bottom: 30px;
+}
+
+.nav-container {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex; /* CORREÇÃO: Faz os itens ficarem lado a lado */
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.nav-brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex; /* CORREÇÃO: Faz os links ficarem lado a lado */
+  gap: 10px; /* Espaçamento entre "Início" e "Desempenho" */
+  height: 100%; /* Ocupa a altura total da nav */
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  padding: 0 15px; /* Padding horizontal */
+  
+  /* Centraliza o texto verticalmente */
+  display: flex;
+  align-items: center; 
+  
+  /* EFEITO MODERNO (Barra) */
+  position: relative; /* Necessário para a barra */
+  transition: color 0.2s ease-in-out;
+}
+
+/* A barra '::after' */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Alinha na base da nav */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary);
+  
+  /* Escondida por padrão */
+  transform: scaleX(0); 
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Ao passar o mouse, a barra cresce */
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Estilo do link ATIVO */
+.nav-links a.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* A barra do link ATIVO fica sempre visível */
+.nav-links a.active::after {
+  transform: scaleX(1);
+}
+
+.nav-user {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.nav-user span {
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
 
 
 
