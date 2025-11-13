@@ -1,11 +1,6 @@
-/* ====== Lógica Principal com Firebase (COM CHAT) ====== */
+/* ====== Lógica Principal com Firebase (COM CHAT e Sintaxe v8 CORRIGIDA) ====== */
 
-// --- 1. PEGAR MÓDULOS DO FIREBASE (Forma Clássica) ---
-const { initializeApp } = firebase;
-// ADICIONADO: 'firebase.firestore.FieldValue' para o 'increment'
-const { getFirestore, doc, getDoc, setDoc, updateDoc, onSnapshot, collection, addDoc, serverTimestamp, query, orderBy, increment } = firebase.firestore;
-
-// --- 2. CONFIGURAÇÃO DO FIREBASE ---
+// --- 1. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
 // ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
 const firebaseConfig = {
@@ -18,7 +13,8 @@ const firebaseConfig = {
 };
 // ======================================================
 
-// --- 3. INICIALIZAÇÃO DO FIREBASE (Sintaxe v8/compat) ---
+
+// --- 2. INICIALIZAÇÃO DO FIREBASE (Sintaxe v8/compat) ---
 let db;
 try {
   firebase.initializeApp(firebaseConfig);
@@ -29,15 +25,14 @@ try {
   alert("Falha crítica ao conectar com o banco de dados. Verifique o console (F12) e a sua 'firebaseConfig' no app.js.");
 }
 
-// --- 4. LÓGICA DO APP (COM CHAT) ---
+// --- 3. LÓGICA DO APP (COM CHAT) ---
 
 let currentUser = null;
-let otherUser = null; // NOVO: Nome do outro utilizador
-let chatRoomId = null; // NOVO: ID da sala de chat
+let otherUser = null; 
+let chatRoomId = null; 
 let userDocRef = null; 
-let otherUserDocRef = null; // NOVO: Referência para o doc do outro utilizador
+let otherUserDocRef = null; 
 
-// NOVO: Variáveis para parar os 'listeners' quando o utilizador sai
 let stopPresenceListener = () => {};
 let stopMessagesListener = () => {};
 
@@ -80,16 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!db) return;
     
     currentUser = userName;
-    // Define quem é o *outro* utilizador
     otherUser = (currentUser === 'ithalo') ? 'matheus' : 'ithalo';
-    
-    // Cria um ID de sala de chat único e consistente
-    // (Ex: 'ithalo_matheus')
     chatRoomId = [currentUser, otherUser].sort().join('_');
     
     if (currentUserDisplay) currentUserDisplay.textContent = userName;
     
-    // Define as referências dos documentos
     userDocRef = db.collection("users").doc(currentUser); 
     otherUserDocRef = db.collection("users").doc(otherUser);
     
@@ -97,13 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const docSnap = await userDocRef.get();
-      if (!docSnap.exists()) {
-        await setDoc(userDocRef, {
+      if (!docSnap.exists) {
+        await userDocRef.set({
           name: userName,
           createdAt: new Date().toISOString(),
           stats: { totalQuestions: 0, correct: 0, wrong: 0 },
           errorTopics: {},
-          unreadMessagesFrom: {} // NOVO: Mapa de mensagens não lidas
+          unreadMessagesFrom: {} 
         });
       }
 
@@ -134,20 +124,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 2. LÓGICA DE PRESENÇA (Heartbeat) ---
   
-  // Atualiza o 'lastActivity' a cada 20 segundos
   function startPresenceHeartbeat() {
-    // Atualiza imediatamente ao logar
     updatePresence(); 
-    // E depois atualiza a cada 20 segundos
     setInterval(updatePresence, 20000); 
   }
   
   async function updatePresence() {
     if (!userDocRef) return;
     try {
-      // Atualiza o timestamp de atividade
       await userDocRef.update({
-        lastActivity: serverTimestamp() 
+        // CORREÇÃO: Usa a sintaxe v8 para timestamp
+        lastActivity: firebase.firestore.FieldValue.serverTimestamp() 
       });
     } catch (e) {
       console.warn("Erro ao atualizar presença:", e.message);
@@ -156,17 +143,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 3. LÓGICA DE ESCUTA (Outro Utilizador) ---
   
-  // Escuta as mudanças no documento DO OUTRO UTILIZADOR
   function listenToOtherUser() {
     if (!otherUserDocRef) return;
-    
-    // Cancela qualquer listener antigo
     stopPresenceListener(); 
     
-    // Inicia um novo listener
-    stopPresenceListener = onSnapshot(otherUserDocRef, (doc) => {
-      if (!doc.exists()) {
-        chatHead.style.display = 'none'; // Outro utilizador não tem doc
+    // CORREÇÃO: Usa a sintaxe v8 para onSnapshot
+    stopPresenceListener = otherUserDocRef.onSnapshot((doc) => {
+      if (!doc.exists) {
+        chatHead.style.display = 'none'; 
         return;
       }
       
@@ -178,16 +162,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (lastActivity) {
         const now = new Date();
         const diffInSeconds = (now.getTime() - lastActivity.getTime()) / 1000;
-        // Considera "online" se a atividade foi nos últimos 60 segundos
         if (diffInSeconds < 60) {
           isOnline = true;
         }
       }
       
-      // 2. Verificar Mensagens Não Lidas
-      const unreadMap = data.unreadMessagesFrom || {};
-      // Quantas mensagens o 'currentUser' enviou que o 'otherUser' ainda não leu
-      const unreadCount = unreadMap[currentUser] || 0; 
+      // 2. Verificar Mensagens Não Lidas (do outro utilizador para mim)
+      // Esta lógica estava invertida, vamos corrigir
+      const myData = docSnap.data(); // Precisa dos MEUS dados
+      const unreadMap = myData.unreadMessagesFrom || {};
+      const unreadCount = unreadMap[otherUser] || 0;
       
       // 3. Atualizar a UI
       updateChatHead(isOnline, unreadCount);
@@ -196,11 +180,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 4. LÓGICA DE UI DO CHAT ---
   
-  // Mostra/esconde o ícone e a contagem
   function updateChatHead(isOnline, unreadCount) {
     if (isOnline) {
       chatHead.style.display = 'block';
-      chatHeadImg.src = profilePics[otherUser]; // Define a foto
+      chatHeadImg.src = profilePics[otherUser]; 
       
       if (unreadCount > 0) {
         chatBadge.textContent = unreadCount;
@@ -210,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       chatHead.style.display = 'none';
-      // Se o outro utilizador fica offline, fecha o chat
       if (chatWidget) chatWidget.style.display = 'none';
     }
   }
@@ -220,12 +202,11 @@ document.addEventListener('DOMContentLoaded', () => {
     chatWidget.style.display = 'flex';
     chatWithUser.textContent = `Chat com ${otherUser}`;
     
-    // Começa a escutar as mensagens
     listenForMessages();
     
     // Zera a contagem de mensagens NÃO LIDAS
-    // (Atenção: isto zera no *MEU* documento, não no do outro)
-    const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`; // ex: unreadMessagesFrom.matheus
+    // (no MEU documento)
+    const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
     userDocRef.update({
       [myUnreadMapKey]: 0
     });
@@ -234,30 +215,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // Fechar o Chat
   closeChatBtn.addEventListener('click', () => {
     chatWidget.style.display = 'none';
-    stopMessagesListener(); // Para de escutar as mensagens
+    stopMessagesListener(); 
   });
   
   // --- 5. LÓGICA DE MENSAGENS (Enviar/Receber) ---
   
-  // Escuta a coleção de mensagens
   function listenForMessages() {
-    stopMessagesListener(); // Para o listener antigo
+    stopMessagesListener(); 
     
-    const chatCollectionRef = collection(db, "chats", chatRoomId, "messages");
-    // Cria uma query para ordenar por 'timestamp'
-    const q = query(chatCollectionRef, orderBy("timestamp", "asc"));
+    // CORREÇÃO: Sintaxe v8 para collection e query
+    const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
+    const q = chatCollectionRef.orderBy("timestamp", "asc");
 
-    stopMessagesListener = onSnapshot(q, (querySnapshot) => {
-      chatMessages.innerHTML = ''; // Limpa as mensagens antigas
+    // CORREÇÃO: Sintaxe v8 para onSnapshot
+    stopMessagesListener = q.onSnapshot((querySnapshot) => {
+      chatMessages.innerHTML = ''; 
       querySnapshot.forEach((doc) => {
         const msg = doc.data();
         
-        // Cria o balão da mensagem
         const bubble = document.createElement('div');
         bubble.className = 'msg-bubble';
         bubble.textContent = msg.text;
         
-        // Aplica o estilo (enviada ou recebida)
         if (msg.senderId === currentUser) {
           bubble.classList.add('msg-sent');
         } else {
@@ -267,7 +246,6 @@ document.addEventListener('DOMContentLoaded', () => {
         chatMessages.appendChild(bubble);
       });
       
-      // Rola para a mensagem mais recente
       chatMessages.scrollTop = chatMessages.scrollHeight;
     });
   }
@@ -277,25 +255,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const text = chatTextInput.value;
     if (text.trim() === "") return;
     
-    chatTextInput.value = ''; // Limpa o input
+    chatTextInput.value = ''; 
 
     // 1. Adiciona a mensagem à coleção
-    const chatCollectionRef = collection(db, "chats", chatRoomId, "messages");
-    await addDoc(chatCollectionRef, {
+    const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
+    // CORREÇÃO: Sintaxe v8 para addDoc e serverTimestamp
+    await chatCollectionRef.add({
       senderId: currentUser,
       text: text,
-      timestamp: serverTimestamp()
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
     
     // 2. Incrementa a contagem de "não lidos" DO OUTRO UTILIZADOR
-    const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`; // ex: unreadMessagesFrom.ithalo
-    await updateDoc(otherUserDocRef, {
-      [otherUserUnreadKey]: increment(1)
+    const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
+    // CORREÇÃO: Sintaxe v8 para increment
+    await otherUserDocRef.update({
+      [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
     });
   }
 
   chatSendBtn.addEventListener('click', sendMessage);
-  // Permite enviar com 'Enter'
   chatTextInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
       sendMessage();
@@ -305,9 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- FUNÇÕES ANTIGAS (Salvamento de progresso, abas, etc.) ---
   
-  // (O seu código 'window.saveQuestionProgress', 'showTab', 'loadPerformanceData' 
-  // e os listeners das abas vêm aqui, sem alterações)
-
   window.saveQuestionProgress = async (questionData, isCorrect) => {
     if (!userDocRef) return; 
 
@@ -325,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let updateData = {
         stats: newStats,
-        lastActivity: new Date().toISOString()
+        lastActivity: new Date().toISOString() // Mantém isto para um fallback
       };
 
       if (!isCorrect && typeof getErrorTopic === 'function') {
@@ -426,5 +402,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (navSimulado) navSimulado.addEventListener('click', (e) => { e.preventDefault(); showTab('simulado'); });
   if (navDesempenho) navDesempenho.addEventListener('click', (e) => { e.preventDefault(); showTab('desempenho'); });
+
+  // -----------------------------------------------------------------
+  // ----- FUNÇÃO DE RESET (opcional, mas bom ter) -----
+  // -----------------------------------------------------------------
+  window.resetMyProgress = async () => {
+    if (!userDocRef || !currentUser) {
+      console.error("ERRO: Por favor, faça login primeiro.");
+      return;
+    }
+    const resetData = {
+      stats: { totalQuestions: 0, correct: 0, wrong: 0 },
+      errorTopics: {},
+      unreadMessagesFrom: {} // Zera as mensagens também
+    };
+    console.warn(`ATENÇÃO: Você está prestes a apagar TODO o progresso de '${currentUser}'.`);
+    console.log("Se tem a certeza, copie e cole o seguinte comando e prima Enter:");
+    console.log("%c window.confirmReset()", "background: #2d3436; color: #74b9ff; font-weight: bold; padding: 2px 5px; border-radius: 3px;");
+
+    window.confirmReset = async () => {
+      try {
+        await userDocRef.update(resetData);
+        console.log(`%cSUCESSO! O progresso de '${currentUser}' foi zerado.`, "color: #00b894; font-weight: bold; font-size: 1.2em;");
+        loadPerformanceData();
+        delete window.confirmReset;
+      } catch (e) {
+        console.error("Erro ao tentar zerar o progresso:", e);
+      }
+    };
+  };
 
 });
