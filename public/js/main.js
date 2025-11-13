@@ -196,8 +196,10 @@ function selectOption(questionId, optionKey) {
   } else {
     setLanguage('ja-JP'); // Função do translator.js
   }
-  // --- FIM DA MUDANÇA ---
-
+ // Chama a função do app.js para salvar na nuvem
+if (window.saveQuestionProgress) {
+    window.saveQuestionProgress(q, isCorrect);
+  }
   // Renderiza a mesma questão novamente, agora com a resposta
   renderQuestion();
 }
