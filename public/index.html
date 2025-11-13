@@ -10,7 +10,28 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="chatHead" class="chat-head" style="display: none;">
+    <!-- A foto do outro utilizador aparecerá aqui -->
+    <img src="https://placehold.co/60x60/74b9ff/FFF?text=?" alt="Chat">
+    <span id="chatBadge" class="chat-badge" style="display: none;">0</span>
+  </div>
 
+  <!-- ============================================= -->
+  <!-- ===== 2. ADICIONE A JANELA DO CHAT (Escondida) ===== -->
+  <!-- ============================================= -->
+  <div id="chatWidget" class="chat-widget" style="display: none;">
+    <div class="chat-header">
+      <h3 id="chatWithUser">Chat</h3>
+      <button id="closeChatBtn">&times;</button>
+    </div>
+    <div id="chatMessages" class="chat-messages">
+      <!-- As mensagens aparecerão aqui -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatTextInput" placeholder="Digite uma mensagem...">
+      <button id="chatSendBtn">Enviar</button>
+    </div>
+  </div>
   <!-- Overlay do Vídeo (se você o manteve) -->
   <div id="easterEggOverlay" style="display: none;">
     <video id="easterEggVideo" src="/video/parabens.mp4" loop></video>
@@ -140,6 +161,7 @@
 
 </body>
 </html>
+
 
 
 
