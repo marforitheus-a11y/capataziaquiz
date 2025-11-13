@@ -746,6 +746,22 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 .chat-input button:hover {
   background: var(--primary-light);
 }
+.chart-box-full {
+  /* Reutiliza o estilo do chart-box, mas ocupa a largura total */
+  background: #fbfdff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 1px solid #eef3fb;
+  width: 100%;
+  margin-top: 30px; /* Espaço entre os gráficos de cima */
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+
+.chart-box-full h3 {
+  margin-top: 0;
+  text-align: center;
+  color: #27455a;
+}
 
 
 
