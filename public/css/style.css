@@ -575,6 +575,29 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   color: #333;
   text-transform: capitalize;
 }
+.charts-container {
+  display: flex;
+  justify-content: center; /* Centraliza os gráficos */
+  flex-wrap: wrap;       /* Quebra a linha em telas pequenas */
+  gap: 30px;             /* Espaço entre os gráficos */
+  margin: 24px 0;
+}
+
+.chart-box {
+  background: #fbfdff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #eef3fb;
+  flex: 1; /* Permite que cresçam */
+  min-width: 300px; /* Largura mínima */
+}
+
+.chart-box h3 {
+  margin-top: 0;
+  text-align: center;
+  color: #27455a;
+}
+
 
 
 
