@@ -104,42 +104,51 @@ document.addEventListener('DOMContentLoaded', () => {
   if (userIthalo) userIthalo.addEventListener('click', () => selectUser('ithalo'));
   if (userMatheus) userMatheus.addEventListener('click', () => selectUser('matheus'));
 
-  window.saveQuestionProgress = async (questionData, isCorrect) => {
-    if (!userDocRef) return; 
+ // ACHE ESTA FUNÇÃO NO SEU js/app.js E SUBSTITUA-A
+window.saveQuestionProgress = async (questionData, isCorrect) => {
+  if (!userDocRef) return; 
 
-    try {
-      // CORREÇÃO v8: userDocRef.get()
-      const snap = await userDocRef.get();
-      const data = snap.data();
-      const currentStats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
-      const currentErrorTopics = data.errorTopics || {};
+  try {
+    const snap = await userDocRef.get();
+    const data = snap.data();
+    
+    // Pega os dados atuais
+    const currentStats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
+    const currentErrorTopics = data.errorTopics || {}; // Pega o MAPA de erros
 
-      const newStats = {
-        totalQuestions: currentStats.totalQuestions + 1,
-        correct: currentStats.correct + (isCorrect ? 1 : 0),
-        wrong: currentStats.wrong + (isCorrect ? 0 : 1)
-      };
+    // Atualiza os contadores
+    const newStats = {
+      totalQuestions: currentStats.totalQuestions + 1,
+      correct: currentStats.correct + (isCorrect ? 1 : 0),
+      wrong: currentStats.wrong + (isCorrect ? 0 : 1)
+    };
 
-      let updateData = {
-        stats: newStats,
-        lastActivity: new Date().toISOString()
-      };
+    // Prepara os dados para o Firebase
+    let updateData = {
+      stats: newStats,
+      lastActivity: new Date().toISOString()
+    };
 
-      if (!isCorrect && typeof getErrorTopic === 'function') {
-        const topic = getErrorTopic(questionData); 
-        const currentTopicCount = currentErrorTopics[topic] || 0;
-        updateData[`errorTopics.${topic}`] = currentTopicCount + 1;
-      }
+    // --- CORREÇÃO DA LÓGICA DE SALVAMENTO ---
+    if (!isCorrect && typeof getErrorTopic === 'function') {
+      const topic = getErrorTopic(questionData); // Pega o tópico (ex: "Art. 5")
+      
+      // Atualiza o contador DENTRO do objeto JavaScript
+      const currentTopicCount = currentErrorTopics[topic] || 0;
+      currentErrorTopics[topic] = currentTopicCount + 1;
 
-      // CORREÇÃO v8: userDocRef.update(...)
-      await userDocRef.update(updateData);
-      console.log("Progresso detalhado salvo na nuvem!");
-
-    } catch (e) {
-      console.error("Erro ao salvar progresso:", e);
+      // Salva o MAPA de erros inteiro de volta
+      updateData.errorTopics = currentErrorTopics;
     }
-  };
+    // --- FIM DA CORREÇÃO ---
 
+    await userDocRef.update(updateData);
+    console.log("Progresso detalhado salvo na nuvem!");
+
+  } catch (e) {
+    console.error("Erro ao salvar progresso:", e);
+  }
+};
   function showTab(tabName) {
     if (tabName === 'simulado') {
       if (quizContainer) quizContainer.style.display = 'block';
