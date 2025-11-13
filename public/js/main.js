@@ -239,11 +239,25 @@ document.getElementById('startBtn').addEventListener('click', async () => {
   if (isNaN(count) || count < 1) return alert('Digite uma quantidade válida.');
 
   try {
+    // --- MUDANÇA SIGNIFICATIVA AQUI ---
+    // 1. Carrega todos os ficheiros
     const allFilesData = await Promise.all(
-      selectedSubjects.map(sub => loadQuizFile(sub.file))
+      selectedSubjects.map(async (sub) => {
+        const questionsArray = await loadQuizFile(sub.file);
+        
+        // 2. "Carimba" cada questão com o seu ficheiro de origem
+        return questionsArray.map(question => ({
+          ...question, // Mantém os dados da questão (id, enunciado, etc.)
+          sourceFile: sub.file // <-- Adiciona o nome do ficheiro
+        }));
+      })
     );
+    // --- FIM DA MUDANÇA ---
     
+    // 3. Combina os arrays (agora com a info 'sourceFile' em cada questão)
     const combinedQuestions = allFilesData.flat(); 
+
+    // Inicia o quiz com o array combinado
     startQuiz(combinedQuestions, count);
     
   } catch (e) {
