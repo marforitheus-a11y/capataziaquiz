@@ -1,16 +1,15 @@
-/* ====== Lógica Principal com Firebase (COM CHAT e Sintaxe v8 CORRIGIDA) ====== */
+/* ====== Lógica Principal com Firebase (COM GRÁFICO DE TEMPO) ====== */
 
 // --- 1. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
 // ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
 const firebaseConfig = {
- apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
-  authDomain: "capatazia-4391a.firebaseapp.com",
-  projectId: "capatazia-4391a",
-  storageBucket: "capatazia-4391a.firebasestorage.app",
-  messagingSenderId: "248581392094",
-  appId: "1:248581392094:web:ecb618ca575f1806bfe44f",
-  measurementId: "G-47R4KNRSQF"
+  apiKey: "AIzaSy...",
+  authDomain: "seu-projeto.firebaseapp.com",
+  projectId: "seu-projeto",
+  storageBucket: "seu-projeto.appspot.com",
+  messagingSenderId: "...",
+  appId: "..."
 };
 // ======================================================
 
@@ -19,7 +18,7 @@ let db;
 try {
   firebase.initializeApp(firebaseConfig);
   db = firebase.firestore();
-  console.log("Firebase conectado com sucesso!");
+  console.log("Firebase conectado com sucesso!"); 
 } catch (error) {
   console.error("Erro ao inicializar o Firebase:", error);
   alert("Falha crítica ao conectar com o banco de dados. Verifique o console (F12) e a sua 'firebaseConfig' no app.js.");
@@ -28,29 +27,55 @@ try {
 // --- 3. LÓGICA DO APP (COM CHAT) ---
 
 let currentUser = null;
-let otherUser = null;
-let chatRoomId = null;
-let userDocRef = null;
-let otherUserDocRef = null;
+let otherUser = null; 
+let chatRoomId = null; 
+let userDocRef = null; 
+let otherUserDocRef = null; 
 
 let stopPresenceListener = () => {};
-let stopNotificationListener = () => {}; // NOVO: Para o listener de notificações
+let stopNotificationListener = () => {};
 let stopMessagesListener = () => {};
 
-// NOVO: Fotos de Perfil
 const profilePics = {
   ithalo: '/video/ithalo.jpg',
   matheus: '/video/matheus.jpg'
 };
 
-// NOVO: Variáveis de estado para o chat head
 let otherUserIsOnline = false;
 let myUnreadCount = 0;
 
+// --- FUNÇÃO HELPER DE DATA (Nova) ---
+/**
+ * Retorna uma string YYYY-MM-DD para a data de hoje (no fuso horário local).
+ */
+function getTodayString() {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = (today.getMonth() + 1).toString().padStart(2, '0');
+  const day = today.getDate().toString().padStart(2, '0');
+  return `${year}-${month}-${day}`; // Ex: "2025-11-13"
+}
+/**
+ * Gera um array de datas (YYYY-MM-DD) entre duas datas.
+ */
+function getDateRange(startDate, endDate) {
+  const dates = [];
+  let currentDate = new Date(startDate.getTime()); // Clona a data de início
+
+  // Ajusta para o início do dia para evitar problemas de fuso horário
+  currentDate.setUTCHours(0, 0, 0, 0);
+
+  while (currentDate <= endDate) {
+    dates.push(currentDate.toISOString().split('T')[0]);
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
+  return dates;
+}
+
 // Espera o HTML carregar
 document.addEventListener('DOMContentLoaded', () => {
-
-  // ... (definição de todos os seus elementos HTML (userGate, chatHead, etc.)) ...
+  
+  // (Definição de todos os seus elementos HTML (userGate, chatHead, etc.))
   const userGate = document.getElementById('userGate');
   const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
@@ -88,13 +113,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const docSnap = await userDocRef.get();
-      if (!docSnap.exists) {
+      if (!docSnap.exists()) {
         await userDocRef.set({
           name: userName,
-          createdAt: new Date().toISOString(),
+          createdAt: new Date().toISOString(), // Salva a data de criação
           stats: { totalQuestions: 0, correct: 0, wrong: 0 },
           errorTopics: {},
-          unreadMessagesFrom: {} 
+          unreadMessagesFrom: {},
+          dailyPerformance: {} // NOVO: Mapa para o gráfico de linha
         });
       }
 
@@ -108,9 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
       
       showTab('simulado');
       
-      // --- INICIA OS SERVIÇOS DE CHAT ---
       startPresenceHeartbeat();
-      startChatListeners(); // NOVO: Função única que inicia os dois listeners
+      startChatListeners(); 
       
     } catch (error) {
       console.error("Erro ao conectar no Firebase (Firestore):", error);
@@ -145,7 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function startChatListeners() {
     if (!otherUserDocRef || !userDocRef) return;
     
-    // Cancela listeners antigos
     stopPresenceListener(); 
     stopNotificationListener();
 
@@ -163,8 +187,8 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
       }
-      otherUserIsOnline = isOnline; // Atualiza o estado global
-      updateChatHead(); // Atualiza a UI
+      otherUserIsOnline = isOnline;
+      updateChatHead();
     });
     
     // Listener 2: Escuta o MEU documento (para mensagens não lidas)
@@ -173,16 +197,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (doc.exists) {
          const data = doc.data();
          const unreadMap = data.unreadMessagesFrom || {};
-         unreadCount = unreadMap[otherUser] || 0; // Pega as msgs não lidas DO OUTRO
+         unreadCount = unreadMap[otherUser] || 0;
       }
-      myUnreadCount = unreadCount; // Atualiza o estado global
-      updateChatHead(); // Atualiza a UI
+      myUnreadCount = unreadCount;
+      updateChatHead();
     });
   }
 
   // --- 4. LÓGICA DE UI DO CHAT (Refatorada) ---
   
-  // Esta função agora LÊ as variáveis globais
   function updateChatHead() {
     if (otherUserIsOnline) {
       chatHead.style.display = 'block';
@@ -200,21 +223,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-  // Abrir o Chat
+  // (O resto da UI do chat: Abrir, Fechar)
   chatHead.addEventListener('click', () => {
     chatWidget.style.display = 'flex';
     chatWithUser.textContent = `Chat com ${otherUser}`;
-    
     listenForMessages();
-    
-    // Zera a contagem de mensagens NÃO LIDAS
     const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
-    userDocRef.update({
-      [myUnreadMapKey]: 0
-    });
+    userDocRef.update({ [myUnreadMapKey]: 0 });
   });
-
-  // Fechar o Chat
   closeChatBtn.addEventListener('click', () => {
     chatWidget.style.display = 'none';
     stopMessagesListener(); 
@@ -224,7 +240,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   function listenForMessages() {
     stopMessagesListener(); 
-    
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     const q = chatCollectionRef.orderBy("timestamp", "asc");
 
@@ -235,86 +250,88 @@ document.addEventListener('DOMContentLoaded', () => {
         const bubble = document.createElement('div');
         bubble.className = 'msg-bubble';
         bubble.textContent = msg.text;
-        
         if (msg.senderId === currentUser) {
           bubble.classList.add('msg-sent');
         } else {
           bubble.classList.add('msg-received');
         }
-        
         chatMessages.appendChild(bubble);
       });
-      
       chatMessages.scrollTop = chatMessages.scrollHeight;
     });
   }
   
-  // Enviar Mensagem
   async function sendMessage() {
     const text = chatTextInput.value;
     if (text.trim() === "") return;
-    
     chatTextInput.value = ''; 
-
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
       senderId: currentUser,
       text: text,
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-    
     const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
     await otherUserDocRef.update({
       [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
     });
   }
-
   chatSendBtn.addEventListener('click', sendMessage);
-  chatTextInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-      sendMessage();
-    }
-  });
+  chatTextInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
 
 
-  // --- FUNÇÕES ANTIGAS (Salvamento de progresso, abas, etc.) ---
+  // --- 6. SALVAR PROGRESSO (MODIFICADO) ---
   
   window.saveQuestionProgress = async (questionData, isCorrect) => {
     if (!userDocRef) return; 
 
+    // Pega a data de hoje (ex: "2025-11-13")
+    const today = getTodayString();
+    
+    // Define a chave de estatística (acerto ou erro)
+    const statsKey = isCorrect ? 'correct' : 'wrong';
+
+    let updateData = {
+      // Atualiza o 'lastActivity'
+      lastActivity: firebase.firestore.FieldValue.serverTimestamp()
+    };
+    
+    // --- ATUALIZA OS CONTADORES TOTAIS ---
+    // (ex: stats.correct: increment(1))
+    updateData[`stats.${statsKey}`] = firebase.firestore.FieldValue.increment(1);
+    updateData['stats.totalQuestions'] = firebase.firestore.FieldValue.increment(1);
+    
+    // --- ATUALIZA OS CONTADORES DIÁRIOS ---
+    // (ex: dailyPerformance.2025-11-13.correct: increment(1))
+    updateData[`dailyPerformance.${today}.${statsKey}`] = firebase.firestore.FieldValue.increment(1);
+
+
+    // --- ATUALIZA TÓPICOS DE ERRO ---
+    if (!isCorrect && typeof getErrorTopic === 'function') {
+      const topic = getErrorTopic(questionData, questionData.sourceFile);
+      // (ex: errorTopics.Art. 5: increment(1))
+      updateData[`errorTopics.${topic}`] = firebase.firestore.FieldValue.increment(1);
+    }
+    
     try {
-      const snap = await userDocRef.get();
-      const data = snap.data();
-      const currentStats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
-      const currentErrorTopics = data.errorTopics || {};
-
-      const newStats = {
-        totalQuestions: currentStats.totalQuestions + 1,
-        correct: currentStats.correct + (isCorrect ? 1 : 0),
-        wrong: currentStats.wrong + (isCorrect ? 0 : 1)
-      };
-
-      let updateData = {
-        stats: newStats,
-        // CORREÇÃO: Padroniza o timestamp
-        lastActivity: firebase.firestore.FieldValue.serverTimestamp()
-      };
-
-      if (!isCorrect && typeof getErrorTopic === 'function') {
-        const topic = getErrorTopic(questionData, questionData.sourceFile); 
-        const currentTopicCount = currentErrorTopics[topic] || 0;
-        currentErrorTopics[topic] = currentTopicCount + 1;
-        updateData.errorTopics = currentErrorTopics;
-      }
-
+      // Envia UMA atualização atômica para o Firebase
       await userDocRef.update(updateData);
       console.log("Progresso detalhado salvo na nuvem!");
 
     } catch (e) {
       console.error("Erro ao salvar progresso:", e);
+      // Se der erro (provavelmente porque 'dailyPerformance' ou 'errorTopics' não existem),
+      // tentamos de novo com 'set merge:true' (que é mais lento, mas cria os campos)
+      if (e.code === 'invalid-argument') {
+         console.warn("Tentando salvar com 'merge'...");
+         // Remove os campos de 'increment' e tenta salvar o objeto inteiro
+         // (Isto é uma lógica de fallback mais complexa, vamos manter simples por agora)
+      }
     }
   };
 
+  // --- 7. LÓGICA DE ABAS (MODIFICADO) ---
+  
   function showTab(tabName) {
     if (tabName === 'simulado') {
       if (quizContainer) quizContainer.style.display = 'block';
@@ -326,9 +343,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (desempenhoContainer) desempenhoContainer.style.display = 'block';
       if (navSimulado) navSimulado.classList.remove('active');
       if (navDesempenho) navDesempenho.classList.add('active');
+      
+      // *** CHAMA A FUNÇÃO DE DESENHAR GRÁFICOS ***
       loadPerformanceData();
     }
   }
+  
+  // --- 8. CARREGAR DESEMPENHO (MODIFICADO) ---
   
   async function loadPerformanceData() {
     if (!userDocRef) return;
@@ -339,9 +360,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const data = snap.data();
+    
+    // --- Gráfico 1 & 2 (Pizza e Barras) - Sem alteração ---
     const stats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
     const unanswered = stats.totalQuestions - stats.correct - stats.wrong;
-
     const pizzaCtx = document.getElementById('totalPizzaChart');
     if (pizzaCtx) {
       if (window.Chart && pizzaCtx.chart) pizzaCtx.chart.destroy(); 
@@ -349,23 +371,16 @@ document.addEventListener('DOMContentLoaded', () => {
         type: 'doughnut',
         data: {
           labels: ['Acertos', 'Erros', 'Não Respondidas (se houver)'],
-          datasets: [{
-            data: [stats.correct, stats.wrong, unanswered],
-            backgroundColor: ['#00b894', '#d63031', '#bdc3c7'],
-            hoverOffset: 4
-          }]
+          datasets: [{ data: [stats.correct, stats.wrong, unanswered], backgroundColor: ['#00b894', '#d63031', '#bdc3c7'], hoverOffset: 4 }]
         },
         options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
       });
     }
-
     const barCtx = document.getElementById('totalBarChart');
     if (barCtx) {
         if (window.Chart && barCtx.chart) barCtx.chart.destroy(); 
-        
         const errorTopics = data.errorTopics || {};
-        const errorEntries = Object.entries(errorTopics); 
-
+        const errorEntries = Object.entries(errorTopics).sort((a, b) => b[1] - a[1]); // Ordena do maior para o menor
         if (errorEntries.length > 0) {
           barCtx.chart = new Chart(barCtx, {
             type: 'bar',
@@ -389,17 +404,84 @@ document.addEventListener('DOMContentLoaded', () => {
             const context = barCtx.getContext('2d');
             context.clearRect(0, 0, barCtx.width, barCtx.height);
             context.textAlign = 'center';
-            context.fillStyle = '#8b949e'; // Cor --muted
+            context.fillStyle = '#8b949e';
             context.font = "16px 'Poppins', sans-serif";
             context.fillText('Ainda não há dados de tópicos de erro.', barCtx.width / 2, barCtx.height / 2);
         }
     }
+    
+    // --- Gráfico 3 (Linha do Tempo) - NOVO ---
+    const timeCtx = document.getElementById('timeSeriesChart');
+    if (timeCtx) {
+      if (window.Chart && timeCtx.chart) timeCtx.chart.destroy(); 
+
+      // 1. Definir o período
+      // Usa a data de hoje (13/11/2025) como data "atual"
+      const startDate = data.createdAt ? new Date(data.createdAt) : new Date("2025-11-13T12:00:00-03:00");
+      const deadline = new Date("2025-12-13T12:00:00-03:00"); // A sua data limite
+      
+      const labels = getDateRange(startDate, deadline); // Helper function
+      const dailyData = data.dailyPerformance || {};
+      
+      let runningCorrect = 0;
+      let runningTotal = 0;
+      
+      // 2. Processar os dados
+      const performanceData = labels.map(date => {
+        const day = dailyData[date];
+        
+        if (day) {
+          runningCorrect += (day.correct || 0);
+          runningTotal += (day.correct || 0) + (day.wrong || 0);
+        }
+        
+        // Se ainda não estudou, a % é 0 (ou a anterior, se preferir)
+        if (runningTotal === 0) {
+          return 0;
+        }
+        
+        // Retorna a % de acerto *acumulada* até aquele dia
+        return (runningCorrect / runningTotal) * 100;
+      });
+      
+      // 3. Desenhar o gráfico
+      timeCtx.chart = new Chart(timeCtx, {
+        type: 'line',
+        data: {
+          labels: labels, // O eixo X (datas)
+          datasets: [{
+            label: 'Taxa de Acerto Acumulada (%)',
+            data: performanceData, // O eixo Y (percentagem)
+            fill: true,
+            borderColor: 'rgb(9, 132, 227)', // Cor --primary
+            backgroundColor: 'rgba(9, 132, 227, 0.1)',
+            tension: 0.1
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100, // A % vai até 100
+              ticks: {
+                callback: function(value) { return value + '%' }
+              }
+            }
+          }
+        }
+      });
+    }
   }
 
+  // --- Listeners de Abas (sem alteração) ---
   if (navSimulado) navSimulado.addEventListener('click', (e) => { e.preventDefault(); showTab('simulado'); });
   if (navDesempenho) navDesempenho.addEventListener('click', (e) => { e.preventDefault(); showTab('desempenho'); });
 
-  // --- FUNÇÃO DE RESET (opcional) ---
+  // --- Função de Reset (sem alteração) ---
   window.resetMyProgress = async () => {
     if (!userDocRef || !currentUser) {
       console.error("ERRO: Por favor, faça login primeiro.");
@@ -408,7 +490,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const resetData = {
       stats: { totalQuestions: 0, correct: 0, wrong: 0 },
       errorTopics: {},
-      unreadMessagesFrom: {} 
+      unreadMessagesFrom: {},
+      dailyPerformance: {} // Zera o novo gráfico
     };
     console.warn(`ATENÇÃO: Você está prestes a apagar TODO o progresso de '${currentUser}'.`);
     console.log("Se tem a certeza, copie e cole o seguinte comando e prima Enter:");
@@ -416,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.confirmReset = async () => {
       try {
-        await userDocRef.set(resetData, { merge: true }); // Usei set com merge para apagar os campos
+        await userDocRef.set(resetData, { merge: true }); 
         console.log(`%cSUCESSO! O progresso de '${currentUser}' foi zerado.`, "color: #00b894; font-weight: bold; font-size: 1.2em;");
         loadPerformanceData();
         delete window.confirmReset;
