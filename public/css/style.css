@@ -388,6 +388,102 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   cursor: not-allowed;
   transform: none;
 }
+#userGate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.user-select-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 32px 36px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.user-options {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar a linha em telas pequenas */
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.user-card {
+  position: relative; 
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--primary);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--primary-light);
+  transition: all 0.2s ease;
+  width: 150px;
+  
+  /* Adicionado para centralizar o texto abaixo da foto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-card:hover {
+  background: rgba(9,132,227,0.04);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(9,132,227,0.1);
+}
+
+/* O Overlay da Foto */
+.user-card .user-photo-hover {
+  position: relative; /* Mudado de absolute para relative */
+  
+  /* --- CORREÇÃO DE ESTILO --- */
+  /* Remove o posicionamento antigo e o hover */
+  /* A foto agora fica fixa dentro do card */
+  bottom: auto;
+  left: auto;
+  transform: none;
+  margin-bottom: 0;
+  opacity: 1; /* Sempre visível */
+  visibility: visible;
+  transition: all 0.2s ease;
+  /* --- FIM DA CORREÇÃO --- */
+  
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Garante que a imagem preencha o círculo */
+.user-card .user-photo-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Remove o efeito de 'aparecer' no hover,
+   mas mantém o efeito de 'levantar' no card */
+.user-card:hover .user-photo-hover {
+  opacity: 1;
+  transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
 
 
 
