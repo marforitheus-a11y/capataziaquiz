@@ -148,4 +148,3 @@ document.getElementById('startBtn').addEventListener('click', async () => {
         // --- FIM DA MUDANÇA ---
         
         const currentTopicCount = currentErrorTopics[topic] || 0;
-// ...
