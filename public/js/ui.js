@@ -118,13 +118,13 @@ function showResults() {
   // --- MUDANÇA AQUI: Adiciona data-translate-key ---
   let resultHTML = `
     <h2 data-translate-key="resultsTitle">Resultado Final</h2>
-    <div class="charts-container" style="display: flex; gap: 20px; margin: 24px 0; flex-wrap: wrap; justify-content: center;">
-      <div class="chart-box" style="flex: 1; min-width: 250px; max-width: 350px; background: #fbfdff; padding: 15px; border-radius: 10px; border: 1px solid #eef3fb;">
-        <h3 style="margin-top:0; text-align:center; color: #27455a;" data-translate-key="chartsGeneral">Desempenho Geral</h3>
+    <div class="charts-container">
+      <div class="chart-box" style="max-width: 350px;">
+        <h3 data-translate-key="chartsGeneral">Desempenho Geral</h3>
         <canvas id="pizzaChart"></canvas>
       </div>
-      <div class="chart-box" style="flex: 1.5; min-width: 300px; max-width: 500px; background: #fbfdff; padding: 15px; border-radius: 10px; border: 1px solid #eef3fb;">
-        <h3 style="margin-top:0; text-align:center; color: #27455a;" data-translate-key="chartsErrors">Tópicos com Erros</h3>
+      <div class="chart-box" style="max-width: 500px;">
+        <h3 data-translate-key="chartsErrors">Tópicos com Mais Erros</h3>
         <canvas id="barChart"></canvas>
       </div>
     </div>
