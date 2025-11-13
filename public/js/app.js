@@ -1,10 +1,8 @@
-/* ====== Lógica Principal com Firebase (Corrigido) ====== */
+/* ====== Lógica Principal com Firebase (Corrigido para v8 compat) ====== */
 
-
-// --- 1. PEGAR MÓDULOS DO FIREBASE (Forma Clássica) ---
-// As ferramentas agora vêm do 'window.firebase' global
-const { initializeApp } = firebase;
-const { getFirestore, doc, getDoc, setDoc, updateDoc } = firebase.firestore;
+// --- 1. SEM DESTRUCTURING ---
+// O objeto 'firebase' global (do index.html) é tudo o que precisamos.
+// As funções (initializeApp, getFirestore) estão em 'firebase' e 'firebase.firestore'.
 
 // --- 2. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
@@ -19,11 +17,14 @@ const firebaseConfig = {
 };
 // ======================================================
 
-// --- 3. INICIALIZAÇÃO DO FIREBASE ---
+
+// --- 3. INICIALIZAÇÃO DO FIREBASE (Sintaxe v8/compat) ---
 let db;
 try {
-  initializeApp(firebaseConfig); // Apenas inicializa
-db = getFirestore();         // Pega a instância
+  // A 'initializeApp' está no objeto 'firebase'
+  firebase.initializeApp(firebaseConfig);
+  // O 'getFirestore' é chamado como 'firebase.firestore()'
+  db = firebase.firestore();
   console.log("Firebase conectado com sucesso!"); 
 } catch (error) {
   console.error("Erro ao inicializar o Firebase:", error);
@@ -31,7 +32,6 @@ db = getFirestore();         // Pega a instância
 }
 
 // --- 4. LÓGICA DO APP ---
-// (O resto do seu código app.js permanece o mesmo)
 
 let currentUser = null;
 let userDocRef = null; 
@@ -60,17 +60,20 @@ document.addEventListener('DOMContentLoaded', () => {
         currentUserDisplay.textContent = userName;
     }
     
-    userDocRef = doc(db, "users", userName); 
+    // CORREÇÃO v8: db.collection(...).doc(...)
+    userDocRef = db.collection("users").doc(userName); 
     if (userGate) userGate.style.opacity = 0.5;
 
     try {
-      const docSnap = await getDoc(userDocRef);
+      // CORREÇÃO v8: userDocRef.get()
+      const docSnap = await userDocRef.get();
 
-      if (docSnap.exists()) {
+      if (docSnap.exists) {
         console.log("Dados recuperados do Firebase:", docSnap.data());
       } else {
         console.log("Novo usuário! Criando registro no banco...");
-        await setDoc(userDocRef, {
+        // CORREÇÃO v8: userDocRef.set(...)
+        await userDocRef.set({
           name: userName,
           createdAt: new Date().toISOString(),
           stats: { totalQuestions: 0, correct: 0, wrong: 0 },
@@ -104,7 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!userDocRef) return; 
 
     try {
-      const snap = await getDoc(userDocRef);
+      // CORREÇÃO v8: userDocRef.get()
+      const snap = await userDocRef.get();
       const data = snap.data();
       const currentStats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
       const currentErrorTopics = data.errorTopics || {};
@@ -126,7 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updateData[`errorTopics.${topic}`] = currentTopicCount + 1;
       }
 
-      await updateDoc(userDocRef, updateData);
+      // CORREÇÃO v8: userDocRef.update(...)
+      await userDocRef.update(updateData);
       console.log("Progresso detalhado salvo na nuvem!");
 
     } catch (e) {
@@ -151,8 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   async function loadPerformanceData() {
     if (!userDocRef) return;
-    const snap = await getDoc(userDocRef);
-    if (!snap.exists()) {
+    // CORREÇÃO v8: userDocRef.get()
+    const snap = await userDocRef.get();
+    if (!snap.exists) {
       console.error("Documento do usuário não encontrado.");
       return;
     }
