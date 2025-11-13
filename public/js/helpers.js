@@ -137,28 +137,10 @@ document.getElementById('startBtn').addEventListener('click', async () => {
     console.error(e);
   }
 });
-```
 
----
-
-### 3. Ficheiro `js/app.js` (Modificado)
-
-Finalmente, precisamos de dizer ao `saveQuestionProgress` para *usar* a nova informação que `getErrorTopic` precisa.
-
-**Ação:** No seu `js/app.js`, localize a função `window.saveQuestionProgress` e modifique a linha onde `getErrorTopic` é chamada.
-
-**Procure por isto:**
-```javascript
-// ...dentro de window.saveQuestionProgress...
       if (!isCorrect && typeof getErrorTopic === 'function') {
         const topic = getErrorTopic(questionData); // <--- LINHA ANTIGA
         const currentTopicCount = currentErrorTopics[topic] || 0;
-// ...
-```
-
-**Substitua por isto:**
-```javascript
-// ...dentro de window.saveQuestionProgress...
       if (!isCorrect && typeof getErrorTopic === 'function') {
         // --- MUDANÇA AQUI ---
         // Passa a questão E o seu ficheiro de origem
