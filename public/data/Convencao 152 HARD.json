@@ -1,0 +1,77 @@
+[
+  {
+    "id": "c152_cenario_01",
+    "disciplina": "OIT C-152",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Durante uma operação de descarga de uma turbina pesada, o gerente do terminal designa o Capataz Carlos para supervisionar a equipe, garantir que os procedimentos sejam seguidos e parar a operação se notar qualquer risco. Carlos tem 20 anos de experiência e o poder de interromper o trabalho. De acordo com o Art. 3º da C-152, Carlos atua primariamente como uma:",
+    "alternativas": {
+      "A": "Pessoa competente",
+      "B": "Pessoa autorizada",
+      "C": "Pessoa responsável",
+      "D": "Pessoa de autoridade"
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 3º(c) define 'pessoa responsável' como aquela designada pelo empregador (ou capitão, etc.) para assegurar funções específicas, que tenha 'conhecimento e experiência suficientes' E, crucialmente, 'a autoridade exigida' para desempenhar a função (como parar a operação). 'Pessoa competente' (Art. 3º(b)) tem o conhecimento, mas a definição não exige a 'autoridade'. 'Pessoa autorizada' (Art. 3º(d)) é quem tem permissão para uma tarefa específica."
+  },
+  {
+    "id": "c152_cenario_02",
+    "disciplina": "OIT C-152",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "A Empresa 'Estiva A' está descarregando contêineres no porão 1 de um navio. Simultaneamente, a Empresa 'Manutenção B' está realizando reparos de solda no mesmo porão. Um estivador da Empresa A tropeça em um cabo de solda deixado pela Empresa B e se acidenta. De acordo com o Art. 5º da C-152, qual princípio de segurança foi violado?",
+    "alternativas": {
+      "A": "A responsabilidade é exclusiva do capitão do navio, que permitiu as duas operações.",
+      "B": "A Empresa A é a única responsável, pois deveria ter supervisionado melhor seus trabalhadores.",
+      "C": "A obrigação de colaboração entre os múltiplos empregadores no mesmo local de trabalho.",
+      "D": "A Empresa B é a única responsável, pois seu equipamento causou o acidente."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 5º, parágrafo 2, é claro: 'Cada vez que vários empregadores se entregarem simultaneamente a atividades num mesmo local de trabalho, deverão colaborar visando a aplicação das medidas prescritas'. Embora cada empregador mantenha sua responsabilidade (Art. 5º(2)), a falta de colaboração para gerenciar os riscos sobrepostos (cabos de solda em área de passagem) é a violação central."
+  },
+  {
+    "id": "c152_cenario_03",
+    "disciplina": "OIT C-152",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um porto em uma pequena vila de pescadores, com tráfego muito irregular e apenas barcos de baixo calado, solicita à autoridade competente uma isenção de certas exigências da Parte III da Convenção, alegando que seus métodos atuais são seguros. Segundo o Art. 2º da C-152, a autoridade competente pode conceder essa isenção?",
+    "alternativas": {
+      "A": "Não, a Convenção 152 deve ser aplicada integralmente em todos os portos, sem exceções.",
+      "B": "Sim, desde que a autoridade se certifique que as condições são seguras e consulte as organizações de empregadores e trabalhadores.",
+      "C": "Sim, apenas se o porto provar que a modificação garante 'vantagens equivalentes', conforme o parágrafo 2 do Art. 2º.",
+      "D": "Não, pois as isenções do Art. 2º se aplicam apenas a modificações e não a isenções totais ou parciais."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Art. 2º, parágrafo 1, trata especificamente de isenções (totais ou parciais) para locais com 'tráfico (...) irregular e limitado a navios de baixo calado' ou 'barcos pesqueiros'. A isenção pode ser concedida, *contanto que*: (a) os trabalhos sejam seguros; e (b) a autoridade competente consulte as organizações de empregadores e trabalhadores interessadas."
+  },
+  {
+    "id": "c152_cenario_04",
+    "disciplina": "OIT C-152",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um trabalhador portuário sofre um acidente enquanto descarrega suprimentos de um navio da guarda costeira que, embora usado para patrulha, é oficialmente classificado como um 'vaso de guerra' pela legislação nacional. O sindicato dos trabalhadores tenta invocar a Convenção 152. A administração do porto argumenta que a C-152 não se aplica a este navio. Quem está correto?",
+    "alternativas": {
+      "A": "O sindicato, pois o Art. 1º define 'trabalhos portuários' como o descarregamento de 'todo navio'.",
+      "B": "A administração do porto, pois o Art. 3º(g) exclui explicitamente 'vasos de guerra' da definição de 'navio' para fins da Convenção.",
+      "C": "O sindicato, pois o Art. 3º(a) define 'trabalhador' como 'toda pessoa ocupada nos trabalhos portuários', independentemente do navio.",
+      "D": "A administração do porto, pois o Art. 2º permite isenções para navios de baixo calado, como os da guarda costeira."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Embora a atividade seja um 'trabalho portuário' (Art. 1º), o escopo da convenção é limitado pela definição de 'navio'. O Art. 3º(g) define 'navio' como 'navios, barcos, barcaças... com exclusão dos vasos de guerra.' Se a embarcação é classificada como vaso de guerra, a C-152 não se aplica a ela."
+  },
+  {
+    "id": "c152_cenario_05",
+    "disciplina": "OIT C-152",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um terminal portuário não fornece capacetes com jugular para os trabalhadores que operam nos porões, onde há risco de queda de pequenos objetos. Além disso, as escadas de acesso ao navio estão frequentemente mal conservadas e escorregadias. Esta situação viola quais medidas gerais que a legislação nacional deveria assegurar, conforme o Art. 4º(1)?",
+    "alternativas": {
+      "A": "Apenas as medidas de primeiros socorros e salvamento (Art. 4º(1)(e)).",
+      "B": "Apenas as medidas de informação e formação dos trabalhadores (Art. 4º(1)(c)).",
+      "C": "As medidas de fornecimento de EPI e a manutenção de meios de acesso seguros (Art. 4º(1)(d) e 4º(1)(b)).",
+      "D": "Apenas as medidas para fazer frente a situações de emergência (Art. 4º(1)(f))."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O cenário descreve duas falhas claras. A falta de capacetes adequados (EPI) viola o Art. 4º(1)(d), que exige 'o fornecimento, aos trabalhadores, de todo equipamento de proteção individual'. As escadas mal conservadas violam o Art. 4º(1)(b), que exige 'a organização e a manutenção... de meios de acesso que garantam a segurança dos trabalhadores'."
+  }
+]
