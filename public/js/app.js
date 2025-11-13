@@ -1,33 +1,49 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getFirestore, doc, getDoc, setDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+/* ====== Lógica Principal com Firebase ====== */
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// --- 1. IMPORTAÇÕES DO FIREBASE ---
+// (Estas linhas substituem o <script> inline que estava no index.html)
+import { initializeApp } from "[https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js](https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js)";
+import { getFirestore, doc, getDoc, setDoc, updateDoc } from "[https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js](https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js)";
+
+// --- 2. CONFIGURAÇÃO DO FIREBASE ---
+// ======================================================
+// ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
+// (Esta é a const firebaseConfig = { ... } que você copiou do site do Firebase)
+// ======================================================
 const firebaseConfig = {
-  apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
-  authDomain: "capatazia-4391a.firebaseapp.com",
-  projectId: "capatazia-4391a",
-  storageBucket: "capatazia-4391a.firebasestorage.app",
-  messagingSenderId: "248581392094",
-  appId: "1:248581392094:web:ecb618ca575f1806bfe44f",
-  measurementId: "G-47R4KNRSQF"
+  apiKey: "AIzaSy...",
+  authDomain: "seu-projeto.firebaseapp.com",
+  projectId: "seu-projeto",
+  storageBucket: "seu-projeto.appspot.com",
+  messagingSenderId: "...",
+  appId: "..."
 };
+// ======================================================
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
-// Pega as funções do módulo window (definido no index.html)
-const { doc, getDoc, setDoc, updateDoc } = window.firebaseModules;
+// --- 3. INICIALIZAÇÃO DO FIREBASE ---
+let db;
+try {
+  const app = initializeApp(firebaseConfig);
+  db = getFirestore(app);
+  // ESTA É A MENSAGEM QUE DEVE APARECER
+  console.log("Firebase conectado com sucesso!"); 
+} catch (error) {
+  console.error("Erro ao inicializar o Firebase:", error);
+  if (error.code === 'duplicate-app') {
+    // Isto pode acontecer em alguns modos de desenvolvimento, mas não deve mais
+    console.warn("Firebase já inicializado.");
+  } else {
+    alert("Falha crítica ao conectar com o banco de dados. Verifique o console (F12) e a sua 'firebaseConfig' no app.js.");
+  }
+}
 
-// Estado
+// --- 4. LÓGICA DO APP ---
+
 let currentUser = null;
-let userDocRef = null; // Referência ao documento do usuário no banco
+let userDocRef = null; 
 
+// Espera o HTML carregar para encontrar os elementos
 document.addEventListener('DOMContentLoaded', () => {
   
   // Elementos
@@ -35,106 +51,99 @@ document.addEventListener('DOMContentLoaded', () => {
   const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
   const mainContent = document.getElementById('mainContent');
-  const currentUserDisplay = document.querySelector('#currentUserDisplay span'); // Seletor corrigido
+  const currentUserDisplay = document.querySelector('#currentUserDisplay span');
   
   const navSimulado = document.getElementById('navSimulado');
   const navDesempenho = document.getElementById('navDesempenho');
   const quizContainer = document.getElementById('quizContainer');
   const desempenhoContainer = document.getElementById('desempenhoContainer');
 
-  // --- 1. SELEÇÃO DE USUÁRIO E CARREGAMENTO DE DADOS ---
-
+  // --- Seleção de Usuário ---
   async function selectUser(userName) {
-    currentUser = userName;
-    currentUserDisplay.textContent = userName; // Mostra o nome na nav
+    if (!db) {
+      console.error("Banco de dados não inicializado. Verifique a firebaseConfig.");
+      return;
+    }
     
-    // Define onde os dados desse usuário ficam no banco
-    // Coleção: 'users', Documento: 'ithalo' ou 'matheus'
-    userDocRef = doc(window.db, "users", userName);
-
-    // Mostra loading visual (opcional)
-    userGate.style.opacity = 0.5;
+    currentUser = userName;
+    if (currentUserDisplay) {
+        currentUserDisplay.textContent = userName;
+    }
+    
+    userDocRef = doc(db, "users", userName); 
+    if (userGate) userGate.style.opacity = 0.5;
 
     try {
-      // Tenta buscar os dados do usuário no Firebase
       const docSnap = await getDoc(userDocRef);
 
       if (docSnap.exists()) {
         console.log("Dados recuperados do Firebase:", docSnap.data());
-        // Carrega o progresso recuperado
-        const data = docSnap.data();
-        
-        // Se você tiver variáveis globais de estatística em main.js, atualize-as aqui
-        // Exemplo:
-        // globalStats = data.stats || {};
-        
       } else {
         console.log("Novo usuário! Criando registro no banco...");
-        // Cria o documento inicial se não existir
         await setDoc(userDocRef, {
           name: userName,
           createdAt: new Date().toISOString(),
-          stats: {
-            totalQuestions: 0,
-            correct: 0,
-            wrong: 0
-          },
-          history: [] // Lista de questões respondidas
+          stats: { totalQuestions: 0, correct: 0, wrong: 0 },
+          errorTopics: {}
         });
       }
 
-      // Libera o acesso
-      userGate.style.display = 'none';
-      mainContent.style.display = 'block';
+      if (userGate) userGate.style.display = 'none';
+      if (mainContent) mainContent.style.display = 'block';
       
-      // Inicia o carregamento do simulado
-      if (typeof loadSubjects === 'function') loadSubjects();
-      if (typeof loadPDFs === 'function') loadPDFs();
+      // Chama as funções do main.js (que já devem ter sido carregadas)
+      if (typeof loadSubjects === 'function') {
+        loadSubjects();
+        loadPDFs();
+      } else {
+        console.error("Função loadSubjects() não encontrada. Verifique a ordem dos scripts no index.html.");
+      }
       
       showTab('simulado');
 
     } catch (error) {
-      console.error("Erro ao conectar no Firebase:", error);
-      alert("Erro de conexão. Verifique sua internet ou o console.");
-      userGate.style.opacity = 1;
+      console.error("Erro ao conectar no Firebase (Firestore):", error);
+      alert("Erro de conexão. Verifique sua internet ou as regras do Firestore.");
+      if (userGate) userGate.style.opacity = 1;
     }
   }
 
- // Adiciona listeners aos botões de login (com verificação)
+  // Adiciona listeners aos botões de login (com verificação)
   if (userIthalo) userIthalo.addEventListener('click', () => selectUser('ithalo'));
   if (userMatheus) userMatheus.addEventListener('click', () => selectUser('matheus'));
 
-
-  // --- 2. SALVAR PROGRESSO (Função Global) ---
-  
-  // Vamos expor essa função para ser chamada pelo main.js/ui.js
+  // --- Salvar Progresso (Função Global) ---
+  // (Esta função é chamada pelo main.js)
   window.saveQuestionProgress = async (questionData, isCorrect) => {
-    if (!userDocRef) return;
+    if (!userDocRef) return; // Não faz nada se o utilizador não estiver logado
 
     try {
-      // Atualiza apenas os campos necessários no banco
-      // Nota: updateDoc é inteligente, não sobrescreve tudo
-      
-      // 1. Atualiza contadores
-      // Precisamos ler primeiro para incrementar (ou usar increment do firebase, mas vamos simplificar)
       const snap = await getDoc(userDocRef);
-      const currentStats = snap.data().stats || { correct: 0, wrong: 0, totalQuestions: 0 };
-      
+      const data = snap.data();
+      const currentStats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
+      const currentErrorTopics = data.errorTopics || {};
+
       const newStats = {
         totalQuestions: currentStats.totalQuestions + 1,
         correct: currentStats.correct + (isCorrect ? 1 : 0),
         wrong: currentStats.wrong + (isCorrect ? 0 : 1)
       };
 
-      // 2. Salva no Firebase
-      await updateDoc(userDocRef, {
+      let updateData = {
         stats: newStats,
-        // Adiciona um log simples no histórico (sobrescreve o array history com o novo item)
-        // Para arrays grandes, usa-se arrayUnion, mas para começar está bom
         lastActivity: new Date().toISOString()
-      });
-      
-      console.log("Progresso salvo na nuvem!");
+      };
+
+      // (Certifique-se que 'helpers.js' foi carregado e 'getErrorTopic' existe)
+      if (!isCorrect && typeof getErrorTopic === 'function') {
+        const topic = getErrorTopic(questionData); 
+        const currentTopicCount = currentErrorTopics[topic] || 0;
+        // Usamos notação de ponto para o Firebase entender o objeto aninhado
+        updateData[`errorTopics.${topic}`] = currentTopicCount + 1;
+      }
+
+      await updateDoc(userDocRef, updateData);
+      console.log("Progresso detalhado salvo na nuvem!");
 
     } catch (e) {
       console.error("Erro ao salvar progresso:", e);
@@ -142,21 +151,18 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
 
-  // --- 3. LÓGICA DE ABAS ---
-
+  // --- Lógica de Abas ---
   function showTab(tabName) {
     if (tabName === 'simulado') {
-      quizContainer.style.display = 'block';
-      desempenhoContainer.style.display = 'none';
-      navSimulado.classList.add('active');
-      navDesempenho.classList.remove('active');
+      if (quizContainer) quizContainer.style.display = 'block';
+      if (desempenhoContainer) desempenhoContainer.style.display = 'none';
+      if (navSimulado) navSimulado.classList.add('active');
+      if (navDesempenho) navDesempenho.classList.remove('active');
     } else if (tabName === 'desempenho') {
-      quizContainer.style.display = 'none';
-      desempenhoContainer.style.display = 'block';
-      navSimulado.classList.remove('active');
-      navDesempenho.classList.add('active');
-      
-      // Carregar gráficos de desempenho aqui (Ler do Firebase novamente para garantir dados frescos)
+      if (quizContainer) quizContainer.style.display = 'none';
+      if (desempenhoContainer) desempenhoContainer.style.display = 'block';
+      if (navSimulado) navSimulado.classList.remove('active');
+      if (navDesempenho) navDesempenho.classList.add('active');
       loadPerformanceData();
     }
   }
@@ -164,15 +170,75 @@ document.addEventListener('DOMContentLoaded', () => {
   async function loadPerformanceData() {
     if (!userDocRef) return;
     const snap = await getDoc(userDocRef);
-    if (snap.exists()) {
-      const data = snap.data();
-      // Aqui você chamaria uma função para desenhar os gráficos na tela de desempenho
-      // drawTotalPerformanceChart(data.stats); (Exemplo)
-      console.log("Dados para gráficos:", data.stats);
+    if (!snap.exists()) {
+      console.error("Documento do usuário não encontrado.");
+      return;
+    }
+
+    const data = snap.data();
+    const stats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
+    const unanswered = stats.totalQuestions - stats.correct - stats.wrong;
+
+    // --- Gráfico de Pizza Total ---
+    const pizzaCtx = document.getElementById('totalPizzaChart');
+    if (pizzaCtx) {
+      // Destrói o gráfico anterior para evitar sobreposição
+      if (window.Chart && pizzaCtx.chart) pizzaCtx.chart.destroy(); 
+      // Salva a nova instância do gráfico no elemento para destruí-la depois
+      pizzaCtx.chart = new Chart(pizzaCtx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Acertos', 'Erros', 'Não Respondidas (se houver)'],
+          datasets: [{
+            data: [stats.correct, stats.wrong, unanswered],
+            backgroundColor: ['#00b894', '#d63031', '#bdc3c7'],
+            hoverOffset: 4
+          }]
+        },
+        options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+      });
+    }
+
+    // --- Gráfico de Barras Total ---
+    const barCtx = document.getElementById('totalBarChart');
+    if (barCtx) {
+        if (window.Chart && barCtx.chart) barCtx.chart.destroy(); 
+        
+        const errorTopics = data.errorTopics || {};
+        const errorEntries = Object.entries(errorTopics); 
+
+        if (errorEntries.length > 0) {
+          barCtx.chart = new Chart(barCtx, {
+            type: 'bar',
+            data: {
+              labels: errorEntries.map(entry => entry[0]),
+              datasets: [{
+                label: 'Quantidade de Erros',
+                data: errorEntries.map(entry => entry[1]),
+                backgroundColor: 'rgba(214, 48, 49, 0.6)',
+                borderColor: '#d63031',
+                borderWidth: 1
+              }]
+            },
+            options: {
+              responsive: true,
+              plugins: { legend: { display: false } },
+              scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+            }
+          });
+        } else {
+            // Limpa o canvas e mostra uma mensagem se não houver dados
+            const context = barCtx.getContext('2d');
+            context.clearRect(0, 0, barCtx.width, barCtx.height);
+            context.textAlign = 'center';
+            context.fillStyle = '#8b949e'; // Cor --muted
+            context.font = "16px 'Poppins', sans-serif";
+            context.fillText('Ainda não há dados de tópicos de erro.', barCtx.width / 2, barCtx.height / 2);
+        }
     }
   }
 
-// Adiciona listeners às abas (com verificação)
+  // Adiciona listeners às abas (com verificação)
   if (navSimulado) navSimulado.addEventListener('click', (e) => { e.preventDefault(); showTab('simulado'); });
   if (navDesempenho) navDesempenho.addEventListener('click', (e) => { e.preventDefault(); showTab('desempenho'); });
 
