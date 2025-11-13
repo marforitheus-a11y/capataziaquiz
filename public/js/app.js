@@ -1,15 +1,12 @@
-/* ====== Lógica Principal com Firebase ====== */
+/* ====== Lógica Principal com Firebase (Corrigido) ====== */
 
-// --- 1. IMPORTAÇÕES DO FIREBASE ---
-// (Estas linhas substituem o <script> inline que estava no index.html)
-import { initializeApp } from "[https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js](https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js)";
-import { getFirestore, doc, getDoc, setDoc, updateDoc } from "[https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js](https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js)";
+// --- 1. PEGAR MÓDULOS DO FIREBASE ---
+// Em vez de 'import', pegamos da 'window' (que o index.html preparou)
+const { initializeApp, getFirestore, doc, getDoc, setDoc, updateDoc } = window.firebaseModules;
 
 // --- 2. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
 // ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
-// (Esta é a const firebaseConfig = { ... } que você copiou do site do Firebase)
-// ======================================================
 const firebaseConfig = {
   apiKey: "AIzaSy...",
   authDomain: "seu-projeto.firebaseapp.com",
@@ -20,33 +17,25 @@ const firebaseConfig = {
 };
 // ======================================================
 
-
 // --- 3. INICIALIZAÇÃO DO FIREBASE ---
 let db;
 try {
   const app = initializeApp(firebaseConfig);
   db = getFirestore(app);
-  // ESTA É A MENSAGEM QUE DEVE APARECER
   console.log("Firebase conectado com sucesso!"); 
 } catch (error) {
   console.error("Erro ao inicializar o Firebase:", error);
-  if (error.code === 'duplicate-app') {
-    // Isto pode acontecer em alguns modos de desenvolvimento, mas não deve mais
-    console.warn("Firebase já inicializado.");
-  } else {
-    alert("Falha crítica ao conectar com o banco de dados. Verifique o console (F12) e a sua 'firebaseConfig' no app.js.");
-  }
+  alert("Falha crítica ao conectar com o banco de dados. Verifique o console (F12) e a sua 'firebaseConfig' no app.js.");
 }
 
 // --- 4. LÓGICA DO APP ---
+// (O resto do seu código app.js permanece o mesmo)
 
 let currentUser = null;
 let userDocRef = null; 
 
-// Espera o HTML carregar para encontrar os elementos
 document.addEventListener('DOMContentLoaded', () => {
   
-  // Elementos
   const userGate = document.getElementById('userGate');
   const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
@@ -58,10 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const quizContainer = document.getElementById('quizContainer');
   const desempenhoContainer = document.getElementById('desempenhoContainer');
 
-  // --- Seleção de Usuário ---
   async function selectUser(userName) {
     if (!db) {
-      console.error("Banco de dados não inicializado. Verifique a firebaseConfig.");
+      console.error("Banco de dados não inicializado.");
       return;
     }
     
@@ -91,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (userGate) userGate.style.display = 'none';
       if (mainContent) mainContent.style.display = 'block';
       
-      // Chama as funções do main.js (que já devem ter sido carregadas)
       if (typeof loadSubjects === 'function') {
         loadSubjects();
         loadPDFs();
@@ -108,14 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Adiciona listeners aos botões de login (com verificação)
   if (userIthalo) userIthalo.addEventListener('click', () => selectUser('ithalo'));
   if (userMatheus) userMatheus.addEventListener('click', () => selectUser('matheus'));
 
-  // --- Salvar Progresso (Função Global) ---
-  // (Esta função é chamada pelo main.js)
   window.saveQuestionProgress = async (questionData, isCorrect) => {
-    if (!userDocRef) return; // Não faz nada se o utilizador não estiver logado
+    if (!userDocRef) return; 
 
     try {
       const snap = await getDoc(userDocRef);
@@ -134,11 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
         lastActivity: new Date().toISOString()
       };
 
-      // (Certifique-se que 'helpers.js' foi carregado e 'getErrorTopic' existe)
       if (!isCorrect && typeof getErrorTopic === 'function') {
         const topic = getErrorTopic(questionData); 
         const currentTopicCount = currentErrorTopics[topic] || 0;
-        // Usamos notação de ponto para o Firebase entender o objeto aninhado
         updateData[`errorTopics.${topic}`] = currentTopicCount + 1;
       }
 
@@ -150,8 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-
-  // --- Lógica de Abas ---
   function showTab(tabName) {
     if (tabName === 'simulado') {
       if (quizContainer) quizContainer.style.display = 'block';
@@ -179,12 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const stats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
     const unanswered = stats.totalQuestions - stats.correct - stats.wrong;
 
-    // --- Gráfico de Pizza Total ---
     const pizzaCtx = document.getElementById('totalPizzaChart');
     if (pizzaCtx) {
-      // Destrói o gráfico anterior para evitar sobreposição
       if (window.Chart && pizzaCtx.chart) pizzaCtx.chart.destroy(); 
-      // Salva a nova instância do gráfico no elemento para destruí-la depois
       pizzaCtx.chart = new Chart(pizzaCtx, {
         type: 'doughnut',
         data: {
@@ -199,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // --- Gráfico de Barras Total ---
     const barCtx = document.getElementById('totalBarChart');
     if (barCtx) {
         if (window.Chart && barCtx.chart) barCtx.chart.destroy(); 
@@ -227,7 +203,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           });
         } else {
-            // Limpa o canvas e mostra uma mensagem se não houver dados
             const context = barCtx.getContext('2d');
             context.clearRect(0, 0, barCtx.width, barCtx.height);
             context.textAlign = 'center';
@@ -238,7 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Adiciona listeners às abas (com verificação)
   if (navSimulado) navSimulado.addEventListener('click', (e) => { e.preventDefault(); showTab('simulado'); });
   if (navDesempenho) navDesempenho.addEventListener('click', (e) => { e.preventDefault(); showTab('desempenho'); });
 
