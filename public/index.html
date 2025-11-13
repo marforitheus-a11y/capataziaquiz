@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <!-- A tag <title> será traduzida via JS -->
   <title>Quiz de Questões</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,68 +11,124 @@
 </head>
 <body>
 
-  <!-- (O HTML do vídeo de vitória permanece o mesmo) -->
+  <!-- Overlay do Vídeo (se você o manteve) -->
   <div id="easterEggOverlay" style="display: none;">
     <video id="easterEggVideo" src="/video/parabens.mp4" loop></video>
     <p id="unmuteText" style="display:none;"></p>
+    <!-- O botão fechar foi removido para o redirecionamento do WhatsApp -->
   </div>
 
-  <div class="container">
-    <h1 data-translate-key="mainTitle">Marfori Corporations</h1>
-    <div class="subtitle-area">
-      <h2 class="subtitle" data-translate-key="subTitle">Simulado OGMO - CAPATAZIA</h2>
-    </div>
-
-    <div class="top-area">
-      <!-- left: folder panel -->
-      <div class="folder-panel" id="folderPanel">
-        <div style="font-weight:600; margin-bottom:8px; color:#27455a;" data-translate-key="selectSubject">Selecione a matéria / parte:</div>
-        <div id="foldersLoading" style="color:var(--muted)" data-translate-key="loading">Carregando...</div>
-        <div id="foldersRoot" style="display:none"></div>
-      </div>
-
-      <!-- right: controls -->
-      <div class="controls">
-        <label data-translate-key="selectedLabel">Matéria selecionada</label>
-        <div id="selectedSummary" class="select-summary" data-translate-key="noneSelected">Nenhuma selecionada</div>
-
-        <label for="questionCount" data-translate-key="questionCountLabel">Quantidade de questões</label>
-        <input type="number" id="questionCount" min="1" placeholder="Ex: 5">
-
-        <div class="button-row">
-          <button id="startBtn" data-translate-key="startButton">Iniciar Quiz</button>
-          <button id="clearSelection" class="button-ghost" data-translate-key="clearButton">Limpar</button>
+  <!-- Portão de Login do Utilizador -->
+  <div id="userGate">
+    <div class="user-select-container">
+      <h1>Quem é você?</h1>
+      <div class="user-options">
+        <div class="user-card" id="userIthalo" data-user="ithalo">
+          <div class="user-photo-hover">
+             <img src="https://placehold.co/120x120/0984e3/FFF?text=I" alt="Foto Ithalo">
+          </div>
+          <span>Ithalo</span>
         </div>
-
-        <div style="font-size:0.9rem; color:var(--muted); margin-top:8px;" data-translate-key="hintText">
-          Dica: clique na pasta para abrir/fechar. Depois clique na parte/página para selecionar.
+        <div class="user-card" id="userMatheus" data-user="matheus">
+          <div class="user-photo-hover">
+             <img src="https://placehold.co/120x120/2d3436/FFF?text=M" alt="Foto Matheus">
+          </div>
+          <span>Matheus</span>
         </div>
       </div>
     </div>
-
-    <!-- quiz area -->
-    <div id="quiz" class="quiz-area" style="display:none;"></div>
-
-    <!-- PDF -->
-    <div class="pdf-section">
-      <h3 style="margin:0 0 10px 0; color:#27455a;" data-translate-key="pdfTitle">📚 Conteúdos em PDF</h3>
-      <ul id="pdfList" class="pdf-list">
-        <li data-translate-key="loadingPDFs">Carregando PDFs...</li>
-      </ul>
-    </div>
   </div>
-    // Disponibiliza para o resto do site
-    window.firebaseModules = { initializeApp, getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion };
-  </script>
+
+  <!-- Conteúdo Principal (começa escondido) -->
+  <div id="mainContent" style="display: none;">
+
+    <!-- Barra de Navegação -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">Simulado OGMO</div>
+        <div class="nav-links">
+          <a href="#" id="navSimulado">Simulado</a>
+          <a href="#" id="navDesempenho">Desempenho</a>
+        </div>
+        <div id="currentUserDisplay" class="nav-user">
+          Usuário: <span>...</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container do Quiz -->
+    <div class="container" id="quizContainer">
+      <h1>Marfori Corporations</h1>
+      <h2 class="subtitle">Simulado OGMO - CAPATAZIA</h2>
+
+      <div class="top-area">
+        <!-- Painel da Esquerda (Seleção) -->
+        <div class="folder-panel" id="folderPanel">
+          <div style="font-weight:600; margin-bottom:8px; color:#27455a;" data-translate-key="selectSubject">Selecione a matéria / parte:</div>
+          <div id="foldersLoading" style="color:var(--muted)" data-translate-key="loading">Carregando...</div>
+          <div id="foldersRoot" style="display:none"></div>
+        </div>
+
+        <!-- Painel da Direita (Controlos) -->
+        <div class="controls">
+          <label data-translate-key="selectedLabel">Matéria selecionada</label>
+          <div id="selectedSummary" class="select-summary" data-translate-key="noneSelected">Nenhuma selecionada</div>
+          <label for="questionCount" data-translate-key="questionCountLabel">Quantidade de questões</label>
+          <input type="number" id="questionCount" min="1" placeholder="Ex: 5">
+          <div class="button-row">
+            <button id="startBtn" data-translate-key="startButton">Iniciar Quiz</button>
+            <button id="clearSelection" class="button-ghost" data-translate-key="clearButton">Limpar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Área do Quiz (vazia, preenchida por JS) -->
+      <div id="quiz" class="quiz-area" style="display:none;"></div>
+
+      <!-- Secção de PDFs -->
+      <div class="pdf-section">
+        <h3 style="margin:0 0 10px 0; color:#27455a;" data-translate-key="pdfTitle">📚 Conteúdos em PDF</h3>
+        <ul id="pdfList" class="pdf-list">
+          <li data-translate-key="loadingPDFs">Carregando PDFs...</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Container do Desempenho (escondido) -->
+    <div class="container" id="desempenhoContainer" style="display: none;">
+      <h2>Seu Desempenho Geral</h2>
+      <p>Aqui aparecerão suas estatísticas de todos os simulados.</p>
+      
+      <div class="charts-container" style="margin: 24px 0;">
+        <div class="chart-box" style="max-width: 350px;">
+          <h3 style="text-align:center;">Desempenho Geral (Total)</h3>
+          <canvas id="totalPizzaChart"></canvas>
+        </div>
+        <div class="chart-box" style="max-width: 500px;">
+          <h3 style="text-align:center;">Tópicos com Mais Erros (Total)</h3>
+          <canvas id="totalBarChart"></canvas>
+        </div>
+      </div>
+    </div>
+    
+  </div> <!-- Fim do #mainContent -->
+
+
+  <!-- ============================================= -->
+  <!-- ===== LISTA DE SCRIPTS CORRIGIDA ===== -->
+  <!-- ============================================= -->
+  
+  <!-- 1. Funções Puras (Clássico) -->
   <script src="js/helpers.js"></script>
-  <script src="js/translator.js"></script> <!-- NOVO ARQUIVO -->
+  
+  <!-- 2. Funções de UI (Clássico) -->
   <script src="js/ui.js"></script>
+  
+  <!-- 3. Lógica do Quiz (Clássico) -->
   <script src="js/main.js"></script>
+  
+  <!-- 4. Lógica do App (Módulo - Ponto de Entrada) -->
   <script type="module" src="js/app.js"></script>
-  <!-- (Se você ainda tem o app.js ou gate.js, ajuste a ordem) -->
 
 </body>
 </html>
-
-
-
