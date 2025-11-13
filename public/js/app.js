@@ -39,8 +39,8 @@ let stopMessagesListener = () => {};
 
 // NOVO: Fotos de Perfil
 const profilePics = {
-  ithalo: 'https://placehold.co/60x60/0984e3/FFF?text=I', // Substitua pela sua URL
-  matheus: 'https://placehold.co/60x60/2d3436/FFF?text=M' // Substitua pela sua URL
+  ithalo: '/video/ithalo.jpg',
+  matheus: '/video/matheus.jpg'
 };
 
 // NOVO: Variáveis de estado para o chat head
