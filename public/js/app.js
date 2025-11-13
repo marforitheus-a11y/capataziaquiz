@@ -8,12 +8,13 @@
 // ======================================================
 // ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
 const firebaseConfig = {
-  apiKey: "AIzaSy...",
-  authDomain: "seu-projeto.firebaseapp.com",
-  projectId: "seu-projeto",
-  storageBucket: "seu-projeto.appspot.com",
-  messagingSenderId: "...",
-  appId: "..."
+  apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
+  authDomain: "capatazia-4391a.firebaseapp.com",
+  projectId: "capatazia-4391a",
+  storageBucket: "capatazia-4391a.firebasestorage.app",
+  messagingSenderId: "248581392094",
+  appId: "1:248581392094:web:ecb618ca575f1806bfe44f",
+  measurementId: "G-47R4KNRSQF"
 };
 // ======================================================
 
