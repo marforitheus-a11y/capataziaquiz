@@ -79,8 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  userIthalo.addEventListener('click', () => selectUser('ithalo'));
-  userMatheus.addEventListener('click', () => selectUser('matheus'));
+ // Adiciona listeners aos botões de login (com verificação)
+  if (userIthalo) userIthalo.addEventListener('click', () => selectUser('ithalo'));
+  if (userMatheus) userMatheus.addEventListener('click', () => selectUser('matheus'));
 
 
   // --- 2. SALVAR PROGRESSO (Função Global) ---
