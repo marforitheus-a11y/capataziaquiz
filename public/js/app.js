@@ -151,7 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  navSimulado.addEventListener('click', (e) => { e.preventDefault(); showTab('simulado'); });
-  navDesempenho.addEventListener('click', (e) => { e.preventDefault(); showTab('desempenho'); });
+// Adiciona listeners às abas (com verificação)
+  if (navSimulado) navSimulado.addEventListener('click', (e) => { e.preventDefault(); showTab('simulado'); });
+  if (navDesempenho) navDesempenho.addEventListener('click', (e) => { e.preventDefault(); showTab('desempenho'); });
 
 });
