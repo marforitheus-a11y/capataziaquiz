@@ -260,5 +260,3 @@ document.getElementById('clearSelection').addEventListener('click', () => {
 // ... (código existente de inicialização sem alterações)
 // (Assumindo que você removeu o 'gate.js' e 'app.js' e está iniciando
 // o app diretamente. Se não, essas linhas devem estar no seu app.js)
-loadSubjects();
-loadPDFs();
