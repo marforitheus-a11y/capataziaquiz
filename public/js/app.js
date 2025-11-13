@@ -131,14 +131,12 @@ window.saveQuestionProgress = async (questionData, isCorrect) => {
 
     // --- CORREÇÃO DA LÓGICA DE SALVAMENTO ---
     if (!isCorrect && typeof getErrorTopic === 'function') {
-      const topic = getErrorTopic(questionData); // Pega o tópico (ex: "Art. 5")
-      
-      // Atualiza o contador DENTRO do objeto JavaScript
-      const currentTopicCount = currentErrorTopics[topic] || 0;
-      currentErrorTopics[topic] = currentTopicCount + 1;
-
-      // Salva o MAPA de erros inteiro de volta
-      updateData.errorTopics = currentErrorTopics;
+        // --- MUDANÇA AQUI ---
+        // Passa a questão E o seu ficheiro de origem
+        const topic = getErrorTopic(questionData, questionData.sourceFile); 
+        // --- FIM DA MUDANÇA ---
+        
+        const currentTopicCount = currentErrorTopics[topic] || 0;
     }
     // --- FIM DA CORREÇÃO ---
 
