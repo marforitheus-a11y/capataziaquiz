@@ -1,8 +1,10 @@
 /* ====== Lógica Principal com Firebase (Corrigido) ====== */
 
-// --- 1. PEGAR MÓDULOS DO FIREBASE ---
-// Em vez de 'import', pegamos da 'window' (que o index.html preparou)
-const { initializeApp, getFirestore, doc, getDoc, setDoc, updateDoc } = window.firebaseModules;
+
+// --- 1. PEGAR MÓDULOS DO FIREBASE (Forma Clássica) ---
+// As ferramentas agora vêm do 'window.firebase' global
+const { initializeApp } = firebase;
+const { getFirestore, doc, getDoc, setDoc, updateDoc } = firebase.firestore;
 
 // --- 2. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
@@ -20,8 +22,8 @@ const firebaseConfig = {
 // --- 3. INICIALIZAÇÃO DO FIREBASE ---
 let db;
 try {
-  const app = initializeApp(firebaseConfig);
-  db = getFirestore(app);
+  initializeApp(firebaseConfig); // Apenas inicializa
+db = getFirestore();         // Pega a instância
   console.log("Firebase conectado com sucesso!"); 
 } catch (error) {
   console.error("Erro ao inicializar o Firebase:", error);
