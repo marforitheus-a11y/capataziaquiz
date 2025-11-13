@@ -103,18 +103,6 @@ function getGroupKey(name) {
   if (dashParts.length > 0) return dashParts;
   return clean || 'Outros';
 }
-```
-
----
-
-### 2. Ficheiro `js/main.js` (Modificado)
-
-Precisamos de "carimbar" cada questão com o nome do ficheiro de onde ela veio.
-
-**Ação:** No seu `js/main.js`, localize o `addEventListener` do `startBtn` e **substitua** o bloco `try...catch` por este:
-
-```javascript
-// ACHE ESTE OUVINTE DE CLIQUE NO SEU main.js E SUBSTITUA O BLOCO try...catch
 
 document.getElementById('startBtn').addEventListener('click', async () => {
   const count = parseInt(document.getElementById('questionCount').value);
