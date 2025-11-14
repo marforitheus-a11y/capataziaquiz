@@ -1,10 +1,10 @@
-/* ====== Lógica Principal com Firebase (COM CHAT, REAÇÕES e v8 CORRIGIDA) ====== */
+/* ====== Lógica Principal (COM CHAT V2: FOTOS E HORÁRIOS) ====== */
 
 // --- 1. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
 // ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
 const firebaseConfig = {
-  apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
+ apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
   authDomain: "capatazia-4391a.firebaseapp.com",
   projectId: "capatazia-4391a",
   storageBucket: "capatazia-4391a.firebasestorage.app",
@@ -14,11 +14,14 @@ const firebaseConfig = {
 };
 // ======================================================
 
+
 // --- 2. INICIALIZAÇÃO DO FIREBASE (Sintaxe v8/compat) ---
 let db;
+let storage; // NOVO: Módulo de Storage
 try {
   firebase.initializeApp(firebaseConfig);
   db = firebase.firestore();
+  storage = firebase.storage(); // NOVO: Inicializa o Storage
   console.log("Firebase conectado com sucesso!"); 
 } catch (error) {
   console.error("Erro ao inicializar o Firebase:", error);
@@ -44,11 +47,9 @@ const profilePics = {
 
 let otherUserIsOnline = false;
 let myUnreadCount = 0;
-
-// NOVO: Guarda o timestamp da última reação para evitar repetições
 let lastReactionTimestamp = null; 
 
-// --- FUNÇÃO HELPER DE DATA ---
+// --- FUNÇÃO HELPER DE DATA (Novas) ---
 function getTodayString() {
   const today = new Date();
   const year = today.getFullYear();
@@ -66,11 +67,26 @@ function getDateRange(startDate, endDate) {
   }
   return dates;
 }
+/**
+ * NOVO: Formata um timestamp do Firebase para "HH:mm"
+ */
+function formatTimestamp(fbTimestamp) {
+  if (!fbTimestamp) return '';
+  try {
+    const date = fbTimestamp.toDate();
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    return `${hours}:${minutes}`; // Ex: "16:23"
+  } catch (e) {
+    console.error("Erro ao formatar timestamp:", e);
+    return '';
+  }
+}
 
 // Espera o HTML carregar
 document.addEventListener('DOMContentLoaded', () => {
   
-  // (Definição de todos os seus elementos HTML (userGate, chatHead, etc.))
+  // (Definição dos elementos HTML...)
   const userGate = document.getElementById('userGate');
   const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
@@ -89,9 +105,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatMessages = document.getElementById('chatMessages');
   const chatTextInput = document.getElementById('chatTextInput');
   const chatSendBtn = document.getElementById('chatSendBtn');
+  
+  // NOVO: Elementos de Upload
+  const chatUploadBtn = document.getElementById('chatUploadBtn');
+  const imageUploadInput = document.getElementById('imageUpload');
 
 
   // --- 1. SELEÇÃO DE UTILIZADOR ---
+  // (Função permanece a mesma, já inclui 'lastReaction: null')
   async function selectUser(userName) {
     if (!db) return;
     
@@ -116,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
           errorTopics: {},
           unreadMessagesFrom: {},
           dailyPerformance: {},
-          lastReaction: null // NOVO: Campo para reações
+          lastReaction: null // Campo para reações
         });
       }
 
@@ -138,17 +159,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (userGate) userGate.style.opacity = 1;
     }
   }
-
   if (userIthalo) userIthalo.addEventListener('click', () => selectUser('ithalo'));
   if (userMatheus) userMatheus.addEventListener('click', () => selectUser('matheus'));
 
 
   // --- 2. LÓGICA DE PRESENÇA (Heartbeat) ---
+  // (Permanece a mesma)
   function startPresenceHeartbeat() {
     updatePresence(); 
     setInterval(updatePresence, 20000); 
   }
-  
   async function updatePresence() {
     if (!userDocRef) return;
     try {
@@ -160,21 +180,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- 3. LÓGICA DE ESCUTA (MODIFICADA para Reações) ---
-  
+  // --- 3. LÓGICA DE ESCUTA (Reações e Presença) ---
+  // (Permanece a mesma)
   function startChatListeners() {
     if (!otherUserDocRef || !userDocRef) return;
     
     stopPresenceListener(); 
     stopNotificationListener();
 
-    // Listener 1: Escuta o OUTRO utilizador (para status online E REAÇÕES)
     stopPresenceListener = otherUserDocRef.onSnapshot((doc) => {
       let isOnline = false;
       if (doc.exists) {
         const data = doc.data();
-        
-        // --- LÓGICA DE PRESENÇA ---
         const lastActivity = data.lastActivity ? data.lastActivity.toDate() : null;
         if (lastActivity) {
           const now = new Date();
@@ -184,14 +201,12 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
         
-        // --- LÓGICA DE REAÇÃO (NOVO) ---
         const reaction = data.lastReaction;
         if (reaction && reaction.timestamp) {
           const reactionTime = reaction.timestamp.toDate();
-          // Se a reação for nova (não a vimos antes)
           if (lastReactionTimestamp === null || reactionTime.getTime() > lastReactionTimestamp.getTime()) {
-            lastReactionTimestamp = reactionTime; // Guarda o timestamp da última reação
-            triggerEmojiFloat(reaction.type); // Dispara a animação
+            lastReactionTimestamp = reactionTime; 
+            triggerEmojiFloat(reaction.type); 
           }
         }
       }
@@ -199,7 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
       updateChatHead();
     });
     
-    // Listener 2: Escuta o MEU documento (para mensagens não lidas)
     stopNotificationListener = userDocRef.onSnapshot((doc) => {
       let unreadCount = 0;
       if (doc.exists) {
@@ -213,8 +227,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- 4. LÓGICA DE UI DO CHAT ---
+  // (Função updateChatHead permanece a mesma)
   function updateChatHead() {
-    // (Esta função permanece a mesma)
     if (otherUserIsOnline) {
       chatHead.style.display = 'block';
       chatHeadImg.src = profilePics[otherUser]; 
@@ -231,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-  // (O resto da UI do chat: Abrir, Fechar - permanece o mesmo)
+  // (Abrir/Fechar Chat - permanece o mesmo)
   chatHead.addEventListener('click', () => {
     chatWidget.style.display = 'flex';
     chatWithUser.textContent = `Chat com ${otherUser}`;
@@ -244,63 +258,179 @@ document.addEventListener('DOMContentLoaded', () => {
     stopMessagesListener(); 
   });
 
-  // --- 5. LÓGICA DE MENSAGENS E REAÇÕES ---
+  // --- 5. LÓGICA DE MENSAGENS (MUDANÇA GRANDE) ---
   
+  /**
+   * NOVO: listenForMessages agora renderiza avatares, horários e imagens
+   */
   function listenForMessages() {
-    // (Esta função permanece a mesma)
     stopMessagesListener(); 
+    
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     const q = chatCollectionRef.orderBy("timestamp", "asc");
+
     stopMessagesListener = q.onSnapshot((querySnapshot) => {
       chatMessages.innerHTML = ''; 
       querySnapshot.forEach((doc) => {
         const msg = doc.data();
+        
+        // --- Cria os elementos ---
+        const msgRow = document.createElement('div');
+        msgRow.className = 'msg-row';
+        
+        const avatar = document.createElement('img');
+        avatar.className = 'msg-avatar';
+        avatar.src = profilePics[msg.senderId] || profilePics['matheus']; // Fallback
+        
+        const msgContent = document.createElement('div');
+        msgContent.className = 'msg-content';
+        
         const bubble = document.createElement('div');
         bubble.className = 'msg-bubble';
-        bubble.textContent = msg.text;
-        if (msg.senderId === currentUser) {
-          bubble.classList.add('msg-sent');
+        
+        const timestamp = document.createElement('span');
+        timestamp.className = 'msg-timestamp';
+        timestamp.textContent = formatTimestamp(msg.timestamp);
+
+        // --- Preenche o Balão (Texto ou Imagem) ---
+        if (msg.type === 'image') {
+          bubble.classList.add('msg-image');
+          const img = document.createElement('img');
+          img.src = msg.imageUrl;
+          img.alt = 'Imagem enviada';
+          // Permite abrir a imagem numa nova aba
+          img.onclick = () => window.open(msg.imageUrl, '_blank');
+          bubble.appendChild(img);
         } else {
-          bubble.classList.add('msg-received');
+          bubble.textContent = msg.text;
         }
-        chatMessages.appendChild(bubble);
+        
+        // --- Define o Lado (Enviado ou Recebido) ---
+        if (msg.senderId === currentUser) {
+          msgRow.classList.add('sent');
+        } else {
+          msgRow.classList.add('received');
+          msgRow.appendChild(avatar); // Só mostra avatar nas recebidas
+        }
+        
+        msgContent.appendChild(bubble);
+        msgContent.appendChild(timestamp);
+        msgRow.appendChild(msgContent);
+        chatMessages.appendChild(msgRow);
       });
+      
       chatMessages.scrollTop = chatMessages.scrollHeight;
     });
   }
   
-  async function sendMessage() {
-    // (Esta função permanece a mesma)
-    const text = chatTextInput.value;
-    if (text.trim() === "") return;
-    chatTextInput.value = ''; 
+  /**
+   * NOVO: Função centralizada para adicionar mensagens ao DB
+   */
+  async function addMessageToDb(messageData) {
+    if (!db || !chatRoomId || !otherUserDocRef) return;
+    
+    // 1. Adiciona a mensagem à coleção
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
-      senderId: currentUser,
-      text: text,
+      ...messageData, // text, senderId, type, imageUrl, etc.
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
+    
+    // 2. Incrementa a contagem de "não lidos" DO OUTRO UTILIZADOR
     const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
     await otherUserDocRef.update({
       [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
     });
   }
-
-  chatSendBtn.addEventListener('click', sendMessage);
-  chatTextInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
   
-  // --- NOVA FUNÇÃO DE ENVIAR REAÇÃO ---
-  // --- NOVA FUNÇÃO DE ENVIAR REAÇÃO (Corrigida) ---
-  window.sendQuizReaction = async (isCorrect) => { // <-- "async" ESTÁ AQUI
-    if (!userDocRef) return; 
+  /**
+   * MODIFICADO: Agora só envia texto
+   */
+  async function sendTextMessage() {
+    const text = chatTextInput.value;
+    if (text.trim() === "") return;
+    chatTextInput.value = ''; 
+
+    await addMessageToDb({
+      senderId: currentUser,
+      text: text,
+      type: 'text'
+    });
+  }
+  
+  /**
+   * NOVO: Lógica de Upload de Imagem
+   */
+  async function uploadImage(file) {
+    if (!file || !storage || !chatRoomId) return;
     
+    const timestamp = Date.now();
+    const storageRef = storage.ref(`chats/${chatRoomId}/${timestamp}-${file.name}`);
+    
+    // Mostra um feedback temporário (opcional)
+    const tempId = `temp_${timestamp}`;
+    chatMessages.innerHTML += `<div class="msg-row sent"><div class="msg-content"><div class="msg-bubble" id="${tempId}">Enviando imagem...</div></div></div>`;
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    const task = storageRef.put(file); // Inicia o upload
+    
+    // Escuta o progresso
+    task.on('state_changed', 
+      (snapshot) => {
+        // Opcional: atualizar a barra de progresso
+      }, 
+      (error) => {
+        console.error("Erro no upload:", error);
+        document.getElementById(tempId).textContent = "Falha no envio.";
+      }, 
+      async () => {
+        // Sucesso!
+        const downloadURL = await task.snapshot.ref.getDownloadURL();
+        
+        // Envia a mensagem com a URL da imagem
+        await addMessageToDb({
+          senderId: currentUser,
+          type: 'image',
+          imageUrl: downloadURL
+        });
+        
+        // Remove o balão temporário (o listener vai adicionar o balão real)
+        const tempBubble = document.getElementById(tempId);
+        if (tempBubble) tempBubble.closest('.msg-row').remove();
+      }
+    );
+  }
+
+  // --- Novos Listeners para Upload ---
+  chatSendBtn.addEventListener('click', sendTextMessage);
+  chatTextInput.addEventListener('keypress', (e) => { 
+    if (e.key === 'Enter') sendTextMessage(); 
+  });
+  
+  // Abre o seletor de ficheiros
+  if (chatUploadBtn) chatUploadBtn.addEventListener('click', () => {
+    if (imageUploadInput) imageUploadInput.click();
+  });
+  
+  // Quando um ficheiro é selecionado
+  if (imageUploadInput) imageUploadInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      uploadImage(file);
+    }
+    // Limpa o input para permitir o envio da mesma imagem novamente
+    e.target.value = null; 
+  });
+
+
+  // --- FUNÇÕES DE REAÇÃO (sem alteração) ---
+  window.sendQuizReaction = async (isCorrect) => { 
+    if (!userDocRef) return; 
     const reaction = {
       type: isCorrect ? 'correct' : 'wrong',
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     };
-    
     try {
-      // Agora o "await" é válido
       await userDocRef.update({ 
         lastReaction: reaction
       });
@@ -309,34 +439,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
   
-  
-  // --- NOVA FUNÇÃO DE ANIMAÇÃO DE EMOJI ---
   function triggerEmojiFloat(type) {
     const emojiContainer = document.getElementById('emojiContainer');
     if (!emojiContainer) return;
-
     const emoji = document.createElement('div');
     emoji.className = 'emoji-float';
-    
     if (type === 'correct') {
-      emoji.textContent = '👍'; // Ou '✅', '🎉'
+      emoji.textContent = '👍';
     } else {
-      emoji.textContent = '👎'; // Ou '❌', '😢'
+      emoji.textContent = '👎';
     }
-    
     emojiContainer.appendChild(emoji);
-    
-    // Remove o emoji após a animação (2 segundos, como no CSS)
     setTimeout(() => {
       emoji.remove();
     }, 2000);
   }
 
-
-  // --- FUNÇÕES ANTIGAS (Salvamento de progresso, abas, etc.) ---
+  // --- FUNÇÕES ANTIGAS (Salvamento, Abas, Desempenho) ---
   
+  // (saveQuestionProgress - sem alteração)
   window.saveQuestionProgress = async (questionData, isCorrect) => {
-    // (Esta função permanece a mesma)
     if (!userDocRef) return; 
     const today = getTodayString();
     const statsKey = isCorrect ? 'correct' : 'wrong';
@@ -358,8 +480,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  // (showTab - sem alteração)
   function showTab(tabName) {
-    // (Esta função permanece a mesma)
     if (tabName === 'simulado') {
       if (quizContainer) quizContainer.style.display = 'block';
       if (desempenhoContainer) desempenhoContainer.style.display = 'none';
@@ -374,8 +496,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
+  // (loadPerformanceData - sem alteração)
   async function loadPerformanceData() {
-    // (Esta função permanece a mesma)
     if (!userDocRef) return;
     const snap = await userDocRef.get();
     if (!snap.exists) {
@@ -486,7 +608,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Função de Reset ---
   window.resetMyProgress = async () => {
-    // (Esta função permanece a mesma)
     if (!userDocRef || !currentUser) {
       console.error("ERRO: Por favor, faça login primeiro.");
       return;
@@ -496,12 +617,11 @@ document.addEventListener('DOMContentLoaded', () => {
       errorTopics: {},
       unreadMessagesFrom: {},
       dailyPerformance: {},
-      lastReaction: null // Zera as reações também
+      lastReaction: null 
     };
     console.warn(`ATENÇÃO: Você está prestes a apagar TODO o progresso de '${currentUser}'.`);
     console.log("Se tem a certeza, copie e cole o seguinte comando e prima Enter:");
     console.log("%c window.confirmReset()", "background: #2d3436; color: #74b9ff; font-weight: bold; padding: 2px 5px; border-radius: 3px;");
-
     window.confirmReset = async () => {
       try {
         await userDocRef.set(resetData, { merge: true }); 
