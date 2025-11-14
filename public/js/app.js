@@ -308,24 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error("Erro ao enviar reação:", e);
     }
   };
-    
-    try {
-      // CORREÇÃO: Atualiza o SEU PRÓPRIO documento
-      await userDocRef.update({ // <-- CORRIGIDO (agora usa 'userDocRef')
-        lastReaction: reaction
-      });
-    } catch (e) {
-      console.error("Erro ao enviar reação:", e);
-    }
-  };
-    
-    try {
-      // Atualiza o documento DO OUTRO UTILIZADOR com a nossa reação
-      await otherUserDocRef.update({
-        lastReaction: reaction
-      });
-    } catch (e) {
-      console.error("Erro ao enviar reação:", e);
+  
     }
   };
   
