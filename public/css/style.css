@@ -762,6 +762,39 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   text-align: center;
   color: #27455a;
 }
+.emoji-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Permite clicar através dele */
+  z-index: 10;
+}
+
+/* O emoji individual que flutua */
+.emoji-float {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem; /* Tamanho do emoji */
+  
+  /* A Animação */
+  animation: floatUp 2s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-120px); /* Flutua 120px para cima */
+  }
+}
+
 
 
 
