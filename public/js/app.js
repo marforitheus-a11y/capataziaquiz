@@ -1,10 +1,10 @@
-/* ====== Lógica Principal com Firebase (COM CHAT e Sintaxe v8 CORRIGIDA) ====== */
+/* ====== Lógica Principal com Firebase (COM CHAT, REAÇÕES e v8 CORRIGIDA) ====== */
 
 // --- 1. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
 // ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
 const firebaseConfig = {
- apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
+  apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
   authDomain: "capatazia-4391a.firebaseapp.com",
   projectId: "capatazia-4391a",
   storageBucket: "capatazia-4391a.firebasestorage.app",
@@ -14,13 +14,10 @@ const firebaseConfig = {
 };
 // ======================================================
 
-
 // --- 2. INICIALIZAÇÃO DO FIREBASE (Sintaxe v8/compat) ---
 let db;
 try {
-  // A 'initializeApp' está no objeto 'firebase'
   firebase.initializeApp(firebaseConfig);
-  // O 'getFirestore' é chamado como 'firebase.firestore()'
   db = firebase.firestore();
   console.log("Firebase conectado com sucesso!"); 
 } catch (error) {
@@ -28,7 +25,7 @@ try {
   alert("Falha crítica ao conectar com o banco de dados. Verifique o console (F12) e a sua 'firebaseConfig' no app.js.");
 }
 
-// --- 3. LÓGICA DO APP (COM CHAT) ---
+// --- 3. LÓGICA DO APP (COM CHAT E REAÇÕES) ---
 
 let currentUser = null;
 let otherUser = null; 
@@ -40,7 +37,6 @@ let stopPresenceListener = () => {};
 let stopNotificationListener = () => {};
 let stopMessagesListener = () => {};
 
-// Fotos de Perfil
 const profilePics = {
   ithalo: '/video/ithalo.jpg',
   matheus: '/video/matheus.jpg'
@@ -48,6 +44,9 @@ const profilePics = {
 
 let otherUserIsOnline = false;
 let myUnreadCount = 0;
+
+// NOVO: Guarda o timestamp da última reação para evitar repetições
+let lastReactionTimestamp = null; 
 
 // --- FUNÇÃO HELPER DE DATA ---
 function getTodayString() {
@@ -71,7 +70,7 @@ function getDateRange(startDate, endDate) {
 // Espera o HTML carregar
 document.addEventListener('DOMContentLoaded', () => {
   
-  // Elementos
+  // (Definição de todos os seus elementos HTML (userGate, chatHead, etc.))
   const userGate = document.getElementById('userGate');
   const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
@@ -94,10 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 1. SELEÇÃO DE UTILIZADOR ---
   async function selectUser(userName) {
-    if (!db) {
-      console.error("Banco de dados não inicializado.");
-      return;
-    }
+    if (!db) return;
     
     currentUser = userName;
     otherUser = (currentUser === 'ithalo') ? 'matheus' : 'ithalo';
@@ -105,29 +101,22 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (currentUserDisplay) currentUserDisplay.textContent = userName;
     
-    // CORREÇÃO v8: db.collection(...).doc(...)
     userDocRef = db.collection("users").doc(currentUser); 
     otherUserDocRef = db.collection("users").doc(otherUser);
     
     if (userGate) userGate.style.opacity = 0.5;
 
     try {
-      // CORREÇÃO v8: userDocRef.get()
       const docSnap = await userDocRef.get();
-
-      // CORREÇÃO v8: 'docSnap.exists' é uma propriedade, não uma função
-      if (docSnap.exists) { // <--- ESTA ERA A LINHA DO ERRO (117)
-        console.log("Dados recuperados do Firebase:", docSnap.data());
-      } else {
-        console.log("Novo usuário! Criando registro no banco...");
-        // CORREÇÃO v8: userDocRef.set(...)
+      if (!docSnap.exists) {
         await userDocRef.set({
           name: userName,
           createdAt: new Date().toISOString(),
           stats: { totalQuestions: 0, correct: 0, wrong: 0 },
           errorTopics: {},
           unreadMessagesFrom: {},
-          dailyPerformance: {}
+          dailyPerformance: {},
+          lastReaction: null // NOVO: Campo para reações
         });
       }
 
@@ -137,12 +126,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (typeof loadSubjects === 'function') {
         loadSubjects(userName);
         loadPDFs();
-      } else {
-        console.error("Função loadSubjects() não encontrada.");
       }
       
       showTab('simulado');
-      
       startPresenceHeartbeat();
       startChatListeners();
       
@@ -166,7 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
   async function updatePresence() {
     if (!userDocRef) return;
     try {
-      // CORREÇÃO v8: Usa a sintaxe v8 para timestamp
       await userDocRef.update({
         lastActivity: firebase.firestore.FieldValue.serverTimestamp() 
       });
@@ -175,19 +160,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- 3. LÓGICA DE ESCUTA (Refatorada) ---
+  // --- 3. LÓGICA DE ESCUTA (MODIFICADA para Reações) ---
+  
   function startChatListeners() {
     if (!otherUserDocRef || !userDocRef) return;
     
     stopPresenceListener(); 
     stopNotificationListener();
 
-    // Listener 1: Escuta o OUTRO utilizador (para status online)
-    // CORREÇÃO v8: usa a sintaxe .onSnapshot()
+    // Listener 1: Escuta o OUTRO utilizador (para status online E REAÇÕES)
     stopPresenceListener = otherUserDocRef.onSnapshot((doc) => {
       let isOnline = false;
       if (doc.exists) {
         const data = doc.data();
+        
+        // --- LÓGICA DE PRESENÇA ---
         const lastActivity = data.lastActivity ? data.lastActivity.toDate() : null;
         if (lastActivity) {
           const now = new Date();
@@ -196,13 +183,23 @@ document.addEventListener('DOMContentLoaded', () => {
             isOnline = true;
           }
         }
+        
+        // --- LÓGICA DE REAÇÃO (NOVO) ---
+        const reaction = data.lastReaction;
+        if (reaction && reaction.timestamp) {
+          const reactionTime = reaction.timestamp.toDate();
+          // Se a reação for nova (não a vimos antes)
+          if (lastReactionTimestamp === null || reactionTime.getTime() > lastReactionTimestamp.getTime()) {
+            lastReactionTimestamp = reactionTime; // Guarda o timestamp da última reação
+            triggerEmojiFloat(reaction.type); // Dispara a animação
+          }
+        }
       }
       otherUserIsOnline = isOnline;
       updateChatHead();
     });
     
     // Listener 2: Escuta o MEU documento (para mensagens não lidas)
-    // CORREÇÃO v8: usa a sintaxe .onSnapshot()
     stopNotificationListener = userDocRef.onSnapshot((doc) => {
       let unreadCount = 0;
       if (doc.exists) {
@@ -217,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 4. LÓGICA DE UI DO CHAT ---
   function updateChatHead() {
+    // (Esta função permanece a mesma)
     if (otherUserIsOnline) {
       chatHead.style.display = 'block';
       chatHeadImg.src = profilePics[otherUser]; 
@@ -233,29 +231,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
+  // (O resto da UI do chat: Abrir, Fechar - permanece o mesmo)
   chatHead.addEventListener('click', () => {
     chatWidget.style.display = 'flex';
     chatWithUser.textContent = `Chat com ${otherUser}`;
     listenForMessages();
     const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
-    // CORREÇÃO v8: .update()
     userDocRef.update({ [myUnreadMapKey]: 0 });
   });
-
   closeChatBtn.addEventListener('click', () => {
     chatWidget.style.display = 'none';
     stopMessagesListener(); 
   });
+
+  // --- 5. LÓGICA DE MENSAGENS E REAÇÕES ---
   
-  // --- 5. LÓGICA DE MENSAGENS (Enviar/Receber) ---
   function listenForMessages() {
+    // (Esta função permanece a mesma)
     stopMessagesListener(); 
-    
-    // CORREÇÃO v8: db.collection(...).doc(...).collection(...)
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     const q = chatCollectionRef.orderBy("timestamp", "asc");
-
-    // CORREÇÃO v8: .onSnapshot()
     stopMessagesListener = q.onSnapshot((querySnapshot) => {
       chatMessages.innerHTML = ''; 
       querySnapshot.forEach((doc) => {
@@ -275,20 +270,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   async function sendMessage() {
+    // (Esta função permanece a mesma)
     const text = chatTextInput.value;
     if (text.trim() === "") return;
     chatTextInput.value = ''; 
-
-    // CORREÇÃO v8: db.collection(...).add()
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
       senderId: currentUser,
       text: text,
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-    
     const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
-    // CORREÇÃO v8: .update() e .increment()
     await otherUserDocRef.update({
       [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
     });
@@ -296,47 +288,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
   chatSendBtn.addEventListener('click', sendMessage);
   chatTextInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
+  
+  // --- NOVA FUNÇÃO DE ENVIAR REAÇÃO ---
+  window.sendQuizReaction = async (isCorrect) => {
+    if (!otherUserDocRef) return;
+    
+    // Define o novo objeto de reação
+    const reaction = {
+      type: isCorrect ? 'correct' : 'wrong',
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    };
+    
+    try {
+      // Atualiza o documento DO OUTRO UTILIZADOR com a nossa reação
+      await otherUserDocRef.update({
+        lastReaction: reaction
+      });
+    } catch (e) {
+      console.error("Erro ao enviar reação:", e);
+    }
+  };
+  
+  // --- NOVA FUNÇÃO DE ANIMAÇÃO DE EMOJI ---
+  function triggerEmojiFloat(type) {
+    const emojiContainer = document.getElementById('emojiContainer');
+    if (!emojiContainer) return;
+
+    const emoji = document.createElement('div');
+    emoji.className = 'emoji-float';
+    
+    if (type === 'correct') {
+      emoji.textContent = '👍'; // Ou '✅', '🎉'
+    } else {
+      emoji.textContent = '👎'; // Ou '❌', '😢'
+    }
+    
+    emojiContainer.appendChild(emoji);
+    
+    // Remove o emoji após a animação (2 segundos, como no CSS)
+    setTimeout(() => {
+      emoji.remove();
+    }, 2000);
+  }
 
 
-  // --- 6. SALVAR PROGRESSO (MODIFICADO) ---
+  // --- FUNÇÕES ANTIGAS (Salvamento de progresso, abas, etc.) ---
+  
   window.saveQuestionProgress = async (questionData, isCorrect) => {
+    // (Esta função permanece a mesma)
     if (!userDocRef) return; 
-
     const today = getTodayString();
     const statsKey = isCorrect ? 'correct' : 'wrong';
-
     let updateData = {
       lastActivity: firebase.firestore.FieldValue.serverTimestamp()
     };
-    
-    // Contadores Totais
     updateData[`stats.${statsKey}`] = firebase.firestore.FieldValue.increment(1);
     updateData['stats.totalQuestions'] = firebase.firestore.FieldValue.increment(1);
-    
-    // Contadores Diários
-    // (A sintaxe de 'increment' com notação de ponto lida com campos inexistentes)
     updateData[`dailyPerformance.${today}.${statsKey}`] = firebase.firestore.FieldValue.increment(1);
-
-    // Tópicos de Erro
     if (!isCorrect && typeof getErrorTopic === 'function') {
       const topic = getErrorTopic(questionData, questionData.sourceFile);
       updateData[`errorTopics.${topic}`] = firebase.firestore.FieldValue.increment(1);
     }
-    
     try {
-      // Envia UMA atualização atômica para o Firebase
       await userDocRef.update(updateData);
       console.log("Progresso detalhado salvo na nuvem!");
-
     } catch (e) {
       console.error("Erro ao salvar progresso:", e);
-      // Fallback (se o erro for por campos não existentes, o que 'increment' devia resolver)
-      // Esta lógica é complexa, por agora vamos só logar o erro.
     }
   };
 
-  // --- 7. LÓGICA DE ABAS ---
   function showTab(tabName) {
+    // (Esta função permanece a mesma)
     if (tabName === 'simulado') {
       if (quizContainer) quizContainer.style.display = 'block';
       if (desempenhoContainer) desempenhoContainer.style.display = 'none';
@@ -351,18 +373,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-  // --- 8. CARREGAR DESEMPENHO ---
   async function loadPerformanceData() {
+    // (Esta função permanece a mesma)
     if (!userDocRef) return;
-    const snap = await userDocRef.get(); // CORREÇÃO v8: .get()
-    if (!snap.exists) { // CORREÇÃO v8: .exists
+    const snap = await userDocRef.get();
+    if (!snap.exists) {
       console.error("Documento do usuário não encontrado.");
       return;
     }
-
     const data = snap.data();
-    
-    // Gráfico 1 & 2 (Pizza e Barras)
+    // (Gráfico 1 & 2 (Pizza e Barras))
     const stats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
     const unanswered = stats.totalQuestions - stats.correct - stats.wrong;
     const pizzaCtx = document.getElementById('totalPizzaChart');
@@ -410,36 +430,25 @@ document.addEventListener('DOMContentLoaded', () => {
             context.fillText('Ainda não há dados de tópicos de erro.', barCtx.width / 2, barCtx.height / 2);
         }
     }
-    
-    // Gráfico 3 (Linha do Tempo)
+    // (Gráfico 3 (Linha do Tempo))
     const timeCtx = document.getElementById('timeSeriesChart');
     if (timeCtx) {
       if (window.Chart && timeCtx.chart) timeCtx.chart.destroy(); 
-
       const startDate = data.createdAt ? new Date(data.createdAt) : new Date("2025-11-13T12:00:00-03:00");
       const deadline = new Date("2025-12-13T12:00:00-03:00"); 
-      
       const labels = getDateRange(startDate, deadline);
       const dailyData = data.dailyPerformance || {};
-      
       let runningCorrect = 0;
       let runningTotal = 0;
-      
       const performanceData = labels.map(date => {
         const day = dailyData[date];
-        
         if (day) {
           runningCorrect += (day.correct || 0);
           runningTotal += (day.correct || 0) + (day.wrong || 0);
         }
-        
-        if (runningTotal === 0) {
-          return 0;
-        }
-        
+        if (runningTotal === 0) return 0;
         return (runningCorrect / runningTotal) * 100;
       });
-      
       timeCtx.chart = new Chart(timeCtx, {
         type: 'line',
         data: {
@@ -476,6 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Função de Reset ---
   window.resetMyProgress = async () => {
+    // (Esta função permanece a mesma)
     if (!userDocRef || !currentUser) {
       console.error("ERRO: Por favor, faça login primeiro.");
       return;
@@ -484,7 +494,8 @@ document.addEventListener('DOMContentLoaded', () => {
       stats: { totalQuestions: 0, correct: 0, wrong: 0 },
       errorTopics: {},
       unreadMessagesFrom: {},
-      dailyPerformance: {}
+      dailyPerformance: {},
+      lastReaction: null // Zera as reações também
     };
     console.warn(`ATENÇÃO: Você está prestes a apagar TODO o progresso de '${currentUser}'.`);
     console.log("Se tem a certeza, copie e cole o seguinte comando e prima Enter:");
