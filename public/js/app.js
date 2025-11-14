@@ -291,14 +291,23 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // --- NOVA FUNÇÃO DE ENVIAR REAÇÃO ---
   // --- NOVA FUNÇÃO DE ENVIAR REAÇÃO (Corrigida) ---
-  window.sendQuizReaction = async (isCorrect) => {
-    if (!userDocRef) return; // <-- CORRIGIDO (agora usa 'userDocRef')
+  window.sendQuizReaction = async (isCorrect) => { // <-- "async" ESTÁ AQUI
+    if (!userDocRef) return; 
     
-    // Define o novo objeto de reação
     const reaction = {
       type: isCorrect ? 'correct' : 'wrong',
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     };
+    
+    try {
+      // Agora o "await" é válido
+      await userDocRef.update({ 
+        lastReaction: reaction
+      });
+    } catch (e) {
+      console.error("Erro ao enviar reação:", e);
+    }
+  };
     
     try {
       // CORREÇÃO: Atualiza o SEU PRÓPRIO documento
