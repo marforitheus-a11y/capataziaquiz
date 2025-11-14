@@ -290,14 +290,25 @@ document.addEventListener('DOMContentLoaded', () => {
   chatTextInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
   
   // --- NOVA FUNÇÃO DE ENVIAR REAÇÃO ---
+  // --- NOVA FUNÇÃO DE ENVIAR REAÇÃO (Corrigida) ---
   window.sendQuizReaction = async (isCorrect) => {
-    if (!otherUserDocRef) return;
+    if (!userDocRef) return; // <-- CORRIGIDO (agora usa 'userDocRef')
     
     // Define o novo objeto de reação
     const reaction = {
       type: isCorrect ? 'correct' : 'wrong',
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     };
+    
+    try {
+      // CORREÇÃO: Atualiza o SEU PRÓPRIO documento
+      await userDocRef.update({ // <-- CORRIGIDO (agora usa 'userDocRef')
+        lastReaction: reaction
+      });
+    } catch (e) {
+      console.error("Erro ao enviar reação:", e);
+    }
+  };
     
     try {
       // Atualiza o documento DO OUTRO UTILIZADOR com a nossa reação
