@@ -310,7 +310,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   
     }
-  };
   
   // --- NOVA FUNÇÃO DE ANIMAÇÃO DE EMOJI ---
   function triggerEmojiFloat(type) {
