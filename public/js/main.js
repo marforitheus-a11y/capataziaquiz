@@ -200,7 +200,9 @@ function selectOption(questionId, optionKey) {
 if (window.saveQuestionProgress) {
     window.saveQuestionProgress(q, isCorrect);
   }
-  // Renderiza a mesma questão novamente, agora com a resposta
+  if (window.sendQuizReaction) {
+    window.sendQuizReaction(isCorrect);
+  }// Renderiza a mesma questão novamente, agora com a resposta
   renderQuestion();
 }
 
