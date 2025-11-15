@@ -4,48 +4,57 @@
 function renderQuestion() {
   const quizDiv = document.getElementById("quiz");
   const q = questions[currentQuestion];
-  
+
   const userAnswer = userAnswers[q.id];
   const isAnswered = (userAnswer !== undefined);
 
-  // 1. Monta o HTML das alternativas (sem alteração)
+  // 1. Monta o HTML das alternativas
   const optionsHtml = Object.entries(q.alternativas || {}).map(([key, value]) => {
     let classes = 'option';
+
+    // NOVO: Adiciona data-attributes e lógica de seleção do desafio
     let clickEvent = `onclick="selectOption('${q.id}', '${key}')"`;
-    if (isAnswered) {
-      clickEvent = '';
-      if (key === q.resposta_correta) {
-        classes += ' correct';
-      } else if (key === userAnswer) {
-        classes += ' wrong';
+    let dataAttrs = `data-qid="${q.id}" data-key="${key}"`;
+
+    if (quizMode === 'solo') {
+      if (isAnswered) {
+        clickEvent = ''; // Bloqueia clique no modo solo após responder
+        if (key === q.resposta_correta) {
+          classes += ' correct';
+        } else if (key === userAnswer) {
+          classes += ' wrong';
+        }
+      }
+    } else {
+      // Modo desafio: reaplica a classe de seleção se a pergunta já foi respondida
+      if (isAnswered && key === userAnswer) {
+        classes += ' selected-challenge';
       }
     }
-    return `<li class="${classes}" ${clickEvent}>${key}) ${value}</li>`;
+
+    return `<li class="${classes}" ${dataAttrs} ${clickEvent}>${key}) ${value}</li>`;
   }).join('');
 
-  // 2. Monta o HTML do feedback (comentário)
+  // 2. Monta o HTML do feedback (SÓ PARA MODO SOLO)
   let feedbackHtml = '';
-  if (isAnswered) {
+  if (isAnswered && quizMode === 'solo') {
     const isCorrect = (userAnswer === q.resposta_correta);
-    
-    // --- MUDANÇA AQUI: Adiciona data-translate-key ---
     const feedbackTitle = isCorrect
       ? `<p class="feedback correct" data-translate-key="feedbackCorrect">✅ Correto!</p>`
       : `<p class="feedback wrong" data-translate-key="feedbackWrong">❌ Errado! Resposta correta: ${q.resposta_correta})</p>`;
-    
+
     const feedbackComment = q.comentario
       ? `<div class="comentario"><strong data-translate-key="feedbackComment">Comentário:</strong> ${q.comentario.replace(/\n/g,'<br>')}</div>`
       : '';
-      
+
     feedbackHtml = feedbackTitle + feedbackComment;
   }
-  
-  // 3. Monta o HTML da Navegação
+
+  // 3. Monta o HTML da Navegação (sem mudança, já está bom)
   const prevDisabled = (currentQuestion === 0) ? 'disabled' : '';
   const nextKey = (currentQuestion === questions.length - 1) ? 'finishButton' : 'nextButton';
   const nextButtonText = (currentQuestion === questions.length - 1) ? 'Finalizar' : 'Próxima';
 
-  // --- MUDANÇA AQUI: Adiciona data-translate-key ---
   const navHtml = `
     <div class="quiz-nav">
       <button onclick="goToPrev()" ${prevDisabled} data-translate-key="prevButton">Anterior</button>
@@ -56,9 +65,14 @@ function renderQuestion() {
 
   // 4. Monta o HTML final e insere na página
   const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
-  
-  // --- MUDANÇA AQUI: Adiciona data-translate-key ---
+
+  // NOVO: Adiciona o div do timer
+  const timerHtml = (quizMode === 'challenge')
+    ? `<div id="quizTimer" style="font-size: 1.2rem; font-weight: 600; color: var(--wrong); text-align: center; margin-bottom: 15px;">Tempo: --:--</div>`
+    : '';
+
   quizDiv.innerHTML = `
+    ${timerHtml} 
     <div class="meta">
       <strong data-translate-key="metaDiscipline">Disciplina:</strong> ${q.disciplina || 'N/I'} • 
       <strong data-translate-key="metaBanca">Banca:</strong> ${q.banca || 'N/I'} • 
@@ -71,9 +85,8 @@ function renderQuestion() {
     </div>
     ${navHtml}
   `;
-  
-  // --- MUDANÇA AQUI: Chama o tradutor ---
-  translatePage(); // Traduz a UI recém-renderizada
+
+  translatePage();
 }
 
 // -------------------------------------------------------------------
@@ -503,6 +516,87 @@ function generatePrintPage(questionsToPrint) {
 // -------------------------------------------------------------------
 
 /* ====== FUNÇÃO DO VÍDEO DE VITÓRIA ====== */
+function showChallengeModal(title, contentHtml) {
+  const modal = document.getElementById('challengeModal');
+  const titleEl = document.getElementById('challengeTitle');
+  const contentEl = document.getElementById('challengeContent');
+
+  titleEl.textContent = title;
+  contentEl.innerHTML = contentHtml;
+  modal.style.display = 'flex';
+}
+
+function hideChallengeModal() {
+  const modal = document.getElementById('challengeModal');
+  modal.style.display = 'none';
+}
+
+/**
+ * Mostra uma tela de espera após o jogador terminar
+ */
+function showChallengeWaitingScreen(message) {
+  const quizDiv = document.getElementById("quiz");
+  quizDiv.innerHTML = `
+    <div class='result' style="padding: 40px 20px;">
+      <h2>Desafio Enviado!</h2>
+      <p style="font-size: 1.1rem;">${message}</p>
+    </div>
+  `;
+}
+
+/**
+ * Mostra o resultado final do desafio (jogador vs jogador)
+ */
+function showChallengeResults(challengeDoc) {
+  const p1_id = challengeDoc.createdBy;
+  const p2_id = challengeDoc.invited;
+
+  const p1_answers = challengeDoc.answers[p1_id] || {};
+  const p2_answers = challengeDoc.answers[p2_id] || {};
+  const questions = challengeDoc.questions; // O array de questões
+
+  let p1_score = 0;
+  let p2_score = 0;
+
+  questions.forEach(q => {
+    if (p1_answers[q.id] === q.resposta_correta) p1_score++;
+    if (p2_answers[q.id] === q.resposta_correta) p2_score++;
+  });
+
+  // Determina o vencedor
+  let winnerMessage = "";
+  if (p1_score > p2_score) {
+    winnerMessage = `🏆 ${p1_id.toUpperCase()} VENCEU! 🏆`;
+  } else if (p2_score > p1_score) {
+    winnerMessage = `🏆 ${p2_id.toUpperCase()} VENCEU! 🏆`;
+  } else {
+    winnerMessage = "🎌 EMPATE! 🎌";
+  }
+
+  const quizDiv = document.getElementById("quiz");
+  quizDiv.innerHTML = `
+    <div class='result' style="padding: 40px 20px; text-align: center;">
+      <h2 data-translate-key="resultsTitle">Resultado do Desafio</h2>
+      <h1 style="color: var(--primary); margin: 20px 0;">${winnerMessage}</h1>
+
+      <div style="display: flex; justify-content: space-around; font-size: 1.5rem; font-weight: 600; margin: 30px 0;">
+        <div>
+          <span style="text-transform: capitalize;">${p1_id}</span><br/>
+          ${p1_score} / ${questions.length}
+        </div>
+        <div>
+          <span style="text-transform: capitalize;">${p2_id}</span><br/>
+          ${p2_score} / ${questions.length}
+        </div>
+      </div>
+
+      <div class="button-row" style="justify-content: center; margin-top: 30px;">
+        <button onclick="location.reload()">Voltar ao Início</button>
+      </div>
+    </div>
+  `;
+  hideChallengeModal();
+}
 function playVictoryVideo() {
   const overlay = document.getElementById('easterEggOverlay');
   const video = document.getElementById('easterEggVideo');
