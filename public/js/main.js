@@ -249,12 +249,54 @@ function goToNext() {
     currentQuestion++;
     renderQuestion();
   } else {
-    // Ao finalizar, reverte para o Português
-    setLanguage('pt-BR'); 
-    showResults();
+    // FINALIZAR O QUIZ
+    stopTimer(); // Para o timer
+
+    if (quizMode === 'challenge') {
+      // Chama a função do app.js para enviar as respostas
+      if (window.finishChallenge) {
+        window.finishChallenge(userAnswers);
+        // Mostra uma tela de espera
+        showChallengeWaitingScreen("Você terminou! Aguardando oponente...");
+      }
+    } else {
+      // Modo solo normal
+      setLanguage('pt-BR'); 
+      showResults();
+    }
   }
 }
+function startTimer(durationInSeconds) {
+  stopTimer(); // Garante que timers antigos parem
+  let timer = durationInSeconds;
+  const timerEl = document.getElementById('quizTimer');
 
+  function updateDisplay() {
+    const minutes = Math.floor(timer / 60);
+    const seconds = timer % 60;
+    if(timerEl) timerEl.textContent = `Tempo: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  }
+
+  updateDisplay(); // Mostra o tempo inicial
+
+  quizTimerInterval = setInterval(() => {
+    timer--;
+    updateDisplay();
+
+    if (timer <= 0) {
+      stopTimer();
+      alert("O tempo acabou!");
+      goToNext(); // Força o fim do quiz
+    }
+  }, 1000);
+}
+
+function stopTimer() {
+  if (quizTimerInterval) {
+    clearInterval(quizTimerInterval);
+    quizTimerInterval = null;
+  }
+}
 /**
  * NOVO: Função para o botão "Anterior".
  */
