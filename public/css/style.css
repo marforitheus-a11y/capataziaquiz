@@ -688,6 +688,10 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   border-radius: 18px;
   line-height: 1.5;
   font-size: 0.95rem;
+  
+  /* CORREÇÃO (Bug do "kkkkk"): Quebra palavras longas */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .msg-bubble.msg-image {
   padding: 4px;
@@ -698,11 +702,11 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   cursor: pointer;
 }
 
-/* NOVO: Contentor de Metadados (Hora + Status) */
+/* Contentor de Metadados (Hora + Status) */
 .msg-meta {
   display: flex;
   align-items: center;
-  gap: 5px; /* Espaço entre a hora e o check */
+  gap: 5px; 
   margin-top: 4px;
   padding: 0 8px;
 }
@@ -716,10 +720,8 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   font-size: 0.85rem;
   color: var(--muted);
 }
-
-/* NOVO: Cor do check "Lido" (Azul WhatsApp) */
 .msg-status.read {
-  color: #53bdeb;
+  color: #53bdeb; /* Cor do "Lido" (azul) */
 }
 
 /* --- Estilos de Enviado e Recebido --- */
@@ -727,7 +729,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   justify-content: flex-end;
 }
 .msg-row.sent .msg-content {
-  align-items: flex-end; /* Alinha o balão E o meta à direita */
+  align-items: flex-end; 
 }
 .msg-row.sent .msg-bubble {
   background: var(--primary);
@@ -741,7 +743,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   justify-content: flex-start;
 }
 .msg-row.received .msg-content {
-  align-items: flex-start; /* Alinha o balão E o meta à esquerda */
+  align-items: flex-start; 
 }
 .msg-row.received .msg-bubble {
   background: #e9e9eb;
@@ -755,7 +757,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   border-top: 1px solid #eee;
   padding: 5px;
   background: #fff;
-  align-items: center; /* Alinha botões e input */
+  align-items: center; 
 }
 
 .chat-input input {
@@ -777,7 +779,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   color: var(--muted);
   border-radius: 50%;
   transition: background 0.2s, color 0.2s;
-  flex-shrink: 0; /* Impede que os botões sejam "esmagados" */
+  flex-shrink: 0; 
 }
 .chat-icon-btn:hover {
   background: #f0f0f0;
@@ -875,6 +877,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   margin-top: 4px;
   padding: 0 8px;
 }
+
 
 
 
