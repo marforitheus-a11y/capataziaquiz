@@ -168,14 +168,29 @@ function toggleSelectFolder(subsInFolder, folderElement) {
 }
 // ... (código existente startQuiz sem alterações)
 function startQuiz(data, count) {
+  // Esta função agora é o quiz 'solo'
+  quizMode = 'solo';
   allQuestions = data; 
   const shuffled = allQuestions.slice().sort(() => 0.5 - Math.random());
   questions = shuffled.slice(0, count);
   currentQuestion = 0;
-  userAnswers = {}; // Reseta as respostas
+  userAnswers = {};
   document.getElementById('quiz').style.display = 'block';
   document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
-  renderQuestion(); // Função do ui.js
+  renderQuestion();
+}
+
+// NOVO: Função que inicia o quiz no modo desafio
+function startChallengeQuiz(challengeQuestions, durationInSeconds) {
+  quizMode = 'challenge';
+  questions = challengeQuestions; // As questões vêm do Firestore, já embaralhadas
+  currentQuestion = 0;
+  userAnswers = {};
+  document.getElementById('quiz').style.display = 'block';
+  document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
+
+  startTimer(durationInSeconds); // Inicia o timer
+  renderQuestion();
 }
 
 /**
@@ -185,29 +200,46 @@ function selectOption(questionId, optionKey) {
   if (userAnswers[questionId]) {
     return;
   }
-  
   userAnswers[questionId] = optionKey;
-  
-  // --- MUDANÇA AQUI ---
-  // Verifica se a resposta está correta para mudar o idioma
-  const q = questions.find(item => item.id == questionId); // (Note o ==)
-  const isCorrect = (optionKey === q.resposta_correta);
-  
-  if (isCorrect) {
-    setLanguage('pt-BR'); // Função do translator.js
-  } else {
-    setLanguage('ja-JP'); // Função do translator.js
-  }
- // Chama a função do app.js para salvar na nuvem
-if (window.saveQuestionProgress) {
-    window.saveQuestionProgress(q, isCorrect);
-  }
-  if (window.sendQuizReaction) {
-    window.sendQuizReaction(isCorrect);
-  }// Renderiza a mesma questão novamente, agora com a resposta
-  renderQuestion();
-}
 
+  // --- MUDANÇA PRINCIPAL AQUI ---
+  if (quizMode === 'solo') {
+    // Só mostra feedback e muda idioma no modo 'solo'
+    const q = questions.find(item => item.id == questionId);
+    const isCorrect = (optionKey === q.resposta_correta);
+
+    if (isCorrect) {
+      setLanguage('pt-BR');
+    } else {
+      setLanguage('ja-JP');
+    }
+
+    if (window.saveQuestionProgress) {
+      window.saveQuestionProgress(q, isCorrect);
+    }
+    if (window.sendQuizReaction) {
+      window.sendQuizReaction(isCorrect);
+    }
+
+    // Renderiza a mesma questão (com feedback)
+    renderQuestion();
+
+  } else {
+    // No modo 'challenge', apenas marca a opção visualmente
+    // e NÃO renderiza a questão inteira de novo
+
+    // Remove 'selected' de outras opções
+    const options = document.querySelectorAll(`.option[data-qid="${questionId}"]`);
+    options.forEach(opt => opt.classList.remove('selected-challenge'));
+
+    // Adiciona 'selected' na clicada
+    const selectedEl = document.querySelector(`.option[data-key="${optionKey}"]`);
+    if(selectedEl) {
+      selectedEl.classList.add('selected-challenge');
+    }
+  }
+  // --- FIM DA MUDANÇA ---
+}
 
 /**
  * NOVO: Função para o botão "Próxima / Finalizar".
