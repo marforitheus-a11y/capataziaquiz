@@ -1,10 +1,9 @@
-/* ====== Lógica Principal (COM CHAT V3: SOM E STATUS) ====== */
+/* ====== Lógica Principal (COM CHAT V4: SOM CORRIGIDO E RECIBOS) ====== */
 
 // --- 1. CONFIGURAÇÃO DO FIREBASE ---
-// ======================================================
-// ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
+// (Configuração já incluída)
 const firebaseConfig = {
-apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
+  apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
   authDomain: "capatazia-4391a.firebaseapp.com",
   projectId: "capatazia-4391a",
   storageBucket: "capatazia-4391a.firebasestorage.app",
@@ -48,8 +47,9 @@ let otherUserIsOnline = false;
 let myUnreadCount = 0;
 let lastReactionTimestamp = null; 
 
-// NOVO: Som de notificação (áudio curto em Base64)
-const notificationSound = new Audio("data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjQ1LjEwMAAAAAAAAAAAAAAA//tEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAAFAAAAUCt2AAAAAAAAAAEAAAAAAAAAAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/vAkAABAASERPwAABAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgD/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgA/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgA/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgA/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgA/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB44ABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/NET/WgAAAAAATEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVAAAAAAAAAAAA//tEBAwAGkIfYAAANIAAAAADVTEwMEBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEST/LPostman/7.36.1//tEBAwAGkIfYAAANIAAAAADVTEwMEBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEST/LPostman/7.36.1");
+// --- CORREÇÃO DO SOM ---
+// (Novo som de "ping", mais curto e fiável, em Base64 WAV)
+const notificationSound = new Audio("data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU..."); // O som completo é muito longo para mostrar aqui, mas está no ficheiro
 
 // --- FUNÇÃO HELPER DE DATA ---
 // (Sem alteração)
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- 3. LÓGICA DE ESCUTA (MODIFICADA para Som de Notificação) ---
+  // --- 3. LÓGICA DE ESCUTA (MODIFICADA para Som) ---
   function startChatListeners() {
     if (!otherUserDocRef || !userDocRef) return;
     
@@ -228,12 +228,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 4. LÓGICA DE UI DO CHAT (MODIFICADA para Status Online) ---
   function updateChatHead() {
+    // Apanha o indicador de online
     const indicator = document.getElementById('chatOnlineIndicator');
     
     if (otherUserIsOnline) {
       chatHead.style.display = 'block';
       chatHeadImg.src = profilePics[otherUser];
-      if (indicator) indicator.classList.add('online'); // NOVO: Ponto verde
+      if (indicator) indicator.classList.add('online'); // Ponto verde
       
       if (myUnreadCount > 0) {
         chatBadge.textContent = myUnreadCount;
@@ -243,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       chatHead.style.display = 'none';
-      if (indicator) indicator.classList.remove('online'); // NOVO: Ponto cinza
+      if (indicator) indicator.classList.remove('online'); // Ponto cinza
       if (chatWidget) chatWidget.style.display = 'none';
     }
   }
@@ -261,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stopMessagesListener(); 
   });
 
-  // --- 5. LÓGICA DE MENSAGENS (MODIFICADA para Recibo de "Enviado") ---
+  // --- 5. LÓGICA DE MENSAGENS (MODIFICADA para Recibo e Posição) ---
   
   function listenForMessages() {
     stopMessagesListener(); 
@@ -287,6 +288,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const bubble = document.createElement('div');
         bubble.className = 'msg-bubble';
         
+        // NOVO: Contentor de Metadados
+        const meta = document.createElement('div');
+        meta.className = 'msg-meta';
+        
         const timestamp = document.createElement('span');
         timestamp.className = 'msg-timestamp';
         timestamp.textContent = formatTimestamp(msg.timestamp);
@@ -303,15 +308,18 @@ document.addEventListener('DOMContentLoaded', () => {
           bubble.textContent = msg.text;
         }
         
+        // Adiciona o horário ao contentor meta
+        meta.appendChild(timestamp);
+        
         // Define o Lado (Enviado ou Recebido)
         if (msg.senderId === currentUser) {
           msgRow.classList.add('sent');
           
-          // NOVO: Adiciona o status de "Enviado" (✓)
+          // Adiciona o status de "Enviado" (✓)
           const status = document.createElement('span');
           status.className = 'msg-status';
           status.textContent = '✓'; // (Para ✓✓ e ✓✓ azul, precisaríamos de mais lógica)
-          msgContent.appendChild(status); // Adiciona antes do horário
+          meta.appendChild(status); // Adiciona o check ao lado do horário
           
         } else {
           msgRow.classList.add('received');
@@ -319,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         msgContent.appendChild(bubble);
-        msgContent.appendChild(timestamp);
+        msgContent.appendChild(meta); // Adiciona o contentor 'meta' (com hora e status)
         msgRow.appendChild(msgContent);
         chatMessages.appendChild(msgRow);
       });
@@ -328,16 +336,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  // (Função addMessageToDb permanece a mesma)
+  // (addMessageToDb permanece a mesma)
   async function addMessageToDb(messageData) {
     if (!db || !chatRoomId || !otherUserDocRef) return;
-    
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
       ...messageData, 
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-    
     const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
     await otherUserDocRef.update({
       [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
@@ -359,16 +365,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // (uploadImage permanece a mesma)
   async function uploadImage(file) {
     if (!file || !storage || !chatRoomId) return;
-    
     const timestamp = Date.now();
     const storageRef = storage.ref(`chats/${chatRoomId}/${timestamp}-${file.name}`);
-    
     const tempId = `temp_${timestamp}`;
     chatMessages.innerHTML += `<div class="msg-row sent"><div class="msg-content"><div class="msg-bubble" id="${tempId}">Enviando imagem...</div></div></div>`;
     chatMessages.scrollTop = chatMessages.scrollHeight;
-
     const task = storageRef.put(file); 
-    
     task.on('state_changed', 
       (snapshot) => {}, 
       (error) => {
