@@ -1,10 +1,10 @@
-/* ====== Lógica Principal (COM CHAT V2: FOTOS E HORÁRIOS) ====== */
+/* ====== Lógica Principal (COM CHAT V3: SOM E STATUS) ====== */
 
 // --- 1. CONFIGURAÇÃO DO FIREBASE ---
 // ======================================================
 // ===== COLE A SUA 'firebaseConfig' DO FIREBASE AQUI =====
 const firebaseConfig = {
- apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
+apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
   authDomain: "capatazia-4391a.firebaseapp.com",
   projectId: "capatazia-4391a",
   storageBucket: "capatazia-4391a.firebasestorage.app",
@@ -14,14 +14,13 @@ const firebaseConfig = {
 };
 // ======================================================
 
-
 // --- 2. INICIALIZAÇÃO DO FIREBASE (Sintaxe v8/compat) ---
 let db;
-let storage; // NOVO: Módulo de Storage
+let storage;
 try {
   firebase.initializeApp(firebaseConfig);
   db = firebase.firestore();
-  storage = firebase.storage(); // NOVO: Inicializa o Storage
+  storage = firebase.storage();
   console.log("Firebase conectado com sucesso!"); 
 } catch (error) {
   console.error("Erro ao inicializar o Firebase:", error);
@@ -49,7 +48,11 @@ let otherUserIsOnline = false;
 let myUnreadCount = 0;
 let lastReactionTimestamp = null; 
 
-// --- FUNÇÃO HELPER DE DATA (Novas) ---
+// NOVO: Som de notificação (áudio curto em Base64)
+const notificationSound = new Audio("data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjQ1LjEwMAAAAAAAAAAAAAAA//tEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAAFAAAAUCt2AAAAAAAAAAEAAAAAAAAAAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/vAkAABAASERPwAABAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgD/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgA/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgA/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgA/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB4ABAASEMrqAAAAAAAAAgD/vCAABAASEMrqAAAAAAAAAgD/vCIABAASEMrqAAAAAAAAAgA/vCIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vBIABAASEMrqAAAAAAAAAgD/vBQABAASEMrqAAAAAAAAAgD/vBYABAASEMrqAAAAAAAAAgD/vBgABAASEMrqAAAAAAAAAgD/vBoABAASEMrqAAAAAAAAAgD/vBwABAASEMrqAAAAAAAAAgD/vB44ABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEIAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/vDYABAASEMrqAAAAAAAAAgD/vDwABAASEMrqAAAAAAAAAgD/vEAAAgAANIAAAAADVTEwMEBQQEBAQEBAMEBAQD/NET/WgAAAAAATEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVAAAAAAAAAAAA//tEBAwAGkIfYAAANIAAAAADVTEwMEBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEST/LPostman/7.36.1//tEBAwAGkIfYAAANIAAAAADVTEwMEBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVTEST/LPostman/7.36.1");
+
+// --- FUNÇÃO HELPER DE DATA ---
+// (Sem alteração)
 function getTodayString() {
   const today = new Date();
   const year = today.getFullYear();
@@ -67,16 +70,13 @@ function getDateRange(startDate, endDate) {
   }
   return dates;
 }
-/**
- * NOVO: Formata um timestamp do Firebase para "HH:mm"
- */
 function formatTimestamp(fbTimestamp) {
   if (!fbTimestamp) return '';
   try {
     const date = fbTimestamp.toDate();
     const hours = date.getHours().toString().padStart(2, '0');
     const minutes = date.getMinutes().toString().padStart(2, '0');
-    return `${hours}:${minutes}`; // Ex: "16:23"
+    return `${hours}:${minutes}`;
   } catch (e) {
     console.error("Erro ao formatar timestamp:", e);
     return '';
@@ -86,7 +86,7 @@ function formatTimestamp(fbTimestamp) {
 // Espera o HTML carregar
 document.addEventListener('DOMContentLoaded', () => {
   
-  // (Definição dos elementos HTML...)
+  // (Definição dos elementos HTML... sem alteração)
   const userGate = document.getElementById('userGate');
   const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
@@ -105,28 +105,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatMessages = document.getElementById('chatMessages');
   const chatTextInput = document.getElementById('chatTextInput');
   const chatSendBtn = document.getElementById('chatSendBtn');
-  
-  // NOVO: Elementos de Upload
   const chatUploadBtn = document.getElementById('chatUploadBtn');
   const imageUploadInput = document.getElementById('imageUpload');
 
 
   // --- 1. SELEÇÃO DE UTILIZADOR ---
-  // (Função permanece a mesma, já inclui 'lastReaction: null')
+  // (Sem alteração)
   async function selectUser(userName) {
     if (!db) return;
-    
     currentUser = userName;
     otherUser = (currentUser === 'ithalo') ? 'matheus' : 'ithalo';
     chatRoomId = [currentUser, otherUser].sort().join('_');
-    
     if (currentUserDisplay) currentUserDisplay.textContent = userName;
-    
     userDocRef = db.collection("users").doc(currentUser); 
     otherUserDocRef = db.collection("users").doc(otherUser);
-    
     if (userGate) userGate.style.opacity = 0.5;
-
     try {
       const docSnap = await userDocRef.get();
       if (!docSnap.exists) {
@@ -137,22 +130,18 @@ document.addEventListener('DOMContentLoaded', () => {
           errorTopics: {},
           unreadMessagesFrom: {},
           dailyPerformance: {},
-          lastReaction: null // Campo para reações
+          lastReaction: null 
         });
       }
-
       if (userGate) userGate.style.display = 'none';
       if (mainContent) mainContent.style.display = 'block';
-      
       if (typeof loadSubjects === 'function') {
         loadSubjects(userName);
         loadPDFs();
       }
-      
       showTab('simulado');
       startPresenceHeartbeat();
       startChatListeners();
-      
     } catch (error) {
       console.error("Erro ao conectar no Firebase (Firestore):", error);
       alert("Erro de conexão. Verifique sua internet ou as regras do Firestore.");
@@ -164,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // --- 2. LÓGICA DE PRESENÇA (Heartbeat) ---
-  // (Permanece a mesma)
+  // (Sem alteração)
   function startPresenceHeartbeat() {
     updatePresence(); 
     setInterval(updatePresence, 20000); 
@@ -180,14 +169,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- 3. LÓGICA DE ESCUTA (Reações e Presença) ---
-  // (Permanece a mesma)
+  // --- 3. LÓGICA DE ESCUTA (MODIFICADA para Som de Notificação) ---
   function startChatListeners() {
     if (!otherUserDocRef || !userDocRef) return;
     
     stopPresenceListener(); 
     stopNotificationListener();
 
+    // Listener 1: Escuta o OUTRO utilizador (para status online E REAÇÕES)
     stopPresenceListener = otherUserDocRef.onSnapshot((doc) => {
       let isOnline = false;
       if (doc.exists) {
@@ -214,24 +203,37 @@ document.addEventListener('DOMContentLoaded', () => {
       updateChatHead();
     });
     
+    // Listener 2: Escuta o MEU documento (para mensagens não lidas)
     stopNotificationListener = userDocRef.onSnapshot((doc) => {
       let unreadCount = 0;
       if (doc.exists) {
          const data = doc.data();
          const unreadMap = data.unreadMessagesFrom || {};
          unreadCount = unreadMap[otherUser] || 0;
+         
+         // --- NOVO: LÓGICA DO SOM ---
+         // Se a nova contagem é MAIOR que a contagem antiga...
+         if (unreadCount > myUnreadCount) {
+           // ... e se o chat NÃO ESTIVER ABERTO...
+           if (chatWidget.style.display === 'none') {
+             notificationSound.play().catch(e => console.warn("Erro ao tocar som:", e));
+           }
+         }
+         // --- FIM DA LÓGICA DO SOM ---
       }
       myUnreadCount = unreadCount;
       updateChatHead();
     });
   }
 
-  // --- 4. LÓGICA DE UI DO CHAT ---
-  // (Função updateChatHead permanece a mesma)
+  // --- 4. LÓGICA DE UI DO CHAT (MODIFICADA para Status Online) ---
   function updateChatHead() {
+    const indicator = document.getElementById('chatOnlineIndicator');
+    
     if (otherUserIsOnline) {
       chatHead.style.display = 'block';
-      chatHeadImg.src = profilePics[otherUser]; 
+      chatHeadImg.src = profilePics[otherUser];
+      if (indicator) indicator.classList.add('online'); // NOVO: Ponto verde
       
       if (myUnreadCount > 0) {
         chatBadge.textContent = myUnreadCount;
@@ -241,6 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       chatHead.style.display = 'none';
+      if (indicator) indicator.classList.remove('online'); // NOVO: Ponto cinza
       if (chatWidget) chatWidget.style.display = 'none';
     }
   }
@@ -258,11 +261,8 @@ document.addEventListener('DOMContentLoaded', () => {
     stopMessagesListener(); 
   });
 
-  // --- 5. LÓGICA DE MENSAGENS (MUDANÇA GRANDE) ---
+  // --- 5. LÓGICA DE MENSAGENS (MODIFICADA para Recibo de "Enviado") ---
   
-  /**
-   * NOVO: listenForMessages agora renderiza avatares, horários e imagens
-   */
   function listenForMessages() {
     stopMessagesListener(); 
     
@@ -274,13 +274,12 @@ document.addEventListener('DOMContentLoaded', () => {
       querySnapshot.forEach((doc) => {
         const msg = doc.data();
         
-        // --- Cria os elementos ---
         const msgRow = document.createElement('div');
         msgRow.className = 'msg-row';
         
         const avatar = document.createElement('img');
         avatar.className = 'msg-avatar';
-        avatar.src = profilePics[msg.senderId] || profilePics['matheus']; // Fallback
+        avatar.src = profilePics[msg.senderId] || profilePics['matheus']; 
         
         const msgContent = document.createElement('div');
         msgContent.className = 'msg-content';
@@ -292,25 +291,31 @@ document.addEventListener('DOMContentLoaded', () => {
         timestamp.className = 'msg-timestamp';
         timestamp.textContent = formatTimestamp(msg.timestamp);
 
-        // --- Preenche o Balão (Texto ou Imagem) ---
+        // Preenche o Balão (Texto ou Imagem)
         if (msg.type === 'image') {
           bubble.classList.add('msg-image');
           const img = document.createElement('img');
           img.src = msg.imageUrl;
           img.alt = 'Imagem enviada';
-          // Permite abrir a imagem numa nova aba
           img.onclick = () => window.open(msg.imageUrl, '_blank');
           bubble.appendChild(img);
         } else {
           bubble.textContent = msg.text;
         }
         
-        // --- Define o Lado (Enviado ou Recebido) ---
+        // Define o Lado (Enviado ou Recebido)
         if (msg.senderId === currentUser) {
           msgRow.classList.add('sent');
+          
+          // NOVO: Adiciona o status de "Enviado" (✓)
+          const status = document.createElement('span');
+          status.className = 'msg-status';
+          status.textContent = '✓'; // (Para ✓✓ e ✓✓ azul, precisaríamos de mais lógica)
+          msgContent.appendChild(status); // Adiciona antes do horário
+          
         } else {
           msgRow.classList.add('received');
-          msgRow.appendChild(avatar); // Só mostra avatar nas recebidas
+          msgRow.appendChild(avatar); 
         }
         
         msgContent.appendChild(bubble);
@@ -323,34 +328,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  /**
-   * NOVO: Função centralizada para adicionar mensagens ao DB
-   */
+  // (Função addMessageToDb permanece a mesma)
   async function addMessageToDb(messageData) {
     if (!db || !chatRoomId || !otherUserDocRef) return;
     
-    // 1. Adiciona a mensagem à coleção
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
-      ...messageData, // text, senderId, type, imageUrl, etc.
+      ...messageData, 
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
     
-    // 2. Incrementa a contagem de "não lidos" DO OUTRO UTILIZADOR
     const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
     await otherUserDocRef.update({
       [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
     });
   }
   
-  /**
-   * MODIFICADO: Agora só envia texto
-   */
+  // (sendTextMessage permanece a mesma)
   async function sendTextMessage() {
     const text = chatTextInput.value;
     if (text.trim() === "") return;
     chatTextInput.value = ''; 
-
     await addMessageToDb({
       senderId: currentUser,
       text: text,
@@ -358,70 +356,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  /**
-   * NOVO: Lógica de Upload de Imagem
-   */
+  // (uploadImage permanece a mesma)
   async function uploadImage(file) {
     if (!file || !storage || !chatRoomId) return;
     
     const timestamp = Date.now();
     const storageRef = storage.ref(`chats/${chatRoomId}/${timestamp}-${file.name}`);
     
-    // Mostra um feedback temporário (opcional)
     const tempId = `temp_${timestamp}`;
     chatMessages.innerHTML += `<div class="msg-row sent"><div class="msg-content"><div class="msg-bubble" id="${tempId}">Enviando imagem...</div></div></div>`;
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
-    const task = storageRef.put(file); // Inicia o upload
+    const task = storageRef.put(file); 
     
-    // Escuta o progresso
     task.on('state_changed', 
-      (snapshot) => {
-        // Opcional: atualizar a barra de progresso
-      }, 
+      (snapshot) => {}, 
       (error) => {
         console.error("Erro no upload:", error);
         document.getElementById(tempId).textContent = "Falha no envio.";
       }, 
       async () => {
-        // Sucesso!
         const downloadURL = await task.snapshot.ref.getDownloadURL();
-        
-        // Envia a mensagem com a URL da imagem
         await addMessageToDb({
           senderId: currentUser,
           type: 'image',
           imageUrl: downloadURL
         });
-        
-        // Remove o balão temporário (o listener vai adicionar o balão real)
         const tempBubble = document.getElementById(tempId);
         if (tempBubble) tempBubble.closest('.msg-row').remove();
       }
     );
   }
 
-  // --- Novos Listeners para Upload ---
+  // (Listeners de Upload permanecem os mesmos)
   chatSendBtn.addEventListener('click', sendTextMessage);
   chatTextInput.addEventListener('keypress', (e) => { 
     if (e.key === 'Enter') sendTextMessage(); 
   });
-  
-  // Abre o seletor de ficheiros
   if (chatUploadBtn) chatUploadBtn.addEventListener('click', () => {
     if (imageUploadInput) imageUploadInput.click();
   });
-  
-  // Quando um ficheiro é selecionado
   if (imageUploadInput) imageUploadInput.addEventListener('change', (e) => {
     const file = e.target.files[0];
     if (file) {
       uploadImage(file);
     }
-    // Limpa o input para permitir o envio da mesma imagem novamente
     e.target.value = null; 
   });
-
 
   // --- FUNÇÕES DE REAÇÃO (sem alteração) ---
   window.sendQuizReaction = async (isCorrect) => { 
@@ -438,7 +419,6 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error("Erro ao enviar reação:", e);
     }
   };
-  
   function triggerEmojiFloat(type) {
     const emojiContainer = document.getElementById('emojiContainer');
     if (!emojiContainer) return;
@@ -456,8 +436,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- FUNÇÕES ANTIGAS (Salvamento, Abas, Desempenho) ---
+  // (Todas estas funções permanecem exatamente as mesmas)
   
-  // (saveQuestionProgress - sem alteração)
   window.saveQuestionProgress = async (questionData, isCorrect) => {
     if (!userDocRef) return; 
     const today = getTodayString();
@@ -480,7 +460,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // (showTab - sem alteração)
   function showTab(tabName) {
     if (tabName === 'simulado') {
       if (quizContainer) quizContainer.style.display = 'block';
@@ -496,7 +475,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-  // (loadPerformanceData - sem alteração)
   async function loadPerformanceData() {
     if (!userDocRef) return;
     const snap = await userDocRef.get();
@@ -608,6 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Função de Reset ---
   window.resetMyProgress = async () => {
+    // (Esta função permanece a mesma)
     if (!userDocRef || !currentUser) {
       console.error("ERRO: Por favor, faça login primeiro.");
       return;
