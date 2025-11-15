@@ -760,16 +760,22 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   align-items: center; 
 }
 
-.chat-input input {
+.chat-input textarea {
   flex: 1;
   border: none;
   padding: 12px;
   font-size: 0.95rem;
   outline: none;
   background: transparent;
-  min-width: 0; /* <<< CORREÇÃO DA BARRA DE ROLAGEM */
+  min-width: 0;
+  
+  /* --- NOVO: Estilos da Textarea --- */
+  font-family: "Poppins", sans-serif; /* Garante que a fonte é a mesma */
+  resize: none; /* Esconde o "puxador" de redimensionamento */
+  line-height: 1.5;
+  max-height: 100px; /* Limita o crescimento a ~5 linhas */
+  overflow-y: auto; /* Adiciona scroll DEPOIS de 5 linhas */
 }
-
 .chat-icon-btn {
   background: none;
   border: none;
@@ -877,6 +883,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   margin-top: 4px;
   padding: 0 8px;
 }
+
 
 
 
