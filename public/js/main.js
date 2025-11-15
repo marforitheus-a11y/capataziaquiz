@@ -8,7 +8,6 @@ let userAnswers = {};
 let lockSelection = false; 
 
 let subjectsIndex = []; 
-let selectedSubjects = []; 
 
 /* ====== Carregar Dados (API/JSON) ====== */
 
