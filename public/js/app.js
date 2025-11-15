@@ -49,6 +49,7 @@ let lastReactionTimestamp = null;
 
 // --- CORREÇÃO DO SOM ---
 // (Novo som de "ping", mais curto e fiável, em Base64 WAV)
+// Este som WAV é universalmente suportado, ao contrário do MP3 anterior.
 const notificationSound = new Audio("data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU..."); // O som completo é muito longo para mostrar aqui, mas está no ficheiro
 
 // --- FUNÇÃO HELPER DE DATA ---
