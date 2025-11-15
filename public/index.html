@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="challengeModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 10001; align-items: center; justify-content: center; padding: 20px;">
+  <div style="background: white; padding: 30px; border-radius: 12px; text-align: center; max-width: 400px; width: 100%;">
+    <h2 id="challengeTitle" style="margin-top: 0;">Desafio</h2>
+    <div id="challengeContent">
+      </div>
+  </div>
+</div>
 <div id="chatHead" class="chat-head" style="display: none;">
     <!-- A foto do outro utilizador aparecerá aqui -->
   <div id="chatOnlineIndicator" class="online-indicator"></div>
@@ -112,8 +119,9 @@
           <label for="questionCount" data-translate-key="questionCountLabel">Quantidade de questões</label>
           <input type="number" id="questionCount" min="1" placeholder="Ex: 5">
           <div class="button-row">
-            <button id="startBtn" data-translate-key="startButton">Iniciar Quiz</button>
-            <button id="clearSelection" class="button-ghost" data-translate-key="clearButton">Limpar</button>
+<button id="startBtn" data-translate-key="startButton">Iniciar Quiz</button>
+<button id="challengeBtn" class="button-ghost">Desafiar</button> <button id="clearSelection" class="button-ghost" data-translate-key="clearButton">Limpar</button>
+
           </div>
         </div>
       </div>
@@ -180,6 +188,7 @@
 
 </body>
 </html>
+
 
 
 
