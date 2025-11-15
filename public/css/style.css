@@ -886,6 +886,12 @@ word-wrap: break-word;  /* Quebra palavras longas */
   margin-top: 4px;
   padding: 0 8px;
 }
+.option.selected-challenge {
+  background: var(--primary-light) !important;
+  color: white;
+  font-weight: 600;
+}
+
 
 
 
