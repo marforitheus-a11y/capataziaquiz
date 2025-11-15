@@ -8,7 +8,7 @@ let quizMode = 'solo'; // NOVO: 'solo' ou 'challenge'
 let quizTimerInterval = null; // NOVO: Referência para o timer
 
 let subjectsIndex = []; 
-let selectedSubjects = []; 
+window.selectedSubjects = []; 
 
 /* ====== Carregar Dados (API/JSON) ====== */
 async function loadSubjects() {
