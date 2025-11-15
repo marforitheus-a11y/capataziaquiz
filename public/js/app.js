@@ -1,4 +1,4 @@
-/* ====== Lógica Principal (COM CHAT V5: RECIBOS DE LEITURA) ====== */
+/* ====== Lógica Principal (COM CHAT V5 + DESAFIO V1) ====== */
 
 // --- 1. CONFIGURAÇÃO DO FIREBASE ---
 const firebaseConfig = {
@@ -25,7 +25,7 @@ try {
   alert("Falha crítica ao conectar com o banco de dados. Verifique o console (F12) e a sua 'firebaseConfig' no app.js.");
 }
 
-// --- 3. LÓGICA DO APP (COM CHAT E REAÇÕES) ---
+// --- 3. LÓGICA DO APP (GLOBAL VARS) ---
 
 let currentUser = null;
 let otherUser = null; 
@@ -46,11 +46,14 @@ let otherUserIsOnline = false;
 let myUnreadCount = 0;
 let lastReactionTimestamp = null; 
 
-// NOVO: Som de notificação (WAV curto e fiável)
 const notificationSound = new Audio("data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA");
 
-// --- FUNÇÃO HELPER DE DATA ---
-// (Sem alteração)
+// --- NOVAS VARS GLOBAIS DE DESAFIO ---
+let activeChallengeId = null;
+let stopChallengeListener = () => {}; 
+
+
+// --- FUNÇÕES HELPER DE DATA ---
 function getTodayString() {
   const today = new Date();
   const year = today.getFullYear();
@@ -81,10 +84,13 @@ function formatTimestamp(fbTimestamp) {
   }
 }
 
-// Espera o HTML carregar
+// ======================================================
+// --- O "CÉREBRO" DO APP - TUDO DENTRO DE DOMCONTENTLOADED ---
+// ======================================================
+
 document.addEventListener('DOMContentLoaded', () => {
   
-  // (Definição dos elementos HTML... sem alteração)
+  // --- 1. Seleção de Elementos ---
   const userGate = document.getElementById('userGate');
   const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
@@ -105,10 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatSendBtn = document.getElementById('chatSendBtn');
   const chatUploadBtn = document.getElementById('chatUploadBtn');
   const imageUploadInput = document.getElementById('imageUpload');
+  
+  // NOVO ELEMENTO
+  const challengeBtn = document.getElementById('challengeBtn');
 
-
-  // --- 1. SELEÇÃO DE UTILIZADOR ---
-  // (Sem alteração)
+  
+  // --- 2. Lógica de Login ---
   async function selectUser(userName) {
     if (!db) return;
     currentUser = userName;
@@ -140,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       showTab('simulado');
       startPresenceHeartbeat();
       startChatListeners();
+      listenForChallenges(); // NOVO: Começa a ouvir por desafios
     } catch (error) {
       console.error("Erro ao conectar no Firebase (Firestore):", error);
       alert("Erro de conexão. Verifique sua internet ou as regras do Firestore.");
@@ -149,9 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (userIthalo) userIthalo.addEventListener('click', () => selectUser('ithalo'));
   if (userMatheus) userMatheus.addEventListener('click', () => selectUser('matheus'));
 
-
-  // --- 2. LÓGICA DE PRESENÇA (Heartbeat) ---
-  // (Sem alteração)
+  // --- 3. Lógica de Presença ---
   function startPresenceHeartbeat() {
     updatePresence(); 
     setInterval(updatePresence, 20000); 
@@ -166,265 +173,14 @@ document.addEventListener('DOMContentLoaded', () => {
       console.warn("Erro ao atualizar presença:", e.message);
     }
   }
-let activeChallengeId = null;
-let stopChallengeListener = () => {}; // Listener para o desafio ativo
 
-document.addEventListener('DOMContentLoaded', () => {
-    // ... (seu código de login existente) ...
-    
-    // NOVO: Adiciona o listener para o botão "Desafiar"
-    const challengeBtn = document.getElementById('challengeBtn');
-    if (challengeBtn) {
-        challengeBtn.addEventListener('click', showChallengeSetup);
-    }
-    
-    // Inicia o listener de convites
-    listenForChallenges();
-});
-
-/**
- * 1. Mostra a tela de configuração do desafio
- */
-function showChallengeSetup() {
-    if (selectedSubjects.length === 0) {
-        return alert('Selecione pelo menos uma matéria para desafiar!');
-    }
-    
-    const subjects = selectedSubjects.map(s => s.name).join(', ');
-    const count = document.getElementById('questionCount').value || 10;
-    
-    const content = `
-        <p>Você está desafiando <strong>${otherUser}</strong> para:</p>
-        <p><strong>Matérias:</strong> ${subjects}</p>
-        <p><strong>Questões:</strong> <input type="number" id="challenge_count" value="${count}" style="width: 80px;"></p>
-        <p><strong>Tempo (min):</strong> <input type="number" id="challenge_time" value="5" style="width: 80px;"></p>
-        <button id="sendChallengeBtn" style="width: 100%; margin-top: 15px; padding: 12px;">Enviar Desafio</button>
-    `;
-    showChallengeModal("Configurar Desafio", content);
-    
-    document.getElementById('sendChallengeBtn').onclick = () => {
-        const settings = {
-            subjects: selectedSubjects,
-            count: parseInt(document.getElementById('challenge_count').value),
-            time: parseInt(document.getElementById('challenge_time').value)
-        };
-        createChallenge(settings);
-    };
-}
-
-/**
- * 2. (CRIADOR) Cria o desafio no Firestore
- */
-async function createChallenge(settings) {
-    if (!db) return;
-    
-    const challengeId = `${[currentUser, otherUser].sort().join('_')}_${Date.now()}`;
-    activeChallengeId = challengeId;
-    
-    const challengeDoc = {
-        createdBy: currentUser,
-        invited: otherUser,
-        status: 'pending', // pendente
-        settings: settings,
-        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-        questions: [],
-        answers: { [currentUser]: {}, [otherUser]: {} },
-        finisher: null
-    };
-    
-    try {
-        await db.collection('challenges').doc(challengeId).set(challengeDoc);
-        showChallengeModal("Desafio Enviado", `<p>Aguardando ${otherUser} aceitar...</p>`);
-        // Inicia o listener do jogo (para saber quando ele aceitar e terminar)
-        listenToActiveGame(challengeId);
-    } catch (e) {
-        console.error("Erro ao criar desafio:", e);
-        alert("Erro ao enviar desafio.");
-        hideChallengeModal();
-    }
-}
-
-/**
- * 3. (AMBOS) Escuta por convites ou mudanças de estado
- */
-function listenForChallenges() {
-    if (!db) return;
-    
-    // Escuta por desafios ONDE EU SOU O CONVIDADO e que estão PENDENTES
-    db.collection('challenges')
-      .where('invited', '==', currentUser)
-      .where('status', '==', 'pending')
-      .onSnapshot((snapshot) => {
-          if (snapshot.empty) return;
-          
-          // Pega o convite mais recente
-          const challenge = snapshot.docs[snapshot.docs.length - 1].data();
-          const challengeId = snapshot.docs[snapshot.docs.length - 1].id;
-          
-          if (activeChallengeId) return; // Já estou em um desafio
-          
-          const settings = challenge.settings;
-          const content = `
-              <p><strong>${challenge.createdBy}</strong> está te desafiando!</p>
-              <p><strong>Matérias:</strong> ${settings.subjects.map(s => s.name).join(', ')}</p>
-              <p><strong>Questões:</strong> ${settings.count}</p>
-              <p><strong>Tempo:</strong> ${settings.time} min</p>
-              <div style="display:flex; gap: 10px; margin-top: 20px;">
-                  <button id="acceptBtn" style="flex:1; padding: 12px;">Aceitar</button>
-                  <button id="rejectBtn" class="button-ghost" style="flex:1; padding: 12px;">Recusar</button>
-              </div>
-          `;
-          showChallengeModal("Novo Desafio!", content);
-          
-          document.getElementById('acceptBtn').onclick = () => joinChallenge(challengeId);
-          document.getElementById('rejectBtn').onclick = () => rejectChallenge(challengeId);
-      });
-}
-
-/**
- * 4. (CONVIDADO) Aceita o desafio
- */
-async function joinChallenge(challengeId) {
-    activeChallengeId = challengeId;
-    showChallengeModal("Desafio Aceito!", `<p>Aguardando ${otherUser} iniciar e carregar as questões...</p>`);
-    
-    try {
-        // Atualiza o status para 'accepted' (aceito)
-        await db.collection('challenges').doc(challengeId).update({ status: 'accepted' });
-        // Inicia o listener do jogo (para receber as questões)
-        listenToActiveGame(challengeId);
-    } catch (e) {
-        console.error("Erro ao aceitar desafio:", e);
-    }
-}
-
-async function rejectChallenge(challengeId) {
-    await db.collection('challenges').doc(challengeId).update({ status: 'rejected' });
-    hideChallengeModal();
-}
-
-/**
- * 5. (CRIADOR) Carrega as questões e inicia o jogo
- */
-async function loadQuestionsAndStartGame(challengeId, settings) {
-    console.log("Criador está carregando as questões...");
-    try {
-        const allFilesData = await Promise.all(
-          settings.subjects.map(async (sub) => {
-            const questionsArray = await loadQuizFile(sub.file);
-            return questionsArray.map(question => ({
-              ...question,
-              sourceFile: sub.file 
-            }));
-          })
-        );
-        
-        const combinedQuestions = allFilesData.flat();
-        const shuffled = combinedQuestions.sort(() => 0.5 - Math.random());
-        const finalQuestions = shuffled.slice(0, settings.count);
-        
-        // Salva as questões no Firestore e inicia o jogo
-        await db.collection('challenges').doc(challengeId).update({
-            questions: finalQuestions,
-            status: 'active'
-        });
-        
-        // O listener 'listenToActiveGame' vai pegar essa mudança e iniciar
-        // o quiz na tela do criador (e do convidado)
-        
-    } catch (e) {
-        console.error("Erro ao carregar questões para o desafio:", e);
-    }
-}
-
-/**
- * 6. (AMBOS) Listener principal do jogo
- */
-function listenToActiveGame(challengeId) {
-    stopChallengeListener(); // Para qualquer listener antigo
-    
-    stopChallengeListener = db.collection('challenges').doc(challengeId).onSnapshot(async (doc) => {
-        if (!doc.exists) return;
-        
-        const challenge = doc.data();
-        
-        // --- EVENTO 1: CRIADOR VIU QUE O CONVIDADO ACEITOU ---
-        if (challenge.status === 'accepted' && challenge.createdBy === currentUser) {
-            // Eu sou o criador, o outro aceitou, preciso carregar as questões
-            await loadQuestionsAndStartGame(challengeId, challenge.settings);
-            // (A função acima vai mudar o status para 'active')
-        }
-        
-        // --- EVENTO 2: JOGO INICIOU (Status mudou para 'active') ---
-        if (challenge.status === 'active' && quizMode !== 'challenge') {
-            // O jogo começou, as questões estão prontas!
-            hideChallengeModal();
-            startChallengeQuiz(challenge.questions, challenge.settings.time * 60);
-        }
-        
-        // --- EVENTO 3: O OPONENTE TERMINOU (Status 'finished') ---
-        if (challenge.status === 'finished') {
-            stopChallengeListener();
-            stopTimer();
-            // Se eu ainda não terminei, envio minhas respostas atuais
-            if (quizMode === 'challenge') { 
-                await finishChallenge(userAnswers); 
-            }
-            // Mostra os resultados (função do ui.js)
-            showChallengeResults(challenge);
-        }
-    });
-}
-
-/**
- * 7. (AMBOS) Finaliza o desafio
- */
-window.finishChallenge = async (myAnswers) => {
-    if (!activeChallengeId || quizMode !== 'challenge') return;
-    
-    console.log("Enviando respostas do desafio...");
-    quizMode = 'finished'; // Impede duplo envio
-    
-    const challengeRef = db.collection('challenges').doc(activeChallengeId);
-    const answerKey = `answers.${currentUser}`;
-    
-    try {
-        // Atualiza as minhas respostas
-        await challengeRef.update({
-            [answerKey]: myAnswers
-        });
-        
-        // Verifica se eu sou o primeiro a terminar
-        const doc = await challengeRef.get();
-        const challenge = doc.data();
-        
-        if (!challenge.finisher) {
-            // Eu sou o primeiro!
-            await challengeRef.update({
-                finisher: currentUser
-            });
-        } else {
-            // Eu sou o segundo, o jogo acabou.
-            await challengeRef.update({
-                status: 'finished'
-            });
-            // O listener 'listenToActiveGame' vai pegar essa mudança
-            // e chamar a tela de resultados
-        }
-        
-    } catch (e) {
-        console.error("Erro ao finalizar desafio:", e);
-    }
-}
-  // --- 3. LÓGICA DE ESCUTA (MODIFICADA para Som) ---
-  // (Sem alteração em relação à v4)
+  // --- 4. Lógica de Chat ---
   function startChatListeners() {
     if (!otherUserDocRef || !userDocRef) return;
     
     stopPresenceListener(); 
     stopNotificationListener();
 
-    // Listener 1: Escuta o OUTRO utilizador (para status online E REAÇÕES)
     stopPresenceListener = otherUserDocRef.onSnapshot((doc) => {
       let isOnline = false;
       if (doc.exists) {
@@ -451,7 +207,6 @@ window.finishChallenge = async (myAnswers) => {
       updateChatHead();
     });
     
-    // Listener 2: Escuta o MEU documento (para mensagens não lidas)
     stopNotificationListener = userDocRef.onSnapshot((doc) => {
       let unreadCount = 0;
       if (doc.exists) {
@@ -470,8 +225,6 @@ window.finishChallenge = async (myAnswers) => {
     });
   }
 
-  // --- 4. LÓGICA DE UI DO CHAT (MODIFICADA para Status Online) ---
-  // (Sem alteração em relação à v4)
   function updateChatHead() {
     const indicator = document.getElementById('chatOnlineIndicator');
     
@@ -493,64 +246,46 @@ window.finishChallenge = async (myAnswers) => {
     }
   }
   
-  // (Abrir/Fechar Chat - MODIFICADO para marcar como lido)
-  chatHead.addEventListener('click', () => {
+  if (chatHead) chatHead.addEventListener('click', () => {
     chatWidget.style.display = 'flex';
     chatWithUser.textContent = `Chat com ${otherUser}`;
-    
     listenForMessages();
-    
-    // Zera a *minha* contagem de não lidos
     const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
     userDocRef.update({ [myUnreadMapKey]: 0 });
-    
-    // NOVO: Marca as mensagens *do outro* como lidas
     markMessagesAsRead();
   });
-  closeChatBtn.addEventListener('click', () => {
+  
+  if (closeChatBtn) closeChatBtn.addEventListener('click', () => {
     chatWidget.style.display = 'none';
     stopMessagesListener(); 
   });
 
-  // --- 5. LÓGICA DE MENSAGENS (MUDANÇA GRANDE) ---
-  
   function listenForMessages() {
     stopMessagesListener(); 
-    
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     const q = chatCollectionRef.orderBy("timestamp", "asc");
 
     stopMessagesListener = q.onSnapshot((querySnapshot) => {
       chatMessages.innerHTML = ''; 
-      
-      // NOVO: Array para guardar IDs de mensagens a serem marcadas como "Entregue"
       const messagesToMarkDelivered = [];
-      
       querySnapshot.forEach((doc) => {
         const msg = doc.data();
-        const msgId = doc.id; // Pega o ID do documento
-        
+        const msgId = doc.id; 
         const msgRow = document.createElement('div');
         msgRow.className = 'msg-row';
-        
         const avatar = document.createElement('img');
         avatar.className = 'msg-avatar';
         avatar.src = profilePics[msg.senderId] || profilePics['matheus']; 
-        
         const msgContent = document.createElement('div');
         msgContent.className = 'msg-content';
-        
         const bubble = document.createElement('div');
         bubble.className = 'msg-bubble';
-        
         const meta = document.createElement('div');
         meta.className = 'msg-meta';
-        
         const timestamp = document.createElement('span');
         timestamp.className = 'msg-timestamp';
         timestamp.textContent = formatTimestamp(msg.timestamp);
 
-        // Preenche o Balão (Texto ou Imagem)
         if (msg.type === 'image') {
           bubble.classList.add('msg-image');
           const img = document.createElement('img');
@@ -564,127 +299,82 @@ window.finishChallenge = async (myAnswers) => {
         
         meta.appendChild(timestamp);
         
-        // Define o Lado (Enviado ou Recebido)
         if (msg.senderId === currentUser) {
           msgRow.classList.add('sent');
-          
-          // NOVO: Lógica de Recibos de Leitura
           const status = document.createElement('span');
           status.className = 'msg-status';
-          
           if (msg.status === 'read') {
             status.textContent = '✓✓';
-            status.classList.add('read'); // Adiciona a classe para a cor azul
+            status.classList.add('read'); 
           } else if (msg.status === 'delivered') {
             status.textContent = '✓✓';
           } else {
-            status.textContent = '✓'; // Padrão é 'sent'
+            status.textContent = '✓'; 
           }
           meta.appendChild(status);
-          
         } else {
-          // A mensagem é RECEBIDA
           msgRow.classList.add('received');
           msgRow.appendChild(avatar);
-          
-          // NOVO: Se a mensagem recebida só foi "enviada",
-          // adiciona-a à fila para marcar como "entregue"
           if (msg.status === 'sent') {
             messagesToMarkDelivered.push(msgId);
           }
         }
-        
         msgContent.appendChild(bubble);
         msgContent.appendChild(meta);
         msgRow.appendChild(msgContent);
         chatMessages.appendChild(msgRow);
       });
-      
       chatMessages.scrollTop = chatMessages.scrollHeight;
-      
-      // NOVO: Se houver mensagens para marcar como "Entregue", faz isso agora
       if (messagesToMarkDelivered.length > 0) {
         markMessagesAsDelivered(messagesToMarkDelivered);
       }
     });
   }
   
-  /**
-   * NOVO: Marca um array de IDs de mensagens como "delivered"
-   */
   async function markMessagesAsDelivered(messageIds) {
-    console.log("Marcando como 'delivered':", messageIds);
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
-    
-    // O 'writeBatch' é mais eficiente para múltiplas atualizações
     const batch = db.batch();
     messageIds.forEach(id => {
       const msgRef = chatCollectionRef.doc(id);
       batch.update(msgRef, { status: 'delivered' });
     });
-    
     try {
       await batch.commit();
     } catch (e) {
-      console.error("Erro ao marcar mensagens como 'delivered':", e);
+      console.error("Erro ao marcar 'delivered':", e);
     }
   }
 
-  /**
-   * NOVO: Marca todas as mensagens do outro utilizador como "read"
-   */
   async function markMessagesAsRead() {
-    console.log("Marcando mensagens como 'read'...");
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
-    
-    // 1. Procura todas as mensagens ENVIADAS PELO OUTRO UTILIZADOR
-    //    que NÃO ESTEJAM marcadas como 'read'
-    const q = chatCollectionRef
-      .where('senderId', '==', otherUser)
-      .where('status', '!=', 'read');
-
+    const q = chatCollectionRef.where('senderId', '==', otherUser).where('status', '!=', 'read');
     try {
       const querySnapshot = await q.get();
-      
-      if (querySnapshot.empty) {
-        return; // Nenhuma mensagem para marcar
-      }
-
-      // 2. Atualiza todas elas de uma vez (batch)
+      if (querySnapshot.empty) return;
       const batch = db.batch();
       querySnapshot.forEach(doc => {
         batch.update(doc.ref, { status: 'read' });
       });
-      
       await batch.commit();
-      console.log(`${querySnapshot.size} mensagens marcadas como 'lidas'.`);
-      
     } catch (e) {
-      console.error("Erro ao marcar mensagens como 'read':", e);
+      console.error("Erro ao marcar 'read':", e);
     }
   }
   
-  
-  /**
-   * MODIFICADO: Adiciona 'status: sent'
-   */
   async function addMessageToDb(messageData) {
     if (!db || !chatRoomId || !otherUserDocRef) return;
-    
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
       ...messageData, 
-      status: 'sent', // <-- ADICIONADO
+      status: 'sent', 
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-    
     const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
     await otherUserDocRef.update({
       [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
     });
   }
   
-  // (sendTextMessage permanece a mesma)
   async function sendTextMessage() {
     const text = chatTextInput.value;
     if (text.trim() === "") return;
@@ -694,9 +384,9 @@ window.finishChallenge = async (myAnswers) => {
       text: text,
       type: 'text'
     });
+    chatTextInput.style.height = 'auto'; // Reseta altura
   }
   
-  // (uploadImage permanece a mesma)
   async function uploadImage(file) {
     if (!file || !storage || !chatRoomId) return;
     const timestamp = Date.now();
@@ -708,7 +398,6 @@ window.finishChallenge = async (myAnswers) => {
     task.on('state_changed', 
       (snapshot) => {}, 
       (error) => {
-        console.error("Erro no upload:", error);
         document.getElementById(tempId).textContent = "Falha no envio.";
       }, 
       async () => {
@@ -724,32 +413,24 @@ window.finishChallenge = async (myAnswers) => {
     );
   }
 
-  // (Listeners de Upload permanecem os mesmos)
- function autoGrowTextarea(e) {
-  const el = e.target;
-  el.style.height = 'auto';                  // reset
-  el.style.height = el.scrollHeight + 'px';  // ajusta à altura do conteúdo
-}
-
-// Função para enviar quando pressionar Enter
-function handleInput(e) {
-  // Enter envia — MAS Shift+Enter cria nova linha
-  if (e.key === 'Enter' && !e.shiftKey) {
-    e.preventDefault();
-    sendTextMessage();
-
-    // Resetar altura após enviar
-    e.target.style.height = 'auto';
+  function autoGrowTextarea(e) {
+    const el = e.target;
+    el.style.height = 'auto';                  
+    el.style.height = el.scrollHeight + 'px';  
   }
-}
 
-// Listeners
-chatSendBtn.addEventListener('click', sendTextMessage);
+  function handleInput(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendTextMessage();
+    }
+  }
 
-if (chatTextInput) {
-  chatTextInput.addEventListener('keypress', handleInput);
-  chatTextInput.addEventListener('input', autoGrowTextarea);
-}
+  if (chatSendBtn) chatSendBtn.addEventListener('click', sendTextMessage);
+  if (chatTextInput) {
+    chatTextInput.addEventListener('keypress', handleInput);
+    chatTextInput.addEventListener('input', autoGrowTextarea);
+  }
   if (chatUploadBtn) chatUploadBtn.addEventListener('click', () => {
     if (imageUploadInput) imageUploadInput.click();
   });
@@ -761,7 +442,7 @@ if (chatTextInput) {
     e.target.value = null; 
   });
 
-  // --- FUNÇÕES DE REAÇÃO (sem alteração) ---
+  // --- 5. Lógica de Reações ---
   window.sendQuizReaction = async (isCorrect) => { 
     if (!userDocRef) return; 
     const reaction = {
@@ -776,25 +457,20 @@ if (chatTextInput) {
       console.error("Erro ao enviar reação:", e);
     }
   };
+
   function triggerEmojiFloat(type) {
     const emojiContainer = document.getElementById('emojiContainer');
     if (!emojiContainer) return;
     const emoji = document.createElement('div');
     emoji.className = 'emoji-float';
-    if (type === 'correct') {
-      emoji.textContent = '👍';
-    } else {
-      emoji.textContent = '👎';
-    }
+    emoji.textContent = (type === 'correct') ? '👍' : '👎';
     emojiContainer.appendChild(emoji);
     setTimeout(() => {
       emoji.remove();
     }, 2000);
   }
 
-  // --- FUNÇÕES ANTIGAS (Salvamento, Abas, Desempenho) ---
-  // (Todas estas funções permanecem exatamente as mesmas)
-  
+  // --- 6. Lógica de Navegação e Desempenho ---
   window.saveQuestionProgress = async (questionData, isCorrect) => {
     if (!userDocRef) return; 
     const today = getTodayString();
@@ -805,13 +481,14 @@ if (chatTextInput) {
     updateData[`stats.${statsKey}`] = firebase.firestore.FieldValue.increment(1);
     updateData['stats.totalQuestions'] = firebase.firestore.FieldValue.increment(1);
     updateData[`dailyPerformance.${today}.${statsKey}`] = firebase.firestore.FieldValue.increment(1);
+    
+    // Assegura que getErrorTopic existe (está em helpers.js)
     if (!isCorrect && typeof getErrorTopic === 'function') {
       const topic = getErrorTopic(questionData, questionData.sourceFile);
       updateData[`errorTopics.${topic}`] = firebase.firestore.FieldValue.increment(1);
     }
     try {
       await userDocRef.update(updateData);
-      console.log("Progresso detalhado salvo na nuvem!");
     } catch (e) {
       console.error("Erro ao salvar progresso:", e);
     }
@@ -835,12 +512,10 @@ if (chatTextInput) {
   async function loadPerformanceData() {
     if (!userDocRef) return;
     const snap = await userDocRef.get();
-    if (!snap.exists) {
-      console.error("Documento do usuário não encontrado.");
-      return;
-    }
+    if (!snap.exists) return;
     const data = snap.data();
-    // (Gráfico 1 & 2 (Pizza e Barras))
+    
+    // Gráfico 1 & 2 (Pizza e Barras)
     const stats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
     const unanswered = stats.totalQuestions - stats.correct - stats.wrong;
     const pizzaCtx = document.getElementById('totalPizzaChart');
@@ -874,8 +549,7 @@ if (chatTextInput) {
               }]
             },
             options: {
-              responsive: true,
-              plugins: { legend: { display: false } },
+              responsive: true, plugins: { legend: { display: false } },
               scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
             }
           });
@@ -888,7 +562,7 @@ if (chatTextInput) {
             context.fillText('Ainda não há dados de tópicos de erro.', barCtx.width / 2, barCtx.height / 2);
         }
     }
-    // (Gráfico 3 (Linha do Tempo))
+    // Gráfico 3 (Linha do Tempo)
     const timeCtx = document.getElementById('timeSeriesChart');
     if (timeCtx) {
       if (window.Chart && timeCtx.chart) timeCtx.chart.destroy(); 
@@ -921,15 +595,11 @@ if (chatTextInput) {
           }]
         },
         options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
+          responsive: true, plugins: { legend: { display: false } },
           scales: {
             y: {
-              beginAtZero: true,
-              max: 100,
-              ticks: {
-                callback: function(value) { return value + '%' }
-              }
+              beginAtZero: true, max: 100,
+              ticks: { callback: function(value) { return value + '%' } }
             }
           }
         }
@@ -937,13 +607,269 @@ if (chatTextInput) {
     }
   }
 
-  // --- Listeners de Abas ---
   if (navSimulado) navSimulado.addEventListener('click', (e) => { e.preventDefault(); showTab('simulado'); });
   if (navDesempenho) navDesempenho.addEventListener('click', (e) => { e.preventDefault(); showTab('desempenho'); });
 
-  // --- Função de Reset ---
+  // --- 7. Lógica de Desafio (NOVO) ---
+  
+  if (challengeBtn) {
+    challengeBtn.addEventListener('click', showChallengeSetup);
+  }
+  
+  /**
+   * 1. Mostra a tela de configuração do desafio
+   */
+  function showChallengeSetup() {
+      if (!window.selectedSubjects || window.selectedSubjects.length === 0) {
+          return alert('Selecione pelo menos uma matéria para desafiar!');
+      }
+      
+      const subjects = window.selectedSubjects.map(s => s.name).join(', ');
+      const count = document.getElementById('questionCount').value || 10;
+      
+      const content = `
+          <p>Você está desafiando <strong>${otherUser}</strong> para:</p>
+          <p><strong>Matérias:</strong> ${subjects}</p>
+          <p><strong>Questões:</strong> <input type="number" id="challenge_count" value="${count}" style="width: 80px;"></p>
+          <p><strong>Tempo (min):</strong> <input type="number" id="challenge_time" value="5" style="width: 80px;"></p>
+          <button id="sendChallengeBtn" style="width: 100%; margin-top: 15px; padding: 12px;">Enviar Desafio</button>
+      `;
+      showChallengeModal("Configurar Desafio", content); // Função do ui.js
+      
+      // Adiciona o listener ao botão DENTRO do modal
+      document.getElementById('sendChallengeBtn').onclick = () => {
+          const settings = {
+              subjects: window.selectedSubjects, 
+              count: parseInt(document.getElementById('challenge_count').value),
+              time: parseInt(document.getElementById('challenge_time').value)
+          };
+          createChallenge(settings);
+      };
+  }
+
+  /**
+   * 2. (CRIADOR) Cria o desafio no Firestore
+   */
+  async function createChallenge(settings) {
+      if (!db) return;
+      
+      const challengeId = `${[currentUser, otherUser].sort().join('_')}_${Date.now()}`;
+      activeChallengeId = challengeId;
+      
+      const challengeDoc = {
+          createdBy: currentUser,
+          invited: otherUser,
+          status: 'pending', 
+          settings: settings,
+          createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+          questions: [],
+          answers: { [currentUser]: {}, [otherUser]: {} },
+          finisher: null
+      };
+      
+      try {
+          await db.collection('challenges').doc(challengeId).set(challengeDoc);
+          showChallengeModal("Desafio Enviado", `<p>Aguardando ${otherUser} aceitar...</p>`);
+          listenToActiveGame(challengeId); // Começa a ouvir o jogo
+      } catch (e) {
+          console.error("Erro ao criar desafio:", e);
+          alert("Erro ao enviar desafio.");
+          hideChallengeModal();
+      }
+  }
+
+  /**
+   * 3. (AMBOS) Escuta por convites ou mudanças de estado
+   */
+  function listenForChallenges() {
+      if (!db || !currentUser) return; 
+      
+      // Escuta por desafios ONDE EU SOU O CONVIDADO e que estão PENDENTES
+      db.collection('challenges')
+        .where('invited', '==', currentUser)
+        .where('status', '==', 'pending')
+        .onSnapshot((snapshot) => {
+            if (snapshot.empty) return;
+            
+            const challenge = snapshot.docs[snapshot.docs.length - 1].data();
+            const challengeId = snapshot.docs[snapshot.docs.length - 1].id;
+            
+            if (activeChallengeId) return; // Já estou em um desafio
+            
+            const settings = challenge.settings;
+            const content = `
+                <p><strong>${challenge.createdBy}</strong> está te desafiando!</p>
+                <p><strong>Matérias:</strong> ${settings.subjects.map(s => s.name).join(', ')}</p>
+                <p><strong>Questões:</strong> ${settings.count}</p>
+                <p><strong>Tempo:</strong> ${settings.time} min</p>
+                <div style="display:flex; gap: 10px; margin-top: 20px;">
+                    <button id="acceptBtn" style="flex:1; padding: 12px;">Aceitar</button>
+                    <button id="rejectBtn" class="button-ghost" style="flex:1; padding: 12px;">Recusar</button>
+                </div>
+            `;
+            showChallengeModal("Novo Desafio!", content); // Função do ui.js
+            
+            document.getElementById('acceptBtn').onclick = () => joinChallenge(challengeId);
+            document.getElementById('rejectBtn').onclick = () => rejectChallenge(challengeId);
+        });
+  }
+
+  /**
+   * 4. (CONVIDADO) Aceita o desafio
+   */
+  async function joinChallenge(challengeId) {
+      activeChallengeId = challengeId;
+      showChallengeModal("Desafio Aceito!", `<p>Aguardando ${otherUser} iniciar e carregar as questões...</p>`);
+      
+      try {
+          await db.collection('challenges').doc(challengeId).update({ status: 'accepted' });
+          listenToActiveGame(challengeId); // Começa a ouvir o jogo
+      } catch (e) {
+          console.error("Erro ao aceitar desafio:", e);
+      }
+  }
+
+  async function rejectChallenge(challengeId) {
+    if (!db) return;
+    try {
+        await db.collection('challenges').doc(challengeId).update({ status: 'rejected' });
+    } catch (e) {
+        console.error("Erro ao rejeitar desafio:", e);
+    }
+    hideChallengeModal();
+  }
+
+
+  /**
+   * 5. (CRIADOR) Carrega as questões e inicia o jogo
+   */
+  async function loadQuestionsAndStartGame(challengeId, settings) {
+      console.log("Criador está carregando as questões...");
+      try {
+          // A função 'loadQuizFile' está no 'main.js'
+          if (typeof loadQuizFile !== 'function') {
+              console.error("loadQuizFile não está definida!");
+              return;
+          }
+
+          const allFilesData = await Promise.all(
+            settings.subjects.map(async (sub) => {
+              const questionsArray = await loadQuizFile(sub.file); 
+              return questionsArray.map(question => ({
+                ...question,
+                sourceFile: sub.file 
+              }));
+            })
+          );
+          
+          const combinedQuestions = allFilesData.flat();
+          const shuffled = combinedQuestions.sort(() => 0.5 - Math.random());
+          const finalQuestions = shuffled.slice(0, settings.count);
+          
+          await db.collection('challenges').doc(challengeId).update({
+              questions: finalQuestions,
+              status: 'active'
+          });
+          
+      } catch (e) {
+          console.error("Erro ao carregar questões para o desafio:", e);
+      }
+  }
+
+  /**
+   * 6. (AMBOS) Listener principal do jogo
+   */
+  function listenToActiveGame(challengeId) {
+      stopChallengeListener(); 
+      
+      stopChallengeListener = db.collection('challenges').doc(challengeId).onSnapshot(async (doc) => {
+          if (!doc.exists) {
+            console.warn("Desafio foi deletado.");
+            stopChallengeListener();
+            return;
+          }
+          
+          const challenge = doc.data();
+          
+          // EVENTO 1: CRIADOR VIU QUE O CONVIDADO ACEITOU
+          if (challenge.status === 'accepted' && challenge.createdBy === currentUser) {
+              await loadQuestionsAndStartGame(challengeId, challenge.settings);
+          }
+          
+          // EVENTO 2: JOGO INICIOU (Status mudou para 'active')
+          // A var 'quizMode' vem do 'main.js'
+          if (challenge.status === 'active' && quizMode !== 'challenge') {
+              hideChallengeModal(); // Função do ui.js
+              // Função do main.js
+              startChallengeQuiz(challenge.questions, challenge.settings.time * 60); 
+          }
+          
+          // EVENTO 3: O OPONENTE TERMINOU (Status 'finished')
+          if (challenge.status === 'finished') {
+              stopChallengeListener();
+              stopTimer(); // Função do main.js
+              
+              if (quizMode === 'challenge') { 
+                  // 'userAnswers' vem do main.js
+                  await window.finishChallenge(userAnswers); 
+              }
+              
+              showChallengeResults(challenge); // Função do ui.js
+          }
+      });
+  }
+
+  /**
+   * 7. (AMBOS) Finaliza o desafio (exposto globalmente)
+   */
+  window.finishChallenge = async (myAnswers) => {
+      if (!activeChallengeId || (quizMode !== 'challenge' && quizMode !== 'finished')) {
+          if (quizMode !== 'finished') {
+             console.warn("finishChallenge chamado mas o modo não é 'challenge'");
+          }
+          return; 
+      }
+      
+      // Evita duplo envio
+      if (quizMode === 'finished') return; 
+      
+      console.log("Enviando respostas do desafio...");
+      quizMode = 'finished'; // Marca como finalizado localmente
+      
+      const challengeRef = db.collection('challenges').doc(activeChallengeId);
+      const answerKey = `answers.${currentUser}`;
+      
+      try {
+          await challengeRef.update({
+              [answerKey]: myAnswers
+          });
+          
+          const doc = await challengeRef.get();
+          if (!doc.exists) return; 
+          const challenge = doc.data();
+          
+          if (!challenge.finisher) {
+              // Eu sou o primeiro!
+              await challengeRef.update({
+                  finisher: currentUser
+              });
+              // Agora eu espero o listener (listenToActiveGame) me avisar quando o outro terminar
+          } else {
+              // Eu sou o segundo, o jogo acabou.
+              await challengeRef.update({
+                  status: 'finished'
+              });
+              // O listener vai pegar essa mudança e chamar showChallengeResults
+          }
+          
+      } catch (e) {
+          console.error("Erro ao finalizar desafio:", e);
+      }
+  }
+
+
+  // --- 8. Função de Reset (Miscelânea) ---
   window.resetMyProgress = async () => {
-    // (Esta função permanece a mesma)
     if (!userDocRef || !currentUser) {
       console.error("ERRO: Por favor, faça login primeiro.");
       return;
@@ -970,4 +896,4 @@ if (chatTextInput) {
     };
   };
 
-});
+}); // <-- FIM DO DOMCONTENTLOADED
