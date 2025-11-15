@@ -166,7 +166,256 @@ document.addEventListener('DOMContentLoaded', () => {
       console.warn("Erro ao atualizar presença:", e.message);
     }
   }
+let activeChallengeId = null;
+let stopChallengeListener = () => {}; // Listener para o desafio ativo
 
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (seu código de login existente) ...
+    
+    // NOVO: Adiciona o listener para o botão "Desafiar"
+    const challengeBtn = document.getElementById('challengeBtn');
+    if (challengeBtn) {
+        challengeBtn.addEventListener('click', showChallengeSetup);
+    }
+    
+    // Inicia o listener de convites
+    listenForChallenges();
+});
+
+/**
+ * 1. Mostra a tela de configuração do desafio
+ */
+function showChallengeSetup() {
+    if (selectedSubjects.length === 0) {
+        return alert('Selecione pelo menos uma matéria para desafiar!');
+    }
+    
+    const subjects = selectedSubjects.map(s => s.name).join(', ');
+    const count = document.getElementById('questionCount').value || 10;
+    
+    const content = `
+        <p>Você está desafiando <strong>${otherUser}</strong> para:</p>
+        <p><strong>Matérias:</strong> ${subjects}</p>
+        <p><strong>Questões:</strong> <input type="number" id="challenge_count" value="${count}" style="width: 80px;"></p>
+        <p><strong>Tempo (min):</strong> <input type="number" id="challenge_time" value="5" style="width: 80px;"></p>
+        <button id="sendChallengeBtn" style="width: 100%; margin-top: 15px; padding: 12px;">Enviar Desafio</button>
+    `;
+    showChallengeModal("Configurar Desafio", content);
+    
+    document.getElementById('sendChallengeBtn').onclick = () => {
+        const settings = {
+            subjects: selectedSubjects,
+            count: parseInt(document.getElementById('challenge_count').value),
+            time: parseInt(document.getElementById('challenge_time').value)
+        };
+        createChallenge(settings);
+    };
+}
+
+/**
+ * 2. (CRIADOR) Cria o desafio no Firestore
+ */
+async function createChallenge(settings) {
+    if (!db) return;
+    
+    const challengeId = `${[currentUser, otherUser].sort().join('_')}_${Date.now()}`;
+    activeChallengeId = challengeId;
+    
+    const challengeDoc = {
+        createdBy: currentUser,
+        invited: otherUser,
+        status: 'pending', // pendente
+        settings: settings,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+        questions: [],
+        answers: { [currentUser]: {}, [otherUser]: {} },
+        finisher: null
+    };
+    
+    try {
+        await db.collection('challenges').doc(challengeId).set(challengeDoc);
+        showChallengeModal("Desafio Enviado", `<p>Aguardando ${otherUser} aceitar...</p>`);
+        // Inicia o listener do jogo (para saber quando ele aceitar e terminar)
+        listenToActiveGame(challengeId);
+    } catch (e) {
+        console.error("Erro ao criar desafio:", e);
+        alert("Erro ao enviar desafio.");
+        hideChallengeModal();
+    }
+}
+
+/**
+ * 3. (AMBOS) Escuta por convites ou mudanças de estado
+ */
+function listenForChallenges() {
+    if (!db) return;
+    
+    // Escuta por desafios ONDE EU SOU O CONVIDADO e que estão PENDENTES
+    db.collection('challenges')
+      .where('invited', '==', currentUser)
+      .where('status', '==', 'pending')
+      .onSnapshot((snapshot) => {
+          if (snapshot.empty) return;
+          
+          // Pega o convite mais recente
+          const challenge = snapshot.docs[snapshot.docs.length - 1].data();
+          const challengeId = snapshot.docs[snapshot.docs.length - 1].id;
+          
+          if (activeChallengeId) return; // Já estou em um desafio
+          
+          const settings = challenge.settings;
+          const content = `
+              <p><strong>${challenge.createdBy}</strong> está te desafiando!</p>
+              <p><strong>Matérias:</strong> ${settings.subjects.map(s => s.name).join(', ')}</p>
+              <p><strong>Questões:</strong> ${settings.count}</p>
+              <p><strong>Tempo:</strong> ${settings.time} min</p>
+              <div style="display:flex; gap: 10px; margin-top: 20px;">
+                  <button id="acceptBtn" style="flex:1; padding: 12px;">Aceitar</button>
+                  <button id="rejectBtn" class="button-ghost" style="flex:1; padding: 12px;">Recusar</button>
+              </div>
+          `;
+          showChallengeModal("Novo Desafio!", content);
+          
+          document.getElementById('acceptBtn').onclick = () => joinChallenge(challengeId);
+          document.getElementById('rejectBtn').onclick = () => rejectChallenge(challengeId);
+      });
+}
+
+/**
+ * 4. (CONVIDADO) Aceita o desafio
+ */
+async function joinChallenge(challengeId) {
+    activeChallengeId = challengeId;
+    showChallengeModal("Desafio Aceito!", `<p>Aguardando ${otherUser} iniciar e carregar as questões...</p>`);
+    
+    try {
+        // Atualiza o status para 'accepted' (aceito)
+        await db.collection('challenges').doc(challengeId).update({ status: 'accepted' });
+        // Inicia o listener do jogo (para receber as questões)
+        listenToActiveGame(challengeId);
+    } catch (e) {
+        console.error("Erro ao aceitar desafio:", e);
+    }
+}
+
+async function rejectChallenge(challengeId) {
+    await db.collection('challenges').doc(challengeId).update({ status: 'rejected' });
+    hideChallengeModal();
+}
+
+/**
+ * 5. (CRIADOR) Carrega as questões e inicia o jogo
+ */
+async function loadQuestionsAndStartGame(challengeId, settings) {
+    console.log("Criador está carregando as questões...");
+    try {
+        const allFilesData = await Promise.all(
+          settings.subjects.map(async (sub) => {
+            const questionsArray = await loadQuizFile(sub.file);
+            return questionsArray.map(question => ({
+              ...question,
+              sourceFile: sub.file 
+            }));
+          })
+        );
+        
+        const combinedQuestions = allFilesData.flat();
+        const shuffled = combinedQuestions.sort(() => 0.5 - Math.random());
+        const finalQuestions = shuffled.slice(0, settings.count);
+        
+        // Salva as questões no Firestore e inicia o jogo
+        await db.collection('challenges').doc(challengeId).update({
+            questions: finalQuestions,
+            status: 'active'
+        });
+        
+        // O listener 'listenToActiveGame' vai pegar essa mudança e iniciar
+        // o quiz na tela do criador (e do convidado)
+        
+    } catch (e) {
+        console.error("Erro ao carregar questões para o desafio:", e);
+    }
+}
+
+/**
+ * 6. (AMBOS) Listener principal do jogo
+ */
+function listenToActiveGame(challengeId) {
+    stopChallengeListener(); // Para qualquer listener antigo
+    
+    stopChallengeListener = db.collection('challenges').doc(challengeId).onSnapshot(async (doc) => {
+        if (!doc.exists) return;
+        
+        const challenge = doc.data();
+        
+        // --- EVENTO 1: CRIADOR VIU QUE O CONVIDADO ACEITOU ---
+        if (challenge.status === 'accepted' && challenge.createdBy === currentUser) {
+            // Eu sou o criador, o outro aceitou, preciso carregar as questões
+            await loadQuestionsAndStartGame(challengeId, challenge.settings);
+            // (A função acima vai mudar o status para 'active')
+        }
+        
+        // --- EVENTO 2: JOGO INICIOU (Status mudou para 'active') ---
+        if (challenge.status === 'active' && quizMode !== 'challenge') {
+            // O jogo começou, as questões estão prontas!
+            hideChallengeModal();
+            startChallengeQuiz(challenge.questions, challenge.settings.time * 60);
+        }
+        
+        // --- EVENTO 3: O OPONENTE TERMINOU (Status 'finished') ---
+        if (challenge.status === 'finished') {
+            stopChallengeListener();
+            stopTimer();
+            // Se eu ainda não terminei, envio minhas respostas atuais
+            if (quizMode === 'challenge') { 
+                await finishChallenge(userAnswers); 
+            }
+            // Mostra os resultados (função do ui.js)
+            showChallengeResults(challenge);
+        }
+    });
+}
+
+/**
+ * 7. (AMBOS) Finaliza o desafio
+ */
+window.finishChallenge = async (myAnswers) => {
+    if (!activeChallengeId || quizMode !== 'challenge') return;
+    
+    console.log("Enviando respostas do desafio...");
+    quizMode = 'finished'; // Impede duplo envio
+    
+    const challengeRef = db.collection('challenges').doc(activeChallengeId);
+    const answerKey = `answers.${currentUser}`;
+    
+    try {
+        // Atualiza as minhas respostas
+        await challengeRef.update({
+            [answerKey]: myAnswers
+        });
+        
+        // Verifica se eu sou o primeiro a terminar
+        const doc = await challengeRef.get();
+        const challenge = doc.data();
+        
+        if (!challenge.finisher) {
+            // Eu sou o primeiro!
+            await challengeRef.update({
+                finisher: currentUser
+            });
+        } else {
+            // Eu sou o segundo, o jogo acabou.
+            await challengeRef.update({
+                status: 'finished'
+            });
+            // O listener 'listenToActiveGame' vai pegar essa mudança
+            // e chamar a tela de resultados
+        }
+        
+    } catch (e) {
+        console.error("Erro ao finalizar desafio:", e);
+    }
+}
   // --- 3. LÓGICA DE ESCUTA (MODIFICADA para Som) ---
   // (Sem alteração em relação à v4)
   function startChatListeners() {
