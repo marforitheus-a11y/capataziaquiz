@@ -842,6 +842,47 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
     transform: translateX(-50%) translateY(-120px); /* Flutua 120px para cima */
   }
 }
+/* Ponto de Status (Online/Offline) */
+.online-indicator {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: #bdc3c7; /* Cinza (offline) por padrão */
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+/* Cor verde quando a classe 'online' é adicionada */
+.online-indicator.online {
+  background-color: #2ecc71; /* Verde (online) */
+}
+
+/* Recibo de Leitura (Checkmark) */
+.msg-status {
+  font-size: 0.8rem;
+  color: var(--muted);
+  align-self: flex-end; /* Alinha com o horário */
+  margin-top: -2px; /* Puxa para mais perto do balão */
+  padding-right: 8px;
+}
+
+/* (Ajuste para o balão enviado) */
+.msg-row.sent .msg-content {
+  /* Alinha o balão, horário E status à direita */
+  align-items: flex-end; 
+}
+
+/* (Ajuste para o horário da mensagem) */
+.msg-timestamp {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 4px;
+  padding: 0 8px;
+}
 
 
 
