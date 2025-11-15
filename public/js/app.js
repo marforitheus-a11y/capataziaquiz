@@ -476,28 +476,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // (Listeners de Upload permanecem os mesmos)
-  function autoGrowTextarea(e) {
+ function autoGrowTextarea(e) {
   const el = e.target;
-  el.style.height = 'auto'; // Encolhe para recalcular
-  el.style.height = (el.scrollHeight) + 'px'; // Cresce até ao tamanho do texto
+  el.style.height = 'auto';                  // reset
+  el.style.height = el.scrollHeight + 'px';  // ajusta à altura do conteúdo
 }
 
-// Função de enviar (agora o Enter envia)
+// Função para enviar quando pressionar Enter
 function handleInput(e) {
-  // Se for 'Enter' E 'Shift' NÃO estiver premido
+  // Enter envia — MAS Shift+Enter cria nova linha
   if (e.key === 'Enter' && !e.shiftKey) {
-    e.preventDefault(); // Impede a quebra de linha
+    e.preventDefault();
     sendTextMessage();
-    e.target.style.height = 'auto'; // Encolhe o input após enviar
+
+    // Resetar altura após enviar
+    e.target.style.height = 'auto';
   }
 }
 
-// Adiciona os listeners aos elementos
+// Listeners
 chatSendBtn.addEventListener('click', sendTextMessage);
 
 if (chatTextInput) {
   chatTextInput.addEventListener('keypress', handleInput);
-  chatTextInput.addEventListener('input', autoGrowTextarea); // Auto-crescimento
+  chatTextInput.addEventListener('input', autoGrowTextarea);
 }
   if (chatUploadBtn) chatUploadBtn.addEventListener('click', () => {
     if (imageUploadInput) imageUploadInput.click();
