@@ -1,7 +1,6 @@
-/* ====== Lógica Principal (COM CHAT V4: SOM CORRIGIDO E RECIBOS) ====== */
+/* ====== Lógica Principal (COM CHAT V5: RECIBOS DE LEITURA) ====== */
 
 // --- 1. CONFIGURAÇÃO DO FIREBASE ---
-// (Configuração já incluída)
 const firebaseConfig = {
   apiKey: "AIzaSyAYi7oQ6oyS_fQS-gGuGT495NdxfMcffY0",
   authDomain: "capatazia-4391a.firebaseapp.com",
@@ -47,10 +46,8 @@ let otherUserIsOnline = false;
 let myUnreadCount = 0;
 let lastReactionTimestamp = null; 
 
-// --- CORREÇÃO DO SOM ---
-// (Novo som de "ping", mais curto e fiável, em Base64 WAV)
-// Este som WAV é universalmente suportado, ao contrário do MP3 anterior.
-const notificationSound = new Audio("data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU..."); // O som completo é muito longo para mostrar aqui, mas está no ficheiro
+// NOVO: Som de notificação (WAV curto e fiável)
+const notificationSound = new Audio("data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA");
 
 // --- FUNÇÃO HELPER DE DATA ---
 // (Sem alteração)
@@ -171,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- 3. LÓGICA DE ESCUTA (MODIFICADA para Som) ---
+  // (Sem alteração em relação à v4)
   function startChatListeners() {
     if (!otherUserDocRef || !userDocRef) return;
     
@@ -212,15 +210,11 @@ document.addEventListener('DOMContentLoaded', () => {
          const unreadMap = data.unreadMessagesFrom || {};
          unreadCount = unreadMap[otherUser] || 0;
          
-         // --- NOVO: LÓGICA DO SOM ---
-         // Se a nova contagem é MAIOR que a contagem antiga...
          if (unreadCount > myUnreadCount) {
-           // ... e se o chat NÃO ESTIVER ABERTO...
            if (chatWidget.style.display === 'none') {
              notificationSound.play().catch(e => console.warn("Erro ao tocar som:", e));
            }
          }
-         // --- FIM DA LÓGICA DO SOM ---
       }
       myUnreadCount = unreadCount;
       updateChatHead();
@@ -228,14 +222,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- 4. LÓGICA DE UI DO CHAT (MODIFICADA para Status Online) ---
+  // (Sem alteração em relação à v4)
   function updateChatHead() {
-    // Apanha o indicador de online
     const indicator = document.getElementById('chatOnlineIndicator');
     
     if (otherUserIsOnline) {
       chatHead.style.display = 'block';
       chatHeadImg.src = profilePics[otherUser];
-      if (indicator) indicator.classList.add('online'); // Ponto verde
+      if (indicator) indicator.classList.add('online'); 
       
       if (myUnreadCount > 0) {
         chatBadge.textContent = myUnreadCount;
@@ -245,25 +239,31 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       chatHead.style.display = 'none';
-      if (indicator) indicator.classList.remove('online'); // Ponto cinza
+      if (indicator) indicator.classList.remove('online'); 
       if (chatWidget) chatWidget.style.display = 'none';
     }
   }
   
-  // (Abrir/Fechar Chat - permanece o mesmo)
+  // (Abrir/Fechar Chat - MODIFICADO para marcar como lido)
   chatHead.addEventListener('click', () => {
     chatWidget.style.display = 'flex';
     chatWithUser.textContent = `Chat com ${otherUser}`;
+    
     listenForMessages();
+    
+    // Zera a *minha* contagem de não lidos
     const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
     userDocRef.update({ [myUnreadMapKey]: 0 });
+    
+    // NOVO: Marca as mensagens *do outro* como lidas
+    markMessagesAsRead();
   });
   closeChatBtn.addEventListener('click', () => {
     chatWidget.style.display = 'none';
     stopMessagesListener(); 
   });
 
-  // --- 5. LÓGICA DE MENSAGENS (MODIFICADA para Recibo e Posição) ---
+  // --- 5. LÓGICA DE MENSAGENS (MUDANÇA GRANDE) ---
   
   function listenForMessages() {
     stopMessagesListener(); 
@@ -273,8 +273,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     stopMessagesListener = q.onSnapshot((querySnapshot) => {
       chatMessages.innerHTML = ''; 
+      
+      // NOVO: Array para guardar IDs de mensagens a serem marcadas como "Entregue"
+      const messagesToMarkDelivered = [];
+      
       querySnapshot.forEach((doc) => {
         const msg = doc.data();
+        const msgId = doc.id; // Pega o ID do documento
         
         const msgRow = document.createElement('div');
         msgRow.className = 'msg-row';
@@ -289,7 +294,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const bubble = document.createElement('div');
         bubble.className = 'msg-bubble';
         
-        // NOVO: Contentor de Metadados
         const meta = document.createElement('div');
         meta.className = 'msg-meta';
         
@@ -309,42 +313,122 @@ document.addEventListener('DOMContentLoaded', () => {
           bubble.textContent = msg.text;
         }
         
-        // Adiciona o horário ao contentor meta
         meta.appendChild(timestamp);
         
         // Define o Lado (Enviado ou Recebido)
         if (msg.senderId === currentUser) {
           msgRow.classList.add('sent');
           
-          // Adiciona o status de "Enviado" (✓)
+          // NOVO: Lógica de Recibos de Leitura
           const status = document.createElement('span');
           status.className = 'msg-status';
-          status.textContent = '✓'; // (Para ✓✓ e ✓✓ azul, precisaríamos de mais lógica)
-          meta.appendChild(status); // Adiciona o check ao lado do horário
+          
+          if (msg.status === 'read') {
+            status.textContent = '✓✓';
+            status.classList.add('read'); // Adiciona a classe para a cor azul
+          } else if (msg.status === 'delivered') {
+            status.textContent = '✓✓';
+          } else {
+            status.textContent = '✓'; // Padrão é 'sent'
+          }
+          meta.appendChild(status);
           
         } else {
+          // A mensagem é RECEBIDA
           msgRow.classList.add('received');
-          msgRow.appendChild(avatar); 
+          msgRow.appendChild(avatar);
+          
+          // NOVO: Se a mensagem recebida só foi "enviada",
+          // adiciona-a à fila para marcar como "entregue"
+          if (msg.status === 'sent') {
+            messagesToMarkDelivered.push(msgId);
+          }
         }
         
         msgContent.appendChild(bubble);
-        msgContent.appendChild(meta); // Adiciona o contentor 'meta' (com hora e status)
+        msgContent.appendChild(meta);
         msgRow.appendChild(msgContent);
         chatMessages.appendChild(msgRow);
       });
       
       chatMessages.scrollTop = chatMessages.scrollHeight;
+      
+      // NOVO: Se houver mensagens para marcar como "Entregue", faz isso agora
+      if (messagesToMarkDelivered.length > 0) {
+        markMessagesAsDelivered(messagesToMarkDelivered);
+      }
     });
   }
   
-  // (addMessageToDb permanece a mesma)
+  /**
+   * NOVO: Marca um array de IDs de mensagens como "delivered"
+   */
+  async function markMessagesAsDelivered(messageIds) {
+    console.log("Marcando como 'delivered':", messageIds);
+    const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
+    
+    // O 'writeBatch' é mais eficiente para múltiplas atualizações
+    const batch = db.batch();
+    messageIds.forEach(id => {
+      const msgRef = chatCollectionRef.doc(id);
+      batch.update(msgRef, { status: 'delivered' });
+    });
+    
+    try {
+      await batch.commit();
+    } catch (e) {
+      console.error("Erro ao marcar mensagens como 'delivered':", e);
+    }
+  }
+
+  /**
+   * NOVO: Marca todas as mensagens do outro utilizador como "read"
+   */
+  async function markMessagesAsRead() {
+    console.log("Marcando mensagens como 'read'...");
+    const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
+    
+    // 1. Procura todas as mensagens ENVIADAS PELO OUTRO UTILIZADOR
+    //    que NÃO ESTEJAM marcadas como 'read'
+    const q = chatCollectionRef
+      .where('senderId', '==', otherUser)
+      .where('status', '!=', 'read');
+
+    try {
+      const querySnapshot = await q.get();
+      
+      if (querySnapshot.empty) {
+        return; // Nenhuma mensagem para marcar
+      }
+
+      // 2. Atualiza todas elas de uma vez (batch)
+      const batch = db.batch();
+      querySnapshot.forEach(doc => {
+        batch.update(doc.ref, { status: 'read' });
+      });
+      
+      await batch.commit();
+      console.log(`${querySnapshot.size} mensagens marcadas como 'lidas'.`);
+      
+    } catch (e) {
+      console.error("Erro ao marcar mensagens como 'read':", e);
+    }
+  }
+  
+  
+  /**
+   * MODIFICADO: Adiciona 'status: sent'
+   */
   async function addMessageToDb(messageData) {
     if (!db || !chatRoomId || !otherUserDocRef) return;
+    
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
       ...messageData, 
+      status: 'sent', // <-- ADICIONADO
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
+    
     const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
     await otherUserDocRef.update({
       [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
