@@ -715,7 +715,11 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 .msg-status {
   font-size: 0.85rem;
   color: var(--muted);
-  /* (O ✓✓ azul teria: color: #53bdeb;) */
+}
+
+/* NOVO: Cor do check "Lido" (Azul WhatsApp) */
+.msg-status.read {
+  color: #53bdeb;
 }
 
 /* --- Estilos de Enviado e Recebido --- */
@@ -871,6 +875,7 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   margin-top: 4px;
   padding: 0 8px;
 }
+
 
 
 
