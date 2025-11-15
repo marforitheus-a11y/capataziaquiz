@@ -1,0 +1,227 @@
+[
+  {
+    "id": "nr06_cenario_01",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um trabalhador portuário, que utiliza óculos de grau, é designado para uma atividade de esmerilhamento. O supervisor lhe entrega um par de óculos de segurança padrão (não de sobrepor) e informa que, se ele quiser um EPI adaptado à sua prescrição, deverá arcar com os custos. Esta conduta da organização está:",
+    "alternativas": {
+      "A": "Correta, pois a organização forneceu o EPI padrão gratuitamente.",
+      "B": "Correta, pois a necessidade de correção visual é um problema pessoal do trabalhador.",
+      "C": "Incorreta, pois a seleção do EPI deve garantir a adaptação ou o uso de sobreposição sem ônus para o empregado.",
+      "D": "Incorreta, pois o trabalhador deveria ter providenciado seus próprios óculos de segurança com grau."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o item 6.5.4 da NR-06, a seleção do EPI deve 'considerar o uso de óculos de segurança de sobrepor em conjunto com lentes corretivas ou a adaptação do EPI, sem ônus para o empregado', quando houver necessidade de correção visual."
+  },
+  {
+    "id": "nr06_cenario_02",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Durante uma operação de solda, o capacete de proteção de um trabalhador sofre uma fissura após o impacto de um objeto. O trabalhador comunica imediatamente o fato ao seu Capataz. O Capataz informa que não há capacetes sobressalentes no estoque e orienta o trabalhador a 'tomar cuidado' e continuar a operação até o fim do turno. A organização falhou em qual responsabilidade?",
+    "alternativas": {
+      "A": "Registrar o fornecimento do EPI.",
+      "B": "Substituir imediatamente o EPI danificado.",
+      "C": "Orientar e treinar o empregado sobre o uso.",
+      "D": "Exigir o uso do EPI."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. De acordo com o item 6.5.1, alínea 'g', cabe à organização 'substituir imediatamente, quando danificado ou extraviado' o EPI. A ordem para continuar o trabalho com o EPI danificado é uma violação direta desta responsabilidade."
+  },
+  {
+    "id": "nr06_cenario_03",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um trabalhador utiliza seu cinturão de segurança (EPI contra queda) para içar um pequeno balde de ferramentas até o nível onde está trabalhando. Qual responsabilidade do trabalhador foi violada?",
+    "alternativas": {
+      "A": "Responsabilizar-se pela limpeza, guarda e conservação.",
+      "B": "Utilizar apenas para a finalidade a que se destina.",
+      "C": "Comunicar à organização qualquer alteração.",
+      "D": "Cumprir as determinações da organização sobre o uso."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 6.6.1, alínea 'b', estabelece que cabe ao trabalhador 'utilizar [o EPI] apenas para a finalidade a que se destina'. Um cinturão de segurança destina-se à proteção contra quedas, e não ao içamento de materiais."
+  },
+  {
+    "id": "nr06_cenario_04",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "O departamento de compras de um terminal portuário adquire um lote de luvas de proteção química de um fornecedor internacional, pois o preço era 30% menor. As luvas, no entanto, não possuem Certificado de Aprovação (CA). A organização pode liberar o uso dessas luvas?",
+    "alternativas": {
+      "A": "Sim, desde que as luvas tenham um certificado internacional equivalente ao CA.",
+      "B": "Não, pois o EPI só pode ser posto à venda ou utilizado com a indicação do CA.",
+      "C": "Sim, se o SESMT da empresa emitir um laudo técnico aprovando as luvas.",
+      "D": "Não, a menos que a organização consulte os trabalhadores e eles aprovem o conforto."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 6.4.1 é explícito: 'O EPI, de fabricação nacional ou importado, só pode ser posto à venda ou utilizado com a indicação do Certificado de Aprovação - CA'. Além disso, o item 6.5.1(a) obriga a organização a 'adquirir somente o aprovado pelo órgão... competente'."
+  },
+  {
+    "id": "nr06_cenario_05",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Ao selecionar respiradores para uma área com poeira, a organização fornece um modelo único para todos os 50 trabalhadores do setor. Vários trabalhadores reclamam que o respirador não veda corretamente em seus rostos, causando desconforto e permitindo a entrada de poeira. A organização ignora as queixas. Qual critério de seleção de EPI foi negligenciado?",
+    "alternativas": {
+      "A": "As exigências estabelecidas em normas regulamentadoras.",
+      "B": "A eficácia necessária para o controle da exposição ao risco.",
+      "C": "A adequação do equipamento ao empregado e o conforto oferecido, segundo avaliação dos empregados.",
+      "D": "O disposto no Anexo I da NR-06."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O item 6.5.2, alínea 'f', determina que a organização deve selecionar o EPI considerando 'a adequação do equipamento ao empregado e o conforto oferecido, segundo avaliação do conjunto de empregados'. Ignorar as queixas sobre a vedação viola esse critério e também o 6.5.2.2 (ouvir os empregados usuários)."
+  },
+  {
+    "id": "nr06_cenario_06",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Em uma atividade de manutenção, o trabalhador precisa usar simultaneamente um protetor facial contra partículas e um respirador semifacial. O design dos dois EPIs (de fabricantes diferentes) impede que o respirador se ajuste corretamente ao rosto, criando uma fresta. A organização falhou em qual critério de seleção?",
+    "alternativas": {
+      "A": "A atividade exercida.",
+      "B": "A compatibilidade, em casos que exijam a utilização simultânea de vários EPI.",
+      "C": "A participação do SESMT na seleção.",
+      "D": "O fornecimento gratuito do EPI."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 6.5.2, alínea 'g', exige que a seleção considere 'a compatibilidade, em casos que exijam a utilização simultânea de vários EPI, de maneira a assegurar as respectivas eficácias'. A fresta no respirador indica que a eficácia foi comprometida pela incompatibilidade."
+  },
+  {
+    "id": "nr06_cenario_07",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Ao final do turno, um estivador retira suas luvas de raspa sujas de graxa e as joga em um canto do vestiário, em vez de guardá-las em seu armário, conforme orientado no treinamento. Esta atitude viola uma responsabilidade direta de quem?",
+    "alternativas": {
+      "A": "Do trabalhador, que deve zelar pela guarda e conservação.",
+      "B": "Da organização, que deveria ter um sistema de higienização centralizado.",
+      "C": "Do fabricante, que não informou como guardar o EPI.",
+      "D": "Do SESMT, que falhou na fiscalização do uso."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. Conforme o item 6.6.1, alínea 'c', cabe ao trabalhador 'responsabilizar-se pela limpeza, guarda e conservação' do EPI. Embora a organização seja responsável pela higienização (6.5.1(f)), a guarda e conservação imediata é dever do usuário."
+  },
+  {
+    "id": "nr06_cenario_08",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Uma empresa importadora de EPIs compra um lote de máscaras de solda da Alemanha e as revende no Brasil com o manual de instruções original, escrito apenas em alemão e inglês. Qual responsabilidade do importador foi descumprida?",
+    "alternativas": {
+      "A": "Comercializar somente EPI portador de CA.",
+      "B": "Comercializar o EPI com manual de instruções em língua portuguesa.",
+      "C": "Responsabilizar-se pela manutenção da qualidade do EPI.",
+      "D": "Promover a adaptação do EPI para pessoas com deficiência."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 6.8.1, alínea 'b', é claro ao afirmar que cabe ao fabricante e ao importador 'comercializar o EPI com manual de instruções em língua portuguesa', orientando sobre uso, manutenção, etc."
+  },
+  {
+    "id": "nr06_cenario_09",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Em uma oficina, a organização disponibiliza creme de proteção (EPI) em um grande dispensador de parede, sem marcação. A embalagem original, que continha o nome do fabricante, o lote e o número do CA, foi descartada. Esta prática está:",
+    "alternativas": {
+      "A": "Correta, pois facilita o acesso do trabalhador ao creme, conforme 6.5.1.2.",
+      "B": "Correta, pois cremes de proteção são EPIs descartáveis e dispensam registro.",
+      "C": "Incorreta, pois o creme de proteção não está listado no Anexo I como EPI.",
+      "D": "Incorreta, pois se a embalagem original não for mantida, as informações (fabricante, lote, CA) devem estar disponíveis no local."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O creme protetor é um EPI (Anexo I, F.2). O item 6.5.1.2 permite o fornecimento sem registro para cremes, mas o 6.5.1.2.1 complementa: 'Caso não seja mantida a embalagem original, deve-se disponibilizar no local de fornecimento as informações de identificação do produto... lote de fabricação, data de validade e CA do EPI'."
+  },
+  {
+    "id": "nr06_cenario_10",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "O departamento de compras de uma organização decide trocar o fornecedor de capacetes de segurança. A compra é efetuada com base apenas no menor preço, sem consultar o SESMT, a CIPA ou ouvir a opinião dos trabalhadores que usarão o equipamento. Esta ação fere qual item da NR-06?",
+    "alternativas": {
+      "A": "O item 6.5.2.2, sobre a participação do SESMT, CIPA e empregados usuários na seleção.",
+      "B": "O item 6.5.1(a), pois o equipamento de menor preço provavelmente não tem CA.",
+      "C": "O item 6.5.1(c), sobre o fornecimento de EPI adequado ao risco.",
+      "D": "O item 6.7.2.1, sobre a necessidade de treinamento para o novo EPI."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O item 6.5.2.2 determina que 'A seleção do EPI deve ser realizada pela organização com a participação do Serviço Especializado... - SESMT, quando houver, após ouvidos empregados usuários e a Comissão Interna de Prevenção de Acidentes... - CIPA'."
+  },
+  {
+    "id": "nr06_cenario_11",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Uma organização comprou um lote de botas de segurança em Janeiro/2024, todas com CA válido até Dezembro/2024. As botas foram armazenadas corretamente. Em Março/2025, a organização fornece um par de botas *novas* desse lote a um funcionário. A validade do *produto* (bota) indicada pelo fabricante é até 2026. Esta ação é permitida?",
+    "alternativas": {
+      "A": "Não, pois o CA do EPI estava vencido no momento do fornecimento ao trabalhador.",
+      "B": "Sim, pois o CA só precisa estar válido no momento da *comercialização* (compra pela organização).",
+      "C": "Não, o EPI só pode ser usado enquanto o CA estiver dentro da validade, independentemente da data de compra.",
+      "D": "Sim, mas a organização precisará solicitar uma renovação do CA para esse lote específico."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Esta é uma distinção importante. O item 6.9.2.1 diz que 'O EPI deve ser *comercializado* com o CA válido'. O 6.9.2.1.1 complementa que '*Após adquirido*, o fornecimento do EPI deve observar... o prazo de validade do *equipamento*'. Como a organização adquiriu (comprou) com CA válido e o produto ainda está na validade, o fornecimento é regular."
+  },
+  {
+    "id": "nr06_cenario_12",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um soldador portuário utiliza um capacete que possui, integrados de fábrica, um protetor facial, um protetor auditivo e um sistema de purificação de ar. De acordo com o item 6.3.2 da NR-06, como este EPI é classificado?",
+    "alternativas": {
+      "A": "Equipamento de Proteção Individual Múltiplo.",
+      "B": "Equipamento de Proteção Individual Combinado.",
+      "C": "Equipamento de Proteção Individual Especial.",
+      "D": "Equipamento Conjugado de Proteção Individual."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O item 6.3.2 define: 'Entende-se como Equipamento Conjugado de Proteção Individual todo aquele utilizado pelo trabalhador, composto por vários dispositivos que o fabricante tenha conjugado contra um ou mais riscos'."
+  },
+  {
+    "id": "nr06_cenario_13",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um Capataz observa um trabalhador de sua equipe andando pela área de movimentação de contêineres sem o capacete de segurança. O Capataz, apesar de ver a situação, não intervém e não adverte o trabalhador. Qual responsabilidade da *organização* (representada pelo Capataz) foi diretamente negligenciada?",
+    "alternativas": {
+      "A": "Fornecer o EPI gratuitamente.",
+      "B": "Responsabilizar-se pela higienização.",
+      "C": "Exigir seu uso.",
+      "D": "Comunicar irregularidades ao órgão competente."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O item 6.5.1, alínea 'e', afirma que cabe à organização 'exigir seu uso'. Ao não intervir, o Capataz (preposto da organização) falha em cumprir essa exigência, tornando a organização omissa."
+  },
+  {
+    "id": "nr06_cenario_14",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "A organização adota um sistema de reconhecimento facial (biometria) para registrar a entrega de EPIs, substituindo as antigas fichas de papel. No entanto, durante uma auditoria, o fiscal solicita um relatório de quais EPIs foram entregues ao trabalhador 'José Silva' no último ano, e o sistema não possui a função de extrair relatórios. A organização está em conformidade?",
+    "alternativas": {
+      "A": "Sim, pois o uso de sistema biométrico é permitido pelo item 6.5.1(d).",
+      "B": "Sim, pois o sistema biométrico identifica o trabalhador, o que é suficiente.",
+      "C": "Não, pois sistemas eletrônicos de registro de EPI devem permitir a extração de relatórios.",
+      "D": "Não, pois o registro por biometria só é válido se combinado com a assinatura em ficha."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Embora o item 6.5.1(d) permita o registro por sistema eletrônico/biométrico, o item 6.5.1.1 estabelece uma condição: 'O sistema eletrônico, para fins de registro de fornecimento de EPI, caso seja adotado, deve permitir a extração de relatórios'."
+  },
+  {
+    "id": "nr06_cenario_15",
+    "disciplina": "NR-06",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um trabalhador do setor de câmaras frias recebe da empresa uma jaqueta térmica espessa para protegê-lo das baixas temperaturas. O técnico de segurança argumenta que, por ser uma 'vestimenta', não se enquadra como EPI. O argumento do técnico está:",
+    "alternativas": {
+      "A": "Correto, pois EPIs se limitam a capacetes, luvas, botas e cinturões.",
+      "B": "Incorreto, pois a jaqueta foi concebida para proteger contra um risco ocupacional (frio) e está listada no Anexo I.",
+      "C": "Correto, pois vestimentas só são EPIs se protegerem contra agentes químicos.",
+      "D": "Incorreto, pois qualquer produto de uso individual é automaticamente um EPI."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 6.3.1 define EPI como produto de uso individual 'concebido e fabricado para oferecer proteção contra os riscos'. O Anexo I, item E.1 ('Vestimentas'), alínea 'a', lista especificamente 'vestimenta para proteção do tronco contra agentes térmicos' (o que inclui o frio)."
+  }
+]
