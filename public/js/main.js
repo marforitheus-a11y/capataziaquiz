@@ -4,6 +4,8 @@ let questions = [];
 let currentQuestion = 0; 
 let userAnswers = {};
 let lockSelection = false; 
+let quizMode = 'solo'; // NOVO: 'solo' ou 'challenge'
+let quizTimerInterval = null; // NOVO: Referência para o timer
 
 let subjectsIndex = []; 
 let selectedSubjects = []; 
