@@ -158,5 +158,255 @@
     },
     "resposta_correta": "D",
     "comentario": "A alternativa D é incorreta e, portanto, o gabarito. O item 3.6 afirma que o Tornel serve para 'aliviar o atrito e a torção', e não para aumentá-la. As demais alternativas são aplicações corretas citadas no texto."
+  },
+  {
+    "id": "acessorios_petrobras_01",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Analise a imagem acima que ilustra dois tipos de manilhas. De acordo com o procedimento de eslingas e acessórios (Anexo A-1), sobre a utilização permitida destes acessórios, assinale a alternativa CORRETA.",
+    "imageUrl": "/data/img/figura9.jpg",
+    "alternativas": {
+      "A": "Ambos os tipos de manilhas (duas partes e quatro partes) são permitidos sem restrições.",
+      "B": "A manilha ilustrada na figura (duas partes/rosca) é a única permitida para operações offshore.",
+      "C": "Só é permitida a utilização de manilhas de quatro partes (com porca e contrapino); a manilha de duas partes ilustrada não deve ser utilizada.",
+      "D": "A manilha de duas partes é permitida apenas se o pino for soldado após o fechamento.",
+      "E": "As manilhas curvas são proibidas, sendo permitidas apenas as manilhas retas (tipo D)."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o item 3.3 do documento, 'Só é permitido pela LOEP/LON/OPARM/ARM a utilização de manilhas de quatro partes (com porca e contrapino)'. A Figura 9 mostra uma manilha de duas partes, marcada no texto como 'NÃO UTILIZAR'."
+  },
+  {
+    "id": "acessorios_petrobras_02",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Um operador de guindaste percebeu que o cabo de aço estava formando a configuração mostrada na imagem acima durante o manuseio. Segundo as normas de manuseio e armazenamento do documento, qual é a conduta correta a ser adotada em relação a este cabo?",
+    "imageUrl": "/data/img/figura3.jpg",
+    "alternativas": {
+      "A": "Esticar o cabo com força tração máxima para desfazer a deformação.",
+      "B": "Utilizar o cabo normalmente, pois esta forma não compromete a resistência.",
+      "C": "Lubrificar a área afetada e continuar a operação com carga reduzida.",
+      "D": "O cabo deve ser descartado, pois a figura mostra o início de um nó (laço) que provoca torção prejudicial.",
+      "E": "Cortar o cabo na região afetada e realizar uma emenda com clips."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O item 1.3.1 afirma que 'A figura 3 mostra o início de um nó, conhecido por laço. Não é permitido que o cabo de aço tome a forma de um laço. Neste caso o mesmo deve ser descartado'."
+  },
+  {
+    "id": "acessorios_petrobras_03",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Durante uma inspeção dimensional em um cabo de aço, o inspetor utilizou um paquímetro conforme a ilustração. Considerando os critérios de aceitação ou descarte por redução de diâmetro, assinale a opção correta:",
+    "imageUrl": "/data/img/figura4.jpg",
+    "alternativas": {
+      "A": "O cabo deve ser substituído quando ocorrer uma redução de 5% no valor do seu diâmetro nominal.",
+      "B": "A medição correta deve ser feita nas cavas das pernas do cabo.",
+      "C": "O cabo deve ser substituído quando ocorrer uma redução de 10% no valor do seu diâmetro nominal.",
+      "D": "A redução do diâmetro não é um critério de descarte, apenas o número de arames rompidos.",
+      "E": "A medição deve ser feita apenas visualmente, sem uso de ferramentas."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O item 1.4.4.3 estabelece que 'O cabo deve ser substituído quando ocorrer uma redução de 10% no valor do seu diâmetro nominal'. A Figura 4 ilustra a forma correta ('CERTO') de medir pelos pontos de maior diâmetro (cristas)."
+  },
+  {
+    "id": "acessorios_petrobras_04",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Um técnico de segurança precisa especificar cintas de fibras sintéticas e eslingas de cabo de aço para uma operação. Consultando o procedimento PE-2LEP-00043, quais são os Fatores de Segurança (FS) padronizados para eslingas de cabo de aço e cintas de carga, respectivamente?",
+    "alternativas": {
+      "A": "FS 5:1 para ambos.",
+      "B": "FS 7:1 para cabos de aço e FS 5:1 para cintas.",
+      "C": "FS 4:1 para cabos de aço e FS 6:1 para cintas.",
+      "D": "FS 5:1 para cabos de aço e FS 7:1 para cintas.",
+      "E": "FS 3:1 para cabos de aço e FS 5:1 para cintas."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O documento define no item 1.1 que 'Para as eslingas de cabo de aço o fator de segurança é 5.1 [5:1]' e no item 2.1 que 'Para as cintas de carga o fator de segurança é 7.1 [7:1]'."
+  },
+  {
+    "id": "acessorios_petrobras_05",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Observe o acessório acima. De acordo com o documento de referência, qual é a função principal deste componente em uma eslinga?",
+    "imageUrl": "/data/img/figura8.jpg",
+    "alternativas": {
+      "A": "Servir como elemento de fixação principal no guindaste.",
+      "B": "Proteger internamente a alça ou olhal da eslinga para evitar desgaste e deformação.",
+      "C": "Realizar a prensagem da ponta do cabo de aço.",
+      "D": "Permitir o giro da carga para não torcer o cabo.",
+      "E": "Aumentar a capacidade de carga da eslinga em 50%."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 3.2 define a Sapatilha (Figura 8) como 'Proteção interna de uma alça ou olhal da eslinga... para evitar desgaste e deformação'."
+  },
+  {
+    "id": "acessorios_petrobras_06",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Para realizar o içamento de uma tubulação utilizando o método de laçada 'enforcada' (choker hitch), o operador escolheu o gancho ilustrado acima. Segundo o documento, por que este gancho é recomendado para este tipo de eslinga?",
+    "imageUrl": "/data/img/figura12.jpg",
+    "alternativas": {
+      "A": "Porque possui uma trava de segurança dupla.",
+      "B": "Porque é feito de fibra sintética, não danificando o tubo.",
+      "C": "Porque seu canal permite que haja deslizamento do cabo de aço, fixando a carga e evitando deformação do gancho.",
+      "D": "Porque possui um rolamento interno que permite girar a carga.",
+      "E": "Porque é um gancho fixo que impede qualquer movimento do cabo."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O item 3.4 descreve o Gancho Corrediço (Figura 12) como recomendado para eslingas tipo forca, pois 'O seu canal permite que haja deslizamento do cabo de aço fixando a carga e evitando a deformação e o desgaste do gancho'."
+  },
+  {
+    "id": "acessorios_petrobras_07",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Uma cinta de fibra sintética sofreu um dano acidental durante a operação. O inspetor identificou um corte no sentido transversal (na largura da cinta). De acordo com os critérios de descarte, a cinta deve ser retirada de uso se este corte transversal for superior a:",
+    "alternativas": {
+      "A": "5% da largura da mesma.",
+      "B": "10% da largura da mesma.",
+      "C": "15% da largura da mesma.",
+      "D": "20% da largura da mesma.",
+      "E": "Qualquer tamanho de corte transversal exige descarte imediato."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 2.3, alínea 'c', estabelece: 'Deve-se condenar e retirar de uso as cintas que apresentem um corte transversal superior a 10% da largura da mesma'."
+  },
+  {
+    "id": "acessorios_petrobras_08",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Você precisa ajustar a tensão de cabos estáticos (tirantes) em uma estrutura montada. Qual acessório, ilustrado acima, é o ideal para realizar regulagens controladas e precisas através de terminais com rosca esquerda e direita?",
+    "imageUrl": "/data/img/figura18.jpg",
+    "alternativas": {
+      "A": "Manilha curva.",
+      "B": "Clips (Grampos).",
+      "C": "Esticador.",
+      "D": "Patesca.",
+      "E": "Destorcedor (Tornel)."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O item 3.8 descreve os Esticadores (Figura 18) como ideais para serem adaptados em montagens que necessitam regulagens controladas e precisas, possuindo rosca esquerda e direita."
+  },
+  {
+    "id": "acessorios_petrobras_09",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Em um serviço de destocamento de árvores, o cabo de aço sofre muita torção devido ao atrito. Para aliviar este atrito e evitar a deformação do cabo, qual acessório (ilustrado acima) deve ser utilizado?",
+    "imageUrl": "/data/img/figura15.jpg",
+    "alternativas": {
+      "A": "Sapatilha.",
+      "B": "Tornel / Destorcedor.",
+      "C": "Anelão.",
+      "D": "Soquete tipo Cunha.",
+      "E": "Grampo pesado."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 3.6 descreve os Tornéis/Destorcedores (Figura 15) como o 'Acessório ideal para aliviar o atrito e a torção dos cabos de aço nos materiais'."
+  },
+  {
+    "id": "acessorios_petrobras_10",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Sobre a manutenção e lubrificação de eslingas de cabo de aço, assinale a alternativa INCORRETA de acordo com o documento:",
+    "alternativas": {
+      "A": "As eslingas devem ser lubrificadas para proteção contra corrosão.",
+      "B": "A lubrificação diminui o desgaste por atrito entre as pernas do cabo.",
+      "C": "Pode-se utilizar óleo queimado para lubrificar as eslingas, visando economia e reaproveitamento.",
+      "D": "Eslingas guardadas devem ser protegidas da incidência de luz solar.",
+      "E": "Para armazenamento prolongado, as eslingas devem ser limpas, secas e lubrificadas."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está incorreta. O item 1.3.4 adverte explicitamente: 'Não utilize óleo queimado para lubrificar eslingas pois esses são ácidos e têm características corrosivas'."
+  },
+  {
+    "id": "acessorios_petrobras_11",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Observe o acessório acima, que possui uma abertura lateral destacável. Qual é a principal vantagem de utilização da Patesca em relação a um moitão comum fixo?",
+    "imageUrl": "/data/img/figura19.jpg",
+    "alternativas": {
+      "A": "Permite introduzi-la no cabo de aço em qualquer ponto de sua extensão sem precisar passar a ponta do cabo.",
+      "B": "Possui maior capacidade de carga que qualquer outro acessório.",
+      "C": "Não necessita de lubrificação no eixo.",
+      "D": "Serve exclusivamente para amarrar cargas em caminhões.",
+      "E": "É o único acessório permitido para içamento de pessoas."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. O item 3.9 define a Patesca (Figura 19) como acessório com 'abertura lateral destacável que permite introduzi-la no cabo de aço, em qualquer ponto de sua extensão'."
+  },
+  {
+    "id": "acessorios_petrobras_12",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Um inspetor de equipamentos realizou a inspeção completa em um conjunto de eslingas. De acordo com o documento, qual é a periodicidade máxima para a realização desta inspeção completa (que inclui ensaios não destrutivos nos acessórios)?",
+    "alternativas": {
+      "A": "A cada 30 dias.",
+      "B": "A cada 90 dias.",
+      "C": "A cada 180 dias.",
+      "D": "A cada 360 dias.",
+      "E": "A cada 2 anos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O item 1.4.3, alínea 'a', determina que 'a inspeção completa deve ser feita a cada 180 dias ou quando indicado pela inspeção visual de rotina'."
+  },
+  {
+    "id": "acessorios_petrobras_13",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "O acessório mostrado na imagem acima é específico para um tipo de carga. Assinale a alternativa que indica corretamente sua aplicação.",
+    "imageUrl": "/data/img/figura20.jpg",
+    "alternativas": {
+      "A": "Pega Chapas para transporte horizontal.",
+      "B": "Pega Tambores, para manuseio de tambores por unidade.",
+      "C": "Gancho 'J' para içamento de containers.",
+      "D": "Tenaz para bobinas de aço.",
+      "E": "Garra para tubos de concreto."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 3.10 descreve o acessório da Figura 20 como 'PEGA TAMBORES', específico para o manuseio de tambores por unidade."
+  },
+  {
+    "id": "acessorios_petrobras_14",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Em relação ao conserto de cintas de movimentação de carga (fibras sintéticas), o documento estabelece que:",
+    "alternativas": {
+      "A": "Pode ser realizado pelo usuário, desde que utilize linha de nylon reforçada.",
+      "B": "Pode ser feito nas uniões principais para reforçar a costura.",
+      "C": "Só podem ser efetuados pelo fabricante ou pessoas indicadas, e nunca nas uniões principais ou reforços.",
+      "D": "É permitido dar nós na cinta para recuperar a resistência em caso de ruptura.",
+      "E": "Não existe reparo para cintas; qualquer dano mínimo exige descarte total."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O item 2.6.1 afirma: 'Consertos em cintas de movimentação só podem ser efetuados pelo fabricante, ou por pessoas por ele indicadas, e não nas uniões principais e/ou nos reforços'."
+  },
+  {
+    "id": "acessorios_petrobras_15",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Para realizar uma amarração em campo que permita regulagem posterior no comprimento do cabo, optou-se pelo uso de clips (grampos), como os da figura acima. Considerando o uso deste acessório, qual é a característica correta descrita no documento?",
+    "imageUrl": "/data/img/figura16.jpg",
+    "alternativas": {
+      "A": "São utilizados para içamento dinâmico de cargas pesadas.",
+      "B": "São forjados e galvanizados, utilizados para fins gerais e cabos estáticos.",
+      "C": "Não permitem regulagem posterior.",
+      "D": "Devem ser soldados ao cabo de aço para garantir a fixação.",
+      "E": "São fabricados em plástico de alta resistência."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 3.7 descreve os Clips/Grampos (Figuras 16 e 17) como 'Forjados e galvanizados... Utilizado para fins gerais e para cabos estáticos'."
   }
 ]
