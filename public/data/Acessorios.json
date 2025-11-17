@@ -409,5 +409,228 @@
     },
     "resposta_correta": "B",
     "comentario": "A alternativa B está correta. O item 3.7 descreve os Clips/Grampos (Figuras 16 e 17) como 'Forjados e galvanizados... Utilizado para fins gerais e para cabos estáticos'."
+  },
+  {
+    "id": "acessorios_petrobras_img_01",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual acessório de movimentação de carga pode ser utilizado também no descarregamento e montagem de peças que necessitam de nivelação horizontal precisa, como turbinas e partes mecânicas, em conjunto com os laços?",
+    "imageUrl": "/img/figura18.jpg",
+    "alternativas": {
+      "A": "Patescas",
+      "B": "Esticadores",
+      "C": "Tornéis",
+      "D": "Soquetes",
+      "E": "Manilhas"
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Os Esticadores são ideais para montagens que necessitam de regulagens controladas e precisas, como a nivelação horizontal de turbinas."
+  },
+  {
+    "id": "acessorios_petrobras_img_02",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual acessório para movimentação de carga é apresentado com terminais diversos, com rosca esquerda e direita, bastando girar o corpo do dispositivo para tracionar os cabos?",
+    "imageUrl": "/img/figura18.jpg",
+    "alternativas": {
+      "A": "Gancho Corrediço",
+      "B": "Destorcedor",
+      "C": "Esticador",
+      "D": "Clips",
+      "E": "Patesca"
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Esticador funciona através do giro de seu corpo, acionando as roscas esquerda e direita para tracionar o cabo."
+  },
+  {
+    "id": "acessorios_petrobras_img_03",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual acessório para movimentação de cargas é forjado e galvanizado, garantindo máxima segurança e qualidade, com amarração ideal para ser executada no local de serviço, permitindo regulagem posterior no comprimento dos cabos e utilizado para fins gerais e para cabos estáticos, como tirantes, etc?",
+    "imageUrl": "/img/figura17.jpg",
+    "alternativas": {
+      "A": "Sapatilhas",
+      "B": "Grampos / Clips",
+      "C": "Anelões",
+      "D": "Soquetes",
+      "E": "Talhas"
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Os Grampos (ou Clips) permitem a confecção de olhais e amarrações no local de serviço com possibilidade de ajuste."
+  },
+  {
+    "id": "acessorios_petrobras_img_04",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual acessório para movimentação de cargas tem abertura lateral destacável que permite introduzi-la no cabo de aço, em qualquer ponto de sua extensão, utilizada em guinchos e aparelhos de tração e elevação para uma perfeita multiplicação de forças?",
+    "imageUrl": "/img/figura19.jpg",
+    "alternativas": {
+      "A": "Talhas",
+      "B": "Moitões Fixos",
+      "C": "Patescas",
+      "D": "Esticadores",
+      "E": "Tornéis"
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. A Patesca se diferencia pela abertura lateral que facilita a inserção do cabo em qualquer ponto."
+  },
+  {
+    "id": "acessorios_petrobras_img_05",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome do acessório de movimentação de cargas específico para o manuseio de tambores por unidade aplicado na arrumação em cestas e estaleiros?",
+    "imageUrl": "/img/figura20.jpg",
+    "alternativas": {
+      "A": "Pega Chapas",
+      "B": "Tenaz",
+      "C": "Gancho J",
+      "D": "Pega Tambores",
+      "E": "Estropo"
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. O Pega Tambores é desenhado especificamente para o içamento vertical de tambores individuais."
+  },
+  {
+    "id": "acessorios_petrobras_img_06",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome do equipamento de movimentação de cargas, manual, pneumática, hidráulica ou elétrica, indicada para operação em estações de trabalho, adequado também para uma perfeita multiplicação de forças?",
+    "imageUrl": "/img/figura21.jpg",
+    "alternativas": {
+      "A": "Talhas",
+      "B": "Patescas",
+      "C": "Guinchos de Coluna",
+      "D": "Pontes Rolantes",
+      "E": "Pórticos"
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. As Talhas são equipamentos versáteis para estações de trabalho, permitindo elevação com multiplicação de força."
+  },
+  {
+    "id": "acessorios_petrobras_img_07",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome dos acessórios definidos como anéis de sustentação de superlaço, estropo, lingada ou eslinga, composto por uma ou mais pernas de cabo de aço?",
+    "imageUrl": "/img/figura6.jpg",
+    "alternativas": {
+      "A": "Sapatilha e Grampo",
+      "B": "Anel Pera e Anelão",
+      "C": "Manilha e Pino",
+      "D": "Olhal e Gancho",
+      "E": "Soquete e Cunha"
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Anel Pera e o Anelão (Master Link) servem como ponto de conexão principal para as pernas da eslinga."
+  },
+  {
+    "id": "acessorios_petrobras_img_08",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome da proteção interna de uma alça ou olhal da eslinga de cabo de aço, seda, polietileno, etc., para evitar desgaste e deformação?",
+    "imageUrl": "/img/figura8.jpg",
+    "alternativas": {
+      "A": "Luva",
+      "B": "Sapatilha",
+      "C": "Presilha",
+      "D": "Olhal Protegido",
+      "E": "Guarda-cabo"
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. A Sapatilha é inserida no olhal para proteger o cabo contra o atrito e manter o formato do laço."
+  },
+  {
+    "id": "acessorios_petrobras_img_09",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome do dispositivo para conexão rápida, possuindo diversos tipos, sendo cada um apropriado a um tipo de operação? Segundo a norma de referência, é permitida apenas a utilização do dispositivo de quantas partes?",
+    "imageUrl": "/img/figura10.jpg",
+    "alternativas": {
+      "A": "Manilha, 2 partes",
+      "B": "Gancho, 3 partes",
+      "C": "Manilha, 4 partes",
+      "D": "Mosquetão, 2 partes",
+      "E": "Elo de Ligação, 1 parte"
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O documento especifica o uso de Manilhas de 4 partes (com porca e contrapino) para garantir a segurança."
+  },
+  {
+    "id": "acessorios_petrobras_img_10",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome do acessório para movimentação de cargas que é recomendado para extensão no moitão e bola peso dos guindastes das plataformas marítimas, navios e portos, facilitando nas movimentações de cargas e proporcionando maior segurança para o pessoal envolvido?",
+    "imageUrl": "/img/figura11.jpg",
+    "alternativas": {
+      "A": "Gancho Corrediço",
+      "B": "Gancho Olhal Simples",
+      "C": "Gancho de içamento com trava de segurança tipo OBK",
+      "D": "Gancho Clevis",
+      "E": "Gancho Giratório Comum"
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Gancho OBK possui trava de segurança integrada e é recomendado para operações offshore e portuárias."
+  },
+  {
+    "id": "acessorios_petrobras_img_11",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome do acessório para movimentação de cargas que é recomendado para eslingas tipo forca, com seu canal permitindo que haja deslizamento do cabo de aço fixando a carga e evitando a deformação e o desgaste do gancho?",
+    "imageUrl": "/img/figura12.jpg",
+    "alternativas": {
+      "A": "Gancho Automático",
+      "B": "Gancho Corrediço",
+      "C": "Patesca",
+      "D": "Sapatilha Deslizante",
+      "E": "Manilha Curva"
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Gancho Corrediço (Sliding Choker Hook) é projetado especificamente para deslizar no cabo sem danificá-lo em amarrações do tipo forca."
+  },
+  {
+    "id": "acessorios_petrobras_img_12",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome do acessório para movimentação de cargas que é utilizado no acoplamento de partes fixas de pontes, estruturas, montagens e transportadores, e na sustentação de lanças de guindastes e escavadeiras?",
+    "imageUrl": "/img/figura13.jpg",
+    "alternativas": {
+      "A": "Esticadores",
+      "B": "Soquetes (Cunha / Chumbadores)",
+      "C": "Presilhas de Alumínio",
+      "D": "Terminais Prensados",
+      "E": "Olhais de Suspensão"
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Os Soquetes (tipo Cunha ou Chumbador) são usados para fixação de extremidades de cabos em estruturas e equipamentos pesados."
+  },
+  {
+    "id": "acessorios_petrobras_img_13",
+    "disciplina": "Movimentação de Cargas",
+    "banca": "Simulado (Estilo IDCAP)",
+    "ano": "2025",
+    "enunciado": "Qual o nome do acessório para movimentação de cargas que é ideal para aliviar o atrito e a torção dos cabos de aço nos materiais?",
+    "imageUrl": "/img/figura15.jpg",
+    "alternativas": {
+      "A": "Rolamentos Axiais",
+      "B": "Patescas Giratórias",
+      "C": "Tornéis / Distorcedores",
+      "D": "Luvas de Torção",
+      "E": "Balancins"
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Tornel (ou Destorcedor) permite que a carga gire livremente sem transferir a torção para o cabo de aço."
   }
 ]
+
+
