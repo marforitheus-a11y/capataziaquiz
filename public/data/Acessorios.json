@@ -100,7 +100,8 @@
     "disciplina": "Movimentação de Cargas",
     "banca": "Simulado (Estilo IDCAP)",
     "ano": "2025",
-    "enunciado": "Sobre os acessórios denominados 'Patescas', analise as assertivas abaixo:\n\nI. É um acessório com abertura lateral destacável.\nII. Permite introduzi-la no cabo de aço apenas pelas extremidades do cabo.\nIII. Pode ser fornecida com gancho giratório ou com olhal elíptico giratório.\n\nEstá(ão) CORRETA(S):",
+    "enunciado": "Sobre os acessórios denominados 'Patescas'(Figura acima), analise as assertivas abaixo:\n\nI. É um acessório com abertura lateral destacável.\nII. Permite introduzi-la no cabo de aço apenas pelas extremidades do cabo.\nIII. Pode ser fornecida com gancho giratório ou com olhal elíptico giratório.\n\nEstá(ão) CORRETA(S):",
+    "imgUrl": "/data/img/figura19.jpg",
     "alternativas": {
       "A": "Apenas I.",
       "B": "Apenas I e III.",
