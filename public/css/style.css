@@ -891,6 +891,20 @@ word-wrap: break-word;  /* Quebra palavras longas */
   color: white;
   font-weight: 600;
 }
+question-image-container {
+  width: 100%;
+  margin-bottom: 15px; /* Espaço entre a imagem e o texto da questão */
+  text-align: center; /* Centraliza a imagem se ela for menor */
+}
+
+/* Esta é a imagem em si */
+.question-image {
+  max-width: 100%; /* Garante que a imagem nunca transborda */
+  max-height: 400px; /* Evita que imagens muito altas ocupem a tela toda */
+  border-radius: var(--radius); /* Usa o seu 'radius' padrão */
+  border: 1px solid #eee;
+  object-fit: contain; /* Garante que a imagem inteira apareça, sem distorcer */
+}
 
 
 
