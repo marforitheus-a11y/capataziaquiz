@@ -1,0 +1,227 @@
+[
+  {
+    "id": "nr11_apostila_01",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um operador precisa substituir um cabo de aço de um guindaste. Ao retirar o cabo novo da bobina, ele desenrola o cabo puxando-o lateralmente, o que faz com que o cabo forme espirais no chão. O supervisor intervém imediatamente. Segundo a apostila de inspeção, qual é o procedimento correto para manusear o cabo na troca?",
+    "alternativas": {
+      "A": "O cabo deve ser desenrolado lateralmente, mas deve ser esticado com um veículo para tirar as dobras.",
+      "B": "Deve-se utilizar cavaletes ou mesas giratórias para que o cabo permaneça sempre esticado, evitando a formação de nós.",
+      "C": "O cabo deve ser retirado em 'S' para compensar a torção natural da fabricação.",
+      "D": "O cabo deve ser lubrificado antes de ser desenrolado para facilitar o deslizamento no chão."
+    },
+    "resposta_correta": "B",
+    [cite_start]"comentario": "A alternativa B está correta. Conforme a página 13 do documento, 'Utilizar cavaletes ou mesas giratórias, para que o cabo permaneça sempre esticado durante essa operação'[cite: 326]. [cite_start]O texto alerta que o repassamento nunca deve ser feito no sentido inverso ou formando espirais, pois gera tensões internas[cite: 327]."
+  },
+  {
+    "id": "nr11_apostila_02",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Durante a confecção de um olhal em campo utilizando grampos (clips), um auxiliar instalou os três grampos de modo que a base (sela) do grampo ficou em contato com a ponta morta (curta) do cabo, e o 'U' do parafuso em contato com o cabo vivo (longo). Essa instalação está:",
+    "alternativas": {
+      "A": "Correta, pois a posição dos grampos não influencia na resistência, apenas a quantidade importa.",
+      "B": "Correta, desde que os grampos sejam apertados com torquímetro.",
+      "C": "Incorreta, pois os grampos devem ser alternados (um virado para cima, outro para baixo).",
+      "D": "Incorreta, pois a base do grampo deve ser colocada no trecho mais comprido (cabo vivo) e o 'U' na ponta morta."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. [cite_start]De acordo com a página 14, 'Só há uma maneira correta de realizar esta operação, com a base do grampo colocada no trecho mais comprido do cabo (aquele que vai em direção ao outro olhal)'[cite: 336]. A instalação invertida pode danificar o cabo principal (vivo)."
+  },
+  {
+    "id": "nr11_apostila_03",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um inspetor verifica um cabo de aço de um guindaste e nota que, em um único passo (trança), existem 7 arames rompidos visíveis. O operador argumenta que o cabo ainda parece forte. Qual deve ser a decisão do inspetor baseada nos critérios de substituição?",
+    "alternativas": {
+      "A": "Liberar o uso, pois o limite é de 10 arames rompidos por passo.",
+      "B": "Condenar o cabo imediatamente, pois o limite é de 6 fios rompidos em um passo.",
+      "C": "Solicitar um teste de carga para verificar se o cabo aguenta.",
+      "D": "Cortar apenas o trecho afetado e fazer uma emenda com grampos."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. [cite_start]O documento estabelece na página 13 que um dos sinais críticos para substituição é quando os 'Arames rompidos visíveis atingirem 6 fios em um passo ou 3 fios em uma perna'[cite: 314]."
+  },
+  {
+    "id": "nr11_apostila_04",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Uma equipe precisa içar uma carga de 3.500 kg. Eles têm disponíveis cintas de poliéster de várias cores. Consultando a tabela de capacidade padrão, qual cinta (cor) seria a mínima adequada para suportar essa carga na vertical (considerando a capacidade nominal da cor)?",
+    "alternativas": {
+      "A": "Cinta Amarela.",
+      "B": "Cinta Verde.",
+      "C": "Cinta Cinza.",
+      "D": "Cinta Roxa."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. [cite_start]Conforme a tabela de identificação de carga por cores na página 18: Cinta Amarela = 3000 Kg, Cinta Cinza = 4000 Kg[cite: 440, 441]. Como a carga é de 3500 Kg, a amarela não suportaria, sendo necessária a cinza (4000 Kg)."
+  },
+  {
+    "id": "nr11_apostila_05",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Ao utilizar uma linga de corrente de 4 pernas para levantar uma estrutura larga, o ângulo formado entre as pernas opostas da linga atinge 80 graus em relação à vertical (ou seja, abertura total muito grande, deixando a linga 'deitada'). De acordo com a apostila, este ângulo é:",
+    "alternativas": {
+      "A": "Permitido, pois distribui melhor o peso.",
+      "B": "Permitido, desde que a corrente seja grau 8.",
+      "C": "Proibido, pois ângulos acima de 60 graus não são permitidos.",
+      "D": "Ideal, pois reduz a altura necessária para o içamento."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. [cite_start]Na página 30, há uma ilustração explícita mostrando que ângulos de 70° e 80° são classificados como 'PROIBIDOS' e que 'Ângulos de içamento PERMITIDOS' vão até 60° (β ≤ 60°) [cite: 711-716]. [cite_start]O texto reforça: 'Ângulos acima de 60° não são permitidos'[cite: 723]."
+  },
+  {
+    "id": "nr11_apostila_06",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um operador utiliza um levantador magnético (imã) para mover chapas de aço. A chapa a ser movida tem uma superfície muito rugosa e irregular. O operador percebe que a fixação não está firme. Segundo a teoria de fluxo magnético apresentada, qual é a causa provável da baixa fixação?",
+    "alternativas": {
+      "A": "O imã está muito quente.",
+      "B": "A rugosidade cria um 'gap' de ar que desperdiça o fluxo magnético, reduzindo a força de atração.",
+      "C": "A chapa é muito grossa, o que satura o imã.",
+      "D": "O operador não ligou a corrente elétrica (em caso de imã permanente)."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. A página 21 ilustra que a condição da superfície impacta a fixação. [cite_start]Superfícies ruins (rugosas) reduzem a fixação para 40% ou menos[cite: 517, 519]. [cite_start]O texto explica que 'Quanto melhor o contato da peça com a superfície do levantador magnético maior a força de atração'[cite: 521]."
+  },
+  {
+    "id": "nr11_apostila_07",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Durante a inspeção de olhais de suspensão em abril de 2019, o inspetor precisa pintar o olhal para certificar que ele foi inspecionado e aprovado naquele semestre. Seguindo o padrão de cores da empresa apresentado na apostila, qual cor ele deve usar?",
+    "alternativas": {
+      "A": "Vermelho.",
+      "B": "Amarelo.",
+      "C": "Preto.",
+      "D": "Azul."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. [cite_start]A tabela na página 33 define: 'Preto - 1º Semestre de Ano Ímpar'[cite: 881]. [cite_start]O exemplo dado confirma: 'Ex.: Abril / 2019 = Preto'[cite: 884]."
+  },
+  {
+    "id": "nr11_apostila_08",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um movimentador de carga precisa usar uma corda para içar uma ferramenta leve. Ele faz um nó na corda para prendê-la. De acordo com as informações sobre cordas, qual é a consequência de se fazer um nó para a capacidade da corda?",
+    "alternativas": {
+      "A": "O nó aumenta a resistência da corda devido ao atrito.",
+      "B": "O nó não altera a resistência, apenas encurta a corda.",
+      "C": "O nó enfraquece a resistência total da corda (ruptura), reduzindo sua capacidade.",
+      "D": "O nó é proibido apenas em cabos de aço, mas permitido sem restrições em cordas."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. [cite_start]O texto na página 15 afirma: 'Lembre-se: Quando for realiza um tipo de nó, lembre-se que o nó enfraquece a sua resistência total (Ruptura)'[cite: 374]. [cite_start]A tabela mostra perdas significativas dependendo do nó[cite: 375]."
+  },
+  {
+    "id": "nr11_apostila_09",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um olhal de elevação apresenta uma deformação na rosca e não está encaixando perfeitamente na peça. O encarregado sugere passar um macho (ferramenta de rosca) para 'limpar' a rosca e reutilizar o olhal. Qual é o procedimento correto segundo a norma de manutenção?",
+    "alternativas": {
+      "A": "Recuperar a rosca e realizar um ensaio de tração.",
+      "B": "Utilizar o olhal assim mesmo, usando força para parafusar.",
+      "C": "Inutilizar o olhal utilizando maçarico e sucateá-lo imediatamente.",
+      "D": "Soldar o olhal na peça para garantir a fixação."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. [cite_start]O procedimento de inspeção na página 32 estabelece: 'Em caso de qualquer não conformidade [na rosca], inutilizar o olhal utilizando maçarico e sucateá-lo'[cite: 847, 851]. Não se recomenda o reparo."
+  },
+  {
+    "id": "nr11_apostila_10",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Para medir o diâmetro real de um cabo de aço durante uma inspeção, o técnico utiliza um paquímetro. Ele posiciona o instrumento pegando as 'cavas' (partes baixas) das pernas do cabo. Esta forma de medição está:",
+    "alternativas": {
+      "A": "Correta, pois mede a alma do cabo.",
+      "B": "Incorreta; a medição deve ser feita nas cristas (parte mais larga), abrangendo o diâmetro máximo.",
+      "C": "Correta, é a medida padrão para cabos flexíveis.",
+      "D": "Incorreta; cabos de aço não podem ser medidos com paquímetro, apenas com trena."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. [cite_start]A ilustração na página 10 mostra a medição 'ERRADO' (nas cavas) e 'CERTO' (nas cristas/diâmetro máximo)[cite: 230, 232]. [cite_start]O texto diz que o diâmetro real é obtido medindo-se uma parte reta em duas posições[cite: 226]."
+  },
+  {
+    "id": "nr11_apostila_11",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um laço de cabo de aço possui um soquete tipo cunha na extremidade. O inspetor nota que a ponta morta do cabo foi soldada ao soquete para 'garantir' que não escape. Esta prática é:",
+    "alternativas": {
+      "A": "Recomendada para cargas pesadas.",
+      "B": "Indiferente, não afeta a segurança.",
+      "C": "Não recomendável; não se deve soldar a ponta morta do cabo de aço.",
+      "D": "Obrigatória segundo a NR-11."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. [cite_start]Na seção de cuidados com soquetes tipo cunha na página 14, é explicitado: 'Não é recomendável soldar a ponta morta do cabo de aço' [cite: 351] [cite_start]e 'Nunca use partes que apresentem rachaduras... e nunca tente repará-las com solda'[cite: 356]."
+  },
+  {
+    "id": "nr11_apostila_12",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Você precisa movimentar um material que possui cantos vivos e cortantes (quinas de aço). A linga disponível é uma cinta de poliéster. O que deve ser feito para garantir a segurança da operação?",
+    "alternativas": {
+      "A": "Usar a cinta normalmente, pois o poliéster é resistente a cortes.",
+      "B": "Substituir por uma corda de sisal.",
+      "C": "Utilizar proteções (reforços ou luvas) entre a cinta e os cantos vivos da carga.",
+      "D": "Dar um nó na cinta para encurtá-la e evitar o contato com a quina."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. [cite_start]Nas condições gerais de segurança com cintas (página 19), é exigido: 'Verificar a existência de cantos vivos e, se existirem, utilizar proteções para evitar danos à cinta ou risco de acidente' [cite: 457] [cite_start]e 'Proteger as cintas de bordas cortantes... utilizando reforços'[cite: 458]."
+  },
+  {
+    "id": "nr11_apostila_13",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um operador observa que um cabo de aço apresenta uma deformação grave conhecida como 'gaiola de passarinho' (hérnia), onde as pernas se abrem expondo a alma. O guindaste é necessário urgentemente. Qual a conduta correta?",
+    "alternativas": {
+      "A": "Martelar a deformação até o cabo voltar ao formato original e utilizar com carga reduzida.",
+      "B": "A substituição do cabo deve ser imediata, pois a deformação compromete a segurança.",
+      "C": "Passar fita isolante sobre a deformação e utilizar normalmente.",
+      "D": "Inverter o cabo, colocando a parte danificada no tambor."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. [cite_start]O texto na página 13 lista sinais de troca: 'Danos por alta temperatura ou qualquer outra distorção no cabo (como dobra, amassamento ou \"gaiola de passarinho ou hérnia\") exigem substituição por um novo'[cite: 317]."
+  },
+  {
+    "id": "nr11_apostila_14",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Uma carga está sendo transportada por um pórtico rolante. O trajeto passa por cima de um painel elétrico importante da fábrica. Segundo as orientações de segurança da apostila, este procedimento é:",
+    "alternativas": {
+      "A": "Permitido, desde que a carga passe rápido.",
+      "B": "Permitido, se o painel elétrico estiver desligado.",
+      "C": "Proibido passar com a carga sobre pessoas, veículos industriais ou painéis elétricos.",
+      "D": "Permitido, desde que a carga esteja a mais de 2 metros de altura."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. [cite_start]Nas Orientações de Segurança da página 34, consta explicitamente: 'É proibido passar com a carga sobre pessoas, veículos industriais ou painéis elétricos'[cite: 899]."
+  },
+  {
+    "id": "nr11_apostila_15",
+    "disciplina": "NR-11 / Movimentação de Cargas",
+    "banca": "Simulado (Cenário)",
+    "ano": "2025",
+    "enunciado": "Um operador precisa levantar uma peça assimétrica cujo centro de gravidade (CG) está deslocado para a esquerda. Ele posiciona o gancho do guindaste exatamente no centro geométrico da peça (meio da peça), e não sobre o CG. O que acontecerá ao iniciar o içamento?",
+    "alternativas": {
+      "A": "A peça subirá nivelada, pois o guindaste compensa o peso.",
+      "B": "A peça penderá (inclinará) para o lado, pois o gancho não está perpendicular ao centro de gravidade.",
+      "C": "Nada, desde que as lingas tenham o mesmo comprimento.",
+      "D": "A carga ficará mais leve para o guindaste."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. [cite_start]A página 8 instrui: 'Colocar o gancho do meio de elevação perpendicularmente sobre o centro de gravidade da carga'[cite: 155]. [cite_start]Se o CG é desconhecido ou o gancho não está alinhado a ele, a carga não ficará nivelada, conforme o alerta: 'Se a carga pender mais para um lado, abaixá-la para prendê-la corretamente'[cite: 169]."
+  }
+]
