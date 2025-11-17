@@ -4,37 +4,37 @@ function renderQuestion() {
   const quizDiv = document.getElementById("quiz");
   const q = questions[currentQuestion];
   
+  // Verifica se o usuário já respondeu esta questão
   const userAnswer = userAnswers[q.id];
   const isAnswered = (userAnswer !== undefined);
 
   // 1. Monta o HTML das alternativas
   const optionsHtml = Object.entries(q.alternativas || {}).map(([key, value]) => {
+    
     let classes = 'option';
-    
     let clickEvent = `onclick="selectOption('${q.id}', '${key}')"`;
-    let dataAttrs = `data-qid="${q.id}" data-key="${key}"`;
     
-    if (quizMode === 'solo') {
-      if (isAnswered) {
-        clickEvent = ''; 
-        if (key === q.resposta_correta) {
-          classes += ' correct';
-        } else if (key === userAnswer) {
-          classes += ' wrong';
-        }
+    // Se a questão JÁ FOI RESPONDIDA
+    if (isAnswered) {
+      clickEvent = ''; // Desativa o clique
+      
+      // Marca a correta
+      if (key === q.resposta_correta) {
+        classes += ' correct';
       }
-    } else {
-      if (isAnswered && key === userAnswer) {
-        classes += ' selected-challenge';
+      // Se o usuário respondeu esta E ela está errada
+      else if (key === userAnswer) {
+        classes += ' wrong';
       }
     }
     
-    return `<li class="${classes}" ${dataAttrs} ${clickEvent}>${key}) ${value}</li>`;
+    return `<li class="${classes}" ${clickEvent}>${key}) ${value}</li>`;
+    
   }).join('');
 
-  // 2. Monta o HTML do feedback (SÓ PARA MODO SOLO)
+  // 2. Monta o HTML do feedback (comentário)
   let feedbackHtml = '';
-  if (isAnswered && quizMode === 'solo') {
+  if (isAnswered) {
     const isCorrect = (userAnswer === q.resposta_correta);
     
     const feedbackTitle = isCorrect
@@ -64,18 +64,34 @@ function renderQuestion() {
   // 4. Monta o HTML final e insere na página
   const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
   
-  const timerHtml = (quizMode === 'challenge')
-    ? `<div id="quizTimer" style="font-size: 1.2rem; font-weight: 600; color: var(--wrong); text-align: center; margin-bottom: 15px;">Tempo: --:--</div>`
-    : '';
-    
+  // ---------------------------------------------------
+  // --- A NOVA LÓGICA DA IMAGEM ESTÁ AQUI ---
+  // ---------------------------------------------------
+  let imageHtml = ''; // Começa vazio
+  // Se a 'q.imageUrl' existir E não estiver vazia
+  if (q.imageUrl && q.imageUrl.trim() !== '') {
+    imageHtml = `
+      <div class="question-image-container">
+        <img src="${q.imageUrl}" alt="Imagem da Questão" class="question-image" 
+             onerror="this.style.display='none'">
+      </div>
+    `;
+  }
+  // ---------------------------------------------------
+  // --- FIM DA NOVA LÓGICA ---
+  // ---------------------------------------------------
+  
   quizDiv.innerHTML = `
-    ${timerHtml} 
     <div class="meta">
       <strong data-translate-key="metaDiscipline">Disciplina:</strong> ${q.disciplina || 'N/I'} • 
       <strong data-translate-key="metaBanca">Banca:</strong> ${q.banca || 'N/I'} • 
       <strong data-translate-key="metaAno">Ano:</strong> ${q.ano || 'N/I'}
     </div>
     <div class="question">
+      
+      <!-- A IMAGEM É INSERIDA AQUI (se existir) -->
+      ${imageHtml} 
+      
       <h2>${currentQuestion + 1}. ${formattedEnunciado}</h2>
       <ul class="options">${optionsHtml}</ul>
       <div id="feedback">${feedbackHtml}</div>
@@ -83,7 +99,7 @@ function renderQuestion() {
     ${navHtml}
   `;
   
-  translatePage(); 
+  translatePage(); // Traduz a UI recém-renderizada
 }
 
 // -------------------------------------------------------------------
