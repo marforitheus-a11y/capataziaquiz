@@ -894,7 +894,9 @@ word-wrap: break-word;  /* Quebra palavras longas */
 question-image-container {
   width: 100%;
   margin-bottom: 15px; /* Espaço entre a imagem e o texto da questão */
-  text-align: center; /* Centraliza a imagem se ela for menor */
+   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Esta é a imagem em si */
@@ -905,6 +907,7 @@ question-image-container {
   border: 1px solid #eee;
   object-fit: contain; /* Garante que a imagem inteira apareça, sem distorcer */
 }
+
 
 
 
