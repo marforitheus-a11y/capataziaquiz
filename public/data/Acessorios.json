@@ -14,7 +14,7 @@
       "E": "As manilhas curvas são proibidas, sendo permitidas apenas as manilhas retas (tipo D)."
     },
     "resposta_correta": "C",
-    "comentario": "A alternativa C está correta. Conforme o item 3.3 do documento [cite: 1369-1370], 'Só é permitido pela LOEP/LON/OPARM/ARM a utilização de manilhas de quatro partes (com porca e contrapino)'. [cite_start]A Figura 9 mostra uma manilha de duas partes, marcada no texto como 'NÃO UTILIZAR'[cite: 1371]."
+    "comentario": "A alternativa C está correta. Conforme o item 3.3 do documento, 'Só é permitido pela LOEP/LON/OPARM/ARM a utilização de manilhas de quatro partes (com porca e contrapino)'. A Figura 9 mostra uma manilha de duas partes, marcada no texto como 'NÃO UTILIZAR'."
   },
   {
     "id": "acessorios_petrobras_02",
@@ -31,7 +31,7 @@
       "E": "Cortar o cabo na região afetada e realizar uma emenda com clips."
     },
     "resposta_correta": "D",
-    "comentario": "A alternativa D está correta. O item 1.3.1 afirma que 'A figura 3 mostra o início de um nó, conhecido por laço. Não é permitido que o cabo de aço tome a forma de um laço. [cite_start]Neste caso o mesmo deve ser descartado' [cite: 1223-1226]."
+    "comentario": "A alternativa D está correta. O item 1.3.1 afirma que 'A figura 3 mostra o início de um nó, conhecido por laço. Não é permitido que o cabo de aço tome a forma de um laço. Neste caso o mesmo deve ser descartado'."
   },
   {
     "id": "acessorios_petrobras_03",
@@ -48,7 +48,7 @@
       "E": "A medição deve ser feita apenas visualmente, sem uso de ferramentas."
     },
     "resposta_correta": "C",
-    "comentario": "A alternativa C está correta. [cite_start]O item 1.4.4.3 estabelece que 'O cabo deve ser substituído quando ocorrer uma redução de 10% no valor do seu diâmetro nominal'[cite: 1272]. [cite_start]A Figura 4 ilustra a forma correta ('CERTO') de medir pelos pontos de maior diâmetro (cristas) [cite: 1273-1276]."
+    "comentario": "A alternativa C está correta. O item 1.4.4.3 estabelece que 'O cabo deve ser substituído quando ocorrer uma redução de 10% no valor do seu diâmetro nominal'. A Figura 4 ilustra a forma correta ('CERTO') de medir pelos pontos de maior diâmetro (cristas)."
   },
   {
     "id": "acessorios_petrobras_04",
@@ -64,7 +64,7 @@
       "E": "FS 3:1 para cabos de aço e FS 5:1 para cintas."
     },
     "resposta_correta": "D",
-    "comentario": "A alternativa D está correta. [cite_start]O documento define no item 1.1 que 'Para as eslingas de cabo de aço o fator de segurança é 5.1 [5:1]' [cite: 1210] [cite_start]e no item 2.1 que 'Para as cintas de carga o fator de segurança é 7.1 [7:1]'[cite: 1307]."
+    "comentario": "A alternativa D está correta. O documento define no item 1.1 que 'Para as eslingas de cabo de aço o fator de segurança é 5.1 [5:1]' e no item 2.1 que 'Para as cintas de carga o fator de segurança é 7.1 [7:1]'."
   },
   {
     "id": "acessorios_petrobras_05",
@@ -81,7 +81,7 @@
       "E": "Aumentar a capacidade de carga da eslinga em 50%."
     },
     "resposta_correta": "B",
-    "comentario": "A alternativa B está correta. [cite_start]O item 3.2 define a Sapatilha (Figura 8) como 'Proteção interna de uma alça ou olhal da eslinga... para evitar desgaste e deformação' [cite: 1363-1364]."
+    "comentario": "A alternativa B está correta. O item 3.2 define a Sapatilha (Figura 8) como 'Proteção interna de uma alça ou olhal da eslinga... para evitar desgaste e deformação'."
   },
   {
     "id": "acessorios_petrobras_06",
@@ -98,7 +98,7 @@
       "E": "Porque é um gancho fixo que impede qualquer movimento do cabo."
     },
     "resposta_correta": "C",
-    "comentario": "A alternativa C está correta. [cite_start]O item 3.4 descreve o Gancho Corrediço (Figura 12) como recomendado para eslingas tipo forca, pois 'O seu canal permite que haja deslizamento do cabo de aço fixando a carga e evitando a deformação e o desgaste do gancho' [cite: 1383-1384]."
+    "comentario": "A alternativa C está correta. O item 3.4 descreve o Gancho Corrediço (Figura 12) como recomendado para eslingas tipo forca, pois 'O seu canal permite que haja deslizamento do cabo de aço fixando a carga e evitando a deformação e o desgaste do gancho'."
   },
   {
     "id": "acessorios_petrobras_07",
@@ -114,7 +114,7 @@
       "E": "Qualquer tamanho de corte transversal exige descarte imediato."
     },
     "resposta_correta": "B",
-    "comentario": "A alternativa B está correta. [cite_start]O item 2.3, alínea 'c', estabelece: 'Deve-se condenar e retirar de uso as cintas que apresentem um corte transversal superior a 10% da largura da mesma'[cite: 1333]."
+    "comentario": "A alternativa B está correta. O item 2.3, alínea 'c', estabelece: 'Deve-se condenar e retirar de uso as cintas que apresentem um corte transversal superior a 10% da largura da mesma'."
   },
   {
     "id": "acessorios_petrobras_08",
@@ -131,7 +131,7 @@
       "E": "Destorcedor (Tornel)."
     },
     "resposta_correta": "C",
-    "comentario": "A alternativa C está correta. [cite_start]O item 3.8 descreve os Esticadores (Figura 18) como ideais para serem adaptados em montagens que necessitam regulagens controladas e precisas, possuindo rosca esquerda e direita [cite: 1410-1412]."
+    "comentario": "A alternativa C está correta. O item 3.8 descreve os Esticadores (Figura 18) como ideais para serem adaptados em montagens que necessitam regulagens controladas e precisas, possuindo rosca esquerda e direita."
   },
   {
     "id": "acessorios_petrobras_09",
@@ -148,7 +148,7 @@
       "E": "Grampo pesado."
     },
     "resposta_correta": "B",
-    "comentario": "A alternativa B está correta. [cite_start]O item 3.6 descreve os Tornéis/Destorcedores (Figura 15) como o 'Acessório ideal para aliviar o atrito e a torção dos cabos de aço nos materiais' [cite: 1395-1396]."
+    "comentario": "A alternativa B está correta. O item 3.6 descreve os Tornéis/Destorcedores (Figura 15) como o 'Acessório ideal para aliviar o atrito e a torção dos cabos de aço nos materiais'."
   },
   {
     "id": "acessorios_petrobras_10",
@@ -164,7 +164,7 @@
       "E": "Para armazenamento prolongado, as eslingas devem ser limpas, secas e lubrificadas."
     },
     "resposta_correta": "C",
-    "comentario": "A alternativa C está incorreta. [cite_start]O item 1.3.4 adverte explicitamente: 'Não utilize óleo queimado para lubrificar eslingas pois esses são ácidos e têm características corrosivas'[cite: 1237]."
+    "comentario": "A alternativa C está incorreta. O item 1.3.4 adverte explicitamente: 'Não utilize óleo queimado para lubrificar eslingas pois esses são ácidos e têm características corrosivas'."
   },
   {
     "id": "acessorios_petrobras_11",
@@ -181,7 +181,7 @@
       "E": "É o único acessório permitido para içamento de pessoas."
     },
     "resposta_correta": "A",
-    "comentario": "A alternativa A está correta. [cite_start]O item 3.9 define a Patesca (Figura 19) como acessório com 'abertura lateral destacável que permite introduzi-la no cabo de aço, em qualquer ponto de sua extensão'[cite: 1415]."
+    "comentario": "A alternativa A está correta. O item 3.9 define a Patesca (Figura 19) como acessório com 'abertura lateral destacável que permite introduzi-la no cabo de aço, em qualquer ponto de sua extensão'."
   },
   {
     "id": "acessorios_petrobras_12",
@@ -197,7 +197,7 @@
       "E": "A cada 2 anos."
     },
     "resposta_correta": "C",
-    "comentario": "A alternativa C está correta. [cite_start]O item 1.4.3, alínea 'a', determina que 'a inspeção completa deve ser feita a cada 180 dias ou quando indicado pela inspeção visual de rotina'[cite: 1250]."
+    "comentario": "A alternativa C está correta. O item 1.4.3, alínea 'a', determina que 'a inspeção completa deve ser feita a cada 180 dias ou quando indicado pela inspeção visual de rotina'."
   },
   {
     "id": "acessorios_petrobras_13",
@@ -214,7 +214,7 @@
       "E": "Garra para tubos de concreto."
     },
     "resposta_correta": "B",
-    "comentario": "A alternativa B está correta. [cite_start]O item 3.10 descreve o acessório da Figura 20 como 'PEGA TAMBORES', específico para o manuseio de tambores por unidade[cite: 1427]."
+    "comentario": "A alternativa B está correta. O item 3.10 descreve o acessório da Figura 20 como 'PEGA TAMBORES', específico para o manuseio de tambores por unidade."
   },
   {
     "id": "acessorios_petrobras_14",
@@ -230,7 +230,7 @@
       "E": "Não existe reparo para cintas; qualquer dano mínimo exige descarte total."
     },
     "resposta_correta": "C",
-    "comentario": "A alternativa C está correta. [cite_start]O item 2.6.1 afirma: 'Consertos em cintas de movimentação só podem ser efetuados pelo fabricante, ou por pessoas por ele indicadas, e não nas uniões principais e/ou nos reforços'[cite: 1343]."
+    "comentario": "A alternativa C está correta. O item 2.6.1 afirma: 'Consertos em cintas de movimentação só podem ser efetuados pelo fabricante, ou por pessoas por ele indicadas, e não nas uniões principais e/ou nos reforços'."
   },
   {
     "id": "acessorios_petrobras_15",
@@ -247,6 +247,6 @@
       "E": "São fabricados em plástico de alta resistência."
     },
     "resposta_correta": "B",
-    "comentario": "A alternativa B está correta. [cite_start]O item 3.7 descreve os Clips/Grampos (Figuras 16 e 17) como 'Forjados e galvanizados... Utilizado para fins gerais e para cabos estáticos' [cite: 1405-1406]."
+    "comentario": "A alternativa B está correta. O item 3.7 descreve os Clips/Grampos (Figuras 16 e 17) como 'Forjados e galvanizados... Utilizado para fins gerais e para cabos estáticos'."
   }
 ]
