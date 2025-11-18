@@ -1,5 +1,305 @@
 [
     {
+    "id": "800001",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Cosmologia",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Estudos Religiosos",
+    "ano": "2025",
+    "cargo": "Pesquisador em Ciências da Religião",
+    "nivel": "Superior",
+    "enunciado": "No sistema gnóstico, a criação do mundo material não é atribuída ao Deus Supremo e Inefável, mas sim a uma entidade inferior, muitas vezes descrita como ignorante ou arrogante. Assinale a alternativa que nomeia CORRETAMENTE esta entidade responsável pela criação da matéria.",
+    "alternativas": {
+      "A": "Monada.",
+      "B": "Sophia.",
+      "C": "Demiurgo.",
+      "D": "Pleroma.",
+      "E": "Logos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Demiurgo (frequentemente identificado como Yaldabaoth) é o artesão ou criador do mundo material no Gnosticismo. Ele é distinto do Deus Verdadeiro (a Mônada), sendo considerado uma divindade menor que aprisionou as centelhas divinas na matéria."
+  },
+  {
+    "id": "800002",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Conceitos Fundamentais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Estudos Religiosos",
+    "ano": "2025",
+    "cargo": "Professor de Filosofia",
+    "nivel": "Superior",
+    "enunciado": "O termo 'Gnosticismo' deriva do grego 'gnosis'. Diferente da fé cristã ortodoxa ('pistis'), a salvação para os gnósticos seria alcançada por meio:",
+    "alternativas": {
+      "A": "Do sacrifício ritualístico de animais.",
+      "B": "Da estrita observância da lei mosaica.",
+      "C": "Do conhecimento intuitivo e esotérico da natureza divina interior.",
+      "D": "Da caridade e das obras sociais exclusivamente.",
+      "E": "Da adoração às entidades cósmicas conhecidas como 'Grandes Antigos' (Cthulhu).",
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. A Gnose é o conhecimento salvífico, uma compreensão revelada e interior de que o espírito humano é uma centelha divina presa na matéria e que deve retornar à sua origem. A alternativa E está incorreta, pois Cthulhu pertence à ficção de H.P. Lovecraft."
+  },
+  {
+    "id": "800003",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Mitologia",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Estudos Religiosos",
+    "ano": "2025",
+    "cargo": "Analista Cultural",
+    "nivel": "Superior",
+    "enunciado": "Dentro da complexa mitologia gnóstica, existe uma figura feminina (Aeon) que, em sua busca apaixonada por conhecer o Pai inefável, acaba caindo e gerando a matéria ou o Demiurgo por acidente. Qual é o nome dessa figura?",
+    "alternativas": {
+      "A": "Barbelo.",
+      "B": "Sophia (Sabedoria).",
+      "C": "Eva.",
+      "D": "Lilith.",
+      "E": "Helena."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O mito de Sophia é central em muitas escolas gnósticas (como a Valentiniana). Sua queda e subsequente redenção simbolizam a descida da alma à matéria e a necessidade de restauração ao Pleroma."
+  },
+  {
+    "id": "800004",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Entidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Historiador",
+    "nivel": "Superior",
+    "enunciado": "Os textos de Nag Hammadi descrevem governantes do mundo material que servem ao Demiurgo e trabalham para impedir que as almas humanas ascendam ao reino espiritual. Esses guardiões planetários são chamados de:",
+    "alternativas": {
+      "A": "Aeons.",
+      "B": "Archons (Arcontes).",
+      "C": "Serafins.",
+      "D": "Bodhisattvas.",
+      "E": "Shoggoths."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Os Arcontes (do grego 'governantes') são as forças cósmicas, frequentemente associadas aos planetas, que administram o universo material sob o comando do Demiurgo, criando obstáculos para a alma."
+  },
+  {
+    "id": "800005",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Identificação de Divindades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Estudos Religiosos",
+    "ano": "2025",
+    "cargo": "Pesquisador",
+    "nivel": "Superior",
+    "enunciado": "Em estudos comparados de religião e literatura, é comum haver confusão entre mitologias antigas e ficção moderna. Assinale a alternativa que contém APENAS nomes de entidades presentes nos textos gnósticos históricos (como o Apócrifo de João).",
+    "alternativas": {
+      "A": "Yaldabaoth, Saklas e Samael.",
+      "B": "Cthulhu, Dagon e Yaldabaoth.",
+      "C": "Sophia, Zeus e Nyarlathotep.",
+      "D": "Demiurgo, Azathoth e Cristo.",
+      "E": "Yog-Sothoth, Barbelo e Abraxas."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. Yaldabaoth, Saklas e Samael são três nomes utilizados no Gnosticismo (especificamente no texto Apócrifo de João) para designar o Demiurgo ou criador inferior. As demais alternativas misturam divindades gnósticas com o panteão fictício de H.P. Lovecraft (Cthulhu, Azathoth, etc.) ou grego."
+  },
+  {
+    "id": "800006",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Fontes Históricas",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Biblioteconomista",
+    "nivel": "Superior",
+    "enunciado": "A compreensão moderna do Gnosticismo foi revolucionada em 1945 com a descoberta de uma biblioteca de códices antigos no Egito. Qual é o nome dessa coleção de textos?",
+    "alternativas": {
+      "A": "Manuscritos do Mar Morto.",
+      "B": "Biblioteca de Nag Hammadi.",
+      "C": "Papiros de Oxyrhynchus.",
+      "D": "Necronomicon.",
+      "E": "Textos das Pirâmides."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. A Biblioteca de Nag Hammadi contém os principais textos gnósticos primários (como o Evangelho de Tomé e o Apócrifo de João), permitindo estudar o movimento pela ótica dos próprios gnósticos e não apenas de seus detratores."
+  },
+  {
+    "id": "800007",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Dualismo",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Professor",
+    "nivel": "Superior",
+    "enunciado": "O Gnosticismo é caracterizado por um dualismo radical. Sobre essa visão de mundo, assinale a alternativa CORRETA.",
+    "alternativas": {
+      "A": "Acredita na sacralidade da matéria e que o corpo físico é o templo perfeito de Deus.",
+      "B": "Defende que o espírito e a matéria são ambos bons e coeternos.",
+      "C": "Considera o mundo material como uma prisão ou erro, oposto ao reino espiritual de luz (Pleroma).",
+      "D": "Prega que o Demiurgo e o Deus Supremo são a mesma entidade benevolente.",
+      "E": "Baseia-se na ideia de que o caos primordial, representado por Cthulhu, deve ser despertado para renovar a Terra."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O dualismo gnóstico coloca o espírito (pneuma) como positivo e divino, e a matéria (hyle) como negativa, corrupta e criada por uma divindade inferior."
+  },
+  {
+    "id": "800008",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Abraxas",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Historiador da Arte",
+    "nivel": "Superior",
+    "enunciado": "Basilides, um mestre gnóstico de Alexandria, ensinava sobre uma entidade suprema ou um 'Grande Arconte' que englobava em si os 365 céus. Essa figura, frequentemente representada em talismãs com cabeça de galo e pernas de serpente, é conhecida como:",
+    "alternativas": {
+      "A": "Abraxas.",
+      "B": "Moloque.",
+      "C": "Baphomet.",
+      "D": "Hastur.",
+      "E": "Kronos."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. Abraxas (ou Abrasax) é uma figura central no sistema de Basilides, cujas letras em grego somam o valor numérico de 365, correspondendo aos dias do ano e aos céus/eons do sistema cosmológico."
+  },
+  {
+    "id": "800009",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Pleroma",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Teólogo",
+    "nivel": "Superior",
+    "enunciado": "No Gnosticismo, o termo 'Pleroma' refere-se a:",
+    "alternativas": {
+      "A": "O abismo infernal onde residem os demônios.",
+      "B": "A totalidade ou plenitude do reino divino, habitado pelos Aeons e pelo Deus Verdadeiro.",
+      "C": "O livro sagrado escrito por Valentim.",
+      "D": "A cidade submersa de R'lyeh.",
+      "E": "O ritual de batismo pela água."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Pleroma (do grego 'plenitude') designa a totalidade dos poderes divinos, a região de luz acima do mundo material criado pelo Demiurgo."
+  },
+  {
+    "id": "800010",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Yaldabaoth",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Analista",
+    "nivel": "Superior",
+    "enunciado": "O 'Apócrifo de João' descreve o Demiurgo Yaldabaoth com uma aparência teratomórfica (monstruosa). Qual é a descrição clássica dessa entidade nos textos gnósticos?",
+    "alternativas": {
+      "A": "Um homem velho de barba branca sentado em um trono.",
+      "B": "Uma serpente com rosto de leão.",
+      "C": "Um gigante com tentáculos no lugar da boca, semelhante a Cthulhu.",
+      "D": "Um anjo de doze asas e múltiplos olhos.",
+      "E": "Um touro alado.",
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Yaldabaoth é frequentemente descrito como uma serpente com cabeça de leão (leontocefálica), simbolizando sua natureza bestial, cega e arrogante em contraposição à sabedoria divina."
+  },
+  {
+    "id": "800011",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Cristologia",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Professor",
+    "nivel": "Superior",
+    "enunciado": "Muitos grupos gnósticos adotavam uma visão 'docética' em relação a Jesus Cristo. Isso significa que eles acreditavam que:",
+    "alternativas": {
+      "A": "Jesus era um revolucionário político apenas.",
+      "B": "Cristo não tinha um corpo físico real, mas apenas uma aparência de carne, pois o divino não poderia se misturar com a matéria corrupta.",
+      "C": "Jesus e o Demiurgo eram a mesma pessoa.",
+      "D": "Cristo veio para fortalecer a Lei de Moisés.",
+      "E": "Jesus era um sumo sacerdote de Dagon."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Docetismo (do grego dokein, 'parecer') é a doutrina de que o corpo de Cristo era uma ilusão ou puramente espiritual, rejeitando o sofrimento físico real na cruz, pois a matéria é considerada intrinsecamente má no Gnosticismo."
+  },
+  {
+    "id": "800012",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Sethianos",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Pesquisador",
+    "nivel": "Superior",
+    "enunciado": "Uma das principais seitas gnósticas, os Sethianos, considerava-se a descendência espiritual de Seth, terceiro filho de Adão. Para este grupo, quem era a personificação da Sabedoria Divina e consorte do Espírito Invisível?",
+    "alternativas": {
+      "A": "Barbelo.",
+      "B": "Maria Madalena (exclusivamente).",
+      "C": "Shub-Niggurath.",
+      "D": "Helena de Troia.",
+      "E": "A Virgem Maria ortodoxa."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. No Gnosticismo Sethiano, Barbelo é a primeira emanação do Deus Supremo, o pensamento divino (Ennoia) e a mãe universal, desempenhando um papel crucial na cosmologia."
+  },
+  {
+    "id": "800013",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Centelha Divina",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Filósofo",
+    "nivel": "Superior",
+    "enunciado": "O objetivo final da prática gnóstica é a libertação da 'centelha divina' (pneuma). Segundo essa teoria, o que aprisiona essa centelha?",
+    "alternativas": {
+      "A": "O pecado original entendido como desobediência moral.",
+      "B": "O corpo físico (soma) e a psique (alma inferior) criada pelo Demiurgo.",
+      "C": "A falta de fé nos dogmas da igreja institucional.",
+      "D": "A maldição dos Antigos Deuses adormecidos.",
+      "E": "A recusa em participar dos sacramentos estatais."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Para os gnósticos, o corpo material e a mente racional/emocional inferior são criações do Demiurgo destinadas a manter o espírito (centelha divina) esquecido de sua origem celestial."
+  },
+  {
+    "id": "800014",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Heresia e Ortodoxia",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Historiador Eclesiástico",
+    "nivel": "Superior",
+    "enunciado": "Irineu de Lyon, em sua obra 'Adversus Haereses' (Contra as Heresias), foi um dos principais críticos do Gnosticismo no século II. Qual era a principal crítica de Irineu à teologia do Demiurgo?",
+    "alternativas": {
+      "A": "Que o Gnosticismo era muito simples e acessível ao povo.",
+      "B": "Que a separação entre o Deus Criador (do Antigo Testamento) e o Deus Pai de Jesus (do Novo Testamento) era uma blasfêmia que negava o monoteísmo.",
+      "C": "Que os gnósticos adoravam estátuas de Cthulhu em segredo.",
+      "D": "Que os gnósticos exigiam celibato obrigatório para todos.",
+      "E": "Que os gnósticos seguiam estritamente a lei judaica."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Os Padres da Igreja, como Irineu, combateram o Gnosticismo (especialmente Marcião e Valentim) por proporem que o Deus Criador do Gênesis era uma entidade diferente e inferior ao Deus revelado por Cristo."
+  },
+  {
+    "id": "800015",
+    "disciplina": "História / Filosofia",
+    "assunto": "Gnosticismo - Maniqueísmo",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado",
+    "ano": "2025",
+    "cargo": "Professor",
+    "nivel": "Superior",
+    "enunciado": "O Maniqueísmo, fundado pelo profeta Mani no século III, é considerado herdeiro e continuador de muitas tradições gnósticas. Sua característica central, que influenciou até mesmo Santo Agostinho antes de sua conversão, é:",
+    "alternativas": {
+      "A": "O politeísmo irrestrito.",
+      "B": "A luta cósmica eterna entre dois princípios equipotentes: o Reino da Luz e o Reino das Trevas.",
+      "C": "A crença na inexistência do mal.",
+      "D": "A adoração ao caos primordial representado pelo Necronomicon.",
+      "E": "A negação completa de qualquer divindade."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O Maniqueísmo levou o dualismo gnóstico ao extremo, estabelecendo uma religião baseada no conflito perpétuo entre a Luz (Bem) e as Trevas (Mal), onde a matéria é intrinsecamente maligna."
+  },
+    {
         "id": 3587028,
         "disciplina": "Legislação (OIT)",
         "assunto": "Convenção Nº 152 da OIT (Segurança nos Trabalhos Portuários)",
