@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "700033",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Disposições Gerais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos da Lei nº 12.815/2013, a exploração indireta das instalações portuárias pode ocorrer sob diferentes regimes jurídicos, dependendo de sua localização. Assinale a alternativa CORRETA sobre o tema, conforme o Art. 1º.",
+    "alternativas": {
+      "A": "A exploração indireta de instalações localizadas fora da área do porto organizado ocorrerá mediante concessão.",
+      "B": "A exploração indireta do porto organizado ocorrerá mediante autorização de bem público.",
+      "C": "A exploração indireta do porto organizado e das instalações nele localizadas ocorrerá mediante concessão e arrendamento de bem público.",
+      "D": "Toda exploração portuária, dentro ou fora do porto organizado, deve ocorrer mediante arrendamento.",
+      "E": "A autorização é a forma de exploração exclusiva para instalações dentro da poligonal do porto organizado."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 1º, § 1º: 'A exploração indireta do porto organizado e das instalações portuárias nele localizadas ocorrerá mediante concessão e arrendamento de bem público.' Já o § 2º define que fora da área do porto organizado, ocorre mediante autorização."
+  },
+  {
+    "id": "700034",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Disposições Gerais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 1º da Lei nº 12.815/2013, as concessões, arrendamentos e autorizações serão outorgados a quem demonstre capacidade para seu desempenho. Sobre esse sujeito, é CORRETO afirmar que deve ser:",
+    "alternativas": {
+      "A": "Pessoa física ou jurídica.",
+      "B": "Exclusivamente consórcio público.",
+      "C": "Pessoa jurídica, por conta e risco da União.",
+      "D": "Pessoa jurídica, por sua conta e risco.",
+      "E": "Pessoa física, mediante garantia real."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 1º, § 3º: 'As concessões, os arrendamentos e as autorizações de que trata esta Lei serão outorgados a pessoa jurídica que demonstre capacidade para seu desempenho, por sua conta e risco.'"
+  },
+  {
+    "id": "700035",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Definições",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A Lei nº 12.815/2013 apresenta diversas definições fundamentais para o setor. Analise a definição a seguir: 'instalação portuária explorada mediante autorização e localizada fora da área do porto organizado'. Assinale a alternativa que corresponde CORRETAMENTE a essa definição, segundo o Art. 2º.",
+    "alternativas": {
+      "A": "Operador Portuário.",
+      "B": "Terminal de Uso Privado (TUP).",
+      "C": "Porto Organizado.",
+      "D": "Instalação Portuária Pública de Pequeno Porte.",
+      "E": "Estação de Transbordo de Cargas."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 2º, inciso IV: 'terminal de uso privado: instalação portuária explorada mediante autorização e localizada fora da área do porto organizado'."
+  },
+  {
+    "id": "700036",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Definições",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Considerando as definições constantes no Art. 2º da Lei nº 12.815/2013, assinale a alternativa INCORRETA.",
+    "alternativas": {
+      "A": "Concessão é a cessão onerosa do porto organizado, com vistas à administração e à exploração de sua infraestrutura por prazo determinado.",
+      "B": "Arrendamento é a cessão onerosa de área e infraestrutura públicas localizadas dentro do porto organizado, para exploração por prazo determinado.",
+      "C": "Operador portuário é a pessoa jurídica pré-qualificada para exercer atividades de movimentação de passageiros ou mercadorias dentro da área do porto organizado.",
+      "D": "Área do porto organizado é a área delimitada por ato do Poder Legislativo que compreende as instalações portuárias.",
+      "E": "Delegação é a transferência, mediante convênio, da administração e da exploração do porto organizado para Municípios ou Estados."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D é a incorreta. Conforme o Art. 2º, inciso II, a área do porto organizado é delimitada por ato do **Poder Executivo**, e não do Poder Legislativo."
+  },
+  {
+    "id": "700037",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Diretrizes",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 3º da Lei nº 12.815/2013 estabelece diretrizes para a exploração dos portos organizados e instalações portuárias. Analise os itens abaixo:\n\nI. Garantia da modicidade e da publicidade das tarifas.\nII. Promoção da segurança da navegação na entrada e na saída das embarcações.\nIII. Restrição à participação do setor privado para garantir a soberania nacional.\n\nEstá(ão) CORRETO(S), segundo a referida Lei:",
+    "alternativas": {
+      "A": "Somente o item I.",
+      "B": "Somente o item II.",
+      "C": "Somente os itens I e II.",
+      "D": "Somente os itens II e III.",
+      "E": "Todos os itens."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Os itens I e II correspondem aos incisos II e IV do Art. 3º. O item III está incorreto, pois o inciso V prega o 'estímulo à concorrência, por meio do incentivo à participação do setor privado'."
+  },
+  {
+    "id": "700038",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Diretrizes",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Com as alterações trazidas pela Lei nº 14.047/2020, o Art. 3º da Lei nº 12.815/2013 passou a incluir uma diretriz específica sobre a formação de preços. Assinale a alternativa que reflete CORRETAMENTE essa diretriz.",
+    "alternativas": {
+      "A": "Tabelamento rigoroso de preços nas operações portuárias pela ANTAQ.",
+      "B": "Liberdade de preços nas operações portuárias, reprimidos qualquer prática prejudicial à competição e o abuso do poder econômico.",
+      "C": "Fixação de preços mínimos para garantir a viabilidade das concessionárias.",
+      "D": "Controle estatal prévio de todas as tarifas praticadas pelos terminais privados.",
+      "E": "Liberdade total de preços, independentemente de práticas de abuso de poder econômico."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Trata-se da literalidade do inciso VI do Art. 3º, acrescido em 2020: 'liberdade de preços nas operações portuárias, reprimidos qualquer prática prejudicial à competição e o abuso do poder econômico'."
+  },
+  {
+    "id": "700039",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Concessão",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre a concessão de bem público destinado à exploração do porto organizado, conforme dispõe o Art. 4º da Lei nº 12.815/2013, é CORRETO afirmar que ela será realizada mediante:",
+    "alternativas": {
+      "A": "Contrato de adesão, dispensada a licitação.",
+      "B": "Ato discricionário da autoridade portuária, sem necessidade de contrato.",
+      "C": "Celebração de contrato, sempre precedida de licitação.",
+      "D": "Convênio firmado diretamente com o operador portuário.",
+      "E": "Autorização precária com prazo indeterminado."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme redação do Art. 4º: 'A concessão de bem público destinado à exploração do porto organizado será realizada mediante a celebração de contrato, sempre precedida de licitação...'."
+  },
+  {
+    "id": "700040",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Concessão",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos contratos de concessão previstos na Lei nº 12.815/2013, uma questão essencial refere-se ao destino dos bens ao final do contrato. De acordo com o Art. 5º, § 2º, findo o prazo dos contratos, os bens vinculados à concessão:",
+    "alternativas": {
+      "A": "Serão leiloados para cobrir custos operacionais.",
+      "B": "Passarão à propriedade plena da concessionária.",
+      "C": "Serão divididos igualmente entre a concessionária e o Estado.",
+      "D": "Reverterão ao patrimônio da União, na forma prevista no contrato.",
+      "E": "Deverão ser destruídos ou alienados como sucata."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 5º, § 2º: 'Findo o prazo dos contratos, os bens vinculados à concessão ou ao arrendamento reverterão ao patrimônio da União, na forma prevista no contrato.'"
+  },
+  {
+    "id": "700041",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Uso Temporário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A Lei nº 12.815/2013, em seu Art. 5º-D, prevê a possibilidade de uso temporário de áreas e instalações portuárias. Sobre esse instrumento, assinale a alternativa CORRETA quanto ao prazo máximo improrrogável do contrato.",
+    "alternativas": {
+      "A": "12 meses.",
+      "B": "24 meses.",
+      "C": "36 meses.",
+      "D": "48 meses.",
+      "E": "60 meses."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 5º-D, § 1º: 'O contrato de uso temporário terá o prazo improrrogável de até 48 (quarenta e oito) meses.'"
+  },
+  {
+    "id": "700042",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Arrendamento",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 5º-B prevê a possibilidade de dispensa de licitação para o arrendamento de área no porto organizado. Para que isso ocorra, deve ser comprovada a existência de um único interessado e atendido o seguinte requisito, dentre outros:",
+    "alternativas": {
+      "A": "Autorização expressa do Congresso Nacional.",
+      "B": "Realização de chamamento público pela autoridade portuária.",
+      "C": "Pagamento antecipado de 50% do valor do contrato.",
+      "D": "Aprovação da dispensa por referendo popular local.",
+      "E": "Inexistência de plano de desenvolvimento e zoneamento do porto."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme Art. 5º-B, Parágrafo único, inciso I: 'realização de chamamento público pela autoridade portuária com vistas a identificar interessados na exploração econômica da área'."
+  },
+  {
+    "id": "700043",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Licitações",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nas licitações dos contratos de concessão e arrendamento reguladas pela Lei nº 12.815/2013, o Art. 6º define critérios para julgamento. Assinale a alternativa que apresenta APENAS critérios válidos previstos no referido artigo.",
+    "alternativas": {
+      "A": "Maior número de funcionários, menor tarifa e maior área ocupada.",
+      "B": "Maior capacidade de movimentação, menor tarifa ou menor tempo de movimentação de carga.",
+      "C": "Menor tarifa, maior idade da empresa e maior capital social.",
+      "D": "Maior capacidade de armazenamento, menor custo de obra e sede no Brasil.",
+      "E": "Menor tempo de movimentação, maior tarifa e maior pagamento de outorga.",
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 6º: '...serão considerados como critérios para julgamento, de forma isolada ou combinada, a maior capacidade de movimentação, a menor tarifa ou o menor tempo de movimentação de carga...'."
+  },
+  {
+    "id": "700044",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Licitações",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 6º, § 6º da Lei nº 12.815/2013, o poder concedente poderá autorizar a expansão da área arrendada para área contígua dentro da poligonal do porto organizado. Qual é a condição essencial para que essa medida seja autorizada?",
+    "alternativas": {
+      "A": "Que a medida gere aumento imediato de receitas tributárias.",
+      "B": "Que a expansão seja superior a 50% da área original.",
+      "C": "Que a medida traga comprovadamente eficiência na operação portuária.",
+      "D": "Que haja concordância de todos os demais operadores do porto.",
+      "E": "Que a área contígua esteja abandonada há mais de 5 anos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 6º, § 6º: '...sempre que a medida trouxer comprovadamente eficiência na operação portuária.'"
+  },
+  {
+    "id": "700045",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Utilização Excepcional",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 7º da Lei nº 12.815/2013, quem possui competência para disciplinar a utilização em caráter excepcional, por qualquer interessado, de instalações portuárias arrendadas ou exploradas pela concessionária?",
+    "alternativas": {
+      "A": "A Autoridade Portuária local.",
+      "B": "O Ministério da Infraestrutura.",
+      "C": "A Secretaria de Portos.",
+      "D": "A Antaq.",
+      "E": "O OGMO."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 7º: 'A Antaq poderá disciplinar a utilização em caráter excepcional...'"
+  },
+  {
+    "id": "700046",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Utilização Excepcional",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do Art. 7º da Lei nº 12.815/2013, a utilização excepcional de instalações arrendadas por terceiros interessados deve respeitar uma garantia específica em relação ao titular do contrato. Assinale a alternativa que apresenta essa garantia.",
+    "alternativas": {
+      "A": "A isenção total de responsabilidade civil.",
+      "B": "A remuneração adequada ao titular do contrato.",
+      "C": "A prorrogação automática do prazo do contrato original.",
+      "D": "A exclusividade na operação da carga.",
+      "E": "O direito de veto sobre a carga a ser movimentada."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o final do Art. 7º: '...assegurada a remuneração adequada ao titular do contrato.'"
+  },
+  {
+    "id": "700047",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 8º da Lei nº 12.815/2013, as instalações portuárias localizadas fora da área do porto organizado serão exploradas mediante autorização. Assinale a alternativa que contém uma modalidade que NÃO está compreendida nesse artigo.",
+    "alternativas": {
+      "A": "Terminal de uso privado.",
+      "B": "Estação de transbordo de carga.",
+      "C": "Instalação portuária pública de pequeno porte.",
+      "D": "Instalação portuária de turismo.",
+      "E": "Terminal público de contêineres em porto organizado."
+    },
+    "resposta_correta": "E",
+    "comentario": "A alternativa E está correta (como a incorreta no contexto do artigo). O Art. 8º lista I, II, III e IV (A, B, C, D da questão). Um terminal público dentro do porto organizado é explorado via arrendamento, não autorização nos moldes do Art. 8º."
+  },
+  {
+    "id": "700048",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Em relação ao prazo da autorização de instalação portuária, conforme o disposto no Art. 8º, § 2º da Lei nº 12.815/2013, assinale a alternativa CORRETA.",
+    "alternativas": {
+      "A": "Terá prazo indeterminado.",
+      "B": "Terá prazo de até 50 anos, improrrogável.",
+      "C": "Terá prazo de até 25 anos, prorrogável por períodos sucessivos.",
+      "D": "Terá prazo de 10 anos, renovável apenas uma vez.",
+      "E": "Terá prazo vinculado à duração da vida útil da embarcação principal."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 8º, § 2º: 'A autorização de instalação portuária terá prazo de até 25 (vinte e cinco) anos, prorrogável por períodos sucessivos...'."
+  },
+  {
+    "id": "700049",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Procedimento de Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 9º da Lei nº 12.815/2013, os interessados em obter autorização de instalação portuária podem requerê-la à Antaq a qualquer tempo. Recebido o requerimento, a Antaq deverá promover a abertura de processo de anúncio público. Qual é o prazo estipulado para esse anúncio?",
+    "alternativas": {
+      "A": "10 (dez) dias.",
+      "B": "15 (quinze) dias.",
+      "C": "30 (trinta) dias.",
+      "D": "45 (quarenta e cinco) dias.",
+      "E": "60 (sessenta) dias."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 9º, § 1º, II: 'promover a abertura de processo de anúncio público, com prazo de 30 (trinta) dias...'."
+  },
+  {
+    "id": "700050",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Procedimento de Autorização",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O processo de anúncio público previsto no Art. 9º da Lei nº 12.815/2013 tem um objetivo específico. Assinale a alternativa que indica CORRETAMENTE esse objetivo.",
+    "alternativas": {
+      "A": "Identificar a existência de outros interessados na obtenção de autorização de instalação portuária na mesma região e com características semelhantes.",
+      "B": "Divulgar o valor das tarifas que serão cobradas pelo futuro terminal.",
+      "C": "Consultar a população local sobre os impactos ambientais do empreendimento.",
+      "D": "Recrutar mão de obra local para a construção do terminal.",
+      "E": "Validar o projeto de engenharia junto ao CREA."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. Conforme o Art. 9º, § 1º, II: '...para identificar a existência de outros interessados na obtenção de autorização de instalação portuária na mesma região e com características semelhantes.'"
+  },
+  {
+    "id": "700051",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Chamada Pública",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 10 da Lei nº 12.815/2013, o poder concedente poderá determinar à Antaq a abertura de processo de chamada pública. Esse ato deve estar em consonância com:",
+    "alternativas": {
+      "A": "Os interesses exclusivos das empresas de navegação estrangeiras.",
+      "B": "As diretrizes do planejamento e das políticas do setor portuário.",
+      "C": "A disponibilidade orçamentária do Ministério da Economia.",
+      "D": "O cronograma de obras da Prefeitura local.",
+      "E": "As solicitações dos sindicatos de trabalhadores portuários."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 10: 'O poder concedente poderá determinar à Antaq... em consonância com as diretrizes do planejamento e das políticas do setor portuário...'"
+  },
+  {
+    "id": "700052",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Chamada Pública",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Quando o poder concedente determina a abertura de chamada pública nos termos do Art. 10 da Lei nº 12.815/2013, qual prazo deve ser observado para a identificação de interessados, por remissão ao Art. 9º?",
+    "alternativas": {
+      "A": "10 dias.",
+      "B": "20 dias.",
+      "C": "30 dias.",
+      "D": "60 dias.",
+      "E": "90 dias."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. O Art. 10 cita expressamente: '...observado o prazo previsto no inciso II do § 1º do art. 9º'. O referido inciso estipula o prazo de 30 (trinta) dias."
+  },
+  {
+    "id": "700053",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Chamada Pública",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do Art. 11 da Lei nº 12.815/2013, o instrumento da abertura de chamada ou anúncio público para autorização de instalação portuária deve indicar obrigatoriamente certos parâmetros. Assinale a alternativa que NÃO corresponde a um desses parâmetros obrigatórios.",
+    "alternativa": {
+      "A": "A região geográfica na qual será implantada a instalação portuária.",
+      "B": "O perfil das cargas a serem movimentadas.",
+      "C": "A estimativa do volume de cargas ou de passageiros a ser movimentado.",
+      "D": "O valor exato da tarifa a ser cobrada do usuário final.",
+      "E": "A região geográfica e o perfil das cargas."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D é a incorreta (gabarito). O Art. 11 lista nos incisos I, II e III: região geográfica, perfil das cargas e estimativa do volume. Não há exigência de indicar o valor exato da tarifa no instrumento de abertura de chamada."
+  },
+  {
+    "id": "700054",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Chamada Pública",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o parágrafo único do Art. 11 da Lei nº 12.815/2013, o interessado em autorização de instalação portuária deve apresentar documento que assegure o direito de uso e fruição do respectivo terreno. Qual dos seguintes documentos é expressamente citado pela lei para essa finalidade?",
+    "alternativa": {
+      "A": "Apenas a escritura definitiva de compra e venda.",
+      "B": "Contrato de intenção de compra futura.",
+      "C": "Título de propriedade, inscrição de ocupação ou certidão de aforamento.",
+      "D": "Declaração de posse precária emitida pela prefeitura.",
+      "E": "Autorização verbal do proprietário anterior."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Parágrafo único do Art. 11: '...deverá apresentar título de propriedade, inscrição de ocupação, certidão de aforamento, cessão de direito real ou outro instrumento jurídico...'."
+  },
+  {
+    "id": "700055",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Processo Seletivo",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 12 da Lei nº 12.815/2013 regula o encerramento do processo de chamada pública. Em qual hipótese as autorizações de instalação portuária poderão ser expedidas diretamente, sem necessidade de processo seletivo, conforme o § 1º?",
+    "alternativa": {
+      "A": "Sempre que o interessado for uma empresa pública.",
+      "B": "Quando o processo de chamada for concluído com a participação de um único interessado.",
+      "C": "Quando houver impedimento locacional para a implantação de todas as propostas.",
+      "D": "Apenas mediante autorização expressa do Congresso Nacional.",
+      "E": "Quando o volume de carga estimado for inferior a 1 milhão de toneladas."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 12, § 1º, I: 'o processo de chamada ou anúncio público seja concluído com a participação de um único interessado'. O inciso II também permite a expedição direta se não houver impedimento locacional, mesmo com mais propostas."
+  },
+  {
+    "id": "700056",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Processo Seletivo",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Caso haja mais de uma proposta e impedimento locacional que inviabilize a implantação concomitante, o Art. 12, § 2º da Lei nº 12.815/2013 determina que a Antaq promova processo seletivo público. Quais são os critérios de julgamento previstos no § 3º deste artigo?",
+    "alternativa": {
+      "A": "Maior geração de empregos e menor impacto ambiental.",
+      "B": "Maior valor de outorga e menor prazo de concessão.",
+      "C": "Maior capacidade de movimentação, menor tarifa ou menor tempo de movimentação de carga.",
+      "D": "Melhor projeto arquitetônico e maior capital social.",
+      "E": "Maior tempo de experiência no setor e sede na região."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 12, § 3º, os critérios são: 'a maior capacidade de movimentação, a menor tarifa ou o menor tempo de movimentação de carga, e outros estabelecidos no edital'."
+  },
+  {
+    "id": "700057",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Acesso a Instalações",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre o acesso de terceiros às instalações portuárias autorizadas, a Lei nº 12.815/2013, em seu Art. 13, estabelece que a Antaq poderá disciplinar tais condições:",
+    "alternativa": {
+      "A": "Em caráter ordinário e gratuito.",
+      "B": "Em caráter excepcional, assegurada remuneração adequada ao titular da autorização.",
+      "C": "Em caráter permanente, sem ônus para o interessado.",
+      "D": "Apenas para cargas do governo federal.",
+      "E": "Mediante prévia desapropriação da área."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 13: 'A Antaq poderá disciplinar as condições de acesso... em caráter excepcional... assegurada remuneração adequada ao titular da autorização'."
+  },
+  {
+    "id": "700058",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Acesso a Instalações",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 13 da Lei nº 12.815/2013, a competência para disciplinar as condições de acesso de terceiros às instalações portuárias autorizadas pertence:",
+    "alternativa": {
+      "A": "Ao Ministério da Infraestrutura.",
+      "B": "À Administração do Porto Organizado.",
+      "C": "Ao OGMO.",
+      "D": "À Antaq.",
+      "E": "Ao operador portuário titular."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. A literalidade do Art. 13 inicia com: 'A Antaq poderá disciplinar as condições de acesso...'."
+  },
+  {
+    "id": "700059",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Requisitos para Instalação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 14 da Lei nº 12.815/2013 elenca requisitos prévios à celebração do contrato de concessão ou arrendamento e à expedição de autorização. Assinale a alternativa que NÃO constitui um desses requisitos obrigatórios.",
+    "alternativa": {
+      "A": "Consulta à autoridade aduaneira.",
+      "B": "Consulta ao respectivo poder público municipal.",
+      "C": "Aprovação da Assembleia Legislativa Estadual.",
+      "D": "Emissão do termo de referência para os estudos ambientais.",
+      "E": "Emissão do termo de referência pelo órgão licenciador."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C é a incorreta (gabarito). O Art. 14 exige consulta à autoridade aduaneira (I), ao poder público municipal (II) e emissão do termo de referência pelo órgão licenciador (III). Não há previsão de aprovação por Assembleia Legislativa."
+  },
+  {
+    "id": "700060",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Requisitos para Instalação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 14, inciso III da Lei nº 12.815/2013, antes da celebração do contrato ou autorização, é necessária a emissão de termo de referência para os estudos ambientais. Qual órgão é responsável por essa emissão?",
+    "alternativa": {
+      "A": "A Antaq.",
+      "B": "A autoridade portuária.",
+      "C": "O Ministério do Meio Ambiente.",
+      "D": "O órgão licenciador.",
+      "E": "A Secretaria de Portos."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 14, III: 'emissão, pelo órgão licenciador, do termo de referência para os estudos ambientais com vistas ao licenciamento'."
+  },
+  {
+    "id": "700061",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Porto Organizado",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A definição da área dos portos organizados é um ato formal. Segundo o Art. 15 da Lei nº 12.815/2013, tal definição ocorrerá por meio de:",
+    "alternativa": {
+      "A": "Resolução da Antaq.",
+      "B": "Lei Municipal.",
+      "C": "Ato do Presidente da República.",
+      "D": "Contrato de concessão.",
+      "E": "Portaria do Ministério da Economia."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 15: 'Ato do Presidente da República disporá sobre a definição da área dos portos organizados...'."
+  },
+  {
+    "id": "700062",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Porto Organizado",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Parágrafo único do Art. 15 da Lei nº 12.815/2013 estabelece critérios para a delimitação da área do porto organizado. Qual dos seguintes fatores deve ser considerado nessa delimitação?",
+    "alternativa": {
+      "A": "A exclusão total das instalações portuárias já existentes.",
+      "B": "A adequação dos acessos marítimos e terrestres.",
+      "C": "A preferência por áreas distantes dos centros urbanos, independentemente da eficiência.",
+      "D": "O valor venal dos imóveis vizinhos.",
+      "E": "A solicitação exclusiva dos operadores privados."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Parágrafo único do Art. 15: 'A delimitação da área deverá considerar a adequação dos acessos marítimos e terrestres...'."
+  },
+  {
+    "id": "700063",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Poder Concedente",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Compete ao Poder Concedente diversas atribuições fundamentais. Analise as alternativas abaixo e assinale aquela que NÃO corresponde a uma competência descrita no Art. 16 da Lei nº 12.815/2013.",
+    "alternativa": {
+      "A": "Elaborar o planejamento setorial.",
+      "B": "Definir as diretrizes para a realização dos procedimentos licitatórios.",
+      "C": "Celebrar os contratos de concessão e arrendamento.",
+      "D": "Executar diretamente a operação de carga e descarga em todos os terminais privados.",
+      "E": "Estabelecer as normas para pré-qualificação dos operadores portuários."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D é a incorreta (gabarito). O Poder Concedente regula e contrata, mas a execução da operação portuária é feita pelos operadores portuários ou arrendatários, não sendo competência direta do Poder Concedente executar a operação em terminais privados (Art. 16)."
+  },
+  {
+    "id": "700064",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Poder Concedente",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o § 2º do Art. 16 da Lei nº 12.815/2013, o poder concedente deve ouvir previamente uma agência reguladora específica sempre que a licitação envolver instalações voltadas à movimentação de petróleo e gás natural. Qual é essa agência?",
+    "alternativa": {
+      "A": "Antaq.",
+      "B": "Anatel.",
+      "C": "Aneel.",
+      "D": "ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis).",
+      "E": "Anvisa."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 16, § 2º: '...o poder concedente deverá ouvir previamente a Agência Nacional do Petróleo, Gás Natural e Biocombustíveis...'."
+  },
+  {
+    "id": "700065",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Administração do Porto",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A administração do porto organizado (Autoridade Portuária) possui competências específicas listadas no Art. 17 da Lei nº 12.815/2013. Dentre elas, encontra-se a competência para:",
+    "alternativa": {
+      "A": "Legislar sobre direito marítimo.",
+      "B": "Promover a remoção de embarcações ou cascos de embarcações que possam prejudicar o acesso ao porto.",
+      "C": "Emitir licenças ambientais definitivas.",
+      "D": "Julgar crimes cometidos a bordo de navios estrangeiros.",
+      "E": "Arrecadar impostos de importação."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 17, § 1º, VII: 'promover a remoção de embarcações ou cascos de embarcações que possam prejudicar o acesso ao porto'."
+  },
+  {
+    "id": "700066",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Administração do Porto",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 17, § 1º da Lei nº 12.815/2013, compete à administração do porto organizado fiscalizar a operação portuária. Essa fiscalização deve zelar pela realização das atividades com:",
+    "alternativa": {
+      "A": "Foco exclusivo no lucro do operador.",
+      "B": "Regularidade, eficiência, segurança e respeito ao meio ambiente.",
+      "C": "Prioridade absoluta para navios de turismo.",
+      "D": "Isenção de tarifas para cargas nacionais.",
+      "E": "Sigilo total das operações."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 17, § 1º, VI: 'zelando pela realização das atividades com regularidade, eficiência, segurança e respeito ao meio ambiente'."
+  },
+  {
+    "id": "700067",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Competências na Área do Porto",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 18 da Lei nº 12.815/2013 estabelece competências da administração do porto que são exercidas sob a coordenação de outras autoridades. Sob a coordenação da autoridade aduaneira, compete à administração do porto:",
+    "alternativa": {
+      "A": "Estabelecer o balizamento do canal de acesso.",
+      "B": "Delimitar as áreas de fundeadouro.",
+      "C": "Delimitar a área de alfandegamento.",
+      "D": "Estabelecer o calado máximo de operação.",
+      "E": "Divulgar as dimensões máximas dos navios."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 18, II, 'a': 'sob coordenação da autoridade aduaneira: a) delimitar a área de alfandegamento'. As demais opções referem-se à coordenação da autoridade marítima."
+  },
+  {
+    "id": "700068",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Competências na Área do Porto",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Ainda sobre o Art. 18 da Lei nº 12.815/2013, sob a coordenação da autoridade marítima, a administração do porto deve:",
+    "alternativa": {
+      "A": "Organizar o fluxo de passageiros na alfândega.",
+      "B": "Fiscalizar a bagagem dos tripulantes.",
+      "C": "Estabelecer e divulgar o calado máximo de operação dos navios.",
+      "D": "Cobrar o imposto de exportação.",
+      "E": "Emitir passaportes para os marinheiros."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 18, I, 'd': 'estabelecer e divulgar o calado máximo de operação dos navios, em função dos levantamentos batimétricos...'."
+  },
+  {
+    "id": "700069",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Áreas Não Afetas",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 19 da Lei nº 12.815/2013 permite que a administração do porto explore áreas não afetas às operações portuárias. Essa exploração deve observar o disposto em qual documento?",
+    "alternativa": {
+      "A": "Plano Diretor Municipal.",
+      "B": "Código Civil.",
+      "C": "Plano de Desenvolvimento e Zoneamento do Porto (PDZ).",
+      "D": "Regimento Interno do Sindicato.",
+      "E": "Manual de Etiqueta Corporativa."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 19: '...observado o disposto no respectivo Plano de Desenvolvimento e Zoneamento do Porto.'"
+  },
+  {
+    "id": "700070",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Áreas Não Afetas",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O parágrafo único do Art. 19 da Lei nº 12.815/2013 faz uma ressalva importante sobre a exploração de áreas não operacionais. Quando a administração do porto for exercida por órgão ou entidade sob controle estatal:",
+    "alternativa": {
+      "A": "Não se aplicam as normas de licitação.",
+      "B": "O disposto no caput não afasta a aplicação das normas de licitação e contratação pública.",
+      "C": "A contratação pode ser feita verbalmente.",
+      "D": "É dispensada qualquer formalidade legal.",
+      "E": "Aplica-se apenas o direito privado, sem restrições."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O texto da lei é claro: 'O disposto no caput não afasta a aplicação das normas de licitação e contratação pública quando a administração do porto for exercida por órgão ou entidade sob controle estatal'."
+  },
+  {
+    "id": "700071",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - CAP",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Conselho de Autoridade Portuária (CAP), instituído em cada porto organizado conforme o Art. 20 da Lei nº 12.815/2013, é definido como um órgão:",
+    "alternativa": {
+      "A": "Executivo e deliberativo.",
+      "B": "Fiscalizador e punitivo.",
+      "C": "Consultivo da administração do porto.",
+      "D": "Judiciário de primeira instância.",
+      "E": "Legislativo municipal."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 20, caput: '...conselho de autoridade portuária, órgão consultivo da administração do porto'."
+  },
+  {
+    "id": "700072",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - CAP",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre a composição do Conselho de Autoridade Portuária (CAP), o Art. 20, § 3º da Lei nº 12.815/2013 estabelece uma proporção específica para a distribuição das vagas. Qual é a porcentagem de representantes da classe trabalhadora?",
+    "alternativa": {
+      "A": "50% (cinquenta por cento).",
+      "B": "30% (trinta por cento).",
+      "C": "25% (vinte e cinco por cento).",
+      "D": "10% (dez por cento).",
+      "E": "33% (trinta e três por cento)."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. A distribuição é: 50% poder público (I), 25% classe empresarial (II) e 25% classe trabalhadora (III)."
+  },
+  {
+    "id": "700073",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Administração do Porto",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 21 da Lei nº 12.815/2013, quando a administração do porto for exercida por entidade sob controle estatal, fica assegurada a participação no conselho de administração de representantes de certas classes. Assinale a alternativa que identifica corretamente essas classes.",
+    "alternativas": {
+      "A": "Classe política e classe militar.",
+      "B": "Classe empresarial e classe trabalhadora.",
+      "C": "Classe dos exportadores e classe dos importadores.",
+      "D": "Classe dos armadores e classe dos caminhoneiros.",
+      "E": "Classe dos usuários e classe dos investidores estrangeiros."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 21: 'Fica assegurada a participação de um representante da classe empresarial e outro da classe trabalhadora no conselho de administração...'."
+  },
+  {
+    "id": "700074",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Administração do Porto",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O parágrafo único do Art. 21 da Lei nº 12.815/2013 estabelece o mecanismo de indicação dos representantes das classes empresarial e trabalhadora para o conselho de administração da entidade estatal. Essa indicação será feita:",
+    "alternativas": {
+      "A": "Pelo Governador do Estado onde se situa o porto.",
+      "B": "Pelo Ministro da Infraestrutura.",
+      "C": "Pelos sindicatos nacionais das categorias.",
+      "D": "Pelos respectivos representantes no conselho de autoridade portuária (CAP).",
+      "E": "Por eleição direta entre todos os trabalhadores do porto."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Parágrafo único do Art. 21: 'A indicação... será feita pelos respectivos representantes no conselho de autoridade portuária.'"
+  },
+  {
+    "id": "700075",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Atuação Integrada",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 22 da Lei nº 12.815/2013, qual órgão é responsável por coordenar a atuação integrada dos órgãos e entidades públicos nos portos organizados e instalações portuárias?",
+    "alternativas": {
+      "A": "A Receita Federal do Brasil.",
+      "B": "A Marinha do Brasil.",
+      "C": "A Secretaria de Portos da Presidência da República.",
+      "D": "A Agência Nacional de Transportes Aquaviários (Antaq).",
+      "E": "O Ministério do Planejamento."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 22: 'A Secretaria de Portos da Presidência da República coordenará a atuação integrada...'."
+  },
+  {
+    "id": "700076",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Atuação Integrada",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 22 da Lei nº 12.815/2013, a coordenação da atuação integrada dos órgãos públicos nos portos tem uma finalidade específica. Assinale a alternativa que apresenta essa finalidade.",
+    "alternativas": {
+      "A": "Garantir a máxima arrecadação tributária.",
+      "B": "Garantir a eficiência e a qualidade de suas atividades.",
+      "C": "Assegurar a privatização imediata dos terminais.",
+      "D": "Centralizar o poder de decisão na capital federal.",
+      "E": "Eliminar a participação de empresas estrangeiras."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 22: '...com a finalidade de garantir a eficiência e a qualidade de suas atividades, nos termos do regulamento.'"
+  },
+  {
+    "id": "700077",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Administração Aduaneira",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 23 da Lei nº 12.815/2013 impõe uma restrição quanto à entrada ou saída de mercadorias procedentes do exterior ou a ele destinadas. Essa movimentação somente poderá efetuar-se em:",
+    "alternativas": {
+      "A": "Portos localizados em capitais litorâneas.",
+      "B": "Instalações portuárias com calado superior a 15 metros.",
+      "C": "Portos ou instalações portuárias alfandegados.",
+      "D": "Qualquer instalação portuária, independente de registro.",
+      "E": "Áreas militares sob jurisdição da Marinha."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 23: '...somente poderá efetuar-se em portos ou instalações portuárias alfandegados.'"
+  },
+  {
+    "id": "700078",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Administração Aduaneira",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do parágrafo único do Art. 23 da Lei nº 12.815/2013, o alfandegamento de portos organizados e instalações portuárias será efetuado:",
+    "alternativas": {
+      "A": "Automaticamente, assim que a construção for concluída.",
+      "B": "Mediante pagamento de taxa única à prefeitura local.",
+      "C": "Após cumpridos os requisitos previstos na legislação específica.",
+      "D": "Por decisão discricionária do operador portuário.",
+      "E": "Apenas para portos públicos, sendo vedado aos privados."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 23, Parágrafo único: '...será efetuado após cumpridos os requisitos previstos na legislação específica.'"
+  },
+  {
+    "id": "700079",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Competência Aduaneira",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 24 da Lei nº 12.815/2013 lista as competências do Ministério da Fazenda, por intermédio das repartições aduaneiras. Dentre as alternativas abaixo, qual NÃO representa uma dessas competências?",
+    "alternativas": {
+      "A": "Exercer a vigilância aduaneira e reprimir o contrabando e o descaminho.",
+      "B": "Proceder ao despacho aduaneiro na importação e na exportação.",
+      "C": "Arrecadar as tarifas portuárias devidas à Autoridade Portuária.",
+      "D": "Arrecadar os tributos incidentes sobre o comércio exterior.",
+      "E": "Proceder à apreensão de mercadoria em situação irregular."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C é a incorreta (gabarito). A competência do Ministério da Fazenda refere-se a tributos (inciso IV), não a tarifas portuárias, cuja arrecadação compete à administração do porto (Art. 17, § 1º, IV)."
+  },
+  {
+    "id": "700080",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Competência Aduaneira",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 24, § 1º da Lei nº 12.815/2013, no exercício de suas atribuições, a autoridade aduaneira terá livre acesso:",
+    "alternativas": {
+      "A": "Apenas aos escritórios administrativos do porto.",
+      "B": "Exclusivamente às áreas públicas do cais.",
+      "C": "A quaisquer dependências do porto, exceto embarcações estrangeiras.",
+      "D": "A quaisquer dependências do porto ou instalação portuária, às embarcações atracadas ou não.",
+      "E": "Somente aos armazéns alfandegados, sendo vedado o acesso aos pátios."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 24, § 1º: '...a autoridade aduaneira terá livre acesso a quaisquer dependências do porto ou instalação portuária, às embarcações atracadas ou não...'."
+  },
+  {
+    "id": "700081",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Pré-qualificação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 25 da Lei nº 12.815/2013 trata da pré-qualificação do operador portuário. Qual é o prazo que a administração do porto possui, contado do pedido do interessado, para decidir sobre a pré-qualificação?",
+    "alternativas": {
+      "A": "10 (dez) dias.",
+      "B": "15 (quinze) dias.",
+      "C": "30 (trinta) dias.",
+      "D": "45 (quarenta e cinco) dias.",
+      "E": "60 (sessenta) dias."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 25, § 2º: 'A administração do porto terá prazo de 30 (trinta) dias, contado do pedido do interessado, para decidir sobre a pré-qualificação.'"
+  },
+  {
+    "id": "700082",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Pré-qualificação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Caso o pedido de pré-qualificação de operador portuário seja indeferido, cabe recurso à Secretaria de Portos da Presidência da República. Segundo o Art. 25, § 3º da Lei nº 12.815/2013, qual é o prazo para interposição desse recurso?",
+    "alternativas": {
+      "A": "5 (cinco) dias.",
+      "B": "10 (dez) dias.",
+      "C": "15 (quinze) dias.",
+      "D": "20 (vinte) dias.",
+      "E": "30 (trinta) dias."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 25, § 3º: '...caberá recurso, no prazo de 15 (quinze) dias, dirigido à Secretaria de Portos...'."
+  },
+  {
+    "id": "700083",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Responsabilidade do Operador",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O operador portuário possui diversas responsabilidades perante diferentes sujeitos. De acordo com o Art. 26, inciso IV da Lei nº 12.815/2013, o operador portuário responderá perante o trabalhador portuário:",
+    "alternativas": {
+      "A": "Pelas avarias ocorridas na embarcação.",
+      "B": "Pelas contribuições não recolhidas ao sindicato.",
+      "C": "Pela remuneração dos serviços prestados e respectivos encargos.",
+      "D": "Pelos danos culposamente causados à infraestrutura.",
+      "E": "Pela segurança da navegação."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 26, IV: 'o operador portuário responderá perante: ... IV - o trabalhador portuário pela remuneração dos serviços prestados e respectivos encargos'."
+  },
+  {
+    "id": "700084",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Responsabilidade do Operador",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 26 da Lei nº 12.815/2013, perante quem o operador portuário responde pelas avarias ocorridas na embarcação ou na mercadoria dada a transporte?",
+    "alternativas": {
+      "A": "A administração do porto.",
+      "B": "A autoridade aduaneira.",
+      "C": "O OGMO.",
+      "D": "O armador.",
+      "E": "A Antaq."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está correta. Conforme o Art. 26, III: 'o armador pelas avarias ocorridas na embarcação ou na mercadoria dada a transporte'."
+  },
+  {
+    "id": "700085",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Operação Portuária",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 27 da Lei nº 12.815/2013 estabelece que as atividades do operador portuário estão sujeitas às normas de qual agência reguladora?",
+    "alternativas": {
+      "A": "Anvisa.",
+      "B": "Aneel.",
+      "C": "Antaq.",
+      "D": "Anatel.",
+      "E": "Anac."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 27, caput: 'As atividades do operador portuário estão sujeitas às normas estabelecidas pela Antaq.'"
+  },
+  {
+    "id": "700086",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Operação Portuária",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 27, § 2º da Lei nº 12.815/2013, a atividade de movimentação de carga a bordo da embarcação deve ser executada de acordo com a instrução de quem, especificamente quanto à segurança da embarcação?",
+    "alternativas": {
+      "A": "Do diretor do OGMO.",
+      "B": "Do comandante da embarcação ou de seus prepostos.",
+      "C": "Do fiscal da Receita Federal.",
+      "D": "Do presidente da Autoridade Portuária.",
+      "E": "Do líder do sindicato dos estivadores."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 27, § 2º: '...deve ser executada de acordo com a instrução de seu comandante ou de seus prepostos... quanto à segurança da embarcação.'"
+  },
+  {
+    "id": "700087",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Dispensa de Operador",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 28 da Lei nº 12.815/2013 lista situações em que é dispensável a intervenção de operadores portuários. Assinale a alternativa que apresenta uma dessas situações.",
+    "alternativas": {
+      "A": "Movimentação de contêineres em navios de longo curso.",
+      "B": "Transporte de mercadorias sólidas a granel, quando a carga for feita manualmente.",
+      "C": "Transporte de mercadorias líquidas a granel.",
+      "D": "Operações de navios de cruzeiro com mais de 500 passageiros.",
+      "E": "Movimentação de carga geral solta no convés."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 28, II, 'd': 'no transporte de mercadorias líquidas a granel'. A alternativa B está incorreta porque a dispensa para granel sólido exige o uso de aparelhos mecânicos automáticos (Art. 28, II, 'e')."
+  },
+  {
+    "id": "700088",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Dispensa de Operador",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Ainda sobre as dispensas previstas no Art. 28 da Lei nº 12.815/2013, é dispensável a intervenção de operadores portuários em operações relativas à movimentação de materiais por:",
+    "alternativas": {
+      "A": "Supermercados atacadistas.",
+      "B": "Indústrias de transformação de plástico.",
+      "C": "Estaleiros de construção e reparação naval.",
+      "D": "Lojas de departamento importadoras.",
+      "E": "Empresas de logística rodoviária."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 28, III, 'b': 'materiais por estaleiros de construção e reparação naval'."
+  },
+  {
+    "id": "700089",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Cooperativas",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 29 da Lei nº 12.815/2013 permite que determinadas organizações se estabeleçam como operadores portuários. Quais são elas?",
+    "alternativas": {
+      "A": "As Organizações Não Governamentais (ONGs) de proteção ambiental.",
+      "B": "As associações de moradores do entorno do porto.",
+      "C": "As cooperativas formadas por trabalhadores portuários avulsos, registrados de acordo com a Lei.",
+      "D": "As fundações públicas de direito privado.",
+      "E": "Os clubes recreativos dos estivadores."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 29: 'As cooperativas formadas por trabalhadores portuários avulsos, registrados de acordo com esta Lei, poderão estabelecer-se como operadores portuários.'"
+  },
+  {
+    "id": "700090",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Cooperativas",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Para que uma cooperativa formada por trabalhadores portuários avulsos possa se estabelecer como operador portuário, nos termos do Art. 29 da Lei nº 12.815/2013, é requisito essencial:",
+    "alternativas": {
+      "A": "Ter sede na capital federal.",
+      "B": "Que os trabalhadores sejam registrados de acordo com esta Lei.",
+      "C": "Possuir capital social superior a 10 milhões de reais.",
+      "D": "Não possuir fins lucrativos, proibindo a distribuição de sobras.",
+      "E": "Contar com participação do governo no conselho fiscal."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 29: '...cooperativas formadas por trabalhadores portuários avulsos, registrados de acordo com esta Lei...'."
+  },
+  {
+    "id": "700091",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Operações Fora do Porto",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 30 da Lei nº 12.815/2013, a operação portuária em instalações localizadas fora da área do porto organizado será disciplinada por quem?",
+    "alternativas": {
+      "A": "Pela Administração do Porto Organizado mais próximo.",
+      "B": "Pelo OGMO.",
+      "C": "Pelo titular da respectiva autorização.",
+      "D": "Pelo Prefeito do município.",
+      "E": "Pelo Governador do Estado."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 30: '...será disciplinada pelo titular da respectiva autorização, observadas as normas estabelecidas pelas autoridades...'"
+  },
+  {
+    "id": "700092",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Operações Fora do Porto",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Embora a operação fora do porto organizado seja disciplinada pelo titular da autorização, o Art. 30 da Lei nº 12.815/2013 exige a observância das normas estabelecidas por diversas autoridades. Assinale a alternativa que contém autoridades cujas normas DEVEM ser observadas.",
+    "alternativas": {
+      "A": "Autoridades marítima, aduaneira, sanitária, de saúde e de polícia marítima.",
+      "B": "Apenas autoridade marítima e aduaneira.",
+      "C": "Autoridade portuária e autoridade de trânsito urbano.",
+      "D": "Autoridade monetária e autoridade educacional.",
+      "E": "Autoridade legislativa municipal e estadual."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. Conforme o Art. 30: '...observadas as normas estabelecidas pelas autoridades marítima, aduaneira, sanitária, de saúde e de polícia marítima.'"
+  },
+  {
+    "id": "700093",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Normas Internacionais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 31 da Lei nº 12.815/2013 dispõe sobre a relação entre esta lei e as normas decorrentes de convenções internacionais ratificadas. É CORRETO afirmar que:",
+    "alternativas": {
+      "A": "A Lei revoga tacitamente todas as convenções internacionais anteriores.",
+      "B": "A Lei prevalece sobre as convenções internacionais, mesmo que ratificadas.",
+      "C": "O disposto na Lei não prejudica a aplicação das demais normas referentes ao transporte marítimo, inclusive as convenções internacionais ratificadas.",
+      "D": "As convenções internacionais só se aplicam se houver decreto específico para cada porto.",
+      "E": "A Lei proíbe a aplicação de normas internacionais em portos públicos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 31: 'O disposto nesta Lei não prejudica a aplicação das demais normas referentes ao transporte marítimo, inclusive as decorrentes de convenções internacionais ratificadas...'."
+  },
+  {
+    "id": "700094",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Normas Internacionais",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Para que as normas decorrentes de convenções internacionais sejam aplicáveis e ressalvadas pelo Art. 31 da Lei nº 12.815/2013, é condição necessária que:",
+    "alternativas": {
+      "A": "Sejam aprovadas pelo OGMO.",
+      "B": "Vinculam internacionalmente o País.",
+      "C": "Tenham sido assinadas antes de 1988.",
+      "D": "Sejam traduzidas para o inglês e espanhol.",
+      "E": "Sejam validadas pela Autoridade Portuária local anualmente."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o final do Art. 31: '...enquanto vincularem internacionalmente o País.'"
+  },
+  {
+    "id": "700095",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do Art. 32 da Lei nº 12.815/2013, os operadores portuários devem constituir um órgão de gestão de mão de obra (OGMO) em cada porto organizado. Dentre as finalidades deste órgão, destaca-se a competência para manter o cadastro do trabalhador portuário e o registro do trabalhador portuário avulso. Essa competência é exercida:",
+    "alternativas": {
+      "A": "De forma compartilhada com os sindicatos.",
+      "B": "Sob supervisão direta da Prefeitura Municipal.",
+      "C": "Com exclusividade.",
+      "D": "Em conjunto com a Autoridade Portuária.",
+      "E": "De forma subsidiária ao Ministério do Trabalho."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 32, II: 'manter, com exclusividade, o cadastro do trabalhador portuário e o registro do trabalhador portuário avulso'."
+  },
+  {
+    "id": "700096",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Parágrafo único do Art. 32 da Lei nº 12.815/2013 estabelece uma regra de prevalência normativa nas relações de trabalho no porto. Segundo esse dispositivo, caso celebrado acordo ou convenção coletiva de trabalho entre trabalhadores e tomadores de serviços:",
+    "alternativa": {
+      "A": "O OGMO deverá ratificar o acordo para que tenha validade.",
+      "B": "O disposto no instrumento precederá o órgão gestor e dispensará sua intervenção nas relações entre capital e trabalho no porto.",
+      "C": "As regras do OGMO prevalecem sobre o acordo coletivo em qualquer hipótese.",
+      "D": "O Ministério Público do Trabalho deverá intervir obrigatoriamente.",
+      "E": "O acordo só terá validade se aprovado pelo Conselho de Supervisão do OGMO."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Parágrafo único do Art. 32: '...o disposto no instrumento precederá o órgão gestor e dispensará sua intervenção nas relações entre capital e trabalho no porto.'"
+  },
+  {
+    "id": "700097",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Penalidades OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Compete ao OGMO aplicar penalidades disciplinares no caso de transgressão. De acordo com o Art. 33, inciso I da Lei nº 12.815/2013, a penalidade de suspensão do registro terá o período de:",
+    "alternativa": {
+      "A": "1 (um) a 10 (dez) dias.",
+      "B": "10 (dez) a 30 (trinta) dias.",
+      "C": "15 (quinze) a 45 (quarenta e cinco) dias.",
+      "D": "30 (trinta) a 60 (sessenta) dias.",
+      "E": "30 (trinta) a 90 (noventa) dias."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 33, I, 'b': 'suspensão do registro pelo período de 10 (dez) a 30 (trinta) dias'."
+  },
+  {
+    "id": "700098",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Responsabilidade do OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre a responsabilidade civil e trabalhista do OGMO, analise as afirmativas à luz do Art. 33 da Lei nº 12.815/2013 e assinale a alternativa CORRETA.",
+    "alternativa": {
+      "A": "O OGMO responde solidariamente por prejuízos causados pelos trabalhadores a terceiros.",
+      "B": "O OGMO não responde pela remuneração devida ao trabalhador portuário avulso, sendo responsabilidade exclusiva do operador.",
+      "C": "O órgão responde, solidariamente com os operadores portuários, pela remuneração devida ao trabalhador portuário avulso.",
+      "D": "O órgão não pode exigir garantia prévia dos pagamentos aos operadores portuários.",
+      "E": "A responsabilidade por acidente de trabalho é exclusiva do trabalhador."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 33, § 2º: 'O órgão responde, solidariamente com os operadores portuários, pela remuneração devida ao trabalhador portuário avulso...'."
+  },
+  {
+    "id": "700099",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Vínculo Empregatício",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 34 da Lei nº 12.815/2013 é taxativo quanto à natureza da relação entre o OGMO e o trabalhador. Segundo este artigo, o exercício das atribuições de gestão de mão de obra:",
+    "alternativa": {
+      "A": "Gera vínculo empregatício automático após 5 anos de serviço.",
+      "B": "Implica vínculo empregatício apenas para as atividades de capatazia.",
+      "C": "Não implica vínculo empregatício com trabalhador portuário avulso.",
+      "D": "Gera vínculo de natureza estatutária.",
+      "E": "Depende de decisão judicial para configurar vínculo."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 34: '...não implica vínculo empregatício com trabalhador portuário avulso.'"
+  },
+  {
+    "id": "700100",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Vínculo Empregatício",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A inexistência de vínculo empregatício entre o OGMO e o trabalhador avulso, prevista no Art. 34 da Lei nº 12.815/2013, refere-se ao exercício das atribuições previstas em quais artigos da referida lei?",
+    "alternativa": {
+      "A": "Apenas no Art. 32.",
+      "B": "Nos Arts. 32 e 33.",
+      "C": "Nos Arts. 10 e 11.",
+      "D": "Apenas no Art. 40.",
+      "E": "Em toda a Lei 12.815/2013."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O texto do Art. 34 cita expressamente: 'O exercício das atribuições previstas nos arts. 32 e 33 pelo órgão de gestão de mão de obra...'."
+  },
+  {
+    "id": "700101",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Cessão de Trabalhador",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 35 da Lei nº 12.815/2013, o órgão de gestão de mão de obra pode ceder trabalhador portuário avulso ao operador portuário. Essa cessão pode ocorrer:",
+    "alternativa": {
+      "A": "Em caráter temporário, por no máximo 3 meses.",
+      "B": "Em caráter permanente.",
+      "C": "Apenas para funções de direção.",
+      "D": "Sem a anuência do trabalhador.",
+      "E": "Exclusivamente para trabalho em feriados."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 35: 'O órgão de gestão de mão de obra pode ceder trabalhador portuário avulso, em caráter permanente, ao operador portuário.'"
+  },
+  {
+    "id": "700102",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Cessão de Trabalhador",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 35 da Lei nº 12.815/2013 regula a cessão de trabalhadores. Quem é o destinatário legal dessa cessão realizada pelo OGMO?",
+    "alternativa": {
+      "A": "A Autoridade Portuária.",
+      "B": "O Sindicato da categoria.",
+      "C": "O Operador Portuário.",
+      "D": "A Receita Federal.",
+      "E": "O Ministério da Infraestrutura."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 35: '...ao operador portuário.'"
+  },
+  {
+    "id": "700103",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Gestão de Mão de Obra",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Segundo o Art. 36 da Lei nº 12.815/2013, a gestão da mão de obra do trabalho portuário avulso não é irrestrita. Ela deve observar obrigatoriamente:",
+    "alternativa": {
+      "A": "As ordens verbais do capitão do navio, exclusivamente.",
+      "B": "As normas do contrato, convenção ou acordo coletivo de trabalho.",
+      "C": "O regimento interno da prefeitura local.",
+      "D": "O código de ética da construção civil.",
+      "E": "As diretrizes da Organização Mundial do Comércio."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 36: 'A gestão da mão de obra do trabalho portuário avulso deve observar as normas do contrato, convenção ou acordo coletivo de trabalho.'"
+  },
+  {
+    "id": "700104",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Gestão de Mão de Obra",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 36 da Lei nº 12.815/2013 reforça a importância da negociação coletiva. Este artigo determina que as normas coletivas (contrato, convenção ou acordo) devem ser observadas em qual atividade específica?",
+    "alternativa": {
+      "A": "Na gestão da infraestrutura do porto.",
+      "B": "Na gestão da mão de obra do trabalho portuário avulso.",
+      "C": "Na dragagem do canal de acesso.",
+      "D": "No licenciamento ambiental.",
+      "E": "Na fixação das tarifas portuárias."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O artigo refere-se especificamente à 'gestão da mão de obra do trabalho portuário avulso'."
+  },
+  {
+    "id": "700105",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Solução de Litígios",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 37 da Lei nº 12.815/2013 determina a constituição de uma comissão paritária no âmbito do OGMO para solucionar litígios. Em caso de impasse, as partes devem recorrer a qual mecanismo?",
+    "alternativa": {
+      "A": "Greve por tempo indeterminado.",
+      "B": "Mediação do Ministério Público.",
+      "C": "Arbitragem de ofertas finais.",
+      "D": "Decisão unilateral da Autoridade Portuária.",
+      "E": "Julgamento pelo Tribunal Marítimo."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 37, § 1º: 'Em caso de impasse, as partes devem recorrer à arbitragem de ofertas finais.'"
+  },
+  {
+    "id": "700106",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Prescrição",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 37, § 4º da Lei nº 12.815/2013, as ações relativas aos créditos decorrentes da relação de trabalho avulso prescrevem em:",
+    "alternativa": {
+      "A": "2 anos, sem limite após o cancelamento.",
+      "B": "5 anos, até o limite de 2 anos após o cancelamento do registro ou do cadastro.",
+      "C": "10 anos, conforme o Código Civil.",
+      "D": "30 anos, como no regime do FGTS antigo.",
+      "E": "1 ano após o término do serviço."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 37, § 4º: '...prescrevem em 5 (cinco) anos até o limite de 2 (dois) anos após o cancelamento do registro ou do cadastro...'."
+  },
+  {
+    "id": "700107",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Estrutura do OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A estrutura organizacional do OGMO é definida no Art. 38 da Lei nº 12.815/2013. Segundo a lei, o conselho de supervisão será composto por quantos membros titulares?",
+    "alternativa": {
+      "A": "2 (dois) membros.",
+      "B": "3 (três) membros.",
+      "C": "5 (cinco) membros.",
+      "D": "7 (sete) membros.",
+      "E": "10 (dez) membros."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 38, § 1º: 'O conselho de supervisão será composto por 3 (três) membros titulares e seus suplentes...'."
+  },
+  {
+    "id": "700108",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Estrutura do OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Ainda sobre a estrutura do OGMO (Art. 38), a diretoria executiva terá diretores com mandato fixado em lei. Qual é o prazo de gestão da diretoria executiva?",
+    "alternativa": {
+      "A": "1 (um) ano.",
+      "B": "2 (dois) anos.",
+      "C": "3 (três) anos.",
+      "D": "4 (quatro) anos.",
+      "E": "5 (cinco) anos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 38, § 2º: '...cujo prazo de gestão será de 3 (três) anos, permitida a redesignação.'"
+  },
+  {
+    "id": "700109",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Natureza Jurídica do OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 39 da Lei nº 12.815/2013 define a natureza jurídica e as restrições do OGMO. Segundo este artigo, é VEDADO ao OGMO:",
+    "alternativa": {
+      "A": "Ter fins lucrativos e prestar serviços a terceiros.",
+      "B": "Ter diretoria executiva.",
+      "C": "Arrecadar contribuições.",
+      "D": "Manter cadastro de trabalhadores.",
+      "E": "Ser reputado de utilidade pública."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está correta. Conforme o Art. 39: '...sendo-lhe vedado ter fins lucrativos, prestar serviços a terceiros ou exercer qualquer atividade não vinculada à gestão de mão de obra.'"
+  },
+  {
+    "id": "700110",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Natureza Jurídica do OGMO",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o Art. 39 da Lei nº 12.815/2013, o órgão de gestão de mão de obra (OGMO) é reputado de:",
+    "alternativa": {
+      "A": "Natureza comercial.",
+      "B": "Interesse privado exclusivo.",
+      "C": "Utilidade pública.",
+      "D": "Soberania nacional.",
+      "E": "Economia mista."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 39: 'O órgão de gestão de mão de obra é reputado de utilidade pública...'."
+  },
+  {
+    "id": "700111",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Definições de Trabalho",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "O Art. 40, § 1º da Lei nº 12.815/2013 traz definições cruciais para a operação portuária. Assinale a alternativa que define CORRETAMENTE a atividade de 'estiva'.",
+    "alternativa": {
+      "A": "Atividade de movimentação de mercadorias nas instalações dentro do porto (recebimento, conferência, transporte interno).",
+      "B": "Atividade de limpeza e conservação de embarcações mercantes e de seus tanques.",
+      "C": "Atividade de movimentação de mercadorias nos conveses ou nos porões das embarcações, incluindo o transbordo.",
+      "D": "Atividade de fiscalização da entrada e saída de pessoas a bordo das embarcações.",
+      "E": "Reparo e restauração das embalagens de mercadorias."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta. Conforme o Art. 40, § 1º, II. A alternativa A define 'Capatazia', a B define 'Bloco', a D define 'Vigilância' e a E define 'Conserto de Carga'."
+  },
+  {
+    "id": "700112",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 12.815/2013 - Contratação",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o Art. 40, § 3º da Lei nº 12.815/2013, nas atividades de capatazia, estiva, e demais listadas no caput, o operador portuário:",
+    "alternativa": {
+      "A": "Pode contratar livremente qualquer trabalhador do mercado.",
+      "B": "Não poderá locar ou tomar mão de obra sob o regime de trabalho temporário de que trata a Lei nº 6.019/1974.",
+      "C": "Deve priorizar trabalhadores estrangeiros.",
+      "D": "Pode terceirizar a atividade para empresas de limpeza urbana.",
+      "E": "Está dispensado de seguir as normas do OGMO."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o Art. 40, § 3º: 'O operador portuário... não poderá locar ou tomar mão de obra sob o regime de trabalho temporário de que trata a Lei nº 6.019...'."
+  }
+]
