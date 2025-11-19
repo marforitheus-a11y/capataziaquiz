@@ -114,10 +114,10 @@ function showResults() {
     const right = q.resposta_correta;
     const topic = getErrorTopic(q); 
 
-    if (user === right) {
+    if (user !== undefined && user !== null) {
       correctCount++;
     } else {
-      if (user) { 
+      if (user !== undefined) { 
         if (!errorsByDiscipline[topic]) {
           errorsByDiscipline[topic] = 0;
         }
@@ -164,7 +164,7 @@ function showResults() {
   questions.forEach((q, index) => {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
-    if (!user) return; 
+    if (user === undefined) return; 
     resultHTML += `
       <div class="question" style="text-align:left; margin-bottom:14px; background: #fdfdfd; padding: 10px; border-radius: 8px; border: 1px solid #f1f6fb;">
         <h3 style="margin:6px 0 10px 0; font-size: 1rem;">${index + 1}. ${(q.enunciado || '').replace(/\n/g, "<br>")}</h3>
