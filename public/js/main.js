@@ -194,7 +194,7 @@ function toggleSelectFolder(subsInFolder, folderElement) {
 }
 
 function selectOption(questionId, optionKey) {
-  if (userAnswers[questionId]) {
+  if (userAnswers[questionId] !== undefined) {
     return;
   }
   userAnswers[questionId] = optionKey;
