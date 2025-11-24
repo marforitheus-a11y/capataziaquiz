@@ -110,22 +110,25 @@ function showResults() {
   const wrongQuestions = []; 
 
   questions.forEach(q => {
-    const user = userAnswers[q.id];
-    const right = q.resposta_correta;
-    const topic = getErrorTopic(q); 
-
-    if (user !== undefined && user !== null) {
-      correctCount++;
-    } else {
-      if (user !== undefined) { 
-        if (!errorsByDiscipline[topic]) {
-          errorsByDiscipline[topic] = 0;
+    const user = userAnswers[q.id];
+    const right = q.resposta_correta;
+    const topic = getErrorTopic(q); 
+    // A questão só entra na contagem se for respondida
+    if (user !== undefined && user !== null) { 
+        // 1. Verifica se a resposta do usuário é IGUAL à resposta correta
+        if (user === right) { 
+            correctCount++; // É ACERTO
+        } else {
+            // 2. Se a resposta do usuário for DIFERENTE da correta, é ERRO
+            if (!errorsByDiscipline[topic]) {
+                errorsByDiscipline[topic] = 0;
+            }
+            errorsByDiscipline[topic]++;
+            wrongQuestions.push(q);
         }
-        errorsByDiscipline[topic]++;
-        wrongQuestions.push(q);
-      }
-    }
-  });
+    } 
+    // Se 'user' for undefined/null, ela é Não Respondida (unansweredCount será calculada corretamente depois)
+  });
   const wrongCount = wrongQuestions.length;
   const unansweredCount = questions.length - correctCount - wrongCount;
 
