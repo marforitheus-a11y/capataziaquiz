@@ -1,0 +1,322 @@
+[
+  {
+    "id": "700039",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Segurança e Saúde no Trabalho Portuário",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A Norma Regulamentadora nº 29 (NR-29) estabelece medidas de prevenção em Segurança e Saúde no trabalho portuário. Sobre o seu **Campo de Aplicação (item 29.2)**, analise as proposições e assinale a alternativa **CORRETA**:",
+    "alternativas": {
+      "A": "As disposições da NR-29 aplicam-se exclusivamente ao trabalho portuário realizado a bordo de embarcações, excluindo as atividades em terra.",
+      "B": "A NR-29 é aplicável ao trabalho portuário, tanto a bordo como em terra, e às demais atividades nos portos, instalações portuárias públicas ou privadas, situadas dentro ou fora da área do porto organizado, e nos terminais retroportuários.",
+      "C": "Os terminais retroportuários estão isentos de cumprir qualquer item da NR-29, desde que atendam integralmente às demais Normas Regulamentadoras.",
+      "D": "A aplicação da NR-29 se restringe ao trabalho realizado dentro dos limites da área do porto organizado.",
+      "E": "Nos terminais retroportuários, aplicam-se todos os itens da NR-29, sem exceção, além do disposto nas demais normas regulamentadoras."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. O item 29.2.1 da NR-29 estabelece que as disposições aplicam-se ao trabalho portuário, tanto a bordo como em terra, assim como às demais atividades nos portos e nas instalações portuárias, públicas ou privadas, situadas dentro ou fora da área do porto organizado, e nos terminais retroportuários."
+  },
+  {
+    "id": "700040",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Competências e Responsabilidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do item **29.3 - Competências e responsabilidades** da NR-29, compete aos **operadores portuários** e aos **tomadores de serviço**, em relação aos trabalhadores avulsos, **EXCETO**:",
+    "alternativas": {
+      "A": "Cumprir e fazer cumprir a NR-29 e as demais disposições legais de segurança e saúde aplicáveis ao trabalho portuário.",
+      "B": "Assegurar que as operações ocorram após a implementação das medidas de prevenção, conforme previsto na NR-01.",
+      "C": "Realizar operação portuária com os trabalhadores utilizando corretamente os equipamentos de proteção individual, atendendo à NR-06.",
+      "D": "Proporcionar a todos os trabalhadores formação sobre segurança e saúde no trabalho portuário, conforme previsto nesta NR.",
+      "E": "Colaborar no cumprimento desta NR e das demais normas regulamentadoras de segurança e saúde no trabalho."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está incorreta no contexto da questão. Proporcionar a todos os trabalhadores formação sobre segurança e saúde no trabalho portuário é uma competência do OGMO em relação aos seus trabalhadores avulsos, conforme item 29.3.3, alínea 'b'. As demais alíneas representam obrigações dos operadores portuários e tomadores de serviço (itens 29.3.1 e 29.3.2)."
+  },
+  {
+    "id": "700041",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Competências e Responsabilidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme o disposto na NR-29 sobre as **Competências e Responsabilidades do OGMO** (Órgão Gestor de Mão de Obra) em relação aos seus trabalhadores avulsos, assinale a alternativa **CORRETA**:",
+    "alternativas": {
+      "A": "Compete ao OGMO somente elaborar e implementar o Programa de Gerenciamento de Riscos (PGR), sendo o PCMSO de responsabilidade exclusiva dos operadores portuários.",
+      "B": "O OGMO deve notificar o operador portuário ou tomador de serviço na eventualidade de descumprimento da NR-29 ou demais disposições legais de segurança e saúde dos trabalhadores.",
+      "C": "Compete ao OGMO realizar a operação portuária com os trabalhadores utilizando corretamente os Equipamentos de Proteção Individual (EPI), devendo atender à NR-06.",
+      "D": "O OGMO pode escalar trabalhadores para quaisquer atividades, independentemente de estarem capacitados, desde que o operador portuário assuma a responsabilidade.",
+      "E": "O OGMO é responsável por fornecer as informações de riscos ocupacionais, mas não tem participação na definição das medidas de prevenção."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, conforme o item 29.3.3, alínea 'f', da NR-29. A alínea 'e' do mesmo item estabelece que compete ao OGMO elaborar e implementar o PCMSO. A alínea 'c' do item 29.3.2 atribui a responsabilidade pelo uso correto de EPI ao operador portuário/tomador de serviço na realização da operação portuária. O item 29.3.4.2 proíbe o OGMO de escalar trabalhadores em atividades para as quais não estejam capacitados. O item 29.3.3, alínea 'a', estabelece que o OGMO deve participar da definição das medidas de prevenção."
+  },
+  {
+    "id": "700042",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Competências e Responsabilidades",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Em relação à responsabilidade dos **trabalhadores avulsos** no cumprimento da NR-29 e demais disposições legais de segurança e saúde no trabalho, assinale a alternativa que apresenta uma responsabilidade **CORRETA**:",
+    "alternativas": {
+      "A": "Compete ao trabalhador avulso apenas cumprir as disposições legais de segurança, sendo o uso de EPI e EPCs facultativo.",
+      "B": "A responsabilidade pela capacitação específica quanto às normas de segurança e saúde no trabalho portuário é exclusiva do OGMO, desobrigando o trabalhador de habilitar-se.",
+      "C": "O trabalhador deve informar ao responsável pela operação as avarias ou deficiências observadas que possam constituir risco para o trabalhador ou para operação.",
+      "D": "O trabalhador deve utilizar os dispositivos de segurança e EPI, mas não tem competência para informar avarias, pois é uma responsabilidade do responsável pela operação.",
+      "E": "O trabalhador avulso é responsável por elaborar o Programa de Controle Médico de Saúde Ocupacional (PCMSO) da sua atividade."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta, conforme o item 29.3.5, alínea 'b', da NR-29. As alíneas 'a' e 'c' do mesmo item estabelecem o cumprimento das disposições e o uso correto de dispositivos, EPI e EPCs. O item 29.3.4 estabelece que é responsabilidade do trabalhador avulso habilitar-se por meio de capacitação específica."
+  },
+  {
+    "id": "700043",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Programa de Gerenciamento de Riscos (PGR)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "De acordo com o item **29.4 - Programa de Gerenciamento de Riscos (PGR)** da NR-29, sobre as obrigações do operador portuário, do tomador de serviço e do empregador, é correto afirmar que:",
+    "alternativas": {
+      "A": "Devem elaborar e implementar o PGR em suas instalações, mas estão desobrigados de considerar as informações de riscos ocupacionais fornecidas pelo OGMO e pela administração portuária.",
+      "B": "O PGR do operador portuário e do tomador de serviço não precisa incluir as atividades do trabalho avulso, visto que o OGMO deve elaborar o seu próprio PGR.",
+      "C": "Podem referenciar o PGR da administração portuária em seus programas, sem prejuízo da responsabilidade de elaborar e implementar o próprio PGR.",
+      "D": "Devem apenas fornecer as informações dos riscos ocupacionais sob sua gestão à administração portuária e ao OGMO, sendo a elaboração do PGR exclusiva da administração portuária.",
+      "E": "Estão obrigados a elaborar e manter de forma acessível aos trabalhadores somente o procedimento de segurança para as operações com cargas perigosas, sendo os demais opcionais."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta, conforme o item 29.4.3. O item 29.4.1 estabelece a obrigatoriedade de elaborar e implementar o PGR, considerando as informações de riscos fornecidas pelo OGMO e pela administração portuária. O item 29.4.1.1 obriga a inclusão das atividades do trabalho avulso. O item 29.4.6 elenca uma série de procedimentos obrigatórios, e não apenas o de cargas perigosas."
+  },
+  {
+    "id": "700044",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Programa de Gerenciamento de Riscos (PGR)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A NR-29 exige que o operador portuário, o tomador de serviço e o empregador elaborem e mantenham de forma acessível aos trabalhadores procedimentos de segurança. Assinale a opção que **NÃO** apresenta um procedimento obrigatório previsto no subitem **29.4.6**:",
+    "alternativas": {
+      "A": "Segurança para a execução do trabalho portuário em condições climáticas e ambientais adversas e interrupção das atividades nessas situações, quando comprometerem a segurança dos trabalhadores.",
+      "B": "Acesso seguro a embarcações.",
+      "C": "Segurança do trabalho portuário executado nos porões das embarcações.",
+      "D": "Segurança do trabalho portuário executado em espaço confinado, nos termos da NR-33.",
+      "E": "Procedimentos de comunicação de emergência interna com a Polícia Federal."
+    },
+    "resposta_correta": "E",
+    "comentario": "A alternativa E não está prevista no rol de procedimentos obrigatórios do subitem 29.4.6. Os demais são procedimentos obrigatórios listados nas alíneas 'e', 'a', 'c' e 'd' do referido subitem."
+  },
+  {
+    "id": "700045",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Serviço Especializado em Segurança e Saúde do Trabalhador Portuário (SESSTP)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre o **Serviço Especializado em Segurança e Saúde do Trabalhador Portuário (SESSTP)**, que deve ser constituído pelo OGMO para atender aos trabalhadores avulsos, assinale a alternativa **INCORRETA**:",
+    "alternativas": {
+      "A": "O custeio do SESSTP será dividido proporcionalmente de acordo com o número de trabalhadores utilizados pelos OGMO, operadores portuários e tomadores de serviço.",
+      "B": "Compete aos profissionais integrantes do SESSTP as mesmas atribuições do SESMT (NR-04), e a realização de inspeção das condições de segurança nas operações portuárias.",
+      "C": "O dimensionamento do SESSTP terá por base a média aritmética obtida pela divisão do número de trabalhadores avulsos tomados no ano civil anterior e pelo número de dias efetivamente trabalhados.",
+      "D": "Os operadores portuários, as administrações portuárias e os terminais de uso privado são proibidos de firmar convênios para compor o SESSTP local com seus profissionais, a fim de garantir a independência do serviço.",
+      "E": "A inspeção das condições de segurança a bordo das embarcações deve ser realizada previamente à atracação e quando houver alterações nas operações portuárias."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está incorreta. O item 29.5.3 da NR-29 permite que os operadores portuários, as administrações portuárias e os terminais de uso privado firmem convênios para compor o SESSTP local com seus profissionais."
+  },
+  {
+    "id": "700046",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Serviços Especializados em Engenharia de Segurança e em Medicina do Trabalho (SESMT)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Nos termos do item **29.6 - SESMT** da NR-29, para o dimensionamento do número de Engenheiros de Segurança do Trabalho e Técnicos de Segurança do Trabalho, deve ser considerada a soma de dois fatores. Assinale a opção que apresenta o fator **INCORRETO**:",
+    "alternativas": {
+      "A": "Média aritmética obtida pela divisão entre o número de trabalhadores avulsos tomados no ano civil anterior e o número de dias efetivamente trabalhados.",
+      "B": "Média do número de empregados portuários com vínculo empregatício do ano civil anterior.",
+      "C": "O número de embarcações que atracaram no porto no ano civil anterior.",
+      "D": "Deve-se considerar o disposto na NR-04, aplicando-se também o item 29.6.1.1 da NR-29.",
+      "E": "A somatória da média de trabalhadores avulsos e a média de empregados próprios visa abranger toda a força de trabalho portuário."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está incorreta. O item 29.6.1.1 da NR-29 estabelece que o dimensionamento deve considerar a soma da média aritmética do número de trabalhadores avulsos tomados no ano civil anterior pelo número de dias efetivamente trabalhados (alínea 'a') com a média do número de empregados portuários com vínculo empregatício do ano civil anterior (alínea 'b'). O número de embarcações não é um fator de dimensionamento."
+  },
+  {
+    "id": "700047",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Comissão de Prevenção de Acidentes no Trabalho Portuário (CPATP)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "A **Comissão de Prevenção de Acidentes no Trabalho Portuário (CPATP)** deve ser organizada e mantida em funcionamento por OGMO, operadores portuários e tomadores de serviço. Sobre a CPATP, nos termos da NR-29, assinale a alternativa **CORRETA**:",
+    "alternativas": {
+      "A": "A CPATP será constituída exclusivamente por representantes dos trabalhadores portuários avulsos.",
+      "B": "O mandato dos membros da CPATP será de um ano, sendo permitida uma reeleição.",
+      "C": "Compete à CPATP promover, anualmente, em conjunto com o SESSTP, a Semana Interna de Prevenção de Acidente no Trabalho Portuário (SIPATP).",
+      "D": "As reuniões ordinárias da CPATP devem ocorrer a cada dois meses, no máximo.",
+      "E": "A CPATP pode ser desativada pelo OGMO antes do término do mandato de seus membros, caso haja uma redução significativa no número de trabalhadores portuários."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta, conforme o item 29.7.15, alínea 'a'. A CPATP é constituída de forma paritária (29.7.3); a duração do mandato é de dois anos (29.7.4); as reuniões devem ser mensais (29.7.17); e não pode ser desativada antes do término do mandato, exceto em caso de encerramento da atividade portuária (29.7.19)."
+  },
+  {
+    "id": "700048",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Comissão de Prevenção de Acidentes no Trabalho Portuário (CPATP)",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme as regras da NR-29 sobre as eleições e a composição da **CPATP**, assinale a alternativa **INCORRETA**:",
+    "alternativas": {
+      "A": "Os representantes dos trabalhadores avulsos, titulares e suplentes, serão eleitos em escrutínio secreto.",
+      "B": "A eleição deve ter a participação de, no mínimo, metade mais um do número médio do conjunto dos trabalhadores portuários utilizados no ano anterior.",
+      "C": "Os representantes dos operadores portuários e tomadores de serviço designarão, dentre os seus representantes titulares, o presidente da CPATP no primeiro ano de mandato e o vice-presidente no segundo ano.",
+      "D": "Os trabalhadores titulares da CPATP elegerão, entre seus pares, o vice-presidente, que assumirá a presidência no segundo ano do mandato.",
+      "E": "O treinamento de 20 (vinte) horas para os membros da CPATP é de frequência obrigatória e deve ser realizado antes da posse dos membros, exceto para o mandato inicial."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está incorreta. Conforme o item 29.7.13, os trabalhadores titulares da CPATP elegerão, entre seus pares, o **vice-presidente**, que assumirá a **presidência** no **segundo ano** do mandato. No primeiro ano, a presidência é designada pelos representantes dos operadores portuários/tomadores de serviço (29.7.12)."
+  },
+  {
+    "id": "700049",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Operações de atracação, desatracação e manobras de embarcações",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "No que diz respeito às **Operações de atracação, desatracação e manobras de embarcações** (item 29.8) na NR-29, assinale a alternativa **CORRETA**:",
+    "alternativas": {
+      "A": "O uso de coletes salva-vidas é obrigatório apenas para trabalhadores em operações com risco de queda ao mar, sendo dispensado nos demais casos.",
+      "B": "É obrigatório o uso de um sistema de telecomunicação entre a embarcação e o responsável em terra pela atracação.",
+      "C": "Não é necessário que as medidas de prevenção considerem o risco de rompimento de cabos e espias, pois esse risco é inerente à operação e não passível de prevenção.",
+      "D": "O comandante da embarcação deve garantir as condições seguras após a operação portuária ser iniciada.",
+      "E": "As medidas de prevenção devem focar apenas na prensagem de membros, excluindo iluminação e queda ao mar."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, conforme o item 29.8.1.1. O item 29.8.2 torna obrigatório o uso de coletes salva-vidas para **todos** os trabalhadores envolvidos. O item 29.8.1 lista o rompimento de cabos/espias, iluminação e queda ao mar como riscos a serem considerados. O item 29.3.7.1 exige que as condições seguras sejam garantidas antes do início da operação."
+  },
+  {
+    "id": "700050",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Acesso a embarcações atracadas e fundeadas",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Sobre as regras de **Acesso a embarcações atracadas e fundeadas** (item 29.9) na NR-29, assinale a alternativa que apresenta uma regra **INCORRETA**:",
+    "alternativas": {
+      "A": "É proibido o acesso de trabalhadores a embarcações em equipamentos de guindar, exceto em operações de resgate e salvamento ou em operações com contêineres previstas na norma.",
+      "B": "É proibida a colocação de extensões elétricas, mangueiras, mangotes e assemelhados nas estruturas e corrimões das escadas e pranchas de acesso às embarcações.",
+      "C": "O acesso à embarcação deve ficar fora do alcance do raio da lança do guindaste ou assemelhado. Se não for possível, o local deve ser isolado e sinalizado durante a movimentação de carga suspensa.",
+      "D": "Não é permitido o acesso à embarcação atracada utilizando-se escadas tipo quebra-peito.",
+      "E": "As escadas de acesso devem estar apoiadas em terra, mas a utilização de rede de segurança contra queda de pessoas é sempre dispensada, pois o foco é no equipamento de salvamento próximo à água."
+    },
+    "resposta_correta": "E",
+    "comentario": "A alternativa E está incorreta. O item 29.9.7.3, alínea 'd', exige que a escada de acesso 'possuir rede de segurança contra queda de pessoas'. O subitem 29.9.7.3.1 estabelece que a utilização da rede **pode ser dispensada** caso **não haja risco de queda de pessoas na água**, mas não que é sempre dispensada."
+  },
+  {
+    "id": "700051",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Operação em conveses",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "No que tange às disposições sobre **Operação em conveses** (item 29.10) da NR-29, assinale a alternativa **CORRETA**:",
+    "alternativas": {
+      "A": "Durante a movimentação de carga suspensa, é permitida a circulação de pessoas no convés principal, desde que seja garantida a atenção redobrada.",
+      "B": "A arrumação do convés deve oferecer boas condições de visibilidade, mas a fixação de cargas ou objetos depositados no convés é dispensável, pois são responsabilidade do comandante.",
+      "C": "Os conveses devem, entre outras exigências, dispor de área de circulação que permita o trânsito seguro dos trabalhadores e possuir piso livre do risco de escorregamento.",
+      "D": "Olhais, escadas, tubulações, aberturas e cantos vivos devem ser isolados, sendo proibida a sinalização de segurança.",
+      "E": "As tampas de escotilhas acionadas por força motriz podem ser abertas ou fechadas sem a necessidade de verificação prévia de risco para os trabalhadores."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está correta, conforme o item 29.10.1, alíneas 'b' e 'd'. O item 29.10.2 veda a circulação de pessoas no perímetro de risco de queda de objetos. O item 29.10.4 exige que cargas/objetos depositados no convés estejam fixos. O item 29.10.5 exige sinalização de segurança. O item 29.10.6, alínea 'b', exige verificação antes de abrir ou fechar tampas de escotilhas."
+  },
+  {
+    "id": "700052",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Porões",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Em relação às disposições sobre **Porões** (item 29.11) na NR-29, quando for necessário o acesso ao porão por meio de escada de mão, e não houver condições de utilização dos agulheiros, o comprimento máximo da escada permitido e a distância mínima que esta deve ultrapassar a borda da estrutura de apoio são, respectivamente:",
+    "alternativas": {
+      "A": "5 m (cinco metros) e 0,5 m (cinquenta centímetros).",
+      "B": "7 m (sete metros) e 1m (um metro).",
+      "C": "10 m (dez metros) e 0,8 m (oitenta centímetros).",
+      "D": "5 m (cinco metros) e 1m (um metro).",
+      "E": "7 m (sete metros) e 0,5 m (cinquenta centímetros)."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o item 29.11.5, o acesso ao porão por escada de mão deve ter no máximo **7 m (sete metros) de comprimento** e deve **ultrapassar a borda da estrutura de apoio em 1m (um metro)**."
+  },
+  {
+    "id": "700053",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Porões",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Conforme a NR-29 (item 29.11), sobre as condições de trabalho nos **Porões**, assinale a alternativa **INCORRETA**:",
+    "alternativas": {
+      "A": "Os pisos dos porões devem estar limpos, livres de contaminantes e de materiais inservíveis antes do início da operação.",
+      "B": "Passarelas, plataformas, beiras de cobertas abertas, bocas de celas de contêineres e grandes vãos entre cargas, com diferença de nível superior a 2,00 m (dois metros), devem possuir guarda-corpo com 1,10 m (um metro e dez centímetros) de altura.",
+      "C": "Em locais em que não haja atividade, os vãos livres com risco de quedas, como bocas de agulheiros e cobertas, devem estar fechados.",
+      "D": "É permitido qualquer atividade laboral em cobertas distintas do mesmo porão e mesmo bordo simultaneamente, desde que haja sinalização adequada.",
+      "E": "É obrigatório o uso de escadas para a transposição de obstáculos de altura superior a 1,50 m (um metro e cinquenta centímetros)."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está incorreta. O item 29.11.24 estabelece que **É proibida** qualquer atividade laboral em cobertas distintas do mesmo porão e mesmo bordo simultaneamente. As demais alternativas estão corretas, conforme 29.11.8, 29.11.11, 29.11.16 e 29.11.13, respectivamente."
+  },
+  {
+    "id": "700054",
+    "disciplina": "Legislação Federal",
+    "assunto": "NR 29 - Trabalho em espaços confinados",
+    "banca": "IDCAP (Simulado)",
+    "instituicao": "Simulado Concurso Portuário",
+    "ano": "2025",
+    "cargo": "Analista Portuário (Simulado)",
+    "nivel": "Superior",
+    "enunciado": "Em operações portuárias no interior de embarcações, caso o porão seja identificado como **espaço confinado** (item 29.12), a NR-29 exige que as operações sejam precedidas de uma série de medidas técnicas, tais como isolar e sinalizar o local, e emitir a Permissão de Entrada e Trabalho (PET). Contudo, em relação ao **cadastro** desses espaços confinados em operações portuárias no interior de embarcações, o que estabelece a NR-29:",
+    "alternativas": {
+      "A": "É obrigatório o cadastro do espaço confinado, e as informações devem ser anexadas ao PGR.",
+      "B": "O cadastro é dispensado, devendo, neste caso, as informações serem inseridas na Permissão de Entrada e Trabalho (PET).",
+      "C": "A NR-29 não faz menção sobre o cadastro, cabendo à NR-33 regulamentar integralmente essa questão.",
+      "D": "O cadastro é dispensado, pois o OGMO e o Operador Portuário são solidariamente responsáveis pelo gerenciamento de riscos.",
+      "E": "O cadastro é obrigatório, devendo ser feito pelo SESSTP antes da inspeção das condições de segurança."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta. Conforme o item 29.12.5, 'É dispensado o cadastro dos espaços confinados em operações portuárias no interior de embarcações, devendo, neste caso, as informações serem inseridas na Permissão de Entrada e Trabalho.' A NR-33 é aplicável, mas a NR-29 traz disposições específicas neste ponto."
+  }
+]
