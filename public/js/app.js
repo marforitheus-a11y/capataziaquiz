@@ -29,26 +29,24 @@ try {
 
 let currentUser = null;
 let otherUser = null; 
+let activeChatTarget = null; // userId ou "group"
 let chatRoomId = null; 
 let userDocRef = null; 
 let otherUserDocRef = null; 
 
 let stopPresenceListener = () => {};
+let stopGroupPresenceListeners = [];
 let stopNotificationListener = () => {};
 let stopMessagesListener = () => {};
 
 const profilePics = {
   matheus: '/video/matheus.jpg',
   hugo: 'https://placehold.co/220x220/74b9ff/FFFFFF?text=Hugo',
-  lucao: 'https://placehold.co/220x220/00b894/FFFFFF?text=Lucao'
+  lucao: 'https://placehold.co/220x220/00b894/FFFFFF?text=Lucao',
+  group: 'https://placehold.co/220x220/6c5ce7/FFFFFF?text=Grupo'
 };
 
 const supportedUsers = ['matheus', 'hugo', 'lucao'];
-const defaultOpponents = {
-  matheus: 'hugo',
-  hugo: 'matheus',
-  lucao: 'matheus'
-};
 
 let otherUserIsOnline = false;
 let myUnreadCount = 0;
@@ -92,6 +90,14 @@ function formatTimestamp(fbTimestamp) {
   }
 }
 
+function getDirectChatRoomId(userA, userB) {
+  return [userA, userB].sort().join('_');
+}
+
+function getGroupChatRoomId() {
+  return `group_${[...supportedUsers].sort().join('_')}`;
+}
+
 // ======================================================
 // --- O "CÉREBRO" DO APP - TUDO DENTRO DE DOMCONTENTLOADED ---
 // ======================================================
@@ -114,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatBadge = document.getElementById('chatBadge');
   const chatWidget = document.getElementById('chatWidget');
   const chatWithUser = document.getElementById('chatWithUser');
+  const chatTargetSelect = document.getElementById('chatTargetSelect');
   const closeChatBtn = document.getElementById('closeChatBtn');
   const chatMessages = document.getElementById('chatMessages');
   const chatTextInput = document.getElementById('chatTextInput');
@@ -163,14 +170,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function getAvailableChatTargets() {
+    if (!currentUser) return [];
+    const directTargets = supportedUsers
+      .filter((userId) => userId !== currentUser)
+      .map((userId) => ({ id: userId, label: `Conversa com ${userId}` }));
+    return [...directTargets, { id: 'group', label: 'Chat em grupo' }];
+  }
+
+  function populateChatTargetOptions() {
+    if (!chatTargetSelect) return;
+    const targets = getAvailableChatTargets();
+    chatTargetSelect.innerHTML = targets
+      .map((target) => `<option value="${target.id}">${target.label}</option>`)
+      .join('');
+  }
+
+  function setChatContext(targetId) {
+    activeChatTarget = targetId;
+    if (targetId === 'group') {
+      otherUser = null;
+      otherUserDocRef = null;
+      chatRoomId = getGroupChatRoomId();
+      return;
+    }
+
+    otherUser = targetId;
+    otherUserDocRef = db.collection("users").doc(otherUser);
+    chatRoomId = getDirectChatRoomId(currentUser, otherUser);
+  }
+
   async function selectUser(userName) {
     if (!db) return;
     currentUser = userName;
-    otherUser = defaultOpponents[currentUser] || supportedUsers.find((user) => user !== currentUser);
-    chatRoomId = [currentUser, otherUser].sort().join('_');
+    const defaultTarget = supportedUsers.find((user) => user !== currentUser);
+    populateChatTargetOptions();
+    if (chatTargetSelect) chatTargetSelect.value = defaultTarget;
+    setChatContext(defaultTarget);
     if (currentUserDisplay) currentUserDisplay.textContent = userName;
     userDocRef = db.collection("users").doc(currentUser); 
-    otherUserDocRef = db.collection("users").doc(otherUser);
     if (userGate) userGate.style.opacity = 0.5;
     try {
       const docSnap = await userDocRef.get();
@@ -195,6 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
       showTab('simulado');
       startPresenceHeartbeat();
       startChatListeners();
+      updateChatHead();
       listenForChallenges(); // NOVO: Começa a ouvir por desafios
     } catch (error) {
       console.error("Erro ao conectar no Firebase (Firestore):", error);
@@ -224,43 +263,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 4. Lógica de Chat ---
   function startChatListeners() {
-    if (!otherUserDocRef || !userDocRef) return;
+    if (!userDocRef || !chatRoomId) return;
     
     stopPresenceListener(); 
+    stopGroupPresenceListeners.forEach((stopFn) => stopFn());
+    stopGroupPresenceListeners = [];
     stopNotificationListener();
 
-    stopPresenceListener = otherUserDocRef.onSnapshot((doc) => {
-      let isOnline = false;
-      if (doc.exists) {
-        const data = doc.data();
-        const lastActivity = data.lastActivity ? data.lastActivity.toDate() : null;
-        if (lastActivity) {
-          const now = new Date();
-          const diffInSeconds = (now.getTime() - lastActivity.getTime()) / 1000;
-          if (diffInSeconds < 60) {
-            isOnline = true;
+    if (activeChatTarget === 'group') {
+      const otherUsers = supportedUsers.filter((userId) => userId !== currentUser);
+      const onlineMap = {};
+      otherUsers.forEach((userId) => {
+        const ref = db.collection("users").doc(userId);
+        const stopFn = ref.onSnapshot((doc) => {
+          let isOnline = false;
+          if (doc.exists) {
+            const data = doc.data();
+            const lastActivity = data.lastActivity ? data.lastActivity.toDate() : null;
+            if (lastActivity) {
+              const now = new Date();
+              const diffInSeconds = (now.getTime() - lastActivity.getTime()) / 1000;
+              if (diffInSeconds < 60) isOnline = true;
+            }
+          }
+          onlineMap[userId] = isOnline;
+          otherUserIsOnline = Object.values(onlineMap).some(Boolean);
+          updateChatHead();
+        });
+        stopGroupPresenceListeners.push(stopFn);
+      });
+    } else if (otherUserDocRef) {
+      stopPresenceListener = otherUserDocRef.onSnapshot((doc) => {
+        let isOnline = false;
+        if (doc.exists) {
+          const data = doc.data();
+          const lastActivity = data.lastActivity ? data.lastActivity.toDate() : null;
+          if (lastActivity) {
+            const now = new Date();
+            const diffInSeconds = (now.getTime() - lastActivity.getTime()) / 1000;
+            if (diffInSeconds < 60) {
+              isOnline = true;
+            }
+          }
+          
+          const reaction = data.lastReaction;
+          if (reaction && reaction.timestamp) {
+            const reactionTime = reaction.timestamp.toDate();
+            if (lastReactionTimestamp === null || reactionTime.getTime() > lastReactionTimestamp.getTime()) {
+              lastReactionTimestamp = reactionTime; 
+              triggerEmojiFloat(reaction.type); 
+            }
           }
         }
-        
-        const reaction = data.lastReaction;
-        if (reaction && reaction.timestamp) {
-          const reactionTime = reaction.timestamp.toDate();
-          if (lastReactionTimestamp === null || reactionTime.getTime() > lastReactionTimestamp.getTime()) {
-            lastReactionTimestamp = reactionTime; 
-            triggerEmojiFloat(reaction.type); 
-          }
-        }
-      }
-      otherUserIsOnline = isOnline;
-      updateChatHead();
-    });
+        otherUserIsOnline = isOnline;
+        updateChatHead();
+      });
+    }
     
     stopNotificationListener = userDocRef.onSnapshot((doc) => {
       let unreadCount = 0;
       if (doc.exists) {
          const data = doc.data();
+         const unreadChats = data.unreadChats || {};
          const unreadMap = data.unreadMessagesFrom || {};
-         unreadCount = unreadMap[otherUser] || 0;
+         unreadCount = unreadChats[chatRoomId] || ((activeChatTarget !== 'group' && otherUser) ? (unreadMap[otherUser] || 0) : 0);
          
          if (unreadCount > myUnreadCount) {
            if (chatWidget.style.display === 'none') {
@@ -275,32 +341,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateChatHead() {
     const indicator = document.getElementById('chatOnlineIndicator');
+
+    if (!chatHead || !chatHeadImg || !chatBadge || !activeChatTarget) return;
+
+    chatHead.style.display = 'block';
+    chatHeadImg.src = profilePics[activeChatTarget] || profilePics.group;
+    if (indicator) {
+      if (otherUserIsOnline) indicator.classList.add('online');
+      else indicator.classList.remove('online');
+    }
     
-    if (otherUserIsOnline) {
-      chatHead.style.display = 'block';
-      chatHeadImg.src = profilePics[otherUser];
-      if (indicator) indicator.classList.add('online'); 
-      
-      if (myUnreadCount > 0) {
-        chatBadge.textContent = myUnreadCount;
-        chatBadge.style.display = 'flex';
-      } else {
-        chatBadge.style.display = 'none';
-      }
+    if (myUnreadCount > 0) {
+      chatBadge.textContent = myUnreadCount;
+      chatBadge.style.display = 'flex';
     } else {
-      chatHead.style.display = 'none';
-      if (indicator) indicator.classList.remove('online'); 
-      if (chatWidget) chatWidget.style.display = 'none';
+      chatBadge.style.display = 'none';
     }
   }
   
+  if (chatTargetSelect) chatTargetSelect.addEventListener('change', async (e) => {
+    if (!currentUser) return;
+    setChatContext(e.target.value);
+    myUnreadCount = 0;
+    startChatListeners();
+    updateChatHead();
+    if (chatWidget.style.display !== 'none') {
+      chatWithUser.textContent = activeChatTarget === 'group' ? 'Chat em grupo' : `Chat com ${otherUser}`;
+      listenForMessages();
+      const unreadChatKey = `unreadChats.${chatRoomId}`;
+      await userDocRef.update({ [unreadChatKey]: 0 });
+      if (otherUser) {
+        const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
+        await userDocRef.update({ [myUnreadMapKey]: 0 });
+        markMessagesAsRead();
+      }
+    }
+  });
+
   if (chatHead) chatHead.addEventListener('click', () => {
     chatWidget.style.display = 'flex';
-    chatWithUser.textContent = `Chat com ${otherUser}`;
+    chatWithUser.textContent = activeChatTarget === 'group' ? 'Chat em grupo' : `Chat com ${otherUser}`;
     listenForMessages();
-    const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
-    userDocRef.update({ [myUnreadMapKey]: 0 });
-    markMessagesAsRead();
+    const unreadChatKey = `unreadChats.${chatRoomId}`;
+    userDocRef.update({ [unreadChatKey]: 0 });
+    if (otherUser) {
+      const myUnreadMapKey = `unreadMessagesFrom.${otherUser}`;
+      userDocRef.update({ [myUnreadMapKey]: 0 });
+      markMessagesAsRead();
+    }
   });
   
   if (closeChatBtn) closeChatBtn.addEventListener('click', () => {
@@ -310,6 +398,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function listenForMessages() {
     stopMessagesListener(); 
+    if (!chatRoomId) return;
+    const isGroupChat = activeChatTarget === 'group';
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     const q = chatCollectionRef.orderBy("timestamp", "asc");
 
@@ -349,21 +439,23 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (msg.senderId === currentUser) {
           msgRow.classList.add('sent');
-          const status = document.createElement('span');
-          status.className = 'msg-status';
-          if (msg.status === 'read') {
-            status.textContent = '✓✓';
-            status.classList.add('read'); 
-          } else if (msg.status === 'delivered') {
-            status.textContent = '✓✓';
-          } else {
-            status.textContent = '✓'; 
+          if (!isGroupChat) {
+            const status = document.createElement('span');
+            status.className = 'msg-status';
+            if (msg.status === 'read') {
+              status.textContent = '✓✓';
+              status.classList.add('read'); 
+            } else if (msg.status === 'delivered') {
+              status.textContent = '✓✓';
+            } else {
+              status.textContent = '✓'; 
+            }
+            meta.appendChild(status);
           }
-          meta.appendChild(status);
         } else {
           msgRow.classList.add('received');
           msgRow.appendChild(avatar);
-          if (msg.status === 'sent') {
+          if (!isGroupChat && msg.status === 'sent') {
             messagesToMarkDelivered.push(msgId);
           }
         }
@@ -394,6 +486,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function markMessagesAsRead() {
+    if (!otherUser) return;
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     const q = chatCollectionRef.where('senderId', '==', otherUser).where('status', '!=', 'read');
     try {
@@ -409,18 +502,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
+  function getRecipientsForActiveChat() {
+    if (!currentUser) return [];
+    if (activeChatTarget === 'group') {
+      return supportedUsers.filter((userId) => userId !== currentUser);
+    }
+    return otherUser ? [otherUser] : [];
+  }
+
   async function addMessageToDb(messageData) {
-    if (!db || !chatRoomId || !otherUserDocRef) return;
+    if (!db || !chatRoomId) return;
+    const recipients = getRecipientsForActiveChat();
+    if (recipients.length === 0) return;
     const chatCollectionRef = db.collection("chats").doc(chatRoomId).collection("messages");
     await chatCollectionRef.add({
       ...messageData, 
       status: 'sent', 
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-    const otherUserUnreadKey = `unreadMessagesFrom.${currentUser}`;
-    await otherUserDocRef.update({
-      [otherUserUnreadKey]: firebase.firestore.FieldValue.increment(1)
+
+    const batch = db.batch();
+    recipients.forEach((recipientId) => {
+      const recipientRef = db.collection("users").doc(recipientId);
+      batch.set(recipientRef, {
+        unreadMessagesFrom: {
+          [currentUser]: firebase.firestore.FieldValue.increment(1)
+        },
+        unreadChats: {
+          [chatRoomId]: firebase.firestore.FieldValue.increment(1)
+        }
+      }, { merge: true });
     });
+    await batch.commit();
   }
   
   async function sendTextMessage() {
