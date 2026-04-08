@@ -651,7 +651,23 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   color: white;
   border-radius: var(--radius) var(--radius) 0 0;
 }
+.chat-header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 .chat-header h3 { margin: 0; font-weight: 600; text-transform: capitalize; }
+.chat-target-select {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.82rem;
+}
+.chat-target-select option {
+  color: #1f2d3d;
+}
 .chat-header #closeChatBtn { background: none; border: none; color: white; font-size: 1.5rem; font-weight: bold; cursor: pointer; opacity: 0.8; }
 .chat-header #closeChatBtn:hover { opacity: 1; }
 .chat-messages {

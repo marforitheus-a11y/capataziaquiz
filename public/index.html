@@ -30,7 +30,10 @@
   <!-- ============================================= -->
   <div id="chatWidget" class="chat-widget" style="display: none;">
     <div class="chat-header">
-      <h3 id="chatWithUser">Chat</h3>
+      <div class="chat-header-main">
+        <h3 id="chatWithUser">Chat</h3>
+        <select id="chatTargetSelect" class="chat-target-select" aria-label="Selecionar conversa"></select>
+      </div>
       <button id="closeChatBtn">&times;</button>
     </div>
     <div id="chatMessages" class="chat-messages">
@@ -194,7 +197,6 @@
 
 </body>
 </html>
-
 
 
 
