@@ -1,9 +1,9 @@
 // Dicionário de traduções
 const translations = {
   "pt-BR": {
-    "pageTitle": "Quiz de Questões",
-    "mainTitle": "Marfori Corporations",
-    "subTitle": "Simulado OGMO - CAPATAZIA",
+    "pageTitle": "Simulado GCM Guarujá",
+    "mainTitle": "Simulado GCM Guarujá",
+    "subTitle": "Preparatório Guarda Civil Municipal",
     "selectSubject": "Selecione a matéria / parte:",
     "loading": "Carregando...",
     "selectedLabel": "Matéria selecionada",
@@ -37,8 +37,8 @@ const translations = {
   },
   "ja-JP": {
     "pageTitle": "問題クイズ",
-    "mainTitle": "マーフォリ・コーポレーションズ",
-    "subTitle": "OGMOシミュレーション - 荷役",
+    "mainTitle": "グアルジャ市警 模擬試験",
+    "subTitle": "ガード市警察官 試験対策",
     "selectSubject": "主題/部分を選択:",
     "loading": "読み込み中...",
     "selectedLabel": "選択された主題",
