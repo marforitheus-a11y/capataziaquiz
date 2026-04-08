@@ -38,8 +38,16 @@ let stopNotificationListener = () => {};
 let stopMessagesListener = () => {};
 
 const profilePics = {
-  ithalo: '/video/ithalo.jpg',
-  matheus: '/video/matheus.jpg'
+  matheus: '/video/matheus.jpg',
+  hugo: 'https://placehold.co/220x220/74b9ff/FFFFFF?text=Hugo',
+  lucao: 'https://placehold.co/220x220/00b894/FFFFFF?text=Lucao'
+};
+
+const supportedUsers = ['matheus', 'hugo', 'lucao'];
+const defaultOpponents = {
+  matheus: 'hugo',
+  hugo: 'matheus',
+  lucao: 'matheus'
 };
 
 let otherUserIsOnline = false;
@@ -92,8 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // --- 1. Seleção de Elementos ---
   const userGate = document.getElementById('userGate');
-  const userIthalo = document.getElementById('userIthalo');
   const userMatheus = document.getElementById('userMatheus');
+  const userHugo = document.getElementById('userHugo');
+  const userLucao = document.getElementById('userLucao');
   const mainContent = document.getElementById('mainContent');
   const currentUserDisplay = document.querySelector('#currentUserDisplay span');
   const navSimulado = document.getElementById('navSimulado');
@@ -117,10 +126,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
   // --- 2. Lógica de Login ---
+
+
+  async function resetAllUserStatsIfNeeded() {
+    if (!db) return;
+
+    const resetVersion = 'gcm-stats-reset-2026-04-08';
+    const settingsRef = db.collection('appSettings').doc('global');
+
+    try {
+      const settingsSnap = await settingsRef.get();
+      if (settingsSnap.exists && settingsSnap.data().statsResetVersion === resetVersion) {
+        return;
+      }
+
+      const batch = db.batch();
+      supportedUsers.forEach((userId) => {
+        const userRef = db.collection('users').doc(userId);
+        batch.set(userRef, {
+          stats: { totalQuestions: 0, correct: 0, wrong: 0 },
+          errorTopics: {},
+          dailyPerformance: {},
+          resetAt: firebase.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
+      });
+
+      batch.set(settingsRef, {
+        statsResetVersion: resetVersion,
+        statsResetAt: firebase.firestore.FieldValue.serverTimestamp()
+      }, { merge: true });
+
+      await batch.commit();
+      console.log('Estatísticas antigas zeradas para a nova fase do simulado.');
+    } catch (error) {
+      console.error('Erro ao resetar estatísticas globais:', error);
+    }
+  }
+
   async function selectUser(userName) {
     if (!db) return;
     currentUser = userName;
-    otherUser = (currentUser === 'ithalo') ? 'matheus' : 'ithalo';
+    otherUser = defaultOpponents[currentUser] || supportedUsers.find((user) => user !== currentUser);
     chatRoomId = [currentUser, otherUser].sort().join('_');
     if (currentUserDisplay) currentUserDisplay.textContent = userName;
     userDocRef = db.collection("users").doc(currentUser); 
@@ -139,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
           lastReaction: null 
         });
       }
+      await resetAllUserStatsIfNeeded();
       if (userGate) userGate.style.display = 'none';
       if (mainContent) mainContent.style.display = 'block';
       if (typeof loadSubjects === 'function') {
@@ -155,8 +202,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (userGate) userGate.style.opacity = 1;
     }
   }
-  if (userIthalo) userIthalo.addEventListener('click', () => selectUser('ithalo'));
   if (userMatheus) userMatheus.addEventListener('click', () => selectUser('matheus'));
+  if (userHugo) userHugo.addEventListener('click', () => selectUser('hugo'));
+  if (userLucao) userLucao.addEventListener('click', () => selectUser('lucao'));
 
   // --- 3. Lógica de Presença ---
   function startPresenceHeartbeat() {
@@ -275,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
         msgRow.className = 'msg-row';
         const avatar = document.createElement('img');
         avatar.className = 'msg-avatar';
-        avatar.src = profilePics[msg.senderId] || profilePics['matheus']; 
+        avatar.src = profilePics[msg.senderId] || profilePics.matheus; 
         const msgContent = document.createElement('div');
         msgContent.className = 'msg-content';
         const bubble = document.createElement('div');
