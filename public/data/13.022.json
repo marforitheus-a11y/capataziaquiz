@@ -178,5 +178,206 @@
     },
     "resposta_correta": "C",
     "comentario": "O inciso IV do Art. 5º prevê a colaboração integrada para contribuir com a paz social."
+  },
+  {
+    "id": "700111",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Criação da Guarda Municipal",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Considerando o disposto na Lei nº 13.022/2014 sobre a criação das guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "A guarda municipal é criada por decreto do chefe do Executivo.",
+      "B": "A criação da guarda municipal depende de autorização da União.",
+      "C": "O Município pode criar sua guarda municipal por meio de lei.",
+      "D": "A guarda municipal é automaticamente criada com a Constituição.",
+      "E": "A criação da guarda municipal depende de convênio com o Estado."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 6º estabelece que o Município pode criar sua guarda municipal por lei. A pegadinha está nas alternativas com decreto ou autorização externa."
+  },
+  {
+    "id": "700112",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Subordinação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a subordinação da guarda municipal, conforme a Lei nº 13.022/2014, é correto afirmar que:",
+    "alternativas": {
+      "A": "Está subordinada ao Governo Estadual.",
+      "B": "Está subordinada ao Ministério da Justiça.",
+      "C": "Está subordinada ao chefe do Poder Executivo municipal.",
+      "D": "Está subordinada ao Poder Judiciário local.",
+      "E": "Possui autonomia completa sem subordinação."
+    },
+    "resposta_correta": "C",
+    "comentario": "O parágrafo único do Art. 6º determina a subordinação ao chefe do Poder Executivo municipal."
+  },
+  {
+    "id": "700113",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Efetivo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um Município com população superior a 500.000 habitantes pretende ampliar o efetivo de sua guarda municipal. Nos termos da Lei nº 13.022/2014, o limite máximo deverá observar:",
+    "alternativas": {
+      "A": "0,4% da população.",
+      "B": "0,3% da população.",
+      "C": "0,2% da população.",
+      "D": "1% da população.",
+      "E": "Não há limite legal."
+    },
+    "resposta_correta": "C",
+    "comentario": "Para municípios acima de 500 mil habitantes, o limite é de 0,2%. Pegadinha clássica: trocar os percentuais."
+  },
+  {
+    "id": "700114",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Efetivo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre os limites de efetivo das guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "O efetivo pode ser reduzido automaticamente caso a população diminua.",
+      "B": "A lei proíbe qualquer alteração no efetivo após sua criação.",
+      "C": "Mesmo com redução populacional, o efetivo existente deve ser preservado.",
+      "D": "O efetivo deve sempre acompanhar exatamente a variação populacional, sem exceções.",
+      "E": "A redução populacional implica extinção automática de cargos."
+    },
+    "resposta_correta": "C",
+    "comentario": "O parágrafo único do Art. 7º garante a preservação do efetivo existente, sendo ajustado por lei municipal."
+  },
+  {
+    "id": "700115",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Consórcios",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Municípios vizinhos pretendem compartilhar serviços de guarda municipal. Nos termos da Lei nº 13.022/2014, essa possibilidade:",
+    "alternativas": {
+      "A": "É vedada, pois a guarda é exclusiva do Município.",
+      "B": "É permitida mediante consórcio público.",
+      "C": "Depende exclusivamente de autorização da União.",
+      "D": "Só pode ocorrer em situações emergenciais.",
+      "E": "É permitida apenas para municípios com menos de 50 mil habitantes."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 8º permite o uso compartilhado mediante consórcio público. Pegadinha: dizer que é proibido ou depende da União."
+  },
+  {
+    "id": "700116",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Estrutura",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a estrutura da guarda municipal, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "É composta por cargos isolados sem carreira.",
+      "B": "Possui carreira única e plano de cargos e salários.",
+      "C": "Adota estrutura idêntica às forças militares.",
+      "D": "Não pode ter plano de carreira.",
+      "E": "É composta exclusivamente por cargos comissionados."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 9º estabelece carreira única e plano de cargos e salários. Pegadinha: confundir com estrutura militar."
+  },
+  {
+    "id": "700117",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Investidura",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Assinale a alternativa que NÃO corresponde a requisito básico para investidura no cargo de guarda municipal.",
+    "alternativas": {
+      "A": "Nacionalidade brasileira.",
+      "B": "Idade mínima de 18 anos.",
+      "C": "Nível superior completo.",
+      "D": "Quitação eleitoral.",
+      "E": "Aptidão física e mental."
+    },
+    "resposta_correta": "C",
+    "comentario": "A exigência mínima é nível médio, não superior. Pegadinha clássica de elevar o requisito."
+  },
+  {
+    "id": "700118",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Investidura",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre os requisitos para investidura na guarda municipal, é correto afirmar que:",
+    "alternativas": {
+      "A": "É obrigatória experiência prévia em segurança pública.",
+      "B": "A idade mínima é de 21 anos.",
+      "C": "É exigido nível médio completo.",
+      "D": "A aptidão psicológica é facultativa.",
+      "E": "A investigação social não é necessária."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 10 exige nível médio. Pegadinhas: idade 21, dispensar psicológico ou investigação social."
+  },
+  {
+    "id": "700119",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Investidura",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A respeito dos requisitos legais para ingresso na guarda municipal, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "A idoneidade moral é presumida e dispensa comprovação.",
+      "B": "A investigação social pode ser substituída por entrevista.",
+      "C": "A idoneidade moral deve ser comprovada por investigação social e certidões.",
+      "D": "Somente antecedentes criminais estaduais são analisados.",
+      "E": "A idoneidade moral é exigida apenas após a posse."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 10 exige comprovação por investigação social e certidões. Pegadinha: dizer que é presumida ou opcional."
+  },
+  {
+    "id": "700120",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Investidura",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da Lei nº 13.022/2014, sobre os requisitos para investidura, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "A lei impede que outros requisitos sejam estabelecidos.",
+      "B": "Os requisitos são fixos e não podem ser ampliados.",
+      "C": "Outros requisitos podem ser estabelecidos por lei municipal.",
+      "D": "Os requisitos são definidos exclusivamente pela União.",
+      "E": "Não há possibilidade de exigências adicionais."
+    },
+    "resposta_correta": "C",
+    "comentario": "O parágrafo único do Art. 10 permite que lei municipal estabeleça outros requisitos. Pegadinha: dizer que é fechado."
   }
 ]
+
