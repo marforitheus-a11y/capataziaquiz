@@ -41,8 +41,8 @@ let stopMessagesListener = () => {};
 
 const profilePics = {
   matheus: '/video/matheus.jpg',
-  hugo: 'https://placehold.co/220x220/74b9ff/FFFFFF?text=Hugo',
-  lucao: 'https://placehold.co/220x220/00b894/FFFFFF?text=Lucao',
+  hugo: '/video/hugo.jpg',
+  lucao: '/video/lucao.jpg',
   group: 'https://placehold.co/220x220/6c5ce7/FFFFFF?text=Grupo'
 };
 
