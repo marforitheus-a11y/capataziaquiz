@@ -17,7 +17,7 @@
       "E": "Definir competências apenas administrativas das guardas municipais."
     },
     "resposta_correta": "B",
-    "comentario": "Conforme o Art. 1º da Lei nº 13.022/2014 :contentReference[oaicite:0]{index=0}, a lei institui normas gerais para as guardas municipais, disciplinando o § 8º do art. 144 da Constituição Federal."
+    "comentario": "Conforme o Art. 1º da Lei nº 13.022/2014, a lei institui normas gerais para as guardas municipais, disciplinando o § 8º do art. 144 da Constituição Federal."
   },
   {
     "id": "700102",
@@ -378,6 +378,608 @@
     },
     "resposta_correta": "C",
     "comentario": "O parágrafo único do Art. 10 permite que lei municipal estabeleça outros requisitos. Pegadinha: dizer que é fechado."
+  },
+  {
+    "id": "700121",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Capacitação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da Lei nº 13.022/2014, a capacitação dos guardas municipais deve observar:",
+    "alternativas": {
+      "A": "Treinamento padronizado exclusivamente militar.",
+      "B": "Capacitação opcional, conforme decisão do gestor.",
+      "C": "Matriz curricular compatível com as atividades desempenhadas.",
+      "D": "Formação limitada ao ingresso no cargo.",
+      "E": "Capacitação definida apenas pela União."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 11 exige capacitação específica com matriz compatível com as atividades. Pegadinha: limitar ou militarizar a formação."
+  },
+  {
+    "id": "700122",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Capacitação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A respeito da matriz curricular de formação das guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "Deve obrigatoriamente ser criada pelo Município sem referência nacional.",
+      "B": "Pode ser adaptada a partir da matriz nacional elaborada pela Senasp.",
+      "C": "É exclusiva das forças militares.",
+      "D": "É dispensável para o exercício do cargo.",
+      "E": "Só pode ser definida por lei federal."
+    },
+    "resposta_correta": "B",
+    "comentario": "A lei permite adaptação da matriz curricular nacional da Senasp. Pegadinha: dizer que é obrigatória, exclusiva ou dispensável."
+  },
+  {
+    "id": "700123",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a criação de órgão de formação para guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "É obrigatória para todos os Municípios.",
+      "B": "É facultativa ao Município.",
+      "C": "Só pode ser criada pela União.",
+      "D": "Depende exclusivamente de autorização estadual.",
+      "E": "É proibida em municípios pequenos."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 12 prevê que é facultada a criação de órgão de formação. Pegadinha: tratar como obrigação."
+  },
+  {
+    "id": "700124",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Municípios que desejam estruturar formação de guardas podem, conforme a lei:",
+    "alternativas": {
+      "A": "Somente atuar de forma isolada.",
+      "B": "Firmar convênios ou consórcios para esse fim.",
+      "C": "Delegar integralmente à iniciativa privada.",
+      "D": "Utilizar obrigatoriamente estrutura militar.",
+      "E": "Depender de autorização do Poder Judiciário."
+    },
+    "resposta_correta": "B",
+    "comentario": "O §1º do Art. 12 permite convênios e consórcios. Pegadinha: dizer que é isolado ou privado."
+  },
+  {
+    "id": "700125",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a formação centralizada mantida pelo Estado, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "É obrigatória para todos os Municípios.",
+      "B": "Pode ocorrer mediante convênio com Municípios interessados.",
+      "C": "Substitui automaticamente a formação municipal.",
+      "D": "Deve ser obrigatoriamente militar.",
+      "E": "Dispensa participação dos Municípios."
+    },
+    "resposta_correta": "B",
+    "comentario": "O §2º do Art. 12 permite formação centralizada via convênio. Pegadinha: obrigatoriedade ou exclusão dos Municípios."
+  },
+  {
+    "id": "700126",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O órgão de formação de guardas municipais, quando centralizado pelo Estado, não pode:",
+    "alternativas": {
+      "A": "Ser compartilhado entre Municípios.",
+      "B": "Ter conselho gestor.",
+      "C": "Ser o mesmo destinado à formação de forças militares.",
+      "D": "Oferecer cursos continuados.",
+      "E": "Atuar em regime de convênio."
+    },
+    "resposta_correta": "C",
+    "comentario": "O §3º do Art. 12 proíbe que seja o mesmo órgão de formação militar. Pegadinha: misturar com forças armadas."
+  },
+  {
+    "id": "700127",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Controle",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o controle das guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "É exercido apenas pelo Poder Judiciário.",
+      "B": "O controle interno é exercido por ouvidoria.",
+      "C": "O controle externo é exercido por corregedoria.",
+      "D": "Há controle interno e externo com funções distintas.",
+      "E": "O controle só existe em guardas armadas."
+    },
+    "resposta_correta": "D",
+    "comentario": "Art. 13 prevê controle interno (corregedoria) e externo (ouvidoria). Pegadinha clássica: inverter funções."
+  },
+  {
+    "id": "700128",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Controle",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A ouvidoria das guardas municipais tem como função:",
+    "alternativas": {
+      "A": "Aplicar sanções disciplinares.",
+      "B": "Investigar infrações internas.",
+      "C": "Receber e encaminhar reclamações, sugestões e denúncias.",
+      "D": "Comandar operações de segurança.",
+      "E": "Substituir a corregedoria."
+    },
+    "resposta_correta": "C",
+    "comentario": "A ouvidoria exerce controle externo, recebendo manifestações. Pegadinha: confundir com corregedoria."
+  },
+  {
+    "id": "700129",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Controle",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o controle interno das guardas municipais, é correto afirmar que:",
+    "alternativas": {
+      "A": "É exercido por ouvidoria independente.",
+      "B": "É exercido por corregedoria.",
+      "C": "É opcional em qualquer hipótese.",
+      "D": "É exercido exclusivamente pelo prefeito.",
+      "E": "Não possui função disciplinar."
+    },
+    "resposta_correta": "B",
+    "comentario": "O controle interno é exercido pela corregedoria. Pegadinha: inverter com ouvidoria."
+  },
+  {
+    "id": "700130",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Prerrogativas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre os cargos em comissão das guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "Devem ser ocupados exclusivamente por pessoas externas.",
+      "B": "Devem ser providos por membros efetivos da carreira.",
+      "C": "São de livre nomeação sem qualquer restrição.",
+      "D": "Devem ser ocupados por militares.",
+      "E": "São proibidos na estrutura da guarda."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 15 determina que cargos em comissão sejam ocupados por membros efetivos. Pegadinha: livre nomeação irrestrita."
+  },
+  {
+    "id": "700131",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Porte de arma",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da Lei nº 13.022/2014, sobre o porte de arma de fogo pelos guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "É automaticamente garantido sem qualquer condicionante.",
+      "B": "É vedado em qualquer situação.",
+      "C": "É autorizado, conforme previsto em lei.",
+      "D": "Depende exclusivamente de decisão judicial.",
+      "E": "Só é permitido para guardas com mais de 10 anos de serviço."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 16 autoriza o porte de arma de fogo, conforme legislação específica. Pegadinha: dizer que é irrestrito ou totalmente proibido."
+  },
+  {
+    "id": "700132",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Porte de arma",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O direito ao porte de arma de fogo do guarda municipal poderá ser suspenso quando:",
+    "alternativas": {
+      "A": "Houver interesse administrativo genérico.",
+      "B": "O servidor solicitar férias.",
+      "C": "Houver restrição médica, decisão judicial ou justificativa do dirigente.",
+      "D": "O Município enfrentar crise financeira.",
+      "E": "O guarda estiver em estágio probatório."
+    },
+    "resposta_correta": "C",
+    "comentario": "O parágrafo único do Art. 16 prevê hipóteses específicas de suspensão. Pegadinha: incluir situações genéricas ou administrativas."
+  },
+  {
+    "id": "700133",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Telecomunicações",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com a Lei nº 13.022/2014, a destinação do número telefônico 153 aos Municípios é de responsabilidade:",
+    "alternativas": {
+      "A": "Do Ministério da Justiça.",
+      "B": "Da Polícia Federal.",
+      "C": "Da Anatel.",
+      "D": "Do Governo Estadual.",
+      "E": "Do Poder Judiciário."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 17 atribui à Anatel a destinação do número 153. Pegadinha: trocar por outros órgãos de segurança."
+  },
+  {
+    "id": "700134",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Telecomunicações",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Além do número telefônico, a Lei nº 13.022/2014 prevê para as guardas municipais:",
+    "alternativas": {
+      "A": "Uso exclusivo de internet pública.",
+      "B": "Faixa exclusiva de frequência de rádio.",
+      "C": "Sistema obrigatório de comunicação militar.",
+      "D": "Comunicação apenas por convênio estadual.",
+      "E": "Uso exclusivo de telefonia privada."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 17 também prevê faixa exclusiva de frequência de rádio. Pegadinha: associar a sistemas militares."
+  },
+  {
+    "id": "700135",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Prerrogativas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da lei, ao guarda municipal submetido à prisão antes de condenação definitiva é assegurado:",
+    "alternativas": {
+      "A": "Cumprimento de pena em regime domiciliar.",
+      "B": "Recolhimento em cela comum.",
+      "C": "Recolhimento isolado dos demais presos.",
+      "D": "Transferência automática para unidade militar.",
+      "E": "Liberdade provisória obrigatória."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 18 assegura cela separada antes da condenação definitiva. Pegadinha: confundir com privilégios penais inexistentes."
+  },
+  {
+    "id": "700136",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Prerrogativas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A prerrogativa prevista no Art. 18 aplica-se:",
+    "alternativas": {
+      "A": "A qualquer preso do sistema penal.",
+      "B": "Somente após condenação definitiva.",
+      "C": "Ao guarda municipal antes de condenação definitiva.",
+      "D": "Apenas em crimes federais.",
+      "E": "Somente mediante decisão do juiz."
+    },
+    "resposta_correta": "C",
+    "comentario": "A garantia é específica para guardas municipais antes da condenação definitiva. Pegadinha: inverter o momento ou ampliar para todos."
+  },
+  {
+    "id": "700137",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Vedações",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a estrutura hierárquica das guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "Pode adotar integralmente a nomenclatura militar.",
+      "B": "Deve seguir o padrão das Forças Armadas.",
+      "C": "Não pode utilizar denominações idênticas às forças militares.",
+      "D": "Deve adotar graduações militares para padronização.",
+      "E": "Pode utilizar livremente símbolos militares."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 19 veda uso de nomenclatura idêntica às forças militares. Pegadinha clássica: militarização."
+  },
+  {
+    "id": "700138",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Vedações",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A vedação prevista na Lei nº 13.022/2014 quanto à estrutura da guarda municipal abrange:",
+    "alternativas": {
+      "A": "Apenas os uniformes.",
+      "B": "Somente as graduações.",
+      "C": "Postos, graduações, títulos, uniformes, distintivos e condecorações militares.",
+      "D": "Apenas os nomes dos cargos.",
+      "E": "Somente a organização administrativa."
+    },
+    "resposta_correta": "C",
+    "comentario": "A vedação é ampla e abrange todos esses elementos. Pegadinha: restringir a apenas um aspecto."
+  },
+  {
+    "id": "700139",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Representatividade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da lei, a representatividade das guardas municipais é reconhecida:",
+    "alternativas": {
+      "A": "Apenas no âmbito municipal.",
+      "B": "Somente no Poder Executivo.",
+      "C": "Em conselhos nacionais relacionados à segurança pública.",
+      "D": "Exclusivamente no Legislativo.",
+      "E": "Somente em âmbito estadual."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 20 reconhece participação em conselhos nacionais. Pegadinha: limitar o alcance."
+  },
+  {
+    "id": "700140",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Representatividade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a participação das guardas municipais em conselhos, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "É proibida em âmbito nacional.",
+      "B": "Depende de autorização judicial.",
+      "C": "É reconhecida em órgãos como o Conselho Nacional de Segurança Pública.",
+      "D": "Limita-se ao nível estadual.",
+      "E": "Ocorre apenas mediante convênio com a União."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei garante participação em conselhos nacionais, como o de Segurança Pública. Pegadinha: restringir ou condicionar."
+  },
+  {
+    "id": "700131",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Porte de arma",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da Lei nº 13.022/2014, sobre o porte de arma de fogo pelos guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "É automaticamente garantido sem qualquer condicionante.",
+      "B": "É vedado em qualquer situação.",
+      "C": "É autorizado, conforme previsto em lei.",
+      "D": "Depende exclusivamente de decisão judicial.",
+      "E": "Só é permitido para guardas com mais de 10 anos de serviço."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 16 autoriza o porte de arma de fogo, conforme legislação específica. Pegadinha: dizer que é irrestrito ou totalmente proibido."
+  },
+  {
+    "id": "700132",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Porte de arma",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O direito ao porte de arma de fogo do guarda municipal poderá ser suspenso quando:",
+    "alternativas": {
+      "A": "Houver interesse administrativo genérico.",
+      "B": "O servidor solicitar férias.",
+      "C": "Houver restrição médica, decisão judicial ou justificativa do dirigente.",
+      "D": "O Município enfrentar crise financeira.",
+      "E": "O guarda estiver em estágio probatório."
+    },
+    "resposta_correta": "C",
+    "comentario": "O parágrafo único do Art. 16 prevê hipóteses específicas de suspensão. Pegadinha: incluir situações genéricas ou administrativas."
+  },
+  {
+    "id": "700133",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Telecomunicações",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com a Lei nº 13.022/2014, a destinação do número telefônico 153 aos Municípios é de responsabilidade:",
+    "alternativas": {
+      "A": "Do Ministério da Justiça.",
+      "B": "Da Polícia Federal.",
+      "C": "Da Anatel.",
+      "D": "Do Governo Estadual.",
+      "E": "Do Poder Judiciário."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 17 atribui à Anatel a destinação do número 153. Pegadinha: trocar por outros órgãos de segurança."
+  },
+  {
+    "id": "700134",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Telecomunicações",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Além do número telefônico, a Lei nº 13.022/2014 prevê para as guardas municipais:",
+    "alternativas": {
+      "A": "Uso exclusivo de internet pública.",
+      "B": "Faixa exclusiva de frequência de rádio.",
+      "C": "Sistema obrigatório de comunicação militar.",
+      "D": "Comunicação apenas por convênio estadual.",
+      "E": "Uso exclusivo de telefonia privada."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 17 também prevê faixa exclusiva de frequência de rádio. Pegadinha: associar a sistemas militares."
+  },
+  {
+    "id": "700135",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Prerrogativas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da lei, ao guarda municipal submetido à prisão antes de condenação definitiva é assegurado:",
+    "alternativas": {
+      "A": "Cumprimento de pena em regime domiciliar.",
+      "B": "Recolhimento em cela comum.",
+      "C": "Recolhimento isolado dos demais presos.",
+      "D": "Transferência automática para unidade militar.",
+      "E": "Liberdade provisória obrigatória."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 18 assegura cela separada antes da condenação definitiva. Pegadinha: confundir com privilégios penais inexistentes."
+  },
+  {
+    "id": "700136",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Prerrogativas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A prerrogativa prevista no Art. 18 aplica-se:",
+    "alternativas": {
+      "A": "A qualquer preso do sistema penal.",
+      "B": "Somente após condenação definitiva.",
+      "C": "Ao guarda municipal antes de condenação definitiva.",
+      "D": "Apenas em crimes federais.",
+      "E": "Somente mediante decisão do juiz."
+    },
+    "resposta_correta": "C",
+    "comentario": "A garantia é específica para guardas municipais antes da condenação definitiva. Pegadinha: inverter o momento ou ampliar para todos."
+  },
+  {
+    "id": "700137",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Vedações",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a estrutura hierárquica das guardas municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "Pode adotar integralmente a nomenclatura militar.",
+      "B": "Deve seguir o padrão das Forças Armadas.",
+      "C": "Não pode utilizar denominações idênticas às forças militares.",
+      "D": "Deve adotar graduações militares para padronização.",
+      "E": "Pode utilizar livremente símbolos militares."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 19 veda uso de nomenclatura idêntica às forças militares. Pegadinha clássica: militarização."
+  },
+  {
+    "id": "700138",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Vedações",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A vedação prevista na Lei nº 13.022/2014 quanto à estrutura da guarda municipal abrange:",
+    "alternativas": {
+      "A": "Apenas os uniformes.",
+      "B": "Somente as graduações.",
+      "C": "Postos, graduações, títulos, uniformes, distintivos e condecorações militares.",
+      "D": "Apenas os nomes dos cargos.",
+      "E": "Somente a organização administrativa."
+    },
+    "resposta_correta": "C",
+    "comentario": "A vedação é ampla e abrange todos esses elementos. Pegadinha: restringir a apenas um aspecto."
+  },
+  {
+    "id": "700139",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Representatividade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da lei, a representatividade das guardas municipais é reconhecida:",
+    "alternativas": {
+      "A": "Apenas no âmbito municipal.",
+      "B": "Somente no Poder Executivo.",
+      "C": "Em conselhos nacionais relacionados à segurança pública.",
+      "D": "Exclusivamente no Legislativo.",
+      "E": "Somente em âmbito estadual."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 20 reconhece participação em conselhos nacionais. Pegadinha: limitar o alcance."
+  },
+  {
+    "id": "700140",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Representatividade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a participação das guardas municipais em conselhos, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "É proibida em âmbito nacional.",
+      "B": "Depende de autorização judicial.",
+      "C": "É reconhecida em órgãos como o Conselho Nacional de Segurança Pública.",
+      "D": "Limita-se ao nível estadual.",
+      "E": "Ocorre apenas mediante convênio com a União."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei garante participação em conselhos nacionais, como o de Segurança Pública. Pegadinha: restringir ou condicionar."
   }
 ]
+
+
 
