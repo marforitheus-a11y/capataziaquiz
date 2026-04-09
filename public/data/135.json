@@ -718,5 +718,325 @@
     },
     "resposta_correta": "C",
     "comentario": "Art. 631 prevê independência das responsabilidades."
+  },
+  {
+    "id": "700221",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Curso de Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Após a conclusão do curso de formação, os candidatos aprovados:",
+    "alternativas": {
+      "A": "São automaticamente nomeados.",
+      "B": "Recebem certificado de aproveitamento e são considerados habilitados.",
+      "C": "Passam a integrar o quadro efetivo imediatamente.",
+      "D": "São dispensados do concurso.",
+      "E": "Recebem estabilidade provisória."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 623 prevê a expedição de certificado de aproveitamento, definindo os habilitados no concurso."
+  },
+  {
+    "id": "700222",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Curso de Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A homologação do concurso ocorrerá:",
+    "alternativas": {
+      "A": "Após a inscrição.",
+      "B": "Antes do curso de formação.",
+      "C": "Após a conclusão do curso de formação.",
+      "D": "Durante o curso.",
+      "E": "A qualquer tempo."
+    },
+    "resposta_correta": "C",
+    "comentario": "O concurso é homologado após a conclusão do curso, conforme Art. 623."
+  },
+  {
+    "id": "700223",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Provimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O provimento do cargo de GCM obedecerá:",
+    "alternativas": {
+      "A": "Critério político.",
+      "B": "Indicação administrativa.",
+      "C": "Ordem de classificação no concurso.",
+      "D": "Tempo de residência.",
+      "E": "Avaliação interna."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 624 determina ordem de classificação."
+  },
+  {
+    "id": "700224",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Provimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O provimento ocorrerá:",
+    "alternativas": {
+      "A": "De forma imediata e integral.",
+      "B": "Gradativamente conforme necessidade.",
+      "C": "Somente por decisão judicial.",
+      "D": "Em período fixo anual.",
+      "E": "Por sorteio."
+    },
+    "resposta_correta": "B",
+    "comentario": "O provimento é gradual conforme necessidade da Administração."
+  },
+  {
+    "id": "700225",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Reciclagem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Os integrantes da GCM devem realizar curso de reciclagem:",
+    "alternativas": {
+      "A": "Anualmente.",
+      "B": "A cada 6 meses.",
+      "C": "A cada 2 anos.",
+      "D": "A cada 5 anos.",
+      "E": "Somente no ingresso."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 625 estabelece periodicidade bienal."
+  },
+  {
+    "id": "700226",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Reciclagem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O curso de reciclagem obrigatório trata principalmente de:",
+    "alternativas": {
+      "A": "Direito penal.",
+      "B": "Administração pública.",
+      "C": "Primeiros socorros e prevenção de acidentes.",
+      "D": "Trânsito urbano.",
+      "E": "Gestão pública."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conteúdo específico previsto na lei."
+  },
+  {
+    "id": "700227",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Disciplina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A hierarquia e disciplina são consideradas:",
+    "alternativas": {
+      "A": "Elementos acessórios.",
+      "B": "Bases da organização da GCM.",
+      "C": "Princípios opcionais.",
+      "D": "Normas secundárias.",
+      "E": "Diretrizes externas."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 626 define como base da organização."
+  },
+  {
+    "id": "700228",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Disciplina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Disciplina, nos termos da lei, significa:",
+    "alternativas": {
+      "A": "Obediência cega.",
+      "B": "Cumprimento das atribuições e deveres.",
+      "C": "Subordinação militar.",
+      "D": "Controle externo.",
+      "E": "Fiscalização administrativa."
+    },
+    "resposta_correta": "B",
+    "comentario": "Definição expressa do parágrafo único."
+  },
+  {
+    "id": "700229",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Disciplina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Entre as manifestações essenciais da disciplina está:",
+    "alternativas": {
+      "A": "Autonomia absoluta.",
+      "B": "Observância das normas legais.",
+      "C": "Independência funcional.",
+      "D": "Decisão individual.",
+      "E": "Liberdade operacional total."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 627 prevê observância legal."
+  },
+  {
+    "id": "700230",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Disciplina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A pronta obediência às ordens superiores é:",
+    "alternativas": {
+      "A": "Facultativa.",
+      "B": "Vedada.",
+      "C": "Manifestação da disciplina.",
+      "D": "Excepcional.",
+      "E": "Irrelevante."
+    },
+    "resposta_correta": "C",
+    "comentario": "Prevista como manifestação essencial da disciplina."
+  },
+  {
+    "id": "700231",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Hierarquia",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "São considerados superiores hierárquicos:",
+    "alternativas": {
+      "A": "Somente o Prefeito.",
+      "B": "Prefeito, Secretário, Diretor e Chefes de Equipe.",
+      "C": "Apenas diretores.",
+      "D": "Somente chefes de equipe.",
+      "E": "Apenas militares."
+    },
+    "resposta_correta": "B",
+    "comentario": "Lista expressa no Art. 628."
+  },
+  {
+    "id": "700232",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Hierarquia",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Os superiores hierárquicos possuem, entre outros, o poder de:",
+    "alternativas": {
+      "A": "Julgar processos judiciais.",
+      "B": "Criar leis.",
+      "C": "Dar ordens, fiscalizar e rever decisões.",
+      "D": "Exonerar servidores livremente.",
+      "E": "Aplicar penas penais."
+    },
+    "resposta_correta": "C",
+    "comentario": "Funções típicas da hierarquia previstas na lei."
+  },
+  {
+    "id": "700233",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Camaradagem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A camaradagem na GCM é considerada:",
+    "alternativas": {
+      "A": "Dispensável.",
+      "B": "Opcional.",
+      "C": "Indispensável à formação e convívio.",
+      "D": "Exclusiva da chefia.",
+      "E": "Restrita a eventos."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 629 estabelece como indispensável."
+  },
+  {
+    "id": "700234",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Camaradagem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Cabe aos comandantes:",
+    "alternativas": {
+      "A": "Ignorar conflitos.",
+      "B": "Incentivar harmonia e solidariedade.",
+      "C": "Punir automaticamente.",
+      "D": "Delegar totalmente a gestão.",
+      "E": "Atuar apenas administrativamente."
+    },
+    "resposta_correta": "B",
+    "comentario": "A lei atribui esse papel aos comandantes."
+  },
+  {
+    "id": "700235",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Subordinação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O integrante da GCM está sujeito à disciplina:",
+    "alternativas": {
+      "A": "Somente quando uniformizado.",
+      "B": "Apenas em serviço.",
+      "C": "Mesmo fora do local de trabalho, estando de serviço.",
+      "D": "Somente na sede.",
+      "E": "Apenas em horário comercial."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 630 amplia a abrangência da disciplina."
+  },
+  {
+    "id": "700236",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Subordinação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A responsabilidade disciplinar:",
+    "alternativas": {
+      "A": "Depende da criminal.",
+      "B": "Substitui a civil.",
+      "C": "É independente das demais.",
+      "D": "Só existe com condenação penal.",
+      "E": "É facultativa."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 631 prevê independência das responsabilidades."
   }
 ]
