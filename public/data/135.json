@@ -1038,5 +1038,1045 @@
     },
     "resposta_correta": "C",
     "comentario": "Art. 631 prevê independência das responsabilidades."
+  },
+  {
+    "id": "700257",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Comunicação Disciplinar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O integrante que tiver conhecimento de transgressão disciplinar deverá comunicar o fato:",
+    "alternativas": {
+      "A": "Imediatamente ao Judiciário.",
+      "B": "Verbalmente ao colega mais próximo.",
+      "C": "Por escrito ao superior hierárquico, no prazo legal.",
+      "D": "Apenas se houver prejuízo financeiro.",
+      "E": "Somente se for diretamente envolvido."
+    },
+    "resposta_correta": "C",
+    "comentario": "A comunicação deve ser feita por escrito ao superior hierárquico, no prazo de 8 dias."
+  },
+  {
+    "id": "700258",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Comunicação Disciplinar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O prazo para comunicação disciplinar é contado a partir:",
+    "alternativas": {
+      "A": "Da publicação da infração.",
+      "B": "Da decisão administrativa.",
+      "C": "Da constatação ou conhecimento do fato.",
+      "D": "Do encerramento do processo.",
+      "E": "Da homologação do concurso."
+    },
+    "resposta_correta": "C",
+    "comentario": "O prazo inicia-se da constatação ou ciência do fato."
+  },
+  {
+    "id": "700259",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Comunicação Disciplinar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A comunicação disciplinar deve conter:",
+    "alternativas": {
+      "A": "Apenas o nome do acusado.",
+      "B": "Somente a descrição do fato.",
+      "C": "Dados que identifiquem pessoas, local, data, hora e circunstâncias.",
+      "D": "Somente a assinatura do denunciante.",
+      "E": "Apenas testemunhas."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei exige comunicação clara, precisa e completa."
+  },
+  {
+    "id": "700260",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Comunicação Disciplinar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A comunicação disciplinar deve ser:",
+    "alternativas": {
+      "A": "Sigilosa e sem identificação.",
+      "B": "Expressão da verdade.",
+      "C": "Opcional.",
+      "D": "Verbal.",
+      "E": "Anônima."
+    },
+    "resposta_correta": "B",
+    "comentario": "A lei exige que a comunicação seja expressão da verdade."
+  },
+  {
+    "id": "700261",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Manifestação Preliminar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O acusado deverá manifestar-se preliminarmente no prazo de:",
+    "alternativas": {
+      "A": "2 dias",
+      "B": "3 dias",
+      "C": "5 dias",
+      "D": "8 dias",
+      "E": "10 dias"
+    },
+    "resposta_correta": "B",
+    "comentario": "Prazo de 3 dias para manifestação preliminar."
+  },
+  {
+    "id": "700262",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Manifestação Preliminar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Caso o acusado não se manifeste no prazo, a consequência será:",
+    "alternativas": {
+      "A": "Arquivamento automático.",
+      "B": "Aplicação imediata de pena.",
+      "C": "Instauração do processo administrativo disciplinar.",
+      "D": "Suspensão automática.",
+      "E": "Advertência verbal."
+    },
+    "resposta_correta": "C",
+    "comentario": "A ausência de manifestação leva à instauração do processo."
+  },
+  {
+    "id": "700263",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Arquivamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Diretor da GCM poderá arquivar a comunicação quando:",
+    "alternativas": {
+      "A": "Houver dúvida sobre os fatos.",
+      "B": "Não considerar praticada a transgressão.",
+      "C": "Houver pressão administrativa.",
+      "D": "O acusado solicitar.",
+      "E": "O prazo estiver vencido."
+    },
+    "resposta_correta": "B",
+    "comentario": "Arquivamento ocorre quando não há transgressão."
+  },
+  {
+    "id": "700264",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Arquivamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O arquivamento da comunicação disciplinar:",
+    "alternativas": {
+      "A": "Cabe recurso.",
+      "B": "Depende do Prefeito.",
+      "C": "Não está sujeito a recurso.",
+      "D": "É revisado automaticamente.",
+      "E": "Exige homologação judicial."
+    },
+    "resposta_correta": "C",
+    "comentario": "A decisão de arquivamento não admite recurso."
+  },
+  {
+    "id": "700265",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Processo Administrativo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quando houver dúvida sobre a infração, o Diretor deverá:",
+    "alternativas": {
+      "A": "Arquivar automaticamente.",
+      "B": "Aplicar advertência.",
+      "C": "Propor abertura de processo administrativo disciplinar.",
+      "D": "Encaminhar ao Judiciário.",
+      "E": "Suspender o servidor."
+    },
+    "resposta_correta": "C",
+    "comentario": "Dúvida leva à abertura do PAD."
+  },
+  {
+    "id": "700266",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Processo Administrativo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A manifestação preliminar pode ser dispensada:",
+    "alternativas": {
+      "A": "Nunca.",
+      "B": "Sempre.",
+      "C": "Quando houver elementos suficientes de convicção.",
+      "D": "Somente por ordem judicial.",
+      "E": "A pedido do acusado."
+    },
+    "resposta_correta": "C",
+    "comentario": "Pode ser dispensada quando já houver elementos suficientes."
+  },
+  {
+    "id": "700267",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Processo Disciplinar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O processo disciplinar tem como finalidade:",
+    "alternativas": {
+      "A": "Punir automaticamente.",
+      "B": "Apurar responsabilidade por infração.",
+      "C": "Aplicar advertência direta.",
+      "D": "Substituir o processo penal.",
+      "E": "Arquivar denúncias."
+    },
+    "resposta_correta": "B",
+    "comentario": "Finalidade é apuração de responsabilidade."
+  },
+  {
+    "id": "700268",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Processo Disciplinar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O processo disciplinar será instaurado:",
+    "alternativas": {
+      "A": "Por decreto judicial.",
+      "B": "Por portaria.",
+      "C": "Por comunicação verbal.",
+      "D": "Por decisão popular.",
+      "E": "Por edital."
+    },
+    "resposta_correta": "B",
+    "comentario": "Instaurado por portaria."
+  },
+  {
+    "id": "700269",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Processo Disciplinar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O prazo para instauração do processo é:",
+    "alternativas": {
+      "A": "3 dias",
+      "B": "5 dias",
+      "C": "8 dias",
+      "D": "15 dias",
+      "E": "30 dias"
+    },
+    "resposta_correta": "C",
+    "comentario": "Prazo improrrogável de 8 dias."
+  },
+  {
+    "id": "700270",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Processo Disciplinar",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O processo disciplinar deve ser concluído em:",
+    "alternativas": {
+      "A": "30 dias",
+      "B": "45 dias",
+      "C": "60 dias",
+      "D": "90 dias",
+      "E": "120 dias"
+    },
+    "resposta_correta": "C",
+    "comentario": "Prazo de conclusão: 60 dias."
+  },
+  {
+    "id": "700271",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Comissão Processante",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A comissão do processo disciplinar será composta por:",
+    "alternativas": {
+      "A": "2 servidores.",
+      "B": "3 servidores estáveis.",
+      "C": "5 servidores.",
+      "D": "1 juiz e 2 servidores.",
+      "E": "4 membros externos."
+    },
+    "resposta_correta": "B",
+    "comentario": "Comissão composta por 3 servidores estáveis."
+  },
+  {
+    "id": "700272",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Comissão Processante",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O presidente da comissão deve:",
+    "alternativas": {
+      "A": "Ser o mais antigo.",
+      "B": "Ser indicado livremente.",
+      "C": "Ter nível superior e cargo igual ou superior ao acusado.",
+      "D": "Ser externo.",
+      "E": "Ser escolhido pelo acusado."
+    },
+    "resposta_correta": "C",
+    "comentario": "Exigência expressa da lei."
+  },
+  {
+    "id": "700273",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Defesa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O acusado será notificado para apresentar defesa prévia em:",
+    "alternativas": {
+      "A": "2 dias",
+      "B": "3 dias",
+      "C": "5 dias",
+      "D": "8 dias",
+      "E": "10 dias"
+    },
+    "resposta_correta": "C",
+    "comentario": "Prazo de 5 dias para defesa prévia."
+  },
+  {
+    "id": "700274",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Defesa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O acusado poderá arrolar, no máximo:",
+    "alternativas": {
+      "A": "3 testemunhas",
+      "B": "5 testemunhas",
+      "C": "7 testemunhas",
+      "D": "10 testemunhas",
+      "E": "Ilimitadas"
+    },
+    "resposta_correta": "B",
+    "comentario": "Limite de 5 testemunhas."
+  },
+  {
+    "id": "700275",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Notificação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A notificação deve conter:",
+    "alternativas": {
+      "A": "Somente nome do acusado.",
+      "B": "Dados como data, hora e local do interrogatório.",
+      "C": "Apenas prazo de defesa.",
+      "D": "Somente assinatura.",
+      "E": "Apenas acusação."
+    },
+    "resposta_correta": "B",
+    "comentario": "Deve conter vários elementos, incluindo data e local."
+  },
+  {
+    "id": "700276",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Notificação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Se o acusado recusar ciência da notificação:",
+    "alternativas": {
+      "A": "O processo é anulado.",
+      "B": "O prazo não corre.",
+      "C": "O prazo passa a contar da declaração do servidor notificante.",
+      "D": "Deve ser reiniciado.",
+      "E": "Depende do juiz."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei prevê essa hipótese expressamente."
+  },
+  {
+    "id": "700277",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Instrução Processual",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Encerrada a instrução do processo administrativo disciplinar, a defesa poderá apresentar alegações finais no prazo de:",
+    "alternativas": {
+      "A": "3 dias",
+      "B": "5 dias",
+      "C": "8 dias",
+      "D": "10 dias",
+      "E": "15 dias"
+    },
+    "resposta_correta": "B",
+    "comentario": "O prazo para alegações finais é de 5 dias."
+  },
+  {
+    "id": "700278",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Instrução Processual",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Após as alegações finais, a comissão deverá:",
+    "alternativas": {
+      "A": "Aplicar a penalidade diretamente.",
+      "B": "Encerrar o processo sem manifestação.",
+      "C": "Elaborar relatório minucioso e conclusivo.",
+      "D": "Encaminhar ao Judiciário.",
+      "E": "Arquivar automaticamente."
+    },
+    "resposta_correta": "C",
+    "comentario": "A comissão elabora relatório conclusivo sobre responsabilidade ou inocência."
+  },
+  {
+    "id": "700279",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Relatório",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O relatório da comissão deve ser:",
+    "alternativas": {
+      "A": "Opcional.",
+      "B": "Sempre conclusivo quanto à inocência ou responsabilidade.",
+      "C": "Somente opinativo.",
+      "D": "Sigiloso e sem conclusão.",
+      "E": "Limitado à descrição dos fatos."
+    },
+    "resposta_correta": "B",
+    "comentario": "O relatório deve ser conclusivo."
+  },
+  {
+    "id": "700280",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Relatório",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O relatório deve conter:",
+    "alternativas": {
+      "A": "Somente a conclusão.",
+      "B": "Resumo das peças e provas relevantes.",
+      "C": "Apenas testemunhos.",
+      "D": "Somente a defesa.",
+      "E": "Apenas acusação."
+    },
+    "resposta_correta": "B",
+    "comentario": "Deve conter resumo e análise das provas."
+  },
+  {
+    "id": "700281",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Julgamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O processo disciplinar será encaminhado para julgamento à:",
+    "alternativas": {
+      "A": "Comissão processante.",
+      "B": "Autoridade que determinou sua instauração.",
+      "C": "Corregedoria estadual.",
+      "D": "Poder Judiciário.",
+      "E": "Ouvidoria."
+    },
+    "resposta_correta": "B",
+    "comentario": "A autoridade instauradora julga o processo."
+  },
+  {
+    "id": "700282",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Julgamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No julgamento, serão considerados:",
+    "alternativas": {
+      "A": "Apenas os fatos.",
+      "B": "Apenas a defesa.",
+      "C": "Natureza, gravidade, motivos e antecedentes.",
+      "D": "Somente a hierarquia.",
+      "E": "Somente o dano financeiro."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei prevê análise ampla da conduta."
+  },
+  {
+    "id": "700283",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Excludentes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Não haverá aplicação de sanção quando houver:",
+    "alternativas": {
+      "A": "Reincidência.",
+      "B": "Culpa leve.",
+      "C": "Caso fortuito ou força maior comprovada.",
+      "D": "Dano ao patrimônio.",
+      "E": "Atraso."
+    },
+    "resposta_correta": "C",
+    "comentario": "Excludente legal de punição."
+  },
+  {
+    "id": "700284",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Excludentes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Também exclui a aplicação de sanção:",
+    "alternativas": {
+      "A": "Erro administrativo.",
+      "B": "Legítima defesa.",
+      "C": "Desorganização do serviço.",
+      "D": "Atraso leve.",
+      "E": "Desentendimento pessoal."
+    },
+    "resposta_correta": "B",
+    "comentario": "Legítima defesa é excludente expressa."
+  },
+  {
+    "id": "700285",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Atenuantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Constitui circunstância atenuante:",
+    "alternativas": {
+      "A": "Reincidência.",
+      "B": "Premeditação.",
+      "C": "Confissão espontânea.",
+      "D": "Conluio.",
+      "E": "Abuso de autoridade."
+    },
+    "resposta_correta": "C",
+    "comentario": "Confissão espontânea é atenuante."
+  },
+  {
+    "id": "700286",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Atenuantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Também é atenuante:",
+    "alternativas": {
+      "A": "Prática simultânea de infrações.",
+      "B": "Conluio.",
+      "C": "Colaboração na apuração.",
+      "D": "Reincidência.",
+      "E": "Premeditação."
+    },
+    "resposta_correta": "C",
+    "comentario": "Colaboração é atenuante."
+  },
+  {
+    "id": "700287",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Agravantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "É circunstância agravante:",
+    "alternativas": {
+      "A": "Confissão.",
+      "B": "Colaboração.",
+      "C": "Premeditação.",
+      "D": "Serviço relevante.",
+      "E": "Boa conduta."
+    },
+    "resposta_correta": "C",
+    "comentario": "Premeditação agrava a pena."
+  },
+  {
+    "id": "700288",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Agravantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Também agrava a penalidade:",
+    "alternativas": {
+      "A": "Confissão espontânea.",
+      "B": "Relevância dos serviços.",
+      "C": "Reincidência específica.",
+      "D": "Colaboração.",
+      "E": "Boa conduta."
+    },
+    "resposta_correta": "C",
+    "comentario": "Reincidência específica é agravante."
+  },
+  {
+    "id": "700289",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Dosimetria",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Na dosimetria da pena, devem ser considerados:",
+    "alternativas": {
+      "A": "Somente agravantes.",
+      "B": "Somente atenuantes.",
+      "C": "Atenuantes e agravantes.",
+      "D": "Apenas antecedentes.",
+      "E": "Somente dano causado."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei exige análise conjunta."
+  },
+  {
+    "id": "700290",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Dosimetria",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A decisão disciplinar será publicada:",
+    "alternativas": {
+      "A": "Em mural interno apenas.",
+      "B": "No Diário Oficial do Município.",
+      "C": "Somente ao interessado.",
+      "D": "Em edital judicial.",
+      "E": "Em rede interna."
+    },
+    "resposta_correta": "B",
+    "comentario": "Publicação no Diário Oficial."
+  },
+  {
+    "id": "700291",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Recursos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O guarda que se considerar prejudicado poderá:",
+    "alternativas": {
+      "A": "Ir direto ao Judiciário.",
+      "B": "Interpor recurso disciplinar.",
+      "C": "Anular o processo.",
+      "D": "Aplicar sanção.",
+      "E": "Ignorar a decisão."
+    },
+    "resposta_correta": "B",
+    "comentario": "Direito de interpor recurso."
+  },
+  {
+    "id": "700292",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Recursos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "São recursos disciplinares previstos:",
+    "alternativas": {
+      "A": "Apelação e revisão.",
+      "B": "Pedido de reconsideração e recurso hierárquico.",
+      "C": "Embargos e recurso especial.",
+      "D": "Revisão criminal.",
+      "E": "Mandado de segurança."
+    },
+    "resposta_correta": "B",
+    "comentario": "Recursos previstos na lei."
+  },
+  {
+    "id": "700277",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Instrução Processual",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Encerrada a instrução do processo administrativo disciplinar, a defesa poderá apresentar alegações finais no prazo de:",
+    "alternativas": {
+      "A": "3 dias",
+      "B": "5 dias",
+      "C": "8 dias",
+      "D": "10 dias",
+      "E": "15 dias"
+    },
+    "resposta_correta": "B",
+    "comentario": "O prazo para alegações finais é de 5 dias."
+  },
+  {
+    "id": "700278",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Instrução Processual",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Após as alegações finais, a comissão deverá:",
+    "alternativas": {
+      "A": "Aplicar a penalidade diretamente.",
+      "B": "Encerrar o processo sem manifestação.",
+      "C": "Elaborar relatório minucioso e conclusivo.",
+      "D": "Encaminhar ao Judiciário.",
+      "E": "Arquivar automaticamente."
+    },
+    "resposta_correta": "C",
+    "comentario": "A comissão elabora relatório conclusivo sobre responsabilidade ou inocência."
+  },
+  {
+    "id": "700279",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Relatório",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O relatório da comissão deve ser:",
+    "alternativas": {
+      "A": "Opcional.",
+      "B": "Sempre conclusivo quanto à inocência ou responsabilidade.",
+      "C": "Somente opinativo.",
+      "D": "Sigiloso e sem conclusão.",
+      "E": "Limitado à descrição dos fatos."
+    },
+    "resposta_correta": "B",
+    "comentario": "O relatório deve ser conclusivo."
+  },
+  {
+    "id": "700280",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Relatório",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O relatório deve conter:",
+    "alternativas": {
+      "A": "Somente a conclusão.",
+      "B": "Resumo das peças e provas relevantes.",
+      "C": "Apenas testemunhos.",
+      "D": "Somente a defesa.",
+      "E": "Apenas acusação."
+    },
+    "resposta_correta": "B",
+    "comentario": "Deve conter resumo e análise das provas."
+  },
+  {
+    "id": "700281",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Julgamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O processo disciplinar será encaminhado para julgamento à:",
+    "alternativas": {
+      "A": "Comissão processante.",
+      "B": "Autoridade que determinou sua instauração.",
+      "C": "Corregedoria estadual.",
+      "D": "Poder Judiciário.",
+      "E": "Ouvidoria."
+    },
+    "resposta_correta": "B",
+    "comentario": "A autoridade instauradora julga o processo."
+  },
+  {
+    "id": "700282",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Julgamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No julgamento, serão considerados:",
+    "alternativas": {
+      "A": "Apenas os fatos.",
+      "B": "Apenas a defesa.",
+      "C": "Natureza, gravidade, motivos e antecedentes.",
+      "D": "Somente a hierarquia.",
+      "E": "Somente o dano financeiro."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei prevê análise ampla da conduta."
+  },
+  {
+    "id": "700283",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Excludentes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Não haverá aplicação de sanção quando houver:",
+    "alternativas": {
+      "A": "Reincidência.",
+      "B": "Culpa leve.",
+      "C": "Caso fortuito ou força maior comprovada.",
+      "D": "Dano ao patrimônio.",
+      "E": "Atraso."
+    },
+    "resposta_correta": "C",
+    "comentario": "Excludente legal de punição."
+  },
+  {
+    "id": "700284",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Excludentes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Também exclui a aplicação de sanção:",
+    "alternativas": {
+      "A": "Erro administrativo.",
+      "B": "Legítima defesa.",
+      "C": "Desorganização do serviço.",
+      "D": "Atraso leve.",
+      "E": "Desentendimento pessoal."
+    },
+    "resposta_correta": "B",
+    "comentario": "Legítima defesa é excludente expressa."
+  },
+  {
+    "id": "700285",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Atenuantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Constitui circunstância atenuante:",
+    "alternativas": {
+      "A": "Reincidência.",
+      "B": "Premeditação.",
+      "C": "Confissão espontânea.",
+      "D": "Conluio.",
+      "E": "Abuso de autoridade."
+    },
+    "resposta_correta": "C",
+    "comentario": "Confissão espontânea é atenuante."
+  },
+  {
+    "id": "700286",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Atenuantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Também é atenuante:",
+    "alternativas": {
+      "A": "Prática simultânea de infrações.",
+      "B": "Conluio.",
+      "C": "Colaboração na apuração.",
+      "D": "Reincidência.",
+      "E": "Premeditação."
+    },
+    "resposta_correta": "C",
+    "comentario": "Colaboração é atenuante."
+  },
+  {
+    "id": "700287",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Agravantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "É circunstância agravante:",
+    "alternativas": {
+      "A": "Confissão.",
+      "B": "Colaboração.",
+      "C": "Premeditação.",
+      "D": "Serviço relevante.",
+      "E": "Boa conduta."
+    },
+    "resposta_correta": "C",
+    "comentario": "Premeditação agrava a pena."
+  },
+  {
+    "id": "700288",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Agravantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Também agrava a penalidade:",
+    "alternativas": {
+      "A": "Confissão espontânea.",
+      "B": "Relevância dos serviços.",
+      "C": "Reincidência específica.",
+      "D": "Colaboração.",
+      "E": "Boa conduta."
+    },
+    "resposta_correta": "C",
+    "comentario": "Reincidência específica é agravante."
+  },
+  {
+    "id": "700289",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Dosimetria",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Na dosimetria da pena, devem ser considerados:",
+    "alternativas": {
+      "A": "Somente agravantes.",
+      "B": "Somente atenuantes.",
+      "C": "Atenuantes e agravantes.",
+      "D": "Apenas antecedentes.",
+      "E": "Somente dano causado."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei exige análise conjunta."
+  },
+  {
+    "id": "700290",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Dosimetria",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A decisão disciplinar será publicada:",
+    "alternativas": {
+      "A": "Em mural interno apenas.",
+      "B": "No Diário Oficial do Município.",
+      "C": "Somente ao interessado.",
+      "D": "Em edital judicial.",
+      "E": "Em rede interna."
+    },
+    "resposta_correta": "B",
+    "comentario": "Publicação no Diário Oficial."
+  },
+  {
+    "id": "700291",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Recursos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O guarda que se considerar prejudicado poderá:",
+    "alternativas": {
+      "A": "Ir direto ao Judiciário.",
+      "B": "Interpor recurso disciplinar.",
+      "C": "Anular o processo.",
+      "D": "Aplicar sanção.",
+      "E": "Ignorar a decisão."
+    },
+    "resposta_correta": "B",
+    "comentario": "Direito de interpor recurso."
+  },
+  {
+    "id": "700292",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Recursos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "São recursos disciplinares previstos:",
+    "alternativas": {
+      "A": "Apelação e revisão.",
+      "B": "Pedido de reconsideração e recurso hierárquico.",
+      "C": "Embargos e recurso especial.",
+      "D": "Revisão criminal.",
+      "E": "Mandado de segurança."
+    },
+    "resposta_correta": "B",
+    "comentario": "Recursos previstos na lei."
   }
 ]
