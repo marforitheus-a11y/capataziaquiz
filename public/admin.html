@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painel de Administração | Simulado GCM Guarujá</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="nav-brand">Simulado GCM Guarujá</div>
+      <div class="nav-links">
+        <a href="/index.html">Voltar ao simulado</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container admin-container">
+    <h1>Painel de Administração</h1>
+    <p class="admin-description">
+      Gerencie os conteúdos em PDF, as matérias e o banco de questões via JSON.
+      As alterações são feitas localmente no navegador e você pode baixar os arquivos atualizados para substituir na pasta <code>public/data</code>.
+    </p>
+
+    <section class="admin-section">
+      <h2>1) Conteúdos em PDF</h2>
+      <div class="admin-grid-two">
+        <div>
+          <h3>PDFs cadastrados</h3>
+          <ul id="pdfAdminList" class="admin-list"></ul>
+        </div>
+        <div class="admin-card">
+          <h3>Adicionar PDF</h3>
+          <label for="pdfNameInput">Nome de exibição</label>
+          <input id="pdfNameInput" type="text" placeholder="Ex.: Lei 13.022" />
+          <label for="pdfFileInput">Arquivo PDF (nome com .pdf)</label>
+          <input id="pdfFileInput" type="text" placeholder="Ex.: 13.022.pdf" />
+          <button id="addPdfBtn">Adicionar PDF</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="admin-section">
+      <h2>2) Matérias (temas)</h2>
+      <div class="admin-grid-two">
+        <div>
+          <h3>Matérias cadastradas</h3>
+          <ul id="subjectAdminList" class="admin-list"></ul>
+        </div>
+        <div class="admin-card">
+          <h3>Criar matéria</h3>
+          <label for="subjectNameInput">Nome da matéria</label>
+          <input id="subjectNameInput" type="text" placeholder="Ex.: NR 35" />
+          <label for="subjectFileInput">Arquivo JSON das questões</label>
+          <input id="subjectFileInput" type="text" placeholder="Ex.: NR 35.json" />
+          <button id="addSubjectBtn">Adicionar matéria</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="admin-section">
+      <h2>3) Banco de questões por matéria</h2>
+      <div class="admin-card">
+        <label for="subjectSelect">Selecione a matéria</label>
+        <select id="subjectSelect"></select>
+        <div id="questionStats" class="admin-muted">Carregando questões...</div>
+      </div>
+
+      <div class="admin-grid-two">
+        <div class="admin-card">
+          <h3>Importar questões por JSON</h3>
+          <p class="admin-muted">Envie um arquivo JSON com um array de questões no formato já usado pelo site.</p>
+          <input id="questionsFileUpload" type="file" accept="application/json" />
+          <div class="admin-row">
+            <button id="appendQuestionsBtn">Importar e adicionar</button>
+            <button id="replaceQuestionsBtn" class="button-ghost">Substituir todas</button>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h3>Atualização rápida por ID</h3>
+          <label for="editQuestionIdInput">ID da questão</label>
+          <input id="editQuestionIdInput" type="number" placeholder="Ex.: 5000001" />
+          <label for="editQuestionPromptInput">Novo enunciado</label>
+          <textarea id="editQuestionPromptInput" rows="4" placeholder="Digite o novo enunciado"></textarea>
+          <button id="updateQuestionBtn">Atualizar enunciado</button>
+        </div>
+      </div>
+
+      <div class="admin-card">
+        <h3>Questões cadastradas</h3>
+        <p class="admin-muted">Você pode remover questões diretamente da lista abaixo.</p>
+        <div id="questionList" class="question-list"></div>
+      </div>
+    </section>
+
+    <section class="admin-section">
+      <h2>4) Exportar arquivos atualizados</h2>
+      <div class="admin-card">
+        <p class="admin-muted">Depois de editar, baixe os arquivos para publicar no projeto.</p>
+        <div class="admin-row">
+          <button id="downloadPdfIndexBtn">Baixar data/pdf/index.json</button>
+          <button id="downloadSubjectIndexBtn">Baixar data/index.json</button>
+          <button id="downloadSelectedQuestionsBtn">Baixar JSON da matéria selecionada</button>
+        </div>
+        <p id="adminFeedback" class="admin-feedback"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
