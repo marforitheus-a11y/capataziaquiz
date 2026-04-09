@@ -1,0 +1,722 @@
+[
+  {
+    "id": "700201",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Lei Complementar - GCM Guarujá",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Art. 613, a Guarda Civil Municipal de Guarujá é corretamente definida como:",
+    "alternativas": {
+      "A": "Órgão autônomo vinculado ao Governo Estadual.",
+      "B": "Órgão administrativo vinculado à Secretaria Municipal competente.",
+      "C": "Instituição militar independente.",
+      "D": "Órgão subordinado diretamente ao Poder Judiciário.",
+      "E": "Autarquia com personalidade jurídica própria."
+    },
+    "resposta_correta": "B",
+    "comentario": "A GCM é órgão administrativo vinculado à Secretaria Municipal de Defesa e Convivência Social. :contentReference[oaicite:0]{index=0}"
+  },
+  {
+    "id": "700202",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Lei Complementar - GCM Guarujá",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A atuação da Guarda Civil Municipal de Guarujá, conforme o Art. 613, envolve:",
+    "alternativas": {
+      "A": "Exclusivamente policiamento repressivo.",
+      "B": "Apenas fiscalização administrativa.",
+      "C": "Proteção de bens municipais e colaboração com o Estado.",
+      "D": "Atuação restrita ao trânsito.",
+      "E": "Atuação exclusiva em eventos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei prevê proteção de bens municipais e colaboração com o Estado para segurança pública."
+  },
+  {
+    "id": "700203",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Efetivo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O efetivo da Guarda Civil Municipal de Guarujá, conforme a legislação, é:",
+    "alternativas": {
+      "A": "Definido anualmente por decreto.",
+      "B": "Limitado a 500 servidores.",
+      "C": "Fixado em 800 servidores.",
+      "D": "Variável conforme orçamento.",
+      "E": "Indeterminado."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 614 fixa o efetivo em 800 servidores."
+  },
+  {
+    "id": "700204",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Efetivo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o efetivo da GCM de Guarujá, é correto afirmar que:",
+    "alternativas": {
+      "A": "Depende exclusivamente do IBGE.",
+      "B": "É fixado em lei específica.",
+      "C": "Pode ser alterado livremente por decreto.",
+      "D": "É definido por concurso público.",
+      "E": "É variável conforme demanda operacional."
+    },
+    "resposta_correta": "B",
+    "comentario": "O efetivo é fixado por lei, não por ato discricionário."
+  },
+  {
+    "id": "700205",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Vigia Municipal",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre os Vigias Municipais, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "Possuem base salarial distinta da GCM.",
+      "B": "Não possuem vínculo com a Secretaria.",
+      "C": "Utilizam critérios salariais equivalentes aos da GCM.",
+      "D": "São cargos temporários.",
+      "E": "Não podem evoluir funcionalmente."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 615 prevê equivalência de base salarial."
+  },
+  {
+    "id": "700206",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Vigia Municipal",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A equivalência entre Vigia Municipal e GCM depende:",
+    "alternativas": {
+      "A": "Apenas de tempo de serviço.",
+      "B": "De decisão judicial.",
+      "C": "De evolução funcional por formação profissional.",
+      "D": "De autorização do prefeito.",
+      "E": "De concurso interno automático."
+    },
+    "resposta_correta": "C",
+    "comentario": "Depende de sistema de evolução funcional por formação."
+  },
+  {
+    "id": "700207",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Regime de Trabalho",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Regime Especial de Trabalho da GCM caracteriza-se por:",
+    "alternativas": {
+      "A": "Horário fixo sem alterações.",
+      "B": "Trabalho exclusivamente diurno.",
+      "C": "Horário irregular com plantões e convocações.",
+      "D": "Carga horária reduzida.",
+      "E": "Trabalho remoto."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 616 prevê plantões e convocações fora do horário."
+  },
+  {
+    "id": "700208",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Regime de Trabalho",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A convocação fora do horário normal de trabalho ocorre:",
+    "alternativas": {
+      "A": "De forma obrigatória e contínua.",
+      "B": "Somente mediante autorização judicial.",
+      "C": "Excepcionalmente.",
+      "D": "Apenas em horário comercial.",
+      "E": "Nunca é permitida."
+    },
+    "resposta_correta": "C",
+    "comentario": "A lei prevê caráter excepcional."
+  },
+  {
+    "id": "700209",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Organização",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A organização da GCM será definida por:",
+    "alternativas": {
+      "A": "Lei federal.",
+      "B": "Decreto ou Regimento Interno.",
+      "C": "Portaria judicial.",
+      "D": "Normas da União.",
+      "E": "Somente Constituição."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 617 prevê Decreto ou Regimento Interno."
+  },
+  {
+    "id": "700210",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Organização",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante estágio probatório, o servidor da GCM:",
+    "alternativas": {
+      "A": "Pode assumir cargo em comissão.",
+      "B": "Pode assumir função gratificada.",
+      "C": "Não pode ocupar cargo em comissão ou função gratificada.",
+      "D": "Tem prioridade em cargos de chefia.",
+      "E": "Pode exercer qualquer função."
+    },
+    "resposta_correta": "C",
+    "comentario": "Há vedação expressa durante estágio probatório."
+  },
+  {
+    "id": "700211",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Convênios",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Poder Executivo pode celebrar convênios com:",
+    "alternativas": {
+      "A": "União apenas.",
+      "B": "Estados e Municípios.",
+      "C": "Governo do Estado de São Paulo.",
+      "D": "Apenas iniciativa privada.",
+      "E": "Tribunais."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 618 menciona especificamente o Estado de São Paulo."
+  },
+  {
+    "id": "700212",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Convênios",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O convênio citado na lei visa:",
+    "alternativas": {
+      "A": "Substituir a GCM.",
+      "B": "Extinguir competências municipais.",
+      "C": "Cooperação institucional.",
+      "D": "Transferir servidores.",
+      "E": "Privatizar a segurança."
+    },
+    "resposta_correta": "C",
+    "comentario": "Objetivo é cooperação com o Estado."
+  },
+  {
+    "id": "700213",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Ingresso",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A idade máxima para ingresso na GCM é:",
+    "alternativas": {
+      "A": "35 anos",
+      "B": "40 anos",
+      "C": "45 anos",
+      "D": "50 anos",
+      "E": "Sem limite"
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 619 fixa limite máximo de 45 anos."
+  },
+  {
+    "id": "700214",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Ingresso",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Entre os requisitos para ingresso está:",
+    "alternativas": {
+      "A": "Ensino superior completo.",
+      "B": "CNH categoria mínima B.",
+      "C": "Experiência policial.",
+      "D": "Curso militar.",
+      "E": "Altura livre."
+    },
+    "resposta_correta": "B",
+    "comentario": "A lei exige CNH mínima categoria B."
+  },
+  {
+    "id": "700215",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Concurso",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O concurso público possui:",
+    "alternativas": {
+      "A": "Uma fase eliminatória.",
+      "B": "Duas fases eliminatórias.",
+      "C": "Três fases obrigatórias.",
+      "D": "Fase única.",
+      "E": "Sem curso de formação."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 620 prevê duas fases eliminatórias."
+  },
+  {
+    "id": "700216",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Concurso",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O curso de formação tem duração de:",
+    "alternativas": {
+      "A": "30 dias",
+      "B": "60 dias",
+      "C": "90 dias",
+      "D": "120 dias",
+      "E": "Variável"
+    },
+    "resposta_correta": "C",
+    "comentario": "Curso com duração de 90 dias."
+  },
+  {
+    "id": "700217",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Curso de Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante o curso, o candidato recebe:",
+    "alternativas": {
+      "A": "Salário integral.",
+      "B": "Bolsa integral.",
+      "C": "50% do salário como ajuda de custo.",
+      "D": "Nenhum valor.",
+      "E": "Remuneração variável."
+    },
+    "resposta_correta": "C",
+    "comentario": "Recebe 50% como ajuda de custo."
+  },
+  {
+    "id": "700218",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Curso de Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante o curso, o vínculo com a Prefeitura:",
+    "alternativas": {
+      "A": "É definitivo.",
+      "B": "É funcional.",
+      "C": "Não se configura.",
+      "D": "É temporário.",
+      "E": "Depende de contrato."
+    },
+    "resposta_correta": "C",
+    "comentario": "Não há vínculo funcional nesse período."
+  },
+  {
+    "id": "700219",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Desligamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O candidato será desligado do curso quando:",
+    "alternativas": {
+      "A": "Solicitar transferência.",
+      "B": "Não atingir frequência mínima.",
+      "C": "Trocar de turma.",
+      "D": "Mudar endereço.",
+      "E": "Solicitar férias."
+    },
+    "resposta_correta": "B",
+    "comentario": "Frequência mínima é requisito obrigatório."
+  },
+  {
+    "id": "700220",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Desligamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Também enseja desligamento do curso:",
+    "alternativas": {
+      "A": "Baixa produtividade.",
+      "B": "Conduta irrepreensível não demonstrada.",
+      "C": "Atrasos eventuais.",
+      "D": "Falta de experiência.",
+      "E": "Mudança de cidade."
+    },
+    "resposta_correta": "B",
+    "comentario": "A conduta irrepreensível é exigência expressa."
+  },
+  {
+    "id": "700221",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Curso de Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Após a conclusão do curso de formação, os candidatos aprovados:",
+    "alternativas": {
+      "A": "São automaticamente nomeados.",
+      "B": "Recebem certificado de aproveitamento e são considerados habilitados.",
+      "C": "Passam a integrar o quadro efetivo imediatamente.",
+      "D": "São dispensados do concurso.",
+      "E": "Recebem estabilidade provisória."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 623 prevê a expedição de certificado de aproveitamento, definindo os habilitados no concurso."
+  },
+  {
+    "id": "700222",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Curso de Formação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A homologação do concurso ocorrerá:",
+    "alternativas": {
+      "A": "Após a inscrição.",
+      "B": "Antes do curso de formação.",
+      "C": "Após a conclusão do curso de formação.",
+      "D": "Durante o curso.",
+      "E": "A qualquer tempo."
+    },
+    "resposta_correta": "C",
+    "comentario": "O concurso é homologado após a conclusão do curso, conforme Art. 623."
+  },
+  {
+    "id": "700223",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Provimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O provimento do cargo de GCM obedecerá:",
+    "alternativas": {
+      "A": "Critério político.",
+      "B": "Indicação administrativa.",
+      "C": "Ordem de classificação no concurso.",
+      "D": "Tempo de residência.",
+      "E": "Avaliação interna."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 624 determina ordem de classificação."
+  },
+  {
+    "id": "700224",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Provimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O provimento ocorrerá:",
+    "alternativas": {
+      "A": "De forma imediata e integral.",
+      "B": "Gradativamente conforme necessidade.",
+      "C": "Somente por decisão judicial.",
+      "D": "Em período fixo anual.",
+      "E": "Por sorteio."
+    },
+    "resposta_correta": "B",
+    "comentario": "O provimento é gradual conforme necessidade da Administração."
+  },
+  {
+    "id": "700225",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Reciclagem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Os integrantes da GCM devem realizar curso de reciclagem:",
+    "alternativas": {
+      "A": "Anualmente.",
+      "B": "A cada 6 meses.",
+      "C": "A cada 2 anos.",
+      "D": "A cada 5 anos.",
+      "E": "Somente no ingresso."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 625 estabelece periodicidade bienal."
+  },
+  {
+    "id": "700226",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Reciclagem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O curso de reciclagem obrigatório trata principalmente de:",
+    "alternativas": {
+      "A": "Direito penal.",
+      "B": "Administração pública.",
+      "C": "Primeiros socorros e prevenção de acidentes.",
+      "D": "Trânsito urbano.",
+      "E": "Gestão pública."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conteúdo específico previsto na lei."
+  },
+  {
+    "id": "700227",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Disciplina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A hierarquia e disciplina são consideradas:",
+    "alternativas": {
+      "A": "Elementos acessórios.",
+      "B": "Bases da organização da GCM.",
+      "C": "Princípios opcionais.",
+      "D": "Normas secundárias.",
+      "E": "Diretrizes externas."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 626 define como base da organização."
+  },
+  {
+    "id": "700228",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Disciplina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Disciplina, nos termos da lei, significa:",
+    "alternativas": {
+      "A": "Obediência cega.",
+      "B": "Cumprimento das atribuições e deveres.",
+      "C": "Subordinação militar.",
+      "D": "Controle externo.",
+      "E": "Fiscalização administrativa."
+    },
+    "resposta_correta": "B",
+    "comentario": "Definição expressa do parágrafo único."
+  },
+  {
+    "id": "700229",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Disciplina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Entre as manifestações essenciais da disciplina está:",
+    "alternativas": {
+      "A": "Autonomia absoluta.",
+      "B": "Observância das normas legais.",
+      "C": "Independência funcional.",
+      "D": "Decisão individual.",
+      "E": "Liberdade operacional total."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 627 prevê observância legal."
+  },
+  {
+    "id": "700230",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Disciplina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A pronta obediência às ordens superiores é:",
+    "alternativas": {
+      "A": "Facultativa.",
+      "B": "Vedada.",
+      "C": "Manifestação da disciplina.",
+      "D": "Excepcional.",
+      "E": "Irrelevante."
+    },
+    "resposta_correta": "C",
+    "comentario": "Prevista como manifestação essencial da disciplina."
+  },
+  {
+    "id": "700231",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Hierarquia",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "São considerados superiores hierárquicos:",
+    "alternativas": {
+      "A": "Somente o Prefeito.",
+      "B": "Prefeito, Secretário, Diretor e Chefes de Equipe.",
+      "C": "Apenas diretores.",
+      "D": "Somente chefes de equipe.",
+      "E": "Apenas militares."
+    },
+    "resposta_correta": "B",
+    "comentario": "Lista expressa no Art. 628."
+  },
+  {
+    "id": "700232",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Hierarquia",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Os superiores hierárquicos possuem, entre outros, o poder de:",
+    "alternativas": {
+      "A": "Julgar processos judiciais.",
+      "B": "Criar leis.",
+      "C": "Dar ordens, fiscalizar e rever decisões.",
+      "D": "Exonerar servidores livremente.",
+      "E": "Aplicar penas penais."
+    },
+    "resposta_correta": "C",
+    "comentario": "Funções típicas da hierarquia previstas na lei."
+  },
+  {
+    "id": "700233",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Camaradagem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A camaradagem na GCM é considerada:",
+    "alternativas": {
+      "A": "Dispensável.",
+      "B": "Opcional.",
+      "C": "Indispensável à formação e convívio.",
+      "D": "Exclusiva da chefia.",
+      "E": "Restrita a eventos."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 629 estabelece como indispensável."
+  },
+  {
+    "id": "700234",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Camaradagem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Cabe aos comandantes:",
+    "alternativas": {
+      "A": "Ignorar conflitos.",
+      "B": "Incentivar harmonia e solidariedade.",
+      "C": "Punir automaticamente.",
+      "D": "Delegar totalmente a gestão.",
+      "E": "Atuar apenas administrativamente."
+    },
+    "resposta_correta": "B",
+    "comentario": "A lei atribui esse papel aos comandantes."
+  },
+  {
+    "id": "700235",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Subordinação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O integrante da GCM está sujeito à disciplina:",
+    "alternativas": {
+      "A": "Somente quando uniformizado.",
+      "B": "Apenas em serviço.",
+      "C": "Mesmo fora do local de trabalho, estando de serviço.",
+      "D": "Somente na sede.",
+      "E": "Apenas em horário comercial."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 630 amplia a abrangência da disciplina."
+  },
+  {
+    "id": "700236",
+    "disciplina": "Legislação Municipal",
+    "assunto": "Subordinação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura de Guarujá",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A responsabilidade disciplinar:",
+    "alternativas": {
+      "A": "Depende da criminal.",
+      "B": "Substitui a civil.",
+      "C": "É independente das demais.",
+      "D": "Só existe com condenação penal.",
+      "E": "É facultativa."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 631 prevê independência das responsabilidades."
+  }
+]
