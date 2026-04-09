@@ -1,0 +1,202 @@
+[
+  {
+    "id": "700101",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Disposições Preliminares",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da Lei nº 13.022/2014, assinale a alternativa que apresenta corretamente o objetivo do Estatuto Geral das Guardas Municipais, conforme o Art. 1º.",
+    "alternativas": {
+      "A": "Estabelecer normas específicas para atuação das polícias civis estaduais.",
+      "B": "Instituir normas gerais para as guardas municipais, disciplinando dispositivo da Constituição Federal.",
+      "C": "Criar regras para atuação das Forças Armadas em âmbito municipal.",
+      "D": "Regular exclusivamente o uso de armamento pelas guardas municipais.",
+      "E": "Definir competências apenas administrativas das guardas municipais."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o Art. 1º da Lei nº 13.022/2014 :contentReference[oaicite:0]{index=0}, a lei institui normas gerais para as guardas municipais, disciplinando o § 8º do art. 144 da Constituição Federal."
+  },
+  {
+    "id": "700102",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Disposições Preliminares",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Lei nº 13.022/2014 disciplina o § 8º do art. 144 da Constituição Federal, que trata:",
+    "alternativas": {
+      "A": "Da organização das polícias federais.",
+      "B": "Da atuação das forças armadas.",
+      "C": "Das guardas municipais.",
+      "D": "Da segurança privada.",
+      "E": "Do sistema penitenciário."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 1º da lei deixa claro que regulamenta o § 8º do art. 144 da CF, que trata especificamente das guardas municipais."
+  },
+  {
+    "id": "700103",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Disposições Preliminares",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com o Art. 2º da Lei nº 13.022/2014, as guardas municipais possuem natureza e características específicas. Assinale a alternativa correta.",
+    "alternativas": {
+      "A": "São instituições militares, não uniformizadas.",
+      "B": "São instituições civis, não armadas e não uniformizadas.",
+      "C": "São instituições civis, uniformizadas e armadas conforme previsto em lei.",
+      "D": "São órgãos vinculados ao Exército Brasileiro.",
+      "E": "São instituições civis com atuação exclusivamente investigativa."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 2º define que as guardas municipais são instituições de caráter civil, uniformizadas e armadas conforme previsto em lei."
+  },
+  {
+    "id": "700104",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Disposições Preliminares",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Segundo a Lei nº 13.022/2014, a função das guardas municipais é:",
+    "alternativas": {
+      "A": "Investigação criminal.",
+      "B": "Proteção municipal preventiva.",
+      "C": "Atuação exclusiva no trânsito.",
+      "D": "Policiamento ostensivo estadual.",
+      "E": "Execução de penas."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 2º estabelece como função das guardas municipais a proteção municipal preventiva, respeitando as competências dos demais entes."
+  },
+  {
+    "id": "700105",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Princípios",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Conforme o Art. 3º da Lei nº 13.022/2014, assinale a alternativa que NÃO corresponde a um princípio de atuação das guardas municipais.",
+    "alternativas": {
+      "A": "Proteção dos direitos humanos fundamentais.",
+      "B": "Uso progressivo da força.",
+      "C": "Patrulhamento preventivo.",
+      "D": "Atuação repressiva exclusiva.",
+      "E": "Compromisso com a evolução social da comunidade."
+    },
+    "resposta_correta": "D",
+    "comentario": "A atuação repressiva exclusiva não é princípio previsto. A lei enfatiza prevenção, direitos humanos e uso progressivo da força."
+  },
+  {
+    "id": "700106",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Princípios",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O princípio da preservação da vida, redução do sofrimento e diminuição das perdas está previsto:",
+    "alternativas": {
+      "A": "No Art. 1º.",
+      "B": "No Art. 2º.",
+      "C": "No Art. 3º.",
+      "D": "No Art. 4º.",
+      "E": "No Art. 5º."
+    },
+    "resposta_correta": "C",
+    "comentario": "Esse princípio está expressamente previsto no Art. 3º da lei."
+  },
+  {
+    "id": "700107",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Competências",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Art. 4º, é competência geral das guardas municipais:",
+    "alternativas": {
+      "A": "Investigar crimes federais.",
+      "B": "Proteger bens, serviços, logradouros públicos e instalações do Município.",
+      "C": "Executar penas judiciais.",
+      "D": "Fiscalizar fronteiras internacionais.",
+      "E": "Realizar policiamento rodoviário federal."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 4º estabelece essa como competência geral das guardas municipais."
+  },
+  {
+    "id": "700108",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Competências",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com o Art. 4º, os bens protegidos pelas guardas municipais incluem:",
+    "alternativas": {
+      "A": "Apenas bens dominiais.",
+      "B": "Somente bens privados.",
+      "C": "Bens de uso comum, especial e dominiais.",
+      "D": "Somente bens federais.",
+      "E": "Apenas bens móveis."
+    },
+    "resposta_correta": "C",
+    "comentario": "O parágrafo único do Art. 4º amplia a abrangência para todos esses tipos de bens."
+  },
+  {
+    "id": "700109",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Competências Específicas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Segundo o Art. 5º da Lei nº 13.022/2014, é competência específica das guardas municipais:",
+    "alternativas": {
+      "A": "Julgar infrações penais.",
+      "B": "Zelar pelos bens, equipamentos e prédios públicos do Município.",
+      "C": "Aplicar penas privativas de liberdade.",
+      "D": "Investigar crimes complexos.",
+      "E": "Executar mandados judiciais."
+    },
+    "resposta_correta": "B",
+    "comentario": "O inciso I do Art. 5º estabelece essa atribuição específica."
+  },
+  {
+    "id": "700110",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei nº 13.022/2014 - Competências Específicas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Entre as competências do Art. 5º, destaca-se a atuação integrada com outros órgãos de segurança pública. Essa atuação tem como objetivo:",
+    "alternativas": {
+      "A": "Substituir a atuação policial.",
+      "B": "Centralizar todas as ações de segurança no município.",
+      "C": "Contribuir com a paz social por meio de ações conjuntas.",
+      "D": "Limitar a atuação das guardas municipais.",
+      "E": "Transferir competências para a União."
+    },
+    "resposta_correta": "C",
+    "comentario": "O inciso IV do Art. 5º prevê a colaboração integrada para contribuir com a paz social."
+  }
+]
