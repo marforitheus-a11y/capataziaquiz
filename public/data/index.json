@@ -18,5 +18,9 @@
   {
     "name": "Língua Portuguesa",
     "file": "portugues.json"
+  },
+  {
+    "name": "Direito Penal",
+    "file": "penal.json"
   }
 ]
