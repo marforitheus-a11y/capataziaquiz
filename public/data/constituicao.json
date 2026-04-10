@@ -1,0 +1,838 @@
+[
+  {
+    "id": "900601",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Art. 1º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Constituição Federal de 1988 estabelece os alicerces do Estado brasileiro em seus Princípios Fundamentais. Nos termos do art. 1º da Constituição, a República Federativa do Brasil é formada pela união indissolúvel dos Estados e Municípios e do Distrito Federal. Assinale a alternativa que apresenta corretamente um dos fundamentos da República Federativa do Brasil:",
+    "alternativas": {
+      "A": "Construir uma sociedade livre, justa e solidária.",
+      "B": "A dignidade da pessoa humana.",
+      "C": "A erradicação da pobreza e da marginalização.",
+      "D": "A prevalência dos direitos humanos."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta, pois a dignidade da pessoa humana é um fundamento (art. 1º, III). A alternativa A e C são objetivos fundamentais (art. 3º), e a D é um princípio nas relações internacionais (art. 4º)."
+  },
+  {
+    "id": "900602",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Art. 1º, Parágrafo único)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a titularidade e o exercício do poder no Estado Democrático de Direito brasileiro, o parágrafo único do art. 1º da Constituição Federal consagra que todo o poder emana do povo. Esse poder é exercido:",
+    "alternativas": {
+      "A": "Exclusivamente por meio de representantes eleitos para os Poderes Legislativo e Executivo.",
+      "B": "Diretamente pelo povo, sendo vedada a delegação de poderes a representantes políticos.",
+      "C": "Por meio de representantes eleitos ou diretamente, nos termos da Constituição.",
+      "D": "Pelos Poderes da União, de forma independente e harmônica, sem a participação popular direta."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o art. 1º, parágrafo único, da CF/88: 'Todo o poder emana do povo, que o exerce por meio de representantes eleitos ou diretamente, nos termos desta Constituição', consagrando a democracia semidireta ou participativa."
+  },
+  {
+    "id": "900603",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Art. 2º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A tripartição dos poderes é uma característica essencial para evitar o arbítrio e garantir o Estado Democrático de Direito. De acordo com o art. 2º da Constituição Federal, são Poderes da União, independentes e harmônicos entre si:",
+    "alternativas": {
+      "A": "O Legislativo, o Executivo e o Ministério Público.",
+      "B": "O Legislativo, o Executivo e o Judiciário.",
+      "C": "A União, os Estados, o Distrito Federal e os Municípios.",
+      "D": "O Executivo, o Judiciário e as Forças Armadas."
+    },
+    "resposta_correta": "B",
+    "comentario": "O art. 2º da CF/88 é expresso ao elencar os Poderes da União: 'São Poderes da União, independentes e harmônicos entre si, o Legislativo, o Executivo e o Judiciário'."
+  },
+  {
+    "id": "900604",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Art. 3º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Constituição Federal define metas e propósitos a serem alcançados pelo Estado brasileiro. Constitui um dos objetivos fundamentais da República Federativa do Brasil, expressamente previsto no art. 3º:",
+    "alternativas": {
+      "A": "A defesa da paz e a solução pacífica dos conflitos.",
+      "B": "A garantia do desenvolvimento nacional.",
+      "C": "O pluralismo político e a soberania.",
+      "D": "A concessão de asilo político aos estrangeiros perseguidos."
+    },
+    "resposta_correta": "B",
+    "comentario": "Garantir o desenvolvimento nacional é um objetivo fundamental (art. 3º, II). As demais opções referem-se a princípios das relações internacionais (art. 4º) ou fundamentos (art. 1º). Uma dica é que os objetivos geralmente vêm expressos em verbos no infinitivo."
+  },
+  {
+    "id": "900605",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Arts. 1º e 3º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "As bancas examinadoras frequentemente exigem a distinção entre fundamentos e objetivos. Com base no texto constitucional, é correto afirmar que são, respectivamente, um fundamento e um objetivo fundamental da República Federativa do Brasil:",
+    "alternativas": {
+      "A": "O pluralismo político / Erradicar a pobreza e a marginalização.",
+      "B": "Promover o bem de todos / A cidadania.",
+      "C": "A autodeterminação dos povos / A igualdade entre os Estados.",
+      "D": "Os valores sociais do trabalho e da livre iniciativa / A independência nacional."
+    },
+    "resposta_correta": "A",
+    "comentario": "Pluralismo político é fundamento (art. 1º, V). Erradicar a pobreza e a marginalização é objetivo (art. 3º, III). A alternativa B inverte (objetivo / fundamento). As alternativas C e D contêm princípios das relações internacionais."
+  },
+  {
+    "id": "900606",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Art. 3º, III)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No tocante aos objetivos fundamentais delineados na Carta Magna para o combate às disparidades socioeconômicas (art. 3º, inciso III), o texto constitucional visa textualmente:",
+    "alternativas": {
+      "A": "Erradicar as desigualdades sociais e regionais e reduzir a pobreza e a marginalização.",
+      "B": "Erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais.",
+      "C": "Diminuir a pobreza e a marginalização e extinguir as classes sociais.",
+      "D": "Reduzir a pobreza e mitigar as desigualdades intermunicipais e interestaduais."
+    },
+    "resposta_correta": "B",
+    "comentario": "A banca costuma trocar os verbos para confundir o candidato. O correto, segundo o art. 3º, III, é ERRADICAR a pobreza e a marginalização, e REDUZIR as desigualdades sociais e regionais."
+  },
+  {
+    "id": "900607",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Art. 4º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Ao se relacionar com outras nações no cenário global, o Brasil deve observar determinadas diretrizes constitucionais. Segundo o art. 4º da Constituição Federal, a República Federativa do Brasil rege-se nas suas relações internacionais, dentre outros, pelo princípio da:",
+    "alternativas": {
+      "A": "Intervenção armada em casos de ruptura democrática no exterior.",
+      "B": "Soberania econômica sobre os países da América do Sul.",
+      "C": "Concessão de asilo político.",
+      "D": "Construção de uma comunidade global unificada e sem fronteiras."
+    },
+    "resposta_correta": "C",
+    "comentario": "A concessão de asilo político é um princípio que rege o Brasil em suas relações internacionais, expressamente previsto no art. 4º, inciso X, da CF/88. As demais alternativas não encontram respaldo no art. 4º."
+  },
+  {
+    "id": "900608",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Art. 4º, Parágrafo único)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O parágrafo único do art. 4º da Constituição Federal estabelece uma diretriz de integração para o Brasil no cenário internacional. De acordo com este dispositivo, a República Federativa do Brasil buscará a integração econômica, política, social e cultural:",
+    "alternativas": {
+      "A": "Dos povos da América Latina, visando à formação de uma comunidade latino-americana de nações.",
+      "B": "De todos os países em desenvolvimento, visando à formação de um bloco econômico global.",
+      "C": "Dos países do Mercosul, objetivando a adoção de uma moeda única regional.",
+      "D": "Das nações lusófonas, para fortalecer a comunidade dos países de língua portuguesa."
+    },
+    "resposta_correta": "A",
+    "comentario": "O parágrafo único do art. 4º dispõe: 'A República Federativa do Brasil buscará a integração econômica, política, social e cultural dos povos da América Latina, visando à formação de uma comunidade latino-americana de nações'."
+  },
+  {
+    "id": "900609",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Art. 4º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Analise as afirmativas a seguir sobre os princípios que regem a República Federativa do Brasil nas suas relações internacionais:\n\nI. Repúdio ao terrorismo e ao racismo.\nII. Defesa da guerra como meio primário de solução de conflitos.\nIII. Prevalência dos direitos humanos.\n\nEstá correto o que se afirma em:",
+    "alternativas": {
+      "A": "I e II, apenas.",
+      "B": "I e III, apenas.",
+      "C": "II e III, apenas.",
+      "D": "I, II e III."
+    },
+    "resposta_correta": "B",
+    "comentario": "A assertiva II está incorreta porque o inciso VI e VII do art. 4º preconizam a 'defesa da paz' e a 'solução pacífica dos conflitos', e não a defesa da guerra. As afirmativas I (art. 4º, VIII) e III (art. 4º, II) estão corretas."
+  },
+  {
+    "id": "900610",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Princípios Fundamentais (Revisão Geral Arts. 1º a 4º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Considerando os Princípios Fundamentais da Constituição Federal de 1988, analise as descrições na Coluna A e relacione-as com as suas respectivas classificações na Coluna B.\n\nColuna A (Descrições)\n1. A cidadania.\n2. Promover o bem de todos, sem preconceitos de origem, raça, sexo, cor, idade e quaisquer outras formas de discriminação.\n3. Autodeterminação dos povos.\n\nColuna B (Classificações)\n(__) Princípio das Relações Internacionais.\n(__) Fundamento da República.\n(__) Objetivo Fundamental.\n\nAssinale a alternativa que apresenta a sequência correta de cima para baixo:",
+    "alternativas": {
+      "A": "3, 1, 2.",
+      "B": "1, 2, 3.",
+      "C": "3, 2, 1.",
+      "D": "2, 1, 3."
+    },
+    "resposta_correta": "A",
+    "comentario": "A autodeterminação dos povos (3) é Princípio das Relações Internacionais (art. 4º, III). A cidadania (1) é Fundamento da República (art. 1º, II). Promover o bem de todos (2) é Objetivo Fundamental (art. 3º, IV). Logo, a ordem é 3, 1, 2."
+  },
+  {
+    "id": "900701",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, XI - Inviolabilidade do Domicílio)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Constituição Federal estabelece que a casa é asilo inviolável do indivíduo. Nos termos do art. 5º, inciso XI, ninguém nela pode penetrar sem consentimento do morador, SALVO em caso de:",
+    "alternativas": {
+      "A": "Mandado de busca e apreensão, a qualquer hora do dia ou da noite.",
+      "B": "Averiguação de rotina realizada por força policial, independentemente de horário.",
+      "C": "Flagrante delito ou desastre, ou para prestar socorro, ou, durante o dia, por determinação judicial.",
+      "D": "Ordem escrita e fundamentada de autoridade policial competente, cumprida durante o repouso noturno."
+    },
+    "resposta_correta": "C",
+    "comentario": "Segundo o art. 5º, XI, da CF/88, a entrada sem consentimento só é permitida em caso de flagrante delito, desastre, para prestar socorro, ou, durante o dia, por determinação judicial (ordem do juiz, e não de autoridade policial)."
+  },
+  {
+    "id": "900702",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, XLII - Crimes Imprescritíveis)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O artigo 5º da Constituição Federal prevê um tratamento rigoroso para determinados delitos. Assinale a alternativa que indica corretamente as características e a pena previstas expressamente para a prática do crime de racismo:",
+    "alternativas": {
+      "A": "Constitui crime afiançável e prescritível, sujeito à pena de detenção.",
+      "B": "Constitui crime inafiançável e imprescritível, sujeito à pena de reclusão.",
+      "C": "Constitui crime inafiançável e insuscetível de graça ou anistia, sujeito à pena de reclusão.",
+      "D": "Constitui crime inafiançável e imprescritível, sujeito à pena de detenção."
+    },
+    "resposta_correta": "B",
+    "comentario": "O inciso XLII do art. 5º é taxativo: 'a prática do racismo constitui crime inafiançável e imprescritível, sujeito à pena de reclusão, nos termos da lei'."
+  },
+  {
+    "id": "900703",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, XVI - Direito de Reunião)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O direito de reunião é garantido pela Constituição Federal como forma de expressão democrática. Para que todos possam se reunir pacificamente, em locais abertos ao público, a Carta Magna exige que:",
+    "alternativas": {
+      "A": "Haja prévia autorização da autoridade policial da circunscrição do evento.",
+      "B": "Os participantes estejam desarmados e obtenham autorização judicial prévia.",
+      "C": "Não se frustre outra reunião anteriormente convocada para o mesmo local, sendo apenas exigido prévio aviso à autoridade competente.",
+      "D": "O encontro ocorra apenas durante o dia, independentemente de aviso prévio."
+    },
+    "resposta_correta": "C",
+    "comentario": "De acordo com o art. 5º, XVI, o direito de reunião independe de autorização, mas exige prévio aviso à autoridade competente, além de dever ser pacífico, sem armas e não frustrar reunião anterior."
+  },
+  {
+    "id": "900704",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, XLVII - Penas Vedadas)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O sistema constitucional brasileiro estabelece limites ao poder punitivo do Estado. Nos termos do art. 5º, inciso XLVII, é correto afirmar que NÃO haverá penas de:",
+    "alternativas": {
+      "A": "Privação de liberdade e de prestação social alternativa.",
+      "B": "Morte (salvo em caso de guerra declarada) e de trabalhos forçados.",
+      "C": "Perda de bens e de multa.",
+      "D": "Suspensão de direitos e de restrição da liberdade."
+    },
+    "resposta_correta": "B",
+    "comentario": "O inciso XLVII do art. 5º veda expressamente as penas de morte (salvo guerra declarada), de caráter perpétuo, de trabalhos forçados, de banimento e cruéis. As penas citadas nas outras alternativas são permitidas pelo inciso XLVI."
+  },
+  {
+    "id": "900705",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, XIX - Liberdade de Associação)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o direito de associação, a Constituição Federal confere proteção especial contra a intervenção arbitrária do Estado. Segundo o art. 5º, as associações só poderão ser compulsoriamente dissolvidas:",
+    "alternativas": {
+      "A": "Por decisão administrativa do Poder Executivo, baseada em interesse social.",
+      "B": "Por decisão judicial, sendo exigido, para tanto, o trânsito em julgado.",
+      "C": "Por decreto legislativo, independente de manifestação do Poder Judiciário.",
+      "D": "Por decisão judicial liminar, não havendo necessidade de esgotamento dos recursos."
+    },
+    "resposta_correta": "B",
+    "comentario": "Consoante o inciso XIX do art. 5º, a suspensão das atividades exige decisão judicial, mas a dissolução compulsória exige mais: decisão judicial com trânsito em julgado."
+  },
+  {
+    "id": "900706",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, LI e LII - Extradição)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No tocante à extradição, assinale a alternativa que reflete corretamente o comando constitucional previsto no artigo 5º:",
+    "alternativas": {
+      "A": "Nenhum brasileiro será extraditado, seja ele nato ou naturalizado.",
+      "B": "O brasileiro naturalizado pode ser extraditado em caso de crime comum praticado antes da naturalização.",
+      "C": "É permitida a extradição de estrangeiro que tenha cometido crime político no seu país de origem.",
+      "D": "O brasileiro nato poderá ser extraditado exclusivamente em caso de envolvimento comprovado com terrorismo."
+    },
+    "resposta_correta": "B",
+    "comentario": "O brasileiro nato NUNCA é extraditado. O naturalizado pode ser extraditado por crime comum antes da naturalização ou tráfico de drogas a qualquer tempo (Inciso LI). O estrangeiro não será extraditado por crime político ou de opinião (Inciso LII)."
+  },
+  {
+    "id": "900707",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, LXXI - Remédios Constitucionais)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Constituição Cidadã prevê instrumentos processuais para a defesa de direitos fundamentais. Quando a falta de uma norma regulamentadora tornar inviável o exercício dos direitos e liberdades constitucionais, o remédio adequado a ser concedido é o:",
+    "alternativas": {
+      "A": "Habeas corpus.",
+      "B": "Habeas data.",
+      "C": "Mandado de injunção.",
+      "D": "Mandado de segurança coletivo."
+    },
+    "resposta_correta": "C",
+    "comentario": "O mandado de injunção (Inciso LXXI) é o remédio constitucional cabível sempre que a omissão legislativa (falta de norma regulamentadora) inviabilizar o exercício de direitos e liberdades constitucionais."
+  },
+  {
+    "id": "900708",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, § 3º - Tratados Internacionais)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com o § 3º do artigo 5º da Constituição Federal, os tratados e convenções internacionais sobre direitos humanos que forem aprovados, em cada Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros, serão equivalentes às:",
+    "alternativas": {
+      "A": "Leis Ordinárias.",
+      "B": "Leis Complementares.",
+      "C": "Medidas Provisórias.",
+      "D": "Emendas Constitucionais."
+    },
+    "resposta_correta": "D",
+    "comentario": "O texto do § 3º do art. 5º garante que tratados de direitos humanos aprovados com o mesmo rito rigoroso das Emendas Constitucionais (2 casas, 2 turnos, 3/5 dos votos) terão status equivalente ao das Emendas Constitucionais."
+  },
+  {
+    "id": "900709",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, LXVI - Prisão e Liberdade)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No que diz respeito aos direitos do indivíduo submetido à persecução penal, a Constituição Federal, em seu artigo 5º, inciso LXVI, determina categoricamente que:",
+    "alternativas": {
+      "A": "A prisão civil por dívida é permitida para qualquer obrigação financeira inadimplida.",
+      "B": "Ninguém será levado à prisão ou nela mantido, quando a lei admitir a liberdade provisória, com ou sem fiança.",
+      "C": "A prisão ilegal só poderá ser relaxada mediante o pagamento de custas processuais.",
+      "D": "O preso manterá silêncio absoluto, sendo-lhe vedada a assistência de advogado durante o flagrante."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B reproduz literalmente o texto do inciso LXVI do art. 5º. A alternativa A é falsa (prisão por dívida é só para pensão alimentícia, considerando a súmula vinculante 25). A alternativa C é falsa (a prisão ilegal será imediatamente relaxada). A D ofende o direito à assistência técnica."
+  },
+  {
+    "id": "900710",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos e Deveres Individuais e Coletivos (Art. 5º, IV e V - Liberdade de Expressão)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a liberdade de pensamento e de expressão, leia as assertivas abaixo fundamentadas no art. 5º da Constituição Federal:\n\nI - É livre a manifestação do pensamento, sendo garantido o anonimato nas redes sociais.\nII - É assegurado o direito de resposta, proporcional ao agravo, além da indenização por dano material, moral ou à imagem.\n\nAssinale a alternativa correta:",
+    "alternativas": {
+      "A": "Apenas a afirmativa I está correta.",
+      "B": "Apenas a afirmativa II está correta.",
+      "C": "Ambas as afirmativas estão corretas.",
+      "D": "Nenhuma das afirmativas está correta."
+    },
+    "resposta_correta": "B",
+    "comentario": "A afirmativa I está errada porque a Constituição estabelece que é livre a manifestação do pensamento, sendo VEDADO o anonimato (inciso IV). A afirmativa II está perfeitamente alinhada com o inciso V do art. 5º."
+  },
+  {
+    "id": "900801",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Administração Pública - Princípios Expressos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Constituição Federal de 1988 estabelece princípios básicos que devem nortear a atuação da Administração Pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios. Nos termos do *caput* do art. 37, NÃO é considerado um princípio expresso:",
+    "alternativas": {
+      "A": "Eficiência.",
+      "B": "Impessoalidade.",
+      "C": "Publicidade.",
+      "D": "Razoabilidade."
+    },
+    "resposta_correta": "D",
+    "comentario": "O art. 37 da CF/88 consagra expressamente o rol conhecido pela sigla LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência. A Razoabilidade é um princípio implícito/reconhecido, mas não consta expressamente no caput do art. 37."
+  },
+  {
+    "id": "900802",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Concurso Público e Cargos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Assistente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "Sobre o prazo de validade do concurso público, a Constituição Federal, em seu art. 37, inciso III, determina que ele será de:",
+    "alternativas": {
+      "A": "Dois anos, prorrogável uma única vez, por igual período.",
+      "B": "Até dois anos, prorrogável uma vez, por igual período.",
+      "C": "Até dois anos, prorrogável sucessivas vezes enquanto houver interesse público.",
+      "D": "Dois anos improrrogáveis, contados a partir da homologação do resultado final."
+    },
+    "resposta_correta": "B",
+    "comentario": "O texto exato do inciso III estabelece que 'o prazo de validade do concurso público será de ATÉ dois anos, prorrogável uma vez, por igual período'. A alternativa A peca por afirmar que será sempre de dois anos."
+  },
+  {
+    "id": "900803",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Cargos e Funções Públicas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Agente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "O inciso V do art. 37 da CF/88 traz regramentos específicos sobre funções de confiança e cargos em comissão. De acordo com o texto constitucional, é correto afirmar que:",
+    "alternativas": {
+      "A": "Ambos destinam-se exclusivamente às atribuições de direção, chefia e assessoramento.",
+      "B": "As funções de confiança podem ser exercidas por pessoas sem vínculo com a Administração Pública.",
+      "C": "Os cargos em comissão são exercidos exclusivamente por servidores ocupantes de cargo efetivo.",
+      "D": "Ambos exigem aprovação prévia em concurso público de provas e títulos."
+    },
+    "resposta_correta": "A",
+    "comentario": "Segundo o inciso V, tanto as funções de confiança quanto os cargos em comissão destinam-se APENAS às atribuições de direção, chefia e assessoramento. As funções de confiança são exclusivas para servidores efetivos, enquanto os cargos em comissão são de livre nomeação e exoneração."
+  },
+  {
+    "id": "900804",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos dos Servidores Públicos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O direito de greve é assegurado aos servidores públicos civis. Contudo, o inciso VII do art. 37 da Constituição Federal estipula que esse direito será exercido:",
+    "alternativas": {
+      "A": "Livremente e sem qualquer restrição, conforme a conveniência do sindicato da categoria.",
+      "B": "Nos termos e nos limites definidos em lei complementar.",
+      "C": "Nos termos e nos limites definidos em lei específica.",
+      "D": "Apenas após autorização expressa do Chefe do Poder Executivo respectivo."
+    },
+    "resposta_correta": "C",
+    "comentario": "Consoante o inciso VII do art. 37 (com redação dada pela EC nº 19/1998), 'o direito de greve será exercido nos termos e nos limites definidos em lei específica'."
+  },
+  {
+    "id": "900805",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Acumulação de Cargos Públicos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Professor",
+    "nivel": "Médio",
+    "enunciado": "A regra geral no serviço público é a inacumulabilidade remunerada de cargos, havendo, porém, exceções constitucionais. Conforme o inciso XVI do art. 37 da CF/88, havendo compatibilidade de horários, é lícita a acumulação remunerada de:",
+    "alternativas": {
+      "A": "Dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas.",
+      "B": "Dois cargos técnicos ou científicos, independentemente da área de atuação.",
+      "C": "Um cargo de professor com outro privativo de profissional de saúde.",
+      "D": "Três cargos de professor, desde que não ultrapassem 60 horas semanais."
+    },
+    "resposta_correta": "A",
+    "comentario": "O inciso XVI, alínea 'c', permite a acumulação de 'dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas'. Também permite dois de professor (alínea 'a') e um de professor com outro técnico ou científico (alínea 'b')."
+  },
+  {
+    "id": "900806",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Organização da Administração Pública",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Assistente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "Ao tratar da criação das entidades da administração indireta, a Constituição Federal, no art. 37, inciso XIX, dispõe que:",
+    "alternativas": {
+      "A": "Somente por decreto executivo poderá ser criada autarquia e autorizada a instituição de empresa pública.",
+      "B": "Somente por lei específica poderá ser criada autarquia e autorizada a instituição de empresa pública, de sociedade de economia mista e de fundação.",
+      "C": "A criação de subsidiárias das autarquias independe de qualquer autorização legislativa.",
+      "D": "As empresas públicas, sociedades de economia mista e autarquias são todas criadas diretamente pela lei, adquirindo personalidade jurídica sem necessidade de registro."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B espelha exatamente a redação do inciso XIX: a lei específica CRIA autarquia e AUTORIZA a instituição das demais (EP, SEM, fundação pública)."
+  },
+  {
+    "id": "900807",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Publicidade e Promoção Pessoal",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Agente de Trânsito",
+    "nivel": "Médio",
+    "enunciado": "O Prefeito de determinado município determinou a colocação de placas em uma obra pública contendo sua fotografia e o slogan de sua campanha eleitoral. Diante das regras do § 1º do art. 37 da Constituição Federal, a conduta do Prefeito é:",
+    "alternativas": {
+      "A": "Inconstitucional, pois a publicidade dos atos deve ter caráter educativo, informativo ou de orientação social, não podendo constar imagens que caracterizem promoção pessoal.",
+      "B": "Constitucional, desde que os custos da publicidade sejam integralmente custeados com recursos próprios do Prefeito.",
+      "C": "Constitucional, pois o administrador público tem o direito de informar a população sobre as obras realizadas em sua gestão.",
+      "D": "Inconstitucional apenas se não houver aprovação prévia e unânime da Câmara de Vereadores."
+    },
+    "resposta_correta": "A",
+    "comentario": "Conforme o § 1º do art. 37, a publicidade não pode conter nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades ou servidores públicos."
+  },
+  {
+    "id": "900808",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Improbidade Administrativa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Segundo o § 4º do art. 37 da CF/88, os atos de improbidade administrativa importarão consequências gravosas ao agente público, sem prejuízo da ação penal cabível. Assinale a alternativa que elenca corretamente as penas constitucionais expressas no referido parágrafo:",
+    "alternativas": {
+      "A": "Cassação dos direitos políticos, advertência, multa pecuniária e prisão imediata.",
+      "B": "Suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário.",
+      "C": "Perda dos direitos políticos, rebaixamento de cargo, sequestro de bens e exoneração a bem do serviço público.",
+      "D": "Suspensão da função pública, perda dos bens pessoais, cassação dos direitos políticos e multa."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B reflete a literalidade do § 4º do art. 37: 'suspensão dos direitos políticos, a perda da função pública, a indisponibilidade dos bens e o ressarcimento ao erário'."
+  },
+  {
+    "id": "900809",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Responsabilidade Civil do Estado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Fiscal de Posturas",
+    "nivel": "Médio",
+    "enunciado": "O motorista de um caminhão da prefeitura (pessoa jurídica de direito público), no exercício de suas funções, atropela um pedestre por falta de atenção. De acordo com o § 6º do art. 37 da Constituição Federal, é correto afirmar que:",
+    "alternativas": {
+      "A": "A prefeitura não responde pelo dano, devendo a vítima processar diretamente o motorista.",
+      "B": "A prefeitura responde de forma subsidiária, sendo acionada apenas se o motorista for insolvente.",
+      "C": "A prefeitura responderá pelo dano causado, sendo-lhe assegurado o direito de regresso contra o motorista em caso de dolo ou culpa.",
+      "D": "O Estado responderá pelo dano, mas não poderá cobrar o valor do motorista, sob pena de *bis in idem*."
+    },
+    "resposta_correta": "C",
+    "comentario": "O § 6º estabelece a responsabilidade objetiva das pessoas jurídicas de direito público e das de direito privado prestadoras de serviços públicos, garantindo o direito de regresso contra o agente responsável em caso de dolo ou culpa."
+  },
+  {
+    "id": "900810",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Readaptação de Servidor Público",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Assistente Social",
+    "nivel": "Médio",
+    "enunciado": "Incluído pela Emenda Constitucional nº 103/2019, o § 13 do art. 37 traz a figura da readaptação. Nos termos deste parágrafo, o servidor público titular de cargo efetivo poderá ser readaptado para exercício de cargo cujas atribuições e responsabilidades sejam compatíveis com a limitação que tenha sofrido, desde que possua a habilitação e o nível de escolaridade exigidos. Em relação à remuneração desse servidor readaptado, o texto constitucional garante que:",
+    "alternativas": {
+      "A": "Passará a receber exclusivamente a remuneração do novo cargo.",
+      "B": "Será mantida a remuneração do cargo de origem.",
+      "C": "Receberá a remuneração do cargo de origem com um acréscimo indenizatório de 10%.",
+      "D": "Sofrerá redução proporcional à limitação que fundamentou a readaptação."
+    },
+    "resposta_correta": "B",
+    "comentario": "O § 13 é claro ao afirmar que o servidor será readaptado, 'mantida a remuneração do cargo de origem'."
+  },
+  {
+    "id": "900811",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Acesso a Cargos e Contratação Temporária",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Técnico Administrativo",
+    "nivel": "Médio",
+    "enunciado": "A Constituição Federal define regras estritas para o acesso aos quadros da Administração. Sobre o tema, avalie as afirmativas de acordo com o art. 37:\nI. Os cargos e empregos públicos são acessíveis aos brasileiros, sendo terminantemente vedado o acesso a estrangeiros.\nII. A lei estabelecerá os casos de contratação por tempo determinado para atender a necessidade temporária de excepcional interesse público.\nÉ correto o que se afirma em:",
+    "alternativas": {
+      "A": "I, apenas.",
+      "B": "II, apenas.",
+      "C": "Ambas estão corretas.",
+      "D": "Nenhuma das afirmativas está correta."
+    },
+    "resposta_correta": "B",
+    "comentario": "A afirmativa I está errada porque o inciso I permite o acesso a estrangeiros 'na forma da lei'. A afirmativa II está correta e transcreve ipsis litteris o inciso IX do art. 37."
+  },
+  {
+    "id": "900812",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Teto Remuneratório",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Fiscal de Tributos",
+    "nivel": "Médio",
+    "enunciado": "A respeito do teto remuneratório no serviço público (art. 37, XI, CF/88), aplicando-se o limite específico dentro da esfera municipal, a remuneração não poderá exceder o subsídio mensal do:",
+    "alternativas": {
+      "A": "Ministro do Supremo Tribunal Federal, em todos os casos de servidores municipais.",
+      "B": "Governador do Estado ao qual o Município pertence.",
+      "C": "Juiz de Direito da Comarca.",
+      "D": "Prefeito Municipal."
+    },
+    "resposta_correta": "D",
+    "comentario": "O inciso XI dispõe claramente que o limite é o subsídio mensal dos Ministros do STF, mas impõe subtetos: 'aplicando-se como limite, nos Municípios, o subsídio do Prefeito'."
+  },
+  {
+    "id": "900813",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Acumulação de Proventos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Assistente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "Maria, servidora pública municipal aposentada no cargo de contadora, foi convidada pelo atual Prefeito para assumir a Secretaria Municipal de Finanças, cargo em comissão de livre nomeação e exoneração. Nos termos do art. 37, § 10, da CF/88, quanto ao recebimento simultâneo de seus proventos de aposentadoria com a remuneração do novo cargo:",
+    "alternativas": {
+      "A": "É vedado, devendo Maria abrir mão temporariamente de sua aposentadoria para assumir a Secretaria.",
+      "B": "É permitido, por se tratar de ressalva constitucional expressa (cargo em comissão de livre nomeação e exoneração).",
+      "C": "É permitido apenas se ela doar a remuneração do cargo em comissão para uma instituição de caridade.",
+      "D": "É vedado sob qualquer hipótese, pois a Constituição proíbe peremptoriamente a percepção de proventos com remuneração da ativa."
+    },
+    "resposta_correta": "B",
+    "comentario": "O § 10 veda a percepção simultânea de proventos com a remuneração de cargo ativo, MAS RESSALVA os cargos acumuláveis, os cargos eletivos e os cargos em comissão declarados em lei de livre nomeação e exoneração (caso da Maria)."
+  },
+  {
+    "id": "900814",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Avaliação de Políticas Públicas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Agente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "A Constituição Federal foi emendada recentemente (EC 109/2021) para inserir uma importante diretriz de gestão e transparência. De acordo com o § 16 do art. 37, os órgãos e entidades da administração pública devem:",
+    "alternativas": {
+      "A": "Realizar avaliação das políticas públicas, inclusive com divulgação do objeto a ser avaliado e dos resultados alcançados.",
+      "B": "Terceirizar obrigatoriamente a fiscalização de todas as obras de engenharia civil realizadas na circunscrição.",
+      "C": "Suspender temporariamente a execução de contratos públicos em ano eleitoral para revisão de gastos.",
+      "D": "Criar comitês exclusivamente políticos para deliberar sobre a legalidade dos atos de gestão financeira."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A copia o texto do recente § 16: 'Os órgãos e entidades da administração pública [...] devem realizar avaliação das políticas públicas, inclusive com divulgação do objeto a ser avaliado e dos resultados alcançados, na forma da lei'."
+  },
+  {
+    "id": "900815",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Contrato de Gestão",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Técnico de Gestão",
+    "nivel": "Médio",
+    "enunciado": "O art. 37, § 8º da Constituição preceitua um mecanismo voltado ao aumento da eficiência estatal. Segundo o dispositivo, a autonomia gerencial, orçamentária e financeira dos órgãos e entidades da administração direta e indireta poderá ser:",
+    "alternativas": {
+      "A": "Reduzida mediante intervenção federal justificada por déficit orçamentário.",
+      "B": "Ampliada mediante contrato, a ser firmado entre seus administradores e o poder público, que tenha por objeto a fixação de metas de desempenho.",
+      "C": "Revogada a qualquer tempo pelo Tribunal de Contas, sem direito ao contraditório.",
+      "D": "Transferida definitivamente para entidades do terceiro setor via convênio."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o § 8º do art. 37, a autonomia pode ser AMPLIADA mediante o chamado 'contrato de gestão', visando à fixação de metas de desempenho."
+  },
+  {
+    "id": "900816",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Regras do Concurso Público",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Prefeitura de uma cidade realizou um concurso público ainda vigente. Devido a vacâncias, decidiu realizar um novo concurso para o mesmo cargo antes do fim da validade do certame anterior. Segundo o inciso IV do art. 37 da CF/88:",
+    "alternativas": {
+      "A": "Durante o prazo improrrogável previsto no edital, o candidato aprovado no concurso anterior tem prioridade de convocação sobre novos concursados.",
+      "B": "A abertura de um novo concurso cancela automaticamente a validade do concurso anterior.",
+      "C": "Os candidatos do concurso mais recente têm preferência, por possuírem conhecimentos mais atualizados.",
+      "D": "A nomeação deverá ser intercalada: um candidato do certame antigo para cada candidato do novo."
+    },
+    "resposta_correta": "A",
+    "comentario": "O inciso IV garante a prioridade do candidato aprovado em concurso válido sobre os novos concursados para assumir cargo ou emprego na carreira."
+  },
+  {
+    "id": "900817",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Extensão da Proibição de Acumulação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Assistente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "João trabalha em uma Empresa Pública (Ex: Caixa Econômica Federal) e foi aprovado para um cargo técnico em uma Autarquia municipal. Ciente da proibição constitucional de acumulação não autorizada de cargos públicos, ele argumenta que a restrição só se aplicaria à administração direta. De acordo com o art. 37, inciso XVII, a alegação de João é:",
+    "alternativas": {
+      "A": "Correta, pois empresas públicas operam sob regime jurídico de direito privado, ficando excluídas da vedação.",
+      "B": "Incorreta, pois a proibição de acumular estende-se a empregos e funções e abrange autarquias, fundações, empresas públicas, sociedades de economia mista, suas subsidiárias e sociedades controladas.",
+      "C": "Correta, pois apenas as sociedades de economia mista são alcançadas pela proibição da acumulação.",
+      "D": "Incorreta, embora a vedação constitucional alcance apenas as fundações públicas, e não as empresas estatais."
+    },
+    "resposta_correta": "B",
+    "comentario": "O inciso XVII do art. 37 é enfático ao estender a proibição de acumulação para a administração indireta em peso: autarquias, fundações, empresas públicas, sociedades de economia mista e suas subsidiárias e controladas."
+  },
+  {
+    "id": "900818",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Contratação sem Concurso",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Fiscal de Feira",
+    "nivel": "Médio",
+    "enunciado": "A investidura em cargo ou emprego público fora das hipóteses excepcionadas pela Constituição (como cargos em comissão) sem aprovação prévia em concurso público acarreta, por força do § 2º do art. 37:",
+    "alternativas": {
+      "A": "A nulidade do ato e a punição da autoridade responsável, nos termos da lei.",
+      "B": "Apenas o pagamento de multa pela autoridade, validando-se a posse do servidor como ato consumado.",
+      "C": "A convalidação do ato se o servidor permanecer no cargo por mais de três anos ininterruptos.",
+      "D": "A advertência do servidor, que terá prazo de um ano para ser aprovado em novo concurso."
+    },
+    "resposta_correta": "A",
+    "comentario": "Segundo o § 2º do art. 37, a não observância da exigência do concurso público 'implicará a nulidade do ato e a punição da autoridade responsável, nos termos da lei'."
+  },
+  {
+    "id": "900819",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Reserva de Vagas (PCD)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Agente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "A Constituição Federal promove a inclusão no serviço público de grupos vulneráveis. Nos termos do inciso VIII do art. 37, a respeito do ingresso no serviço público de pessoas portadoras de deficiência (PCD), a Constituição prevê que:",
+    "alternativas": {
+      "A": "Fica a critério exclusivo de cada órgão a reserva de vagas ou não em seus concursos públicos.",
+      "B": "É garantida a isenção total de etapas de avaliação técnica, devendo a admissão ocorrer por simples entrevista.",
+      "C": "A lei reservará percentual dos cargos e empregos públicos para as pessoas portadoras de deficiência e definirá os critérios de sua admissão.",
+      "D": "As pessoas portadoras de deficiência preencherão, no mínimo, cinquenta por cento das vagas de qualquer concurso público."
+    },
+    "resposta_correta": "C",
+    "comentario": "O texto literal do inciso VIII determina que 'a lei reservará percentual dos cargos e empregos públicos para as pessoas portadoras de deficiência e definirá os critérios de sua admissão'."
+  },
+  {
+    "id": "900820",
+    "disciplina": "Direito Administrativo",
+    "assunto": "Aposentadoria e Rompimento de Vínculo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Professor",
+    "nivel": "Médio",
+    "enunciado": "A partir das mudanças trazidas pelas reformas previdenciárias (EC 103/2019), o § 14 do art. 37 da CF/88 regulamentou os reflexos da aposentadoria na relação de trabalho do servidor. Conforme o texto constitucional, a aposentadoria concedida com a utilização de tempo de contribuição decorrente de cargo, emprego ou função pública:",
+    "alternativas": {
+      "A": "Permite a continuidade automática do trabalhador no emprego caso seja da administração indireta.",
+      "B": "Acarretará o rompimento do vínculo que gerou o referido tempo de contribuição.",
+      "C": "Garante ao servidor estabilidade provisória por mais dois anos no cargo em que se aposentou.",
+      "D": "Não afeta o vínculo, desde que a soma do salário com a aposentadoria não ultrapasse o teto constitucional."
+    },
+    "resposta_correta": "B",
+    "comentario": "O § 14 do art. 37 (incluído pela EC 103) estabelece expressamente que tal aposentadoria 'acarretará o rompimento do vínculo que gerou o referido tempo de contribuição', impedindo, como regra geral, a continuidade no emprego/cargo que fundamentou a aposentação."
+  },
+  {
+    "id": "900901",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Servidores Públicos - Mandato Eletivo (Art. 38, I e II)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Pedro, servidor público federal, foi eleito Deputado Federal. Sua esposa, Ana, servidora pública de uma fundação municipal, foi eleita Prefeita na mesma eleição. De acordo com o art. 38 da CF/88, qual será a situação funcional e remuneratória de ambos ao assumirem seus respectivos mandatos?",
+    "alternativas": {
+      "A": "Ambos deverão se afastar de seus cargos de origem, sendo-lhes facultado optar livremente pela remuneração do cargo efetivo ou do cargo eletivo.",
+      "B": "Pedro ficará afastado de seu cargo sem direito de opção remuneratória (receberá como Deputado), enquanto Ana será afastada, mas ser-lhe-á facultado optar pela sua remuneração de origem.",
+      "C": "Pedro e Ana poderão acumular os cargos efetivos com os mandatos políticos, recebendo ambas as remunerações, desde que comprovem a compatibilidade de horários.",
+      "D": "Pedro continuará no cargo efetivo, abdicando do salário de Deputado, e Ana ficará afastada recebendo compulsoriamente o subsídio de Prefeita."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B está correta e explora de forma prática os incisos I e II do art. 38. Para mandatos federais/estaduais/distritais (Pedro), o servidor se afasta e NÃO há opção de remuneração (recebe o subsídio político). Para o mandato de Prefeito (Ana), o servidor se afasta, mas a Constituição faculta a opção pela remuneração."
+  },
+  {
+    "id": "900902",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Servidores Públicos - Mandato Eletivo (Art. 38, III)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Assistente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "Carlos é enfermeiro em uma autarquia estadual (trabalhando no turno da manhã) e acaba de ser eleito Vereador em seu município. Ao verificar a pauta legislativa, constatou-se que as sessões da Câmara Municipal ocorrem exclusivamente no período noturno, havendo total compatibilidade de horários. Neste cenário hipotético, a Constituição Federal determina que Carlos:",
+    "alternativas": {
+      "A": "Deverá obrigatoriamente afastar-se do cargo na autarquia estadual, pois é vedado misturar as esferas de governo (Estado e Município).",
+      "B": "Será mantido no cargo de enfermeiro, mas deverá optar por receber apenas o salário da autarquia ou apenas o subsídio da Câmara.",
+      "C": "Perceberá as vantagens de seu cargo na autarquia, sem prejuízo da remuneração do cargo eletivo de Vereador, acumulando ambas.",
+      "D": "Poderá acumular as funções, mas sua remuneração no cargo de enfermeiro será reduzida à metade para compensar a acumulação política."
+    },
+    "resposta_correta": "C",
+    "comentario": "O inciso III do art. 38 traz a única hipótese de acumulação real com mandato eletivo: o Vereador. Havendo compatibilidade de horários, ele 'perceberá as vantagens de seu cargo, emprego ou função, sem prejuízo da remuneração do cargo eletivo'."
+  },
+  {
+    "id": "900903",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Servidores Públicos - Mandato Eletivo (Art. 38, IV)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Agente Administrativo",
+    "nivel": "Médio",
+    "enunciado": "Mariana, analista da administração direta municipal, afastou-se de suas funções para exercer o mandato de Deputada Estadual por 4 anos. Ao retornar ao seu setor de origem na prefeitura, ela solicitou que o período em que esteve no legislativo fosse contabilizado para fins de aposentadoria e para a próxima progressão na carreira por merecimento. Com base na CF/88, o pedido administrativo de Mariana:",
+    "alternativas": {
+      "A": "Deve ser integralmente deferido, pois o tempo de serviço em mandato eletivo conta para todos os efeitos legais de forma irrestrita.",
+      "B": "Deve ser parcialmente deferido, contabilizando-se o tempo para a aposentadoria, mas não para a promoção por merecimento.",
+      "C": "Deve ser parcialmente deferido, contando-se para a promoção por merecimento (visto a relevância do cargo público), mas não para a aposentadoria.",
+      "D": "Deve ser integralmente indeferido, já que o exercício de mandato em outra esfera de poder suspende todos os vínculos com a prefeitura."
+    },
+    "resposta_correta": "B",
+    "comentario": "A situação aplica perfeitamente o inciso IV do art. 38: 'seu tempo de serviço será contado para todos os efeitos legais, EXCETO para promoção por merecimento'. Logo, conta para aposentadoria (e anuênios, licenças, etc.), mas não para merecimento."
+  },
+  {
+    "id": "900904",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Servidores Públicos - Mandato Eletivo (Art. 38, V)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Fiscal de Tributos",
+    "nivel": "Médio",
+    "enunciado": "Roberto é servidor público estatutário do Estado do Rio de Janeiro, sendo segurado obrigatório do Regime Próprio de Previdência Social (RPPS) fluminense. Nas últimas eleições, ele se mudou e elegeu-se Prefeito de um município no Estado de Minas Gerais. Durante os quatro anos de seu mandato como Prefeito, como ficará a situação previdenciária de Roberto segundo as regras da Constituição (Emenda Constitucional nº 103/2019)?",
+    "alternativas": {
+      "A": "Ele será automaticamente transferido para o Regime Geral de Previdência Social (INSS), aplicável a todos os detentores de mandato eletivo.",
+      "B": "Sua filiação previdenciária passará a ser no Regime Próprio de Previdência Social do município onde exerce o mandato, se houver.",
+      "C": "Ele permanecerá filiado ao seu regime próprio de previdência social no ente federativo de origem (Estado do Rio de Janeiro).",
+      "D": "A filiação ficará suspensa e Roberto estará isento de contribuições previdenciárias enquanto durar o mandato fora de seu Estado."
+    },
+    "resposta_correta": "C",
+    "comentario": "O inciso V do art. 38 é direto quanto a essa situação de proteção previdenciária: 'na hipótese de ser segurado de regime próprio de previdência social, permanecerá filiado a esse regime, no ente federativo de origem'."
+  }
+]
