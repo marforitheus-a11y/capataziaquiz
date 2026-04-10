@@ -26,5 +26,9 @@
   {
     "name": "Processo Penal",
     "file": "processo_penal.json"
+  },
+  {
+    "name": "Constituição Federal",
+    "file": "constituicao.json"
   }
 ]
