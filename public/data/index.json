@@ -14,5 +14,9 @@
   {
     "name": "Estatuto da Pessoa com Deficiência",
     "file": "deficiente.json"
+  },
+  {
+    "name": "Língua Portuguesa",
+    "file": "portugues.json"
   }
 ]
