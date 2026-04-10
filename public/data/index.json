@@ -22,5 +22,9 @@
   {
     "name": "Direito Penal",
     "file": "penal.json"
+  },
+  {
+    "name": "Processo Penal",
+    "file": "processo_penal.json"
   }
 ]
