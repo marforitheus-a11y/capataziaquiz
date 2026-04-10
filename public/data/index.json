@@ -10,5 +10,9 @@
    {
     "name": "Abuso de Autoridade",
     "file": "abuso.json"
+  },
+  {
+    "name": "Estatuto da Pessoa com Deficiência",
+    "file": "deficiente.json"
   }
 ]
