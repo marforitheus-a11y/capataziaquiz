@@ -1,0 +1,162 @@
+[
+  {
+    "id": "700401",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei de Abuso de Autoridade - Ação Penal",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos da Lei de Abuso de Autoridade, os crimes nela previstos são processados mediante:",
+    "alternativas": {
+      "A": "Ação penal privada personalíssima.",
+      "B": "Ação penal pública condicionada à representação.",
+      "C": "Ação penal pública incondicionada.",
+      "D": "Ação penal privada exclusiva do ofendido.",
+      "E": "Ação penal pública condicionada à requisição do Ministro da Justiça."
+    },
+    "resposta_correta": "C",
+    "comentario": "Nos termos do art. 3º, os crimes previstos na Lei de Abuso de Autoridade são de ação penal pública incondicionada. :contentReference[oaicite:1]{index=1}"
+  },
+  {
+    "id": "700402",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei de Abuso de Autoridade - Ação Penal",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A ação privada subsidiária nos crimes de abuso de autoridade será admitida:",
+    "alternativas": {
+      "A": "Sempre, independentemente de atuação do Ministério Público.",
+      "B": "Somente após absolvição sumária do acusado.",
+      "C": "Apenas quando houver representação da vítima.",
+      "D": "Se a ação penal pública não for intentada no prazo legal.",
+      "E": "Somente quando o juiz autorizar expressamente."
+    },
+    "resposta_correta": "D",
+    "comentario": "O § 1º do art. 3º admite ação privada se a ação penal pública não for intentada no prazo legal. :contentReference[oaicite:2]{index=2}"
+  },
+  {
+    "id": "700403",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei de Abuso de Autoridade - Efeitos da Condenação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Entre os efeitos da condenação por crime de abuso de autoridade, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "A perda do cargo público é sempre automática.",
+      "B": "A condenação gera apenas obrigação penal, sem reflexos civis.",
+      "C": "Pode haver inabilitação para o exercício de cargo, mandato ou função pública, pelo período de 1 a 5 anos.",
+      "D": "A indenização do dano depende exclusivamente de ação civil autônoma, sem possibilidade de fixação na sentença penal.",
+      "E": "A perda do cargo somente pode ocorrer em condenação culposa."
+    },
+    "resposta_correta": "C",
+    "comentario": "Nos termos do art. 4º, II, a condenação pode gerar inabilitação para o exercício de cargo, mandato ou função pública por 1 a 5 anos. :contentReference[oaicite:3]{index=3}"
+  },
+  {
+    "id": "700404",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei de Abuso de Autoridade - Efeitos da Condenação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quanto aos efeitos previstos nos incisos II e III do art. 4º da Lei de Abuso de Autoridade, é correto afirmar que:",
+    "alternativas": {
+      "A": "São automáticos em toda condenação.",
+      "B": "Dependem apenas de pedido da autoridade policial.",
+      "C": "São condicionados à reincidência em crime de abuso de autoridade e devem ser declarados motivadamente na sentença.",
+      "D": "Aplicam-se mesmo sem sentença condenatória transitada em julgado.",
+      "E": "Só incidem em crimes praticados por magistrados."
+    },
+    "resposta_correta": "C",
+    "comentario": "O parágrafo único do art. 4º estabelece que os efeitos dos incisos II e III dependem de reincidência e não são automáticos, devendo ser declarados motivadamente na sentença. :contentReference[oaicite:4]{index=4}"
+  },
+  {
+    "id": "700405",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei de Abuso de Autoridade - Penas Restritivas de Direitos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Constitui pena restritiva de direitos substitutiva da privativa de liberdade prevista na Lei de Abuso de Autoridade:",
+    "alternativas": {
+      "A": "Internação compulsória.",
+      "B": "Prestação de serviços à comunidade ou a entidades públicas.",
+      "C": "Detenção administrativa.",
+      "D": "Advertência disciplinar.",
+      "E": "Cassação automática da aposentadoria."
+    },
+    "resposta_correta": "B",
+    "comentario": "O art. 5º, I, prevê a prestação de serviços à comunidade ou a entidades públicas como pena restritiva de direitos. :contentReference[oaicite:5]{index=5}"
+  },
+  {
+    "id": "700406",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei de Abuso de Autoridade - Penas Restritivas de Direitos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre as penas restritivas de direitos previstas na Lei de Abuso de Autoridade, assinale a alternativa correta.",
+    "alternativas": {
+      "A": "Só podem ser aplicadas isoladamente.",
+      "B": "Não podem ser aplicadas de forma autônoma.",
+      "C": "Podem ser aplicadas autônoma ou cumulativamente.",
+      "D": "Dependem de autorização administrativa prévia.",
+      "E": "Excluem a possibilidade de perda de vencimentos."
+    },
+    "resposta_correta": "C",
+    "comentario": "Nos termos do parágrafo único do art. 5º, as penas restritivas de direitos podem ser aplicadas autônoma ou cumulativamente. :contentReference[oaicite:6]{index=6}"
+  },
+  {
+    "id": "700407",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei de Abuso de Autoridade - Sanções Civil e Administrativa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "As penas previstas na Lei de Abuso de Autoridade serão aplicadas:",
+    "alternativas": {
+      "A": "Somente quando inexistirem sanções civis ou administrativas cabíveis.",
+      "B": "De forma subsidiária às sanções administrativas.",
+      "C": "Independentemente das sanções de natureza civil ou administrativa cabíveis.",
+      "D": "Apenas após a conclusão do processo administrativo disciplinar.",
+      "E": "Somente se houver prejuízo material comprovado."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 6º determina que as penas da lei serão aplicadas independentemente das sanções civis ou administrativas cabíveis. :contentReference[oaicite:7]{index=7}"
+  },
+  {
+    "id": "700408",
+    "disciplina": "Legislação Federal",
+    "assunto": "Lei de Abuso de Autoridade - Sanções Civil e Administrativa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "As notícias de crimes previstos na Lei de Abuso de Autoridade que descreverem falta funcional deverão ser:",
+    "alternativas": {
+      "A": "Arquivadas até o trânsito em julgado da ação penal.",
+      "B": "Encaminhadas à autoridade competente para apuração.",
+      "C": "Remetidas exclusivamente ao Ministério Público, sem outras providências.",
+      "D": "Apreciadas apenas pela autoridade judicial.",
+      "E": "Desconsideradas no âmbito administrativo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Nos termos do parágrafo único do art. 6º, as notícias de crimes que descreverem falta funcional serão informadas à autoridade competente com vistas à apuração. :contentReference[oaicite:8]{index=8}"
+  }
+]
