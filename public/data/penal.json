@@ -1,0 +1,1947 @@
+[
+  {
+    "id": "700401",
+    "disciplina": "Direito Penal",
+    "assunto": "Princípio da Legalidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com o Código Penal, assinale a alternativa correta sobre o princípio da legalidade penal:",
+    "alternativas": {
+      "A": "É possível a punição de conduta não prevista em lei, desde que considerada imoral.",
+      "B": "Não há crime sem lei anterior que o defina, nem pena sem prévia cominação legal.",
+      "C": "A lei penal pode retroagir para prejudicar o réu em qualquer hipótese.",
+      "D": "A pena pode ser aplicada mesmo sem previsão legal específica, desde que proporcional.",
+      "E": "A analogia pode ser utilizada para criar crimes e penas."
+    },
+    "resposta_correta": "B",
+    "comentario": "O art. 1º do Código Penal consagra o princípio da legalidade: não há crime nem pena sem previsão legal anterior. :contentReference[oaicite:0]{index=0}"
+  },
+  {
+    "id": "700402",
+    "disciplina": "Direito Penal",
+    "assunto": "Princípio da Legalidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Em relação ao princípio da anterioridade da lei penal, assinale a alternativa correta:",
+    "alternativas": {
+      "A": "A lei penal pode retroagir para prejudicar o agente, desde que haja interesse público.",
+      "B": "A lei penal pode ser aplicada antes de sua vigência em casos urgentes.",
+      "C": "A lei penal deve ser anterior ao fato para que este seja considerado crime.",
+      "D": "A pena pode ser criada por decreto em situações excepcionais.",
+      "E": "A analogia é admitida para criação de tipos penais."
+    },
+    "resposta_correta": "C",
+    "comentario": "A anterioridade exige que a lei penal exista antes da conduta para que esta seja considerada crime. :contentReference[oaicite:1]{index=1}"
+  },
+  {
+    "id": "700403",
+    "disciplina": "Direito Penal",
+    "assunto": "Lei Penal no Tempo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Segundo o Código Penal, a lei posterior que deixa de considerar determinado fato como crime:",
+    "alternativas": {
+      "A": "Não tem efeito sobre fatos anteriores.",
+      "B": "Aplica-se apenas a processos ainda não julgados.",
+      "C": "Não afeta a execução da pena já iniciada.",
+      "D": "Cessa a execução e os efeitos penais da sentença condenatória.",
+      "E": "Depende de decisão judicial para produzir efeitos."
+    },
+    "resposta_correta": "D",
+    "comentario": "Nos termos do art. 2º, a lei que descriminaliza o fato cessa a execução da pena e seus efeitos. :contentReference[oaicite:2]{index=2}"
+  },
+  {
+    "id": "700404",
+    "disciplina": "Direito Penal",
+    "assunto": "Lei Penal no Tempo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a aplicação da lei penal mais benéfica, assinale a alternativa correta:",
+    "alternativas": {
+      "A": "Aplica-se apenas a fatos futuros.",
+      "B": "Não se aplica a sentenças transitadas em julgado.",
+      "C": "Aplica-se apenas se houver recurso pendente.",
+      "D": "Aplica-se aos fatos anteriores, ainda que já julgados definitivamente.",
+      "E": "Depende de autorização do Ministério Público."
+    },
+    "resposta_correta": "D",
+    "comentario": "O parágrafo único do art. 2º prevê a retroatividade da lei mais benéfica, mesmo após trânsito em julgado. :contentReference[oaicite:3]{index=3}"
+  },
+  {
+    "id": "700405",
+    "disciplina": "Direito Penal",
+    "assunto": "Lei Excepcional ou Temporária",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A respeito da lei excepcional ou temporária, é correto afirmar que:",
+    "alternativas": {
+      "A": "Não se aplica após o término de sua vigência.",
+      "B": "Somente se aplica se o processo ainda não foi julgado.",
+      "C": "Aplica-se ao fato praticado durante sua vigência, ainda que cessadas as circunstâncias.",
+      "D": "Sempre retroage para beneficiar o agente.",
+      "E": "Depende de confirmação judicial para aplicação."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 3º: a lei excepcional ou temporária aplica-se ao fato ocorrido durante sua vigência, mesmo após seu término. :contentReference[oaicite:4]{index=4}"
+  },
+  {
+    "id": "700406",
+    "disciplina": "Direito Penal",
+    "assunto": "Lei Excepcional ou Temporária",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Em relação à lei temporária, assinale a alternativa correta:",
+    "alternativas": {
+      "A": "Deixa de produzir efeitos imediatamente após seu término.",
+      "B": "Não se aplica a fatos ocorridos durante sua vigência.",
+      "C": "Aplica-se apenas a fatos futuros.",
+      "D": "Aplica-se aos fatos praticados durante sua vigência, mesmo após cessar sua validade.",
+      "E": "Sempre depende de norma complementar."
+    },
+    "resposta_correta": "D",
+    "comentario": "A lei temporária mantém sua aplicação aos fatos ocorridos durante sua vigência. :contentReference[oaicite:5]{index=5}"
+  },
+  {
+    "id": "700407",
+    "disciplina": "Direito Penal",
+    "assunto": "Tempo do Crime",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para fins penais, considera-se praticado o crime no momento:",
+    "alternativas": {
+      "A": "Do resultado.",
+      "B": "Da sentença.",
+      "C": "Da denúncia.",
+      "D": "Da ação ou omissão.",
+      "E": "Da prisão do agente."
+    },
+    "resposta_correta": "D",
+    "comentario": "Art. 4º: o crime considera-se praticado no momento da ação ou omissão. :contentReference[oaicite:6]{index=6}"
+  },
+  {
+    "id": "700408",
+    "disciplina": "Direito Penal",
+    "assunto": "Tempo do Crime",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o tempo do crime, assinale a alternativa correta:",
+    "alternativas": {
+      "A": "Considera-se o momento do resultado apenas.",
+      "B": "Considera-se o momento da ação ou omissão, ainda que outro seja o do resultado.",
+      "C": "Depende da decisão judicial.",
+      "D": "Considera-se o momento da denúncia.",
+      "E": "Considera-se o momento da prisão."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Código Penal adota a teoria da atividade (art. 4º). :contentReference[oaicite:7]{index=7}"
+  },
+  {
+    "id": "700409",
+    "disciplina": "Direito Penal",
+    "assunto": "Territorialidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Segundo o Código Penal, a lei brasileira aplica-se:",
+    "alternativas": {
+      "A": "Somente a crimes cometidos por brasileiros.",
+      "B": "A crimes cometidos exclusivamente em território nacional.",
+      "C": "A crimes cometidos no território nacional, sem prejuízo de tratados internacionais.",
+      "D": "A crimes cometidos apenas em território estrangeiro.",
+      "E": "Somente mediante autorização judicial."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 5º: aplica-se a lei brasileira ao crime cometido no território nacional, observadas normas internacionais. :contentReference[oaicite:8]{index=8}"
+  },
+  {
+    "id": "700410",
+    "disciplina": "Direito Penal",
+    "assunto": "Territorialidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para efeitos penais, consideram-se extensão do território nacional:",
+    "alternativas": {
+      "A": "Apenas as embaixadas brasileiras.",
+      "B": "Somente navios militares em território nacional.",
+      "C": "Aeronaves e embarcações brasileiras, conforme previsto em lei.",
+      "D": "Qualquer local onde haja brasileiro.",
+      "E": "Somente o território físico delimitado."
+    },
+    "resposta_correta": "C",
+    "comentario": "O §1º do art. 5º amplia o conceito de território para incluir aeronaves e embarcações brasileiras. :contentReference[oaicite:9]{index=9}"
+  },
+  {
+    "id": "700411",
+    "disciplina": "Direito Penal",
+    "assunto": "Lugar do Crime",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Considera-se lugar do crime:",
+    "alternativas": {
+      "A": "Apenas onde ocorreu o resultado.",
+      "B": "Apenas onde ocorreu a ação.",
+      "C": "Somente onde o agente foi preso.",
+      "D": "Onde ocorreu a ação ou omissão, bem como onde se produziu ou deveria produzir-se o resultado.",
+      "E": "Somente o local indicado na denúncia."
+    },
+    "resposta_correta": "D",
+    "comentario": "Art. 6º: adota-se a teoria da ubiquidade para o lugar do crime. :contentReference[oaicite:10]{index=10}"
+  },
+  {
+    "id": "700412",
+    "disciplina": "Direito Penal",
+    "assunto": "Lugar do Crime",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o lugar do crime, assinale a alternativa correta:",
+    "alternativas": {
+      "A": "Considera-se apenas o local do resultado.",
+      "B": "Considera-se apenas o local da ação.",
+      "C": "Adota-se a teoria da ubiquidade, considerando ação/omissão e resultado.",
+      "D": "Depende exclusivamente do local da prisão.",
+      "E": "É definido pelo juiz caso a caso."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Código Penal adota a teoria da ubiquidade (art. 6º). :contentReference[oaicite:11]{index=11}"
+  },
+  {
+    "id": "700413",
+    "disciplina": "Direito Penal",
+    "assunto": "Relação de Causalidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Código Penal, o resultado é imputável a quem:",
+    "alternativas": {
+      "A": "Tinha intenção de produzi-lo, ainda que não tenha contribuído para sua ocorrência.",
+      "B": "De qualquer forma tenha participado do fato, independentemente de nexo causal.",
+      "C": "Lhe deu causa, considerando-se causa a ação ou omissão sem a qual o resultado não teria ocorrido.",
+      "D": "Apenas contribuiu indiretamente para o resultado.",
+      "E": "Praticou o ato após a ocorrência do resultado."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 13: adota-se a teoria da equivalência dos antecedentes causais."
+  },
+  {
+    "id": "700414",
+    "disciplina": "Direito Penal",
+    "assunto": "Relação de Causalidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A superveniência de causa relativamente independente exclui a imputação quando:",
+    "alternativas": {
+      "A": "Concorre com a conduta do agente.",
+      "B": "É previsível pelo agente.",
+      "C": "Depende da vontade do agente.",
+      "D": "Por si só produziu o resultado.",
+      "E": "O agente age com dolo eventual."
+    },
+    "resposta_correta": "D",
+    "comentario": "Art. 13, §1º: exclui imputação quando a causa superveniente produz o resultado por si só."
+  },
+  {
+    "id": "700415",
+    "disciplina": "Direito Penal",
+    "assunto": "Relevância da Omissão",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A omissão é penalmente relevante quando o agente:",
+    "alternativas": {
+      "A": "Apenas poderia agir, ainda que não tivesse dever.",
+      "B": "Devia e podia agir para evitar o resultado.",
+      "C": "Agiu sem intenção de evitar o resultado.",
+      "D": "Não tinha qualquer vínculo com o fato.",
+      "E": "Agia sob coação moral irresistível."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 13, §2º: exige dever e possibilidade de agir."
+  },
+  {
+    "id": "700416",
+    "disciplina": "Direito Penal",
+    "assunto": "Relevância da Omissão",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O dever de agir para evitar o resultado NÃO incumbe a quem:",
+    "alternativas": {
+      "A": "Tem obrigação legal de cuidado.",
+      "B": "Assumiu responsabilidade de impedir o resultado.",
+      "C": "Criou o risco da ocorrência do resultado.",
+      "D": "Agiu culposamente sem vínculo com o risco criado.",
+      "E": "Tem dever de vigilância."
+    },
+    "resposta_correta": "D",
+    "comentario": "Art. 13, §2º: o dever de agir exige vínculo jurídico específico."
+  },
+  {
+    "id": "700417",
+    "disciplina": "Direito Penal",
+    "assunto": "Crime Consumado e Tentado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Considera-se crime consumado quando:",
+    "alternativas": {
+      "A": "O agente inicia a execução.",
+      "B": "O resultado é previsível.",
+      "C": "Reúnem-se todos os elementos de sua definição legal.",
+      "D": "Há tentativa frustrada.",
+      "E": "O agente desiste voluntariamente."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 14, I: crime consumado ocorre com todos os elementos do tipo."
+  },
+  {
+    "id": "700418",
+    "disciplina": "Direito Penal",
+    "assunto": "Tentativa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Há tentativa quando:",
+    "alternativas": {
+      "A": "O agente não inicia a execução.",
+      "B": "O crime se consuma parcialmente.",
+      "C": "A execução se inicia, mas não se consuma por circunstâncias alheias à vontade do agente.",
+      "D": "O agente desiste voluntariamente.",
+      "E": "O resultado ocorre com dolo eventual."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 14, II: tentativa exige início da execução e não consumação por circunstâncias alheias."
+  },
+  {
+    "id": "700419",
+    "disciplina": "Direito Penal",
+    "assunto": "Desistência Voluntária",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Na desistência voluntária, o agente:",
+    "alternativas": {
+      "A": "Responde pelo crime consumado.",
+      "B": "Não responde por qualquer ato.",
+      "C": "Responde apenas pelos atos já praticados.",
+      "D": "Responde por tentativa.",
+      "E": "É isento de pena automaticamente."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 15: responde apenas pelos atos já praticados."
+  },
+  {
+    "id": "700420",
+    "disciplina": "Direito Penal",
+    "assunto": "Arrependimento Eficaz",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No arrependimento eficaz, o agente:",
+    "alternativas": {
+      "A": "Impede o resultado após iniciar a execução.",
+      "B": "Não responde por nenhum ato.",
+      "C": "Responde por tentativa.",
+      "D": "Responde pelo crime consumado.",
+      "E": "Apenas reduz a pena."
+    },
+    "resposta_correta": "A",
+    "comentario": "Art. 15: impede o resultado e responde pelos atos já praticados."
+  },
+  {
+    "id": "700421",
+    "disciplina": "Direito Penal",
+    "assunto": "Arrependimento Posterior",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O arrependimento posterior aplica-se:",
+    "alternativas": {
+      "A": "A crimes com violência.",
+      "B": "A qualquer crime.",
+      "C": "A crimes sem violência ou grave ameaça.",
+      "D": "Apenas a crimes culposos.",
+      "E": "Apenas antes da prática do crime."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 16: exige crime sem violência ou grave ameaça."
+  },
+  {
+    "id": "700422",
+    "disciplina": "Direito Penal",
+    "assunto": "Arrependimento Posterior",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para aplicação do arrependimento posterior, é necessário:",
+    "alternativas": {
+      "A": "Denúncia já recebida.",
+      "B": "Reparação do dano até o recebimento da denúncia ou queixa.",
+      "C": "Sentença transitada em julgado.",
+      "D": "Crime violento.",
+      "E": "Dolo específico."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 16: reparação até o recebimento da denúncia ou queixa."
+  },
+  {
+    "id": "700423",
+    "disciplina": "Direito Penal",
+    "assunto": "Crime Impossível",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Não se pune a tentativa quando:",
+    "alternativas": {
+      "A": "O agente desiste voluntariamente.",
+      "B": "Há dolo eventual.",
+      "C": "Por ineficácia absoluta do meio ou impropriedade do objeto.",
+      "D": "O resultado é culposo.",
+      "E": "O agente não é imputável."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 17: crime impossível."
+  },
+  {
+    "id": "700424",
+    "disciplina": "Direito Penal",
+    "assunto": "Dolo e Culpa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime é doloso quando o agente:",
+    "alternativas": {
+      "A": "Age com negligência.",
+      "B": "Quis o resultado ou assumiu o risco de produzi-lo.",
+      "C": "Age com imperícia.",
+      "D": "Não prevê o resultado.",
+      "E": "Age sem intenção."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 18, I: dolo direto ou eventual."
+  },
+  {
+    "id": "700425",
+    "disciplina": "Direito Penal",
+    "assunto": "Crime Culposo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime culposo ocorre quando o agente:",
+    "alternativas": {
+      "A": "Age com intenção.",
+      "B": "Assume o risco do resultado.",
+      "C": "Age com imprudência, negligência ou imperícia.",
+      "D": "Age com dolo eventual.",
+      "E": "Age em legítima defesa."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 18, II."
+  },
+  {
+    "id": "700426",
+    "disciplina": "Direito Penal",
+    "assunto": "Agravação pelo Resultado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O agente responde pelo resultado agravador quando:",
+    "alternativas": {
+      "A": "Não teve culpa alguma.",
+      "B": "Agiu ao menos culposamente.",
+      "C": "Apenas houve dolo.",
+      "D": "O resultado foi imprevisível.",
+      "E": "Houve caso fortuito."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 19: exige ao menos culpa."
+  },
+  {
+    "id": "700427",
+    "disciplina": "Direito Penal",
+    "assunto": "Exclusão de Ilicitude",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Não há crime quando o agente pratica o fato:",
+    "alternativas": {
+      "A": "Com dolo eventual.",
+      "B": "Em estado de necessidade, legítima defesa ou exercício regular de direito.",
+      "C": "Por imprudência.",
+      "D": "Sem intenção.",
+      "E": "Com erro de tipo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 23."
+  },
+  {
+    "id": "700428",
+    "disciplina": "Direito Penal",
+    "assunto": "Excesso Punível",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O agente responderá pelo excesso:",
+    "alternativas": {
+      "A": "Apenas se doloso.",
+      "B": "Apenas se culposo.",
+      "C": "Se doloso ou culposo.",
+      "D": "Nunca responderá.",
+      "E": "Somente em crimes dolosos."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 23, parágrafo único."
+  },
+  {
+    "id": "700429",
+    "disciplina": "Direito Penal",
+    "assunto": "Estado de Necessidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Configura estado de necessidade quando o agente:",
+    "alternativas": {
+      "A": "Age por vontade própria sem risco.",
+      "B": "Age para salvar direito próprio ou alheio de perigo atual.",
+      "C": "Age por vingança.",
+      "D": "Age com dolo eventual.",
+      "E": "Age por imprudência."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 24."
+  },
+  {
+    "id": "700430",
+    "disciplina": "Direito Penal",
+    "assunto": "Estado de Necessidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Não pode alegar estado de necessidade quem:",
+    "alternativas": {
+      "A": "Não provocou o perigo.",
+      "B": "Tem dever legal de enfrentar o perigo.",
+      "C": "Age para salvar direito alheio.",
+      "D": "Age com moderação.",
+      "E": "Age sem dolo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 24, §1º."
+  },
+  {
+    "id": "700431",
+    "disciplina": "Direito Penal",
+    "assunto": "Legítima Defesa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Caracteriza legítima defesa quando o agente:",
+    "alternativas": {
+      "A": "Age com excesso injustificado.",
+      "B": "Repele agressão injusta, atual ou iminente, usando meios necessários.",
+      "C": "Age por vingança.",
+      "D": "Age com culpa.",
+      "E": "Age sem necessidade."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 25."
+  },
+  {
+    "id": "700432",
+    "disciplina": "Direito Penal",
+    "assunto": "Legítima Defesa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para configuração da legítima defesa, exige-se:",
+    "alternativas": {
+      "A": "Agressão futura e incerta.",
+      "B": "Agressão justa.",
+      "C": "Uso moderado dos meios necessários.",
+      "D": "Apenas intenção de defesa.",
+      "E": "Resultado lesivo obrigatório."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 25: exige moderação nos meios."
+  },
+  {
+    "id": "700433",
+    "disciplina": "Direito Penal",
+    "assunto": "Homicídio Simples",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Código Penal, o homicídio simples possui pena de:",
+    "alternativas": {
+      "A": "Detenção de 1 a 3 anos.",
+      "B": "Reclusão de 2 a 8 anos.",
+      "C": "Reclusão de 6 a 20 anos.",
+      "D": "Reclusão de 12 a 30 anos.",
+      "E": "Detenção de 6 meses a 2 anos."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 121, caput: homicídio simples tem pena de reclusão de 6 a 20 anos."
+  },
+  {
+    "id": "700434",
+    "disciplina": "Direito Penal",
+    "assunto": "Homicídio Privilegiado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O homicídio privilegiado ocorre quando o agente age:",
+    "alternativas": {
+      "A": "Por motivo torpe.",
+      "B": "Por motivo fútil.",
+      "C": "Sob domínio de violenta emoção após injusta provocação da vítima.",
+      "D": "Com emprego de meio cruel.",
+      "E": "Com premeditação."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 121, §1º: prevê diminuição de pena nessas hipóteses."
+  },
+  {
+    "id": "700435",
+    "disciplina": "Direito Penal",
+    "assunto": "Homicídio Qualificado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Configura hipótese de homicídio qualificado:",
+    "alternativas": {
+      "A": "Matar alguém por motivo de relevante valor moral.",
+      "B": "Matar alguém sob violenta emoção.",
+      "C": "Matar alguém mediante paga ou promessa de recompensa.",
+      "D": "Matar alguém culposamente.",
+      "E": "Matar alguém sem intenção."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 121, §2º: motivo torpe inclui paga ou promessa de recompensa."
+  },
+  {
+    "id": "700436",
+    "disciplina": "Direito Penal",
+    "assunto": "Homicídio Qualificado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Assinale a alternativa que NÃO caracteriza homicídio qualificado:",
+    "alternativas": {
+      "A": "Emprego de veneno.",
+      "B": "Motivo fútil.",
+      "C": "Emboscada.",
+      "D": "Negligência.",
+      "E": "Dissimulação."
+    },
+    "resposta_correta": "D",
+    "comentario": "Negligência caracteriza culpa, não qualificadora do homicídio doloso."
+  },
+  {
+    "id": "700437",
+    "disciplina": "Direito Penal",
+    "assunto": "Homicídio Culposo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No homicídio culposo, o juiz poderá deixar de aplicar a pena quando:",
+    "alternativas": {
+      "A": "O agente for reincidente.",
+      "B": "Houver dolo eventual.",
+      "C": "As consequências atingirem gravemente o próprio agente.",
+      "D": "A vítima for menor de idade.",
+      "E": "O crime for praticado com arma."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 121, §5º: perdão judicial no homicídio culposo."
+  },
+  {
+    "id": "700438",
+    "disciplina": "Direito Penal",
+    "assunto": "Induzimento ao Suicídio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Induzir alguém a suicidar-se, sem que ocorra morte ou lesão grave, tem pena de:",
+    "alternativas": {
+      "A": "Reclusão de 2 a 6 anos.",
+      "B": "Detenção de 1 a 3 anos.",
+      "C": "Reclusão de 6 meses a 2 anos.",
+      "D": "Multa apenas.",
+      "E": "Reclusão de 4 a 10 anos."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 122: pena básica de 6 meses a 2 anos."
+  },
+  {
+    "id": "700439",
+    "disciplina": "Direito Penal",
+    "assunto": "Induzimento ao Suicídio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Se da tentativa de suicídio resulta lesão grave, a pena será:",
+    "alternativas": {
+      "A": "De 6 meses a 2 anos.",
+      "B": "De 1 a 3 anos.",
+      "C": "De 2 a 6 anos.",
+      "D": "De 4 a 8 anos.",
+      "E": "De 8 a 12 anos."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 122, §1º."
+  },
+  {
+    "id": "700440",
+    "disciplina": "Direito Penal",
+    "assunto": "Induzimento ao Suicídio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Se o suicídio se consuma, a pena será:",
+    "alternativas": {
+      "A": "De 6 meses a 2 anos.",
+      "B": "De 1 a 3 anos.",
+      "C": "De 2 a 6 anos.",
+      "D": "De 4 a 10 anos.",
+      "E": "De 10 a 20 anos."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 122, §2º."
+  },
+  {
+    "id": "700441",
+    "disciplina": "Direito Penal",
+    "assunto": "Induzimento ao Suicídio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A pena será duplicada quando:",
+    "alternativas": {
+      "A": "O agente for primário.",
+      "B": "O crime for culposo.",
+      "C": "A vítima for menor ou tiver capacidade de resistência diminuída.",
+      "D": "O agente se arrepender.",
+      "E": "O crime não se consumar."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 122, §3º."
+  },
+  {
+    "id": "700442",
+    "disciplina": "Direito Penal",
+    "assunto": "Induzimento ao Suicídio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A pena será aumentada até o dobro quando o crime for praticado:",
+    "alternativas": {
+      "A": "Por duas pessoas.",
+      "B": "Com arma branca.",
+      "C": "Por meio de rede social ou ambiente virtual.",
+      "D": "Sem intenção.",
+      "E": "Em local público."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 122, §4º: uso de meios digitais aumenta a pena."
+  },
+  {
+    "id": "700443",
+    "disciplina": "Direito Penal",
+    "assunto": "Infanticídio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Código Penal, o crime de infanticídio ocorre quando:",
+    "alternativas": {
+      "A": "A mãe mata o filho em qualquer momento da vida.",
+      "B": "Qualquer pessoa mata recém-nascido por motivo fútil.",
+      "C": "A mãe mata o próprio filho, durante o parto ou logo após, sob influência do estado puerperal.",
+      "D": "O pai mata o filho recém-nascido.",
+      "E": "A mãe provoca aborto com consentimento."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 123: exige estado puerperal e momento do parto ou logo após."
+  },
+  {
+    "id": "700444",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto provocado pela gestante",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Pratica o crime previsto no art. 124 do Código Penal quem:",
+    "alternativas": {
+      "A": "Provoca aborto sem consentimento da gestante.",
+      "B": "Provoca aborto em si mesma ou consente que outrem o provoque.",
+      "C": "Auxilia suicídio.",
+      "D": "Provoca lesão corporal.",
+      "E": "Pratica homicídio culposo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 124: trata do aborto praticado pela própria gestante ou com seu consentimento."
+  },
+  {
+    "id": "700445",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto sem consentimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime de provocar aborto sem consentimento da gestante possui pena de:",
+    "alternativas": {
+      "A": "Detenção de 1 a 3 anos.",
+      "B": "Reclusão de 1 a 4 anos.",
+      "C": "Reclusão de 3 a 10 anos.",
+      "D": "Reclusão de 6 a 20 anos.",
+      "E": "Multa apenas."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 125: reclusão de 3 a 10 anos."
+  },
+  {
+    "id": "700446",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto com consentimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quando o aborto é provocado com o consentimento da gestante, a pena será:",
+    "alternativas": {
+      "A": "Reclusão de 3 a 10 anos.",
+      "B": "Reclusão de 1 a 4 anos.",
+      "C": "Detenção de 2 a 6 anos.",
+      "D": "Multa.",
+      "E": "Isento de pena."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 126: reclusão de 1 a 4 anos."
+  },
+  {
+    "id": "700447",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto qualificado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Código Penal, as penas dos crimes de aborto são aumentadas quando:",
+    "alternativas": {
+      "A": "O agente é primário.",
+      "B": "Há arrependimento posterior.",
+      "C": "A gestante sofre lesão corporal grave ou morre em decorrência do aborto.",
+      "D": "O crime é tentado.",
+      "E": "A gestante consente com o ato."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 127: prevê aumento ou duplicação da pena nesses casos."
+  },
+  {
+    "id": "700448",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto permitido",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Não se pune o aborto praticado por médico quando:",
+    "alternativas": {
+      "A": "Há consentimento do agente.",
+      "B": "A gestante deseja interromper a gravidez por motivos pessoais.",
+      "C": "Não há outro meio de salvar a vida da gestante.",
+      "D": "O agente é primário.",
+      "E": "O fato ocorre fora do hospital."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 128, I: aborto necessário."
+  },
+  {
+    "id": "700449",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto em caso de estupro",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O aborto resultante de gravidez decorrente de estupro não é punido quando:",
+    "alternativas": {
+      "A": "Há autorização judicial.",
+      "B": "Há consentimento da gestante ou de seu representante legal.",
+      "C": "O agente é primário.",
+      "D": "O crime ocorreu há menos de 6 meses.",
+      "E": "A vítima é maior de idade."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 128, II: exige consentimento da gestante ou representante legal."
+  },
+  {
+    "id": "700443",
+    "disciplina": "Direito Penal",
+    "assunto": "Infanticídio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Código Penal, o crime de infanticídio ocorre quando:",
+    "alternativas": {
+      "A": "A mãe mata o filho em qualquer momento da vida.",
+      "B": "Qualquer pessoa mata recém-nascido por motivo fútil.",
+      "C": "A mãe mata o próprio filho, durante o parto ou logo após, sob influência do estado puerperal.",
+      "D": "O pai mata o filho recém-nascido.",
+      "E": "A mãe provoca aborto com consentimento."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 123: exige estado puerperal e momento do parto ou logo após."
+  },
+  {
+    "id": "700444",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto provocado pela gestante",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Pratica o crime previsto no art. 124 do Código Penal quem:",
+    "alternativas": {
+      "A": "Provoca aborto sem consentimento da gestante.",
+      "B": "Provoca aborto em si mesma ou consente que outrem o provoque.",
+      "C": "Auxilia suicídio.",
+      "D": "Provoca lesão corporal.",
+      "E": "Pratica homicídio culposo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 124: trata do aborto praticado pela própria gestante ou com seu consentimento."
+  },
+  {
+    "id": "700445",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto sem consentimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime de provocar aborto sem consentimento da gestante possui pena de:",
+    "alternativas": {
+      "A": "Detenção de 1 a 3 anos.",
+      "B": "Reclusão de 1 a 4 anos.",
+      "C": "Reclusão de 3 a 10 anos.",
+      "D": "Reclusão de 6 a 20 anos.",
+      "E": "Multa apenas."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 125: reclusão de 3 a 10 anos."
+  },
+  {
+    "id": "700446",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto com consentimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quando o aborto é provocado com o consentimento da gestante, a pena será:",
+    "alternativas": {
+      "A": "Reclusão de 3 a 10 anos.",
+      "B": "Reclusão de 1 a 4 anos.",
+      "C": "Detenção de 2 a 6 anos.",
+      "D": "Multa.",
+      "E": "Isento de pena."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 126: reclusão de 1 a 4 anos."
+  },
+  {
+    "id": "700447",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto qualificado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Código Penal, as penas dos crimes de aborto são aumentadas quando:",
+    "alternativas": {
+      "A": "O agente é primário.",
+      "B": "Há arrependimento posterior.",
+      "C": "A gestante sofre lesão corporal grave ou morre em decorrência do aborto.",
+      "D": "O crime é tentado.",
+      "E": "A gestante consente com o ato."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 127: prevê aumento ou duplicação da pena nesses casos."
+  },
+  {
+    "id": "700448",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto permitido",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Não se pune o aborto praticado por médico quando:",
+    "alternativas": {
+      "A": "Há consentimento do agente.",
+      "B": "A gestante deseja interromper a gravidez por motivos pessoais.",
+      "C": "Não há outro meio de salvar a vida da gestante.",
+      "D": "O agente é primário.",
+      "E": "O fato ocorre fora do hospital."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 128, I: aborto necessário."
+  },
+  {
+    "id": "700449",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto em caso de estupro",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O aborto resultante de gravidez decorrente de estupro não é punido quando:",
+    "alternativas": {
+      "A": "Há autorização judicial.",
+      "B": "Há consentimento da gestante ou de seu representante legal.",
+      "C": "O agente é primário.",
+      "D": "O crime ocorreu há menos de 6 meses.",
+      "E": "A vítima é maior de idade."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 128, II: exige consentimento da gestante ou representante legal."
+  },
+  {
+    "id": "700443",
+    "disciplina": "Direito Penal",
+    "assunto": "Infanticídio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Código Penal, o crime de infanticídio ocorre quando:",
+    "alternativas": {
+      "A": "A mãe mata o filho em qualquer momento da vida.",
+      "B": "Qualquer pessoa mata recém-nascido por motivo fútil.",
+      "C": "A mãe mata o próprio filho, durante o parto ou logo após, sob influência do estado puerperal.",
+      "D": "O pai mata o filho recém-nascido.",
+      "E": "A mãe provoca aborto com consentimento."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 123: exige estado puerperal e momento do parto ou logo após."
+  },
+  {
+    "id": "700444",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto provocado pela gestante",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Pratica o crime previsto no art. 124 do Código Penal quem:",
+    "alternativas": {
+      "A": "Provoca aborto sem consentimento da gestante.",
+      "B": "Provoca aborto em si mesma ou consente que outrem o provoque.",
+      "C": "Auxilia suicídio.",
+      "D": "Provoca lesão corporal.",
+      "E": "Pratica homicídio culposo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 124: trata do aborto praticado pela própria gestante ou com seu consentimento."
+  },
+  {
+    "id": "700445",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto sem consentimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime de provocar aborto sem consentimento da gestante possui pena de:",
+    "alternativas": {
+      "A": "Detenção de 1 a 3 anos.",
+      "B": "Reclusão de 1 a 4 anos.",
+      "C": "Reclusão de 3 a 10 anos.",
+      "D": "Reclusão de 6 a 20 anos.",
+      "E": "Multa apenas."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 125: reclusão de 3 a 10 anos."
+  },
+  {
+    "id": "700446",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto com consentimento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quando o aborto é provocado com o consentimento da gestante, a pena será:",
+    "alternativas": {
+      "A": "Reclusão de 3 a 10 anos.",
+      "B": "Reclusão de 1 a 4 anos.",
+      "C": "Detenção de 2 a 6 anos.",
+      "D": "Multa.",
+      "E": "Isento de pena."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 126: reclusão de 1 a 4 anos."
+  },
+  {
+    "id": "700447",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto qualificado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Código Penal, as penas dos crimes de aborto são aumentadas quando:",
+    "alternativas": {
+      "A": "O agente é primário.",
+      "B": "Há arrependimento posterior.",
+      "C": "A gestante sofre lesão corporal grave ou morre em decorrência do aborto.",
+      "D": "O crime é tentado.",
+      "E": "A gestante consente com o ato."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 127: prevê aumento ou duplicação da pena nesses casos."
+  },
+  {
+    "id": "700448",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto permitido",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Não se pune o aborto praticado por médico quando:",
+    "alternativas": {
+      "A": "Há consentimento do agente.",
+      "B": "A gestante deseja interromper a gravidez por motivos pessoais.",
+      "C": "Não há outro meio de salvar a vida da gestante.",
+      "D": "O agente é primário.",
+      "E": "O fato ocorre fora do hospital."
+    },
+    "resposta_correta": "C",
+    "comentario": "Art. 128, I: aborto necessário."
+  },
+  {
+    "id": "700449",
+    "disciplina": "Direito Penal",
+    "assunto": "Aborto em caso de estupro",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O aborto resultante de gravidez decorrente de estupro não é punido quando:",
+    "alternativas": {
+      "A": "Há autorização judicial.",
+      "B": "Há consentimento da gestante ou de seu representante legal.",
+      "C": "O agente é primário.",
+      "D": "O crime ocorreu há menos de 6 meses.",
+      "E": "A vítima é maior de idade."
+    },
+    "resposta_correta": "B",
+    "comentario": "Art. 128, II: exige consentimento da gestante ou representante legal."
+  },
+  {
+"id": "700501",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Classificação",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "Durante uma briga em um bar, Mário desfere um golpe com uma garrafa contra o rosto de Lucas, causando-lhe um profundo corte. Após a completa cicatrização, o ferimento resulta em uma marca estética severamente visível e permanente que altera significativamente e de forma definitiva as feições originais da vítima. De acordo com os parágrafos do Art. 129 do Código Penal, Mário cometeu lesão corporal de natureza:",
+"alternativas": {
+"A": "grave, pois resultou em debilidade permanente de função anatômica.",
+"B": "gravíssima, pois resultou em deformidade permanente.",
+"C": "grave, pois resultou em incapacidade para as ocupações habituais por mais de trinta dias.",
+"D": "gravíssima, pois resultou em perigo de vida evidente."
+},
+"resposta_correta": "B",
+"comentario": "O resultado 'deformidade permanente' classifica a lesão corporal como gravíssima, conforme expresso no Art. 129, § 2º, inciso IV, sujeitando o agente à pena de reclusão de dois a oito anos."
+},
+{
+"id": "700502",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Causas de Diminuição e Substituição",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "Analise as afirmativas a seguir sobre as causas de diminuição e substituição de pena no crime de lesão corporal, considerando estritamente o que dispõe o Art. 129 do Código Penal:\n\nI. Se o agente comete o crime impelido por motivo de relevante valor social ou moral, o juiz pode reduzir a pena de um sexto a um terço.\nII. Sendo as lesões de natureza grave, o juiz pode substituir a pena de prisão por multa se ficar comprovado que as agressões foram recíprocas.\nIII. A pena de detenção pode ser substituída pela de multa se o crime for cometido sob o domínio de violenta emoção, logo em seguida a injusta provocação da vítima, desde que as lesões não sejam graves.\n\nEstá correto o que se afirma em:",
+"alternativas": {
+"A": "I e II, apenas.",
+"B": "I e III, apenas.",
+"C": "II e III, apenas.",
+"D": "I, II e III."
+},
+"resposta_correta": "B",
+"comentario": "A assertiva II está incorreta pois o § 5º do Art. 129 veda expressamente a substituição por multa se as lesões forem graves ('O juiz, não sendo graves as lesões, pode ainda substituir...'). As afirmativas I e III estão corretas, amparadas nos §§ 4º e 5º do mesmo artigo."
+},
+{
+"id": "700503",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Marco Legal do Combate ao Crime Organizado",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "O Código Penal sofreu alterações recentes visando recrudescer as penas para crimes cometidos no contexto de organizações criminosas. Suponha que um indivíduo, no contexto da atuação de um grupo criminoso, pratique lesão corporal contra uma vítima, da qual resulte a morte. Fica evidenciado no processo que ele não quis o resultado morte nem assumiu o risco de produzi-lo. Nos termos do § 3º-A do Art. 129 (incluído pela Lei nº 15.358/2026), a pena aplicável a este caso específico é de:",
+"alternativas": {
+"A": "reclusão, de quatro a doze anos.",
+"B": "reclusão, de 12 (doze) a 30 (trinta) anos.",
+"C": "reclusão, de 20 (vinte) a 40 (quarenta) anos.",
+"D": "reclusão, de dois a oito anos, com aumento de dois terços."
+},
+"resposta_correta": "C",
+"comentario": "Conforme o § 3º-A do Art. 129, se a lesão corporal seguida de morte (§ 3º) é cometida no contexto da atuação prevista na lei do marco legal do combate ao crime organizado, a pena é recrudescida para reclusão de 20 a 40 anos."
+},
+{
+"id": "700504",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Contra Agentes de Segurança Pública",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "Durante uma abordagem de rotina para garantia da ordem, um Guarda Civil Municipal (integrante das forças descritas no art. 144 da CF) é agredido dolosamente por um indivíduo, sofrendo lesões corporais. A agressão ocorreu estritamente em razão do exercício da função do agente público. De acordo com o § 12 do Art. 129 do Código Penal, essa circunstância atrai a seguinte consequência penal:",
+"alternativas": {
+"A": "Aumenta-se a pena de 1/3 (um terço) a 2/3 (dois terços).",
+"B": "Qualifica o crime, determinando pena fixa de reclusão de dois a oito anos.",
+"C": "Aumenta-se a pena em 2/3 (dois terços) ao dobro.",
+"D": "Constitui apenas agravante genérica, sem fração de aumento prevista no referido artigo."
+},
+"resposta_correta": "A",
+"comentario": "Segundo o Art. 129, § 12, inciso I, alínea 'a', aumenta-se a pena de 1/3 a 2/3 se a lesão dolosa for praticada contra autoridade ou agente descrito nos arts. 142 e 144 da CF no exercício da função ou em decorrência dela."
+},
+{
+"id": "700505",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Violência Doméstica",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "Roberto, prevalecendo-se exclusivamente das relações de coabitação e hospitalidade, agride fisicamente seu irmão mais novo, causando-lhe lesões corporais de natureza leve. Considerando a regra específica aplicável à violência doméstica estabelecida no § 9º do Art. 129 do CP, assinale a alternativa que indica corretamente a pena prevista para a conduta de Roberto:",
+"alternativas": {
+"A": "Detenção, de três meses a um ano.",
+"B": "Detenção, de dois meses a um ano.",
+"C": "Reclusão, de um a quatro anos, podendo ser substituída por multa.",
+"D": "Reclusão, de 2 (dois) a 5 (cinco) anos."
+},
+"resposta_correta": "D",
+"comentario": "O Art. 129, § 9º, estabelece expressamente a pena de reclusão, de 2 (dois) a 5 (cinco) anos, se a lesão for praticada contra ascendente, descendente, irmão, cônjuge ou companheiro, ou com quem conviva ou tenha convivido, ou prevalecendo-se de relações domésticas, de coabitação ou de hospitalidade."
+},
+{
+"id": "700506",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Associação de Colunas",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "O Art. 129 do Código Penal distingue a gravidade da lesão corporal pelos resultados produzidos na vítima. Relacione as categorias legais da Coluna A com seus respectivos resultados descritos na Coluna B.\n\nColuna A\n1. Lesão Corporal de Natureza Grave (§ 1º)\n2. Lesão Corporal de Natureza Gravíssima (§ 2º)\n\nColuna B\n(  ) Aceleração de parto.\n(  ) Enfermidade incurável.\n(  ) Incapacidade permanente para o trabalho.\n\nA sequência correta de preenchimento dos parênteses, de cima para baixo, é:",
+"alternativas": {
+"A": "1, 2, 2.",
+"B": "2, 1, 2.",
+"C": "1, 1, 2.",
+"D": "2, 2, 1."
+},
+"resposta_correta": "A",
+"comentario": "Aceleração de parto é lesão grave (1), conforme o § 1º, IV. Enfermidade incurável é lesão gravíssima (2), conforme o § 2º, II. Incapacidade permanente para o trabalho é lesão gravíssima (2), conforme o § 2º, I. Logo, a sequência é 1, 2, 2."
+},
+{
+"id": "700507",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Instituição de Ensino",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "De acordo com as recentes inovações trazidas ao § 12 do Art. 129 do Código Penal, o juiz deverá aplicar a maior fração de aumento prevista para a lesão dolosa, qual seja, de 2/3 (dois terços) ao dobro, se o crime for praticado nas dependências de instituição de ensino e, cumulativamente, ocorrer a seguinte hipótese:",
+"alternativas": {
+"A": "a vítima for funcionário público no exercício regular de suas atribuições pedagógicas.",
+"B": "a vítima for pessoa com deficiência ou com doença que acarrete condição limitante ou de vulnerabilidade física ou mental.",
+"C": "o crime for cometido em concurso de duas ou mais pessoas, mediante a utilização de arma de fogo.",
+"D": "o autor do delito for aluno regularmente matriculado na instituição e maior de 18 anos."
+},
+"resposta_correta": "B",
+"comentario": "Conforme o Art. 129, § 12, inciso II, alínea 'a', aumenta-se a pena de 2/3 ao dobro se a lesão dolosa for praticada nas dependências de instituição de ensino e a vítima for pessoa com deficiência ou com doença que acarrete condição limitante ou de vulnerabilidade física ou mental."
+},
+{
+"id": "700508",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Por Razões da Condição do Sexo Feminino",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "Joana sofreu agressões físicas na rua por parte de um homem com o qual não possuía nenhum vínculo. Durante a instrução processual, ficou amplamente comprovado e reconhecido pelo juízo que o agressor praticou a lesão corporal contra ela exclusivamente por razões da condição do sexo feminino. Conforme a redação do § 13 do Art. 129 do Código Penal, a pena base prevista para esta conduta específica é de:",
+"alternativas": {
+"A": "detenção, de três meses a um ano.",
+"B": "reclusão, de um a cinco anos.",
+"C": "reclusão, de 2 (dois) a 5 (cinco) anos.",
+"D": "reclusão, de quatro a doze anos."
+},
+"resposta_correta": "C",
+"comentario": "O § 13 do Art. 129, com redação dada pela Lei nº 14.994/2024, determina que, se a lesão é praticada contra a mulher por razões da condição do sexo feminino, a pena é de reclusão, de 2 (dois) a 5 (cinco) anos."
+},
+{
+"id": "700509",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Culposa",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "A respeito do crime de lesão corporal, analise as proposições à luz das modalidades dolosa e culposa previstas no Art. 129 do CP e assinale a alternativa INCORRETA:",
+"alternativas": {
+"A": "A pena base cominada à lesão corporal na sua modalidade estritamente culposa é de detenção, de dois meses a um ano.",
+"B": "Aplica-se à lesão corporal culposa o instituto do perdão judicial, permitindo ao magistrado deixar de aplicar a pena se as consequências da infração atingirem o próprio agente de forma tão grave que a sanção se torne desnecessária.",
+"C": "Caso uma lesão corporal resultante de imprudência no trânsito cause a perda de um membro da vítima, o autor do fato responderá criminalmente por lesão corporal gravíssima.",
+"D": "A pena da lesão culposa será aumentada em um terço se o agente deixar de prestar socorro imediato à vítima, desde que não o faça com risco pessoal."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C é a incorreta pois a classificação em 'grave' ou 'gravíssima' aplica-se exclusivamente à lesão corporal dolosa. Na lesão culposa, não há gradação penal com base nos resultados descritos nos §§ 1º e 2º; a pena base é única (detenção de 2 meses a 1 ano), sujeita a causas de aumento, mas não à requalificação como gravíssima."
+},
+{
+"id": "700510",
+"disciplina": "Direito Penal",
+"assunto": "Lesão Corporal - Aumento de Pena no Âmbito Doméstico",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Guarda Civil Municipal",
+"nivel": "Médio",
+"enunciado": "Nos crimes de lesão corporal cometidos no âmbito da violência doméstica e familiar, cuja pena base de reclusão de 2 a 5 anos já se encontra fixada no § 9º do Art. 129 do Código Penal, existe uma causa específica de aumento estipulada no § 11 do mesmo dispositivo legal. Segundo o referido parágrafo, a pena dessa conduta será majorada em 1/3 (um terço) caso o crime seja cometido especificamente contra:",
+"alternativas": {
+"A": "mulher durante o período de gestação ou puerpério.",
+"B": "pessoa maior de 60 (sessenta) anos ou menor de 14 (catorze) anos.",
+"C": "ascendente em linha reta desprovido de capacidade civil plena.",
+"D": "pessoa portadora de deficiência."
+},
+"resposta_correta": "D",
+"comentario": "O Art. 129, § 11, do Código Penal prevê de forma literal e exclusiva que: 'Na hipótese do § 9º deste artigo, a pena será aumentada de um terço se o crime for cometido contra pessoa portadora de deficiência.'"
+},
+  {
+    "id": "700601",
+    "disciplina": "Direito Penal",
+    "assunto": "Intimidação Sistemática (Bullying) - Art. 146-A",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Lei nº 14.811/2024 tipificou a intimidação sistemática no Código Penal. Caio, valendo-se de um aplicativo de mensagens, passou a intimidar sistematicamente seu colega de trabalho, de modo intencional e repetitivo, enviando mensagens humilhantes. Nos termos do parágrafo único do Art. 146-A (cyberbullying), a pena aplicável a Caio, se a conduta não constituir crime mais grave, é de:",
+    "alternativas": {
+      "A": "detenção, de três meses a um ano, ou multa.",
+      "B": "apenas multa, no dobro do valor fixado para a forma presencial.",
+      "C": "reclusão, de 2 (dois) anos a 4 (quatro) anos, e multa.",
+      "D": "detenção, de um a seis meses."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o parágrafo único do Art. 146-A, se a intimidação sistemática (cyberbullying) é realizada por meio da rede de computadores, rede social, aplicativos ou qualquer outro meio virtual, a pena é de reclusão, de 2 a 4 anos, e multa."
+  },
+  {
+    "id": "700602",
+    "disciplina": "Direito Penal",
+    "assunto": "Intimidação Sistemática (Bullying) - Art. 146-A",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o crime de intimidação sistemática (bullying), inserido no Art. 146-A do Código Penal, assinale a afirmativa INCORRETA:",
+    "alternativas": {
+      "A": "Pode ser praticado de forma individual ou em grupo.",
+      "B": "Exige que a conduta seja intencional e repetitiva, sem motivação evidente.",
+      "C": "A pena base para a conduta em sua modalidade simples (não virtual) é exclusivamente de multa, se não constituir crime mais grave.",
+      "D": "Para sua configuração, é obrigatório o emprego de violência física, não bastando a violência puramente psicológica."
+    },
+    "resposta_correta": "D",
+    "comentario": "A alternativa D está incorreta pois o caput do Art. 146-A prevê expressamente que a intimidação pode ocorrer 'mediante violência física ou psicológica'."
+  },
+  {
+    "id": "700603",
+    "disciplina": "Direito Penal",
+    "assunto": "Ameaça - Art. 147",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A respeito do crime de ameaça (Art. 147 do Código Penal), analise as afirmativas a seguir:\n\nI - Pode ser cometido por palavra, escrito, gesto ou qualquer outro meio simbólico.\nII - A regra geral é que a ação penal somente se procede mediante representação do ofendido.\nIII - Se o crime é cometido contra a mulher por razões da condição do sexo feminino, a pena é aplicada em dobro e a ação penal prescinde de representação.\n\nEstá correto o que se afirma em:",
+    "alternativas": {
+      "A": "I e II, apenas.",
+      "B": "I e III, apenas.",
+      "C": "II e III, apenas.",
+      "D": "I, II e III."
+    },
+    "resposta_correta": "D",
+    "comentario": "Todas as afirmativas estão corretas. A I traz os meios de execução (caput). A II reflete a regra do § 2º. A III espelha o § 1º (pena em dobro) e a exceção do § 2º (não precisa de representação nesta hipótese específica)."
+  },
+  {
+    "id": "700604",
+    "disciplina": "Direito Penal",
+    "assunto": "Ameaça - Art. 147",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante uma discussão no trânsito, Roberto simula estar sacando uma arma de fogo da cintura, com o nítido intuito de intimidar o outro motorista com a promessa de um mal injusto e grave. Diante dos fatos, a conduta de Roberto:",
+    "alternativas": {
+      "A": "Não configura crime, pois a ameaça exige necessariamente a manifestação verbal explícita.",
+      "B": "Configura o crime de ameaça, consumado por meio de gesto ou meio simbólico.",
+      "C": "Configura o crime de constrangimento ilegal, pois a intenção era obrigar o motorista a fugir.",
+      "D": "Constitui apenas infração administrativa de trânsito, sem repercussão na esfera penal."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 147 prevê expressamente que a ameaça de causar mal injusto e grave pode ser praticada 'por palavra, escrito ou gesto, ou qualquer outro meio simbólico'."
+  },
+  {
+    "id": "700605",
+    "disciplina": "Direito Penal",
+    "assunto": "Perseguição (Stalking) - Art. 147-A",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No crime de perseguição (Art. 147-A), a pena aplicável é aumentada de metade em determinadas circunstâncias. Assinale a alternativa que NÃO apresenta uma causa de aumento legalmente prevista para este delito:",
+    "alternativas": {
+      "A": "Quando o crime é cometido contra criança, adolescente ou idoso.",
+      "B": "Quando o crime é praticado com o emprego de arma.",
+      "C": "Quando o crime é cometido mediante concurso de 2 (duas) ou mais pessoas.",
+      "D": "Quando o crime é cometido contra funcionário público no exercício da função."
+    },
+    "resposta_correta": "D",
+    "comentario": "O § 1º do Art. 147-A não prevê causa de aumento por ser a vítima funcionário público. As majorantes são: contra criança/adolescente/idoso (I), contra mulher por razões de gênero (II), e concurso de pessoas ou emprego de arma (III)."
+  },
+  {
+    "id": "700606",
+    "disciplina": "Direito Penal",
+    "assunto": "Perseguição (Stalking) - Art. 147-A",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Mévio, inconformado com o término de seu relacionamento amoroso, passa a seguir sua ex-namorada reiteradamente pelas ruas, enviando-lhe dezenas de mensagens diárias e restringindo-lhe a capacidade de locomoção por causar-lhe medo constante. Sobre a responsabilização penal dessa conduta, nos termos do Art. 147-A (Perseguição), é correto afirmar que:",
+    "alternativas": {
+      "A": "Se houver violência física associada à perseguição, Mévio responderá apenas pela lesão, aplicando-se o princípio da consunção.",
+      "B": "A ação penal para o crime de perseguição é pública incondicionada em qualquer hipótese.",
+      "C": "As penas do crime de perseguição são aplicáveis sem prejuízo das correspondentes à eventual violência praticada.",
+      "D": "O crime não resta configurado, pois a conduta se deu em ambiente físico e virtual concomitantemente, fato não abarcado pelo tipo penal."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o § 2º do Art. 147-A, 'As penas deste artigo são aplicáveis sem prejuízo das correspondentes à violência' (concurso material). Além disso, a conduta pode ser por 'qualquer meio' (caput), e exige representação (§ 3º)."
+  },
+  {
+    "id": "700607",
+    "disciplina": "Direito Penal",
+    "assunto": "Violência psicológica contra a mulher - Art. 147-B",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "João, com o intuito de controlar o comportamento de sua esposa, passa a isolá-la de seus amigos e familiares, ridicularizando-a frequentemente em público e limitando seu direito de ir e vir, causando-lhe severo prejuízo à saúde psicológica. Essa conduta específica encontra adequação típica no Código Penal como:",
+    "alternativas": {
+      "A": "Cárcere privado, com pena de reclusão de um a três anos.",
+      "B": "Violência psicológica contra a mulher.",
+      "C": "Intimidação sistemática (bullying).",
+      "D": "Redução a condição análoga à de escravo."
+    },
+    "resposta_correta": "B",
+    "comentario": "A conduta descrita amolda-se perfeitamente ao Art. 147-B: 'Causar dano emocional à mulher... ou que vise a degradar ou a controlar suas ações... mediante ameaça, constrangimento, humilhação, manipulação, isolamento... ridicularização, limitação do direito de ir e vir...'."
+  },
+  {
+    "id": "700608",
+    "disciplina": "Direito Penal",
+    "assunto": "Violência psicológica contra a mulher - Art. 147-B",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Lei nº 15.123/2025 inseriu uma nova causa de aumento de pena no crime de violência psicológica contra a mulher (Art. 147-B). De acordo com a inovação legislativa, a pena é aumentada de metade se o crime é cometido:",
+    "alternativas": {
+      "A": "contra mulher idosa ou gestante.",
+      "B": "mediante o emprego de arma de fogo de uso restrito.",
+      "C": "mediante concurso de duas ou mais pessoas em ambiente intrafamiliar.",
+      "D": "mediante uso de inteligência artificial ou de qualquer outro recurso tecnológico que altere imagem ou som da vítima."
+    },
+    "resposta_correta": "D",
+    "comentario": "Conforme o parágrafo único do Art. 147-B (incluído pela Lei nº 15.123, de 2025), a pena é aumentada de metade se o crime envolver o uso de inteligência artificial ou outro recurso que altere imagem ou som da vítima (ex: deepfakes)."
+  },
+  {
+    "id": "700609",
+    "disciplina": "Direito Penal",
+    "assunto": "Ameaça no contexto do crime organizado - Art. 147-C",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Art. 147-C foi incluído recentemente no Código Penal para punir de forma mais severa a ameaça cometida no contexto da atuação ou para a consecução das condutas previstas no marco legal do combate ao crime organizado. Para esta modalidade específica de ameaça, a pena cominada em lei é de:",
+    "alternativas": {
+      "A": "detenção, de um a seis meses.",
+      "B": "reclusão, de 1 (um) a 3 (três) anos.",
+      "C": "reclusão, de 6 (seis) meses a 2 (dois) anos.",
+      "D": "reclusão, de 4 (quatro) a 8 (oito) anos."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 147-C, introduzido pela Lei nº 15.358/2026, a ameaça realizada no contexto do marco legal do combate ao crime organizado atrai uma pena autônoma e mais gravosa de reclusão, de 1 (um) a 3 (três) anos."
+  },
+  {
+    "id": "700610",
+    "disciplina": "Direito Penal",
+    "assunto": "Ameaça no contexto do crime organizado - Art. 147-C",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Comparando-se o crime de Ameaça simples (Art. 147) com a nova tipificação de Ameaça no contexto do crime organizado (Art. 147-C), podemos afirmar que a principal distinção penal para o agente infrator recai sobre:",
+    "alternativas": {
+      "A": "os meios de execução, já que a ameaça do crime organizado não admite a forma simbólica ou escrita.",
+      "B": "o bem jurídico tutelado, que passa a ser exclusivamente o patrimônio público.",
+      "C": "a natureza e o quantum da pena imposta, que passa de detenção para reclusão de 1 a 3 anos.",
+      "D": "a exclusão da culpabilidade, desde que a ameaça não chegue a se concretizar."
+    },
+    "resposta_correta": "C",
+    "comentario": "A diferença marcante é a pena. A ameaça do Art. 147 possui pena de detenção de 1 a 6 meses ou multa. Já o Art. 147-C pune a mesma conduta com reclusão de 1 a 3 anos quando inserida no contexto do crime organizado. Os meios de execução (palavra, escrito, gesto, simbólico) são idênticos no texto da lei."
+  },
+  {
+    "id": "700611",
+    "disciplina": "Direito Penal",
+    "assunto": "Sequestro e Cárcere Privado - Art. 148",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No que tange ao crime de sequestro e cárcere privado (Art. 148 do CP), a pena base de reclusão de um a três anos sofre qualificadora, passando para reclusão de dois a cinco anos, em diversas hipóteses. Analise as opções e assinale aquela que NÃO configura legalmente uma dessas hipóteses (Art. 148, § 1º):",
+    "alternativas": {
+      "A": "Se a vítima é maior de 60 (sessenta) anos.",
+      "B": "Se o crime é praticado mediante internação da vítima em casa de saúde ou hospital.",
+      "C": "Se a privação da liberdade dura mais de 10 (dez) dias.",
+      "D": "Se o crime é praticado com fins libidinosos."
+    },
+    "resposta_correta": "C",
+    "comentario": "A alternativa C está incorreta porque o inciso III do § 1º estabelece a qualificadora se a privação da liberdade dura mais de 15 (quinze) dias, e não 10 dias."
+  },
+  {
+    "id": "700612",
+    "disciplina": "Direito Penal",
+    "assunto": "Sequestro e Cárcere Privado - Art. 148",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Lei nº 15.358/2026 instituiu penas rigorosas para delitos cometidos no âmbito de organizações criminosas. Se o crime de sequestro e cárcere privado for cometido por integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto de atuação do marco legal respectivo, a pena fixada pelo § 3º do Art. 148 é de:",
+    "alternativas": {
+      "A": "reclusão, de dois a oito anos.",
+      "B": "reclusão, de 4 (quatro) a 12 (doze) anos.",
+      "C": "reclusão, de 12 (doze) a 20 (vinte) anos.",
+      "D": "prisão perpétua."
+    },
+    "resposta_correta": "C",
+    "comentario": "De acordo com o § 3º do Art. 148, incluído pela Lei nº 15.358/2026, a pena para esta modalidade específica ligada ao crime organizado é de reclusão, de 12 (doze) a 20 (vinte) anos."
+  },
+  {
+    "id": "700613",
+    "disciplina": "Direito Penal",
+    "assunto": "Redução a condição análoga à de escravo - Art. 149",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Considere o crime de redução a condição análoga à de escravo (Art. 149). Incorre nas MESMAS penas cominadas no caput (reclusão, de dois a oito anos, e multa) aquele que, com o fim de reter o trabalhador no local de trabalho:\n\nI - cerceia o uso de qualquer meio de transporte por parte do trabalhador.\nII - mantém vigilância ostensiva no local de trabalho.\nIII - se apodera de documentos ou objetos pessoais do trabalhador.\n\nEstá correto o que se afirma em:",
+    "alternativas": {
+      "A": "I e II, apenas.",
+      "B": "II e III, apenas.",
+      "C": "I e III, apenas.",
+      "D": "I, II e III."
+    },
+    "resposta_correta": "D",
+    "comentario": "Todas as afirmativas estão corretas e encontram amparo literal nos incisos I e II do § 1º do Art. 149, que equiparam tais condutas ao crime de redução a condição análoga à de escravo."
+  },
+  {
+    "id": "700614",
+    "disciplina": "Direito Penal",
+    "assunto": "Redução a condição análoga à de escravo - Art. 149",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Em fiscalização rural, a autoridade policial constatou a prática de redução a condição análoga à de escravo contra diversos trabalhadores. Verificou-se que o empregador submetia os trabalhadores a tais condições exclusivamente por motivo de preconceito de origem contra imigrantes de determinada região. Nos termos do § 2º do Art. 149, essa motivação gera a seguinte consequência:",
+    "alternativas": {
+      "A": "Aplica-se a pena em dobro.",
+      "B": "A pena é aumentada de metade.",
+      "C": "Aumenta-se a pena em 1/3 (um terço).",
+      "D": "Qualifica o crime, determinando o cumprimento inicial da pena em regime fechado."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 149, § 2º, inciso II, a pena é aumentada de metade se o crime é cometido por motivo de preconceito de raça, cor, etnia, religião ou origem."
+  },
+  {
+    "id": "700615",
+    "disciplina": "Direito Penal",
+    "assunto": "Tráfico de Pessoas - Art. 149-A",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime de Tráfico de Pessoas (Art. 149-A), caracterizado pelo agenciamento, aliciamento, alojamento ou transporte de pessoa mediante grave ameaça, violência, coação, fraude ou abuso, exige um dolo específico (finalidade). Qual das alternativas abaixo NÃO está prevista em lei como uma finalidade para este crime?",
+    "alternativas": {
+      "A": "Remover-lhe órgãos, tecidos ou partes do corpo.",
+      "B": "Submetê-la a adoção ilegal.",
+      "C": "Utilização da vítima como "mula" para o transporte internacional de entorpecentes.",
+      "D": "Exploração sexual."
+    },
+    "resposta_correta": "C",
+    "comentario": "As finalidades expressas no Art. 149-A são: remoção de órgãos/tecidos (I), trabalho análogo a escravo (II), qualquer tipo de servidão (III), adoção ilegal (IV) e exploração sexual (V). O uso como 'mula' não consta rol taxativo das finalidades deste artigo."
+  },
+  {
+    "id": "700616",
+    "disciplina": "Direito Penal",
+    "assunto": "Tráfico de Pessoas - Art. 149-A",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o crime de Tráfico de Pessoas (Art. 149-A), existe a previsão de que a pena pode ser reduzida de 1 (um) a 2/3 (dois terços) pelo juiz. Para que essa causa de diminuição seja aplicada, o agente infrator deve preencher, cumulativamente, os seguintes requisitos:",
+    "alternativas": {
+      "A": "Ter confessado espontaneamente o crime e restituído a vítima à sua família.",
+      "B": "Ser primário e não integrar organização criminosa.",
+      "C": "Ter agido sob forte violenta emoção, logo em seguida a injusta provocação da vítima.",
+      "D": "Não ter causado lesão corporal à vítima e ser menor de 21 anos na data do fato."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme disposto no § 2º do Art. 149-A: 'A pena é reduzida de um a dois terços se o agente for primário e não integrar organização criminosa'."
+  },
+  {
+    "id": "700617",
+    "disciplina": "Direito Penal",
+    "assunto": "Violação de Domicílio - Art. 150",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para a correta aplicação da tipificação do crime de Violação de Domicílio, a lei penal traz um conceito estendido do que se entende por 'casa'. Relacione os locais descritos nas alternativas com o Art. 150, §§ 4º e 5º, e assinale o que o Código Penal COMPREENDE expressamente na expressão 'casa':",
+    "alternativas": {
+      "A": "Hospedaria ou estalagem, enquanto aberta ao público.",
+      "B": "Taverna, bar e casa de jogo.",
+      "C": "Veículo automotor de transporte coletivo de passageiros.",
+      "D": "Compartimento não aberto ao público, onde alguém exerce profissão ou atividade."
+    },
+    "resposta_correta": "D",
+    "comentario": "Segundo o Art. 150, § 4º, inciso III, a expressão casa compreende 'compartimento não aberto ao público, onde alguém exerce profissão ou atividade'. As opções A e B estão no rol das exceções (§ 5º), ou seja, não são consideradas casa."
+  },
+  {
+    "id": "700618",
+    "disciplina": "Direito Penal",
+    "assunto": "Violação de Domicílio - Art. 150",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A proteção ao domicílio comporta exceções justificáveis. O § 3º do Art. 150 do Código Penal elenca situações em que a entrada ou permanência em casa alheia, mesmo sem o consentimento do morador, NÃO constitui crime. Assinale a alternativa que traz uma dessas excludentes de forma correta:",
+    "alternativas": {
+      "A": "Durante a noite, com observância das formalidades legais, para efetuar mandado de prisão civil.",
+      "B": "A qualquer hora do dia ou da noite, quando algum crime está sendo ali praticado ou na iminência de o ser.",
+      "C": "Durante o dia, pelo síndico do condomínio, para verificar possíveis infiltrações no apartamento.",
+      "D": "A qualquer hora do dia, por particular que deseja reaver bem móvel emprestado e não devolvido no prazo."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 150, § 3º, inciso II, autoriza expressamente a entrada 'a qualquer hora do dia ou da noite, quando algum crime está sendo ali praticado ou na iminência de o ser'. A entrada para efetuar prisão (inciso I) só não é crime se feita 'durante o dia'."
+  },
+  {
+    "id": "700701",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto - Privilegiado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Tício, réu primário e sem antecedentes criminais, subtrai para si uma barra de chocolate de pequeno valor de um supermercado. Sendo denunciado por furto simples, o juiz, ao proferir a sentença, reconhece o chamado 'furto privilegiado'. Nos termos do § 2º do Art. 155 do Código Penal, o magistrado pode adotar a seguinte medida:",
+    "alternativas": {
+      "A": "deixar de aplicar a pena (perdão judicial) por tratar-se de crime famélico.",
+      "B": "substituir a pena de reclusão pela de detenção, diminuí-la de um a dois terços, ou aplicar somente a pena de multa.",
+      "C": "aplicar unicamente a pena de prestação de serviços à comunidade pelo prazo de seis meses.",
+      "D": "reduzir a pena de reclusão de metade, obrigatoriamente, sendo vedada a conversão direta em multa."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o § 2º do Art. 155, se o criminoso é primário, e é de pequeno valor a coisa furtada, o juiz pode substituir a pena de reclusão pela de detenção, diminuí-la de um a dois terços, ou aplicar somente a pena de multa."
+  },
+  {
+    "id": "700702",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto - Coisa Móvel por Equiparação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Pedro faz uma ligação clandestina (conhecida popularmente como 'gato') diretamente no poste da concessionária de energia, passando a desviar energia elétrica para abastecer sua residência sem que o consumo seja registrado no medidor. Para fins de tipificação penal (Art. 155, § 3º), a energia elétrica no ordenamento jurídico brasileiro:",
+    "alternativas": {
+      "A": "é insuscetível de furto por não possuir dimensão corpórea, devendo o infrator responder apenas por estelionato.",
+      "B": "não possui materialidade física, configurando ilícito meramente civil a ser resolvido com a concessionária.",
+      "C": "equipara-se à coisa móvel, desde que possua valor econômico, tipificando perfeitamente o crime de furto.",
+      "D": "é considerada bem imóvel por destinação, caracterizando o crime de esbulho possessório de utilidade pública."
+    },
+    "resposta_correta": "C",
+    "comentario": "O § 3º do Art. 155 do Código Penal é expresso ao determinar que: 'Equipara-se à coisa móvel a energia elétrica ou qualquer outra que tenha valor econômico'."
+  },
+  {
+    "id": "700703",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto - Qualificado vs. Causa de Aumento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Art. 155 do Código Penal prevê diversas hipóteses que qualificam o crime de furto, bem como causas que geram o aumento da pena na terceira fase da dosimetria. Analise as opções a seguir e assinale aquela que se configura como uma CAUSA DE AUMENTO DE PENA, e não como uma qualificadora:",
+    "alternativas": {
+      "A": "Praticar o crime durante o repouso noturno.",
+      "B": "Cometer o furto com emprego de chave falsa.",
+      "C": "Subtrair o bem mediante concurso de duas ou mais pessoas.",
+      "D": "Atuar com destruição ou rompimento de obstáculo à subtração da coisa."
+    },
+    "resposta_correta": "A",
+    "comentario": "O repouso noturno é uma causa de aumento de pena (majorante) prevista no § 1º ('A pena aumenta-se de um terço...'). As alternativas B, C e D descrevem hipóteses de furto qualificado, previstas expressamente nos incisos I, III e IV do § 4º."
+  },
+  {
+    "id": "700704",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto - Fios, Cabos e Equipamentos (Lei 15.181/2025)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Com base na inclusão do § 8º ao Art. 155 pela Lei nº 15.181/2025, a subtração de fios, cabos ou equipamentos utilizados para fornecimento ou transmissão de energia elétrica, telefonia ou dados, passa a ter pena de reclusão de 2 a 8 anos e multa. Uma especificidade expressa pelo legislador quanto a esse tipo de furto é:",
+    "alternativas": {
+      "A": "a possibilidade de aplicação da redução e substituição previstas para o furto privilegiado (§ 2º), em qualquer caso.",
+      "B": "a sua conversão automática em crime de perigo comum se ocorrer queda de energia no município.",
+      "C": "a vedação absoluta da concessão de fiança na fase de inquérito policial.",
+      "D": "o aumento obrigatório da pena até o dobro caso a fiação seja propriedade de autarquia federal."
+    },
+    "resposta_correta": "A",
+    "comentario": "O § 8º do Art. 155, inserido pela Lei 15.181/2025, determina expressamente a aplicação de pena de 2 a 8 anos para subtração de fios/cabos, mas ressalva: 'aplicável, em qualquer caso, o disposto no § 2º deste artigo', ou seja, garante o direito ao privilégio se primário e pequeno valor."
+  },
+  {
+    "id": "700705",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto - Fraude Eletrônica contra Idoso",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Considere que um infrator, utilizando-se de um falso e-mail (phishing) bancário, consiga subtrair altos valores de uma conta corrente pertencente a um senhor de 70 anos de idade. Tendo em vista o crime de furto mediante fraude cometido por meio eletrônico (Art. 155, § 4º-B), o fato de a vítima ser idosa atrai a seguinte regra do § 4º-C:",
+    "alternativas": {
+      "A": "Qualifica o crime novamente, gerando concurso material de delitos.",
+      "B": "A pena base de reclusão de 4 a 8 anos aumenta-se de 1/3 (um terço) ao dobro.",
+      "C": "Aplica-se a mesma pena do estelionato contra idoso, pelo princípio da especialidade.",
+      "D": "Aumenta-se a pena em metade, de forma fixa e não variável."
+    },
+    "resposta_correta": "B",
+    "comentario": "De acordo com o Art. 155, § 4º-C, inciso II, a pena prevista para o furto eletrônico (§ 4º-B) aumenta-se de 1/3 (um terço) ao dobro, se o crime é praticado contra idoso ou vulnerável."
+  },
+  {
+    "id": "700706",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto - Veículo Automotor",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Marcos subtrai uma motocicleta estacionada em via pública na cidade de Campinas (SP) e, horas depois, é flagrado por policiais conduzindo o veículo já dentro da cidade de Pouso Alegre, no Estado de Minas Gerais. Considerando que houve transporte efetivo do bem para outro Estado, a conduta de Marcos configura:",
+    "alternativas": {
+      "A": "Furto simples consumado, pois o deslocamento posterior é mero exaurimento do crime.",
+      "B": "Furto qualificado com pena de reclusão de dois a oito anos.",
+      "C": "Crime federal de tráfico de veículos, atraindo a competência da Justiça Federal.",
+      "D": "Furto qualificado, punido com pena de reclusão de três a oito anos."
+    },
+    "resposta_correta": "D",
+    "comentario": "O Art. 155, § 5º, prevê qualificadora específica (com pena de reclusão de três a oito anos) se a subtração for de veículo automotor que venha a ser transportado para outro Estado ou para o exterior."
+  },
+  {
+    "id": "700707",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto - Semovente Domesticável",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante a madrugada, dois indivíduos invadem uma propriedade rural (sem romper obstáculos) e subtraem um bezerro para consumo e venda da carne. Para facilitar o transporte, abatem e esquartejam o animal ainda no pasto da fazenda, levando consigo as partes. De acordo com o Código Penal (Art. 155, § 6º), tal ação:",
+    "alternativas": {
+      "A": "Amolda-se ao furto qualificado pela subtração de semovente domesticável de produção, cuja pena independe do abate no local.",
+      "B": "Configura crime de dano qualificado ao patrimônio privado, visto que o bem (animal) foi destruído antes da posse pacífica.",
+      "C": "Caracteriza furto simples majorado unicamente pelo repouso noturno, já que o animal morto perde o status de semovente.",
+      "D": "Aplica-se, obrigatoriamente, a qualificadora de rompimento de obstáculo por tratar-se de ambiente rural."
+    },
+    "resposta_correta": "A",
+    "comentario": "Segundo o § 6º do Art. 155, tipifica qualificadora com pena de 2 a 5 anos a subtração de semovente domesticável de produção (abigeato), estipulando expressamente: 'ainda que abatido ou dividido em partes no local da subtração'."
+  },
+  {
+    "id": "700708",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto - Organização Criminosa (Lei 15.358/2026)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Lei nº 15.358, de 2026, incluiu o § 9º ao Art. 155 do Código Penal para reprimir com mais severidade os furtos ocorridos no contexto de organizações de alta periculosidade. Assinale a alternativa que traz as penas base cominadas para a subtração de coisa alheia móvel cometida por integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada:",
+    "alternativas": {
+      "A": "Reclusão, de 2 (dois) a 8 (oito) anos, sem aplicação de multa.",
+      "B": "Reclusão, de 4 (quatro) a 8 (oito) anos, e multa.",
+      "C": "Reclusão, de 4 (quatro) a 10 (dez) anos, e multa.",
+      "D": "Reclusão, de 10 (dez) a 20 (vinte) anos, e multa."
+    },
+    "resposta_correta": "C",
+    "comentario": "O texto literal do § 9º do Art. 155 (incluído pela referida Lei em 2026) prevê pena de 'reclusão de 4 (quatro) a 10 (dez) anos e multa' para esta qualificadora envolvendo integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada."
+  }
+]
+
