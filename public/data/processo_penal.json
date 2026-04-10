@@ -1,0 +1,287 @@
+[
+  {
+    "id": "900501",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 301)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante um patrulhamento de rotina, agentes da Guarda Civil Municipal presenciam um indivíduo cometendo um roubo. Ao mesmo tempo, um cidadão comum (particular) que passava pelo local também observa a cena. Nos termos do art. 301 do Código de Processo Penal, sobre a prisão em flagrante neste caso, é correto afirmar que:",
+    "alternativas": {
+      "A": "Tanto os agentes quanto o cidadão comum têm o dever de prender o indivíduo.",
+      "B": "Apenas os agentes policiais têm o dever de efetuar a prisão, enquanto para o cidadão comum trata-se de uma faculdade.",
+      "C": "O cidadão comum é proibido de efetuar a prisão, devendo apenas acionar as autoridades competentes.",
+      "D": "Nenhuma das partes pode efetuar a prisão sem a prévia expedição de um mandado judicial."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o art. 301 do CPP, 'Qualquer do povo poderá e as autoridades policiais e seus agentes deverão prender quem quer que seja encontrado em flagrante delito'. Portanto, trata-se de faculdade (poderá) para o particular e dever (deverão) para os agentes."
+  },
+  {
+    "id": "900502",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 302)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com o art. 302 do Código de Processo Penal, considera-se em flagrante delito quem:\n\nI. Está cometendo a infração penal ou acaba de cometê-la.\nII. É perseguido, a qualquer tempo, pela autoridade, pelo ofendido ou por qualquer pessoa, em situação que faça presumir ser autor da infração.\nIII. É encontrado, logo depois, com instrumentos, armas, objetos ou papéis que façam presumir ser ele autor da infração.\n\nEstá correto o que se afirma em:",
+    "alternativas": {
+      "A": "I e II, apenas.",
+      "B": "I e III, apenas.",
+      "C": "II e III, apenas.",
+      "D": "I, II e III."
+    },
+    "resposta_correta": "B",
+    "comentario": "A assertiva II está incorreta porque o inciso III do art. 302 exige que a perseguição ocorra 'logo após' a infração, e não 'a qualquer tempo'. As assertivas I e III reproduzem fielmente as situações de flagrante dos incisos I, II e IV do art. 302 do CPP."
+  },
+  {
+    "id": "900503",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 303)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Marcos mantém uma vítima em cativeiro mediante extorsão mediante sequestro, crime de natureza permanente. De acordo com as disposições do Código de Processo Penal sobre a prisão em flagrante (Art. 303), é correto afirmar que:",
+    "alternativas": {
+      "A": "A prisão em flagrante só poderá ocorrer nas primeiras 24 horas após a privação inicial da liberdade da vítima.",
+      "B": "O estado de flagrância de Marcos cessa imediatamente após o registro do boletim de ocorrência pela família.",
+      "C": "Entende-se o agente em flagrante delito enquanto não cessar a permanência da infração.",
+      "D": "A prisão em flagrante é incabível nessa modalidade criminosa, devendo a autoridade policial solicitar prisão preventiva."
+    },
+    "resposta_correta": "C",
+    "comentario": "Nos termos literais do art. 303 do CPP: 'Nas infrações permanentes, entende-se o agente em flagrante delito enquanto não cessar a permanência'."
+  },
+  {
+    "id": "900504",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 304, caput)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Apresentado o preso em flagrante à autoridade competente, o Código de Processo Penal determina uma ordem para as oitivas visando a lavratura do auto. Segundo o caput do art. 304, a autoridade deverá:",
+    "alternativas": {
+      "A": "Ouvir primeiro o acusado, em seguida o condutor e, por fim, as testemunhas.",
+      "B": "Ouvir primeiramente as testemunhas da infração para, depois, ouvir o condutor do preso e o acusado.",
+      "C": "Interrogar o acusado e, apenas se houver confissão, dispensar a oitiva do condutor e das testemunhas.",
+      "D": "Ouvir o condutor e as testemunhas que o acompanharam e, na sequência, interrogar o acusado sobre a imputação."
+    },
+    "resposta_correta": "D",
+    "comentario": "O art. 304 do CPP dispõe claramente a ordem cronológica: 'Apresentado o preso à autoridade competente, ouvirá esta o condutor e as testemunhas que o acompanharam e interrogará o acusado sobre a imputação que lhe é feita...'."
+  },
+  {
+    "id": "900505",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 304, § 1º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do art. 304, § 1º, do CPP, após a oitiva do condutor, das testemunhas e o interrogatório do acusado, resultando das respostas fundada suspeita contra o conduzido, a autoridade policial deverá:",
+    "alternativas": {
+      "A": "Remeter o preso imediatamente ao juiz para que decida, em 24 horas, se expede o mandado de recolhimento.",
+      "B": "Mandar recolhê-lo à prisão, exceto no caso de livrar-se solto ou de prestar fiança, e prosseguir nos atos do inquérito.",
+      "C": "Conceder liberdade provisória de forma incondicional e obrigatória, instaurando-se inquérito por portaria.",
+      "D": "Relaxar a prisão em flagrante por falta de mandado prévio, independente de haver fundada suspeita."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o art. 304, § 1º, do CPP: 'Resultando das respostas fundada suspeita contra o conduzido, a autoridade mandará recolhê-lo à prisão, exceto no caso de livrar-se solto ou de prestar fiança...'."
+  },
+  {
+    "id": "900506",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 304, § 2º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante a madrugada, um policial em patrulhamento isolado prende um indivíduo em flagrante. Não havia nenhuma outra pessoa no local que tivesse presenciado o crime. Ao apresentar o preso à autoridade policial na delegacia, nos termos do art. 304, § 2º, do CPP:",
+    "alternativas": {
+      "A": "O auto de prisão não será lavrado, devendo o conduzido ser liberado imediatamente por falta de provas testemunhais do fato.",
+      "B": "A falta de testemunhas da infração não impedirá o auto; mas, com o condutor, deverão assiná-lo pelo menos duas pessoas que testemunharam a apresentação do preso.",
+      "C": "O escrivão de polícia assumirá formalmente o papel de testemunha ocular da infração para suprir a lacuna.",
+      "D": "O condutor do preso deverá assinar o auto de prisão por três vezes em campos distintos, suprindo a ausência das testemunhas."
+    },
+    "resposta_correta": "B",
+    "comentario": "A legislação prevê a figura das 'testemunhas de apresentação'. O art. 304, § 2º afirma: 'A falta de testemunhas da infração não impedirá o auto de prisão em flagrante; mas, nesse caso, com o condutor, deverão assiná-lo pelo menos duas pessoas que hajam testemunhado a apresentação do preso à autoridade'."
+  },
+  {
+    "id": "900507",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 304, § 3º)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Após a lavratura do auto de prisão em flagrante, o acusado se recusa peremptoriamente a assinar o documento. Diante dessa situação, conforme a regra do art. 304, § 3º, do Código de Processo Penal, o procedimento legal adequado é:",
+    "alternativas": {
+      "A": "A autoridade policial assinará pelo acusado, atestando a sua recusa e encerrando o ato processual.",
+      "B": "O auto será invalidado, uma vez que a assinatura do acusado é requisito de validade essencial do flagrante.",
+      "C": "O auto de prisão em flagrante será assinado por duas testemunhas, que lhe tenham ouvido a leitura na presença do acusado, do condutor e das testemunhas.",
+      "D": "O condutor atestará a recusa do preso mediante o uso de força moderada para a coleta da impressão digital."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 304, § 3º, dispõe: 'Quando o acusado se recusar a assinar, não souber ou não puder fazê-lo, o auto de prisão em flagrante será assinado por duas testemunhas, que lhe tenham ouvido a leitura na presença do acusado, do condutor e das testemunhas'."
+  },
+  {
+    "id": "900508",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 305)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Em uma delegacia de polícia, no momento da apresentação de um preso em flagrante, constata-se a falta do escrivão de polícia. Segundo o art. 305 do CPP, para que a situação seja regularmente conduzida:",
+    "alternativas": {
+      "A": "A lavratura do auto de prisão em flagrante deve ser suspensa até o retorno de um escrivão oficial.",
+      "B": "O condutor do preso deverá obrigatoriamente acumular a função de escrivão para garantir a celeridade.",
+      "C": "O próprio Delegado de Polícia redigirá o auto pessoalmente, sendo vedada a delegação dessa atribuição.",
+      "D": "Na falta ou no impedimento do escrivão, qualquer pessoa designada pela autoridade lavrará o auto, depois de prestado o compromisso legal."
+    },
+    "resposta_correta": "D",
+    "comentario": "A nomeação do chamado escrivão 'ad hoc' está prevista expressamente no art. 305 do CPP: 'Na falta ou no impedimento do escrivão, qualquer pessoa designada pela autoridade lavrará o auto, depois de prestado o compromisso legal'."
+  },
+  {
+    "id": "900509",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 306)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O direito à informação dos motivos da prisão e da identidade dos responsáveis é garantido ao preso. De acordo com o art. 306 do CPP, a nota de culpa deverá ser entregue ao preso no prazo de:",
+    "alternativas": {
+      "A": "24 horas depois da prisão, assinada pela autoridade, constando o motivo da prisão, o nome do condutor e os das testemunhas.",
+      "B": "48 horas depois da prisão, assinada pelo escrivão, com a tipificação do crime e o nome do juiz competente.",
+      "C": "12 horas após a lavratura do flagrante, não havendo necessidade de constar o nome do condutor e testemunhas.",
+      "D": "24 horas após a comunicação ao Ministério Público, constando apenas a assinatura do condutor do flagrante."
+    },
+    "resposta_correta": "A",
+    "comentario": "Art. 306 do CPP estabelece o prazo e os requisitos: 'Dentro em vinte e quatro horas depois da prisão, será dada ao preso nota de culpa assinada pela autoridade, com o motivo da prisão, o nome do condutor e os das testemunhas'."
+  },
+  {
+    "id": "900510",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 306, Parágrafo único)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Ao receber a nota de culpa tempestivamente, o preso informa que é analfabeto e não pode assinar o respectivo recibo. Nos moldes da legislação processual penal (art. 306, parágrafo único), essa formalidade será cumprida da seguinte forma:",
+    "alternativas": {
+      "A": "O escrivão atestará o fato e dispensará o recibo.",
+      "B": "O preso passará recibo, o qual será assinado por duas testemunhas.",
+      "C": "Apenas o condutor do preso precisará assinar o recibo no lugar do detido.",
+      "D": "O documento será encaminhado ao juiz, que suprirá a assinatura."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Parágrafo único do art. 306: 'O preso passará recibo da nota de culpa, o qual será assinado por duas testemunhas, quando ele não souber, não puder ou não quiser assinar'."
+  },
+  {
+    "id": "900511",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 307)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quando um crime for praticado na presença da autoridade policial, ou contra ela no exercício de suas funções, o art. 307 do CPP determina que constarão do auto a narração desse fato, a voz de prisão, e as declarações. Lavrado e assinado o auto, ele será remetido imediatamente:",
+    "alternativas": {
+      "A": "Ao chefe direto da referida autoridade policial para avaliação de eventual conflito de interesse.",
+      "B": "Ao Ministério Público, para que requisite a instauração imediata da competente ação penal.",
+      "C": "Ao juiz a quem couber tomar conhecimento do fato delituoso, se não o for a autoridade que houver presidido o auto.",
+      "D": "Ao cartório criminal mais próximo, onde aguardará a manifestação prévia da defesa do preso."
+    },
+    "resposta_correta": "C",
+    "comentario": "Nos exatos termos do art. 307 do CPP: '...sendo tudo assinado pela autoridade, pelo preso e pelas testemunhas e remetido imediatamente ao juiz a quem couber tomar conhecimento do fato delituoso, se não o for a autoridade que houver presidido o auto'."
+  },
+  {
+    "id": "900512",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 308)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Guardas Civis Municipais efetuaram a captura em flagrante de um indivíduo em um município onde não há autoridade policial (delegado de polícia) prestando serviço naquele momento. De acordo com o art. 308 do Código de Processo Penal, a providência legal a ser adotada é:",
+    "alternativas": {
+      "A": "Apresentar o preso logo à autoridade do lugar mais próximo.",
+      "B": "O próprio condutor assumir excepcionalmente a função de autoridade policial e lavrar o auto.",
+      "C": "Relaxar a prisão em flagrante por ausência de autoridade e intimar o suspeito a comparecer posteriormente.",
+      "D": "Manter o preso na viatura por até 48 horas, aguardando a chegada da autoridade competente à cidade."
+    },
+    "resposta_correta": "A",
+    "comentario": "O art. 308 do CPP é direto para casos de circunscrições sem autoridade local: 'Não havendo autoridade no lugar em que se tiver efetuado a prisão, o preso será logo apresentado à do lugar mais próximo'."
+  },
+  {
+    "id": "900513",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 309)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Considerando as regras procedimentais sobre o auto de prisão em flagrante, caso o réu preencha os requisitos legais para 'livrar-se solto' (sem necessidade de decretação de prisão ou prestação de fiança), o art. 309 do CPP estabelece que ele:",
+    "alternativas": {
+      "A": "Ficará dispensado da lavratura do auto de prisão em flagrante e será apenas advertido.",
+      "B": "Deverá ser posto em liberdade apenas após a manifestação favorável do Ministério Público.",
+      "C": "Deverá ser posto em liberdade, depois de lavrado o auto de prisão em flagrante.",
+      "D": "Será encaminhado obrigatoriamente a um estabelecimento prisional até a audiência com o juiz."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme estipula o art. 309 do CPP: 'Se o réu se livrar solto, deverá ser posto em liberdade, depois de lavrado o auto de prisão em flagrante'. Ou seja, o auto é lavrado, mas a prisão cautelar não perdura."
+  },
+  {
+    "id": "900514",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Art. 310)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quando o juiz verificar pelo auto de prisão em flagrante que o agente praticou o fato sob o amparo de excludentes de ilicitude (como legítima defesa ou estado de necessidade), nos termos descritos no art. 310 do CPP, o magistrado poderá:",
+    "alternativas": {
+      "A": "Relaxar a prisão por ilegalidade, dispensando o parecer ministerial.",
+      "B": "Arquivar a ação penal preventivamente, sem oitiva do Ministério Público.",
+      "C": "Decretar a prisão preventiva de ofício para garantir a ordem pública.",
+      "D": "Depois de ouvir o Ministério Público, conceder ao réu liberdade provisória, mediante termo de comparecimento."
+    },
+    "resposta_correta": "D",
+    "comentario": "Consoante o texto legal do art. 310 citado: 'Quando o juiz verificar pelo auto de prisão em flagrante que o agente praticou o fato, nas condições do art. 19, ns. I, II e III, do Código Penal [atuais causas de exclusão de ilicitude do art. 23], poderá, depois de ouvir o Ministério Público, conceder ao réu liberdade provisória, mediante termo de comparecimento a todos os atos do processo, sob pena de revogação'."
+  },
+  {
+    "id": "900515",
+    "disciplina": "Direito Processual Penal",
+    "assunto": "Prisão em Flagrante (Regras Gerais)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2025",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Correlacione as situações de excepcionalidade descritas na Coluna A com a respectiva consequência legal prevista no Código de Processo Penal para a lavratura do auto de prisão em flagrante, na Coluna B.\n\nColuna A\n1. Acusado se recusa a assinar o auto de prisão em flagrante.\n2. Inexistência de testemunhas que presenciaram a infração.\n3. Falta ou impedimento do escrivão na delegacia.\n\nColuna B\n( ) Qualquer pessoa designada pela autoridade atuará após prestar compromisso.\n( ) Com o condutor, pelo menos duas pessoas que testemunharam a apresentação do preso assinam o auto.\n( ) O auto será assinado por duas testemunhas, que lhe tenham ouvido a leitura na presença do acusado.\n\nA sequência correta, de cima para baixo, é:",
+    "alternativas": {
+      "A": "3, 2, 1.",
+      "B": "1, 2, 3.",
+      "C": "2, 1, 3.",
+      "D": "3, 1, 2."
+    },
+    "resposta_correta": "A",
+    "comentario": "Item 3 (Falta de escrivão) se correlaciona com a primeira lacuna: art. 305 autoriza qualquer pessoa designada mediante compromisso. Item 2 (Falta de testemunhas da infração) preenche a segunda lacuna: art. 304, §2º prevê as testemunhas de apresentação. Item 1 (Recusa do acusado) vai na terceira lacuna: art. 304, §3º exige duas testemunhas de leitura. Logo, a ordem é 3, 2, 1."
+  }
+]
