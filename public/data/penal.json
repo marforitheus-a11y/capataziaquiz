@@ -1942,5 +1942,804 @@
     },
     "resposta_correta": "C",
     "comentario": "O texto literal do § 9º do Art. 155 (incluído pela referida Lei em 2026) prevê pena de 'reclusão de 4 (quatro) a 10 (dez) anos e multa' para esta qualificadora envolvendo integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada."
+  },
+  {
+    "id": "700801",
+    "disciplina": "Direito Penal",
+    "assunto": "Furto de coisa comum - Art. 156",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Pedro e Marcos são coerdeiros de algumas sacas de café (bens fungíveis) deixadas pelo pai. Antes da partilha formal, Pedro subtrai para si uma quantidade de café cujo valor não excede a sua quota-parte na herança. De acordo com o Art. 156 do Código Penal, assinale a alternativa correta sobre a conduta de Pedro:",
+    "alternativas": {
+      "A": "Configura furto de coisa comum, devendo o autor responder mediante ação penal pública incondicionada.",
+      "B": "Caracteriza apropriação indébita, uma vez que o bem já estava parcialmente sob sua posse legítima.",
+      "C": "A conduta não é punível, pois trata-se de subtração de coisa comum fungível cujo valor não excede a quota a que tem direito.",
+      "D": "Pedro responderá por furto de coisa comum, com pena de detenção de seis meses a dois anos, independentemente do valor subtraído."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o § 2º do Art. 156, não é punível a subtração de coisa comum fungível, cujo valor não excede a quota a que tem direito o agente."
+  },
+  {
+    "id": "700802",
+    "disciplina": "Direito Penal",
+    "assunto": "Roubo - Impróprio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "João, agindo sorrateiramente, subtrai a bolsa de uma pedestre. Segundos depois, ao ser percebido e confrontado pela vítima, João desfere um soco no rosto dela exclusivamente a fim de assegurar a detenção da coisa e conseguir fugir com o bem. Segundo o Art. 157, § 1º, do Código Penal, essa conduta configura:",
+    "alternativas": {
+      "A": "Roubo impróprio, incorrendo o agente na mesma pena do roubo próprio.",
+      "B": "Furto qualificado pelo emprego de violência posterior.",
+      "C": "Concurso material entre os crimes de furto simples e lesão corporal.",
+      "D": "Extorsão, pois a violência foi utilizada como moeda de troca para o bem patrimonial."
+    },
+    "resposta_correta": "A",
+    "comentario": "O § 1º do Art. 157 descreve o roubo impróprio, que ocorre quando o agente, logo depois de subtraída a coisa, emprega violência ou grave ameaça a fim de assegurar a impunidade do crime ou a detenção da coisa para si ou para terceiro."
+  },
+  {
+    "id": "700803",
+    "disciplina": "Direito Penal",
+    "assunto": "Roubo - Causas de Aumento (Arma de Fogo)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante um assalto a uma joalheria, Mário subtrai diversos bens e, para intimidar as vítimas, utiliza ostensivamente uma arma de fogo de uso restrito. Nos termos do Art. 157 do Código Penal, o emprego de arma de fogo de uso restrito ou proibido acarreta qual consequência jurídica na pena?",
+    "alternativas": {
+      "A": "A pena aumenta-se de 2/3 (dois terços).",
+      "B": "Aplica-se em dobro a pena prevista no caput do artigo.",
+      "C": "A pena aumenta-se de 1/3 (um terço) até metade.",
+      "D": "Aplica-se em triplo a pena prevista no caput do artigo."
+    },
+    "resposta_correta": "B",
+    "comentario": "O § 2º-B do Art. 157 determina expressamente que, se a violência ou grave ameaça é exercida com emprego de arma de fogo de uso restrito ou proibido, aplica-se em dobro a pena prevista no caput do artigo."
+  },
+  {
+    "id": "700804",
+    "disciplina": "Direito Penal",
+    "assunto": "Roubo - Latrocínio e Crime Organizado (Lei 15.358/2026)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Com base nas inovações trazidas pela Lei nº 15.358/2026, suponha que um roubo do qual resulta a morte da vítima (latrocínio) seja cometido por um integrante de milícia privada, agindo estritamente no contexto da atuação desse grupo. Qual é a pena expressamente cominada para este caso específico, conforme o § 5º do Art. 157?",
+    "alternativas": {
+      "A": "Reclusão, de 20 (vinte) a 30 (trinta) anos, e multa.",
+      "B": "Aplicação em triplo da pena da lesão corporal seguida de morte.",
+      "C": "Reclusão, de 20 (vinte) a 40 (quarenta) anos, e multa.",
+      "D": "Reclusão, de 12 (doze) a 30 (trinta) anos, e multa."
+    },
+    "resposta_correta": "C",
+    "comentario": "O § 5º do Art. 157, incluído pela Lei 15.358/2026, prevê expressamente a pena de reclusão, de 20 a 40 anos, e multa para o latrocínio cometido por integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada."
+  },
+  {
+    "id": "700805",
+    "disciplina": "Direito Penal",
+    "assunto": "Extorsão - Sequestro Relâmpago",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Carlos constrange a vítima, mediante grave ameaça, a fornecer a senha de seu aplicativo bancário para realizar transferências via Pix. Para isso, a vítima é mantida no interior de seu próprio veículo rodando pela cidade por três horas, sendo essa restrição de liberdade condição necessária para a obtenção da vantagem econômica. Não houve lesão grave ou morte. De acordo com o Art. 158, § 3º, do Código Penal, a pena base para esta conduta é de:",
+    "alternativas": {
+      "A": "Reclusão, de quatro a dez anos, e multa.",
+      "B": "Reclusão, de 6 (seis) a 12 (doze) anos, além da multa.",
+      "C": "Reclusão, de oito a quinze anos.",
+      "D": "Reclusão, de doze a vinte anos."
+    },
+    "resposta_correta": "B",
+    "comentario": "A conduta descrita amolda-se à figura popularmente conhecida como 'sequestro relâmpago', prevista no § 3º do Art. 158, cuja pena é de reclusão, de 6 a 12 anos, além da multa (quando não resulta lesão grave ou morte)."
+  },
+  {
+    "id": "700806",
+    "disciplina": "Direito Penal",
+    "assunto": "Extorsão - Causas de Aumento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A extorsão é um crime contra o patrimônio cuja pena de reclusão é de quatro a dez anos. Contudo, o Código Penal prevê causas de aumento de pena aplicáveis na terceira fase da dosimetria. De acordo com o § 1º do Art. 158, se o crime de extorsão é cometido por duas ou mais pessoas, ou com emprego de arma, a pena:",
+    "alternativas": {
+      "A": "aumenta-se de 1/3 (um terço) até metade.",
+      "B": "aumenta-se de 2/3 (dois terços) fixamente.",
+      "C": "aplica-se em dobro a pena prevista no caput.",
+      "D": "aumenta-se de metade ao dobro."
+    },
+    "resposta_correta": "A",
+    "comentario": "Segundo o texto literal do § 1º do Art. 158: 'Se o crime é cometido por duas ou mais pessoas, ou com emprego de arma, aumenta-se a pena de um terço até metade'."
+  },
+  {
+    "id": "700807",
+    "disciplina": "Direito Penal",
+    "assunto": "Extorsão - Organização Criminosa (Lei 15.358/2026)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Lei nº 15.358/2026 adicionou o § 4º ao crime de extorsão (Art. 158). Caso esse delito seja cometido por um integrante de grupo paramilitar, no contexto da atuação ou para a consecução das condutas previstas pela referida lei, qual será o agravamento imposto à pena?",
+    "alternativas": {
+      "A": "Aumenta-se a respectiva pena em 2/3 (dois terços).",
+      "B": "Aplica-se em dobro a respectiva pena.",
+      "C": "Aplica-se a pena do crime de extorsão mediante sequestro, pelo princípio da consunção.",
+      "D": "Aplica-se em triplo a respectiva pena."
+    },
+    "resposta_correta": "D",
+    "comentario": "De acordo com o Art. 158, § 4º, incluído pela Lei 15.358/2026, se o crime é cometido por integrante de organização criminosa, grupo paramilitar ou milícia privada no respectivo contexto de atuação, 'aplica-se em triplo a respectiva pena'."
+  },
+  {
+    "id": "700901",
+    "disciplina": "Direito Penal",
+    "assunto": "Extorsão mediante sequestro - Delação Premiada",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Lucas e Mateus arquitetam e executam o sequestro de um empresário, exigindo alta quantia como preço do resgate. Durante o cativeiro, Lucas, arrependido, procura a autoridade policial e denuncia o crime, prestando informações exatas que resultam na invasão do local e na libertação ilesa do sequestrado. Nos termos do Art. 159, § 4º, do Código Penal, a conduta de Lucas garante a ele o seguinte benefício legal:",
+    "alternativas": {
+      "A": "Perdão judicial, isentando-o completamente do cumprimento da pena.",
+      "B": "Substituição obrigatória da pena privativa de liberdade por restritivas de direitos.",
+      "C": "Redução da pena de um a dois terços.",
+      "D": "Diminuição da pena de metade, independentemente do sucesso da libertação da vítima."
+    },
+    "resposta_correta": "C",
+    "comentario": "O § 4º do Art. 159 prevê uma causa de diminuição específica (delação premiada): 'Se o crime é cometido em concurso, o concorrente que o denunciar à autoridade, facilitando a libertação do seqüestrado, terá sua pena reduzida de um a dois terços'."
+  },
+  {
+    "id": "700902",
+    "disciplina": "Direito Penal",
+    "assunto": "Extorsão mediante sequestro - Qualificadoras",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime de extorsão mediante sequestro, em sua forma simples, prevê pena de reclusão de oito a quinze anos. No entanto, o § 1º do Art. 159 estabelece qualificadoras que elevam essa pena para reclusão de doze a vinte anos. Assinale a alternativa que NÃO corresponde a uma dessas hipóteses qualificadoras:",
+    "alternativas": {
+      "A": "Se o sequestro dura mais de 12 (doze) horas.",
+      "B": "Se o sequestrado é menor de 18 (dezoito) anos.",
+      "C": "Se o sequestrado é maior de 60 (sessenta) anos.",
+      "D": "Se o crime é cometido por bando ou quadrilha."
+    },
+    "resposta_correta": "A",
+    "comentario": "A alternativa A está incorreta, pois o critério temporal exigido pelo § 1º do Art. 159 para qualificar o crime é que a privação de liberdade dure mais de 24 (vinte e quatro) horas, e não 12 horas. As demais alternativas encontram amparo literal na lei."
+  },
+  {
+    "id": "700903",
+    "disciplina": "Direito Penal",
+    "assunto": "Extorsão mediante sequestro - Organização Criminosa (Lei 15.358/2026)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Em virtude das alterações promovidas pela Lei nº 15.358/2026 no enfrentamento à criminalidade organizada, o Art. 159 do Código Penal passou a prever uma causa de aumento rigorosa. Se a extorsão mediante sequestro for cometida por integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto de sua atuação, a respectiva pena deverá ser:",
+    "alternativas": {
+      "A": "aplicada em triplo, desprezadas as demais causas de aumento.",
+      "B": "aumentada em 2/3 (dois terços).",
+      "C": "aplicada em dobro.",
+      "D": "aumentada de metade."
+    },
+    "resposta_correta": "B",
+    "comentario": "Diferentemente da extorsão simples e do roubo, onde a Lei 15.358/2026 estipulou a aplicação da pena em triplo para este cenário, no crime de extorsão mediante sequestro (Art. 159), o novo § 5º determinou expressamente que 'aumenta-se a respectiva pena em 2/3 (dois terços)'."
+  },
+  {
+    "id": "701001",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Peculato",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Agente público que se apropria de um notebook da repartição pública, do qual tinha a posse em razão de seu cargo, para utilizá-lo definitivamente em sua residência, comete o crime de:",
+    "alternativas": {
+      "A": "Furto qualificado pelo abuso de confiança.",
+      "B": "Apropriação indébita.",
+      "C": "Peculato-apropriação.",
+      "D": "Prevaricação."
+    },
+    "resposta_correta": "C",
+    "comentario": "A conduta descrita amolda-se perfeitamente ao Art. 312 do CP (peculato-apropriação): apropriar-se o funcionário público de bem móvel público de que tem a posse em razão do cargo."
+  },
+  {
+    "id": "701002",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Peculato Culposo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No crime de peculato culposo (Art. 312, § 2º), a reparação do dano pelo funcionário público gera consequências penais distintas dependendo do momento em que ocorre. Se a reparação precede a sentença irrecorrível, qual é a consequência legal?",
+    "alternativas": {
+      "A": "Reduz a pena imposta da metade.",
+      "B": "Extingue a punibilidade.",
+      "C": "Reduz a pena de um a dois terços.",
+      "D": "Constitui atenuante genérica na segunda fase da dosimetria."
+    },
+    "resposta_correta": "B",
+    "comentario": "De acordo com o Art. 312, § 3º, a reparação do dano no peculato culposo, se precede a sentença irrecorrível, extingue a punibilidade. Se lhe é posterior, reduz de metade a pena imposta."
+  },
+  {
+    "id": "701003",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Peculato mediante erro de outrem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O fiscal de rendas do município, durante uma autuação, recebe do contribuinte um valor em dinheiro superior ao da multa aplicada, em razão de um erro de cálculo do próprio cidadão. Percebendo o equívoco no exercício do cargo, o fiscal resolve ficar com a diferença para si. Essa conduta configura o crime de:",
+    "alternativas": {
+      "A": "Corrupção passiva.",
+      "B": "Concussão.",
+      "C": "Peculato mediante erro de outrem.",
+      "D": "Estelionato."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 313 tipifica o peculato mediante erro de outrem (peculato-estelionato): 'Apropriar-se de dinheiro ou qualquer utilidade que, no exercício do cargo, recebeu por erro de outrem'."
+  },
+  {
+    "id": "701004",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Peculato mediante erro de outrem",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o crime de peculato mediante erro de outrem (Art. 313), assinale a afirmativa correta:",
+    "alternativas": {
+      "A": "Exige que o funcionário público induza a vítima em erro por meio de fraude ativa.",
+      "B": "A apropriação deve ocorrer sobre dinheiro ou utilidade recebida por erro de outrem no exercício do cargo.",
+      "C": "Aplica-se a mesma pena do peculato doloso simples (reclusão de 2 a 12 anos).",
+      "D": "A reparação do dano antes da sentença extingue a punibilidade neste crime, assim como no peculato culposo."
+    },
+    "resposta_correta": "B",
+    "comentario": "A letra B traz a literalidade do Art. 313. O erro deve ser espontâneo da vítima (se o agente induz, pode ser estelionato ou concussão). A pena é menor que a do peculato (1 a 4 anos) e a extinção da punibilidade por reparação do dano aplica-se apenas ao peculato culposo."
+  },
+  {
+    "id": "701005",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Inserção de dados falsos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um servidor do setor de trânsito, devidamente autorizado a operar o sistema informatizado da prefeitura, altera indevidamente o banco de dados para excluir as multas de seu próprio veículo, visando obter vantagem indevida. Esta conduta configura:",
+    "alternativas": {
+      "A": "Peculato eletrônico.",
+      "B": "Modificação ou alteração não autorizada de sistema de informações (Art. 313-B).",
+      "C": "Inserção de dados falsos em sistema de informações (Art. 313-A).",
+      "D": "Falsidade ideológica."
+    },
+    "resposta_correta": "C",
+    "comentario": "A conduta de excluir indevidamente dados corretos nos sistemas informatizados da Administração, praticada por funcionário autorizado e com o fim de obter vantagem indevida, configura o crime do Art. 313-A (conhecido como peculato eletrônico)."
+  },
+  {
+    "id": "701006",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Inserção de dados falsos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime de inserção de dados falsos em sistema de informações (Art. 313-A do CP) exige um dolo específico (finalidade) para sua consumação. Assinale a alternativa que apresenta corretamente essa finalidade prevista em lei:",
+    "alternativas": {
+      "A": "Fim exclusivo de prejudicar inimigo político.",
+      "B": "Fim de obter vantagem indevida para si ou para outrem ou para causar dano.",
+      "C": "Fim de acobertar crime contra a administração pública anterior.",
+      "D": "Fim de demonstrar insatisfação com a chefia imediata."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme expresso no Art. 313-A, a conduta deve ser realizada 'com o fim de obter vantagem indevida para si ou para outrem ou para causar dano'."
+  },
+  {
+    "id": "701007",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Modificação não autorizada de sistema",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com o Art. 313-B do Código Penal, modificar ou alterar sistema de informações ou programa de informática sem autorização ou solicitação de autoridade competente é crime com pena base de detenção de 3 meses a 2 anos. No entanto, o parágrafo único prevê um aumento de pena de um terço até a metade se:",
+    "alternativas": {
+      "A": "da modificação ou alteração resulta dano para a Administração Pública ou para o administrado.",
+      "B": "o autor do fato for ocupante de cargo em comissão ou função de confiança.",
+      "C": "o sistema for pertencente exclusivamente ao Ministério da Defesa.",
+      "D": "o crime for cometido durante o repouso noturno."
+    },
+    "resposta_correta": "A",
+    "comentario": "A causa de aumento de 1/3 até 1/2 prevista no parágrafo único do Art. 313-B aplica-se 'se da modificação ou alteração resulta dano para a Administração Pública ou para o administrado'."
+  },
+  {
+    "id": "701008",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Modificação não autorizada de sistema",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A principal distinção legal entre o crime de Inserção de dados falsos (Art. 313-A) e o de Modificação ou alteração não autorizada de sistema de informações (Art. 313-B) reside no fato de que:",
+    "alternativas": {
+      "A": "o Art. 313-B exige a finalidade específica de obter vantagem financeira, o que não ocorre no Art. 313-A.",
+      "B": "o Art. 313-A é praticado pelo funcionário autorizado, enquanto o Art. 313-B foca na modificação estrutural do sistema feita sem autorização ou solicitação da autoridade competente.",
+      "C": "o Art. 313-A possui pena de detenção e o Art. 313-B possui pena de reclusão.",
+      "D": "apenas o Art. 313-B é considerado crime contra a Administração Pública."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 313-A foca na alteração de DADOS (conteúdo) pelo funcionário autorizado com dolo de vantagem/dano. Já o Art. 313-B foca na alteração do SISTEMA/PROGRAMA (estrutura) feita SEM autorização, independentemente do dolo de vantagem."
+  },
+  {
+    "id": "701009",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Extravio de documento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O chefe do departamento de protocolo de um órgão público, dolosamente, rasga e joga no lixo um processo administrativo importante que estava sob sua guarda em razão de seu cargo, tornando impossível a leitura de seu conteúdo. Nos termos do Art. 314 do Código Penal, ele comete o crime de:",
+    "alternativas": {
+      "A": "Dano qualificado contra o patrimônio da União.",
+      "B": "Supressão de documento particular.",
+      "C": "Prevaricação.",
+      "D": "Extravio, sonegação ou inutilização de livro ou documento."
+    },
+    "resposta_correta": "D",
+    "comentario": "O Art. 314 tipifica a conduta de extraviar, sonegar ou inutilizar, total ou parcialmente, livro oficial ou qualquer documento de que o funcionário tem a guarda em razão do cargo."
+  },
+  {
+    "id": "701010",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Extravio de documento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para a configuração do crime previsto no Art. 314 (Extravio, sonegação ou inutilização de livro ou documento), é elemento essencial do tipo que o funcionário:",
+    "alternativas": {
+      "A": "tenha obtido lucro financeiro com o extravio.",
+      "B": "tenha a guarda do livro ou documento em razão de seu cargo.",
+      "C": "aja mediante a ajuda de terceiro estranho aos quadros da Administração.",
+      "D": "cometa o fato durante o horário de expediente regular."
+    },
+    "resposta_correta": "B",
+    "comentario": "O texto legal (Art. 314) é claro ao exigir que o livro oficial ou documento extraviado, sonegado ou inutilizado esteja sob a guarda do funcionário 'em razão do cargo'."
+  },
+  {
+    "id": "701011",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Emprego irregular de verbas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O prefeito municipal de uma determinada cidade decide utilizar o dinheiro de um fundo legalmente carimbado exclusivamente para a saúde e o aplica integralmente na pavimentação de ruas, alegando urgência em obras de infraestrutura urbana. O dinheiro não foi desviado para proveito próprio. De acordo com o Código Penal, a conduta caracteriza:",
+    "alternativas": {
+      "A": "Peculato-desvio.",
+      "B": "Emprego irregular de verbas ou rendas públicas (Art. 315).",
+      "C": "Corrupção passiva.",
+      "D": "Atípica penalmente, tratando-se de mero ilícito administrativo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Dar às verbas ou rendas públicas aplicação diversa da estabelecida em lei configura o crime do Art. 315. Não é peculato-desvio, pois o dinheiro não foi desviado em proveito próprio ou alheio de cunho privado, mas sim mantido no âmbito da administração pública, apenas com destinação diversa da lei."
+  },
+  {
+    "id": "701012",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Emprego irregular de verbas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Com base nas disposições do Código Penal sobre o crime de emprego irregular de verbas ou rendas públicas (Art. 315), é correto afirmar que a sanção penal prevista em abstrato para este delito é de:",
+    "alternativas": {
+      "A": "Reclusão, de 2 a 12 anos.",
+      "B": "Detenção, de três meses a um ano.",
+      "C": "Detenção, de um a três meses, ou multa.",
+      "D": "Multa, exclusivamente."
+    },
+    "resposta_correta": "C",
+    "comentario": "A pena cominada no Art. 315 para o emprego irregular de verbas é relativamente branda: detenção, de um a três meses, ou multa."
+  },
+  {
+    "id": "701013",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Concussão",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um Guarda Civil Municipal, em patrulhamento, aborda um motorista cometendo uma infração e diz expressamente: 'Ou você me paga mil reais agora, ou vou apreender seu carro e lhe dar a pior multa possível'. A conduta do agente enquadra-se no crime de:",
+    "alternativas": {
+      "A": "Prevaricação.",
+      "B": "Corrupção passiva.",
+      "C": "Concussão.",
+      "D": "Peculato."
+    },
+    "resposta_correta": "C",
+    "comentario": "O verbo núcleo do crime de concussão (Art. 316) é 'Exigir'. Ao impor a entrega do dinheiro sob ameaça atrelada à função, o funcionário comete concussão, e não corrupção passiva (que envolve solicitar, receber ou aceitar promessa)."
+  },
+  {
+    "id": "701014",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Excesso de exação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Art. 316, § 1º, do Código Penal prevê a modalidade criminosa conhecida como excesso de exação. Esta figura penal configura-se quando o funcionário público:",
+    "alternativas": {
+      "A": "solicita ou recebe vantagem indevida para facilitar a prática de contrabando ou descaminho.",
+      "B": "exige tributo ou contribuição social que sabe ou deveria saber indevido, ou, quando devido, emprega meio vexatório ou gravoso na cobrança não autorizado por lei.",
+      "C": "repassa a terceiros informações sigilosas sobre fiscalizações tributárias iminentes.",
+      "D": "aplica multas de trânsito em valores acima do permitido pelo CTB por erro inescusável de cálculo."
+    },
+    "resposta_correta": "B",
+    "comentario": "A alternativa B reproduz ipsis litteris a redação do § 1º do Art. 316, que define o crime de excesso de exação no contexto da cobrança de tributos ou contribuições sociais."
+  },
+  {
+    "id": "701015",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Corrupção Passiva",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Tício, servidor público recém-nomeado, mas que ainda não havia tomado posse ou assumido suas funções, é procurado por um despachante que lhe oferece dinheiro para agilizar futuros processos em sua mesa. Tício aceita a promessa de vantagem indevida. De acordo com o Art. 317 do CP, Tício:",
+    "alternativas": {
+      "A": "Não comete crime, pois ainda não havia assumido a função pública formalmente.",
+      "B": "Comete o crime de corrupção passiva, uma vez que a lei pune a conduta praticada ainda que fora da função ou antes de assumi-la, mas em razão dela.",
+      "C": "Comete o crime de tráfico de influência, visto atuar como mero particular.",
+      "D": "Comete corrupção ativa, pois aceitou o suborno oferecido."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 317 prevê expressamente que a corrupção passiva se configura mesmo se a conduta (solicitar, receber ou aceitar promessa) ocorrer 'ainda que fora da função ou antes de assumi-la, mas em razão dela'."
+  },
+  {
+    "id": "701016",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Corrupção Passiva Privilegiada",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Diferenciando-se da corrupção passiva em sua modalidade fundamental, o § 2º do Art. 317 traz uma figura mais branda (corrupção passiva privilegiada). Essa forma delituosa ocorre especificamente quando o funcionário pratica, deixa de praticar ou retarda ato de ofício, com infração de dever funcional:",
+    "alternativas": {
+      "A": "mediante o recebimento de vantagem econômica de pequeno valor (bagatela).",
+      "B": "movido por erro de proibição invencível.",
+      "C": "cedendo a pedido ou influência de outrem.",
+      "D": "para satisfazer sentimento de ódio ou vingança contra desafeto."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 317, § 2º, a corrupção passiva privilegiada (com pena de detenção de 3 meses a 1 ano) ocorre quando o agente age 'cedendo a pedido ou influência de outrem'. Se for para satisfazer sentimento pessoal, caracteriza Prevaricação."
+  },
+  {
+    "id": "701017",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Facilitação de contrabando",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O agente de fiscalização fronteiriça que, infringindo seu dever funcional, fecha os olhos e permite a passagem de mercadoria estrangeira sem o pagamento dos devidos impostos aduaneiros (descaminho), comete o crime previsto no Art. 318 do Código Penal. Qual é o verbo núcleo deste crime?",
+    "alternativas": {
+      "A": "Facilitar.",
+      "B": "Prevaricar.",
+      "C": "Omitir.",
+      "D": "Extraviar."
+    },
+    "resposta_correta": "A",
+    "comentario": "O verbo que tipifica o Art. 318 é 'Facilitar', com infração de dever funcional, a prática de contrabando ou descaminho."
+  },
+  {
+    "id": "701018",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Facilitação de contrabando",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para a materialização do crime de Facilitação de contrabando ou descaminho (Art. 318 do CP), é exigível que a conduta do funcionário público ocorra mediante:",
+    "alternativas": {
+      "A": "Emprego de violência contra outros agentes do Estado.",
+      "B": "Infração de dever funcional.",
+      "C": "Recebimento prévio e comprovado de dinheiro por parte dos contrabandistas.",
+      "D": "Inserção de dados falsos no sistema da Receita Federal."
+    },
+    "resposta_correta": "B",
+    "comentario": "A elementar normativa do Art. 318 exige que a facilitação ocorra 'com infração de dever funcional'. Se o funcionário recebe dinheiro, responderá também por corrupção passiva em concurso."
+  },
+  {
+    "id": "701019",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Prevaricação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um delegado de polícia, por pena e forte laço de amizade com o suspeito de um crime leve, decide não instaurar o inquérito policial competente, sonegando a aplicação da lei. A motivação do ato não envolveu dinheiro ou pedido de terceiros. A conduta se amolda ao crime de:",
+    "alternativas": {
+      "A": "Corrupção passiva privilegiada.",
+      "B": "Prevaricação.",
+      "C": "Condescendência criminosa.",
+      "D": "Peculato-desvio."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 319 caracteriza a Prevaricação como: retardar/deixar de praticar ato de ofício indevidamente 'para satisfazer interesse ou sentimento pessoal' (no caso, amizade e piedade)."
+  },
+  {
+    "id": "701020",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Prevaricação (Diretor de Penitenciária)",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Art. 319-A foi incluído no Código Penal para reprimir o uso de telefonia dentro de prisões. O referido artigo tipifica como crime a conduta de qual agente público que deixa de cumprir seu dever de vedar ao preso o acesso a aparelho telefônico?",
+    "alternativas": {
+      "A": "Qualquer funcionário público do Poder Executivo ou Judiciário de forma genérica.",
+      "B": "Exclusivamente o carcereiro de plantão no momento do fato.",
+      "C": "O Diretor de Penitenciária e/ou agente público.",
+      "D": "O advogado do preso e seus familiares durante as visitas."
+    },
+    "resposta_correta": "C",
+    "comentario": "O texto literal do Art. 319-A aponta a responsabilização para: 'Deixar o Diretor de Penitenciária e/ou agente público, de cumprir seu dever de vedar ao preso o acesso...'"
+  },
+  {
+    "id": "701021",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Condescendência criminosa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Marta, chefe de repartição, descobre que seu subordinado cometeu uma infração grave no exercício do cargo. Contudo, por excesso de clemência (indulgência) para com a situação pessoal difícil que o funcionário enfrenta, deixa de instaurar o processo disciplinar contra ele. O crime cometido por Marta é:",
+    "alternativas": {
+      "A": "Prevaricação.",
+      "B": "Condescendência criminosa.",
+      "C": "Advocacia administrativa.",
+      "D": "Abuso de autoridade por omissão."
+    },
+    "resposta_correta": "B",
+    "comentario": "Deixar o funcionário, 'por indulgência', de responsabilizar subordinado que cometeu infração configura Condescendência criminosa (Art. 320)."
+  },
+  {
+    "id": "701022",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Condescendência criminosa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Art. 320 tipifica a condescendência criminosa. Caso o funcionário que flagre a infração de seu colega NÃO seja o superior hierárquico com competência para responsabilizá-lo, como ele incorre nesse crime movido por indulgência?",
+    "alternativas": {
+      "A": "Sendo partícipe na conduta primária do infrator.",
+      "B": "Quando lhe falte competência, não levar o fato ao conhecimento da autoridade competente.",
+      "C": "Destruindo provas do local para proteger o colega.",
+      "D": "O funcionário sem competência legal não pode cometer condescendência criminosa em nenhuma hipótese."
+    },
+    "resposta_correta": "B",
+    "comentario": "A segunda parte do Art. 320 prevê claramente que o crime ocorre quando o agente deixa de responsabilizar o subordinado ou, 'quando lhe falte competência, não levar o fato ao conhecimento da autoridade competente'."
+  },
+  {
+    "id": "701023",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Advocacia administrativa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A conduta de patrocinar, direta ou indiretamente, interesse privado perante a administração pública, valendo-se da qualidade de funcionário, caracteriza o crime de:",
+    "alternativas": {
+      "A": "Tráfico de influência.",
+      "B": "Corrupção passiva.",
+      "C": "Advocacia administrativa.",
+      "D": "Usurpação de função pública."
+    },
+    "resposta_correta": "C",
+    "comentario": "O texto corresponde à exata tipificação do crime de Advocacia administrativa (Art. 321 do CP)."
+  },
+  {
+    "id": "701024",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Advocacia administrativa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No crime de advocacia administrativa (Art. 321), a pena base cominada é a de detenção, de um a três meses, ou multa. Entretanto, o legislador previu uma hipótese que agrava o delito no parágrafo único. Tal agravamento se aplica quando:",
+    "alternativas": {
+      "A": "o patrocínio visa favorecer familiar até o terceiro grau do agente.",
+      "B": "o interesse patrocinado é ilegítimo.",
+      "C": "o agente recebe remuneração pelo patrocínio do interesse privado.",
+      "D": "a conduta é realizada em conluio com particular não funcionário."
+    },
+    "resposta_correta": "B",
+    "comentario": "O parágrafo único do Art. 321 determina expressamente: 'Se o interesse é ilegítimo: Pena - detenção, de três meses a um ano, além da multa'."
+  },
+  {
+    "id": "701025",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Violência arbitrária",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Mévio, no exercício de sua função pública como fiscal de posturas, excede-se e agride fisicamente um ambulante de maneira despropositada. O tipo penal do Art. 322 (Violência arbitrária) prevê a pena de detenção de seis meses a três anos para quem pratica violência no exercício da função ou a pretexto de exercê-la. Uma regra estipulada neste artigo sobre a aplicação da pena indica que ela ocorre:",
+    "alternativas": {
+      "A": "em substituição à pena de lesão corporal, pelo princípio da consunção.",
+      "B": "além da pena correspondente à violência.",
+      "C": "absorvendo a pena da violência leve, restando a cumulação apenas para as lesões graves.",
+      "D": "apenas com o dobro da sanção se houver morte resultante."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 322 (Violência arbitrária) estabelece claramente em seu preceito secundário a punição: 'Pena - detenção, de seis meses a três anos, além da pena correspondente à violência' (concurso material)."
+  },
+  {
+    "id": "701026",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Violência arbitrária",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A conduta de 'praticar violência, no exercício de função ou a pretexto de exercê-la', prevista no Art. 322 do CP, é classificada como crime de:",
+    "alternativas": {
+      "A": "Tortura institucional.",
+      "B": "Violência arbitrária.",
+      "C": "Excesso de Poder Administrativo.",
+      "D": "Resistência qualificada."
+    },
+    "resposta_correta": "B",
+    "comentario": "O nomen iuris (nome jurídico) do tipo penal previsto no Art. 322 do CP é Violência arbitrária."
+  },
+  {
+    "id": "701027",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Abandono de função",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Art. 323 do Código Penal tipifica o crime de Abandono de função ('Abandonar cargo público, fora dos casos permitidos em lei'). Em suas qualificadoras (§ 1º e § 2º), a pena é agravada em virtude de dois fatores situacionais específicos. São eles:",
+    "alternativas": {
+      "A": "Se o agente é chefe do Executivo e se o abandono ultrapassa 30 dias ininterruptos.",
+      "B": "Se do fato resulta prejuízo público e se o fato ocorre em lugar compreendido na faixa de fronteira.",
+      "C": "Se praticado em época de pandemia e se resulta em perigo de vida à população.",
+      "D": "Se do abandono ocorre o sucateamento de máquinas estatais e se há recebimento de propina para tal fim."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 323 traz duas formas majoradas/qualificadas: § 1º (Se do fato resulta prejuízo público) e § 2º (Se o fato ocorre em lugar compreendido na faixa de fronteira)."
+  },
+  {
+    "id": "701028",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Exercício funcional ilegalmente",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O funcionário que, ciente oficialmente de que foi exonerado, removido, substituído ou suspenso, decide continuar a exercer a função pública sem autorização comete o crime de:",
+    "alternativas": {
+      "A": "Exercício funcional ilegalmente antecipado ou prolongado (Art. 324).",
+      "B": "Usurpação de função pública (Art. 328).",
+      "C": "Resistência passiva (Art. 329).",
+      "D": "Falsidade de título para função."
+    },
+    "resposta_correta": "A",
+    "comentario": "A continuidade ilícita e desautorizada na função após a ciência oficial do afastamento (exoneração, suspensão, etc.) configura o delito previsto no Art. 324 (exercício prolongado)."
+  },
+  {
+    "id": "701029",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Violação de sigilo funcional",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Teresa, escrivã de polícia, cede sua senha pessoal do sistema a um amigo advogado para que este consulte informações restritas de inquéritos policiais em andamento. Teresa e seu amigo não possuíam o dolo de causar dano. De acordo com o Art. 325, § 1º, do CP, a conduta de Teresa:",
+    "alternativas": {
+      "A": "É atípica, configurando apenas infração administrativa disciplinar, pois não resultou dano material.",
+      "B": "Configura o crime de violação de sigilo funcional, nas mesmas penas do caput, ao permitir o acesso de pessoa não autorizada ao sistema.",
+      "C": "Configura inserção de dados falsos em sistema de informações.",
+      "D": "Caracteriza o crime de prevaricação digital."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 325, § 1º, inciso I, incorre nas mesmas penas de violação de sigilo funcional quem 'permite ou facilita, mediante atribuição, fornecimento e empréstimo de senha... o acesso de pessoas não autorizadas a sistemas...'"
+  },
+  {
+    "id": "701030",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Violação do sigilo de concorrência",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O presidente da comissão de licitação municipal abre antecipadamente os envelopes fechados e proporciona a um dos empresários concorrentes o conhecimento dos valores propostos pelos demais candidatos, ferindo o sigilo legal. Segundo o Código Penal (Art. 326), este ato consubstancia-se no crime de:",
+    "alternativas": {
+      "A": "Corrupção passiva atípica.",
+      "B": "Violação do sigilo de proposta de concorrência.",
+      "C": "Peculato de informações.",
+      "D": "Facilitação de monopólio comercial."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 326 prevê de forma autônoma o crime de 'Devassar o sigilo de proposta de concorrência pública, ou proporcionar a terceiro o ensejo de devassá-lo'."
+  },
+  {
+    "id": "701031",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Conceito de Funcionário Público",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um mesário convocado pela Justiça Eleitoral, embora exerça suas atividades transitoriamente e sem receber remuneração salarial, desvia urna eletrônica em proveito de terceiro. Para fins de aplicação da lei penal nos crimes contra a Administração Pública (Art. 327), esse indivíduo:",
+    "alternativas": {
+      "A": "Não pode ser considerado funcionário público, logo responderá apenas por furto comum.",
+      "B": "É considerado funcionário público por equiparação exclusiva às entidades paraestatais.",
+      "C": "Considera-se funcionário público, atraindo para si a tipificação penal dos crimes contra a administração.",
+      "D": "É considerado agente delegatário particular, sujeito unicamente a sanções cíveis eleitorais."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 327 estabelece que 'Considera-se funcionário público, para os efeitos penais, quem, embora transitoriamente ou sem remuneração, exerce cargo, emprego ou função pública'."
+  },
+  {
+    "id": "701032",
+    "disciplina": "Direito Penal",
+    "assunto": "Crimes contra a Administração Pública - Conceito de Funcionário Público",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Art. 327, § 2º, prevê uma causa de aumento de pena genérica para os crimes do Capítulo de crimes praticados por funcionário público. A pena será aumentada da terça parte (1/3) quando os autores dos crimes forem:",
+    "alternativas": {
+      "A": "Militares estaduais ou federais atuando no policiamento ostensivo.",
+      "B": "Empregados de empresas privadas terceirizadas sem função de chefia.",
+      "C": "Ocupantes de cargos em comissão ou de função de direção ou assessoramento de órgão da administração direta, sociedade de economia mista, empresa pública ou fundação.",
+      "D": "Agentes políticos eleitos para o Poder Legislativo (vereadores, deputados e senadores)."
+    },
+    "resposta_correta": "C",
+    "comentario": "Segundo a literalidade do Art. 327, § 2º, a pena é aumentada da terça parte se os autores forem ocupantes de cargos em comissão ou função de direção/assessoramento nas referidas esferas administrativas."
   }
+]
 ]
