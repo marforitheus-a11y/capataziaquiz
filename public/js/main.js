@@ -9,6 +9,8 @@ window.selectedSubjects = []; // Tornando global
 
 let quizMode = 'solo'; // 'solo' ou 'challenge'
 let quizTimerInterval = null; // Referência para o timer
+let challengeDurationSeconds = null;
+let challengeStartedAt = null;
 
 /* ====== Carregar Dados (API/JSON) ====== */
 async function loadSubjects() {
@@ -125,6 +127,8 @@ async function loadPDFs() {
 
 function startQuiz(data, count) {
   quizMode = 'solo';
+  challengeDurationSeconds = null;
+  challengeStartedAt = null;
   allQuestions = data; 
   const shuffled = allQuestions.slice().sort(() => 0.5 - Math.random());
   questions = shuffled.slice(0, count);
@@ -137,6 +141,8 @@ function startQuiz(data, count) {
 
 function startChallengeQuiz(challengeQuestions, durationInSeconds) {
   quizMode = 'challenge';
+  challengeDurationSeconds = durationInSeconds;
+  challengeStartedAt = Date.now();
   questions = challengeQuestions; 
   currentQuestion = 0;
   userAnswers = {};
@@ -149,6 +155,12 @@ function startChallengeQuiz(challengeQuestions, durationInSeconds) {
   // 2. Inicia o timer (que agora encontra o div)
   startTimer(durationInSeconds); 
   // **************************************
+}
+
+function getChallengeElapsedSeconds() {
+  if (!challengeStartedAt || !challengeDurationSeconds) return null;
+  const elapsed = Math.floor((Date.now() - challengeStartedAt) / 1000);
+  return Math.max(0, Math.min(elapsed, challengeDurationSeconds));
 }
 
 
@@ -219,10 +231,10 @@ function selectOption(questionId, optionKey) {
     renderQuestion();
     
   } else {
-    const options = document.querySelectorAll(`.option[data-qid="${questionId}"]`);
+    const options = document.querySelectorAll(`.option[data-question-id="${questionId}"]`);
     options.forEach(opt => opt.classList.remove('selected-challenge'));
     
-    const selectedEl = document.querySelector(`.option[data-key="${optionKey}"]`);
+    const selectedEl = document.querySelector(`.option[data-question-id="${questionId}"][data-option-key="${optionKey}"]`);
     if(selectedEl) {
       selectedEl.classList.add('selected-challenge');
     }
@@ -239,7 +251,10 @@ function goToNext() {
     
     if (quizMode === 'challenge') {
       if (window.finishChallenge) {
-        window.finishChallenge(userAnswers);
+        window.finishChallenge(userAnswers, {
+          reason: 'completed',
+          elapsedSeconds: getChallengeElapsedSeconds()
+        });
         showChallengeWaitingScreen("Você terminou! Aguardando oponente...");
       }
     } else {
@@ -292,7 +307,15 @@ function startTimer(durationInSeconds) {
     if (timer <= 0) {
       stopTimer();
       alert("O tempo acabou!");
-      goToNext(); 
+      if (quizMode === 'challenge' && window.finishChallenge) {
+        window.finishChallenge(userAnswers, {
+          reason: 'timeout',
+          elapsedSeconds: challengeDurationSeconds
+        });
+        showChallengeWaitingScreen("Tempo encerrado! Aguardando oponente...");
+      } else {
+        goToNext();
+      }
     }
   }, 1000);
 }

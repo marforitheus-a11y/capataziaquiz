@@ -833,6 +833,50 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  function formatDuration(seconds) {
+    if (seconds === null || seconds === undefined || Number.isNaN(seconds)) return '-';
+    const value = Math.max(0, Number(seconds));
+    const minutes = Math.floor(value / 60).toString().padStart(2, '0');
+    const secs = Math.floor(value % 60).toString().padStart(2, '0');
+    return `${minutes}:${secs}`;
+  }
+
+  function renderChallengePerformance(data) {
+    const challengeStatsEl = document.getElementById('challengeStatsSummary');
+    const challengeHistoryEl = document.getElementById('challengeHistoryList');
+    if (!challengeStatsEl || !challengeHistoryEl) return;
+
+    const stats = data.challengeStats || {};
+    const wins = stats.wins || 0;
+    const losses = stats.losses || 0;
+    const draws = stats.draws || 0;
+    const total = wins + losses + draws;
+
+    challengeStatsEl.innerHTML = `
+      <p><strong>Desafios ganhos:</strong> ${wins}</p>
+      <p><strong>Desafios perdidos:</strong> ${losses}</p>
+      <p><strong>Empates:</strong> ${draws}</p>
+      <p><strong>Total finalizado:</strong> ${total}</p>
+    `;
+
+    const history = (data.challengeHistory || []).slice().reverse();
+    if (history.length === 0) {
+      challengeHistoryEl.innerHTML = '<p style="color: #8b949e;">Nenhum desafio finalizado ainda.</p>';
+      return;
+    }
+
+    challengeHistoryEl.innerHTML = history.map((item) => {
+      const resultLabel = item.result === 'win' ? 'Vitória' : (item.result === 'loss' ? 'Derrota' : 'Empate');
+      return `
+        <div style="border: 1px solid #e5eaf0; border-radius: 10px; padding: 12px; margin-bottom: 10px;">
+          <p><strong>${resultLabel}</strong> • ${item.subjects || 'Sem matéria'} • ${item.questionCount || 0} questões</p>
+          <p>${item.me} (${item.myScore ?? 0}) x (${item.opponentScore ?? 0}) ${item.opponent}</p>
+          <p>Seu tempo: ${formatDuration(item.myElapsedSeconds)} • Tempo de ${item.opponent}: ${formatDuration(item.opponentElapsedSeconds)} • Limite: ${formatDuration(item.timeLimitSeconds)}</p>
+        </div>
+      `;
+    }).join('');
+  }
+
   async function loadPerformanceData() {
     if (!userDocRef) return;
 
@@ -840,6 +884,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!snap.exists) return;
 
     const data = snap.data();
+    renderChallengePerformance(data);
 
     const stats = data.stats || { correct: 0, wrong: 0, totalQuestions: 0 };
     const unanswered = Math.max(0, stats.totalQuestions - stats.correct - stats.wrong);
@@ -1065,7 +1110,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       questions: [],
       answers: { [currentUser]: {}, [invitedUser]: {} },
-      finisher: null
+      submissions: {},
+      finisher: null,
+      historySaved: false
     };
 
     try {
@@ -1207,7 +1254,105 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  window.finishChallenge = async (myAnswers) => {
+  function buildChallengeResult(challengeId, challengeData) {
+    const p1 = challengeData.createdBy;
+    const p2 = challengeData.invited;
+    const questions = challengeData.questions || [];
+    const submissions = challengeData.submissions || {};
+    const p1Submission = submissions[p1] || {};
+    const p2Submission = submissions[p2] || {};
+    const p1Answers = p1Submission.answers || {};
+    const p2Answers = p2Submission.answers || {};
+
+    let p1Score = 0;
+    let p2Score = 0;
+
+    questions.forEach((q) => {
+      if (p1Answers[q.id] === q.resposta_correta) p1Score++;
+      if (p2Answers[q.id] === q.resposta_correta) p2Score++;
+    });
+
+    let winner = null;
+    if (p1Score > p2Score) winner = p1;
+    if (p2Score > p1Score) winner = p2;
+
+    return {
+      challengeId,
+      winner,
+      loser: winner ? (winner === p1 ? p2 : p1) : null,
+      isDraw: p1Score === p2Score,
+      scores: { [p1]: p1Score, [p2]: p2Score },
+      elapsedSeconds: {
+        [p1]: p1Submission.elapsedSeconds ?? null,
+        [p2]: p2Submission.elapsedSeconds ?? null
+      },
+      subjects: (challengeData.settings?.subjects || []).map((s) => s.name).join(', '),
+      questionCount: challengeData.settings?.count || questions.length,
+      timeLimitSeconds: (challengeData.settings?.time || 0) * 60,
+      finishedAt: firebase.firestore.FieldValue.serverTimestamp()
+    };
+  }
+
+  async function persistChallengeHistoryIfNeeded(challengeId, challengeData, result) {
+    if (!result || challengeData.historySaved) return;
+
+    const p1 = challengeData.createdBy;
+    const p2 = challengeData.invited;
+    const p1Result = result.winner === p1 ? 'win' : (result.winner === p2 ? 'loss' : 'draw');
+    const p2Result = result.winner === p2 ? 'win' : (result.winner === p1 ? 'loss' : 'draw');
+
+    const p1Entry = {
+      challengeId,
+      result: p1Result,
+      me: p1,
+      opponent: p2,
+      myScore: result.scores[p1] || 0,
+      opponentScore: result.scores[p2] || 0,
+      myElapsedSeconds: result.elapsedSeconds[p1] ?? null,
+      opponentElapsedSeconds: result.elapsedSeconds[p2] ?? null,
+      subjects: result.subjects,
+      questionCount: result.questionCount,
+      timeLimitSeconds: result.timeLimitSeconds,
+      finishedAt: new Date().toISOString()
+    };
+
+    const p2Entry = {
+      challengeId,
+      result: p2Result,
+      me: p2,
+      opponent: p1,
+      myScore: result.scores[p2] || 0,
+      opponentScore: result.scores[p1] || 0,
+      myElapsedSeconds: result.elapsedSeconds[p2] ?? null,
+      opponentElapsedSeconds: result.elapsedSeconds[p1] ?? null,
+      subjects: result.subjects,
+      questionCount: result.questionCount,
+      timeLimitSeconds: result.timeLimitSeconds,
+      finishedAt: new Date().toISOString()
+    };
+
+    await Promise.all([
+      db.collection('users').doc(p1).set({
+        challengeHistory: firebase.firestore.FieldValue.arrayUnion(p1Entry),
+        challengeStats: {
+          wins: firebase.firestore.FieldValue.increment(p1Result === 'win' ? 1 : 0),
+          losses: firebase.firestore.FieldValue.increment(p1Result === 'loss' ? 1 : 0),
+          draws: firebase.firestore.FieldValue.increment(p1Result === 'draw' ? 1 : 0)
+        }
+      }, { merge: true }),
+      db.collection('users').doc(p2).set({
+        challengeHistory: firebase.firestore.FieldValue.arrayUnion(p2Entry),
+        challengeStats: {
+          wins: firebase.firestore.FieldValue.increment(p2Result === 'win' ? 1 : 0),
+          losses: firebase.firestore.FieldValue.increment(p2Result === 'loss' ? 1 : 0),
+          draws: firebase.firestore.FieldValue.increment(p2Result === 'draw' ? 1 : 0)
+        }
+      }, { merge: true }),
+      db.collection('challenges').doc(challengeId).update({ historySaved: true })
+    ]);
+  }
+
+  window.finishChallenge = async (myAnswers, extra = {}) => {
     if (!activeChallengeId) return;
     if (window.quizMode !== 'challenge' && window.quizMode !== 'finished') return;
     if (window.quizMode === 'finished') return;
@@ -1217,10 +1362,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const challengeRef = db.collection('challenges').doc(activeChallengeId);
     const answerKey = `answers.${currentUser}`;
+    const submissionKey = `submissions.${currentUser}`;
 
     try {
       await challengeRef.update({
-        [answerKey]: myAnswers
+        [answerKey]: myAnswers,
+        [submissionKey]: {
+          answers: myAnswers,
+          reason: extra.reason || 'completed',
+          elapsedSeconds: extra.elapsedSeconds ?? null,
+          completedAt: firebase.firestore.FieldValue.serverTimestamp()
+        }
       });
 
       const doc = await challengeRef.get();
@@ -1233,9 +1385,12 @@ document.addEventListener('DOMContentLoaded', async () => {
           finisher: currentUser
         });
       } else {
+        const result = buildChallengeResult(activeChallengeId, challenge);
         await challengeRef.update({
+          result,
           status: 'finished'
         });
+        await persistChallengeHistoryIfNeeded(activeChallengeId, challenge, result);
       }
     } catch (e) {
       console.error("Erro ao finalizar desafio:", e);

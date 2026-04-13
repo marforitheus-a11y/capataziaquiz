@@ -532,19 +532,33 @@ function showChallengeWaitingScreen(message) {
 function showChallengeResults(challengeDoc) {
   const p1_id = challengeDoc.createdBy;
   const p2_id = challengeDoc.invited;
-  
-  const p1_answers = challengeDoc.answers[p1_id] || {};
-  const p2_answers = challengeDoc.answers[p2_id] || {};
-  const questions = challengeDoc.questions; 
-  
-  let p1_score = 0;
-  let p2_score = 0;
-  
-  questions.forEach(q => {
-    if (p1_answers[q.id] === q.resposta_correta) p1_score++;
-    if (p2_answers[q.id] === q.resposta_correta) p2_score++;
-  });
-  
+
+  const questions = challengeDoc.questions || [];
+  const result = challengeDoc.result || {};
+  const submissions = challengeDoc.submissions || {};
+  const p1Submission = submissions[p1_id] || {};
+  const p2Submission = submissions[p2_id] || {};
+
+  const p1_answers = (p1Submission.answers || challengeDoc.answers?.[p1_id] || {});
+  const p2_answers = (p2Submission.answers || challengeDoc.answers?.[p2_id] || {});
+
+  let p1_score = result.scores?.[p1_id] ?? 0;
+  let p2_score = result.scores?.[p2_id] ?? 0;
+
+  if (!result.scores) {
+    questions.forEach(q => {
+      if (p1_answers[q.id] === q.resposta_correta) p1_score++;
+      if (p2_answers[q.id] === q.resposta_correta) p2_score++;
+    });
+  }
+
+  const formatDuration = (seconds) => {
+    if (seconds === null || seconds === undefined) return '-';
+    const minutes = Math.floor(seconds / 60).toString().padStart(2, '0');
+    const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+    return `${minutes}:${secs}`;
+  };
+
   let winnerMessage = "";
   if (p1_score > p2_score) {
     winnerMessage = `🏆 ${p1_id.toUpperCase()} VENCEU! 🏆`;
@@ -569,6 +583,14 @@ function showChallengeResults(challengeDoc) {
           <span style="text-transform: capitalize;">${p2_id}</span><br/>
           ${p2_score} / ${questions.length}
         </div>
+      </div>
+
+      <div style="background: #f6f8fb; border-radius: 10px; padding: 14px; margin: 18px auto; max-width: 620px; text-align: left;">
+        <p><strong>Matéria(s):</strong> ${result.subjects || (challengeDoc.settings?.subjects || []).map((s) => s.name).join(', ') || 'N/I'}</p>
+        <p><strong>Número de questões:</strong> ${result.questionCount || challengeDoc.settings?.count || questions.length}</p>
+        <p><strong>Tempo limite:</strong> ${formatDuration(result.timeLimitSeconds ?? ((challengeDoc.settings?.time || 0) * 60))}</p>
+        <p><strong>Tempo ${p1_id}:</strong> ${formatDuration(result.elapsedSeconds?.[p1_id] ?? p1Submission.elapsedSeconds)}</p>
+        <p><strong>Tempo ${p2_id}:</strong> ${formatDuration(result.elapsedSeconds?.[p2_id] ?? p2Submission.elapsedSeconds)}</p>
       </div>
       
       <div class="button-row" style="justify-content: center; margin-top: 30px;">
