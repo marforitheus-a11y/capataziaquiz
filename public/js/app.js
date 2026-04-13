@@ -224,6 +224,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   const imageUploadInput = document.getElementById('imageUpload');
   const challengeBtn = document.getElementById('challengeBtn');
 
+  function isChatWidgetOpen() {
+    return !!(chatWidget && chatWidget.style.display !== 'none');
+  }
+
   function populateChatTargetOptions() {
     if (!chatTargetSelect) return;
     const targets = getAvailableChatTargets();
@@ -385,10 +389,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         unreadCount = unreadChats[chatRoomId] || ((activeChatTarget !== 'group' && otherUser) ? (unreadMap[otherUser] || 0) : 0);
 
         if (unreadCount > myUnreadCount) {
-          if (chatWidget && chatWidget.style.display === 'none') {
+          if (!isChatWidgetOpen()) {
             notificationSound.play().catch((e) => console.warn("Erro ao tocar som:", e));
           }
         }
+      }
+
+      if (isChatWidgetOpen() && unreadCount > 0) {
+        unreadCount = 0;
+        resetUnreadForCurrentChat();
       }
 
       myUnreadCount = unreadCount;
@@ -409,7 +418,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       else indicator.classList.remove('online');
     }
 
-    if (myUnreadCount > 0) {
+    if (!isChatWidgetOpen() && myUnreadCount > 0) {
       chatBadge.textContent = myUnreadCount;
       chatBadge.style.display = 'flex';
     } else {
