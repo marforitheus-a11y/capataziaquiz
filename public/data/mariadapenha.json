@@ -1637,25 +1637,6 @@
     "resposta_correta": "A"
   },
   {
-    "id": "3505808",
-    "disciplina": "Direito Processual Penal",
-    "assunto": "Ação Penal ,, Lei Maria da Penha - Lei nº 11.340 de 2006",
-    "banca": "FGV",
-    "instituicao": "TJ-CE",
-    "ano": "2025",
-    "cargo": "FGV - 2025 - TJ-CE - Juiz Substituto",
-    "nivel": "",
-    "enunciado": "Em uma Vara de Violência Doméstica e Familiar contra a Mulher, o Juiz de Direito recebeu os autos de inquérito policial concluído, no qual se apurou a prática de crime de lesão corporal leve (Art. 129, §9º, do Código Penal) supostamente cometido por Tício contra sua companheira, Ana. Ela comparecera à Delegacia, ocasião em que narrou os fatos, solicitou medidas protetivas de urgência e manifestou expressamente o desejo de representar criminalmente contra Tício. O Ministério Público ofereceu denúncia contra Tício pela prática do referido crime. Não há, em nenhuma peça dos autos, qualquer manifestação posterior de Ana indicando desejo de retratar-se da representação oferecida na fase policial. O Magistrado, antes de decidir sobre o recebimento da denúncia, resolve analisar a necessidade de designar a audiência prevista no Art. 16 da Lei nº 11.340/2006 (Lei Maria da Penha). Considerando a situação hipotética e o entendimento consolidado pelo Superior Tribunal de Justiça, assinale a opção que apresenta a decisão correta do Magistrado.",
-    "alternativas": {
-      "A": "Designar, de ofício, a audiência prevista no Art. 16 da Lei Maria da Penha, por ser ato processual obrigatório em crimes de lesão corporal leve no âmbito doméstico, visando confirmar a representação da vítima antes do recebimento da denúncia.",
-      "B": "Intimar o Ministério Público para que requeira a designação da audiência do Art. 16, pois, embora necessária para confirmar a representação, sua designação não pode ocorrer de ofício pelo Juiz, dependendo de provocação ministerial.",
-      "C": "Intimar pessoalmente a vítima Ana para que compareça em cartório e ratifique sua representação ou manifeste eventual desejo de retratação, condicionando o recebimento da denúncia a essa nova manifestação.",
-      "D": "Prosseguir com a análise dos requisitos para o recebimento da denúncia oferecida, sem designar a audiência do Art. 16, uma vez que esta só é necessária caso a vítima manifeste previamente o desejo de se retratar, o que não ocorreu nos autos.",
-      "E": "Determinar o arquivamento do inquérito policial, pois a ausência de manifestação expressa da vítima sobre o desejo de retratação impede a designação da audiência do art. 16, tornando inviável o prosseguimento da ação penal por falta de condição de procedibilidade."
-    },
-    "resposta_correta": ""
-  },
-  {
     "id": "3483021",
     "disciplina": "Direito Processual Penal",
     "assunto": "Lei Maria da Penha - Lei nº 11.340 de 2006",
@@ -1880,25 +1861,6 @@
       "D": "Namorado divulga fotos íntimas da namorada sem o consentimento dela."
     },
     "resposta_correta": "A"
-  },
-  {
-    "id": "3383786",
-    "disciplina": "Direito Processual Penal",
-    "assunto": "Lei Maria da Penha - Lei nº 11.340 de 2006",
-    "banca": "CESPE / CEBRASPE",
-    "instituicao": "PC-CE",
-    "ano": "2025",
-    "cargo": "CESPE / CEBRASPE - 2025 - PC-CE - Delegado de Polícia Civil",
-    "nivel": "",
-    "enunciado": "Com base na jurisprudência do STJ acerca das medidas protetivas de urgência previstas na Lei Maria da Penha (Lei n.º 11.340/2006), assinale a opção correta.",
-    "alternativas": {
-      "A": "As citadas medidas devem ser revogadas caso o inquérito policial seja concluído sem o indiciamento do acusado.",
-      "B": "O deferimento das citadas medidas é condicionado à demonstração específica, pela vítima, da subjugação feminina.",
-      "C": "O réu deve ser citado para oferecer contestação após eventual decretação das citadas medidas.",
-      "D": "As citadas medidas são extintas sempre que houver arquivamento do inquérito policial.",
-      "E": "As citadas medidas têm natureza jurídica de tutela inibitória, por isso sua vigência depende da existência de boletim de ocorrência, de inquérito policial e de processo cível ou criminal."
-    },
-    "resposta_correta": ""
   },
   {
     "id": "3382936",
@@ -2447,25 +2409,6 @@
       "E": "I, II e III."
     },
     "resposta_correta": "E"
-  },
-  {
-    "id": "3260324",
-    "disciplina": "Direito Processual Penal",
-    "assunto": "Lei Maria da Penha - Lei nº 11.340 de 2006",
-    "banca": "MPE-SP",
-    "instituicao": "MPE-SP",
-    "ano": "2025",
-    "cargo": "MPE-SP - 2025 - MPE-SP - Promotor de Justiça",
-    "nivel": "",
-    "enunciado": "Assinale a alternativa correta sobre as medidas de enfrentamento à violência doméstica ou familiar contra mulher, criança ou adolescente.",
-    "alternativas": {
-      "A": "Segundo a Lei Maria da Penha (Lei no 11.340/2006), os Juizados de Violência Doméstica e Familiar contra a Mulher possuem competência cível e criminal, permitindo que a vítima proponha ações como divórcio ou dissolução de união estável, excluídas as questões relacionadas à partilha de bens.",
-      "B": "Nos casos de violência doméstica e familiar que impliquem risco atual ou iminente à vida ou à integridade física de mulher, de seus dependentes, ou de crianças, adolescentes ou seus familiares, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a vítima. O afastamento depende de ordem judicial, não podendo ser realizado pelo delegado de polícia ou pelo policial responsável pelo atendimento da ocorrência, mesmo em situações excepcionais, como em Municípios que não sejam sede de comarca ou, nesses casos, quando não houver delegado disponível no momento da comunicação do fato.",
-      "C": "Uma das diretrizes do Protocolo para Julgamento com Perspectiva de Gênero, do Conselho Nacional de Justiça (CNJ), é a necessidade de proceder ao controle de convencionalidade no processo decisório, entendendo-se como tal a verificação e avaliação da compatibilidade dos atos normativos com os costumes e as tradições da localidade em que o magistrado estiver exercendo a judicatura.",
-      "D": "As medidas protetivas de urgência previstas na Lei Maria da Penha (Lei no 11.340/2006) serão concedidas independentemente da tipificação penal da violência, da existência de boletim de ocorrência ou de investigação penal ou ação penal em andamento. Porém, as medidas perderão efeito caso o inquérito ou a investigação sejam arquivados, ou o agressor seja absolvido com fundamento na inexistência do fato.",
-      "E": "O crime de descumprimento de medidas protetivas de urgência, previsto no artigo 24-A da Lei Maria da Penha (Lei no 11.340/2006), configura-se apenas se o juiz que as deferiu tiver competência criminal."
-    },
-    "resposta_correta": ""
   },
   {
     "id": "3259956",
