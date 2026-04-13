@@ -38,5 +38,9 @@
   {
     "name": "Código de Trânsito Brasileiro",
     "file": "ctb.json"
+  },
+  {
+    "name": "Estatuto do Desarmamento",
+    "file": "desarmamento.json"
   }
 ]
