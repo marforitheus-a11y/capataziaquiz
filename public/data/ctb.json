@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "900501",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Sinalização de Trânsito",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre a sinalização de trânsito, assinale a alternativa correta de acordo com o Código de Trânsito Brasileiro:",
+    "alternativas": {
+      "A": "A responsabilidade pela instalação da sinalização nas vias internas pertencentes aos condomínios constituídos por unidades autônomas é do órgão executivo de trânsito do município.",
+      "B": "É permitido afixar sobre a sinalização de trânsito qualquer tipo de publicidade, desde que aprovada pelo CONTRAN.",
+      "C": "Nas vias públicas e nos imóveis é proibido colocar luzes, publicidade ou vegetação que possam gerar confusão, interferir na visibilidade da sinalização e comprometer a segurança do trânsito.",
+      "D": "Qualquer via pavimentada pode ser reaberta ao trânsito após obras, mesmo sem sinalização, desde que os condutores sejam avisados por redes sociais."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 81 do CTB, nas vias públicas e nos imóveis é proibido colocar luzes, publicidade, inscrições, vegetação e mobiliário que possam gerar confusão, interferir na visibilidade da sinalização e comprometer a segurança do trânsito."
+  },
+  {
+    "id": "900502",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Infrações de Trânsito",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante uma blitz de rotina, um Guarda Civil Municipal aborda João, que conduzia seu veículo com a Carteira Nacional de Habilitação (CNH) vencida há mais de 45 dias. Nos termos do CTB, João cometeu uma infração de natureza:",
+    "alternativas": {
+      "A": "Grave, com penalidade de multa e retenção do veículo.",
+      "B": "Gravíssima, com penalidade de multa.",
+      "C": "Média, com penalidade de multa e apreensão da CNH.",
+      "D": "Leve, sujeita apenas a advertência por escrito."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 162, V, dirigir veículo com validade da Carteira Nacional de Habilitação vencida há mais de 30 (trinta) dias é infração gravíssima, com penalidade de multa."
+  },
+  {
+    "id": "900503",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Sinalização de Trânsito",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Analise as afirmativas a seguir sobre as regras de sinalização dispostas no CTB.\n\nI. Os sinais de trânsito classificam-se em verticais, horizontais, luminosos, sonoros, gestos do agente de trânsito e do condutor, e dispositivos de sinalização auxiliar.\nII. Nenhuma via pavimentada poderá ser entregue após sua construção enquanto não estiver devidamente sinalizada.\nIII. A responsabilidade pela instalação da sinalização nas áreas de estacionamento de estabelecimentos privados de uso coletivo é exclusiva do poder público.\n\nEstá correto o que se afirma em:",
+    "alternativas": {
+      "A": "I e II, apenas.",
+      "B": "II, apenas.",
+      "C": "I, II e III.",
+      "D": "I e III, apenas."
+    },
+    "resposta_correta": "A",
+    "comentario": "A afirmativa III está incorreta, pois segundo o Art. 80, § 3º, a responsabilidade nas áreas de estacionamento de estabelecimentos privados de uso coletivo é de seu proprietário. As afirmativas I (Art. 87) e II (Art. 88) estão corretas."
+  },
+  {
+    "id": "900504",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Infrações Relacionadas a Álcool",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A recusa em ser submetido a teste, exame clínico, perícia ou outro procedimento que permita certificar influência de álcool ou outra substância psicoativa caracteriza-se como:",
+    "alternativas": {
+      "A": "Infração grave, com suspensão do direito de dirigir por 6 meses.",
+      "B": "Infração gravíssima, com multa (dez vezes) e suspensão do direito de dirigir por 12 meses.",
+      "C": "Infração média, sujeita apenas à retenção do veículo.",
+      "D": "Atitude lícita, não constituindo infração de trânsito em respeito ao direito de não produzir provas contra si."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o Art. 165-A, recusar-se a ser submetido a teste constitui infração gravíssima, com penalidade de multa (dez vezes) e suspensão do direito de dirigir por 12 meses."
+  },
+  {
+    "id": "900505",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Infrações Relacionadas à CNH",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Se um indivíduo decide dirigir um automóvel (exigência de CNH categoria B) possuindo apenas a permissão para dirigir motocicletas (categoria A), ele estará cometendo uma infração:",
+    "alternativas": {
+      "A": "Grave, sujeita a multa.",
+      "B": "Gravíssima, com multa (duas vezes) e retenção do veículo.",
+      "C": "Média, com apreensão do veículo.",
+      "D": "Gravíssima, com multa (três vezes) e suspensão do direito de dirigir."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 162, III, dirigir veículo com CNH de categoria diferente da do veículo que esteja conduzindo é infração gravíssima, com multa (duas vezes) e retenção do veículo."
+  },
+  {
+    "id": "900506",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Segurança e Cinto",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O condutor que for flagrado transportando um passageiro no banco traseiro sem o uso do cinto de segurança incorrerá em:",
+    "alternativas": {
+      "A": "Infração gravíssima, com remoção do veículo.",
+      "B": "Infração grave, com multa e retenção do veículo até a colocação do cinto pelo infrator.",
+      "C": "Infração média, com multa apenas para o passageiro.",
+      "D": "Infração leve, com advertência verbal."
+    },
+    "resposta_correta": "B",
+    "comentario": "De acordo com o Art. 167, deixar o condutor ou passageiro de usar o cinto de segurança é infração grave, com penalidade de multa e retenção do veículo até a colocação do cinto."
+  },
+  {
+    "id": "900507",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Disputa de Corrida",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A prática conhecida popularmente como 'racha' ou disputa de corrida em via pública não autorizada acarreta as seguintes consequências para o condutor, segundo o CTB:",
+    "alternativas": {
+      "A": "Infração gravíssima, multa (cinco vezes) e retenção do veículo.",
+      "B": "Infração grave, multa (dez vezes) e suspensão do direito de dirigir.",
+      "C": "Infração gravíssima, multa (dez vezes), suspensão do direito de dirigir e apreensão do veículo.",
+      "D": "Infração gravíssima, multa (três vezes) e cassação imediata da CNH."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 173, disputar corrida é infração gravíssima, com multa (dez vezes), suspensão do direito de dirigir e apreensão do veículo."
+  },
+  {
+    "id": "900508",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Sinistros de Trânsito",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Marina envolveu-se em um pequeno sinistro de trânsito, onde houve apenas danos materiais aos veículos, sem nenhuma vítima. Visando aguardar a perícia de sua seguradora, ela recusou-se a retirar o veículo do local, prejudicando severamente o fluxo da via. De acordo com o CTB, a conduta de Marina constitui:",
+    "alternativas": {
+      "A": "Exercício regular de um direito, não havendo infração.",
+      "B": "Infração leve, pois não houve vítimas.",
+      "C": "Infração grave, passível de suspensão do direito de dirigir.",
+      "D": "Infração média, sujeita a multa."
+    },
+    "resposta_correta": "D",
+    "comentario": "Segundo o Art. 178, deixar o condutor envolvido em sinistro sem vítima de adotar providências para remover o veículo do local para assegurar a segurança e a fluidez do trânsito é infração média, com penalidade de multa."
+  },
+  {
+    "id": "900509",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Imobilização do Veículo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um motorista esqueceu-se de abastecer seu automóvel e acabou tendo seu veículo imobilizado na via por falta de combustível, obstruindo parte da pista. A classificação dessa infração e a respectiva medida administrativa são:",
+    "alternativas": {
+      "A": "Infração leve, com advertência por escrito.",
+      "B": "Infração média, com remoção do veículo.",
+      "C": "Infração grave, com retenção do veículo.",
+      "D": "Infração gravíssima, com apreensão do veículo."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 180 estabelece que ter seu veículo imobilizado na via por falta de combustível é infração média, com penalidade de multa e medida administrativa de remoção do veículo."
+  },
+  {
+    "id": "900510",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Estacionamento Irregular",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Com base no artigo 181 do Código de Trânsito Brasileiro, relacione as colunas correspondentes às infrações de estacionamento e sua natureza.\n\nColuna A\n1. Estacionar afastado da guia da calçada (meio-fio) a mais de um metro.\n2. Estacionar afastado da guia da calçada (meio-fio) de cinquenta centímetros a um metro.\n3. Estacionar na contramão de direção.\n\nColuna B\n(  ) Infração Leve.\n(  ) Infração Média.\n(  ) Infração Grave.\n\nA sequência correta é:",
+    "alternativas": {
+      "A": "2, 3, 1.",
+      "B": "1, 2, 3.",
+      "C": "3, 1, 2.",
+      "D": "2, 1, 3."
+    },
+    "resposta_correta": "A",
+    "comentario": "Art. 181, II (50cm a 1m) é Leve (2); Art. 181, XV (Contramão) é Média (3); Art. 181, III (Mais de 1m) é Grave (1). Sequência correta: 2, 3, 1."
+  },
+  {
+    "id": "900511",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Vagas Reservadas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Ao patrulhar a via pública, a equipe da GCM constata um veículo estacionado em uma vaga regulamentada e devidamente sinalizada como exclusiva para pessoas com deficiência. O veículo não possui nenhuma credencial que comprove tal condição. Trata-se de infração de natureza:",
+    "alternativas": {
+      "A": "Grave.",
+      "B": "Média.",
+      "C": "Leve.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "D",
+    "comentario": "De acordo com o Art. 181, XX, estacionar nas vagas reservadas às pessoas com deficiência ou idosos, sem credencial que comprove tal condição, é infração gravíssima."
+  },
+  {
+    "id": "900512",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Parada vs Estacionamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O CTB faz distinção entre parada e estacionamento. Parar o veículo sobre a faixa de pedestres na mudança de sinal luminoso (Art. 183) configura infração:",
+    "alternativas": {
+      "A": "Gravíssima.",
+      "B": "Grave.",
+      "C": "Média.",
+      "D": "Leve."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 183, parar o veículo sobre a faixa de pedestres na mudança de sinal luminoso é infração média."
+  },
+  {
+    "id": "900513",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Transitar em Faixa Exclusiva",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Transitar com o veículo na faixa ou via de trânsito exclusivo, regulamentada com circulação destinada aos veículos de transporte público coletivo de passageiros, sem autorização do poder público competente, configura infração:",
+    "alternativas": {
+      "A": "Grave, com retenção do veículo.",
+      "B": "Média, com multa.",
+      "C": "Gravíssima, com multa e apreensão do veículo.",
+      "D": "Gravíssima, sujeita apenas à suspensão do direito de dirigir."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 184, III, transitar na faixa destinada aos veículos de transporte público coletivo é infração gravíssima, penalidade de multa e apreensão do veículo, com medida administrativa de remoção."
+  },
+  {
+    "id": "900514",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Veículos de Urgência",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de dar passagem aos veículos de polícia e às ambulâncias, quando em serviço de urgência e devidamente identificados por dispositivos regulamentados de alarme sonoro e iluminação intermitente, é considerado pelo CTB como infração:",
+    "alternativas": {
+      "A": "Média.",
+      "B": "Grave.",
+      "C": "Gravíssima.",
+      "D": "Leve."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 189 estipula que deixar de dar passagem a esses veículos em serviço de urgência e identificados é infração gravíssima."
+  },
+  {
+    "id": "900515",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Aproveitar Prioridade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Roberto, atrasado para o trabalho, decide seguir logo atrás de um veículo de resgate dos Bombeiros que transitava com sirene ligada, abrindo caminho no trânsito. A atitude de Roberto de 'seguir veículo em serviço de urgência' enquadra-se como infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "C",
+    "comentario": "Segundo o Art. 190, seguir veículo em serviço de urgência com prioridade de passagem devidamente identificada é infração grave."
+  },
+  {
+    "id": "900516",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Transitar em Locais Proibidos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Transitar com o veículo em calçadas, passeios, passarelas, ciclovias e canteiros centrais é uma conduta extremamente perigosa. O CTB pune essa prática com:",
+    "alternativas": {
+      "A": "Infração grave e multa (duas vezes).",
+      "B": "Infração gravíssima e multa (três vezes).",
+      "C": "Infração gravíssima e multa (dez vezes).",
+      "D": "Infração média e suspensão do direito de dirigir."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 193 estabelece que transitar nessas áreas exclusivas para pedestres e ciclistas é infração gravíssima com penalidade de multa (três vezes)."
+  },
+  {
+    "id": "900517",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Indicação de Manobra",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de indicar com antecedência, mediante gesto regulamentar de braço ou luz indicadora de direção do veículo (seta), a mudança de direção ou de faixa de circulação é infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 196, não utilizar o indicador de direção (seta) ou gesto de braço com antecedência é infração grave."
+  },
+  {
+    "id": "900518",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Ultrapassagem e Bicicletas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Ao passar ou ultrapassar uma bicicleta, o condutor de veículo automotor deve resguardar uma distância lateral mínima. Deixar de guardar a distância lateral de 1,50m (um metro e cinquenta centímetros) constitui infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 201 do CTB, deixar de guardar a distância lateral de 1,5m ao passar ou ultrapassar bicicleta é infração média."
+  },
+  {
+    "id": "900519",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Ultrapassagem Irregular",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Analise as afirmações sobre regras de ultrapassagem (Art. 202 e 203 do CTB).\n\nI. Ultrapassar outro veículo pelo acostamento é infração gravíssima sujeita a multa (cinco vezes).\nII. Ultrapassar pela contramão nas faixas de pedestre é infração gravíssima sujeita a multa (cinco vezes).\nIII. Ultrapassar pela direita veículo de transporte coletivo parado para embarque de passageiros (sem refúgio) é infração média.\n\nEstá correto o que se afirma em:",
+    "alternativas": {
+      "A": "I e II, apenas.",
+      "B": "II e III, apenas.",
+      "C": "I, apenas.",
+      "D": "I, II e III."
+    },
+    "resposta_correta": "A",
+    "comentario": "A afirmativa III está incorreta pois, de acordo com o Art. 200, essa conduta é infração gravíssima. I (Art. 202) e II (Art. 203) estão corretas."
+  },
+  {
+    "id": "900520",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Operação de Retorno",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A execução da operação de retorno, passando por cima de calçada, canteiros ou faixas de pedestres, é rigorosamente coibida pelo CTB. Tal conduta é classificada como infração:",
+    "alternativas": {
+      "A": "Média.",
+      "B": "Grave.",
+      "C": "Gravíssima.",
+      "D": "Média, com apreensão do veículo."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 206, III, executar operação de retorno passando por cima de calçadas, passeios, canteiros ou faixas de pedestres é infração gravíssima."
+  },
+  {
+    "id": "900521",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Sinal Vermelho",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Avançar o sinal vermelho do semáforo ou o de parada obrigatória é uma das infrações mais comuns no trânsito urbano. De acordo com o Art. 208 do CTB, a natureza dessa infração é:",
+    "alternativas": {
+      "A": "Grave.",
+      "B": "Média.",
+      "C": "Gravíssima.",
+      "D": "Leve, se cometida durante a madrugada."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 208 define expressamente que avançar o sinal vermelho do semáforo ou o de parada obrigatória é infração gravíssima."
+  },
+  {
+    "id": "900522",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Bloqueio Viário Policial",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Transpor, sem autorização, bloqueio viário policial acarreta, além da penalidade de multa:",
+    "alternativas": {
+      "A": "Somente advertência verbal se não houver fuga.",
+      "B": "Apreensão do veículo e suspensão do direito de dirigir.",
+      "C": "Cassação imediata da CNH do condutor.",
+      "D": "Recolhimento do veículo, sem impacto na CNH."
+    },
+    "resposta_correta": "B",
+    "comentario": "Nos termos do Art. 210, essa conduta é infração gravíssima e gera as penalidades de multa, apreensão do veículo e suspensão do direito de dirigir."
+  },
+  {
+    "id": "900523",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Preferência de Pedestres",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Com base no Art. 214 do CTB, deixar de dar preferência de passagem a pedestre e a veículo não motorizado que se encontre na faixa a ele destinada configura infração de natureza:",
+    "alternativas": {
+      "A": "Média.",
+      "B": "Grave.",
+      "C": "Gravíssima.",
+      "D": "Leve."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 214, I, qualifica como gravíssima a infração de não dar preferência ao pedestre que já se encontre na faixa a ele destinada."
+  },
+  {
+    "id": "900524",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Limites de Velocidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Relativo aos excessos de velocidade aferidos por radar (Art. 218), é correto afirmar que transitar em velocidade superior à máxima permitida em mais de 20% (vinte por cento) até 50% (cinquenta por cento) constitui infração:",
+    "alternativas": {
+      "A": "Média.",
+      "B": "Grave.",
+      "C": "Gravíssima.",
+      "D": "Leve."
+    },
+    "resposta_correta": "B",
+    "comentario": "De acordo com o Art. 218, II, o excesso de velocidade entre mais de 20% até 50% da máxima permitida é tipificado como infração grave."
+  },
+  {
+    "id": "900525",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Velocidade Mínima",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Transitar com o veículo em velocidade inferior à metade da velocidade máxima estabelecida para a via, retardando ou obstruindo o trânsito (salvo exceções legais ou faixa da direita), é considerado infração:",
+    "alternativas": {
+      "A": "Grave.",
+      "B": "Média.",
+      "C": "Leve.",
+      "D": "Não é considerado infração se não houver acidente."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 219 do CTB estabelece que essa prática constitui infração de natureza média."
+  },
+  {
+    "id": "900526",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Velocidade e Segurança",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de reduzir a velocidade do veículo de forma compatível com a segurança do trânsito à aproximação de animais na pista (Art. 220, XI) é uma infração:",
+    "alternativas": {
+      "A": "Gravíssima.",
+      "B": "Grave.",
+      "C": "Média.",
+      "D": "Leve."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 220, XI (que abrange os incisos II ao XII) tipifica como infração grave não reduzir a velocidade à aproximação de animais na pista."
+  },
+  {
+    "id": "900527",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Placas de Identificação",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Portar no veículo placas de identificação em desacordo com as especificações e modelos estabelecidos pelo CONTRAN sujeita o condutor à seguinte penalidade e medida administrativa (Art. 221):",
+    "alternativas": {
+      "A": "Multa; Remoção do veículo.",
+      "B": "Multa; Retenção do veículo para regularização e apreensão das placas irregulares.",
+      "C": "Suspensão do direito de dirigir; Apreensão do veículo.",
+      "D": "Multa (cinco vezes); Apreensão da CNH."
+    },
+    "resposta_correta": "B",
+    "comentario": "A infração é média, e o Art. 221 prevê penalidade de multa, com a medida administrativa de retenção do veículo e apreensão das placas irregulares."
+  },
+  {
+    "id": "900528",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Uso de Luzes e Farol",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Fazer uso do facho de luz alta dos faróis em vias providas de iluminação pública caracteriza infração:",
+    "alternativas": {
+      "A": "Grave.",
+      "B": "Média.",
+      "C": "Leve.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "C",
+    "comentario": "De acordo com o Art. 224, utilizar farol alto em vias com iluminação pública é infração leve."
+  },
+  {
+    "id": "900529",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Sinalização de Emergência",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um motorista utilizou cones e galhos de árvore para sinalizar seu veículo quebrado na pista. Após o conserto, ele foi embora e deixou os objetos na via. Qual a natureza da infração cometida (Art. 226)?",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o Art. 226, deixar de retirar objeto utilizado para sinalização temporária da via é infração média."
+  },
+  {
+    "id": "900530",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Uso da Buzina",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Analise as afirmações abaixo sobre o uso da buzina:\n\nI. É infração leve usar buzina prolongada e sucessivamente a qualquer pretexto.\nII. É infração média usar buzina entre as 22h e as 6h.\nIII. É infração grave usar buzina em locais e horários proibidos pela sinalização.\n\nEstá correto o que se afirma em:",
+    "alternativas": {
+      "A": "I, apenas.",
+      "B": "II e III, apenas.",
+      "C": "I e III, apenas.",
+      "D": "Todas as afirmativas."
+    },
+    "resposta_correta": "A",
+    "comentario": "O Art. 227 classifica todas essas hipóteses (uso prolongado, entre 22h e 6h, ou em locais proibidos) como infração LEVE. Logo, II e III estão incorretas em suas naturezas propostas."
+  },
+  {
+    "id": "900531",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Som Automotivo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Usar no veículo equipamento com som em volume ou frequência que não sejam autorizados pelo CONTRAN resulta em:",
+    "alternativas": {
+      "A": "Infração média e multa.",
+      "B": "Infração grave, multa e retenção do veículo para regularização.",
+      "C": "Infração gravíssima e apreensão do veículo.",
+      "D": "Infração média, multa e remoção do equipamento."
+    },
+    "resposta_correta": "B",
+    "comentario": "Nos termos do Art. 228, o uso de som automotivo não autorizado é infração grave, sujeita a multa e medida administrativa de retenção do veículo para regularização."
+  },
+  {
+    "id": "900532",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Condição do Veículo e Licenciamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Conduzir o veículo que não esteja registrado e devidamente licenciado constitui infração:",
+    "alternativas": {
+      "A": "Gravíssima.",
+      "B": "Grave.",
+      "C": "Média.",
+      "D": "Leve."
+    },
+    "resposta_correta": "A",
+    "comentario": "De acordo com o Art. 230, V, conduzir veículo não registrado e não licenciado é infração gravíssima."
+  },
+  {
+    "id": "900533",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Condição do Veículo e Equipamentos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Se um condutor for autuado por dirigir veículo com o sistema de iluminação e sinalização alterados, ele estará sujeito à infração de natureza:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 230, XIII, define que conduzir veículo com o equipamento do sistema de iluminação e de sinalização alterados é infração grave."
+  },
+  {
+    "id": "900534",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Condição de Visibilidade do Veículo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Durante uma chuva torrencial, um condutor é avistado trafegando com o para-brisa embaçado e sem acionar o limpador de para-brisa. Essa atitude fere o Art. 230, XIX do CTB, sendo classificada como infração:",
+    "alternativas": {
+      "A": "Grave.",
+      "B": "Média.",
+      "C": "Gravíssima.",
+      "D": "Leve."
+    },
+    "resposta_correta": "A",
+    "comentario": "Conduzir veículo sem acionar o limpador de para-brisa sob chuva é infração grave, conforme o Art. 230, XIX."
+  },
+  {
+    "id": "900535",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Transporte Escolar e Remunerado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Conduzir veículo sem portar a autorização para condução de escolares (Art. 136) sujeita o infrator à infração:",
+    "alternativas": {
+      "A": "Grave e remoção do veículo.",
+      "B": "Gravíssima, multa (cinco vezes) e remoção do veículo.",
+      "C": "Média e apreensão da CNH.",
+      "D": "Gravíssima e retenção até apresentação do documento."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 230, XX, conduzir sem autorização para transporte escolar é infração gravíssima, com multa (cinco vezes) e medida de remoção do veículo."
+  },
+  {
+    "id": "900536",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Lâmpadas Queimadas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Ao transitar com um veículo com defeito no sistema de iluminação ou com lâmpadas queimadas (Art. 230, XXII), o motorista comete uma infração de natureza:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 230, XXII, tipifica como infração média conduzir veículo com defeito no sistema de iluminação ou lâmpadas queimadas."
+  },
+  {
+    "id": "900537",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Derramamento de Carga/Combustível",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Transitar com o veículo derramando, lançando ou arrastando sobre a via combustível ou lubrificante que esteja utilizando gera alto risco de sinistro. A classificação para tal conduta no CTB é:",
+    "alternativas": {
+      "A": "Infração média.",
+      "B": "Infração grave.",
+      "C": "Infração gravíssima.",
+      "D": "Somente advertência, com obrigação de limpar a via."
+    },
+    "resposta_correta": "C",
+    "comentario": "Segundo o Art. 231, II, 'b', tal conduta configura infração gravíssima com penalidade de multa e retenção do veículo para regularização."
+  },
+  {
+    "id": "900538",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Transporte Irregular de Pessoas/Bens",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Efetuar transporte remunerado de pessoas ou bens, quando não for licenciado para esse fim (salvo casos de força maior ou permissão da autoridade), caracteriza-se como:",
+    "alternativas": {
+      "A": "Infração leve e retenção.",
+      "B": "Infração média e apreensão.",
+      "C": "Infração grave e remoção.",
+      "D": "Infração gravíssima e remoção do veículo."
+    },
+    "resposta_correta": "D",
+    "comentario": "De acordo com o Art. 231, VIII, o transporte clandestino/irregular remunerado de passageiros ou bens é infração gravíssima, com multa e remoção do veículo."
+  },
+  {
+    "id": "900539",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Veículo Desligado em Declive",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A prática popularmente conhecida como 'banguela', que consiste em transitar com o veículo desligado ou desengrenado em declive (Art. 231, IX), é tipificada como:",
+    "alternativas": {
+      "A": "Infração leve.",
+      "B": "Infração média.",
+      "C": "Infração grave.",
+      "D": "Infração gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o Art. 231, IX, transitar desligado ou desengrenado em declive é infração de natureza média, com multa e retenção do veículo."
+  },
+  {
+    "id": "900540",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Documentos de Porte Obrigatório",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Conduzir veículo sem os documentos de porte obrigatório referidos no Código de Trânsito Brasileiro é infração:",
+    "alternativas": {
+      "A": "Gravíssima.",
+      "B": "Grave.",
+      "C": "Média.",
+      "D": "Leve."
+    },
+    "resposta_correta": "D",
+    "comentario": "Nos termos do Art. 232, não portar os documentos obrigatórios é infração de natureza leve, sujeita a multa e retenção do veículo até a apresentação do documento."
+  },
+  {
+    "id": "900541",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Registro de Veículo e Prazos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Após a compra de um veículo usado, o novo proprietário não efetuou a transferência/registro no prazo estipulado por lei de 30 dias. Segundo o Art. 233, essa omissão acarreta:",
+    "alternativas": {
+      "A": "Infração leve.",
+      "B": "Infração média e remoção do veículo.",
+      "C": "Infração grave e retenção do veículo.",
+      "D": "Infração gravíssima e cassação do documento."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 233 define que não efetuar o registro de veículo no prazo de 30 dias é infração média, com penalidade de multa e medida administrativa de remoção do veículo."
+  },
+  {
+    "id": "900542",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Falsificação de Documentos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Falsificar ou adulterar documento de habilitação ou de identificação do veículo (Art. 234) é rigorosamente punido pelo CTB com a caracterização de infração:",
+    "alternativas": {
+      "A": "Grave.",
+      "B": "Média.",
+      "C": "Gravíssima, com apreensão e remoção do veículo.",
+      "D": "Gravíssima, sujeita somente a multa administrativa."
+    },
+    "resposta_correta": "C",
+    "comentario": "Falsificar/adulterar documentos de trânsito é infração gravíssima (Art. 234), com penalidade de multa e apreensão do veículo, além da medida de remoção."
+  },
+  {
+    "id": "900543",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Condução nas Partes Externas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Conduzir pessoas, animais ou carga nas partes externas do veículo, salvo nos casos devidamente autorizados, constitui infração:",
+    "alternativas": {
+      "A": "Gravíssima.",
+      "B": "Grave.",
+      "C": "Média.",
+      "D": "Leve."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme estipulado no Art. 235, transportar nas partes externas do veículo é infração grave, com penalidade de multa e retenção para transbordo."
+  },
+  {
+    "id": "900544",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Reboque de Veículos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Na ausência de um guincho apropriado, dois motoristas decidem rebocar um veículo enguiçado utilizando uma corda em uma avenida movimentada, situação que não configurava uma emergência imediata. O CTB (Art. 236) enquadra essa conduta como:",
+    "alternativas": {
+      "A": "Permitida, desde que liguem o pisca-alerta.",
+      "B": "Infração leve.",
+      "C": "Infração média.",
+      "D": "Infração grave."
+    },
+    "resposta_correta": "C",
+    "comentario": "Rebocar outro veículo com cabo flexível ou corda, salvo em casos de emergência, é classificado pelo Art. 236 como infração média."
+  },
+  {
+    "id": "900545",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Averiguação de Autenticidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O condutor que se recusa a entregar à autoridade de trânsito ou a seus agentes os documentos exigidos por lei para averiguação de sua autenticidade (mediante recibo) comete infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "D",
+    "comentario": "A recusa de entrega de documentos para averiguação de autenticidade (Art. 238) é infração gravíssima, gerando multa, apreensão e remoção do veículo."
+  },
+  {
+    "id": "900546",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Atualização de Cadastro",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de atualizar o cadastro de registro do veículo ou de habilitação do condutor (ex: não informar mudança de endereço ao DETRAN) acarreta, de acordo com o Art. 241, uma infração de natureza:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "A",
+    "comentario": "A falta de atualização dos dados cadastrais do condutor ou do veículo é infração leve, punível com multa."
+  },
+  {
+    "id": "900547",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Falsa Declaração",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Fazer falsa declaração de domicílio para fins de registro, licenciamento ou habilitação é uma conduta considerada pelo CTB como infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "D",
+    "comentario": "O Art. 242 classifica a falsa declaração de domicílio nos órgãos de trânsito como infração gravíssima."
+  },
+  {
+    "id": "900548",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Normas para Motociclistas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Em relação à condução de motocicletas, motonetas ou ciclomotores, assinale a alternativa que apresenta corretamente uma infração GRAVÍSSIMA, segundo o Art. 244 do CTB:",
+    "alternativas": {
+      "A": "Transportar passageiro com capacete de segurança utilizado sem viseira ou com ela levantada.",
+      "B": "Transportar criança menor de 10 anos de idade no veículo.",
+      "C": "Transitar com as luzes diurnas apagadas.",
+      "D": "Conduzir a motocicleta sem estar de posse dos documentos do veículo, ainda que devidamente regularizado no sistema."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 244, V, transportar criança menor de 10 anos de idade é infração gravíssima. A alternativa A refere-se ao inciso XI (infração média). D é infração leve (Art. 232)."
+  },
+  {
+    "id": "900549",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Normas para Motociclistas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um motociclista é flagrado conduzindo seu veículo transportando um botijão de gás (carga incompatível com suas especificações) de forma inadequada, sem o uso de side-car ou grelha apropriada. Tal conduta enquadra-se no Art. 244, VIII como infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "C",
+    "comentario": "Transportar carga incompatível com as especificações em motocicleta (Art. 244, VIII) configura infração grave com multa e apreensão do veículo para regularização."
+  },
+  {
+    "id": "900550",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Depósito de Materiais na Via",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Utilizar a via para depósito de mercadorias, materiais ou equipamentos, sem autorização do órgão ou entidade de trânsito, acarreta responsabilização da pessoa física ou jurídica. Esta infração é de natureza:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 245 tipifica o depósito não autorizado de materiais na via como infração grave, com penalidade de multa e medida administrativa de remoção do material."
+  },
+  {
+    "id": "900551",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Obstrução da Via",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de sinalizar qualquer obstáculo à livre circulação, à segurança de veículo e pedestres, ou obstaculizar a via indevidamente (Art. 246) é uma infração:",
+    "alternativas": {
+      "A": "Média, com multa simples.",
+      "B": "Grave, com multa (três vezes).",
+      "C": "Gravíssima, com multa agravada em até cinco vezes a critério da autoridade.",
+      "D": "Gravíssima, com suspensão obrigatória da CNH."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 246 classifica essa conduta como gravíssima e prevê penalidade de multa, que pode ser agravada em até cinco vezes dependendo do risco gerado."
+  },
+  {
+    "id": "900552",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Uso Indevido de Luzes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quando o veículo estiver em movimento, deixar de manter a luz baixa de dia, no caso de motocicletas, motonetas e ciclomotores, é infração:",
+    "alternativas": {
+      "A": "Gravíssima.",
+      "B": "Grave.",
+      "C": "Média.",
+      "D": "Leve."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 250, I, 'd', essa conduta constitui infração de natureza média para os condutores de motocicletas."
+  },
+  {
+    "id": "900553",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Luzes de Posição",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de manter acesas, à noite, as luzes de posição, quando o veículo estiver parado para fins de embarque ou desembarque de passageiros (Art. 249), é infração de qual natureza?",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "O CTB classifica essa conduta como infração de natureza média."
+  },
+  {
+    "id": "900554",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Porta Aberta em Coletivo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar o veículo de transporte público coletivo de passageiros ou de escolares de manter a porta fechada com o veículo em movimento (Art. 250, IV) é tipificado como:",
+    "alternativas": {
+      "A": "Infração leve.",
+      "B": "Infração média.",
+      "C": "Infração grave.",
+      "D": "Infração gravíssima."
+    },
+    "resposta_correta": "D",
+    "comentario": "O Art. 250, IV (incluído pela Lei nº 14.440/2022) tipifica essa falha de segurança primária no transporte público/escolar como infração gravíssima."
+  },
+  {
+    "id": "900555",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Pisca-Alerta",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A utilização indiscriminada do pisca-alerta é proibida. Utilizar o pisca-alerta, exceto em imobilizações, situações de emergência ou quando a sinalização determinar, configura infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 251, I, utilizar o pisca-alerta fora das situações permitidas é infração média."
+  },
+  {
+    "id": "900556",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Postura do Condutor",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Analise as condutas a seguir baseadas no Art. 252 do CTB (Dirigir o veículo...):\n\nI. Com o braço do lado de fora.\nII. Transportando animais ou volume à sua esquerda ou entre os braços e pernas.\nIII. Usando calçado que não se firme nos pés.\n\nEstas infrações possuem, respectivamente, a mesma natureza, que é:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "O caput do Art. 252 e seus incisos I a VII classificam essas condutas relativas à postura e segurança interna do condutor como infrações de natureza média."
+  },
+  {
+    "id": "900557",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Uso de Celular",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Art. 252 do CTB traz uma regra específica sobre o uso de celular. Se o motorista for flagrado não apenas utilizando fones de ouvido, mas efetivamente segurando ou manuseando telefone celular enquanto dirige, a infração, por força de parágrafo único, passa a ser considerada:",
+    "alternativas": {
+      "A": "Média, com acréscimo de 50% na multa.",
+      "B": "Grave.",
+      "C": "Gravíssima.",
+      "D": "Média, com recolhimento imediato do aparelho."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Parágrafo único do Art. 252 estipula que a hipótese de conduzir com apenas uma mão caracterizar-se-á como infração gravíssima no caso de o condutor estar segurando ou manuseando telefone celular."
+  },
+  {
+    "id": "900558",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Bloqueio Deliberado da Via",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Usar o veículo para, deliberadamente, interromper, restringir ou perturbar a circulação na via sem autorização do órgão competente (Art. 253-A) gera sérias penalidades, incluindo:",
+    "alternativas": {
+      "A": "Multa grave e retenção.",
+      "B": "Multa gravíssima (dez vezes) e apreensão do veículo.",
+      "C": "Multa gravíssima (vinte vezes) e suspensão do direito de dirigir por 12 meses.",
+      "D": "Somente processo judicial civil para ressarcimento ao Estado."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 253-A (inserido para coibir bloqueios em manifestações não autorizadas com veículos) define a infração como gravíssima, com multa agravada em vinte vezes e suspensão da CNH por 12 meses."
+  },
+  {
+    "id": "900559",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Infrações de Pedestres",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Segundo o Código de Trânsito Brasileiro, os pedestres também são passíveis de autuação. Permanecer ou andar nas pistas de rolamento, exceto para cruzá-las onde for permitido (Art. 254, I), é classificado como infração:",
+    "alternativas": {
+      "A": "Média, punida com multa no valor integral.",
+      "B": "Leve, punida com multa em 50% do valor da infração de natureza leve.",
+      "C": "Grave, sujeita a prestação de serviços à comunidade.",
+      "D": "Não gera infração pecuniária, apenas advertência verbal pelos agentes de trânsito."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 254 prevê proibições aos pedestres e as classifica como infração leve, com a peculiaridade de que a penalidade de multa corresponde a 50% do valor da infração de natureza leve."
+  },
+  {
+    "id": "900560",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Uso de Bicicleta no Passeio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Conduzir bicicleta em passeios onde não seja permitida a circulação desta, ou de forma agressiva em relação aos pedestres (Art. 255), é uma infração que acarreta ao ciclista:",
+    "alternativas": {
+      "A": "Infração leve e multa com 50% de desconto.",
+      "B": "Infração média, multa e a medida administrativa de remoção da bicicleta (mediante recibo).",
+      "C": "Infração grave e retenção da bicicleta.",
+      "D": "Advertência verbal exclusiva de Guardas Civis."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 255, essa conduta do ciclista configura infração de natureza média, com penalidade de multa e a remoção da bicicleta."
+  },
+  {
+    "id": "900561",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Suspensão do Direito de Dirigir",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Assinale a alternativa que, segundo o CTB, NÃO apresenta uma infração que acarrete, por si só (além da multa), a penalidade de suspensão do direito de dirigir do condutor infrator:",
+    "alternativas": {
+      "A": "Dirigir sob a influência de álcool (Art. 165).",
+      "B": "Avançar o sinal vermelho do semáforo (Art. 208).",
+      "C": "Disputar corrida por espírito de emulação ('racha') (Art. 173).",
+      "D": "Transpor, sem autorização, bloqueio viário policial (Art. 210)."
+    },
+    "resposta_correta": "B",
+    "comentario": "Avançar sinal vermelho (Art. 208) é infração gravíssima, gerando 7 pontos e multa, mas a lei não prevê a suspensão automática por esse artigo específico. Já as alternativas A, C e D preveem expressamente a suspensão direta da CNH."
+  },
+  {
+    "id": "900562",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Excesso de Peso",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Transitar com o veículo com excesso de peso (admitido percentual de tolerância aferido por equipamento) possui uma base de penalidade definida como infração média. A multa referente a essa infração possui uma peculiaridade (Art. 231, V), que consiste em:",
+    "alternativas": {
+      "A": "Ser agravada pelo tempo de suspensão da CNH.",
+      "B": "Ser convertida em apreensão imediata da CNH após 100 kg de excesso.",
+      "C": "Ser acrescida de um valor específico a cada duzentos quilogramas ou fração de excesso de peso apurado.",
+      "D": "Não ser cobrada caso o motorista concorde em doar a carga excedente à Prefeitura."
+    },
+    "resposta_correta": "C",
+    "comentario": "No Art. 231, V, a multa base é de infração média, mas ela é acrescida de valores conforme tabelas escalonadas a cada duzentos quilogramas (ou fração) de excesso de peso."
+  },
+  {
+    "id": "900563",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Remoção de Veículo em Estacionamento Irregular",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre as infrações de estacionamento (Art. 181), o parágrafo primeiro (§ 1º) traz uma regra de procedimento importante para a autoridade de trânsito em relação à medida administrativa. Assinale a correta:",
+    "alternativas": {
+      "A": "A multa não poderá ser aplicada se o condutor chegar antes do guincho.",
+      "B": "A autoridade de trânsito aplicará a penalidade preferencialmente após a remoção do veículo.",
+      "C": "Veículos oficiais que cometerem infração de estacionamento estão isentos de remoção.",
+      "D": "A penalidade de multa substitui a remoção se o pagamento for feito no local."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 181, § 1º determina expressamente: 'Nos casos previstos neste artigo, a autoridade de trânsito aplicará a penalidade preferencialmente após a remoção do veículo'."
+  },
+  {
+    "id": "900564",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Animais na Parte Externa",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "No trânsito diário, é comum observar donos de cães que permitem que o animal fique com a cabeça para fora da janela ou transitam com o animal solto na carroceria externa da caminhonete. Levar um animal solto na caçamba (parte externa do veículo), sem autorização, é classificado pelo CTB (Art. 235) como:",
+    "alternativas": {
+      "A": "Infração leve e retenção do veículo.",
+      "B": "Infração média, passível apenas de multa.",
+      "C": "Infração grave, com retenção do veículo para transbordo.",
+      "D": "Infração gravíssima, com apreensão do animal por zoonoses."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conduzir pessoas, animais ou carga nas partes externas do veículo é infração grave (Art. 235), sujeita a multa e retenção do veículo para transbordo."
+  },
+  {
+    "id": "900565",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Evadir-se de Pedágio",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A conduta de evadir-se da cobrança pelo uso de rodovias e vias urbanas (pedágios), para não efetuar o seu pagamento, ou deixar de efetuá-lo na forma estabelecida (Art. 209-A) gera a seguinte sanção:",
+    "alternativas": {
+      "A": "Infração leve com multa.",
+      "B": "Infração média, com retenção do veículo.",
+      "C": "Infração grave, com penalidade de multa.",
+      "D": "Infração gravíssima, com multa agravada em cinco vezes."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 209-A estipula que a evasão de pedágio é infração de natureza grave e gera a penalidade de multa."
+  },
+  {
+    "id": "900566",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Bloqueio Viário em Cruzamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Avançar em um cruzamento quando já há congestionamento no lado oposto e, com isso, interromper o trânsito da via transversal ao sinal abrir para eles. Esse ato, que consiste em imobilizar ou parar o veículo na área de cruzamento de vias, prejudicando a circulação (Art. 182, VII), é considerado infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o Art. 182, VII, parar o veículo na área de cruzamento de vias, prejudicando a circulação de veículos e pedestres, é infração média."
+  },
+  {
+    "id": "900567",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Estacionamento em Pontes e Viadutos",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Estacionar o veículo em viadutos, pontes e túneis configura grave risco de colisão para os demais usuários da via. Por esta razão, o Art. 181, XIV do CTB classifica tal ato como:",
+    "alternativas": {
+      "A": "Infração grave e remoção do veículo.",
+      "B": "Infração média e retenção do veículo.",
+      "C": "Infração gravíssima e apreensão do veículo.",
+      "D": "Infração média e notificação de advertência."
+    },
+    "resposta_correta": "A",
+    "comentario": "De acordo com o Art. 181, XIV, estacionar nos viadutos, pontes e túneis é infração grave, com penalidade de multa e medida de remoção."
+  },
+  {
+    "id": "900568",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Veículo Retido Irregularmente Movimentado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O ato de retirar do local um veículo que estava legalmente retido pelo agente da autoridade de trânsito para regularização, fazendo-o sem permissão da autoridade (Art. 239), resulta em:",
+    "alternativas": {
+      "A": "Infração grave.",
+      "B": "Infração média.",
+      "C": "Infração gravíssima, multa e apreensão do veículo, com remoção.",
+      "D": "Apenas tipificação criminal, sem previsão de multa de trânsito."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 239 classifica a fuga com o veículo legalmente retido como infração gravíssima, com multa, apreensão e a medida de remoção do veículo."
+  },
+  {
+    "id": "900569",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Conversão em Local Proibido",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Executar operação de conversão à direita ou à esquerda em locais expressamente proibidos pela sinalização (Art. 207) é infração classificada como:",
+    "alternativas": {
+      "A": "Média.",
+      "B": "Grave.",
+      "C": "Gravíssima.",
+      "D": "Leve."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme Art. 207, realizar a conversão em local proibido pela sinalização é infração de natureza grave."
+  },
+  {
+    "id": "900570",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Pista Escorregadia e Velocidade",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de reduzir a velocidade do veículo de forma compatível com a segurança do trânsito quando o pavimento se apresentar escorregadio, defeituoso ou avariado (Art. 220, X) configura infração de natureza:",
+    "alternativas": {
+      "A": "Grave.",
+      "B": "Média.",
+      "C": "Leve.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "A",
+    "comentario": "O Art. 220 categoriza essas não-reduções de velocidade em áreas de risco (como pavimento escorregadio) como infração grave."
+  },
+  {
+    "id": "900571",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Proximidade a Escolas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de reduzir a velocidade do veículo de forma compatível com a segurança do trânsito nas proximidades de escolas, hospitais ou onde haja intensa movimentação de pedestres (Art. 220, XIV) difere das outras alíneas do mesmo artigo, sendo tratada como infração:",
+    "alternativas": {
+      "A": "Grave.",
+      "B": "Gravíssima.",
+      "C": "Média.",
+      "D": "Leve."
+    },
+    "resposta_correta": "B",
+    "comentario": "Enquanto a maioria das falhas em reduzir a velocidade (Art. 220) são graves, o inciso XIV (hospitais, escolas e intensa movimentação) é tipificado como infração gravíssima."
+  },
+  {
+    "id": "900572",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Avançar Parada Obrigatória Interceptada",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de parar o veículo antes de transpor linha férrea (Art. 212) é considerado uma conduta de alto risco no trânsito, sendo punida com:",
+    "alternativas": {
+      "A": "Infração média e multa.",
+      "B": "Infração grave e retenção.",
+      "C": "Infração gravíssima e multa.",
+      "D": "Infração gravíssima, com suspensão direta da CNH."
+    },
+    "resposta_correta": "C",
+    "comentario": "Segundo o Art. 212, não parar antes da linha férrea é infração gravíssima, sujeita à penalidade de multa."
+  },
+  {
+    "id": "900573",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Acostamento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Estacionar o veículo nos acostamentos, salvo por motivo de força maior, é classificado pelo Art. 181, VII, como infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "A",
+    "comentario": "O estacionamento injustificado nos acostamentos das rodovias (Art. 181, VII) é infração leve, com multa e remoção do veículo."
+  },
+  {
+    "id": "900574",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Entrada em Garagens e Lindeiros",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Ao entrar ou sair de áreas lindeiras sem estar adequadamente posicionado para ingresso na via e sem as precauções com a segurança de pedestres e de outros veículos (Art. 216), o condutor comete infração:",
+    "alternativas": {
+      "A": "Gravíssima.",
+      "B": "Grave.",
+      "C": "Média.",
+      "D": "Leve."
+    },
+    "resposta_correta": "C",
+    "comentario": "A manobra de entrada/saída de lindeiros sem as devidas cautelas é tipificada como infração média pelo Art. 216."
+  },
+  {
+    "id": "900575",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Veículo em Mau Estado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Conduzir o veículo em mau estado de conservação, comprometendo a segurança (ex: pneus completamente 'carecas' ou estrutura seriamente avariada), enquadra-se no Art. 230, XVIII. A natureza dessa infração é:",
+    "alternativas": {
+      "A": "Média.",
+      "B": "Grave.",
+      "C": "Gravíssima.",
+      "D": "Leve."
+    },
+    "resposta_correta": "B",
+    "comentario": "O mau estado de conservação que compromete a segurança caracteriza infração grave, com multa e retenção do veículo para regularização."
+  },
+  {
+    "id": "900576",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Exame Toxicológico",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Dirigir veículo tendo obtido resultado positivo no exame toxicológico previsto em lei (Art. 165-C) constitui:",
+    "alternativas": {
+      "A": "Infração média, com obrigação de refazer o exame.",
+      "B": "Infração grave, sujeita a multa multiplicada por três.",
+      "C": "Infração gravíssima, com multa (cinco vezes) e, em caso de reincidência, multa (dez vezes) e suspensão do direito de dirigir.",
+      "D": "Crime de trânsito imprescritível, sem infração administrativa."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o Art. 165-C, é infração gravíssima, sujeita a multa (5x) e agravamentos severos em caso de reincidência, incluindo suspensão."
+  },
+  {
+    "id": "900577",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Desrespeito à Autoridade de Trânsito",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O condutor que, ao ser abordado em uma blitz, desobedece às ordens emanadas da autoridade competente de trânsito ou de seus agentes (Art. 195) comete uma infração de natureza:",
+    "alternativas": {
+      "A": "Gravíssima, com detenção de 6 meses.",
+      "B": "Grave, sujeita à penalidade de multa.",
+      "C": "Média, e apreensão do veículo.",
+      "D": "Leve, cabendo recurso imediato no local."
+    },
+    "resposta_correta": "B",
+    "comentario": "A desobediência a ordens do agente de trânsito (quando não envolver bloqueio ou fuga específica de blitz que já possua crime/infração pior) é enquadrada no Art. 195 como infração grave."
+  },
+  {
+    "id": "900578",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Entregar a Direção",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Entregar a direção de veículo a pessoa que, mesmo sendo habilitada, por seu estado físico ou psíquico (ex: cansaço extremo ou sob efeito de remédios fortes que causam sonolência), não estiver em condições de dirigi-lo com segurança (Art. 166) resulta em:",
+    "alternativas": {
+      "A": "Ausência de infração para o proprietário, apenas para o condutor.",
+      "B": "Infração média.",
+      "C": "Infração grave.",
+      "D": "Infração gravíssima."
+    },
+    "resposta_correta": "D",
+    "comentario": "Conforme o Art. 166, confiar ou entregar a direção de veículo a condutor em tal estado de incapacidade temporária e perigosa é infração gravíssima."
+  },
+  {
+    "id": "900579",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Conduzir com Apenas Uma Mão",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Dirigir o veículo com apenas uma das mãos (Art. 252, V) é considerado infração média. No entanto, o próprio inciso prevê exceções onde essa conduta é legal e permitida. Assinale a alternativa que traz uma exceção válida estipulada em lei:",
+    "alternativas": {
+      "A": "Para segurar bebida ou alimento em pequenas quantidades.",
+      "B": "Para acalmar crianças no banco de trás.",
+      "C": "Quando deva fazer sinais regulamentares de braço ou mudar a marcha do veículo.",
+      "D": "Para operar sistemas complexos de multimídia e vídeo no painel central."
+    },
+    "resposta_correta": "C",
+    "comentario": "O Art. 252, V diz que é infração média dirigir com uma mão, 'exceto quando deva fazer sinais regulamentares de braço, mudar a marcha do veículo, ou acionar equipamentos e acessórios do veículo'."
+  },
+  {
+    "id": "900580",
+    "disciplina": "Legislação de Trânsito",
+    "assunto": "Deslocamento Lento",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Em uma rodovia de três faixas de rolamento em um mesmo sentido, um caminhão extrapesado de carga decide transitar continuamente pela faixa mais à esquerda (a de maior velocidade permitida). De acordo com o Art. 185 do CTB, quando em movimento, os veículos mais lentos e de maior porte devem ser conservados nas faixas da direita. O não cumprimento configura infração:",
+    "alternativas": {
+      "A": "Leve.",
+      "B": "Média.",
+      "C": "Grave.",
+      "D": "Gravíssima."
+    },
+    "resposta_correta": "B",
+    "comentario": "O Art. 185, II, determina que deixar de conservar nas faixas da direita os veículos lentos e de maior porte é infração média."
+  }
+]
