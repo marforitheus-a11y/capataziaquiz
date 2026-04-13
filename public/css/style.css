@@ -1085,6 +1085,6 @@ textarea {
 }
 
 .nav-logo {
-  height: 1em; /* mesmo tamanho da fonte */
+  height: 2em; /* mesmo tamanho da fonte */
   width: auto;
 }
