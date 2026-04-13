@@ -1078,3 +1078,13 @@ textarea {
   font-weight: 600;
   margin: 8px 0 0;
 }
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espaço entre logo e texto */
+}
+
+.nav-logo {
+  height: 1em; /* mesmo tamanho da fonte */
+  width: auto;
+}
