@@ -34,6 +34,23 @@ function extractArticle(text) {
  */
 function extractLawFromFilename(filename) {
   if (!filename) return null;
+  const normalizedFilename = filename.toLowerCase();
+
+  const knownLawsByFile = [
+    { key: 'ctb', law: 'Lei n. 9503 (CTB)' },
+    { key: 'mariadapenha', law: 'Lei n. 11340 (Maria da Penha)' },
+    { key: 'constituicao', law: 'Constituição Federal de 1988' },
+    { key: 'penal', law: 'Decreto-Lei n. 2848 (Código Penal)' },
+    { key: 'processo_penal', law: 'Decreto-Lei n. 3689 (Código de Processo Penal)' },
+    { key: 'desarmamento', law: 'Lei n. 10826 (Estatuto do Desarmamento)' },
+    { key: 'abuso', law: 'Lei n. 13869 (Abuso de Autoridade)' },
+    { key: 'deficiente', law: 'Lei n. 13146 (Estatuto da Pessoa com Deficiência)' },
+    { key: '13.022', law: 'Lei n. 13022 (Estatuto das Guardas Municipais)' },
+    { key: '135', law: 'Lei n. 10741 (Estatuto da Pessoa Idosa)' }
+  ];
+
+  const knownLaw = knownLawsByFile.find((item) => normalizedFilename.includes(item.key));
+  if (knownLaw) return knownLaw.law;
   
   const numRegex = /(\d{4,5})/; 
   const numMatch = filename.match(numRegex);

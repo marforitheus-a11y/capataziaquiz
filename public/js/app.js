@@ -825,24 +825,50 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!userDocRef) return;
 
     const today = getTodayString();
-    const statsKey = isCorrect ? 'correct' : 'wrong';
-
-    const updateData = {
-      lastActivity: firebase.firestore.FieldValue.serverTimestamp(),
-      [`stats.${statsKey}`]: firebase.firestore.FieldValue.increment(1),
-      'stats.totalQuestions': firebase.firestore.FieldValue.increment(1),
-      [`dailyPerformance.${today}.${statsKey}`]: firebase.firestore.FieldValue.increment(1)
-    };
-
-    if (!isCorrect && typeof getErrorTopic === 'function') {
-      const topic = String(getErrorTopic(questionData, questionData.sourceFile) || 'Outros').trim();
-      updateData.errorTopics = {
-        [topic]: firebase.firestore.FieldValue.increment(1)
-      };
-    }
 
     try {
-      await userDocRef.set(updateData, { merge: true });
+      await db.runTransaction(async (transaction) => {
+        const snap = await transaction.get(userDocRef);
+        const data = snap.exists ? snap.data() : {};
+
+        const nextStats = { ...(data.stats || {}) };
+        nextStats.correct = Number(nextStats.correct || 0);
+        nextStats.wrong = Number(nextStats.wrong || 0);
+        nextStats.totalQuestions = Number(nextStats.totalQuestions || 0);
+
+        if (isCorrect) {
+          nextStats.correct += 1;
+        } else {
+          nextStats.wrong += 1;
+        }
+        nextStats.totalQuestions += 1;
+
+        const nextDailyPerformance = { ...(data.dailyPerformance || {}) };
+        const todayPerf = { ...(nextDailyPerformance[today] || {}) };
+        todayPerf.correct = Number(todayPerf.correct || 0);
+        todayPerf.wrong = Number(todayPerf.wrong || 0);
+        if (isCorrect) {
+          todayPerf.correct += 1;
+        } else {
+          todayPerf.wrong += 1;
+        }
+        nextDailyPerformance[today] = todayPerf;
+
+        const updateData = {
+          stats: nextStats,
+          dailyPerformance: nextDailyPerformance,
+          lastActivity: firebase.firestore.FieldValue.serverTimestamp()
+        };
+
+        if (!isCorrect && typeof getErrorTopic === 'function') {
+          const topic = String(getErrorTopic(questionData, questionData.sourceFile) || 'Outros').trim();
+          const nextErrorTopics = { ...(data.errorTopics || {}) };
+          nextErrorTopics[topic] = Number(nextErrorTopics[topic] || 0) + 1;
+          updateData.errorTopics = nextErrorTopics;
+        }
+
+        transaction.set(userDocRef, updateData, { merge: true });
+      });
     } catch (e) {
       console.error("Erro ao salvar progresso:", e);
     }
@@ -982,8 +1008,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (timeCtx) {
       if (window.Chart && timeCtx.chart) timeCtx.chart.destroy();
 
-      const startDate = data.createdAt ? new Date(data.createdAt) : new Date();
-      const deadline = new Date("2026-12-13T12:00:00-03:00");
+      const startDate = new Date("2026-04-13T00:00:00-03:00");
+      const deadline = new Date("2026-08-30T23:59:59-03:00");
       const labels = getDateRange(startDate, deadline);
       const dailyData = data.dailyPerformance || {};
 
