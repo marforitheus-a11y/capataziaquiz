@@ -34,5 +34,9 @@
    {
     "name": "Lei Maria da Penha",
     "file": "mariadapenha.json"
+  },
+  {
+    "name": "Código de Trânsito Brasileiro",
+    "file": "ctb.json"
   }
 ]
