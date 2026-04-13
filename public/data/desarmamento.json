@@ -1,0 +1,572 @@
+[
+  {
+    "id": "900601",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Porte",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos termos do Estatuto do Desarmamento (Lei nº 10.826/2003), a regra geral sobre o porte de arma de fogo em todo o território nacional é:",
+    "alternativas": {
+      "A": "Permitido a qualquer cidadão maior de 21 anos que comprove ocupação lícita.",
+      "B": "Proibido, salvo para os casos previstos em legislação própria e para as exceções elencadas na lei.",
+      "C": "Permitido, desde que a arma esteja devidamente registrada no Sinarm ou Sigma.",
+      "D": "Proibido exclusivamente para civis, sendo livre para qualquer servidor público federal ou municipal."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o art. 6º do Estatuto do Desarmamento, é proibido o porte de arma de fogo em todo o território nacional, salvo para os casos previstos em legislação própria e para as exceções legais (agentes de segurança, Forças Armadas, etc.)."
+  },
+  {
+    "id": "900602",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Porte",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para que os integrantes das guardas municipais tenham autorização para o porte de arma de fogo, o Estatuto do Desarmamento exige como condição a:",
+    "alternativas": {
+      "A": "Autorização exclusiva do Prefeito Municipal, independentemente de treinamento.",
+      "B": "Idade mínima de 30 anos e aprovação em exame psicotécnico bienal.",
+      "C": "Formação funcional de seus integrantes em estabelecimentos de ensino de atividade policial e a existência de mecanismos de fiscalização e controle interno.",
+      "D": "Vinculação direta com a Polícia Militar do respectivo Estado."
+    },
+    "resposta_correta": "C",
+    "comentario": "Segundo o § 3º do art. 6º, a autorização para o porte de arma de fogo das guardas municipais está condicionada à formação funcional em estabelecimentos de ensino de atividade policial e à existência de mecanismos de fiscalização e de controle interno."
+  },
+  {
+    "id": "900603",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Caçador de Subsistência",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Aos residentes em áreas rurais que comprovem depender do emprego de arma de fogo para prover sua subsistência alimentar familiar, será concedido porte de arma na categoria caçador para subsistência. A idade mínima exigida e o tipo de arma permitida são, respectivamente:",
+    "alternativas": {
+      "A": "Maiores de 18 anos; arma de repetição de calibre superior a 16.",
+      "B": "Maiores de 21 anos; qualquer arma de fogo de uso permitido.",
+      "C": "Maiores de 25 anos; arma de uso permitido, de tiro simples, com 1 ou 2 canos, de alma lisa e calibre igual ou inferior a 16.",
+      "D": "Maiores de 25 anos; revólver calibre 38 ou pistola .380."
+    },
+    "resposta_correta": "C",
+    "comentario": "De acordo com o art. 6º, § 5º, exige-se ser maior de 25 anos e a arma deve ser de uso permitido, de tiro simples, com 1 ou 2 canos, de alma lisa e de calibre igual ou inferior a 16."
+  },
+  {
+    "id": "900604",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Caçador de Subsistência",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Caso o indivíduo que possui porte de arma na categoria 'caçador para subsistência' dê outro uso à sua arma de fogo, ele:",
+    "alternativas": {
+      "A": "Responderá apenas administrativamente, com a cassação do porte.",
+      "B": "Responderá, conforme o caso, por porte ilegal ou por disparo de arma de fogo de uso permitido, independentemente de outras tipificações penais.",
+      "C": "Não cometerá crime, pois o porte lhe garante o uso da arma em qualquer circunstância.",
+      "D": "Responderá pelo crime de comércio ilegal de arma de fogo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o art. 6º, § 6º, o caçador para subsistência que der outro uso à sua arma de fogo responderá, conforme o caso, por porte ilegal ou por disparo de arma de fogo de uso permitido."
+  },
+  {
+    "id": "900605",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Porte",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre o porte de arma de fogo concedido aos servidores dos tribunais do Poder Judiciário e dos Ministérios Públicos (art. 6º, XI), assinale a afirmativa correta:",
+    "alternativas": {
+      "A": "Todos os servidores dessas instituições possuem porte livre de armas de fogo, inclusive as de uso restrito.",
+      "B": "As armas de fogo utilizadas serão de propriedade exclusiva dos servidores, não podendo pertencer à instituição.",
+      "C": "O limite máximo de servidores que exerçam funções de segurança autorizados a portar arma é de 50% do número de servidores que exerçam essas funções.",
+      "D": "O porte depende do pagamento de taxa anual no valor de um salário mínimo."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 7º-A, § 2º, estabelece que será respeitado o limite máximo de 50% (cinquenta por cento) do número de servidores que exerçam funções de segurança."
+  },
+  {
+    "id": "900606",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Porte Federal",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A competência para a autorização do porte de arma de fogo de uso permitido, em todo o território nacional, pertence à Polícia Federal. Essa autorização perderá automaticamente sua eficácia caso o portador:",
+    "alternativas": {
+      "A": "Mude de domicílio para outro Estado.",
+      "B": "Seja detido ou abordado em estado de embriaguez ou sob efeito de substâncias químicas ou alucinógenas.",
+      "C": "Deixe de comparecer anualmente à delegacia da Polícia Federal para vistoria.",
+      "D": "Empreste sua arma a outro agente público com porte válido."
+    },
+    "resposta_correta": "B",
+    "comentario": "O art. 10, § 2º, prevê explicitamente que a autorização de porte perderá automaticamente sua eficácia caso o portador seja detido ou abordado em estado de embriaguez ou sob efeito de substâncias químicas ou alucinógenas."
+  },
+  {
+    "id": "900607",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Crimes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Um indivíduo é flagrado mantendo sob sua guarda, sem autorização e em desacordo com determinação legal, uma arma de fogo de uso permitido no interior de sua residência. Essa conduta configura o crime de:",
+    "alternativas": {
+      "A": "Porte ilegal de arma de fogo de uso permitido.",
+      "B": "Posse irregular de arma de fogo de uso permitido.",
+      "C": "Comércio ilegal de arma de fogo.",
+      "D": "Omissão de cautela."
+    },
+    "resposta_correta": "B",
+    "comentario": "O art. 12 tipifica a conduta de possuir ou manter sob guarda arma de fogo de uso permitido no interior de residência (ou local de trabalho, se titular) como 'Posse irregular de arma de fogo de uso permitido'."
+  },
+  {
+    "id": "900608",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Crimes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para a configuração do crime de 'Posse irregular de arma de fogo de uso permitido' (Art. 12) em um estabelecimento comercial, é necessário que o agente que mantém a arma:",
+    "alternativas": {
+      "A": "Seja qualquer funcionário no horário de expediente.",
+      "B": "Seja exclusivamente o vigilante contratado pela empresa.",
+      "C": "Seja o titular ou o responsável legal do estabelecimento ou empresa.",
+      "D": "Possua registro prévio de caçador, atirador ou colecionador (CAC)."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 12 condiciona que, para configurar posse (e não porte) no local de trabalho, o indivíduo deve ser o titular ou o responsável legal do estabelecimento ou empresa."
+  },
+  {
+    "id": "900609",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Crimes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Deixar de observar as cautelas necessárias para impedir que menor de 18 anos se apodere de arma de fogo que esteja sob sua posse ou que seja de sua propriedade caracteriza o crime de:",
+    "alternativas": {
+      "A": "Corrupção de menores.",
+      "B": "Porte ilegal de arma de fogo.",
+      "C": "Tráfico internacional de arma de fogo.",
+      "D": "Omissão de cautela."
+    },
+    "resposta_correta": "D",
+    "comentario": "O art. 13 tipifica a 'Omissão de cautela' para quem deixa de observar os cuidados para impedir que menor de 18 anos ou deficiente mental se apodere da arma de fogo."
+  },
+  {
+    "id": "900610",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Crimes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Incorre nas mesmas penas do crime de Omissão de Cautela o proprietário ou diretor responsável de empresa de segurança que deixar de registrar ocorrência policial e comunicar à Polícia Federal o furto ou roubo de arma de fogo sob sua guarda, no prazo de:",
+    "alternativas": {
+      "A": "12 (doze) horas depois de ocorrido o fato.",
+      "B": "24 (vinte e quatro) horas depois de ocorrido o fato.",
+      "C": "48 (quarenta e oito) horas depois de ocorrido o fato.",
+      "D": "72 (setenta e duas) horas depois de ocorrido o fato."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o parágrafo único do art. 13, a comunicação deve ser feita nas primeiras 24 (vinte e quatro) horas depois de ocorrido o fato."
+  },
+  {
+    "id": "900611",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Crimes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Qual é a pena prevista para o crime de Porte ilegal de arma de fogo de uso permitido (Art. 14)?",
+    "alternativas": {
+      "A": "Detenção, de 1 (um) a 3 (três) anos, e multa.",
+      "B": "Reclusão, de 2 (dois) a 4 (quatro) anos, e multa.",
+      "C": "Reclusão, de 3 (três) a 6 (seis) anos, e multa.",
+      "D": "Reclusão, de 6 (seis) a 12 (doze) anos, e multa."
+    },
+    "resposta_correta": "B",
+    "comentario": "A pena para o crime de porte ilegal de arma de fogo de uso permitido, previsto no art. 14, é de reclusão, de 2 a 4 anos, e multa."
+  },
+  {
+    "id": "900612",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Disparo",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime de disparo de arma de fogo (Art. 15) ocorre quando alguém dispara arma em lugar habitado ou em suas adjacências, em via pública ou em direção a ela. Contudo, a própria lei estabelece uma condição para a tipificação autônoma deste crime, que é:",
+    "alternativas": {
+      "A": "Desde que não resulte em lesão corporal leve.",
+      "B": "Desde que o disparo seja efetuado por arma de uso restrito.",
+      "C": "Desde que essa conduta não tenha como finalidade a prática de outro crime.",
+      "D": "Desde que ocorra entre o pôr do sol e o amanhecer."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 15 expressamente prevê 'desde que essa conduta não tenha como finalidade a prática de outro crime' (princípio da subsidiariedade expressa)."
+  },
+  {
+    "id": "900613",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Crimes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "João foi preso em flagrante com uma pistola 9mm cuja numeração identificadora estava raspada e totalmente suprimida. De acordo com o Estatuto do Desarmamento, essa conduta equipara-se às penas de qual crime?",
+    "alternativas": {
+      "A": "Posse irregular de arma de fogo de uso permitido.",
+      "B": "Porte ilegal de arma de fogo de uso permitido.",
+      "C": "Posse ou porte ilegal de arma de fogo de uso restrito.",
+      "D": "Tráfico internacional de arma de fogo."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 16, § 1º, IV, determina que incorre nas mesmas penas da posse/porte ilegal de arma de uso restrito (reclusão de 3 a 6 anos) quem porta arma com numeração raspada, suprimida ou adulterada."
+  },
+  {
+    "id": "900614",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Crimes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A conduta de fornecer, ainda que gratuitamente, arma de fogo ou explosivo a criança ou adolescente configura crime equiparado ao de:",
+    "alternativas": {
+      "A": "Posse ou porte ilegal de arma de fogo de uso restrito (Art. 16).",
+      "B": "Omissão de cautela (Art. 13).",
+      "C": "Corrupção de menores (ECA).",
+      "D": "Tráfico internacional de armas (Art. 18)."
+    },
+    "resposta_correta": "A",
+    "comentario": "Conforme o art. 16, § 1º, V, vender, entregar ou fornecer arma de fogo ou explosivo a criança ou adolescente incorre nas penas do art. 16 (reclusão de 3 a 6 anos e multa)."
+  },
+  {
+    "id": "900615",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Uso Proibido",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Se as condutas descritas no art. 16 (possuir, portar, adquirir etc.) envolverem arma de fogo de uso PROIBIDO, a pena prevista pela legislação (conforme inclusão da Lei nº 13.964/2019) é de:",
+    "alternativas": {
+      "A": "Reclusão, de 3 (três) a 6 (seis) anos.",
+      "B": "Reclusão, de 4 (quatro) a 12 (doze) anos.",
+      "C": "Reclusão, de 6 (seis) a 12 (doze) anos.",
+      "D": "Reclusão, de 8 (oito) a 16 (dezesseis) anos."
+    },
+    "resposta_correta": "B",
+    "comentario": "O art. 16, § 2º, estabelece que se as condutas envolverem arma de fogo de uso proibido, a pena é de reclusão, de 4 (quatro) a 12 (doze) anos."
+  },
+  {
+    "id": "900616",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Comércio Ilegal",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O crime de Comércio Ilegal de Arma de Fogo (Art. 17) pune quem utiliza, em proveito próprio ou alheio, no exercício de atividade comercial ou industrial, arma de fogo sem autorização. Para fins deste artigo, equipara-se à atividade comercial ou industrial:",
+    "alternativas": {
+      "A": "Apenas a atividade formalmente registrada com CNPJ.",
+      "B": "Somente a importação de armas de uso restrito.",
+      "C": "Qualquer forma de prestação de serviços, fabricação ou comércio irregular ou clandestino, inclusive o exercido em residência.",
+      "D": "Apenas as atividades exercidas em zona de fronteira."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 17, § 1º, prevê que se equipara à atividade comercial/industrial qualquer forma de prestação de serviços, fabricação ou comércio irregular ou clandestino, inclusive o exercido em residência."
+  },
+  {
+    "id": "900617",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Agente Disfarçado",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "A Lei nº 13.964/2019 (Pacote Anticrime) incluiu hipóteses relacionadas ao 'agente policial disfarçado'. Segundo o Estatuto do Desarmamento, incorre na pena do crime de Comércio Ilegal de Arma de Fogo quem vende ou entrega arma de fogo a agente policial disfarçado:",
+    "alternativas": {
+      "A": "Sempre, independentemente de haver conduta criminal preexistente.",
+      "B": "Apenas se o agente for disfarçado pela Interpol.",
+      "C": "Quando presentes elementos probatórios razoáveis de conduta criminal preexistente.",
+      "D": "Somente se a arma for de uso proibido."
+    },
+    "resposta_correta": "C",
+    "comentario": "Conforme o art. 17, § 2º, a responsabilização na venda a agente policial disfarçado exige que estejam presentes elementos probatórios razoáveis de conduta criminal preexistente."
+  },
+  {
+    "id": "900618",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Tráfico Internacional",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Importar ou exportar, a qualquer título, arma de fogo, acessório ou munição, sem autorização da autoridade competente, tipifica o crime de:",
+    "alternativas": {
+      "A": "Comércio ilegal de arma de fogo.",
+      "B": "Posse ilegal de uso restrito.",
+      "C": "Contrabando simples (Código Penal).",
+      "D": "Tráfico internacional de arma de fogo."
+    },
+    "resposta_correta": "D",
+    "comentario": "A conduta descrita caracteriza o crime de Tráfico internacional de arma de fogo, previsto no art. 18 do Estatuto."
+  },
+  {
+    "id": "900619",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Majorantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Nos crimes de comércio ilegal de arma de fogo e tráfico internacional de arma de fogo (arts. 17 e 18), a pena será aumentada da metade se a arma de fogo, acessório ou munição:",
+    "alternativas": {
+      "A": "Estiver com numeração raspada.",
+      "B": "Forem de fabricação estrangeira.",
+      "C": "Forem de uso proibido ou restrito.",
+      "D": "Forem utilizados em crimes contra o patrimônio."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 19 prevê expressamente que nos crimes dos arts. 17 e 18, a pena é aumentada da metade se a arma, acessório ou munição forem de uso proibido ou restrito."
+  },
+  {
+    "id": "900620",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Majorantes",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com o art. 20, as penas dos crimes de posse/porte ilegal, disparo, comércio e tráfico são aumentadas da METADE se:",
+    "alternativas": {
+      "A": "O agente for servidor público da área da saúde.",
+      "B": "Praticados por integrante dos órgãos de segurança pública ou o agente for reincidente específico em crimes dessa natureza.",
+      "C": "Cometidos no período noturno ou em zona rural.",
+      "D": "O crime for cometido na presença de criança ou adolescente."
+    },
+    "resposta_correta": "B",
+    "comentario": "O art. 20 determina o aumento de pena da metade se praticados por integrantes dos órgãos (ex: GCM, Polícias, Forças Armadas) ou empresas de segurança, ou se o agente for reincidente específico."
+  },
+  {
+    "id": "900621",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Disposições Penais",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Quais crimes previstos no Estatuto do Desarmamento são, segundo a literalidade da lei, insuscetíveis de liberdade provisória (embora tal dispositivo possa ser objeto de ADI pelo STF)?",
+    "alternativas": {
+      "A": "Apenas o tráfico internacional de arma de fogo.",
+      "B": "A posse irregular e a omissão de cautela.",
+      "C": "O porte de uso restrito, comércio ilegal e o tráfico internacional (arts. 16, 17 e 18).",
+      "D": "Todos os crimes do Estatuto."
+    },
+    "resposta_correta": "C",
+    "comentario": "O texto legal do art. 21 estabelece que os crimes previstos nos arts. 16, 17 e 18 são insuscetíveis de liberdade provisória (observada a jurisprudência do STF que já mitigou essa vedação abstrata)."
+  },
+  {
+    "id": "900622",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Modificação de Arma",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Modificar as características de arma de fogo, de forma a torná-la equivalente a arma de fogo de uso proibido ou restrito ou para fins de dificultar a autoridade policial, perito ou juiz, configura infração equiparada a:",
+    "alternativas": {
+      "A": "Crime de comércio ilegal de arma de fogo.",
+      "B": "Posse ou porte ilegal de arma de fogo de uso restrito.",
+      "C": "Omissão de cautela.",
+      "D": "Disparo de arma de fogo."
+    },
+    "resposta_correta": "B",
+    "comentario": "Conforme o art. 16, § 1º, inciso II, incorre nas mesmas penas da posse/porte ilegal de uso restrito quem modifica as características de arma de fogo com esse fim."
+  },
+  {
+    "id": "900623",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Exceções e Autoridades",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Compete a qual órgão ou autoridade a autorização do porte de arma para os responsáveis pela segurança de cidadãos estrangeiros em visita ou sediados no Brasil?",
+    "alternativas": {
+      "A": "Polícia Federal.",
+      "B": "Comando do Exército.",
+      "C": "Ministério das Relações Exteriores.",
+      "D": "Ministério da Justiça."
+    },
+    "resposta_correta": "D",
+    "comentario": "O art. 9º afirma expressamente que compete ao Ministério da Justiça a autorização do porte de arma para os responsáveis pela segurança de cidadãos estrangeiros em visita ou sediados no Brasil."
+  },
+  {
+    "id": "900624",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Colecionadores",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O registro e a concessão de porte de trânsito de arma de fogo para colecionadores, atiradores e caçadores (CACs) é atribuição legal do(a):",
+    "alternativas": {
+      "A": "Sinarm (Sistema Nacional de Armas).",
+      "B": "Polícia Federal.",
+      "C": "Comando do Exército.",
+      "D": "Gabinete de Segurança Institucional (GSI)."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 9º define que cabe ao Comando do Exército o registro e a concessão de porte de trânsito de arma de fogo para colecionadores, atiradores e caçadores."
+  },
+  {
+    "id": "900625",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Taxas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "O Estatuto do Desarmamento instituiu a cobrança de taxas por diversos serviços (registro, porte, renovação). No entanto, algumas categorias são ISENTAS do pagamento destas taxas, entre elas:",
+    "alternativas": {
+      "A": "Qualquer atirador esportivo federado.",
+      "B": "As empresas de segurança privada.",
+      "C": "Os caçadores para subsistência (art. 6º, §5º) e integrantes de órgãos de segurança.",
+      "D": "Todos os cidadãos maiores de 60 anos."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 11, § 2º, estabelece a isenção de taxas para as instituições dos incisos I a VII e X, bem como para o caçador de subsistência previsto no § 5º do art. 6º."
+  },
+  {
+    "id": "900626",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Porte",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Os integrantes das Forças Armadas e das Polícias, ao exercerem o direito de adquirir arma de fogo (art. 4º), possuem um benefício estabelecido no art. 6º, § 4º, que consiste em:",
+    "alternativas": {
+      "A": "Ter direito a um suprimento anual ilimitado de munição.",
+      "B": "Ficar dispensados do cumprimento dos requisitos de comprovação de idoneidade, aptidão técnica e psicológica previstos nos incisos I, II e III.",
+      "C": "Poder registrar qualquer armamento bélico de destruição em massa.",
+      "D": "Não precisar renovar o porte de arma."
+    },
+    "resposta_correta": "B",
+    "comentario": "De acordo com o § 4º do art. 6º, ficam dispensados do cumprimento do disposto nos incisos I, II e III do art. 4º na forma do regulamento."
+  },
+  {
+    "id": "900627",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Porte Político",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Dentre os profissionais descritos abaixo, assinale a opção que possui autorização expressa para o porte de arma de fogo pelo inciso X do art. 6º do Estatuto:",
+    "alternativas": {
+      "A": "Agentes de Trânsito Municipais.",
+      "B": "Prefeitos e Vice-Prefeitos.",
+      "C": "Integrantes das Carreiras de Auditoria da Receita Federal e de Auditoria-Fiscal do Trabalho.",
+      "D": "Juízes de Paz e oficiais de cartório."
+    },
+    "resposta_correta": "C",
+    "comentario": "O art. 6º, X, garante o porte para os integrantes das Carreiras de Auditoria da Receita Federal do Brasil e de Auditoria-Fiscal do Trabalho."
+  },
+  {
+    "id": "900628",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Entidades Desportivas",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Sobre as armas de fogo utilizadas em entidades desportivas legalmente constituídas, a responsabilidade pela sua guarda recai sobre:",
+    "alternativas": {
+      "A": "Somente a Polícia Federal.",
+      "B": "O possuidor ou o autorizado a portar a arma pela sua guarda, na forma do regulamento.",
+      "C": "O Ministério do Esporte.",
+      "D": "As Forças Armadas Brasileiras, de forma exclusiva e intransferível."
+    },
+    "resposta_correta": "B",
+    "comentario": "Segundo o art. 8º, respondem o possuidor ou o autorizado a portar a arma pela sua guarda na forma do regulamento desta Lei."
+  },
+  {
+    "id": "900629",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Porte das Polícias",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "Para os agentes e guardas prisionais portarem arma de fogo de propriedade particular fora de serviço (Art. 6º, § 1º-B), eles devem cumprir requisitos. Assinale um desses requisitos:",
+    "alternativas": {
+      "A": "Estar submetido a regime de plantão flexível.",
+      "B": "Possuir mais de 10 anos ininterruptos de carreira penal.",
+      "C": "Estar submetido a regime de dedicação exclusiva.",
+      "D": "Ser autorizado pessoalmente pelo Juiz Corregedor de Presídios."
+    },
+    "resposta_correta": "C",
+    "comentario": "O § 1º-B do art. 6º elenca os requisitos: I - regime de dedicação exclusiva; II - sujeitos à formação funcional; III - subordinados a fiscalização/controle interno."
+  },
+  {
+    "id": "900630",
+    "disciplina": "Legislação Federal",
+    "assunto": "Estatuto do Desarmamento - Omissão de Cautela",
+    "banca": "IBAM",
+    "instituicao": "Prefeitura Municipal",
+    "ano": "2026",
+    "cargo": "Guarda Civil Municipal",
+    "nivel": "Médio",
+    "enunciado": "De acordo com as disposições referentes ao crime de 'Omissão de Cautela' (Art. 13), a lei visa proteger especialmente dois grupos para que não se apoderem de arma de fogo:",
+    "alternativas": {
+      "A": "Menores de 18 anos e pessoas portadoras de deficiência mental.",
+      "B": "Menores de 21 anos e pessoas condenadas criminalmente.",
+      "C": "Crianças sob tutela do Estado e idosos incapazes.",
+      "D": "Dependentes químicos e menores em conflito com a lei."
+    },
+    "resposta_correta": "A",
+    "comentario": "O tipo penal do art. 13 descreve expressamente: 'menor de 18 (dezoito) anos ou pessoa portadora de deficiência mental'."
+  }
+]
