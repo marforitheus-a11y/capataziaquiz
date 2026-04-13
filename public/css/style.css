@@ -880,6 +880,49 @@ word-wrap: break-word;  /* Quebra palavras longas */
   background-color: #2ecc71; /* Verde (online) */
 }
 
+.challenge-opponent-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+  margin: 10px 0 16px;
+}
+
+.challenge-opponent-card {
+  border: 2px solid #dfe6e9;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.challenge-opponent-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.challenge-opponent-card span {
+  font-weight: 600;
+  color: #2d3436;
+  text-transform: capitalize;
+}
+
+.challenge-opponent-card:hover {
+  transform: translateY(-1px);
+  border-color: #74b9ff;
+}
+
+.challenge-opponent-card.is-selected {
+  border-color: #0984e3;
+  box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.18);
+}
+
 /* Recibo de Leitura (Checkmark) */
 .msg-status {
   font-size: 0.8rem;
