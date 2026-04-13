@@ -622,6 +622,12 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 #totalBarChart,
 #barChart {
   min-height: 280px;
+  max-height: 280px;
+}
+
+#timeSeriesChart {
+  min-height: 320px;
+  max-height: 320px;
 }
 .chat-head {
   position: fixed;
