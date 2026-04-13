@@ -260,12 +260,22 @@ function goToPrev() {
 function startTimer(durationInSeconds) {
   stopTimer(); 
   let timer = durationInSeconds;
-  const timerEl = document.getElementById('quizTimer');
+  let timerEl = document.getElementById('quizTimer');
   
   if (!timerEl) {
-      console.error("Elemento do Timer não encontrado! O renderQuestion foi chamado?");
-      return;
+      const metaEl = document.querySelector('#quiz .meta');
+      if (metaEl) {
+        timerEl = document.createElement('div');
+        timerEl.id = 'quizTimer';
+        timerEl.className = 'quiz-timer';
+        metaEl.prepend(timerEl);
+      } else {
+        console.error("Elemento do Timer não encontrado! O renderQuestion foi chamado?");
+        return;
+      }
   }
+
+  timerEl.style.display = 'block';
   
   function updateDisplay() {
     const minutes = Math.floor(timer / 60);

@@ -12,11 +12,11 @@ function renderQuestion() {
   const optionsHtml = Object.entries(q.alternativas || {}).map(([key, value]) => {
     
     let classes = 'option';
-    let clickEvent = `onclick="selectOption('${q.id}', '${key}')"`;
+    let optionAttrs = `data-question-id="${q.id}" data-option-key="${key}"`;
     
     // Se a questão JÁ FOI RESPONDIDA
     if (isAnswered) {
-      clickEvent = ''; // Desativa o clique
+      optionAttrs += ' data-locked="true"'; // Desativa o clique
       
       // Marca a correta
       if (key === q.resposta_correta) {
@@ -28,7 +28,7 @@ function renderQuestion() {
       }
     }
     
-    return `<li class="${classes}" ${clickEvent}>${key}) ${value}</li>`;
+    return `<li class="${classes}" ${optionAttrs}>${key}) ${value}</li>`;
     
   }).join('');
 
@@ -83,6 +83,7 @@ function renderQuestion() {
   
   quizDiv.innerHTML = `
     <div class="meta">
+      <div id="quizTimer" class="quiz-timer" style="display:none"></div>
       <strong data-translate-key="metaDiscipline">Disciplina:</strong> ${q.disciplina || 'N/I'} • 
       <strong data-translate-key="metaBanca">Banca:</strong> ${q.banca || 'N/I'} • 
       <strong data-translate-key="metaAno">Ano:</strong> ${q.ano || 'N/I'}
@@ -100,6 +101,16 @@ function renderQuestion() {
   `;
   
   translatePage(); // Traduz a UI recém-renderizada
+
+  // 5. Liga os cliques das alternativas via addEventListener (evita depender de onclick inline/CSP)
+  quizDiv.querySelectorAll('.option[data-question-id][data-option-key]').forEach((optionEl) => {
+    if (optionEl.dataset.locked === 'true') return;
+
+    optionEl.addEventListener('click', () => {
+      selectOption(optionEl.dataset.questionId, optionEl.dataset.optionKey);
+    });
+  });
+
 }
 
 // -------------------------------------------------------------------
