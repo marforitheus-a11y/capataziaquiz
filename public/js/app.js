@@ -980,15 +980,28 @@ document.addEventListener('DOMContentLoaded', async () => {
       return alert('Selecione pelo menos uma matéria para desafiar!');
     }
 
-    if (!otherUser) {
-      return alert('Selecione um usuário específico no chat para criar o desafio.');
+    const possibleOpponents = supportedUsers.filter((userId) => userId !== currentUser);
+    if (possibleOpponents.length === 0) {
+      return alert('Nenhum usuário disponível para desafiar.');
     }
+
+    const defaultOpponent = otherUser && possibleOpponents.includes(otherUser)
+      ? otherUser
+      : possibleOpponents[0];
+
+    const opponentOptions = possibleOpponents
+      .map((userId) => `<option value="${userId}" ${userId === defaultOpponent ? 'selected' : ''}>${userId}</option>`)
+      .join('');
 
     const subjects = window.selectedSubjects.map((s) => s.name).join(', ');
     const count = document.getElementById('questionCount')?.value || 10;
 
     const content = `
-      <p>Você está desafiando <strong>${otherUser}</strong> para:</p>
+      <p><strong>Desafiar:</strong>
+        <select id="challenge_opponent" style="min-width: 160px; margin-left: 8px;">
+          ${opponentOptions}
+        </select>
+      </p>
       <p><strong>Matérias:</strong> ${subjects}</p>
       <p><strong>Questões:</strong> <input type="number" id="challenge_count" value="${count}" style="width: 80px;"></p>
       <p><strong>Tempo (min):</strong> <input type="number" id="challenge_time" value="5" style="width: 80px;"></p>
@@ -998,36 +1011,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     showChallengeModal("Configurar Desafio", content);
 
     document.getElementById('sendChallengeBtn').onclick = () => {
+      const invitedUser = document.getElementById('challenge_opponent')?.value;
+      if (!invitedUser) {
+        return alert('Selecione um usuário para desafiar.');
+      }
       const settings = {
         subjects: window.selectedSubjects,
         count: parseInt(document.getElementById('challenge_count').value, 10),
         time: parseInt(document.getElementById('challenge_time').value, 10)
       };
-      createChallenge(settings);
+      createChallenge(settings, invitedUser);
     };
   }
 
-  async function createChallenge(settings) {
-    if (!db || !currentUser || !otherUser) return;
+  async function createChallenge(settings, invitedUser) {
+    if (!db || !currentUser || !invitedUser) return;
 
-    const challengeId = `${[currentUser, otherUser].sort().join('_')}_${Date.now()}`;
+    const challengeId = `${[currentUser, invitedUser].sort().join('_')}_${Date.now()}`;
     activeChallengeId = challengeId;
 
     const challengeDoc = {
       createdBy: currentUser,
-      invited: otherUser,
-      participants: [currentUser, otherUser].sort(),
+      invited: invitedUser,
+      participants: [currentUser, invitedUser].sort(),
       status: 'pending',
       settings,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       questions: [],
-      answers: { [currentUser]: {}, [otherUser]: {} },
+      answers: { [currentUser]: {}, [invitedUser]: {} },
       finisher: null
     };
 
     try {
       await db.collection('challenges').doc(challengeId).set(challengeDoc);
-      showChallengeModal("Desafio Enviado", `<p>Aguardando ${otherUser} aceitar...</p>`);
+      showChallengeModal("Desafio Enviado", `<p>Aguardando ${invitedUser} aceitar...</p>`);
       listenToActiveGame(challengeId);
     } catch (e) {
       console.error("Erro ao criar desafio:", e);
