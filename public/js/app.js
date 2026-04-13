@@ -802,6 +802,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     }, 2000);
   }
 
+  function flattenErrorTopics(errorTopics, parentKey = '', output = {}) {
+    if (!errorTopics || typeof errorTopics !== 'object') return output;
+
+    Object.entries(errorTopics).forEach(([key, value]) => {
+      const composedKey = parentKey ? `${parentKey}.${key}` : key;
+
+      if (typeof value === 'number') {
+        output[composedKey] = (output[composedKey] || 0) + value;
+        return;
+      }
+
+      if (value && typeof value === 'object') {
+        flattenErrorTopics(value, composedKey, output);
+      }
+    });
+
+    return output;
+  }
+
   window.saveQuestionProgress = async (questionData, isCorrect) => {
     if (!userDocRef) return;
 
@@ -816,8 +835,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     if (!isCorrect && typeof getErrorTopic === 'function') {
-      const topic = getErrorTopic(questionData, questionData.sourceFile);
-      updateData[`errorTopics.${topic}`] = firebase.firestore.FieldValue.increment(1);
+      const topic = String(getErrorTopic(questionData, questionData.sourceFile) || 'Outros').trim();
+      updateData.errorTopics = {
+        [topic]: firebase.firestore.FieldValue.increment(1)
+      };
     }
 
     try {
@@ -923,7 +944,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (barCtx) {
       if (window.Chart && barCtx.chart) barCtx.chart.destroy();
 
-      const errorTopics = data.errorTopics || {};
+      const errorTopics = flattenErrorTopics(data.errorTopics || {});
       const errorEntries = Object.entries(errorTopics).sort((a, b) => b[1] - a[1]);
 
       if (errorEntries.length > 0) {
