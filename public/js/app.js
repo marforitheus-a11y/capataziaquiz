@@ -821,6 +821,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     return output;
   }
 
+  function wrapChartLabel(label, maxLineLength = 28) {
+    if (typeof label !== 'string' || label.length <= maxLineLength) return label;
+
+    const words = label.split(' ');
+    const lines = [];
+    let currentLine = '';
+
+    words.forEach((word) => {
+      const candidateLine = currentLine ? `${currentLine} ${word}` : word;
+
+      if (candidateLine.length <= maxLineLength) {
+        currentLine = candidateLine;
+      } else {
+        if (currentLine) lines.push(currentLine);
+        currentLine = word;
+      }
+    });
+
+    if (currentLine) lines.push(currentLine);
+    return lines;
+  }
+
   window.saveQuestionProgress = async (questionData, isCorrect) => {
     if (!userDocRef) return;
 
@@ -974,10 +996,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       const errorEntries = Object.entries(errorTopics).sort((a, b) => b[1] - a[1]);
 
       if (errorEntries.length > 0) {
+        const rawLabels = errorEntries.map((entry) => entry[0]);
+        const wrappedLabels = rawLabels.map((label) => wrapChartLabel(label));
+
         barCtx.chart = new Chart(barCtx, {
           type: 'bar',
           data: {
-            labels: errorEntries.map((entry) => entry[0]),
+            labels: wrappedLabels,
             datasets: [{
               label: 'Quantidade de Erros',
               data: errorEntries.map((entry) => entry[1]),
@@ -988,9 +1013,26 @@ document.addEventListener('DOMContentLoaded', async () => {
           },
           options: {
             responsive: true,
-            plugins: { legend: { display: false } },
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  title: (items) => {
+                    if (!items.length) return '';
+                    return rawLabels[items[0].dataIndex] || '';
+                  }
+                }
+              }
+            },
             scales: {
-              y: { beginAtZero: true, ticks: { stepSize: 1 } }
+              x: {
+                ticks: { maxRotation: 0, minRotation: 0, autoSkip: false }
+              },
+              y: {
+                beginAtZero: true,
+                ticks: { stepSize: 1 }
+              }
             }
           }
         });

@@ -618,6 +618,11 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   text-align: center;
   color: #27455a;
 }
+
+#totalBarChart,
+#barChart {
+  min-height: 280px;
+}
 .chat-head {
   position: fixed;
   bottom: 30px;
