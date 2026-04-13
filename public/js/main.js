@@ -162,6 +162,20 @@ function collectArticlesFromQuestions(questionsArray) {
   return sortArticleRefs([...refs]);
 }
 
+function collectArticleQuestionCounts(questionsArray) {
+  const articleCountMap = new Map();
+
+  questionsArray.forEach((question) => {
+    const refs = new Set(extractArticleReferencesFromQuestion(question));
+    refs.forEach((ref) => {
+      const current = articleCountMap.get(ref) || 0;
+      articleCountMap.set(ref, current + 1);
+    });
+  });
+
+  return articleCountMap;
+}
+
 function resetArticleFilterUI(message = 'Disponível apenas quando 1 matéria estiver selecionada.') {
   const wrap = document.getElementById('articleFilterWrap');
   const select = document.getElementById('articleFilterSelect');
@@ -192,7 +206,8 @@ async function refreshArticleFilterOptions() {
     const subjectQuestions = await loadQuizFile(selectedSubject.file);
     if (requestId !== articleFilterRequestId) return;
 
-    const articles = collectArticlesFromQuestions(subjectQuestions);
+    const articleCountMap = collectArticleQuestionCounts(subjectQuestions);
+    const articles = sortArticleRefs([...articleCountMap.keys()]);
     window.selectedArticleFilters = [];
     select.innerHTML = '';
 
@@ -205,7 +220,8 @@ async function refreshArticleFilterOptions() {
     articles.forEach((articleRef) => {
       const option = document.createElement('option');
       option.value = articleRef;
-      option.textContent = `Art. ${articleRef}`;
+      const questionCount = articleCountMap.get(articleRef) || 0;
+      option.textContent = `Art. ${articleRef} (${questionCount} questões)`;
       select.appendChild(option);
     });
 
