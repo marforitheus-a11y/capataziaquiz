@@ -989,19 +989,26 @@ document.addEventListener('DOMContentLoaded', async () => {
       ? otherUser
       : possibleOpponents[0];
 
-    const opponentOptions = possibleOpponents
-      .map((userId) => `<option value="${userId}" ${userId === defaultOpponent ? 'selected' : ''}>${userId}</option>`)
-      .join('');
-
     const subjects = window.selectedSubjects.map((s) => s.name).join(', ');
     const count = document.getElementById('questionCount')?.value || 10;
 
+    const opponentCards = possibleOpponents.map((userId) => `
+      <button
+        type="button"
+        class="challenge-opponent-card ${userId === defaultOpponent ? 'is-selected' : ''}"
+        data-opponent="${userId}"
+      >
+        <img src="${profilePics[userId]}" alt="${userId}">
+        <span>${userId}</span>
+      </button>
+    `).join('');
+
     const content = `
-      <p><strong>Desafiar:</strong>
-        <select id="challenge_opponent" style="min-width: 160px; margin-left: 8px;">
-          ${opponentOptions}
-        </select>
-      </p>
+      <p><strong>Escolha quem desafiar:</strong></p>
+      <div id="challengeOpponentList" class="challenge-opponent-list">
+        ${opponentCards}
+      </div>
+      <p><strong>Desafiado:</strong> <span id="challengeOpponentLabel">${defaultOpponent}</span></p>
       <p><strong>Matérias:</strong> ${subjects}</p>
       <p><strong>Questões:</strong> <input type="number" id="challenge_count" value="${count}" style="width: 80px;"></p>
       <p><strong>Tempo (min):</strong> <input type="number" id="challenge_time" value="5" style="width: 80px;"></p>
@@ -1010,8 +1017,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     showChallengeModal("Configurar Desafio", content);
 
+    let invitedUser = defaultOpponent;
+    const opponentList = document.getElementById('challengeOpponentList');
+    const opponentLabel = document.getElementById('challengeOpponentLabel');
+
+    if (opponentList) {
+      opponentList.addEventListener('click', (event) => {
+        const card = event.target.closest('.challenge-opponent-card');
+        if (!card) return;
+
+        invitedUser = card.dataset.opponent;
+        opponentList.querySelectorAll('.challenge-opponent-card').forEach((btn) => {
+          btn.classList.toggle('is-selected', btn === card);
+        });
+
+        if (opponentLabel) {
+          opponentLabel.textContent = invitedUser;
+        }
+      });
+    }
+
     document.getElementById('sendChallengeBtn').onclick = () => {
-      const invitedUser = document.getElementById('challenge_opponent')?.value;
       if (!invitedUser) {
         return alert('Selecione um usuário para desafiar.');
       }
