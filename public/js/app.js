@@ -1013,7 +1013,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           },
           options: {
             responsive: true,
-            maintainAspectRatio: false,
+            // Evita loop de redimensionamento quando o canvas está em um container flex.
+            maintainAspectRatio: true,
             plugins: {
               legend: { display: false },
               tooltip: {
