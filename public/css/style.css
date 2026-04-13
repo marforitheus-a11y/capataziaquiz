@@ -24,7 +24,7 @@ body {
   /* background-image: url('../img/fundo.jpg'); */
   
   /* --- MUDANÇAS PARA MOSAICO E IMAGEM MENOR --- */
-  background-size: 200px 200px; /* Altere para o tamanho desejado da imagem (largura altura) */
+  background-size: 1920px 1080px; /* Altere para o tamanho desejado da imagem (largura altura) */
                                 /* Ex: '200px 200px' para quadrados de 200px, ou 'auto' para usar o tamanho original */
                                 /* Ou '20%' para usar 20% da largura da tela */
   background-repeat: repeat;    /* Faz a imagem se repetir */
