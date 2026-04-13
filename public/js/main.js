@@ -11,6 +11,8 @@ let quizMode = 'solo'; // 'solo' ou 'challenge'
 let quizTimerInterval = null; // Referência para o timer
 let challengeDurationSeconds = null;
 let challengeStartedAt = null;
+window.quizMode = quizMode;
+window.userAnswers = userAnswers;
 
 /* ====== Carregar Dados (API/JSON) ====== */
 async function loadSubjects() {
@@ -127,6 +129,7 @@ async function loadPDFs() {
 
 function startQuiz(data, count) {
   quizMode = 'solo';
+  window.quizMode = quizMode;
   challengeDurationSeconds = null;
   challengeStartedAt = null;
   allQuestions = data; 
@@ -134,6 +137,7 @@ function startQuiz(data, count) {
   questions = shuffled.slice(0, count);
   currentQuestion = 0;
   userAnswers = {};
+  window.userAnswers = userAnswers;
   document.getElementById('quiz').style.display = 'block';
   document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
   renderQuestion();
@@ -141,11 +145,13 @@ function startQuiz(data, count) {
 
 function startChallengeQuiz(challengeQuestions, durationInSeconds) {
   quizMode = 'challenge';
+  window.quizMode = quizMode;
   challengeDurationSeconds = durationInSeconds;
   challengeStartedAt = Date.now();
   questions = challengeQuestions; 
   currentQuestion = 0;
   userAnswers = {};
+  window.userAnswers = userAnswers;
   document.getElementById('quiz').style.display = 'block';
   document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
   
