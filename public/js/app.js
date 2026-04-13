@@ -1233,7 +1233,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         await loadQuestionsAndStartGame(challengeId, challenge.settings);
       }
 
-      if (challenge.status === 'active' && window.quizMode !== 'challenge') {
+      if (challenge.status === 'active' && window.quizMode === 'solo') {
         hideChallengeModal();
         startChallengeQuiz(challenge.questions, challenge.settings.time * 60);
       }
@@ -1245,7 +1245,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           stopTimer();
         }
 
-        if (window.quizMode === 'challenge') {
+        const mySubmission = challenge.submissions?.[currentUser];
+        if (window.quizMode === 'challenge' && !mySubmission) {
           await window.finishChallenge(window.userAnswers || {});
         }
 
@@ -1294,7 +1295,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   async function persistChallengeHistoryIfNeeded(challengeId, challengeData, result) {
-    if (!result || challengeData.historySaved) return;
+    if (!result) return;
 
     const p1 = challengeData.createdBy;
     const p2 = challengeData.invited;
@@ -1331,34 +1332,44 @@ document.addEventListener('DOMContentLoaded', async () => {
       finishedAt: new Date().toISOString()
     };
 
-    await Promise.all([
-      db.collection('users').doc(p1).set({
+    const challengeRef = db.collection('challenges').doc(challengeId);
+
+    await db.runTransaction(async (transaction) => {
+      const challengeDoc = await transaction.get(challengeRef);
+      if (!challengeDoc.exists) return;
+
+      if (challengeDoc.data().historySaved) return;
+
+      transaction.set(db.collection('users').doc(p1), {
         challengeHistory: firebase.firestore.FieldValue.arrayUnion(p1Entry),
         challengeStats: {
           wins: firebase.firestore.FieldValue.increment(p1Result === 'win' ? 1 : 0),
           losses: firebase.firestore.FieldValue.increment(p1Result === 'loss' ? 1 : 0),
           draws: firebase.firestore.FieldValue.increment(p1Result === 'draw' ? 1 : 0)
         }
-      }, { merge: true }),
-      db.collection('users').doc(p2).set({
+      }, { merge: true });
+
+      transaction.set(db.collection('users').doc(p2), {
         challengeHistory: firebase.firestore.FieldValue.arrayUnion(p2Entry),
         challengeStats: {
           wins: firebase.firestore.FieldValue.increment(p2Result === 'win' ? 1 : 0),
           losses: firebase.firestore.FieldValue.increment(p2Result === 'loss' ? 1 : 0),
           draws: firebase.firestore.FieldValue.increment(p2Result === 'draw' ? 1 : 0)
         }
-      }, { merge: true }),
-      db.collection('challenges').doc(challengeId).update({ historySaved: true })
-    ]);
+      }, { merge: true });
+
+      transaction.update(challengeRef, { historySaved: true });
+    });
   }
 
   window.finishChallenge = async (myAnswers, extra = {}) => {
     if (!activeChallengeId) return;
     if (window.quizMode !== 'challenge' && window.quizMode !== 'finished') return;
-    if (window.quizMode === 'finished') return;
+    if (window.challengeSubmitted) return;
 
     console.log("Enviando respostas do desafio...");
     window.quizMode = 'finished';
+    window.challengeSubmitted = true;
 
     const challengeRef = db.collection('challenges').doc(activeChallengeId);
     const answerKey = `answers.${currentUser}`;
@@ -1394,6 +1405,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     } catch (e) {
       console.error("Erro ao finalizar desafio:", e);
+      window.challengeSubmitted = false;
     }
   };
 

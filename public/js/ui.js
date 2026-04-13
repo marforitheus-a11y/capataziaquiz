@@ -520,7 +520,7 @@ function showChallengeWaitingScreen(message) {
   const quizDiv = document.getElementById("quiz");
   quizDiv.innerHTML = `
     <div class='result' style="padding: 40px 20px;">
-      <h2>Desafio Enviado!</h2>
+      <h2>Desafio finalizado</h2>
       <p style="font-size: 1.1rem;">${message}</p>
     </div>
   `;

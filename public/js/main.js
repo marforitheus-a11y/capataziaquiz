@@ -130,6 +130,7 @@ async function loadPDFs() {
 function startQuiz(data, count) {
   quizMode = 'solo';
   window.quizMode = quizMode;
+  window.challengeSubmitted = false;
   challengeDurationSeconds = null;
   challengeStartedAt = null;
   allQuestions = data; 
@@ -146,6 +147,7 @@ function startQuiz(data, count) {
 function startChallengeQuiz(challengeQuestions, durationInSeconds) {
   quizMode = 'challenge';
   window.quizMode = quizMode;
+  window.challengeSubmitted = false;
   challengeDurationSeconds = durationInSeconds;
   challengeStartedAt = Date.now();
   questions = challengeQuestions; 
@@ -261,7 +263,7 @@ function goToNext() {
           reason: 'completed',
           elapsedSeconds: getChallengeElapsedSeconds()
         });
-        showChallengeWaitingScreen("Você terminou! Aguardando oponente...");
+        showChallengeWaitingScreen("Desafio finalizado. Aguardando o outro usuário para disponibilizar o resultado...");
       }
     } else {
       setLanguage('pt-BR'); 
@@ -318,7 +320,7 @@ function startTimer(durationInSeconds) {
           reason: 'timeout',
           elapsedSeconds: challengeDurationSeconds
         });
-        showChallengeWaitingScreen("Tempo encerrado! Aguardando oponente...");
+        showChallengeWaitingScreen("Desafio finalizado. Aguardando o outro usuário para disponibilizar o resultado...");
       } else {
         goToNext();
       }
