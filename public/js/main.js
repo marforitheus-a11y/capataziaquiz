@@ -6,6 +6,7 @@ let userAnswers = {};
 let lockSelection = false; 
 
 window.selectedSubjects = []; // Tornando global
+window.selectedArticleFilters = []; // artigos selecionados para filtro quando houver 1 matéria
 
 let quizMode = 'solo'; // 'solo' ou 'challenge'
 let quizTimerInterval = null; // Referência para o timer
@@ -13,6 +14,7 @@ let challengeDurationSeconds = null;
 let challengeStartedAt = null;
 window.quizMode = quizMode;
 window.userAnswers = userAnswers;
+let articleFilterRequestId = 0;
 
 /* ====== Carregar Dados (API/JSON) ====== */
 async function loadSubjects() {
@@ -98,6 +100,123 @@ async function loadQuizFile(filename) {
   const data = await response.json();
   return data;
 }
+
+function normalizeArticleRef(rawRef) {
+  return rawRef
+    .replace(/\s+/g, '')
+    .replace(/[º°]/g, 'º')
+    .toUpperCase();
+}
+
+function extractArticleReferencesFromText(text) {
+  if (!text || typeof text !== 'string') return [];
+
+  const refs = new Set();
+  const regex = /\b(?:art(?:igo)?\.?)\s*(\d+[A-Za-z]?)(?:\s*[º°])?/gi;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    refs.add(normalizeArticleRef(match[1]));
+  }
+
+  return [...refs];
+}
+
+function extractArticleReferencesFromQuestion(question) {
+  const refs = new Set();
+
+  function walk(value) {
+    if (typeof value === 'string') {
+      extractArticleReferencesFromText(value).forEach((ref) => refs.add(ref));
+      return;
+    }
+
+    if (Array.isArray(value)) {
+      value.forEach(walk);
+      return;
+    }
+
+    if (value && typeof value === 'object') {
+      Object.values(value).forEach(walk);
+    }
+  }
+
+  walk(question);
+  return [...refs];
+}
+
+function sortArticleRefs(articleRefs) {
+  return articleRefs.sort((a, b) => {
+    const aNum = parseInt(a, 10);
+    const bNum = parseInt(b, 10);
+    if (aNum !== bNum) return aNum - bNum;
+    return a.localeCompare(b, 'pt-BR', { numeric: true });
+  });
+}
+
+function collectArticlesFromQuestions(questionsArray) {
+  const refs = new Set();
+  questionsArray.forEach((question) => {
+    extractArticleReferencesFromQuestion(question).forEach((ref) => refs.add(ref));
+  });
+  return sortArticleRefs([...refs]);
+}
+
+function resetArticleFilterUI(message = 'Disponível apenas quando 1 matéria estiver selecionada.') {
+  const wrap = document.getElementById('articleFilterWrap');
+  const select = document.getElementById('articleFilterSelect');
+  const hint = document.getElementById('articleFilterHint');
+  if (!wrap || !select || !hint) return;
+
+  window.selectedArticleFilters = [];
+  select.innerHTML = '';
+  hint.textContent = message;
+  wrap.style.display = 'none';
+}
+
+async function refreshArticleFilterOptions() {
+  const wrap = document.getElementById('articleFilterWrap');
+  const select = document.getElementById('articleFilterSelect');
+  const hint = document.getElementById('articleFilterHint');
+  if (!wrap || !select || !hint) return;
+
+  if (!window.selectedSubjects || window.selectedSubjects.length !== 1) {
+    resetArticleFilterUI();
+    return;
+  }
+
+  const requestId = ++articleFilterRequestId;
+  const selectedSubject = window.selectedSubjects[0];
+
+  try {
+    const subjectQuestions = await loadQuizFile(selectedSubject.file);
+    if (requestId !== articleFilterRequestId) return;
+
+    const articles = collectArticlesFromQuestions(subjectQuestions);
+    window.selectedArticleFilters = [];
+    select.innerHTML = '';
+
+    if (articles.length === 0) {
+      hint.textContent = 'Nenhum artigo identificado automaticamente nessa matéria.';
+      wrap.style.display = 'block';
+      return;
+    }
+
+    articles.forEach((articleRef) => {
+      const option = document.createElement('option');
+      option.value = articleRef;
+      option.textContent = `Art. ${articleRef}`;
+      select.appendChild(option);
+    });
+
+    hint.textContent = 'Selecione um ou mais artigos (Ctrl/Cmd + clique para múltiplos).';
+    wrap.style.display = 'block';
+  } catch (error) {
+    console.error('Erro ao carregar artigos da matéria selecionada:', error);
+    resetArticleFilterUI('Não foi possível carregar os artigos desta matéria.');
+  }
+}
+window.refreshArticleFilterOptions = refreshArticleFilterOptions;
 async function loadPDFs() {
   const list = document.getElementById('pdfList');
   try {
@@ -184,6 +303,7 @@ function toggleSelectSubitem(sub, element) {
   }
   
   updateSelectedSummary(); // Função da ui.js
+  refreshArticleFilterOptions();
 }
 function toggleSelectFolder(subsInFolder, folderElement) {
   const subitemElements = folderElement.querySelectorAll('.subitem');
@@ -211,6 +331,7 @@ function toggleSelectFolder(subsInFolder, folderElement) {
   }
 
   updateSelectedSummary(); // Função da ui.js
+  refreshArticleFilterOptions();
 }
 
 function selectOption(questionId, optionKey) {
@@ -355,8 +476,25 @@ document.getElementById('startBtn').addEventListener('click', async () => {
       })
     );
     
-    const combinedQuestions = allFilesData.flat(); 
-    startQuiz(combinedQuestions, count);
+    const combinedQuestions = allFilesData.flat();
+    let filteredQuestions = combinedQuestions;
+
+    if (
+      window.selectedSubjects.length === 1 &&
+      Array.isArray(window.selectedArticleFilters) &&
+      window.selectedArticleFilters.length > 0
+    ) {
+      filteredQuestions = combinedQuestions.filter((question) => {
+        const refs = extractArticleReferencesFromQuestion(question);
+        return window.selectedArticleFilters.some((selectedRef) => refs.includes(selectedRef));
+      });
+    }
+
+    if (filteredQuestions.length === 0) {
+      return alert('Nenhuma questão encontrada para os artigos selecionados.');
+    }
+
+    startQuiz(filteredQuestions, count);
     
   } catch (e) {
     alert('Erro ao carregar os arquivos de quiz.');
@@ -366,4 +504,14 @@ document.getElementById('startBtn').addEventListener('click', async () => {
 
 document.getElementById('clearSelection').addEventListener('click', () => {
   clearSelectionUI(); // Função da ui.js
+  resetArticleFilterUI();
 });
+
+const articleFilterSelect = document.getElementById('articleFilterSelect');
+if (articleFilterSelect) {
+  articleFilterSelect.addEventListener('change', (event) => {
+    window.selectedArticleFilters = Array
+      .from(event.target.selectedOptions)
+      .map((option) => option.value);
+  });
+}
