@@ -186,15 +186,22 @@
   <!-- 3. Lógica do Quiz (Clássico) -->
   <script src="js/main.js"></script>
 
-  <!-- 4. CARREGADOR DO FIREBASE (Forma Clássica) -->
-  <!-- Carrega a biblioteca principal do Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-  <!-- Carrega a biblioteca do Firestore -->
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+ <!-- 4. FIREBASE (COMPAT - ORDEM CORRETA) -->
+
+<!-- 1. CORE (OBRIGATÓRIO PRIMEIRO) -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+
+<!-- 2. AUTH (OBRIGATÓRIO - ESTAVA FALTANDO) -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+
+<!-- 3. FIRESTORE -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+<!-- 4. STORAGE -->
 <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
-  <!-- 5. LÓGICA DO APP (Clássico) -->
-  <!-- Carregado POR ÚLTIMO, garantindo que 'firebase' existe -->
-  <script src="js/app.js"></script>
+
+<!-- 5. SEUS SCRIPTS (SEMPRE POR ÚLTIMO) -->
+<script src="js/app.js"></script>
 
 </body>
 </html>
