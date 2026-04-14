@@ -97,7 +97,7 @@
         <div class="nav-links">
           <a href="#" id="navSimulado">Início</a>
           <a href="#" id="navDesempenho">Desempenho</a>
-          <a href="/admin.html">Admin</a>
+          <a href="#" id="navRanking">Ranking</a>
         </div>
         <div id="currentUserDisplay" class="nav-user">
           Usuário: <span>...</span>
@@ -173,6 +173,37 @@
         <h3>Desempenho em Desafios</h3>
         <div id="challengeStatsSummary" style="margin-bottom: 14px;"></div>
         <div id="challengeHistoryList"></div>
+      </div>
+    </div>
+    <div class="container" id="rankingContainer" style="display: none;">
+      <h2>Ranking Geral dos Usuários</h2>
+      <p>Comparativo por acertos, taxa de aproveitamento, volume de questões e sequência diária de estudos.</p>
+
+      <div class="ranking-grid">
+        <div class="ranking-card">
+          <h3>🏆 Top Acertos</h3>
+          <ol id="rankingByCorrect" class="ranking-list"></ol>
+        </div>
+
+        <div class="ranking-card">
+          <h3>📈 Melhor Taxa de Acerto</h3>
+          <ol id="rankingByAccuracy" class="ranking-list"></ol>
+        </div>
+
+        <div class="ranking-card">
+          <h3>📚 Mais Questões Feitas</h3>
+          <ol id="rankingByQuestions" class="ranking-list"></ol>
+        </div>
+
+        <div class="ranking-card">
+          <h3>🔥 Maior Streak Atual</h3>
+          <ol id="rankingByStreak" class="ranking-list"></ol>
+        </div>
+      </div>
+
+      <div class="ranking-card ranking-streak-card">
+        <h3>Calendário de Streak (últimos 14 dias)</h3>
+        <div id="streakCalendarGrid"></div>
       </div>
     </div>
     </div> 

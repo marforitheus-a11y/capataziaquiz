@@ -113,6 +113,53 @@ function getDateRange(startDate, endDate) {
   return dates;
 }
 
+function getRecentDates(days = 14) {
+  const dates = [];
+  const cursor = new Date();
+  cursor.setHours(0, 0, 0, 0);
+
+  for (let i = days - 1; i >= 0; i -= 1) {
+    const d = new Date(cursor);
+    d.setDate(cursor.getDate() - i);
+    dates.push(d.toISOString().split('T')[0]);
+  }
+
+  return dates;
+}
+
+function calculateStreakFromDailyPerformance(dailyPerformance = {}) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const activeDates = Object.entries(dailyPerformance)
+    .filter(([, values]) => {
+      const correct = Number(values?.correct || 0);
+      const wrong = Number(values?.wrong || 0);
+      return (correct + wrong) > 0;
+    })
+    .map(([date]) => date)
+    .sort();
+
+  if (activeDates.length === 0) return 0;
+
+  const lastActivityDate = new Date(`${activeDates[activeDates.length - 1]}T00:00:00`);
+  const yesterday = new Date(today);
+  yesterday.setDate(today.getDate() - 1);
+
+  if (lastActivityDate < yesterday) return 0;
+
+  const activeSet = new Set(activeDates);
+  let streak = 0;
+  let cursor = new Date(lastActivityDate);
+
+  while (activeSet.has(cursor.toISOString().split('T')[0])) {
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+
+  return streak;
+}
+
 function formatTimestamp(fbTimestamp) {
   if (!fbTimestamp) return '';
   try {
@@ -276,8 +323,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   const currentUserDisplay = document.querySelector('#currentUserDisplay span');
   const navSimulado = document.getElementById('navSimulado');
   const navDesempenho = document.getElementById('navDesempenho');
+  const navRanking = document.getElementById('navRanking');
   const quizContainer = document.getElementById('quizContainer');
   const desempenhoContainer = document.getElementById('desempenhoContainer');
+  const rankingContainer = document.getElementById('rankingContainer');
   const chatHead = document.getElementById('chatHead');
   const chatHeadImg = document.querySelector('#chatHead img');
   const chatBadge = document.getElementById('chatBadge');
@@ -976,14 +1025,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (tabName === 'simulado') {
       if (quizContainer) quizContainer.style.display = 'block';
       if (desempenhoContainer) desempenhoContainer.style.display = 'none';
+      if (rankingContainer) rankingContainer.style.display = 'none';
       if (navSimulado) navSimulado.classList.add('active');
       if (navDesempenho) navDesempenho.classList.remove('active');
+      if (navRanking) navRanking.classList.remove('active');
     } else if (tabName === 'desempenho') {
       if (quizContainer) quizContainer.style.display = 'none';
       if (desempenhoContainer) desempenhoContainer.style.display = 'block';
+      if (rankingContainer) rankingContainer.style.display = 'none';
       if (navSimulado) navSimulado.classList.remove('active');
       if (navDesempenho) navDesempenho.classList.add('active');
+      if (navRanking) navRanking.classList.remove('active');
       loadPerformanceData();
+    } else if (tabName === 'ranking') {
+      if (quizContainer) quizContainer.style.display = 'none';
+      if (desempenhoContainer) desempenhoContainer.style.display = 'none';
+      if (rankingContainer) rankingContainer.style.display = 'block';
+      if (navSimulado) navSimulado.classList.remove('active');
+      if (navDesempenho) navDesempenho.classList.remove('active');
+      if (navRanking) navRanking.classList.add('active');
+      loadRankingData();
     }
   }
 
@@ -1177,6 +1238,116 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  function renderRankingList(containerId, users, formatter) {
+    const el = document.getElementById(containerId);
+    if (!el) return;
+
+    if (!users.length) {
+      el.innerHTML = '<li class="ranking-empty">Sem dados suficientes.</li>';
+      return;
+    }
+
+    el.innerHTML = users.map((user, index) => `
+      <li>
+        <span class="ranking-position">#${index + 1}</span>
+        <span class="ranking-name">${getUserLabel(user.userId)}</span>
+        <span class="ranking-value">${formatter(user)}</span>
+      </li>
+    `).join('');
+  }
+
+  function renderStreakCalendar(users) {
+    const calendarGrid = document.getElementById('streakCalendarGrid');
+    if (!calendarGrid) return;
+
+    const recentDates = getRecentDates(14);
+    const rows = users.map((user) => {
+      const activeSet = new Set(
+        Object.entries(user.dailyPerformance || {})
+          .filter(([, values]) => (Number(values?.correct || 0) + Number(values?.wrong || 0)) > 0)
+          .map(([date]) => date)
+      );
+
+      const chips = recentDates.map((date) => {
+        const day = date.slice(-2);
+        const isActive = activeSet.has(date);
+        return `<span class="streak-day ${isActive ? 'active' : ''}" title="${date}">${day}</span>`;
+      }).join('');
+
+      return `
+        <div class="streak-row">
+          <div class="streak-user">${getUserLabel(user.userId)} <strong>🔥 ${user.streak}</strong></div>
+          <div class="streak-days">${chips}</div>
+        </div>
+      `;
+    }).join('');
+
+    calendarGrid.innerHTML = rows || '<p class="ranking-empty">Ainda sem atividade registrada.</p>';
+  }
+
+  async function loadRankingData() {
+    if (!db) return;
+
+    try {
+      const userDocs = await Promise.all(
+        supportedUsers.map((userId) => db.collection('users').doc(userId).get())
+      );
+
+      const rankingData = userDocs
+        .filter((doc) => doc.exists)
+        .map((doc) => {
+          const data = doc.data() || {};
+          const stats = data.stats || {};
+          const correct = Number(stats.correct || 0);
+          const wrong = Number(stats.wrong || 0);
+          const totalQuestions = Number(stats.totalQuestions || (correct + wrong));
+          const answered = correct + wrong;
+          const accuracy = answered > 0 ? (correct / answered) * 100 : 0;
+          const dailyPerformance = data.dailyPerformance || {};
+          const streak = calculateStreakFromDailyPerformance(dailyPerformance);
+
+          return {
+            userId: doc.id,
+            correct,
+            wrong,
+            totalQuestions,
+            accuracy,
+            streak,
+            dailyPerformance
+          };
+        });
+
+      renderRankingList(
+        'rankingByCorrect',
+        rankingData.slice().sort((a, b) => b.correct - a.correct),
+        (u) => `${u.correct} acertos`
+      );
+      renderRankingList(
+        'rankingByAccuracy',
+        rankingData.slice().sort((a, b) => b.accuracy - a.accuracy),
+        (u) => `${u.accuracy.toFixed(1)}%`
+      );
+      renderRankingList(
+        'rankingByQuestions',
+        rankingData.slice().sort((a, b) => b.totalQuestions - a.totalQuestions),
+        (u) => `${u.totalQuestions} questões`
+      );
+      renderRankingList(
+        'rankingByStreak',
+        rankingData.slice().sort((a, b) => b.streak - a.streak),
+        (u) => `${u.streak} dias`
+      );
+
+      renderStreakCalendar(rankingData.slice().sort((a, b) => b.streak - a.streak));
+    } catch (error) {
+      console.error('Erro ao carregar ranking:', error);
+      ['rankingByCorrect', 'rankingByAccuracy', 'rankingByQuestions', 'rankingByStreak'].forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = '<li class="ranking-empty">Erro ao carregar ranking.</li>';
+      });
+    }
+  }
+
   if (navSimulado) {
     navSimulado.addEventListener('click', (e) => {
       e.preventDefault();
@@ -1188,6 +1359,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     navDesempenho.addEventListener('click', (e) => {
       e.preventDefault();
       showTab('desempenho');
+    });
+  }
+
+  if (navRanking) {
+    navRanking.addEventListener('click', (e) => {
+      e.preventDefault();
+      showTab('ranking');
     });
   }
 
