@@ -51,10 +51,11 @@ const profilePics = {
   matheus: '/video/matheus.jpg',
   hugo: '/video/hugo.jpg',
   lucao: '/video/lucao.jpg',
+  henrique: '/video/henrique.jpg',
   group: 'https://placehold.co/220x220/6c5ce7/FFFFFF?text=Grupo'
 };
 
-const supportedUsers = ['matheus', 'hugo', 'lucao'];
+const supportedUsers = ['matheus', 'hugo', 'lucao', 'henrique'];
 
 let otherUserIsOnline = false;
 let myUnreadCount = 0;
@@ -204,6 +205,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const userMatheus = document.getElementById('userMatheus');
   const userHugo = document.getElementById('userHugo');
   const userLucao = document.getElementById('userLucao');
+  const userHenrique = document.getElementById('userHenrique');
   const mainContent = document.getElementById('mainContent');
   const currentUserDisplay = document.querySelector('#currentUserDisplay span');
   const navSimulado = document.getElementById('navSimulado');
@@ -294,6 +296,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (userMatheus) userMatheus.addEventListener('click', () => selectUser('matheus'));
   if (userHugo) userHugo.addEventListener('click', () => selectUser('hugo'));
   if (userLucao) userLucao.addEventListener('click', () => selectUser('lucao'));
+  if (userHenrique) userHenrique.addEventListener('click', () => selectUser('henrique'));
 
   function startPresenceHeartbeat() {
     if (presenceIntervalId) {
