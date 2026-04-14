@@ -32,6 +32,7 @@ try {
 // --- 3. VARS GLOBAIS ---
 let currentUser = null;          // alias visual: matheus, hugo, lucao
 let currentAuthUid = null;       // uid real do Firebase Auth
+let currentUserDocId = null;     // id real do doc em /users
 let otherUser = null;
 let activeChatTarget = null;     // userId ou "group"
 let chatRoomId = null;
@@ -175,6 +176,45 @@ async function ensureUserDoc(userName) {
   return ref;
 }
 
+function isPermissionDeniedError(error) {
+  const code = error?.code || '';
+  const message = error?.message || '';
+  return code.includes('permission-denied') || /permission|missing or insufficient permissions/i.test(message);
+}
+
+function getUserDocCandidates(userName) {
+  const normalized = normalizeUserId(userName);
+  const candidates = [normalized];
+
+  if (normalized === 'henrique') candidates.push('tekinho');
+  if (normalized === 'tekinho') candidates.push('henrique');
+  if (userName && !candidates.includes(userName)) candidates.push(userName);
+
+  return [...new Set(candidates)];
+}
+
+async function ensureUserDocWithFallback(userName) {
+  const candidates = getUserDocCandidates(userName);
+  let lastError = null;
+
+  for (const candidate of candidates) {
+    try {
+      const ref = await ensureUserDoc(candidate);
+      return { ref, docId: candidate };
+    } catch (error) {
+      lastError = error;
+      if (!isPermissionDeniedError(error)) throw error;
+      console.warn(`Sem permissão para users/${candidate}. Tentando fallback...`, error?.code || error?.message);
+    }
+  }
+
+  const err = new Error(`Sem permissão no Firestore para os docs: ${candidates.join(', ')}`);
+  err.code = 'permission-denied-user-doc';
+  err.candidates = candidates;
+  err.cause = lastError;
+  throw err;
+}
+
 // Reset apenas do usuário atual, não global
 async function resetCurrentUserStatsIfNeeded() {
   if (!userDocRef) return;
@@ -286,7 +326,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       currentUser = normalizeUserId(userName);
-      userDocRef = await ensureUserDoc(currentUser);
+      const resolvedUserDoc = await ensureUserDocWithFallback(currentUser);
+      userDocRef = resolvedUserDoc.ref;
+      currentUserDocId = resolvedUserDoc.docId;
 
       const defaultTarget = supportedUsers.find((user) => user !== currentUser) || 'group';
 
@@ -314,7 +356,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       listenForChallenges();
     } catch (error) {
       console.error("Erro ao selecionar usuário:", error);
-      alert("Erro ao conectar no Firebase. Verifique autenticação e regras.");
+      if (error?.code === 'permission-denied-user-doc' || isPermissionDeniedError(error)) {
+        const candidates = error?.candidates?.join(' ou ') || currentUser || userName;
+        alert(`Sem permissão no Firestore para o usuário (${candidates}). Ajuste as regras para permitir leitura/escrita em users/{id}.`);
+      } else {
+        alert("Erro ao conectar no Firebase. Verifique autenticação e regras.");
+      }
       if (userGate) userGate.style.opacity = 1;
     }
   }
