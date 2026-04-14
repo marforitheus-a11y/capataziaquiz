@@ -1,0 +1,397 @@
+[
+  {
+    "id": "3949900",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Sistemas de Numeração e Operações Fundamentais",
+    "banca": "IGEDUC",
+    "instituicao": "Prefeitura de Cabo de Santo Agostinho - PE",
+    "ano": "2026",
+    "cargo": "IGEDUC - 2026 - Prefeitura de Cabo de Santo Agostinho - PE - Técnico de Enfermagem - Diarista (Secretaria Municipal de Saúde)",
+    "nivel": "",
+    "enunciado": "Em uma campanha solidária, foram arrecadados 248 pacotes de alimentos na primeira semana, 317 na segunda e 195 na terceira. Do total arrecadado, 284 pacotes já foram distribuídos. Quantos pacotes ainda restam para distribuição?",
+    "alternativas": {
+      "A": "468 pacotes.",
+      "B": "476 pacotes.",
+      "C": "462 pacotes.",
+      "D": "490 pacotes."
+    },
+    "resposta_correta": "B",
+    "imagens": []
+  },
+  {
+    "id": "3949373",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Frações e Números Decimais",
+    "banca": "IGEDUC",
+    "instituicao": "Prefeitura de Cabo de Santo Agostinho - PE",
+    "ano": "2026",
+    "cargo": "IGEDUC - 2026 - Prefeitura de Cabo de Santo Agostinho - PE - Condutor do SAMU (Secretaria Municipal de Saúde)",
+    "nivel": "",
+    "enunciado": "Em uma turma, 3/8 dos alunos participam de aulas de música e 1/4 participam de aulas de teatro. Sabendo que a turma possui 32 alunos e que os grupos são distintos, quantos alunos participam dessas atividades ao todo?",
+    "alternativas": {
+      "A": "20 alunos.",
+      "B": "22 alunos.",
+      "C": "18 alunos.",
+      "D": "16 alunos."
+    },
+    "resposta_correta": "A",
+    "imagens": []
+  },
+  {
+    "id": "3948212",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Sistemas de Numeração e Operações Fundamentais ,, Porcentagem",
+    "banca": "IGEDUC",
+    "instituicao": "Prefeitura de Cabo de Santo Agostinho - PE",
+    "ano": "2026",
+    "cargo": "IGEDUC - 2026 - Prefeitura de Cabo de Santo Agostinho - PE - Técnico em Saneamento (Secretaria Executiva de Meio Ambiente)",
+    "nivel": "",
+    "enunciado": "Caique adquiriu um equipamento por R$ 2.400,00, pagando 25% de entrada e parcelando o restante em 5 prestações iguais, sem juros. Qual é o valor de cada prestação?",
+    "alternativas": {
+      "A": "R$ 450,00.",
+      "B": "R$ 300,00.",
+      "C": "R$ 360,00.",
+      "D": "R$ 400,00."
+    },
+    "resposta_correta": "C",
+    "imagens": []
+  },
+  {
+    "id": "3947897",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Sistema de Unidade de Medidas",
+    "banca": "IGEDUC",
+    "instituicao": "Prefeitura de Cabo de Santo Agostinho - PE",
+    "ano": "2026",
+    "cargo": "IGEDUC - 2026 - Prefeitura de Cabo de Santo Agostinho - PE - Agente Operacional de Defesa Civil (Secretaria Municipal de Defesa Social)",
+    "nivel": "",
+    "enunciado": "Um reservatório comporta 2.500 litros de água. Se já estão armazenados 1.750 litros, quantos litros ainda faltam para que ele fique completamente cheio?",
+    "alternativas": {
+      "A": "Faltam 750 litros.",
+      "B": "Faltam 650 litros.",
+      "C": "Faltam 900 litros.",
+      "D": "Faltam 800 litros."
+    },
+    "resposta_correta": "A",
+    "imagens": []
+  },
+  {
+    "id": "3947641",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Médias ,, Análise de Tabelas e Gráficos",
+    "banca": "IGEDUC",
+    "instituicao": "Prefeitura de Cabo de Santo Agostinho - PE",
+    "ano": "2026",
+    "cargo": "IGEDUC - 2026 - Prefeitura de Cabo de Santo Agostinho - PE - Técnico de Laboratório Plantonista (Secretaria Municipal de Saúde)",
+    "nivel": "",
+    "enunciado": "O gerente de um supermercado registrou em uma tabela as vendas em quatro semanas consecutivas de um produto de limpeza que está sendo lançado. Qual é a média aritmética das vendas semanais?",
+    "alternativas": {
+      "A": "A média é de 135 unidades.",
+      "B": "A média é de 125 unidades.",
+      "C": "A média é de 115 unidades.",
+      "D": "A média é de 130 unidades."
+    },
+    "resposta_correta": "B",
+    "imagens": [
+      "imagens_questoes\\3947641_1.jpg"
+    ]
+  },
+  {
+    "id": "3943277",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Juros Simples",
+    "banca": "IDCAP",
+    "instituicao": "INOVA Capixaba - ES",
+    "ano": "2026",
+    "cargo": "IDCAP - 2026 - INOVA Capixaba - ES - Técnico de Enfermagem (Hospitalar)",
+    "nivel": "",
+    "enunciado": "Carla fez uma aplicação financeira no valor inicial de R$20.000,00, com taxa de juros simples de 3% ao trimestre, durante um período de 3 anos. Nestas condições, quanto ela terá acumulado ao final do período?",
+    "alternativas": {
+      "A": "Ela terá acumulado R$24.000,00.",
+      "B": "Ela terá acumulado R$26.380,00.",
+      "C": "Ela terá acumulado R$28.000,00.",
+      "D": "Ela terá acumulado R$27.200,00.",
+      "E": "Ela terá acumulado R$25.430,00."
+    },
+    "resposta_correta": "D",
+    "imagens": []
+  },
+  {
+    "id": "3914021",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Juros Simples",
+    "banca": "FUNDATEC",
+    "instituicao": "Prefeitura de Porto Alegre - RS",
+    "ano": "2026",
+    "cargo": "FUNDATEC - 2026 - Prefeitura de Porto Alegre - RS - Assistente Administrativo",
+    "nivel": "",
+    "enunciado": "Um capital é aplicado a juros simples à taxa de 2% ao mês durante 5 meses, produzindo um montante de R$ 1.210,00. O capital (em R$) inicialmente aplicado foi:",
+    "alternativas": {
+      "A": "1.000,00.",
+      "B": "1.050,00.",
+      "C": "1.080,00.",
+      "D": "1.100,00.",
+      "E": "1.120,00."
+    },
+    "resposta_correta": "D",
+    "imagens": []
+  },
+  {
+    "id": "3899597",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Raciocínio Lógico ,, Sistemas de Numeração e Operações Fundamentais",
+    "banca": "IF-ES",
+    "instituicao": "IF-ES",
+    "ano": "2026",
+    "cargo": "IF-ES - 2026 - IF-ES - Assistente de Aluno",
+    "nivel": "",
+    "enunciado": "Jefferson mora a 900 metros em linha reta da árvore de Natal recentemente montada pela prefeitura da sua cidade. Em um dos seus treinos de corrida, saiu da sua casa e começou a correr em linha reta em direção à árvore de Natal, mas só lembrou de ligar seu relógio com GPS ao passar por ela, ou seja, só começou a marcar sua corrida a partir dali. Continuou correndo em linha reta após passar pela árvore com o propósito de treinar exatamente 5 km, que deveriam ser completados ao retornar à sua casa. Para cumprir o treino exatamente como planejado, qual marcação deverá ser observada no seu relógio GPS que indicaria o momento de fazer meia volta e retornar? Considere que o percurso da volta é o mesmo da ida, porém, em direção à casa de Jefferson.",
+    "alternativas": {
+      "A": "2500 m",
+      "B": "3200 m",
+      "C": "1600 m",
+      "D": "800 m",
+      "E": "4100 m"
+    },
+    "resposta_correta": "C",
+    "imagens": []
+  },
+  {
+    "id": "3895805",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Regra de Três",
+    "banca": "IDCAP",
+    "instituicao": "Prefeitura de Santa Leopoldina - ES",
+    "ano": "2026",
+    "cargo": "IDCAP - 2026 - Prefeitura de Santa Leopoldina - ES - Escriturário",
+    "nivel": "",
+    "enunciado": "Em uma indústria metalúrgica, a produção diária de peças é diretamente influenciada pela quantidade de máquinas em operação e pelo número de horas efetivamente trabalhadas. Para fins de planejamento e otimização do processo produtivo, a gerência analisa como variações nesses dois fatores impactam o total de peças fabricadas, mantendo constante a eficiência de cada máquina. Com base nessa relação entre máquinas, tempo de trabalho e produção, avaliam-se as assertivas a seguir: I.Se o número de máquinas dobrar, mantendo-se o tempo, a produção dobra. II.Se o tempo de trabalho triplicar, mantendo-se as máquinas, a produção triplica. III.Se máquinas e tempo dobrarem simultaneamente, a produção quadruplica. IV.A produção é inversamente proporcional ao tempo de trabalho. Está CORRETO o que se afirma em:",
+    "alternativas": {
+      "A": "III e IV, apenas.",
+      "B": "I, II e III, apenas.",
+      "C": "I e IV, apenas.",
+      "D": "II e III, apenas."
+    },
+    "resposta_correta": "B",
+    "imagens": []
+  },
+  {
+    "id": "3889507",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Regra de Três",
+    "banca": "IDIB",
+    "instituicao": "Prefeitura de Maxaranguape - RN",
+    "ano": "2026",
+    "cargo": "IDIB - 2026 - Prefeitura de Maxaranguape - RN - Guarda Municipal",
+    "nivel": "",
+    "enunciado": "Uma equipe de 4 Guardas Municipais consegue fiscalizar 60 estabelecimentos comerciais irregulares em 5 dias, trabalhando 6 horas por dia. Sabe-se que a equipe foi reduzida para 2 Guardas e precisa fiscalizar 80 estabelecimentos, trabalhando 8 horas por dia. O total de dias que serão necessários para finalizar o trabalho é igual a:",
+    "alternativas": {
+      "A": "8.",
+      "B": "9.",
+      "C": "12.",
+      "D": "10."
+    },
+    "resposta_correta": "D",
+    "imagens": []
+  },
+  {
+    "id": "3888229",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Álgebra ,, Problemas",
+    "banca": "INSTITUTO AOCP",
+    "instituicao": "UNIRIO",
+    "ano": "2026",
+    "cargo": "INSTITUTO AOCP - 2026 - UNIRIO - Técnico em Contabilidade",
+    "nivel": "",
+    "enunciado": "Um técnico precisa organizar 85 processos em duas pilhas sobre a mesa. A primeira pilha deve ter 15 processos a mais que a segunda pilha. Quantos processos haverá na primeira pilha?",
+    "alternativas": {
+      "A": "55.",
+      "B": "50.",
+      "C": "45.",
+      "D": "40.",
+      "E": "35."
+    },
+    "resposta_correta": "B",
+    "imagens": []
+  },
+  {
+    "id": "3880921",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Porcentagem",
+    "banca": "VUNESP",
+    "instituicao": "Câmara de Matão - SP",
+    "ano": "2026",
+    "cargo": "VUNESP - 2026 - Câmara de Matão - SP - Agente Legislativo",
+    "nivel": "",
+    "enunciado": "Em um escritório, há uma caixa com determinado número de blocos de anotações, dos quais 68% possuem o timbre da empresa. Após a utilização de 50% dos blocos com o timbre da empresa e 25% dos blocos sem o timbre, ainda restaram 87 blocos dentro da caixa. O número de blocos sem o timbre da empresa que restaram dentro da caixa foi",
+    "alternativas": {
+      "A": "12.",
+      "B": "18.",
+      "C": "24.",
+      "D": "30.",
+      "E": "36."
+    },
+    "resposta_correta": "E",
+    "imagens": []
+  },
+  {
+    "id": "3880667",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Porcentagem",
+    "banca": "FGV",
+    "instituicao": "AL-RO Provas: FGV - 2026 - AL-RO - Assistente Legislativo (Sem Especialidade)",
+    "ano": "2026",
+    "cargo": "",
+    "nivel": "",
+    "enunciado": "Uma rádio fez uma pesquisa para conhecer melhor o seu público ouvinte. Ao todo, 240 pessoas foram entrevistadas. Do total de entrevistados, 100 eram mulheres e 136 ouvem a rádio. Constatou-se também que apenas 6 mulheres não ouvem a rádio. Dos homens entrevistados, o percentual daqueles que ouvem a rádio é de",
+    "alternativas": {
+      "A": "10%.",
+      "B": "20%.",
+      "C": "25%.",
+      "D": "30%.",
+      "E": "35%."
+    },
+    "resposta_correta": "D",
+    "imagens": []
+  },
+  {
+    "id": "3880664",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Porcentagem",
+    "banca": "FGV",
+    "instituicao": "AL-RO Provas: FGV - 2026 - AL-RO - Assistente Legislativo (Sem Especialidade)",
+    "ano": "2026",
+    "cargo": "",
+    "nivel": "",
+    "enunciado": "Samuel compra e vende carros usados na sua loja. Em uma das suas transações, ele comprou um carro usado e anunciou como preço de venda um valor 20% maior do que gastou na compra. Entretanto, na hora de vender, ele deu ao comprador um desconto de 10% sobre o preço de venda anunciado. Com isso, ele lucrou R$ 5.200,00 nessa transação. Esse carro foi vendido por",
+    "alternativas": {
+      "A": "R$ 65.000,00.",
+      "B": "R$ 68.600,00.",
+      "C": "R$ 70.200,00.",
+      "D": "R$ 74.800,00.",
+      "E": "R$ 78.000,00."
+    },
+    "resposta_correta": "C",
+    "imagens": []
+  },
+  {
+    "id": "3875093",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Sistemas de Numeração e Operações Fundamentais",
+    "banca": "Instituto IACP",
+    "instituicao": "Prefeitura de Satuba - AL Provas: Instituto IACP - 2026 - Prefeitura de Satuba - AL - Auxiliar de Serviços Administrativos Educacionais",
+    "ano": "2026",
+    "cargo": "",
+    "nivel": "",
+    "enunciado": "Luiz recebeu salário de R$ 2.000,00 e deu R$ 150,00 para cada um de seus dois filhos. Após isso, o valor restante foi:",
+    "alternativas": {
+      "A": "R$ 1.600,00",
+      "B": "R$ 1.650,00",
+      "C": "R$ 1.700,00",
+      "D": "R$ 1.750,00",
+      "E": "R$ 1.800,00"
+    },
+    "resposta_correta": "C",
+    "imagens": []
+  },
+  {
+    "id": "3866399",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Sistemas de Numeração e Operações Fundamentais",
+    "banca": "FAU",
+    "instituicao": "Prefeitura de Marmeleiro - PR",
+    "ano": "2026",
+    "cargo": "FAU - 2026 - Prefeitura de Marmeleiro - PR - Fiscal de Obras",
+    "nivel": "",
+    "enunciado": "Uma edificação apresenta área coberta total de 195,80 m². Devem ser desconsiderados: - Área de terraço aberto: 8,40 m² - Área de recuo frontal descoberto: 11,30 m² - Área de shaft técnico: 2,10 m² Considerando as regras de cálculo de área construída, qual é a área construída líquida?",
+    "alternativas": {
+      "A": "171,00 m².",
+      "B": "172,00 m².",
+      "C": "174,00 m².",
+      "D": "176,00 m².",
+      "E": "178,00 m²."
+    },
+    "resposta_correta": "C",
+    "imagens": []
+  },
+  {
+    "id": "3865690",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Sistemas de Numeração e Operações Fundamentais",
+    "banca": "Avança SP",
+    "instituicao": "Prefeitura de Vinhedo - SP",
+    "ano": "2026",
+    "cargo": "Avança SP - 2026 - Prefeitura de Vinhedo - SP - Auxiliar Administrativo",
+    "nivel": "",
+    "enunciado": "Um centro comunitário recebeu 84 cadeiras para organizar um evento. Essas cadeiras foram distribuídas igualmente em 7 fileiras. Quantas cadeiras ficaram em cada fileira?",
+    "alternativas": {
+      "A": "10",
+      "B": "11",
+      "C": "17",
+      "D": "12",
+      "E": "14"
+    },
+    "resposta_correta": "D",
+    "imagens": []
+  },
+  {
+    "id": "3865688",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Sistemas de Numeração e Operações Fundamentais",
+    "banca": "Avança SP",
+    "instituicao": "Prefeitura de Vinhedo - SP",
+    "ano": "2026",
+    "cargo": "Avança SP - 2026 - Prefeitura de Vinhedo - SP - Auxiliar Administrativo",
+    "nivel": "",
+    "enunciado": "Durante uma viagem, Renata saiu com R$ 200,00. Ela pagou R$ 58,70 em combustível, R$ 34,80 em alimentação e R$ 26,50 em pedágio. Qual foi o valor que restou com Renata após esses gastos?",
+    "alternativas": {
+      "A": "R$ 70,00",
+      "B": "R$ 79,00",
+      "C": "R$ 73,00",
+      "D": "R$ 80,00",
+      "E": "R$ 90,00"
+    },
+    "resposta_correta": "D",
+    "imagens": []
+  },
+  {
+    "id": "3865685",
+    "disciplina": "",
+    "assunto": "",
+    "banca": "",
+    "instituicao": "",
+    "ano": "",
+    "cargo": "",
+    "nivel": "",
+    "enunciado": "Analise as sentenças: I. 84 ÷ 7 = 12 II. 9 × 8 = 72 III. 60 − 23 = 37 IV. 15 + 19 = 33 Quantas sentenças são verdadeiras?",
+    "alternativas": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "0"
+    },
+    "resposta_correta": "C",
+    "imagens": []
+  },
+  {
+    "id": "3865684",
+    "disciplina": "Matemática",
+    "assunto": "Aritmética e Problemas ,, Sistemas de Numeração e Operações Fundamentais",
+    "banca": "Avança SP",
+    "instituicao": "Prefeitura de Vinhedo - SP",
+    "ano": "2026",
+    "cargo": "Avança SP - 2026 - Prefeitura de Vinhedo - SP - Auxiliar Administrativo",
+    "nivel": "",
+    "enunciado": "Um entregador recebeu R$ 180,00 no dia. Pagou R$ 46,80 de combustível e R$ 23,20 de alimentação. Com qual valor ele terminou o dia?",
+    "alternativas": {
+      "A": "R$ 110,00",
+      "B": "R$ 105,00",
+      "C": "R$ 100,00",
+      "D": "R$ 115,00",
+      "E": "R$ 120,00"
+    },
+    "resposta_correta": "A",
+    "imagens": []
+  }
+]
