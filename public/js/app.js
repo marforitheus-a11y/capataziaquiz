@@ -51,14 +51,15 @@ const userAliases = {
   matheus: 'matheus',
   hugo: 'hugo',
   lucao: 'lucao',
-  henrique: 'tekinho',
-  tekinho: 'tekinho'
+  henrique: 'henrique',
+  tekinho: 'henrique'
 };
 
 const userLabels = {
   matheus: 'Matheus',
   hugo: 'Hugo',
   lucao: 'Lucão',
+  henrique: 'GELEIA TEKINHO THE ROCK',
   tekinho: 'GELEIA TEKINHO THE ROCK'
 };
 
@@ -66,11 +67,12 @@ const profilePics = {
   matheus: '/video/matheus.jpg',
   hugo: '/video/hugo.jpg',
   lucao: '/video/lucao.jpg',
+  henrique: '/video/henrique.jpg',
   tekinho: '/video/henrique.jpg',
   group: 'https://placehold.co/220x220/6c5ce7/FFFFFF?text=Grupo'
 };
 
-const supportedUsers = ['matheus', 'hugo', 'lucao', 'tekinho'];
+const supportedUsers = ['matheus', 'hugo', 'lucao', 'henrique'];
 
 function normalizeUserId(userId) {
   return userAliases[userId] || userId;
