@@ -143,10 +143,6 @@ function showResults() {
   const wrongCount = wrongQuestions.length;
   const unansweredCount = questions.length - correctCount - wrongCount;
 
-  if (correctCount === questions.length && questions.length > 0) {
-    setTimeout(playVictoryVideo, 100); 
-  }
-
   let resultHTML = `
     <h2 data-translate-key="resultsTitle">Resultado Final</h2>
     <div class="charts-container">
@@ -445,53 +441,6 @@ function generatePrintPage(questionsToPrint) {
   }, 250);
 }
 
-// -------------------------------------------------------------------
-/* ====== FUNÇÃO DO VÍDEO DE VITÓRIA ====== */
-function playVictoryVideo() {
-  const overlay = document.getElementById('easterEggOverlay');
-  const video = document.getElementById('easterEggVideo');
-  const unmuteText = document.getElementById('unmuteText');
-
-  if (!overlay || !video) {
-    console.error("Elementos do vídeo de vitória não encontrados.");
-    return;
-  }
-  
-  overlay.style.display = 'flex';
-  video.volume = 1.0; 
-  const playPromise = video.play();
-
-  if (playPromise !== undefined) {
-    playPromise.then(() => {
-      unmuteText.style.display = 'none';
-    }).catch(error => {
-      console.warn("Autoplay com som bloqueado. Tocando mutado.", error);
-      video.muted = true;
-      video.play();
-      unmuteText.style.display = 'block'; 
-      unmuteText.textContent = "O navegador bloqueou o som. Clique para ativar.";
-      
-      overlay.addEventListener('click', () => {
-        video.muted = false;
-        video.volume = 1.0;
-        unmuteText.style.display = 'none';
-      }, { once: true }); 
-    });
-  }
-  
-  const closeBtn = document.getElementById('closeEasterEgg'); 
-  if(closeBtn) {
-    closeBtn.addEventListener('click', (e) => {
-      e.stopPropagation(); 
-      video.pause();
-      video.currentTime = 0; 
-      overlay.style.display = 'none';
-      unmuteText.style.display = 'none'; 
-    });
-  }
-}
-
-// -------------------------------------------------------------------
 // FUNÇÕES DO MODAL DE DESAFIO (Novas)
 // -------------------------------------------------------------------
 
