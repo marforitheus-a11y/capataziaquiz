@@ -67,16 +67,23 @@ function renderQuestion() {
   // ---------------------------------------------------
   // --- A NOVA LÓGICA DA IMAGEM ESTÁ AQUI ---
   // ---------------------------------------------------
-  let imageHtml = ''; // Começa vazio
-  // Se a 'q.imageUrl' existir E não estiver vazia
-  if (q.imageUrl && q.imageUrl.trim() !== '') {
-    imageHtml = `
-      <div class="question-image-container">
-        <img src="${q.imageUrl}" alt="Imagem da Questão" class="question-image" 
-             onerror="this.style.display='none'">
-      </div>
-    `;
-  }
+  let imageHtml = '';
+
+if (Array.isArray(q.imagens) && q.imagens.length > 0) {
+  imageHtml = `
+    <div class="question-image-container">
+      ${q.imagens.map((imgPath, index) => `
+        <img
+          src="${imgPath.startsWith('/') ? imgPath : '/' + imgPath}"
+          alt="Imagem da Questão ${index + 1}"
+          class="question-image"
+          loading="lazy"
+          onerror="this.style.display='none'"
+        >
+      `).join('')}
+    </div>
+  `;
+}
   // ---------------------------------------------------
   // --- FIM DA NOVA LÓGICA ---
   // ---------------------------------------------------
