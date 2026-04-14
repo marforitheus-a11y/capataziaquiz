@@ -42,5 +42,9 @@
   {
     "name": "Estatuto do Desarmamento",
     "file": "desarmamento.json"
+  },
+  {
+    "name": "Matemática",
+    "file": "matematica.json"
   }
 ]
