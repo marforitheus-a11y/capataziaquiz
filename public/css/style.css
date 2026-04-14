@@ -581,6 +581,116 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   min-height: 320px;
   max-height: 320px;
 }
+
+.ranking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.ranking-card {
+  background: #fbfdff;
+  border: 1px solid #e7eef8;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.ranking-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #27455a;
+  font-size: 1rem;
+}
+
+.ranking-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ranking-list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid #eef2f8;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+.ranking-position {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.ranking-name {
+  font-weight: 600;
+}
+
+.ranking-value {
+  color: #27455a;
+  font-weight: 500;
+}
+
+.ranking-empty {
+  color: var(--muted);
+  padding: 8px 0;
+}
+
+.ranking-streak-card {
+  margin-top: 16px;
+}
+
+#streakCalendarGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.streak-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.streak-user {
+  font-weight: 500;
+}
+
+.streak-days {
+  display: grid;
+  grid-template-columns: repeat(14, minmax(20px, 1fr));
+  gap: 5px;
+}
+
+.streak-day {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0;
+  border-radius: 6px;
+  background: #edf2f8;
+  color: #687582;
+  font-size: 0.72rem;
+}
+
+.streak-day.active {
+  background: rgba(0, 184, 148, 0.16);
+  color: #008c70;
+  font-weight: 700;
+}
+
+@media (max-width: 780px) {
+  .streak-row {
+    grid-template-columns: 1fr;
+  }
+}
 .chat-head {
   position: fixed;
   bottom: 30px;
