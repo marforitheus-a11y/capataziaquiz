@@ -47,15 +47,39 @@ let stopChallengeInviteListener = () => {};
 
 let presenceIntervalId = null;
 
+const userAliases = {
+  matheus: 'matheus',
+  hugo: 'hugo',
+  lucao: 'lucao',
+  henrique: 'tekinho',
+  tekinho: 'tekinho'
+};
+
+const userLabels = {
+  matheus: 'Matheus',
+  hugo: 'Hugo',
+  lucao: 'Lucão',
+  tekinho: 'GELEIA TEKINHO THE ROCK'
+};
+
 const profilePics = {
   matheus: '/video/matheus.jpg',
   hugo: '/video/hugo.jpg',
   lucao: '/video/lucao.jpg',
-  henrique: '/video/henrique.jpg',
+  tekinho: '/video/henrique.jpg',
   group: 'https://placehold.co/220x220/6c5ce7/FFFFFF?text=Grupo'
 };
 
-const supportedUsers = ['matheus', 'hugo', 'lucao', 'henrique'];
+const supportedUsers = ['matheus', 'hugo', 'lucao', 'tekinho'];
+
+function normalizeUserId(userId) {
+  return userAliases[userId] || userId;
+}
+
+function getUserLabel(userId) {
+  const normalized = normalizeUserId(userId);
+  return userLabels[normalized] || normalized;
+}
 
 let otherUserIsOnline = false;
 let myUnreadCount = 0;
@@ -177,7 +201,7 @@ function getAvailableChatTargets() {
   if (!currentUser) return [];
   const directTargets = supportedUsers
     .filter((userId) => userId !== currentUser)
-    .map((userId) => ({ id: userId, label: `Conversa com ${userId}` }));
+    .map((userId) => ({ id: userId, label: `Conversa com ${getUserLabel(userId)}` }));
 
   return [...directTargets, { id: 'group', label: 'Chat em grupo' }];
 }
@@ -192,7 +216,7 @@ function setChatContext(targetId) {
     return;
   }
 
-  otherUser = targetId;
+  otherUser = normalizeUserId(targetId);
   otherUserDocRef = db.collection("users").doc(otherUser);
   chatRoomId = getDirectChatRoomId(currentUser, otherUser);
 }
@@ -259,7 +283,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         await ensureFirebaseAuth();
       }
 
-      currentUser = userName;
+      currentUser = normalizeUserId(userName);
       userDocRef = await ensureUserDoc(currentUser);
 
       const defaultTarget = supportedUsers.find((user) => user !== currentUser) || 'group';
@@ -268,7 +292,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (chatTargetSelect) chatTargetSelect.value = defaultTarget;
       setChatContext(defaultTarget);
 
-      if (currentUserDisplay) currentUserDisplay.textContent = userName;
+      if (currentUserDisplay) currentUserDisplay.textContent = getUserLabel(currentUser);
       if (userGate) userGate.style.opacity = 0.5;
 
       await resetCurrentUserStatsIfNeeded();
@@ -459,7 +483,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       updateChatHead();
 
       if (chatWidget && chatWidget.style.display !== 'none') {
-        chatWithUser.textContent = activeChatTarget === 'group' ? 'Chat em grupo' : `Chat com ${otherUser}`;
+        chatWithUser.textContent = activeChatTarget === 'group' ? 'Chat em grupo' : `Chat com ${getUserLabel(otherUser)}`;
         listenForMessages();
         await resetUnreadForCurrentChat();
       }
@@ -471,7 +495,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (!chatWidget) return;
       chatWidget.style.display = 'flex';
       if (chatWithUser) {
-        chatWithUser.textContent = activeChatTarget === 'group' ? 'Chat em grupo' : `Chat com ${otherUser}`;
+        chatWithUser.textContent = activeChatTarget === 'group' ? 'Chat em grupo' : `Chat com ${getUserLabel(otherUser)}`;
       }
       listenForMessages();
       await resetUnreadForCurrentChat();
@@ -1145,8 +1169,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         class="challenge-opponent-card ${userId === defaultOpponent ? 'is-selected' : ''}"
         data-opponent="${userId}"
       >
-        <img src="${profilePics[userId]}" alt="${userId}">
-        <span>${userId}</span>
+        <img src="${profilePics[userId]}" alt="${getUserLabel(userId)}">
+        <span>${getUserLabel(userId)}</span>
       </button>
     `).join('');
 
@@ -1155,7 +1179,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       <div id="challengeOpponentList" class="challenge-opponent-list">
         ${opponentCards}
       </div>
-      <p><strong>Desafiado:</strong> <span id="challengeOpponentLabel">${defaultOpponent}</span></p>
+      <p><strong>Desafiado:</strong> <span id="challengeOpponentLabel">${getUserLabel(defaultOpponent)}</span></p>
       <p><strong>Matérias:</strong> ${subjects}</p>
       <p><strong>Questões:</strong> <input type="number" id="challenge_count" value="${count}" style="width: 80px;"></p>
       <p><strong>Tempo (min):</strong> <input type="number" id="challenge_time" value="5" style="width: 80px;"></p>
@@ -1179,7 +1203,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         if (opponentLabel) {
-          opponentLabel.textContent = invitedUser;
+          opponentLabel.textContent = getUserLabel(invitedUser);
         }
       });
     }
@@ -1219,7 +1243,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
       await db.collection('challenges').doc(challengeId).set(challengeDoc);
-      showChallengeModal("Desafio Enviado", `<p>Aguardando ${invitedUser} aceitar...</p>`);
+      showChallengeModal("Desafio Enviado", `<p>Aguardando ${getUserLabel(invitedUser)} aceitar...</p>`);
       listenToActiveGame(challengeId);
     } catch (e) {
       console.error("Erro ao criar desafio:", e);
@@ -1268,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     otherUser = creatorAlias;
     otherUserDocRef = db.collection("users").doc(otherUser);
 
-    showChallengeModal("Desafio Aceito!", `<p>Aguardando ${otherUser} iniciar e carregar as questões...</p>`);
+    showChallengeModal("Desafio Aceito!", `<p>Aguardando ${getUserLabel(otherUser)} iniciar e carregar as questões...</p>`);
 
     try {
       await db.collection('challenges').doc(challengeId).update({ status: 'accepted' });
