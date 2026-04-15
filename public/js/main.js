@@ -51,7 +51,8 @@ async function loadSubjects() {
       }
     }));
 
-    // agrupar por área de conhecimento
+    // Agrupar por área de conhecimento usando o helper centralizado.
+    // Importante: não duplicar keywords inline aqui para evitar conflitos de merge.
     const groups = {
       'Conhecimentos Básicos': [],
       'Conhecimentos Específicos': []
@@ -174,14 +175,6 @@ function sortArticleRefs(articleRefs) {
     if (aNum !== bNum) return aNum - bNum;
     return a.localeCompare(b, 'pt-BR', { numeric: true });
   });
-}
-
-function collectArticlesFromQuestions(questionsArray) {
-  const refs = new Set();
-  questionsArray.forEach((question) => {
-    extractArticleReferencesFromQuestion(question).forEach((ref) => refs.add(ref));
-  });
-  return sortArticleRefs([...refs]);
 }
 
 function collectArticleQuestionCounts(questionsArray) {
