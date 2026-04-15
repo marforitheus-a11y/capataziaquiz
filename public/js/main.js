@@ -53,13 +53,20 @@ async function loadSubjects() {
     }));
 
     // agrupar por área de conhecimento
+  
+
+    const basicSubjectKeywords = ['matemática', 'matematica', 'português', 'portugues'];
     const groups = {
       'Conhecimentos Básicos': [],
       'Conhecimentos Específicos': []
     };
 
     enriched.forEach(item => {
-      const isBasic = isBasicKnowledgeSubject(item.name);
+  const isBasic = isBasicKnowledgeSubject(item.name);
+  const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
+  groups[targetGroup].push(item);
+});
+
       const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
       groups[targetGroup].push(item);
     });
