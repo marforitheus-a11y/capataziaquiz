@@ -52,16 +52,14 @@ async function loadSubjects() {
       }
     }));
 
-    // agrupar por área de conhecimento
-  
 
-    const basicSubjectKeywords = ['matemática', 'matematica', 'português', 'portugues'];
     const groups = {
       'Conhecimentos Básicos': [],
       'Conhecimentos Específicos': []
     };
 
     enriched.forEach(item => {
+
   const isBasic = isBasicKnowledgeSubject(item.name);
   const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
   groups[targetGroup].push(item);
@@ -181,14 +179,6 @@ function sortArticleRefs(articleRefs) {
   });
 }
 
-function collectArticlesFromQuestions(questionsArray) {
-  const refs = new Set();
-  questionsArray.forEach((question) => {
-    extractArticleReferencesFromQuestion(question).forEach((ref) => refs.add(ref));
-  });
-  return sortArticleRefs([...refs]);
-}
-
 function collectArticleQuestionCounts(questionsArray) {
   const articleCountMap = new Map();
 
@@ -252,6 +242,7 @@ async function refreshArticleFilterOptions() {
     if (requestId !== articleFilterRequestId) return;
 
     const isBasicSubject = isBasicKnowledgeSubject(selectedSubject.name);
+
     window.selectedQuestionFilters = [];
     select.innerHTML = '';
 
@@ -283,6 +274,16 @@ async function refreshArticleFilterOptions() {
     const articleCountMap = collectArticleQuestionCounts(subjectQuestions);
     const articles = sortArticleRefs([...articleCountMap.keys()]);
     window.activeFilterMode = 'article';
+    if (label) label.textContent = 'Filtrar por artigos da lei';
+
+
+    if (isBasicSubject) {
+      resetArticleFilterUI('Filtro por artigos disponível apenas para Conhecimentos Específicos.');
+      return;
+    }
+
+    const articleCountMap = collectArticleQuestionCounts(subjectQuestions);
+    const articles = sortArticleRefs([...articleCountMap.keys()]);
     if (label) label.textContent = 'Filtrar por artigos da lei';
 
     if (articles.length === 0) {
