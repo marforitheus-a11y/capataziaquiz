@@ -7,6 +7,10 @@
   --text: #2d3436;
   --radius: 12px;
   --muted: #8b949e;
+  --panel-bg: rgba(255, 255, 255, 0.88);
+  --panel-border: rgba(255, 255, 255, 0.58);
+  --panel-shadow: 0 22px 44px rgba(21, 48, 85, 0.14);
+  --surface-separator: rgba(9, 132, 227, 0.12);
 }
 
 * { box-sizing: border-box; }
@@ -24,22 +28,12 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: var(--bg); /* Cor de fallback caso a imagem não carregue */
-
-  /* Mantemos o gradiente se quiser uma leve sobreposição ou retire-o se quiser a imagem "pura" */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../img/fundo.jpg');
-  /* OU, se quiser a imagem sem nenhuma sobreposição: */
-  /* background-image: url('../img/fundo.jpg'); */
-
-  /* --- MUDANÇAS PARA MOSAICO E IMAGEM MENOR --- */
-  background-size: 1920px 1080px; /* Altere para o tamanho desejado da imagem (largura altura) */
-                                /* Ex: '200px 200px' para quadrados de 200px, ou 'auto' para usar o tamanho original */
-                                /* Ou '20%' para usar 20% da largura da tela */
-  background-repeat: repeat;    /* Faz a imagem se repetir */
-  background-position: top left; /* Onde o mosaico começa (geralmente top left) */
-  background-attachment: scroll; /* Imagem rola com a página (se preferir) */
-  /* Se você quiser que o mosaico fique fixo, mude para: background-attachment: fixed; */
-  /* --- FIM DAS MUDANÇAS --- */
+  background-color: var(--bg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.64)), url('../img/fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 /* body {
   font-family: "Poppins", sans-serif;
@@ -53,10 +47,13 @@ body {
   max-width: 920px;
   width: min(920px, calc(100% - 24px));
   margin: 40px auto;
-  background: #fff;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 28px;
-  border-radius: var(--radius);
-  box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+  border-radius: calc(var(--radius) + 6px);
+  box-shadow: var(--panel-shadow);
   animation: fadeIn 0.35s ease-in-out;
 }
 
@@ -88,17 +85,30 @@ h2.subtitle {
   gap: 20px;
   align-items: start;
   margin-top: 18px;
+  position: relative;
+}
+
+.top-area::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: calc(360px + 10px);
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--surface-separator), transparent);
+  pointer-events: none;
 }
 
 /* Folder tree */
 .folder-panel {
-  background: #fbfdff;
-  border: 1px solid #eef3fb;
-  padding: 12px;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(9, 132, 227, 0.14);
+  padding: 14px;
+  border-radius: 14px;
   max-height: 420px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.62);
 }
 
 .folder {
@@ -202,14 +212,15 @@ h2.subtitle {
 
 /* Right column (controls) */
 .controls {
-  background: #fff;
-  border-radius: 10px;
-  padding: 12px;
-  border: 1px solid #eef3fb;
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid rgba(9, 132, 227, 0.14);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 13px;
   height: fit-content;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.62);
 }
 
 .controls label { font-weight: 600; font-size: 0.95rem; color: #213444; }
@@ -260,6 +271,7 @@ input[type="number"]:focus { box-shadow: 0 0 0 3px rgba(9,132,227,0.06); border-
   display:flex;
   gap:10px;
   align-items:center;
+  flex-wrap: wrap;
 }
 
 button {
@@ -283,9 +295,19 @@ button {
 
 button:hover { transform: translateY(-2px); }
 button.button-ghost:hover { background: rgba(9,132,227,0.04); }
+button:active {
+  transform: translateY(0) scale(0.98);
+}
 
 /* quiz area stays similar to previous */
 .quiz-area { margin-top: 22px; }
+.question {
+  background: rgba(255,255,255,0.78);
+  border: 1px solid rgba(9, 132, 227, 0.16);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 26px rgba(19, 51, 84, 0.08);
+}
 
 .meta {
   font-size: 0.9em;
@@ -303,17 +325,25 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 .options { list-style: none; padding: 0; }
 
 .option {
-  background: #f1f2f6;
+  background: #f4f7fb;
   padding: 12px 18px;
   margin: 8px 0;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.16s ease;
-  border: 1px solid transparent;
+  border: 1px solid rgba(148, 171, 201, 0.32);
   font-size: 0.95rem;
 }
 
-.option:hover { background: #e9eff7; transform: translateY(-1px); }
+.option:hover {
+  background: #e9f1fb;
+  border-color: rgba(9,132,227,0.34);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(9,132,227,0.08);
+}
+.option:active {
+  transform: translateY(0) scale(0.99);
+}
 
 .correct { background-color: #daf7e8 !important; border: 1px solid var(--correct); }
 .wrong { background-color: #ffe7e7 !important; border: 1px solid var(--wrong); }
@@ -349,7 +379,14 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 /* small screens */
 @media (max-width: 880px) {
   .top-area { grid-template-columns: 1fr; }
+  .top-area::after { display: none; }
   .controls { order: 2; }
+  .container {
+    width: calc(100% - 16px);
+    margin: 16px auto 24px;
+    padding: 18px;
+    border-radius: 16px;
+  }
 }
 .quiz-nav {
   display: flex;
@@ -377,7 +414,10 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--bg);
+  background-image: linear-gradient(rgba(255,255,255,0.52), rgba(255,255,255,0.62)), url('../img/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -388,20 +428,22 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 }
 
 .user-select-container {
-  max-width: 600px;
+  max-width: 760px;
   width: 100%;
-  padding: 32px 36px;
-  background: #fff;
-  border-radius: var(--radius);
-  box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+  padding: 32px 30px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 22px;
+  box-shadow: 0 24px 44px rgba(23, 43, 77, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   text-align: center;
 }
 
 .user-options {
-  display: flex;
-  flex-wrap: wrap; /* Permite quebrar a linha em telas pequenas */
-  justify-content: center;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(170px, 1fr));
+  gap: 16px;
   margin-top: 30px;
 }
 
@@ -411,11 +453,12 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--primary);
-  padding: 20px;
-  border-radius: 10px;
-  border: 2px solid var(--primary-light);
-  transition: all 0.2s ease;
-  width: 150px;
+  padding: 18px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(9, 132, 227, 0.2);
+  background: linear-gradient(165deg, rgba(255,255,255,0.86), rgba(245,251,255,0.86));
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  width: 100%;
 
   /* Adicionado para centralizar o texto abaixo da foto */
   display: flex;
@@ -425,9 +468,14 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 }
 
 .user-card:hover {
-  background: rgba(9,132,227,0.04);
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(9,132,227,0.1);
+  background: linear-gradient(160deg, rgba(255,255,255,0.96), rgba(231,245,255,0.96));
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 22px rgba(9,132,227,0.14);
+  border-color: rgba(9,132,227,0.38);
+}
+
+.user-card:active {
+  transform: translateY(-1px) scale(0.99);
 }
 
 /* O Overlay da Foto */
@@ -446,11 +494,11 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
   transition: all 0.2s ease;
   /* --- FIM DA CORREÇÃO --- */
 
-  width: 120px;
-  height: 120px;
+  width: 104px;
+  height: 104px;
   border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border: 3px solid rgba(255,255,255,0.95);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.16);
   z-index: 10;
 }
 
@@ -467,6 +515,34 @@ button.button-ghost:hover { background: rgba(9,132,227,0.04); }
 .user-card:hover .user-photo-hover {
   opacity: 1;
   transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+@media (max-width: 620px) {
+  .user-select-container {
+    padding: 20px 16px;
+    border-radius: 18px;
+  }
+
+  .user-options {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .user-card {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 14px;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .user-card .user-photo-hover {
+    width: 78px;
+    height: 78px;
+    flex-shrink: 0;
+  }
 }
 /* ================================ */
 /* ===== ESTILOS DA NAVEGAÇÃO (Corrigido e Moderno) ===== */
