@@ -82,15 +82,21 @@ function renderQuestion() {
     `;
   }
 
-  // ---------------------------------------------------
+    // ---------------------------------------------------
   // --- TEXTO ASSOCIADO ---
   // ---------------------------------------------------
   let textoAssociadoHtml = '';
-  const hasTextoAssociado = !!(q.texto_associado && q.texto_associado.trim() !== '');
+  const hasTextoAssociado = !!(
+    (q.texto_associado_html && q.texto_associado_html.trim() !== '') ||
+    (q.texto_associado && q.texto_associado.trim() !== '')
+  );
 
   if (hasTextoAssociado) {
-    const formattedTextoAssociado = q.texto_associado.replace(/\n/g, "<br>");
     const textoAssociadoId = `textoAssociado-${q.id}`;
+    const textoAssociadoRender =
+      q.texto_associado_html && q.texto_associado_html.trim() !== ''
+        ? q.texto_associado_html
+        : (q.texto_associado || '').replace(/\n/g, "<br>");
 
     textoAssociadoHtml = `
       <div class="texto-associado-wrapper">
@@ -112,7 +118,7 @@ function renderQuestion() {
           class="texto-associado-content"
           style="display:none;"
         >
-          ${formattedTextoAssociado}
+          ${textoAssociadoRender}
         </div>
       </div>
     `;
@@ -171,8 +177,6 @@ function renderQuestion() {
     });
   });
 }
-
-// -------------------------------------------------------------------
 
 function showResults() {
   let correctCount = 0;
