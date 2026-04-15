@@ -16,6 +16,22 @@ window.quizMode = quizMode;
 window.userAnswers = userAnswers;
 let articleFilterRequestId = 0;
 
+const BASIC_SUBJECT_KEYWORDS = ['matemática', 'matematica', 'português', 'portugues'];
+
+function normalizeSearchText(text) {
+  return (text || '')
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
+function isBasicKnowledgeSubject(subjectName) {
+  const normalizedName = normalizeSearchText(subjectName);
+  return BASIC_SUBJECT_KEYWORDS.some((keyword) => normalizedName.includes(normalizeSearchText(keyword)));
+}
+
 /* ====== Carregar Dados (API/JSON) ====== */
 async function loadSubjects() {
   try {
@@ -35,19 +51,25 @@ async function loadSubjects() {
       }
     }));
 
-    // agrupar
-    const groups = {};
+    // agrupar por área de conhecimento
+    const groups = {
+      'Conhecimentos Básicos': [],
+      'Conhecimentos Específicos': []
+    };
+
     enriched.forEach(item => {
-      const key = getGroupKey(item.name); // Função do helpers.js
-      if (!groups[key]) groups[key] = [];
-      groups[key].push(item);
+      const isBasic = isBasicKnowledgeSubject(item.name);
+      const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
+      groups[targetGroup].push(item);
     });
 
     // ordenar grupos por nome
     const root = document.getElementById('foldersRoot');
     root.innerHTML = '';
-    Object.keys(groups).sort().forEach(groupName => {
+    Object.keys(groups).forEach(groupName => {
       const arr = groups[groupName]; 
+      if (arr.length === 0) return;
+      arr.sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'));
       const folder = document.createElement('div');
       folder.className = 'folder';
       folder.innerHTML = `
@@ -180,10 +202,12 @@ function resetArticleFilterUI(message = 'Disponível apenas quando 1 matéria es
   const wrap = document.getElementById('articleFilterWrap');
   const select = document.getElementById('articleFilterSelect');
   const hint = document.getElementById('articleFilterHint');
+  const label = document.getElementById('articleFilterLabel');
   if (!wrap || !select || !hint) return;
 
   window.selectedArticleFilters = [];
   select.innerHTML = '';
+  if (label) label.textContent = 'Filtrar por artigos da lei';
   hint.textContent = message;
   wrap.style.display = 'none';
 }
@@ -192,6 +216,7 @@ async function refreshArticleFilterOptions() {
   const wrap = document.getElementById('articleFilterWrap');
   const select = document.getElementById('articleFilterSelect');
   const hint = document.getElementById('articleFilterHint');
+  const label = document.getElementById('articleFilterLabel');
   if (!wrap || !select || !hint) return;
 
   if (!window.selectedSubjects || window.selectedSubjects.length !== 1) {
@@ -206,10 +231,18 @@ async function refreshArticleFilterOptions() {
     const subjectQuestions = await loadQuizFile(selectedSubject.file);
     if (requestId !== articleFilterRequestId) return;
 
-    const articleCountMap = collectArticleQuestionCounts(subjectQuestions);
-    const articles = sortArticleRefs([...articleCountMap.keys()]);
+    const isBasicSubject = isBasicKnowledgeSubject(selectedSubject.name);
     window.selectedArticleFilters = [];
     select.innerHTML = '';
+
+    if (isBasicSubject) {
+      resetArticleFilterUI('Filtro por artigos disponível apenas para Conhecimentos Específicos.');
+      return;
+    }
+
+    const articleCountMap = collectArticleQuestionCounts(subjectQuestions);
+    const articles = sortArticleRefs([...articleCountMap.keys()]);
+    if (label) label.textContent = 'Filtrar por artigos da lei';
 
     if (articles.length === 0) {
       hint.textContent = 'Nenhum artigo identificado automaticamente nessa matéria.';
