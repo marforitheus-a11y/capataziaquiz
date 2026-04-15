@@ -35,19 +35,38 @@ async function loadSubjects() {
       }
     }));
 
-    // agrupar
-    const groups = {};
+    // agrupar por área de conhecimento
+    const basicSubjectKeywords = ['matemática', 'matematica', 'português', 'portugues'];
+    const groups = {
+      'Conhecimentos Básicos': [],
+      'Conhecimentos Específicos': []
+    };
+
     enriched.forEach(item => {
-      const key = getGroupKey(item.name); // Função do helpers.js
-      if (!groups[key]) groups[key] = [];
-      groups[key].push(item);
+      const normalizedName = (item.name || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase();
+
+      const isBasic = basicSubjectKeywords.some((keyword) => {
+        const normalizedKeyword = keyword
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase();
+        return normalizedName.includes(normalizedKeyword);
+      });
+
+      const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
+      groups[targetGroup].push(item);
     });
 
     // ordenar grupos por nome
     const root = document.getElementById('foldersRoot');
     root.innerHTML = '';
-    Object.keys(groups).sort().forEach(groupName => {
+    Object.keys(groups).forEach(groupName => {
       const arr = groups[groupName]; 
+      if (arr.length === 0) return;
+      arr.sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'));
       const folder = document.createElement('div');
       folder.className = 'folder';
       folder.innerHTML = `
