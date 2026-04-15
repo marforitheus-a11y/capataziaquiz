@@ -52,19 +52,16 @@ async function loadSubjects() {
       }
     }));
 
-
     const groups = {
       'Conhecimentos Básicos': [],
       'Conhecimentos Específicos': []
     };
 
     enriched.forEach(item => {
-
-  const isBasic = isBasicKnowledgeSubject(item.name);
-  const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
-  groups[targetGroup].push(item);
-});
-
+      const isBasic = isBasicKnowledgeSubject(item.name);
+      const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
+      groups[targetGroup].push(item);
+    });
 
     // ordenar grupos por nome
     const root = document.getElementById('foldersRoot');
@@ -119,6 +116,7 @@ async function loadSubjects() {
     document.getElementById('foldersLoading').textContent = 'Erro ao carregar matérias.';
   }
 }
+
 async function loadQuizFile(filename) {
   const response = await fetch(`/data/${filename}`);
   if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
@@ -246,10 +244,12 @@ async function refreshArticleFilterOptions() {
     window.selectedQuestionFilters = [];
     select.innerHTML = '';
 
+    // Se for matéria básica, filtra por assunto
     if (isBasicSubject) {
       const topicCountMap = collectTopicQuestionCounts(subjectQuestions);
       const topics = [...topicCountMap.keys()].sort((a, b) => a.localeCompare(b, 'pt-BR'));
       window.activeFilterMode = 'topic';
+
       if (label) label.textContent = 'Filtrar por assunto';
 
       if (topics.length === 0) {
@@ -271,19 +271,11 @@ async function refreshArticleFilterOptions() {
       return;
     }
 
+    // Se não for básica, filtra por artigo
     const articleCountMap = collectArticleQuestionCounts(subjectQuestions);
     const articles = sortArticleRefs([...articleCountMap.keys()]);
     window.activeFilterMode = 'article';
-    if (label) label.textContent = 'Filtrar por artigos da lei';
 
-
-    if (isBasicSubject) {
-      resetArticleFilterUI('Filtro por artigos disponível apenas para Conhecimentos Específicos.');
-      return;
-    }
-
-    const articleCountMap = collectArticleQuestionCounts(subjectQuestions);
-    const articles = sortArticleRefs([...articleCountMap.keys()]);
     if (label) label.textContent = 'Filtrar por artigos da lei';
 
     if (articles.length === 0) {
@@ -307,7 +299,9 @@ async function refreshArticleFilterOptions() {
     resetArticleFilterUI('Não foi possível carregar os artigos desta matéria.');
   }
 }
+
 window.refreshArticleFilterOptions = refreshArticleFilterOptions;
+
 async function loadPDFs() {
   const list = document.getElementById('pdfList');
   try {
@@ -367,12 +361,10 @@ function startChallengeQuiz(challengeQuestions, durationInSeconds) {
   document.getElementById('quiz').style.display = 'block';
   document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
   
-  // ******** A CORREÇÃO ESTÁ AQUI ********
   // 1. Renderiza a pergunta (que cria o div do timer)
   renderQuestion(); 
   // 2. Inicia o timer (que agora encontra o div)
   startTimer(durationInSeconds); 
-  // **************************************
 }
 
 function getChallengeElapsedSeconds() {
@@ -380,7 +372,6 @@ function getChallengeElapsedSeconds() {
   const elapsed = Math.floor((Date.now() - challengeStartedAt) / 1000);
   return Math.max(0, Math.min(elapsed, challengeDurationSeconds));
 }
-
 
 function toggleSelectSubitem(sub, element) {
   const index = window.selectedSubjects.findIndex(s => s.file === sub.file);
@@ -396,6 +387,7 @@ function toggleSelectSubitem(sub, element) {
   updateSelectedSummary(); // Função da ui.js
   refreshArticleFilterOptions();
 }
+
 function toggleSelectFolder(subsInFolder, folderElement) {
   const subitemElements = folderElement.querySelectorAll('.subitem');
   
@@ -442,11 +434,11 @@ function selectOption(questionId, optionKey) {
     }
  
     if (window.saveQuestionProgress) {
-        window.saveQuestionProgress(q, isCorrect);
-      }
-      if (window.sendQuizReaction) {
-        window.sendQuizReaction(isCorrect);
-      }
+      window.saveQuestionProgress(q, isCorrect);
+    }
+    if (window.sendQuizReaction) {
+      window.sendQuizReaction(isCorrect);
+    }
     
     renderQuestion();
     
@@ -455,12 +447,11 @@ function selectOption(questionId, optionKey) {
     options.forEach(opt => opt.classList.remove('selected-challenge'));
     
     const selectedEl = document.querySelector(`.option[data-question-id="${questionId}"][data-option-key="${optionKey}"]`);
-    if(selectedEl) {
+    if (selectedEl) {
       selectedEl.classList.add('selected-challenge');
     }
   }
 }
-
 
 function goToNext() {
   if (currentQuestion < questions.length - 1) {
@@ -491,23 +482,23 @@ function goToPrev() {
   }
 }
 
-// Funções do Timer (Adicionar ao main.js)
+// Funções do Timer
 function startTimer(durationInSeconds) {
   stopTimer(); 
   let timer = durationInSeconds;
   let timerEl = document.getElementById('quizTimer');
   
   if (!timerEl) {
-      const metaEl = document.querySelector('#quiz .meta');
-      if (metaEl) {
-        timerEl = document.createElement('div');
-        timerEl.id = 'quizTimer';
-        timerEl.className = 'quiz-timer';
-        metaEl.prepend(timerEl);
-      } else {
-        console.error("Elemento do Timer não encontrado! O renderQuestion foi chamado?");
-        return;
-      }
+    const metaEl = document.querySelector('#quiz .meta');
+    if (metaEl) {
+      timerEl = document.createElement('div');
+      timerEl.id = 'quizTimer';
+      timerEl.className = 'quiz-timer';
+      metaEl.prepend(timerEl);
+    } else {
+      console.error("Elemento do Timer não encontrado! O renderQuestion foi chamado?");
+      return;
+    }
   }
 
   timerEl.style.display = 'block';
@@ -515,7 +506,9 @@ function startTimer(durationInSeconds) {
   function updateDisplay() {
     const minutes = Math.floor(timer / 60);
     const seconds = timer % 60;
-    if(timerEl) timerEl.textContent = `Tempo: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    if (timerEl) {
+      timerEl.textContent = `Tempo: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }
   }
   
   updateDisplay(); 
@@ -546,7 +539,6 @@ function stopTimer() {
     quizTimerInterval = null;
   }
 }
-
 
 /* ====== Inicialização e Event Listeners ====== */
 document.getElementById('startBtn').addEventListener('click', async () => {
