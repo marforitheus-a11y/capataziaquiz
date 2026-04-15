@@ -16,14 +16,11 @@ function renderQuestion() {
     
     // Se a questão JÁ FOI RESPONDIDA
     if (isAnswered) {
-      optionAttrs += ' data-locked="true"'; // Desativa o clique
+      optionAttrs += ' data-locked="true"';
       
-      // Marca a correta
       if (key === q.resposta_correta) {
         classes += ' correct';
-      }
-      // Se o usuário respondeu esta E ela está errada
-      else if (key === userAnswer) {
+      } else if (key === userAnswer) {
         classes += ' wrong';
       }
     }
@@ -32,7 +29,7 @@ function renderQuestion() {
     
   }).join('');
 
-  // 2. Monta o HTML do feedback (comentário)
+  // 2. Monta o HTML do feedback
   let feedbackHtml = '';
   if (isAnswered) {
     const isCorrect = (userAnswer === q.resposta_correta);
@@ -63,30 +60,63 @@ function renderQuestion() {
 
   // 4. Monta o HTML final e insere na página
   const formattedEnunciado = (q.enunciado || '').replace(/\n/g, "<br>");
-  
+
   // ---------------------------------------------------
-  // --- A NOVA LÓGICA DA IMAGEM ESTÁ AQUI ---
+  // --- IMAGENS DA QUESTÃO ---
   // ---------------------------------------------------
   let imageHtml = '';
 
-if (Array.isArray(q.imagens) && q.imagens.length > 0) {
-  imageHtml = `
-    <div class="question-image-container">
-      ${q.imagens.map((imgPath, index) => `
-        <img
-          src="${imgPath.startsWith('/') ? imgPath : '/' + imgPath}"
-          alt="Imagem da Questão ${index + 1}"
-          class="question-image"
-          loading="lazy"
-          onerror="this.style.display='none'"
+  if (Array.isArray(q.imagens) && q.imagens.length > 0) {
+    imageHtml = `
+      <div class="question-image-container">
+        ${q.imagens.map((imgPath, index) => `
+          <img
+            src="${imgPath.startsWith('/') ? imgPath : '/' + imgPath}"
+            alt="Imagem da Questão ${index + 1}"
+            class="question-image"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+        `).join('')}
+      </div>
+    `;
+  }
+
+  // ---------------------------------------------------
+  // --- TEXTO ASSOCIADO ---
+  // ---------------------------------------------------
+  let textoAssociadoHtml = '';
+  const hasTextoAssociado = !!(q.texto_associado && q.texto_associado.trim() !== '');
+
+  if (hasTextoAssociado) {
+    const formattedTextoAssociado = q.texto_associado.replace(/\n/g, "<br>");
+    const textoAssociadoId = `textoAssociado-${q.id}`;
+
+    textoAssociadoHtml = `
+      <div class="texto-associado-wrapper">
+        <button
+          type="button"
+          class="texto-associado-toggle"
+          data-target="${textoAssociadoId}"
+          aria-expanded="false"
         >
-      `).join('')}
-    </div>
-  `;
-}
-  // ---------------------------------------------------
-  // --- FIM DA NOVA LÓGICA ---
-  // ---------------------------------------------------
+          <span class="texto-associado-left">
+            <span class="texto-associado-icon">📄</span>
+            <span class="texto-associado-label">Texto associado</span>
+          </span>
+          <span class="texto-associado-plus">+</span>
+        </button>
+
+        <div
+          id="${textoAssociadoId}"
+          class="texto-associado-content"
+          style="display:none;"
+        >
+          ${formattedTextoAssociado}
+        </div>
+      </div>
+    `;
+  }
   
   quizDiv.innerHTML = `
     <div class="meta">
@@ -97,8 +127,8 @@ if (Array.isArray(q.imagens) && q.imagens.length > 0) {
     </div>
     <div class="question">
       
-      <!-- A IMAGEM É INSERIDA AQUI (se existir) -->
-      ${imageHtml} 
+      ${textoAssociadoHtml}
+      ${imageHtml}
       
       <h2>${currentQuestion + 1}. ${formattedEnunciado}</h2>
       <ul class="options">${optionsHtml}</ul>
@@ -107,9 +137,9 @@ if (Array.isArray(q.imagens) && q.imagens.length > 0) {
     ${navHtml}
   `;
   
-  translatePage(); // Traduz a UI recém-renderizada
+  translatePage();
 
-  // 5. Liga os cliques das alternativas via addEventListener (evita depender de onclick inline/CSP)
+  // 5. Liga os cliques das alternativas
   quizDiv.querySelectorAll('.option[data-question-id][data-option-key]').forEach((optionEl) => {
     if (optionEl.dataset.locked === 'true') return;
 
@@ -118,6 +148,28 @@ if (Array.isArray(q.imagens) && q.imagens.length > 0) {
     });
   });
 
+  // 6. Liga o abre/fecha do Texto Associado
+  quizDiv.querySelectorAll('.texto-associado-toggle').forEach((toggleEl) => {
+    toggleEl.addEventListener('click', () => {
+      const targetId = toggleEl.dataset.target;
+      const contentEl = document.getElementById(targetId);
+      const plusEl = toggleEl.querySelector('.texto-associado-plus');
+
+      if (!contentEl) return;
+
+      const isOpen = contentEl.style.display !== 'none';
+
+      if (isOpen) {
+        contentEl.style.display = 'none';
+        toggleEl.setAttribute('aria-expanded', 'false');
+        if (plusEl) plusEl.textContent = '+';
+      } else {
+        contentEl.style.display = 'block';
+        toggleEl.setAttribute('aria-expanded', 'true');
+        if (plusEl) plusEl.textContent = '−';
+      }
+    });
+  });
 }
 
 // -------------------------------------------------------------------
@@ -128,25 +180,23 @@ function showResults() {
   const wrongQuestions = []; 
 
   questions.forEach(q => {
-    const user = userAnswers[q.id];
-    const right = q.resposta_correta;
-    const topic = getErrorTopic(q); 
-    // A questão só entra na contagem se for respondida
+    const user = userAnswers[q.id];
+    const right = q.resposta_correta;
+    const topic = getErrorTopic(q);
+
     if (user !== undefined && user !== null) { 
-        // 1. Verifica se a resposta do usuário é IGUAL à resposta correta
-        if (user === right) { 
-            correctCount++; // É ACERTO
-        } else {
-            // 2. Se a resposta do usuário for DIFERENTE da correta, é ERRO
-            if (!errorsByDiscipline[topic]) {
-                errorsByDiscipline[topic] = 0;
-            }
-            errorsByDiscipline[topic]++;
-            wrongQuestions.push(q);
+      if (user === right) { 
+        correctCount++;
+      } else {
+        if (!errorsByDiscipline[topic]) {
+          errorsByDiscipline[topic] = 0;
         }
-    } 
-    // Se 'user' for undefined/null, ela é Não Respondida (unansweredCount será calculada corretamente depois)
-  });
+        errorsByDiscipline[topic]++;
+        wrongQuestions.push(q);
+      }
+    }
+  });
+
   const wrongCount = wrongQuestions.length;
   const unansweredCount = questions.length - correctCount - wrongCount;
 
@@ -182,6 +232,7 @@ function showResults() {
     const user = userAnswers[q.id];
     const right = q.resposta_correta;
     if (user === undefined || user === null) return;
+
     resultHTML += `
       <div class="question" style="text-align:left; margin-bottom:14px; background: #fdfdfd; padding: 10px; border-radius: 8px; border: 1px solid #f1f6fb;">
         <h3 style="margin:6px 0 10px 0; font-size: 1rem;">${index + 1}. ${(q.enunciado || '').replace(/\n/g, "<br>")}</h3>
@@ -205,7 +256,6 @@ function showResults() {
   quizDiv.scrollIntoView({ behavior: 'smooth' });
 
   requestAnimationFrame(() => {
-    
     const btn = document.getElementById('retryBtn');
     if (btn) btn.addEventListener('click', () => location.reload()); 
 
@@ -270,7 +320,7 @@ function showResults() {
 
 /* ====== seleção de subitem (UI) ====== */
 function clearSelectionUI() {
-  window.selectedSubjects = []; // MUDANÇA AQUI
+  window.selectedSubjects = [];
   document.querySelectorAll('.subitem.selected').forEach(el => el.classList.remove('selected'));
   updateSelectedSummary();
 }
@@ -281,13 +331,11 @@ function clearSelectionUI() {
 function updateSelectedSummary() {
   const summaryDiv = document.getElementById('selectedSummary');
   
-  // MUDANÇA AQUI
   if (window.selectedSubjects.length === 0) {
     summaryDiv.textContent = translations[currentLang].noneSelected; 
   } else if (window.selectedSubjects.length === 1) {
-    summaryDiv.textContent = window.selectedSubjects[0].name; // MUDANÇA AQUI
+    summaryDiv.textContent = window.selectedSubjects[0].name;
   } else {
-    // MUDANÇA AQUI
     const total = window.selectedSubjects.reduce((acc, s) => acc + s.count, 0);
     summaryDiv.textContent = `${window.selectedSubjects.length} matérias selecionadas (${total} questões)`;
   }
