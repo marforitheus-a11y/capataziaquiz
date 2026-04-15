@@ -6,7 +6,8 @@ let userAnswers = {};
 let lockSelection = false; 
 
 window.selectedSubjects = []; // Tornando global
-window.selectedArticleFilters = []; // artigos selecionados para filtro quando houver 1 matéria
+window.selectedQuestionFilters = []; // artigos/assuntos selecionados para filtro quando houver 1 matéria
+window.activeFilterMode = null; // 'article' | 'topic' | null
 
 let quizMode = 'solo'; // 'solo' ou 'challenge'
 let quizTimerInterval = null; // Referência para o timer
@@ -15,6 +16,22 @@ let challengeStartedAt = null;
 window.quizMode = quizMode;
 window.userAnswers = userAnswers;
 let articleFilterRequestId = 0;
+
+const BASIC_SUBJECT_KEYWORDS = ['matemática', 'matematica', 'português', 'portugues'];
+
+function normalizeSearchText(text) {
+  return (text || '')
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
+function isBasicKnowledgeSubject(subjectName) {
+  const normalizedName = normalizeSearchText(subjectName);
+  return BASIC_SUBJECT_KEYWORDS.some((keyword) => normalizedName.includes(normalizeSearchText(keyword)));
+}
 
 /* ====== Carregar Dados (API/JSON) ====== */
 async function loadSubjects() {
@@ -35,19 +52,25 @@ async function loadSubjects() {
       }
     }));
 
-    // agrupar
-    const groups = {};
+    // agrupar por área de conhecimento
+    const groups = {
+      'Conhecimentos Básicos': [],
+      'Conhecimentos Específicos': []
+    };
+
     enriched.forEach(item => {
-      const key = getGroupKey(item.name); // Função do helpers.js
-      if (!groups[key]) groups[key] = [];
-      groups[key].push(item);
+      const isBasic = isBasicKnowledgeSubject(item.name);
+      const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
+      groups[targetGroup].push(item);
     });
 
     // ordenar grupos por nome
     const root = document.getElementById('foldersRoot');
     root.innerHTML = '';
-    Object.keys(groups).sort().forEach(groupName => {
+    Object.keys(groups).forEach(groupName => {
       const arr = groups[groupName]; 
+      if (arr.length === 0) return;
+      arr.sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'));
       const folder = document.createElement('div');
       folder.className = 'folder';
       folder.innerHTML = `
@@ -176,14 +199,31 @@ function collectArticleQuestionCounts(questionsArray) {
   return articleCountMap;
 }
 
+function collectTopicQuestionCounts(questionsArray) {
+  const topicCountMap = new Map();
+
+  questionsArray.forEach((question) => {
+    const topic = (question?.assunto || '').toString().trim();
+    if (!topic || topic.toUpperCase() === 'N/I') return;
+
+    const current = topicCountMap.get(topic) || 0;
+    topicCountMap.set(topic, current + 1);
+  });
+
+  return topicCountMap;
+}
+
 function resetArticleFilterUI(message = 'Disponível apenas quando 1 matéria estiver selecionada.') {
   const wrap = document.getElementById('articleFilterWrap');
   const select = document.getElementById('articleFilterSelect');
   const hint = document.getElementById('articleFilterHint');
+  const label = document.getElementById('articleFilterLabel');
   if (!wrap || !select || !hint) return;
 
-  window.selectedArticleFilters = [];
+  window.selectedQuestionFilters = [];
+  window.activeFilterMode = null;
   select.innerHTML = '';
+  if (label) label.textContent = 'Filtrar por artigos da lei';
   hint.textContent = message;
   wrap.style.display = 'none';
 }
@@ -192,6 +232,7 @@ async function refreshArticleFilterOptions() {
   const wrap = document.getElementById('articleFilterWrap');
   const select = document.getElementById('articleFilterSelect');
   const hint = document.getElementById('articleFilterHint');
+  const label = document.getElementById('articleFilterLabel');
   if (!wrap || !select || !hint) return;
 
   if (!window.selectedSubjects || window.selectedSubjects.length !== 1) {
@@ -206,10 +247,39 @@ async function refreshArticleFilterOptions() {
     const subjectQuestions = await loadQuizFile(selectedSubject.file);
     if (requestId !== articleFilterRequestId) return;
 
+    const isBasicSubject = isBasicKnowledgeSubject(selectedSubject.name);
+    window.selectedQuestionFilters = [];
+    select.innerHTML = '';
+
+    if (isBasicSubject) {
+      const topicCountMap = collectTopicQuestionCounts(subjectQuestions);
+      const topics = [...topicCountMap.keys()].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+      window.activeFilterMode = 'topic';
+      if (label) label.textContent = 'Filtrar por assunto';
+
+      if (topics.length === 0) {
+        hint.textContent = 'Nenhum assunto identificado automaticamente nessa matéria.';
+        wrap.style.display = 'block';
+        return;
+      }
+
+      topics.forEach((topic) => {
+        const option = document.createElement('option');
+        option.value = topic;
+        const questionCount = topicCountMap.get(topic) || 0;
+        option.textContent = `${topic} (${questionCount} questões)`;
+        select.appendChild(option);
+      });
+
+      hint.textContent = 'Selecione um ou mais assuntos (Ctrl/Cmd + clique para múltiplos).';
+      wrap.style.display = 'block';
+      return;
+    }
+
     const articleCountMap = collectArticleQuestionCounts(subjectQuestions);
     const articles = sortArticleRefs([...articleCountMap.keys()]);
-    window.selectedArticleFilters = [];
-    select.innerHTML = '';
+    window.activeFilterMode = 'article';
+    if (label) label.textContent = 'Filtrar por artigos da lei';
 
     if (articles.length === 0) {
       hint.textContent = 'Nenhum artigo identificado automaticamente nessa matéria.';
@@ -497,17 +567,27 @@ document.getElementById('startBtn').addEventListener('click', async () => {
 
     if (
       window.selectedSubjects.length === 1 &&
-      Array.isArray(window.selectedArticleFilters) &&
-      window.selectedArticleFilters.length > 0
+      Array.isArray(window.selectedQuestionFilters) &&
+      window.selectedQuestionFilters.length > 0
     ) {
-      filteredQuestions = combinedQuestions.filter((question) => {
-        const refs = extractArticleReferencesFromQuestion(question);
-        return window.selectedArticleFilters.some((selectedRef) => refs.includes(selectedRef));
-      });
+      if (window.activeFilterMode === 'topic') {
+        filteredQuestions = combinedQuestions.filter((question) =>
+          window.selectedQuestionFilters.includes((question?.assunto || '').toString().trim())
+        );
+      } else {
+        filteredQuestions = combinedQuestions.filter((question) => {
+          const refs = extractArticleReferencesFromQuestion(question);
+          return window.selectedQuestionFilters.some((selectedRef) => refs.includes(selectedRef));
+        });
+      }
     }
 
     if (filteredQuestions.length === 0) {
-      return alert('Nenhuma questão encontrada para os artigos selecionados.');
+      return alert(
+        window.activeFilterMode === 'topic'
+          ? 'Nenhuma questão encontrada para os assuntos selecionados.'
+          : 'Nenhuma questão encontrada para os artigos selecionados.'
+      );
     }
 
     startQuiz(filteredQuestions, count);
@@ -526,7 +606,7 @@ document.getElementById('clearSelection').addEventListener('click', () => {
 const articleFilterSelect = document.getElementById('articleFilterSelect');
 if (articleFilterSelect) {
   articleFilterSelect.addEventListener('change', (event) => {
-    window.selectedArticleFilters = Array
+    window.selectedQuestionFilters = Array
       .from(event.target.selectedOptions)
       .map((option) => option.value);
   });
