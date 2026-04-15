@@ -67,9 +67,6 @@ async function loadSubjects() {
   groups[targetGroup].push(item);
 });
 
-      const targetGroup = isBasic ? 'Conhecimentos Básicos' : 'Conhecimentos Específicos';
-      groups[targetGroup].push(item);
-    });
 
     // ordenar grupos por nome
     const root = document.getElementById('foldersRoot');
