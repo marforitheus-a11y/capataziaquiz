@@ -370,6 +370,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!db || !auth) return;
 
     try {
+      if (userGate?.dataset?.busy === '1') return;
+      userGate.dataset.busy = '1';
+
+      const selectedCard = document.querySelector(`.user-card[data-user="${userName}"]`);
+      await runUserSelectionTransition(selectedCard);
+
       if (!auth.currentUser) {
         await ensureFirebaseAuth();
       }
@@ -411,7 +417,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       } else {
         alert("Erro ao conectar no Firebase. Verifique autenticação e regras.");
       }
-      if (userGate) userGate.style.opacity = 1;
+      if (userGate) {
+        userGate.style.opacity = 1;
+        userGate.style.display = 'flex';
+        userGate.classList.remove('is-transitioning', 'is-entering');
+      }
+    }
+    finally {
+      if (userGate) userGate.dataset.busy = '0';
     }
   }
 
@@ -419,6 +432,41 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (userHugo) userHugo.addEventListener('click', () => selectUser('hugo'));
   if (userLucao) userLucao.addEventListener('click', () => selectUser('lucao'));
   if (userHenrique) userHenrique.addEventListener('click', () => selectUser('henrique'));
+
+  async function runUserSelectionTransition(selectedCard) {
+    if (!userGate || !selectedCard) return;
+
+    userGate.classList.add('is-transitioning');
+    selectedCard.classList.add('is-selected');
+
+    const avatar = selectedCard.querySelector('.user-photo-hover img');
+    if (!avatar) {
+      await new Promise((resolve) => setTimeout(resolve, 220));
+      return;
+    }
+
+    const rect = avatar.getBoundingClientRect();
+    const avatarClone = avatar.cloneNode(true);
+    avatarClone.className = 'avatar-transition-clone';
+    avatarClone.style.width = `${rect.width}px`;
+    avatarClone.style.height = `${rect.height}px`;
+    avatarClone.style.left = `${rect.left}px`;
+    avatarClone.style.top = `${rect.top}px`;
+
+    const centerX = (window.innerWidth - rect.width) / 2;
+    const centerY = (window.innerHeight - rect.height) / 2;
+    avatarClone.style.setProperty('--start-x', '0px');
+    avatarClone.style.setProperty('--start-y', '0px');
+    avatarClone.style.setProperty('--end-x', `${centerX - rect.left}px`);
+    avatarClone.style.setProperty('--end-y', `${centerY - rect.top}px`);
+
+    document.body.appendChild(avatarClone);
+
+    userGate.classList.add('is-entering');
+
+    await new Promise((resolve) => setTimeout(resolve, 640));
+    avatarClone.remove();
+  }
 
   function startPresenceHeartbeat() {
     if (presenceIntervalId) {
