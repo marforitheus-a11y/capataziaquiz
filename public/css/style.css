@@ -425,7 +425,9 @@ button:active {
   padding: 20px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  transition: opacity 520ms ease, transform 520ms ease;
+
+  transition: opacity 420ms ease, transform 420ms ease;
+
 }
 
 #userGate.is-transitioning {
@@ -435,32 +437,6 @@ button:active {
 #userGate.is-entering {
   opacity: 0;
   transform: scale(1.02);
-}
-
-.user-gate-blur-layer {
-  position: absolute;
-  inset: 0;
-  z-index: 10500;
-  pointer-events: none;
-  backdrop-filter: blur(0px) saturate(1);
-  -webkit-backdrop-filter: blur(0px) saturate(1);
-  background: radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.34) 100%);
-  animation: gate-blur-build 680ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.user-gate-crack-layer {
-  position: absolute;
-  inset: 0;
-  z-index: 10600;
-  pointer-events: none;
-  opacity: 0;
-  mix-blend-mode: screen;
-  background:
-    linear-gradient(118deg, transparent 45%, rgba(146, 226, 255, 0.95) 49%, #ffffff 50%, rgba(146, 226, 255, 0.95) 51%, transparent 55%),
-    repeating-linear-gradient(132deg, transparent 0 7.7%, rgba(255,255,255,0.88) 7.7% 8.1%, transparent 8.1% 16%);
-  filter: drop-shadow(0 0 12px rgba(123, 220, 255, 0.95)) drop-shadow(0 0 30px rgba(95, 178, 255, 0.55));
-  transform: scale(0.94);
-  animation: crack-strike 390ms cubic-bezier(0.2, 0.9, 0.3, 1) 460ms forwards;
 }
 
 .user-select-container {
@@ -567,7 +543,7 @@ button:active {
   will-change: transform, opacity;
   box-shadow: 0 22px 52px rgba(4, 32, 62, 0.35);
   border: 3px solid rgba(255, 255, 255, 0.94);
-  animation: avatar-expand-center 920ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: avatar-expand-center 620ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes avatar-expand-center {
@@ -575,41 +551,13 @@ button:active {
     opacity: 1;
     transform: translate3d(var(--start-x, 0), var(--start-y, 0), 0) scale(1);
   }
-  58% {
+  62% {
     opacity: 1;
-    transform: translate3d(var(--end-x, 0), var(--end-y, 0), 0) scale(1.62);
+    transform: translate3d(var(--end-x, 0), var(--end-y, 0), 0) scale(1.45);
   }
   100% {
     opacity: 0;
-    transform: translate3d(var(--end-x, 0), var(--end-y, 0), 0) scale(3.3);
-  }
-}
-
-@keyframes gate-blur-build {
-  0% {
-    backdrop-filter: blur(0px) saturate(1);
-    -webkit-backdrop-filter: blur(0px) saturate(1);
-    opacity: 0;
-  }
-  100% {
-    backdrop-filter: blur(12px) saturate(1.08);
-    -webkit-backdrop-filter: blur(12px) saturate(1.08);
-    opacity: 1;
-  }
-}
-
-@keyframes crack-strike {
-  0% {
-    opacity: 0;
-    transform: scale(0.94);
-  }
-  25% {
-    opacity: 1;
-    transform: scale(1.01);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.06);
+    transform: translate3d(var(--end-x, 0), var(--end-y, 0), 0) scale(2.5);
   }
 }
 

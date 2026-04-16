@@ -422,8 +422,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         userGate.style.display = 'flex';
         userGate.classList.remove('is-transitioning', 'is-entering');
       }
-      document.querySelectorAll('.user-card.is-selected').forEach((card) => card.classList.remove('is-selected'));
-      cleanupUserGateTransitionArtifacts();
     }
     finally {
       if (userGate) userGate.dataset.busy = '0';
@@ -438,7 +436,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   async function runUserSelectionTransition(selectedCard) {
     if (!userGate || !selectedCard) return;
 
-    cleanupUserGateTransitionArtifacts();
     userGate.classList.add('is-transitioning');
     selectedCard.classList.add('is-selected');
 
@@ -463,26 +460,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     avatarClone.style.setProperty('--end-x', `${centerX - rect.left}px`);
     avatarClone.style.setProperty('--end-y', `${centerY - rect.top}px`);
 
-    const blurLayer = document.createElement('div');
-    blurLayer.className = 'user-gate-blur-layer';
-    const crackLayer = document.createElement('div');
-    crackLayer.className = 'user-gate-crack-layer';
-
-    userGate.appendChild(blurLayer);
-    userGate.appendChild(crackLayer);
     document.body.appendChild(avatarClone);
 
     userGate.classList.add('is-entering');
 
-    await new Promise((resolve) => setTimeout(resolve, 960));
+    await new Promise((resolve) => setTimeout(resolve, 640));
     avatarClone.remove();
-    cleanupUserGateTransitionArtifacts();
-  }
-
-  function cleanupUserGateTransitionArtifacts() {
-    document.querySelectorAll('.avatar-transition-clone').forEach((node) => node.remove());
-    if (!userGate) return;
-    userGate.querySelectorAll('.user-gate-blur-layer, .user-gate-crack-layer').forEach((node) => node.remove());
   }
 
   function startPresenceHeartbeat() {
