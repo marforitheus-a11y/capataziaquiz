@@ -425,7 +425,9 @@ button:active {
   padding: 20px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+
   transition: opacity 420ms ease, transform 420ms ease;
+
 }
 
 #userGate.is-transitioning {
