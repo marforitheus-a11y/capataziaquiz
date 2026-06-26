@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "disciplina": "Tecnologia da Informação",
+        "assunto": "Habilidades Profissionais",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Fácil",
+        "enunciado": "De acordo com o material apresentado, qual a principal distinção entre Hard Skills e Soft Skills?",
+        "alternativas": {
+            "A": "Hard Skills são habilidades socioemocionais, enquanto Soft Skills são técnicas.",
+            "B": "Hard Skills são habilidades técnicas e específicas da profissão, enquanto Soft Skills são habilidades sociocomportamentais.",
+            "C": "Hard Skills são adquiridas apenas na prática, e Soft Skills, na teoria.",
+            "D": "Não há distinção clara, pois ambas são igualmente importantes para qualquer carreira."
+        },
+        "resposta_correta": "B",
+        "comentario": "O material define Hard Skill como 'Habilidades principais, o que você realmente faz na sua profissão.' e Soft Skill como 'Habilidades sócio comportamentais do candidato/profissional.' (Página 2)."
+    },
+    {
+        "id": 2,
+        "disciplina": "Tecnologia da Informação",
+        "assunto": "Funções do Analista de Sistemas",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "Qual das seguintes opções NÃO representa uma função relacionada ao Analista de Sistemas, conforme listado no material?",
+        "alternativas": {
+            "A": "Analista Programador",
+            "B": "Analista de O&M (Organização e métodos)",
+            "C": "Analista de Marketing Digital",
+            "D": "Analista de BI (Business Intelligence)"
+        },
+        "resposta_correta": "C",
+        "comentario": "Na seção 'Funções' (Página 2), são listadas diversas funções como Analista Programador, Analista de O&M e Analista de BI. Analista de Marketing Digital não é mencionado como uma função relacionada ao Analista de Sistemas no documento."
+    },
+    {
+        "id": 3,
+        "disciplina": "Tecnologia da Informação",
+        "assunto": "Tipos de Carreiras",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "A Carreira 'Y' ou '//' apresentada no material permite que um profissional de TI siga qual tipo de progressão?",
+        "alternativas": {
+            "A": "Apenas a progressão em cargos de gestão, como Diretor de TI.",
+            "B": "Apenas a progressão em cargos técnicos especializados, como Programador Consultor.",
+            "C": "Tanto a progressão em cargos de gestão quanto em cargos técnicos especializados.",
+            "D": "A progressão é limitada a um único nível hierárquico, sem possibilidade de avanço."
+        },
+        "resposta_correta": "C",
+        "comentario": "A ilustração da 'Carreira Y' ou '//' (Página 1) mostra claramente duas trilhas de progressão: uma para cargos de gestão (Diretor de TI, Gerente de TI, Líder de Projetos) e outra para cargos técnicos especializados (Analista de Software SR/PL/JR, Prog. Consultor III/II/I)."
+    },
+    {
+        "id": 4,
+        "disciplina": "Tecnologia da Informação",
+        "assunto": "Habilidades Essenciais",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Difícil",
+        "enunciado": "Considerando as Hard Skills e Soft Skills mencionadas no material, qual das seguintes combinações representa uma Hard Skill e uma Soft Skill, respectivamente, que são cruciais para um profissional de TI?",
+        "alternativas": {
+            "A": "Gestão de projetos e Não ser floco de neve.",
+            "B": "Domínio de Java / Python e Resolução de conflitos.",
+            "C": "Contabilidade e Liderança.",
+            "D": "Internet of Things (IOT) e Persuasão."
+        },
+        "resposta_correta": "B",
+        "comentario": "Na seção 'Hard Skill' (Página 2), 'Domínio de Java / Python' é listado como uma habilidade técnica. Na seção 'Soft Skill' (Página 2), 'Resolução de conflitos' é listado como uma habilidade sociocomportamental. As outras opções misturam incorretamente ou não representam as melhores combinações de acordo com a categorização do documento."
+    }
+]
