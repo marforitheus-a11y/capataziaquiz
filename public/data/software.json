@@ -1063,5 +1063,575 @@
 },
 "resposta_correta": "D",
 "comentario": "A alternativa D está rigorosamente correta conforme as Fontes 717 a 720, que atestam sobre a 'Terceira geração: utilização de: janelas (tipos diferentes de informação podem ser exibidas simultaneamente e sem frustração); multitarefa (fazer várias coisas ao mesmo tempo, na visão do usuário)'. As alternativas A, B e C se referem equivocadamente a estágios anteriores, ao estilo de linha de comando ou a tecnologias que escapam à definição visual e conceitual atrelada à terceira geração."
+},
+    {
+"id": "65",
+"disciplina": "Engenharia de Software",
+"assunto": "Qualidade de Software - Histórico",
+"banca": "FGV",
+"instituicao": "Órgão Público",
+"ano": "2026",
+"cargo": "Analista de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "O modelo de gestão focado na Qualidade possui raízes históricas específicas. De acordo com o material, onde e quando o Programa de Qualidade teve o seu início e quem foi o responsável por disseminar essa filosofia na indústria local?",
+"alternativas": {
+"A": "Iniciou-se nos Estados Unidos na década de 1980, conduzido pelo SEI (Software Engineering Institute) para fins de defesa militar.",
+"B": "Teve seu início no Japão do pós-guerra, por volta de 1950, a partir das ideias levadas pelo estatístico americano Deming, impulsionando a exportação de produtos japoneses.",
+"C": "Surgiu na Europa durante a concepção das normas ISO na década de 1990, liderado por um consórcio de países membros do ISTQB.",
+"D": "Originou-se no Brasil através da fundação da ALATS no ano de 2002, focando inicialmente apenas nas fábricas de software estatais."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B está correta conforme as Fontes 827 e 828, que relatam que 'A Qualidade, como Programa de Gestão, teve seu início no Japão do pós-guerra' e que 'Deming, estatístico americano, levou a filosofia do programa a indústria japonesa em 1950'. As demais alternativas citam organizações, datas e locais incorretos (SEI é de 1980, ISTQB de 2002, ALATS de 2002, mas nenhuma fundou o movimento inicial da qualidade industrial)."
+},
+{
+"id": "66",
+"disciplina": "Engenharia de Software",
+"assunto": "Terminologia de Testes",
+"banca": "CESPE/Cebraspe",
+"instituicao": "Tribunal de Contas",
+"ano": "2026",
+"cargo": "Auditor de TI",
+"nivel": "Superior",
+"enunciado": "É imperativo distinguir os conceitos técnicos fundamentais na área de testes. Conforme o material apresentado e a padronização do IEEE, assinale a alternativa que define corretamente os termos 'Falha' e 'Defeito'.",
+"alternativas": {
+"A": "A Falha é uma ação humana que produz código incorreto, enquanto o Defeito é qualquer estado intermediário inesperado gerado pelo hardware.",
+"B": "A Falha é o evento em que o sistema atende aos requisitos porém de forma ineficiente, e o Defeito é a recusa de aceite por parte do cliente final.",
+"C": "Falha é o afastamento dos resultados externos da operação do programa em relação aos requisitos; Defeito é uma imperfeição dentro do programa que causa uma falha quando executada.",
+"D": "O Defeito é um evento notável perceptível exclusivamente pelo usuário na interface, ao passo que a Falha é um erro silencioso no banco de dados."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta. A Fonte 892 define: 'Falha é o afastamento dos resultados externos da operação do programa dos requisitos'. A Fonte 893 define: 'Defeito é uma imperfeição dentro do programa que quando executada sob condições particulares, causa uma falha'. A alternativa A confunde com 'Engano' (Fonte 1155). As alternativas B e D são definições fictícias ou conceitualmente invertidas segundo o padrão IEEE citado no documento."
+},
+{
+"id": "67",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Ações de Controle de Qualidade",
+"banca": "FCC",
+"instituicao": "Empresa Estatal",
+"ano": "2026",
+"cargo": "Analista de Sistemas",
+"nivel": "Superior",
+"enunciado": "O Controle de Qualidade (C.Q.) adota diferentes ações operacionais. Dentre elas, destacam-se a Verificação e a Validação. Segundo o documento, qual é a definição exata de Validação?",
+"alternativas": {
+"A": "É o exame sistemático do código-fonte para argumentação formal em busca de certificação ISO.",
+"B": "É a avaliação do resultado quanto a interfaces e às necessidades e expectativas do usuário.",
+"C": "É a avaliação do resultado restrita à qualidade interna, como acabamento, normas e padrões de codificação.",
+"D": "É a experimentação técnica executada apenas por agressores voluntários para testar a resiliência a fraudes."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. A Fonte 873 define Validação explicitamente como: '(avaliação do resultado quanto a interfaces e às necessidades e expectativas do usuário)'. A alternativa A descreve vagamente Certificação e Inspeção (Fontes 869 e 870). A alternativa C é a exata definição de Verificação (Fonte 872). A alternativa D é uma associação incorreta ao conceito de agressores (Fonte 890)."
+},
+{
+"id": "68",
+"disciplina": "Engenharia de Software",
+"assunto": "Características do Software",
+"banca": "VUNESP",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Desenvolvedor de Software",
+"nivel": "Superior",
+"enunciado": "O produto de software apresenta características peculiares que o diferenciam de produtos manufaturados e do hardware tradicional. Qual das afirmações abaixo reflete uma característica inerente ao software citada no texto?",
+"alternativas": {
+"A": "Software possui produção em série, garantindo baixo custo no projeto por causa da replicação de componentes físicos.",
+"B": "O software é um produto visível cujas representações em grafos e diagramas são matematicamente exatas e perfeitamente precisas na Engenharia de Software madura.",
+"C": "Os softwares desgastam-se fisicamente com o uso contínuo ao longo do tempo, necessitando de substituição preventiva.",
+"D": "Software não se desgasta e nem se modifica fisicamente com o uso; seu custo concentra-se na fase de projeto e desenvolvimento, pois não há produção em série."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta. As Fontes 881 e 882 afirmam categoricamente que 'Software não têm produção em série. Seu custo está no projeto e desenvolvimento' e 'Software não se desgasta e nem se modifica com o uso'. A alternativa A afirma o oposto. A alternativa B está incorreta pois a Fonte 883 diz que o software é 'invisível. Sua representação em grafos e diagramas não é precisa'. A alternativa C está incorreta pois afirma desgaste, negado pela Fonte 882."
+},
+{
+"id": "69",
+"disciplina": "Segurança e Qualidade",
+"assunto": "Elementos Indesejáveis",
+"banca": "Instituto Consulplan",
+"instituicao": "Câmara Municipal",
+"ano": "2026",
+"cargo": "Analista de Suporte",
+"nivel": "Médio",
+"enunciado": "No contexto da operação de sistemas, o material identifica três tipos de 'elementos indesejáveis'. Como são descritos os chamados 'Agressores Involuntários'?",
+"alternativas": {
+"A": "São elementos que conscientemente danificam o sistema objetivando fraudar processos e sabotar as regras de bom uso.",
+"B": "São os próprios sistemas que possuem falhas arquiteturais capazes de danificar de forma autônoma o seu contexto operacional.",
+"C": "São elementos que inconscientemente danificam e/ou fazem uso indevido do sistema por não terem recebido o treinamento necessário para operá-lo.",
+"D": "São mecanismos de certificação automatizada que geram sobrecarga (estresse) no servidor, corrompendo a base de dados de forma autônoma."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta conforme a definição da Fonte 889, que descreve os Agressores Involuntários como 'elementos que inconscientemente danificam e/ou fazem uso indevido do sistema por não ter recebido o treinamento necessário'. A alternativa A descreve os Agressores Voluntários (Fonte 890). A alternativa B descreve os 'Sistemas com Falhas' (Fonte 890). A alternativa D é uma construção incorreta."
+},
+{
+"id": "70",
+"disciplina": "Governança de TI",
+"assunto": "Maturidade de Processos (CMMI)",
+"banca": "AOCP",
+"instituicao": "Polícia Científica",
+"ano": "2026",
+"cargo": "Perito Criminal - Computação",
+"nivel": "Superior",
+"enunciado": "O modelo CMMI classifica a maturidade do processo de software em cinco níveis fundamentais. Segundo o documento, qual é a característica central do Nível 3 (Definido)?",
+"alternativas": {
+"A": "O processo de software é considerado 'ad hoc' e dependente essencialmente de esforços individuais.",
+"B": "A disciplina é necessária e suficiente apenas para repetir sucessos passados no controle de custo, baseando-se em procedimentos básicos de gerenciamento.",
+"C": "O processo de software para as atividades de gerenciamento e de engenharia é documentado, padronizado e integrado em um processo padrão de software para a organização.",
+"D": "A melhoria contínua é alimentada unicamente pela inserção experimental de novas tecnologias, não havendo processos padronizados."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta, correspondendo fielmente à Fonte 1046: 'Nível 3 Definido: O processo de software para as atividades de gerenciamento e de engenharia é documentado, padronizado e integrado em um processo padrão de software'. A alternativa A descreve o Nível 1 Inicial (Fonte 1042). A alternativa B refere-se ao Nível 2 Repetível (Fontes 1044 e 1045). A alternativa D refere-se de forma distorcida ao Nível 5 Otimizado (Fonte 1049)."
+},
+{
+"id": "71",
+"disciplina": "Governança de TI",
+"assunto": "Maturidade de Processos (MPS.BR)",
+"banca": "CEBRASPE",
+"instituicao": "Ministério Público",
+"ano": "2026",
+"cargo": "Analista de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "O modelo MPS.BR (Melhoria de Processo do Software Brasileiro) organiza sua estrutura de avaliação em níveis designados por letras. Com base no diagrama apresentado, qual letra representa o nível mais baixo ('Parcialmente Gerenciado') e o nível mais alto ('Em otimização'), respectivamente?",
+"alternativas": {
+"A": "F (Parcialmente Gerenciado) e A (Em otimização).",
+"B": "G (Parcialmente Gerenciado) e A (Em otimização).",
+"C": "G (Parcialmente Gerenciado) e E (Em otimização).",
+"D": "A (Parcialmente Gerenciado) e G (Em otimização)."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. Analisando o diagrama da pirâmide do MPS.BR (Fontes 1066 a 1098), a base da pirâmide (Nível G) equivale ao estado 'Parcialmente Gerenciado' (Fontes 1089 e 1097), enquanto o topo (Nível A) equivale ao estado 'Em otimização' (Fontes 1072 e 1091). A alternativa D inverte a lógica da pirâmide."
+},
+{
+"id": "72",
+"disciplina": "Engenharia de Software",
+"assunto": "Estrutura do CMMI",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Técnico em Informática",
+"nivel": "Médio",
+"enunciado": "A estrutura do CMMI utiliza siglas e conceitos definidos para organizar os processos. Dentre esses termos, destacam-se as KPAs, os KPIs e os KPGs. Qual o papel das KPAs (Key Process Areas) nessa estrutura?",
+"alternativas": {
+"A": "Elas medem diretamente o quantitativo de progresso através de índices numéricos de performance global.",
+"B": "São objetivos finais de negócio estipulados para a aquisição e compra de produtos de hardware.",
+"C": "São responsáveis por auditar os agressores involuntários em conformidade com as normas do ISO 14958.",
+"D": "Elas definem as áreas importantes a serem trabalhadas, nas quais o esforço do processo é concentrado."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta com base na Fonte 977, que sumariza a estrutura do CMMI: 'as KPAs definem as áreas importantes a serem trabalhadas, os KPIs medem o progresso nessas áreas e os KPGs (ou objetivos) definem o que se pretende alcançar'. A alternativa A se refere aos KPIs. A alternativa B confunde com diretrizes de aquisição e a alternativa C insere conceitos alheios à finalidade primária das KPAs."
+},
+{
+"id": "73",
+"disciplina": "Governança de TI",
+"assunto": "Evolução CMM para CMMI",
+"banca": "FGV",
+"instituicao": "Tribunal de Justiça",
+"ano": "2026",
+"cargo": "Analista Judiciário - Sistemas",
+"nivel": "Superior",
+"enunciado": "O documento relata que o sucesso do SW-CMM gerou a criação de modelos derivados (como P-CMM, SA-CMM e IPD-CMM), o que causou problemas. Qual foi o principal motivo que impulsionou a evolução e unificação desses modelos em um único framework, o CMMI?",
+"alternativas": {
+"A": "A necessidade de substituir a metodologia ágil Scrum, uma vez que o SEI proibiu o uso de métricas de software nas fábricas do governo.",
+"B": "A falta de padronização, onde cada modelo usava terminologias diferentes e formas distintas de avaliação, gerando altos custos de harmonização e treinamento para as empresas.",
+"C": "O fato de que todos os modelos independentes cobravam altos royalties de implementação, enquanto o CMMI tornou-se uma norma open-source brasileira.",
+"D": "A constatação de que o modelo IPD-CMM estava focado apenas em hardware militar e não conseguia avaliar a certificação de testadores humanos."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta, justificada pelas Fontes 941 a 944, que apontam os problemas de antes do CMMI: 'Nem todos usavam a mesma terminologia... A estrutura não era padronizada... Alto custo no treinamento, avaliação e harmonização das organizações que implantassem mais de um modelo'. A alternativa A está errada porque o CMMI 'Não compete com metodologias de desenvolvimento' (Fonte 963). As alternativas C e D são inverídicas baseadas no texto."
+},
+{
+"id": "74",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Normas de Qualidade",
+"banca": "CESPE/Cebraspe",
+"instituicao": "Órgão Federal",
+"ano": "2026",
+"cargo": "Engenheiro de Software",
+"nivel": "Superior",
+"enunciado": "O controle e garantia da qualidade de software também são pautados em normativas internacionais. Qual é a norma ISO explicitamente citada no material como a responsável por definir as 'Características da Qualidade de Software'?",
+"alternativas": {
+"A": "ISO 9000",
+"B": "ISO/IEC 14958",
+"C": "ISO/IEC 9126",
+"D": "ISO/IEC 12119"
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta. A Fonte 1059 especifica diretamente: 'ISO/IEC 9126 - Características da Qualidade de Software'. A norma ISO 9000 e ISO 14000 (Fonte 912) focam em Gestão e Ambiente. A ISO/IEC 14958 (Fonte 1061) é um Guia de Avaliação de Produto, e a ISO/IEC 12119 (Fonte 1062) trata de Requisitos de Qualidade e Testes de Pacotes."
+},
+{
+"id": "75",
+"disciplina": "Engenharia de Software",
+"assunto": "Fundamentos de Teste",
+"banca": "FCC",
+"instituicao": "Tribunal de Contas",
+"ano": "2026",
+"cargo": "Auditor de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "Segundo o padrão do Institute of Electrical and Electronic Engineers (IEEE) apresentado no material sobre testes, existe uma diferenciação clara para os eventos anômalos. Qual das alternativas reflete a definição correta do termo 'Engano (mistake)'?",
+"alternativas": {
+"A": "Diferença entre o valor obtido e o valor esperado registrada durante a execução em ambiente controlado.",
+"B": "Ação humana que produz um resultado incorreto, como por exemplo, uma ação incorreta tomada pelo programador.",
+"C": "Deficiência mecânica ou estrutural no hardware que interrompe a depuração do código-fonte.",
+"D": "Evento de encerramento notável onde o sistema bloqueia os mecanismos de proteção para evitar estresse em massa."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta, pois a Fonte 1155 e 1156 definem categoricamente o 'Engano (mistake)' como 'ação humana que produz um resultado incorreto, como por exemplo, uma ação incorreta tomada pelo programador'. A alternativa A descreve 'Erro' (Fonte 1158). A alternativa C deturpa a definição de 'Defeito'. A alternativa D inventa uma situação envolvendo estresse e segurança."
+},
+{
+"id": "76",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Abordagens e Níveis de Teste",
+"banca": "VUNESP",
+"instituicao": "Empresa de Processamento de Dados",
+"ano": "2026",
+"cargo": "Analista de Qualidade e Testes",
+"nivel": "Superior",
+"enunciado": "Os termos Verificação e Validação definem abordagens distintas para aferir a qualidade em Engenharia de Software. Com base no documento, como esses dois conceitos podem ser diferenciados através de perguntas-chave?",
+"alternativas": {
+"A": "A Verificação questiona: 'Estamos construindo o produto certo?'; A Validação questiona: 'Estamos construindo de forma robusta e criptografada?'.",
+"B": "A Verificação aborda testes exclusivamente pós-implantação; A Validação restringe-se às métricas documentadas no nível Inicial (Ad-hoc) do CMMI.",
+"C": "A Verificação questiona: 'Estamos construindo certo o produto?' (garante função específica); A Validação questiona: 'Estamos construindo o produto certo?' (rastreável às exigências do cliente).",
+"D": "Ambos são sinônimos no processo de automação, não havendo diferenciação além do momento em que a geração de massa de dados do Faker ocorre."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está perfeitamente correta. A Fonte 1166 explicita o contraste: 'Verificação: Estamos construindo certo o produto? / Validação: Estamos construindo o produto certo?'. As Fontes 1164 e 1165 também sustentam que Verificação garante que funcione corretamente uma função, enquanto Validação garante o rastreio às exigências do cliente. As outras alternativas confundem as funções ou misturam com outras ferramentas do PDF."
+},
+{
+"id": "77",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Técnicas de Teste",
+"banca": "CEBRASPE",
+"instituicao": "Ministério Público",
+"ano": "2026",
+"cargo": "Técnico Especializado em TI",
+"nivel": "Superior",
+"enunciado": "Dentre as abordagens fundamentais para planejamento de testes de software, a técnica Funcional (Caixa Preta) foca nas entradas e saídas. Por outro lado, há a abordagem 'Baseada em Erros'. Segundo o material, em que consiste a técnica Baseada em Erros?",
+"alternativas": {
+"A": "Consiste em testar exclusivamente os caminhos lógicos do software através de grafos para verificar os laços internos.",
+"B": "Consiste em utilizar um simulador de LLMs que gera massas de dados JSON inválidas para corromper o banco de dados.",
+"C": "Consiste em incluir propositalmente algum erro no programa e observar o seu comportamento, comparando-o com o comportamento do programa original.",
+"D": "Consiste em delegar ao cliente no ambiente dele próprio a tentativa de subverter o sistema utilizando o método intertarefas."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta conforme a Fonte 1171, que define a abordagem Baseada em Erros: 'Consiste em incluir propositalmente algum erro no programa e observar o comportamento do programa com erro, comparando-o com o comportamento do programa original'. A alternativa A define o Teste Estrutural / Caixa Branca (Fontes 1168 e 1173). A alternativa B mistura LLMs/massas (Fontes 1205 e 1213). A alternativa D descreve características ligadas ao Teste Beta ou de Estresse/Segurança (Fontes 1186, 1189)."
+},
+{
+"id": "78",
+"disciplina": "Engenharia de Software",
+"assunto": "Classificação de Testes",
+"banca": "AOCP",
+"instituicao": "Secretaria de Fazenda",
+"ano": "2026",
+"cargo": "Auditor Fiscal - Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "Os Testes de Aceitação visam identificar erros cumulativos no final do ciclo, sendo divididos primordialmente em Teste Alfa e Teste Beta. Qual alternativa descreve precisamente uma característica do Teste Alfa exposta no documento?",
+"alternativas": {
+"A": "É realizado em dezenas de instalações do cliente sem nenhum acompanhamento ou controle do desenvolvedor, simulando o uso real em larga escala.",
+"B": "É executado por um cliente nas instalações do desenvolvedor, sendo acompanhado pelo próprio desenvolvedor em um ambiente controlado, registrando os problemas encontrados.",
+"C": "Constitui um teste exclusivo para verificação de limites do hardware através do acúmulo de requisições web com a finalidade de estressar o servidor.",
+"D": "Ocorre de forma teórica, utilizando ferramentas estáticas que não executam o programa, a fim de garantir a portabilidade do estilo de código."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. O material (Fontes 1184 e 1185) define expressamente: 'O teste alfa é executado por um cliente nas instalações do desenvolvedor, sendo acompanhado pelo desenvolvedor, que registra os problemas... O ambiente é controlado'. A alternativa A se refere ao Teste Beta (Fontes 1186 e 1187). A alternativa C descreve Testes de Estresse (Fontes 1191 e 1192). A alternativa D descreve Ferramentas Estáticas (Fonte 1235)."
+},
+{
+"id": "79",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Níveis de Teste",
+"banca": "Instituto Consulplan",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Analista de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "A divisão clássica da atividade de testes categoriza-os em diferentes níveis estruturais. Qual nível tem por objetivo primordial 'construir a estrutura do programa de forma sistemática' a partir dos módulos já analisados, 'testando também a interface dos módulos'?",
+"alternativas": {
+"A": "Teste de Unidade.",
+"B": "Teste de Integração.",
+"C": "Teste de Validação.",
+"D": "Teste de Segurança Intertarefas."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta de acordo com a Fonte 1178: 'Testes de integração: O objetivo é, a partir dos módulos testados no nível de unidade, construir a estrutura do programa... testando também a interface dos módulos'. A alternativa A, Testes de unidade, foca na menor unidade, o módulo (Fonte 1177). A alternativa C, Validação, foca em verificar se o produto certo foi construído para o cliente (Fonte 1179). A alternativa D é um agrupamento inexistente desta forma no texto."
+},
+{
+"id": "80",
+"disciplina": "Engenharia de Software",
+"assunto": "Sistemas de Tempo Real",
+"banca": "CEBRASPE",
+"instituicao": "Órgão Público",
+"ano": "2026",
+"cargo": "Analista de Sistemas",
+"nivel": "Superior",
+"enunciado": "Os sistemas de tempo real exigem uma estratégia de testes dividida em etapas específicas para lidar com a natureza do seu fluxo de dados. Dentre essas etapas, qual é o papel desempenhado pelo 'Teste intertarefas'?",
+"alternativas": {
+"A": "Testar cada tarefa estritamente de maneira independente para revelar somente erros de lógica e de função puros, sem considerar timing.",
+"B": "Simular o comportamento de um sistema de tempo real inteiramente através de ferramentas estáticas, desprezando a carga e os eventos externos.",
+"C": "Tentar subverter todos os mecanismos de proteção embutidos utilizando um grande volume de tarefas para avaliar a segurança perimetral.",
+"D": "Testar tarefas assíncronas que se comunicam entre si, usando diferentes taxas de dados e cargas de processamento para detectar erros de sincronização."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta, correspondendo ao conceito da Fonte 1232: 'Teste intertarefas: As tarefas assíncronas, que sabidamente comunicam-se entre si, são testados com diferentes taxas de dados e cargas... para determinar se ocorrerão erros de sincronização'. A alternativa A se refere ao 'Teste de tarefas' (Fontes 1228 e 1229). A alternativa B distorce o 'Teste comportamental' (Fontes 1230 e 1231). A alternativa C descreve de forma mesclada testes de estresse/segurança."
+},
+{
+"id": "81",
+"disciplina": "Engenharia de Software",
+"assunto": "Ferramentas e Massa de Dados",
+"banca": "FGV",
+"instituicao": "Tribunal de Contas",
+"ano": "2026",
+"cargo": "Auditor de TI",
+"nivel": "Superior",
+"enunciado": "A geração de massa de dados pode ser acelerada pelo uso de soluções especializadas. De acordo com o documento, qual é a ferramenta gratuita citada que foi desenhada especificamente para gerar grandes volumes de dados personalizados voltados para bancos de dados MySQL?",
+"alternativas": {
+"A": "Teste.ai",
+"B": "JSON Generator",
+"C": "FillDB",
+"D": "Dott.ai"
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C é a correta. A Fonte 1203/1204 descreve FillDB expressamente como 'Uma ferramenta gratuita que gera grandes volumes de dados personalizados para MySQL, preenchendo bancos de dados'. A alternativa A, Teste.ai, gera tabelas para copiar/exportar (Fonte 1202). A alternativa B, JSON Generator, gera objetos JSON estruturados (Fonte 1206). A alternativa D, Dott.ai, é uma plataforma geral com soluções para massas de dados (Fonte 1208)."
+},
+{
+"id": "82",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Ferramentas de Teste",
+"banca": "FCC",
+"instituicao": "Ministério Público",
+"ano": "2026",
+"cargo": "Analista de Sistemas",
+"nivel": "Superior",
+"enunciado": "As ferramentas utilizadas na área de testes são classificadas primariamente em Estáticas e Dinâmicas. Qual a principal característica e uma respectiva desvantagem das ferramentas Dinâmicas, conforme o texto?",
+"alternativas": {
+"A": "Elas não executam o programa; a sua desvantagem é exigir acesso constante ao código fonte e limitação na verificação do uso de memória.",
+"B": "Monitoram a execução do programa e não precisam acessar o código fonte; sua desvantagem é que a cobertura obtida dependerá estritamente dos casos de testes criados, e requerem instrumentação.",
+"C": "Promovem uma cobertura teórica completa injetando automaticamente massas de dados via LLMs; sua desvantagem é seu alto custo em sistemas de tempo real.",
+"D": "Possibilitam testar o código compilado com total isolamento; a sua desvantagem é não conseguir monitorar sob nenhuma hipótese os valores das variáveis alocadas em tempo de execução."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B está correta com base nas Fontes 1238 e 1239, que afirmam que as ferramentas Dinâmicas 'Monitoram a execução... não necessitam de acesso ao código fonte' e que as desvantagens incluem 'Cobertura depende dos casos de testes' e 'necessidade de instrumentação'. A alternativa A descreve perfeitamente as ferramentas Estáticas (Fontes 1235 e 1236). A alternativa C é uma mistura de conceitos aleatórios, e a alternativa D nega a propriedade básica das dinâmicas (monitoram variáveis sim - Fonte 1238)."
+},
+{
+"id": "83",
+"disciplina": "Certificações em TI",
+"assunto": "Contexto e Importância das Certificações",
+"banca": "VUNESP",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Analista de Testes Pleno",
+"nivel": "Superior",
+"enunciado": "As certificações em Teste de Software são um tema polêmico, mas em expansão no Brasil. Considerando as percepções da comunidade DFTestes e o consenso do mercado descritos no documento, qual é a principal ressalva crítica apontada em relação às certificações?",
+"alternativas": {
+"A": "As certificações são ignoradas no mercado brasileiro, sendo inválidas para disputar vagas em fábricas de software ligadas a órgãos governamentais.",
+"B": "A certificação é suficiente para assegurar o sucesso profissional pleno, dispensando qualquer necessidade prática ao longo do tempo.",
+"C": "As certificações geralmente não conseguem medir a experiência prática do profissional na área de testes, a qual agrega muito mais valor em processos de seleção e promoção.",
+"D": "O profissional certificado não conquista salários mais altos porque essas provas tratam exclusivamente da ferramenta Selenium, que está obsoleta."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta. O material relata que 'elas não conseguem medir a experiência do profissional na área de teste' (Fonte 1272) e que é consenso na comunidade que a 'experiência do profissional na área agrega muito valor e que esta experiência deve ser relevante' (Fonte 1273). A crítica é justamente o descarte de veteranos não certificados (Fonte 1275 e 1276). A alternativa A é errada, pois a Fonte 1264 diz o oposto (valorizam a área). A alternativa B contradiz o texto que ressalta que 'a certificação não substituirá a experiência' (Fonte 1280). A alternativa D é falsa."
+},
+{
+"id": "84",
+"disciplina": "Certificações em TI",
+"assunto": "Certificações QAI",
+"banca": "Instituto Consulplan",
+"instituicao": "Câmara Municipal",
+"ano": "2026",
+"cargo": "Analista Desenvolvedor",
+"nivel": "Superior",
+"enunciado": "A QAI (Quality Assurance Institute) disponibiliza um programa robusto de certificações calcado no CBOK. Para a área específica de Testes de Software, a certificação promovida é a CSTE. Qual é a exigência profissional obrigatória que todos os candidatos devem cumprir para se candidatarem ao CSTE (além dos anos de formação/experiência adicionais)?",
+"alternativas": {
+"A": "Possuir formação acadêmica restrita à área de Engenharia da Computação, cursada em prazo mínimo de cinco anos.",
+"B": "Ter trabalhado na área de serviços de informação, preferencialmente com Teste de Software, impreterivelmente nos últimos 18 meses.",
+"C": "Possuir certificação base (CTFL) emitida previamente pelo instituto parceiro ISTQB há pelo menos dois anos.",
+"D": "Comprovar o desenvolvimento e arquitetura de no mínimo cinco ferramentas dinâmicas de rastreio em linguagem Java."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. O documento é explícito na Fonte 1294: 'cada candidato deve ter trabalhado na área de serviços de informação, preferencialmente com Teste de Software, nos últimos 18 meses' além dos pré-requisitos de formação. A alternativa A erra na restrição da formação (há opções para 4, 3 ou 2 anos ou até nenhuma, desde que tenha mais experiência, Fontes 1295 a 1301). As alternativas C e D são exigências inventadas que não pertencem ao CSTE da QAI."
+},
+{
+"id": "85",
+"disciplina": "Certificações em TI",
+"assunto": "Certificações ISTQB",
+"banca": "AOCP",
+"instituicao": "Secretaria Estadual de Saúde",
+"ano": "2026",
+"cargo": "Técnico de Suporte em Informática",
+"nivel": "Médio",
+"enunciado": "O ISTQB é a maior certificadora na área de testes no mundo, representada no Brasil pelo BSTQB. Em relação à certificação 'CTFL' (Certified Tester Foundation Level) do ISTQB, qual afirmação representa corretamente suas características normativas?",
+"alternativas": {
+"A": "A certificação exige como pré-requisito mínimo três anos de experiência comprovada em desenvolvimento e expira a cada cinco anos.",
+"B": "É baseada no corpo de conhecimento internacional denominado 'syllabus', não possui pré-requisitos obrigatórios, não expira e não precisa ser renovada.",
+"C": "Ela destina-se unicamente ao cargo de Diretor de TI, assegurando uma compreensão em nível gerencial da gestão de riscos.",
+"D": "Consiste em um teste exclusivamente prático de automação web, devendo o profissional obter pelo menos 50 PDTS prévios para agendar o exame."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B está correta conforme as Fontes 1309 e 1310: 'corpo comum internacional... é denominado syllabus' e 'não possui pré-requisitos obrigatórios, não expira e não precisa ser renovado'. A alternativa A mescla incorretamente requisitos do CTAL (Fonte 1315). A alternativa C é destinada ao CTAL e não CTFL (Fonte 1314). A alternativa D insere elementos da certificação brasileira CBTS (ALATS), que demanda 50 PDTS (Fonte 1323)."
+},
+{
+"id": "86",
+"disciplina": "Certificações em TI",
+"assunto": "Certificações ALATS",
+"banca": "IBAM",
+"instituicao": "Empresa Pública de TI",
+"ano": "2026",
+"cargo": "Analista de Negócios TI",
+"nivel": "Superior",
+"enunciado": "A ALATS criou a certificação CBTS (Certificação Brasileira em Testes de Software) para atender as exigências nacionais. Como funciona a mecânica de validade e recertificação dessa prova nacional?",
+"alternativas": {
+"A": "Os exames ocorrem a qualquer momento do ano e o certificado gerado é vitalício, idêntico aos padrões do CTFL do ISTQB.",
+"B": "A certificação tem validade apenas no setor bancário federal e exige uma doação semestral de 50 PDTS para ONGs educacionais.",
+"C": "Os exames ocorrem duas vezes ao ano e possuem validade de 3 anos. O profissional precisa acumular 50 PDTS nesse período, ou realizar um novo exame.",
+"D": "O título CBTS expira após 10 anos e a recertificação só pode ser feita através de pós-graduação chancelada pelo BSTQB."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta em conformidade com as Fontes 1322 e 1323, que descrevem as regras da CBTS: 'Os exames... ocorrem duas vezes ao ano (maio e novembro) e tem validade de 3 anos... o profissional deve acumular uma pontuação de 50 PDTS ou deve realizar novo exame para validar sua re-certificação'. A alternativa A afirma erradamente que é vitalícia. A alternativa B interpreta de forma ficcional a sigla PDTS. A alternativa D propõe um prazo irreal segundo o documento."
+},
+{
+"id": "87",
+"disciplina": "Certificações em TI",
+"assunto": "Certificações ISEB",
+"banca": "CEBRASPE",
+"instituicao": "Órgão Federal",
+"ano": "2026",
+"cargo": "Engenheiro de Dados",
+"nivel": "Superior",
+"enunciado": "O ISEB oferece uma trilha de certificações abrangente, do nível Foundation até o Higher Level. Qual é uma das maiores vantagens institucionais descritas no material para o profissional que obtém o 'ISEB Foundation Certificate in Software Testing'?",
+"alternativas": {
+"A": "O profissional que adquire esta certificação é dispensado permanentemente de testes práticos na contratação pública.",
+"B": "Ela habilita o candidato imediatamente a receber também os títulos CTAL-TA, CTAL-TM e CTAL-TTA emitidos pelo QAI.",
+"C": "Esta certificação também é acreditada pelo ISTQB, o que significa que o aprovado obtém automaticamente as duas certificações simultâneas (ISEB Foundation e ISTQB CTFL).",
+"D": "O exame foca exclusivamente na linguagem JavaScript para testes orientados a comportamento (BDD), elevando a competência do desenvolvedor sênior."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta. O material (Fonte 1330) estabelece claramente sobre o Foundation Certificate in Software Testing que: 'Esta certificação também é acreditada pelo ISTQB, portanto, o profissional que obtém esta certificação recebe ambas as certificações: ISEB Foundation Certificate... e ISTQB Certified Tester Foundation Level'. As demais opções citam benefícios e instituições inverídicas (como CTAL que é do ISTQB e requer 3 anos e a prova própria, Fonte 1315-1316)."
+},
+{
+"id": "88",
+"disciplina": "Certificações em TI",
+"assunto": "Certificações IIST",
+"banca": "FCC",
+"instituicao": "Tribunal de Justiça",
+"ano": "2026",
+"cargo": "Analista Judiciário - Sistemas",
+"nivel": "Superior",
+"enunciado": "As certificações IIST expiram num ciclo de três anos e possuem duas divisões principais voltadas à disciplina de testes (CSTP e CTM). A certificação 'CTM - Certified Test Manager' foca em qual perfil profissional e requer qual experiência mínima prévia?",
+"alternativas": {
+"A": "Foca no profissional iniciante, não requer nenhuma experiência e aborda fundamentos vitais de projeto e acompanhamento de defeitos.",
+"B": "Foca no profissional com experiência mínima de 3 anos na área de testes de software que pretende assumir funções de gestão técnica e organizacional de testes.",
+"C": "Destina-se ao gerente de portfólio de projetos tradicional que não possui formação e exige apenas comprovação de 18 meses em operação de caixa branca.",
+"D": "Voltado exclusivamente a desenvolvedores C# que almejam gerir frameworks de testes de carga em infraestruturas baseadas no padrão SOA e em nuvem."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta de acordo com as Fontes 1347 e 1348, que definem a certificação CTM como sendo 'voltado para o profissional com experiência mínima de 3 anos na área de Testes de Software e que pretende se tornar gerente de testes' e envolve tópicos de gerência, melhorias, métricas, riscos, etc. A alternativa A refere-se aos moldes da certificação CSTP (Fonte 1345 e 1346). As alternativas C e D desviam-se totalmente dos pré-requisitos apresentados pelo IIST."
+},
+{
+"id": "89",
+"disciplina": "Certificações em TI",
+"assunto": "Preparação e Carreira",
+"banca": "FGV",
+"instituicao": "Empresa Estadual",
+"ano": "2026",
+"cargo": "Designer Gráfico / UX",
+"nivel": "Superior",
+"enunciado": "A respeito do caminho profissional a ser seguido, Herbert Maroni traz alertas e sugestões de preparo para quem deseja conquistar uma certificação e ingressar na área. Qual das alternativas condiz com suas orientações listadas no texto?",
+"alternativas": {
+"A": "O candidato deve matricular-se em um curso preparatório caríssimo, já que o certificado de conclusão do curso substitui as provas formais na maioria das certificadoras.",
+"B": "Basta possuir experiência prévia, ignorando simulados de prova, dado que as questões são intuitivas para quem já trabalhou mais de dois anos na área.",
+"C": "O candidato precisa se dedicar aos estudos independentemente do curso escolhido (pois o curso raramente é suficiente), recomendando-se fazer no mínimo dois simulados antes da prova.",
+"D": "O profissional focado em automatização deve obrigatoriamente investir no estudo de gerência de projetos antes de aprender qualquer linguagem de programação básica."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta conforme as orientações descritas nas Fontes 1362, 1363 e 1367: 'geralmente o curso não é o suficiente', 'o candidato precisa se dedicar aos estudos independentemente do curso' e 'Recomenda-se fazer, no mínimo, dois simulados antes da prova'. A alternativa A afirma falsamente que o curso substitui a prova. A alternativa B ignora a recomendação expressa do uso de simulados. A alternativa D inverte a orientação dada na Fonte 1369 e 1371, onde a área técnica pede linguagem, e a área de gerência pede projetos."
+},
+{
+"id": "90",
+"disciplina": "Governança de TI",
+"assunto": "Modelos de Maturidade",
+"banca": "CESPE/Cebraspe",
+"instituicao": "Tribunal de Contas",
+"ano": "2026",
+"cargo": "Auditor de TI",
+"nivel": "Superior",
+"enunciado": "O modelo CMMI não consiste apenas em um padrão engessado para os processos das empresas de tecnologia. Como o texto orienta a aplicação conceitual do CMMI na realidade de desenvolvimento das organizações?",
+"alternativas": {
+"A": "É um roteiro linear que deve ser inserido sem nenhuma adaptação para que a empresa possa abandonar em definitivo a metodologia Scrum.",
+"B": "Ele funciona como um método engessado de gerência de projetos com templates prontos que descartam análises estatísticas.",
+"C": "O CMMI é um guia que indica 'o que fazer' (e não 'como fazer'), servindo de referência, e precisa ser estudado, compreendido e adaptado a cada organização.",
+"D": "Ele atua como um framework concorrente frontal do PMBOK, focando unicamente na área financeira (compras) das fábricas de software militar."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C expressa as diretrizes listadas nas Fontes 954 e 961: 'Não é um método, mas um modelo que precisa ser estudado, compreendido e adaptado a cada organização' e 'Indica o que fazer e não como fazer'. A alternativa A contradiz o fato de que a organização precisa adaptar e a Fonte 963 diz que 'Não compete com metodologias de desenvolvimento como... Scrum'. A alternativa B é negada pela Fonte 954 ('Não é um método'). A alternativa D está errada pois a Fonte 964 afirma explicitamente que 'Não compete com metodologias gerenciamento de projetos como: PMBOK'."
+},
+{
+"id": "91",
+"disciplina": "Engenharia de Software",
+"assunto": "Falhas e Desempenho (Sintomas Comuns)",
+"banca": "Instituto Consulplan",
+"instituicao": "Câmara Municipal",
+"ano": "2026",
+"cargo": "Analista Desenvolvedor",
+"nivel": "Superior",
+"enunciado": "O SEI (Software Engineering Institute) produziu levantamentos estatísticos evidenciando a severidade da crise e dos desvios nos projetos de software antes da adoção massiva das práticas de qualidade. Segundo os dados citados no documento, qual a estatística de projetos cancelados?",
+"alternativas": {
+"A": "Aproximadamente 99% sofrem graves problemas e são reescritos, mas nenhum é cancelado.",
+"B": "Apenas 5% dos projetos são efetivamente abandonados pela ausência do nível Alfa.",
+"C": "São em torno de 30% os projetos de software cancelados antes de serem concluídos / finalizados.",
+"D": "Mais de 70% dos projetos são abortados (cancelados) especificamente por falhas de instrumentação do Jmockit."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta conforme os dados numéricos cravados na Fonte 905 e reiterados na Fonte 1125: '30% dos projetos são cancelados antes de serem finalizados'. A alternativa D confunde a taxa de cancelados (30%) com a taxa de atraso ou os 70% que falham na entrega de funcionalidades esperadas (Fontes 904 e 1126). As alternativas A e B criam números irreais ou não amparados no PDF."
+},
+{
+"id": "92",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Teste Estático e Dinâmico",
+"banca": "CEBRASPE",
+"instituicao": "Órgão Federal",
+"ano": "2026",
+"cargo": "Engenheiro de Software",
+"nivel": "Superior",
+"enunciado": "O processo de software prevê que as ferramentas de suporte ajudem a diagnosticar os problemas o mais cedo possível. As ferramentas do tipo 'Estáticas' atuam em qual espectro e têm quais vantagens primárias segundo o material?",
+"alternativas": {
+"A": "Não executam o programa; possuem cobertura (teórica) completa, verificam portabilidade, estilo, e não dependem da qualidade dos casos de teste.",
+"B": "Elas rodam o código em back-end sem interface (headless); têm como vantagem primária o descobrimento de estouros de memória RAM reais.",
+"C": "Compilam o software forçando o estresse das interfaces; têm como vantagem simular ataques paralelos aos bancos de dados MySQL.",
+"D": "São ferramentas orientadas à inteligência artificial que atuam lendo logs do sistema rodando em ambiente Alfa no cliente, sem acesso ao código."
+},
+"resposta_correta": "A",
+"comentario": "A alternativa A está em consonância total com a Fonte 1235, onde se lê sobre Ferramentas Estáticas: 'Não executam o programa. Vantagens: cobertura completa (teoricamente), verificam portabilidade, estilo e são independentes da qualidade dos casos de teste'. A alternativa B descreve características de testes dinâmicos com detecção de memória (embora cite 'headless' que pertence a outra aula). As alternativas C e D misturam de forma inventada funções que demandam execução, e ferramentas estáticas 'Não executam o programa'."
+},
+{
+"id": "93",
+"disciplina": "Certificações em TI",
+"assunto": "Trilha Avançada ISTQB (CTAL)",
+"banca": "AOCP",
+"instituicao": "Polícia Científica",
+"ano": "2026",
+"cargo": "Perito Criminal - Computação",
+"nivel": "Superior",
+"enunciado": "A certificação avançada do ISTQB (CTAL) é fracionada em especialidades que cobrem diferentes abordagens na execução e gestão da garantia de qualidade em software. Dentre as especializações listadas que compõem o CTAL, encontra-se:",
+"alternativas": {
+"A": "CTAL-UI (User Interface Master) e CTAL-UX (User Experience Manager).",
+"B": "CTAL-TA (Test Analyst), CTAL-TM (Test Manager) e CTAL-TTA (Technical Test Analyst).",
+"C": "CTAL-DEV (Developer Core), CTAL-SEC (Security Consultant) e CTAL-NET (Network Assessor).",
+"D": "CTAL-Agile (Agile Specialist) e CTAL-Cloud (Cloud Architecture Tester)."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a única correta. O material (Fonte 1316) lista taxativamente as divisões do CTAL no ISTQB: 'O CTAL é dividido em CTAL-TA (Advanced Level Test Analyst), CTAL-TM (Advanced Level Test Manager), CTAL-TTA (Advanced Level Technical Test Analyst)'. As demais opções citam ramificações tecnológicas válidas em outros âmbitos do mercado, mas ausentes na documentação restrita deste PDF e da grade avançada core do ISTQB ali descrita."
+},
+{
+"id": "94",
+"disciplina": "Certificações em TI",
+"assunto": "Gestão de Carreira e Mercado",
+"banca": "FCC",
+"instituicao": "Tribunal de Contas",
+"ano": "2026",
+"cargo": "Auditor de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "Levando em conta o mercado e as dificuldades de avaliação técnica que muitas companhias enfrentam, por qual razão as certificações atraem tantas ressalvas e críticas da comunidade DFTestes quando ocorrem promoções e processos seletivos?",
+"alternativas": {
+"A": "Porque a esmagadora maioria das certificadoras no Brasil são ilegais e não possuem suporte logístico da matriz ISTQB européia.",
+"B": "Porque as certificadoras não oferecem os exames em língua portuguesa, forçando a fluência em inglês corporativo.",
+"C": "Porque as empresas têm dificuldade em avaliar os profissionais empiricamente e usam as certificações como filtro absoluto, o que resulta no descarte prévio de candidatos altamente experientes e sem o certificado formal.",
+"D": "Porque as provas invadem segredos de negócio e propriedade intelectual para testar a senioridade do profissional atuante no modelo Caixa Branca."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C responde perfeitamente conforme a narrativa da Fonte 1274, 1275 e 1276. As empresas têm 'dificuldades em avaliar o conhecimento e experiência de um profissional' e adotam a certificação como base eliminatória. Dessa forma, 'é muito provável que um profissional experiente... seja descartado... por não possuir uma certificação. Este é o principal motivo das críticas direcionadas às certificações'. As demais opções não constam em nenhum ponto do documento."
 }
 ]
