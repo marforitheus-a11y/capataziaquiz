@@ -74,5 +74,100 @@
         },
         "resposta_correta": "B",
         "comentario": "Na seção 'Hard Skill' (Página 2), 'Domínio de Java / Python' é listado como uma habilidade técnica. Na seção 'Soft Skill' (Página 2), 'Resolução de conflitos' é listado como uma habilidade sociocomportamental. As outras opções misturam incorretamente ou não representam as melhores combinações de acordo com a categorização do documento."
+    },
+     {
+        "id": 5,
+        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
+        "assunto": "Conceitos Fundamentais",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Fácil",
+        "enunciado": "De acordo com o Dicionário Prof. Aurélio, qual a definição de Metodologia?",
+        "alternativas": {
+            "A": "Caminho pelo qual se atinge um objetivo.",
+            "B": "Estudo dos métodos e, especialmente, dos métodos das ciências.",
+            "C": "Conjunto de procedimentos para a construção do software.",
+            "D": "Técnica para a elaboração de procedimentos."
+        },
+        "resposta_correta": "B",
+        "comentario": "O Dicionário Prof. Aurélio define Metodologia como 'estudo dos métodos e, especialmente, dos métodos das ciências.' (Página 1)."
+    },
+    {
+        "id": 6,
+        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
+        "assunto": "Metodologia X Método",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "Qual a principal diferença entre Metodologia e Método, conforme a conclusão apresentada no material?",
+        "alternativas": {
+            "A": "Metodologia especifica a técnica, enquanto método apresenta os procedimentos globais.",
+            "B": "Metodologia e método são termos sinônimos e intercambiáveis.",
+            "C": "Metodologia apresenta os procedimentos globais, e método especifica a técnica para a elaboração desses procedimentos.",
+            "D": "Método é utilizado apenas em ciências exatas, enquanto metodologia é para todas as áreas."
+        },
+        "resposta_correta": "C",
+        "comentario": "A conclusão sobre Metodologia X Método afirma que 'a metodologia apresenta, de maneira global, os procedimentos para a construção do software e o método especifica a técnica para a elaboração destes procedimentos' (Página 1)."
+    },
+    {
+        "id": 7,
+        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
+        "assunto": "Razões para implantar MDS",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Fácil",
+        "enunciado": "Qual das seguintes NÃO é uma razão para se implantar/utilizar uma Metodologia de Desenvolvimento de Sistemas (MDS), de acordo com o material?",
+        "alternativas": {
+            "A": "Padronização.",
+            "B": "Aumento da complexidade do projeto.",
+            "C": "Facilidade no treinamento.",
+            "D": "Documentação automática."
+        },
+        "resposta_correta": "B",
+        "comentario": "As razões para se implantar/utilizar uma MDS incluem padronização, facilidade no treinamento, redução da manutenção, estipulação de prazos/custos reais, eliminação de erros e documentação automática. O aumento da complexidade do projeto não é listado como uma razão (Página 1)."
+    },
+    {
+        "id": 8,
+        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
+        "assunto": "Mitos da Prática",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Difícil",
+        "enunciado": "Sobre os 'Mitos da Prática' e o tempo dedicado às fases do projeto de software, o material sugere que: ",
+        "alternativas": {
+            "A": "É necessário investir mais tempo nas fases finais do projeto.",
+            "B": "O tempo dedicado deve ser distribuído igualmente entre todas as fases.",
+            "C": "Há necessidade de se investir mais tempo nas fases iniciais do projeto de software.",
+            "D": "O investimento de tempo é irrelevante para o sucesso do projeto."
+        },
+        "resposta_correta": "C",
+        "comentario": "Na seção 'Mitos da Prática', o material afirma: 'Há necessidade de se investir mais tempo nas fases iniciais do projeto de software' (Página 1)."
+    },
+    {
+        "id": 9,
+        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
+        "assunto": "Técnicas de Levantamento de Dados",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "Qual das seguintes técnicas é apresentada no material como uma forma de levantamento de dados/requisitos?",
+        "alternativas": {
+            "A": "Análise SWOT.",
+            "B": "Benchmarking.",
+            "C": "Prototipação.",
+            "D": "Diagrama de Ishikawa."
+        },
+        "resposta_correta": "C",
+        "comentario": "A seção 'Técnicas para Levantamento de dados / Requisitos' lista 'Prototipação' como uma das técnicas. As outras opções não são mencionadas no documento (Página 2)."
     }
 ]
