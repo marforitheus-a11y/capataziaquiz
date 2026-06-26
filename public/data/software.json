@@ -1,591 +1,591 @@
 [
-    {
-        "id": 1,
-        "disciplina": "Tecnologia da Informação",
-        "assunto": "Habilidades Profissionais",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Fácil",
-        "enunciado": "De acordo com o material apresentado, qual a principal distinção entre Hard Skills e Soft Skills?",
-        "alternativas": {
-            "A": "Hard Skills são habilidades socioemocionais, enquanto Soft Skills são técnicas.",
-            "B": "Hard Skills são habilidades técnicas e específicas da profissão, enquanto Soft Skills são habilidades sociocomportamentais.",
-            "C": "Hard Skills são adquiridas apenas na prática, e Soft Skills, na teoria.",
-            "D": "Não há distinção clara, pois ambas são igualmente importantes para qualquer carreira."
-        },
-        "resposta_correta": "B",
-        "comentario": "O material define Hard Skill como 'Habilidades principais, o que você realmente faz na sua profissão.' e Soft Skill como 'Habilidades sócio comportamentais do candidato/profissional.' (Página 2)."
-    },
-    {
-        "id": 2,
-        "disciplina": "Tecnologia da Informação",
-        "assunto": "Funções do Analista de Sistemas",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "Qual das seguintes opções NÃO representa uma função relacionada ao Analista de Sistemas, conforme listado no material?",
-        "alternativas": {
-            "A": "Analista Programador",
-            "B": "Analista de O&M (Organização e métodos)",
-            "C": "Analista de Marketing Digital",
-            "D": "Analista de BI (Business Intelligence)"
-        },
-        "resposta_correta": "C",
-        "comentario": "Na seção 'Funções' (Página 2), são listadas diversas funções como Analista Programador, Analista de O&M e Analista de BI. Analista de Marketing Digital não é mencionado como uma função relacionada ao Analista de Sistemas no documento."
-    },
-    {
-        "id": 3,
-        "disciplina": "Tecnologia da Informação",
-        "assunto": "Tipos de Carreiras",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "A Carreira 'Y' ou '//' apresentada no material permite que um profissional de TI siga qual tipo de progressão?",
-        "alternativas": {
-            "A": "Apenas a progressão em cargos de gestão, como Diretor de TI.",
-            "B": "Apenas a progressão em cargos técnicos especializados, como Programador Consultor.",
-            "C": "Tanto a progressão em cargos de gestão quanto em cargos técnicos especializados.",
-            "D": "A progressão é limitada a um único nível hierárquico, sem possibilidade de avanço."
-        },
-        "resposta_correta": "C",
-        "comentario": "A ilustração da 'Carreira Y' ou '//' (Página 1) mostra claramente duas trilhas de progressão: uma para cargos de gestão (Diretor de TI, Gerente de TI, Líder de Projetos) e outra para cargos técnicos especializados (Analista de Software SR/PL/JR, Prog. Consultor III/II/I)."
-    },
-    {
-        "id": 4,
-        "disciplina": "Tecnologia da Informação",
-        "assunto": "Habilidades Essenciais",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Difícil",
-        "enunciado": "Considerando as Hard Skills e Soft Skills mencionadas no material, qual das seguintes combinações representa uma Hard Skill e uma Soft Skill, respectivamente, que são cruciais para um profissional de TI?",
-        "alternativas": {
-            "A": "Gestão de projetos e Não ser floco de neve.",
-            "B": "Domínio de Java / Python e Resolução de conflitos.",
-            "C": "Contabilidade e Liderança.",
-            "D": "Internet of Things (IOT) e Persuasão."
-        },
-        "resposta_correta": "B",
-        "comentario": "Na seção 'Hard Skill' (Página 2), 'Domínio de Java / Python' é listado como uma habilidade técnica. Na seção 'Soft Skill' (Página 2), 'Resolução de conflitos' é listado como uma habilidade sociocomportamental. As outras opções misturam incorretamente ou não representam as melhores combinações de acordo com a categorização do documento."
-    },
-     {
-        "id": 5,
-        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
-        "assunto": "Conceitos Fundamentais",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Fácil",
-        "enunciado": "De acordo com o Dicionário Prof. Aurélio, qual a definição de Metodologia?",
-        "alternativas": {
-            "A": "Caminho pelo qual se atinge um objetivo.",
-            "B": "Estudo dos métodos e, especialmente, dos métodos das ciências.",
-            "C": "Conjunto de procedimentos para a construção do software.",
-            "D": "Técnica para a elaboração de procedimentos."
-        },
-        "resposta_correta": "B",
-        "comentario": "O Dicionário Prof. Aurélio define Metodologia como 'estudo dos métodos e, especialmente, dos métodos das ciências.' (Página 1)."
-    },
-    {
-        "id": 6,
-        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
-        "assunto": "Metodologia X Método",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "Qual a principal diferença entre Metodologia e Método, conforme a conclusão apresentada no material?",
-        "alternativas": {
-            "A": "Metodologia especifica a técnica, enquanto método apresenta os procedimentos globais.",
-            "B": "Metodologia e método são termos sinônimos e intercambiáveis.",
-            "C": "Metodologia apresenta os procedimentos globais, e método especifica a técnica para a elaboração desses procedimentos.",
-            "D": "Método é utilizado apenas em ciências exatas, enquanto metodologia é para todas as áreas."
-        },
-        "resposta_correta": "C",
-        "comentario": "A conclusão sobre Metodologia X Método afirma que 'a metodologia apresenta, de maneira global, os procedimentos para a construção do software e o método especifica a técnica para a elaboração destes procedimentos' (Página 1)."
-    },
-    {
-        "id": 7,
-        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
-        "assunto": "Razões para implantar MDS",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Fácil",
-        "enunciado": "Qual das seguintes NÃO é uma razão para se implantar/utilizar uma Metodologia de Desenvolvimento de Sistemas (MDS), de acordo com o material?",
-        "alternativas": {
-            "A": "Padronização.",
-            "B": "Aumento da complexidade do projeto.",
-            "C": "Facilidade no treinamento.",
-            "D": "Documentação automática."
-        },
-        "resposta_correta": "B",
-        "comentario": "As razões para se implantar/utilizar uma MDS incluem padronização, facilidade no treinamento, redução da manutenção, estipulação de prazos/custos reais, eliminação de erros e documentação automática. O aumento da complexidade do projeto não é listado como uma razão (Página 1)."
-    },
-    {
-        "id": 8,
-        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
-        "assunto": "Mitos da Prática",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Difícil",
-        "enunciado": "Sobre os 'Mitos da Prática' e o tempo dedicado às fases do projeto de software, o material sugere que: ",
-        "alternativas": {
-            "A": "É necessário investir mais tempo nas fases finais do projeto.",
-            "B": "O tempo dedicado deve ser distribuído igualmente entre todas as fases.",
-            "C": "Há necessidade de se investir mais tempo nas fases iniciais do projeto de software.",
-            "D": "O investimento de tempo é irrelevante para o sucesso do projeto."
-        },
-        "resposta_correta": "C",
-        "comentario": "Na seção 'Mitos da Prática', o material afirma: 'Há necessidade de se investir mais tempo nas fases iniciais do projeto de software' (Página 1)."
-    },
-    {
-        "id": 9,
-        "disciplina": "Metodologia de Desenvolvimento de Sistemas",
-        "assunto": "Técnicas de Levantamento de Dados",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "Qual das seguintes técnicas é apresentada no material como uma forma de levantamento de dados/requisitos?",
-        "alternativas": {
-            "A": "Análise SWOT.",
-            "B": "Benchmarking.",
-            "C": "Prototipação.",
-            "D": "Diagrama de Ishikawa."
-        },
-        "resposta_correta": "C",
-        "comentario": "A seção 'Técnicas para Levantamento de dados / Requisitos' lista 'Prototipação' como uma das técnicas. As outras opções não são mencionadas no documento (Página 2)."
-    },
-    {
-        "id": 10,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Modelos de Processo",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Fácil",
-        "enunciado": "De acordo com o material, um Modelo de Processo é também conhecido como um paradigma de: ",
-        "alternativas": {
-            "A": "Gerenciamento de Projetos",
-            "B": "Engenharia de Software",
-            "C": "Análise de Negócios",
-            "D": "Desenvolvimento Ágil"
-        },
-        "resposta_correta": "B",
-        "comentario": "O material afirma que um Modelo de Processo é também conhecido como um paradigma de engenharia de software (Página 1)."
-    },
-    {
-        "id": 11,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Modelo Linear/Cascata",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "Qual das seguintes características NÃO se aplica ao Modelo Linear (Cascata) de desenvolvimento de software?",
-        "alternativas": {
-            "A": "Sistemático e Sequencial",
-            "B": "Etapas principais de análise, projeto, código e testes",
-            "C": "Alta flexibilidade para mudanças em fases avançadas",
-            "D": "Também conhecido como Modelo Clássico ou Convencional"
-        },
-        "resposta_correta": "C",
-        "comentario": "O Modelo Linear (Cascata) é sistemático e sequencial, com etapas bem definidas. Sua natureza sequencial o torna pouco flexível para mudanças em fases avançadas, o que é um dos problemas da análise convencional (Página 1 e 2)."
-    },
-    {
-        "id": 12,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Problemas da Análise Convencional",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "Um dos problemas da Análise Convencional, conforme o material, é que o cliente conhece o produto apenas quando ele está pronto. Qual a consequência direta desse problema?",
-        "alternativas": {
-            "A": "Redução do custo de retrabalho.",
-            "B": "Aumento da satisfação do cliente.",
-            "C": "Dificuldade de detecção de defeitos antes do término do projeto.",
-            "D": "Maior facilidade na descrição de procedimentos."
-        },
-        "resposta_correta": "C",
-        "comentario": "O material lista entre os problemas da Análise Convencional a \'Dificuldade de detecção de defeito antes do término do projeto\' e que o \'Cliente conhece o produto apenas quando ele está pronto\', o que implica que a detecção de defeitos ocorre tardiamente (Página 2)."
-    },
-    {
-        "id": 13,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Modelo de Prototipagem",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Fácil",
-        "enunciado": "Qual é uma das fases do Modelo de Prototipagem?",
-        "alternativas": {
-            "A": "Codificação final.",
-            "B": "Escutar o Cliente.",
-            "C": "Manutenção preventiva.",
-            "D": "Geração da Aplicação."
-        },
-        "resposta_correta": "B",
-        "comentario": "O diagrama do Modelo de Prototipagem inclui a fase de \'Escutar o Cliente\' (Página 2)."
-    },
-    {
-        "id": 14,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Modelo RAD",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "O Modelo RAD (Rapid Application Development) tem como objetivo principal criar um sistema em qual período de tempo?",
-        "alternativas": {
-            "A": "6 a 12 meses.",
-            "B": "60 a 90 dias.",
-            "C": "1 a 2 anos.",
-            "D": "Mais de 2 anos."
-        },
-        "resposta_correta": "B",
-        "comentario": "O material especifica que o objetivo do Modelo RAD é de \'60 a 90 dias para criar um sistema\' (Página 2)."
-    },
-    {
-        "id": 15,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Modelos Evolucionários",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Fácil",
-        "enunciado": "Qual a principal característica dos Modelos Evolucionários?",
-        "alternativas": {
-            "A": "Não permitem alterações após a fase de projeto.",
-            "B": "Reconhecem que sistemas complexos se alteram com o tempo.",
-            "C": "Focam exclusivamente na entrega rápida de um produto final.",
-            "D": "São modelos estritamente sequenciais."
-        },
-        "resposta_correta": "B",
-        "comentario": "Os Modelos Evolucionários \'Reconhecem que sistemas complexos se alteram com o tempo\' e \'Usam a iteração do ciclo de desenvolvimento para acompanhar a evolução do sistema\' (Página 2)."
-    },
-    {
-        "id": 16,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Modelo Incremental",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "No Modelo Incremental, qual é o foco principal em relação à entrega do produto?",
-        "alternativas": {
-            "A": "Entregar todas as funcionalidades de uma vez no final do projeto.",
-            "B": "Focar na entrega do produto, implementando funcionalidades essenciais o mais cedo possível.",
-            "C": "Atrasar a entrega de funcionalidades para garantir a qualidade.",
-            "D": "Não há foco específico na entrega, apenas no processo."
-        },
-        "resposta_correta": "B",
-        "comentario": "O Modelo Incremental tem como foco \'Foco na entrega do produto\' e \'Busca implementar funcionalidades essenciais o mais cedo possível\' (Página 3)."
-    },
-    {
-        "id": 17,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Modelo Espiral",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Difícil",
-        "enunciado": "Qual é o principal problema associado ao Modelo Espiral, conforme mencionado no material?",
-        "alternativas": {
-            "A": "Não permite a adição de novas características e recursos.",
-            "B": "Requer gestão sofisticada para ser previsível e confiável, podendo se tornar um \'Projeto interminável\'.",
-            "C": "Não há comunicação com o cliente durante o processo.",
-            "D": "É um modelo estritamente linear e sequencial."
-        },
-        "resposta_correta": "B",
-        "comentario": "O material aponta que o principal problema do Modelo Espiral é que \'requer gestão sofisticada para ser previsível e confiável. \'Projeto interminável\'\' (Página 3)."
-    },
-    {
-        "id": 18,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Modelos de Processo",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Médio",
-        "enunciado": "A Metodologia de Desenvolvimento de Sistemas (MDS) é uma estratégia que junta quais elementos?",
-        "alternativas": {
-            "A": "Apenas o processo e as ferramentas.",
-            "B": "Apenas os métodos e as ferramentas.",
-            "C": "O processo, os métodos e as ferramentas.",
-            "D": "Somente o processo."
-        },
-        "resposta_correta": "C",
-        "comentario": "O material define Modelos de Processo como \'Uma estratégia de desenvolvimento que junta o processo, os métodos e as ferramentas\' (Página 1)."
-    },
-    {
-        "id": 19,
-        "disciplina": "Engenharia de Software",
-        "assunto": "Problemas da Análise Convencional",
-        "banca": "Não informado",
-        "instituicao": "Não informado",
-        "ano": "Não informado",
-        "cargo": "Não informado",
-        "nivel": "Difícil",
-        "enunciado": "Qual dos seguintes problemas NÃO é explicitamente listado como um problema da Análise Convencional no material?",
-        "alternativas": {
-            "A": "Dificuldade de descrever procedimentos.",
-            "B": "Falta de linguagem comum.",
-            "C": "Excesso de ferramentas adequadas para apoio.",
-            "D": "Custo do retrabalho."
-        },
-        "resposta_correta": "C",
-        "comentario": "O material lista \'Poucas Ferramentas adequadas para apoio\' como um problema da Análise Convencional, o oposto de \'Excesso de ferramentas adequadas para apoio\' (Página 2)."
-    },
-{
-"id": "1",
-"disciplina": "Engenharia de Software",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "FGV",
-"instituicao": "Órgão Público",
-"ano": "2026",
-"cargo": "Analista de Tecnologia da Informação",
-"nivel": "Superior",
-"enunciado": "O Selenium estabeleceu-se como uma ferramenta confiável para testes da web. Analisando as características técnicas e limitações desta ferramenta apresentadas no material, assinale a afirmativa correta.",
-"alternativas": {
-"A": "Sua execução é consideravelmente mais rápida que as ferramentas mais modernas, sendo o padrão ouro para scripts complexos de front-end.",
-"B": "O Selenium suporta o teste em modo headless, onde o navegador é executado em segundo plano sem uma Interface Gráfica de Usuário (GUI), o que acelera a execução dos testes.",
-"C": "A ferramenta é recomendada para equipes leigas devido à sua curva de aprendizado suave e interface de gravação nativa (record and playback) que dispensa codificação.",
-"D": "O Selenium Grid é utilizado primariamente para integrar o Selenium a outras linguagens não suportadas, simulando um repositório de objetos."
-},
-"resposta_correta": "B",
-"comentario": "A alternativa correta é a B. O material afirma nos 'Detalhes Técnicos' que o Selenium 'Suporta teste em um modo headless, onde o navegador é executado em segundo plano sem uma GUI, acelerando a execução dos testes' (Fonte 26). A alternativa A está incorreta pois o material relata como contra que a 'execução dos testes pode ser mais lenta em comparação com ferramentas mais modernas' (Fonte 36). A alternativa C está incorreta pois o Selenium possui 'Curva de Aprendizado Íngreme: Requer uma compreensão sólida de programação' (Fonte 35). A alternativa D está incorreta pois o Selenium Grid 'Permite execução paralela de testes em várias máquinas' (Fonte 25)."
-},
-{
-"id": "2",
-"disciplina": "Engenharia de Software",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "CESPE/Cebraspe",
-"instituicao": "Órgão Público",
-"ano": "2026",
-"cargo": "Analista de Sistemas",
-"nivel": "Superior",
-"enunciado": "Dentre as ferramentas de testes automatizados, o Cypress.io tornou-se rapidamente um favorito entre desenvolvedores front-end por sua abordagem. Sobre o Cypress, qual alternativa descreve corretamente sua arquitetura ou funcionamento fundamental?",
-"alternativas": {
-"A": "É focado exclusivamente em testes de aplicativos móveis nativos e híbridos usando o protocolo do WebDriver.",
-"B": "Utiliza a linguagem Python como servidor e interpretador principal de seus scripts de testes distribuídos.",
-"C": "Requer a instalação prévia de um agente no código-fonte do servidor back-end para viabilizar as esperas automáticas.",
-"D": "É executado diretamente no navegador e utiliza o Node.js como servidor e interpretador de sua linguagem JavaScript, permitindo testes end-to-end (E-2-E)."
-},
-"resposta_correta": "D",
-"comentario": "A alternativa correta é a D. Segundo o material, o Cypress 'Executando diretamente no navegador, oferece testes rápidos' (Fonte 42) e 'Utiliza o node JS como servidor e interpretador de sua linguagem JavaScript, permitindo testes E-2-E e com um conjunto completo de frameworks' (Fonte 43). A alternativa A está errada porque o Cypress é 'Apenas Web: Limitado a testes de aplicações web, sem suporte nativo para aplicativos móveis' (Fonte 72). A alternativa B está incorreta pois ele utiliza JavaScript/TypeScript e Node.js. A alternativa C não tem respaldo no texto, sendo que sua execução rápida dispensa modificação de back-end com agentes."
-},
-{
-"id": "3",
-"disciplina": "Engenharia de Software",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "FCC",
-"instituicao": "Órgão Público",
-"ano": "2026",
-"cargo": "Engenheiro de Software",
-"nivel": "Superior",
-"enunciado": "A respeito do Katalon Studio, avalie suas características operacionais e limitações e assinale a alternativa correta de acordo com as informações fornecidas.",
-"alternativas": {
-"A": "Oferece personalização ilimitada de código, superando em níveis de customização estrutural frameworks puramente baseados em código.",
-"B": "Destaca-se por sua altíssima velocidade de desempenho, processando suítes de testes muito grandes e cenários complexos mais rápido que seus concorrentes diretos.",
-"C": "O Katalon aproveita o poder do Selenium e do Appium como motores integrados para fornecer uma base robusta tanto para testes web quanto para testes móveis.",
-"D": "Não possui palavras-chave (keywords) embutidas, exigindo estritamente que todos os testadores saibam codificar frameworks a partir do zero."
-},
-"resposta_correta": "C",
-"comentario": "A alternativa correta é a C, pois o documento aponta em 'Detalhes Técnicos' que o Katalon é 'Baseado em Selenium e Appium: Aproveita o poder do Selenium e do Appium para testes web e móveis, fornecendo uma base robusta para testes' (Fonte 94). A alternativa A está errada pois, nos 'Contras', é mencionado: 'Personalização Limitada: Embora poderosa, pode não oferecer o mesmo nível de personalização que frameworks puramente baseados em código' (Fonte 108). A alternativa B está incorreta porque um dos contras é 'Desempenho: Pode ser lenta para suítes de teste muito grandes, particularmente aquelas com cenários complexos' (Fonte 109). A alternativa D está errada pois a ferramenta 'Oferece uma ampla gama de palavras-chaves embutidas' permitindo testes sem codificação (Fonte 88)."
-},
-{
-"id": "4",
-"disciplina": "Tecnologia da Informação",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "VUNESP",
-"instituicao": "Órgão Público",
-"ano": "2026",
-"cargo": "Desenvolvedor de Software",
-"nivel": "Superior",
-"enunciado": "O uso de ferramentas específicas direcionadas para plataformas móveis traz particularidades cruciais ao processo de automação de testes. Segundo o material abordado sobre o ecossistema de testes, a ferramenta Robotium é focada principalmente em:",
-"alternativas": {
-"A": "Automação de testes para Android, sendo compatível com aplicações nativas e híbridas, simulando procedimentos e facilitando a escrita de testes de caixa-preta.",
-"B": "Testes de desempenho e carga em servidores web, validando o tempo de resposta através de bibliotecas exclusivas de injeção de dados.",
-"C": "Testes de regressão estruturais em ambientes desktop Windows e macOS, utilizando primordialmente linguagens como VBScript e Python.",
-"D": "Automação da substituição de versões originais em mock-up para testes unitários em aplicativos unicamente para o ecossistema iOS."
-},
-"resposta_correta": "A",
-"comentario": "A correta é a alternativa A. O PDF deixa claro que 'O Robotium é um framework gratuito bastante popular em automação de testes para Android. compatível com aplicações nativas e híbridas' (Fonte 111) e 'Uma das grandes vantagens é que facilita a escrita da automação de testes de caixa preta' (Fonte 113). As alternativas B, C e D descrevem incorretamente funcionalidades e escopos de outras ferramentas (TestComplete, Ranorex, Jmockit etc.) ou não fazem parte da finalidade do Robotium."
-},
-{
-"id": "5",
-"disciplina": "Tecnologia da Informação",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "IBAM",
-"instituicao": "Prefeitura Municipal",
-"ano": "2026",
-"cargo": "Analista de TI",
-"nivel": "Superior",
-"enunciado": "A ferramenta Watir é descrita como 'leve e elegante', sendo adotada para automação web. Qual das seguintes alternativas apresenta de forma precisa as propriedades técnicas e as desvantagens dessa solução?",
-"alternativas": {
-"A": "O Watir é voltado para testes orientados a palavras-chave (Keyword-driven), no entanto, apresenta uma curva de aprendizado inacessível para usuários sem conhecimentos em Java.",
-"B": "O Watir incentiva fortemente o Modelo de Objeto de Página e integra-se com frameworks de BDD como Cucumber, porém sua principal desvantagem é limitar-se a testes web e depender do ecossistema Ruby.",
-"C": "Possui suporte nativo e multiplataforma para ambientes desktop e mobile por padrão, contudo sofre com uma comunidade incipiente e falta de documentação oficial confiável.",
-"D": "É projetada para realizar instrumentação em tempo de execução através do protocolo Node.js, substituindo classes originais, o que gera alto risco de erros silenciosos."
-},
-"resposta_correta": "B",
-"comentario": "A correta é a B. Segundo o material, o Watir 'Incentiva o uso do Modelo de Objeto de Página' (Fonte 173) e 'Integra-se com frameworks BDD como RSpec e Cucumber' (Fonte 174). Contudo, em seus Contras: 'Limitado a Testes Web' (Fonte 182) e 'Dependência do Ruby: Como uma ferramenta específica do Ruby, é mais adequada para equipes que já usam Ruby' (Fonte 183). A alternativa A confunde com o Robot Framework (que é orientado a palavras-chave). A alternativa C é o oposto da verdade (Watir foca em Web e tem comunidade ativa - Fonte 180). A alternativa D descreve características do Jmockit."
-},
-{
-"id": "6",
-"disciplina": "Engenharia de Software",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "CEBRASPE",
-"instituicao": "Órgão Público",
-"ano": "2026",
-"cargo": "Perito em Tecnologia da Informação",
-"nivel": "Superior",
-"enunciado": "No ecossistema Java, JUnit e TestNG são amplamente conhecidos. Comparando as duas ferramentas baseadas no material técnico analisado, marque a afirmação correta sobre as capacidades de ambas.",
-"alternativas": {
-"A": "Ambos os frameworks, TestNG e JUnit, são inteiramente agnósticos de linguagem, podendo ser utilizados sem configurações extras em projetos Node.js e Python.",
-"B": "O JUnit destaca-se por possuir ferramentas nativas avançadas para elaboração de relatórios (out of the box), não sendo necessário utilizar nenhuma solução terceira para análises detalhadas.",
-"C": "O JUnit é amplamente superior ao TestNG em flexibilidade técnica, dado que introduziu nativamente o conceito de execução paralela de testes, algo estritamente impossível no TestNG.",
-"D": "O TestNG oferece recursos mais avançados e maior flexibilidade do que o JUnit, dispondo de suporte embutido para testes de dependência e controle apurado sobre a ordem de execução."
-},
-"resposta_correta": "D",
-"comentario": "A correta é a D. O material atesta sobre o TestNG: 'oferece recursos mais avançados e maior flexibilidade em comparação com o JUnit' (Fonte 187) e em detalhes técnicos: 'Testes de Dependência: Suporte embutido para testes de dependência, permitindo que você defina dependências entre testes e controle a ordem de execução' (Fonte 206). A alternativa A erra, pois ambos são focados no ecossistema Java. A alternativa B está incorreta porque o JUnit tem 'Relatórios Básicos: As capacidades de relatório de prateleira são limitadas' (Fonte 309). A alternativa C inverte a situação, já que é o TestNG que 'Suporta execução paralela de testes' de forma mais eficiente (Fonte 194)."
-},
-{
-"id": "7",
-"disciplina": "Tecnologia da Informação",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "Instituto Consulplan",
-"instituicao": "Câmara Municipal",
-"ano": "2026",
-"cargo": "Analista Desenvolvedor",
-"nivel": "Superior",
-"enunciado": "As APIs (Application Programming Interfaces) exigem soluções próprias de teste. Considerando o Postman e o Apidog, descritos no material, é correto afirmar a respeito de suas funcionalidades que:",
-"alternativas": {
-"A": "Ambas as ferramentas exigem a escrita manual do código das requisições via JavaScript no console, já que não oferecem Interfaces Gráficas Intuitivas (GUIs) para desenvolvedores.",
-"B": "O Postman oferece ferramentas de relatórios visuais avançados ilimitados em suas licenças gratuitas, ao passo que o Apidog é inteiramente desprovido de análises e relatórios de progresso.",
-"C": "O Apidog destaca-se pelo suporte robusto a múltiplos protocolos de API, como REST, GraphQL e SOAP, enquanto o Postman permite testes automatizados via Newman CLI em fluxos de CI/CD.",
-"D": "O Postman foca estritamente em sistemas legados do tipo SOAP, não suportando configurações contemporâneas baseadas em variáveis de ambiente, diferentemente do Apidog."
-},
-"resposta_correta": "C",
-"comentario": "A correta é a C. Sobre o Apidog, a Fonte 356 garante: 'Lida com protocolos REST, GraphQL e SOAP'. Sobre o Postman, a Fonte 227 afirma: 'Newman CLI: Integra-se com pipelines de CI/CD, permitindo testes automatizados'. A alternativa A erra pois ambas ferramentas possuem interfaces GUI intuitivas. A alternativa B está incorreta pois o material cita no Postman: 'Relatórios Limitados na Versão Gratuita' (Fonte 243). A alternativa D está errada pois o Postman facilita o 'Gerenciamento de Ambiente', lidando sim com variáveis (Fonte 235), e não atua estritamente sobre SOAP."
-},
-{
-"id": "8",
-"disciplina": "Engenharia de Software",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "AOCP",
-"instituicao": "Órgão Público",
-"ano": "2026",
-"cargo": "Analista de Qualidade e Testes",
-"nivel": "Superior",
-"enunciado": "O Robot Framework se diferencia de outros frameworks de automação por sua abordagem metodológica e arquitetural. Com base no material, qual afirmação traduz as características técnicas, vantagens ou desvantagens dessa ferramenta?",
-"alternativas": {
-"A": "O Robot Framework impossibilita o uso em testes web modernos, focando sua abordagem de palavras-chave unicamente em automação restrita a bases de dados corporativas fechadas.",
-"B": "Adota uma arquitetura orientada a palavras-chave (Keyword-driven), permitindo a criação de casos fáceis de ler por perfis não técnicos, mas essa metodologia e o próprio framework carregam uma curva de aprendizado inicial.",
-"C": "Embora seja amigável, uma grande desvantagem do Robot Framework é a sua arquitetura fechada que impede a integração de bibliotecas Python ou Java criadas pelas equipes técnicas.",
-"D": "Possui um motor de renderização nativo e fechado que confere à ferramenta execuções instantâneas, tornando-o sempre a opção mais rápida do mercado para imensas suítes de testes orientadas a código."
-},
-"resposta_correta": "B",
-"comentario": "A alternativa correta é a B. O material informa que o Robot Framework fornece 'Testes Orientados a Palavras-Chave: Permite a criação de casos de teste usando palavras-chave legíveis por humanos' (Fonte 256). Contudo, nos contras: 'Curva de Aprendizado: A metodologia orientada a palavras-chave pode exigir algum tempo para dominar' (Fonte 276). A alternativa A está errada pois ele 'Funciona perfeitamente com o Selenium para testes web' (Fonte 269). A alternativa C é oposta ao texto, que diz ser 'Extensível com Bibliotecas: Pode ser estendido com bibliotecas Python e Java' (Fonte 257). A alternativa D está incorreta porque um de seus contras é o 'Desempenho: A execução de testes pode ser mais lenta em comparação com frameworks mais centrados em código' (Fonte 277)."
-},
-{
-"id": "9",
-"disciplina": "Engenharia de Software",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "CEBRASPE",
-"instituicao": "Tribunal de Justiça",
-"ano": "2026",
-"cargo": "Analista Judiciário - Apoio Especializado em TI",
-"nivel": "Superior",
-"enunciado": "O Appium é apresentado como líder no setor de testes móveis, solucionando o desafio da fragmentação de plataformas e linguagens. Assinale a alternativa que reflete corretamente as propriedades técnicas e operacionais da ferramenta Appium.",
-"alternativas": {
-"A": "Utiliza APIs de automação padrão (standard) o que garante uma vantagem crítica: possibilita a realização e criação de testes automatizados sem a necessidade de alterar ou compilar o código-fonte original do aplicativo sob teste.",
-"B": "Sua principal vulnerabilidade e razão da sua configuração simplificada é a total ausência de integração com outros frameworks de execução de testes como JUnit e TestNG, obrigando o uso exclusivo da linguagem Python.",
-"C": "Devido a dependências de interface profundas (deep hooking), o Appium obriga o desenvolvedor a recompilar a aplicação injetando bibliotecas exclusivas fornecidas pelo próprio Appium no código-fonte.",
-"D": "Sua arquitetura destina-se puramente a simulações visuais em aplicativos web móveis (mobile web), não detendo capacidades técnicas para testar aplicativos compilados como Nativos ou Híbridos para lojas de aplicativos (App Stores)."
-},
-"resposta_correta": "A",
-"comentario": "A resposta correta é a A. O texto detalha nos principais recursos do Appium: 'APIs de Automação Padrão: Usa frameworks de automação padrão, o que significa que você não precisa modificar seu aplicativo para criar testes' (Fonte 321) e ressalta que 'Os testes podem ser escritos sem alterar o código-fonte da aplicação' (Fonte 323). A alternativa B está incorreta pois ele 'Integra-se com frameworks de teste populares como TestNG e JUnit' (Fonte 333). A alternativa C afirma o contrário da A e do texto (não precisa alterar código-fonte). A alternativa D está errada porque o Appium testa 'aplicativos nativos, híbridos e da web móvel' (Fonte 332)."
-},
-{
-"id": "10",
-"disciplina": "Tecnologia da Informação",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "VUNESP",
-"instituicao": "Empresa Pública",
-"ano": "2026",
-"cargo": "Arquiteto de Software",
-"nivel": "Superior",
-"enunciado": "Dentro do escopo de testes, simulações através de mock-up (escarnecimento) são técnicas que requerem instrumentação apropriada. Analisando as informações disponibilizadas sobre o Jmockit, identifique a opção que descreve corretamente sua dinâmica de funcionamento ou suas falhas.",
-"alternativas": {
-"A": "O Jmockit previne todos os tipos de exceções técnicas em tempo de execução validando rigorosamente as assinaturas de método em tempo de compilação, o que impede falhas silenciosas nos testes.",
-"B": "A instrumentação pela ferramenta ocorre estritamente em tempo de compilação (compile-time), substituindo o código-fonte diretamente sem necessidade de parâmetros de JVM adicionais.",
-"C": "Ele automatiza a substituição de versões originais em tempo de execução através da redefinição de métodos (e.g. Mockit.redefineMethods), devendo a chamada receber argumentos específicos como '-javaagent'.",
-"D": "A maior desvantagem do Jmockit está atrelada à intensa modificação permanente imposta à base do código-fonte e do design arquitetural das classes envolvidas."
-},
-"resposta_correta": "C",
-"comentario": "A alternativa correta é a C. De acordo com o documento, a 'Instrumentação ocorre em tempo de execução' (Fonte 380), e é realizada utilizando a instrução: 'Mockit.redefineMethods (Class, Class/Object)' (Fonte 387/392). É exigido que 'A execução precisa receber o seguinte parâmetro: -ea -javaagent:"libs\jmockit.jar"' (Fonte 395). A alternativa A está errada pois um dos contras explícitos é o 'Erro silencioso: E.g., assinatura de método fonte e destino não casa' e 'Exceção em tempo de execução' (Fonte 406 a 408). A alternativa B erra ao dizer 'tempo de compilação'. A alternativa D também erra, pois um dos Prós é que o Jmockit 'Não interfere no código fonte/design' (Fonte 404)."
-},
-{
-"id": "11",
-"disciplina": "Engenharia de Software",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "FGV",
-"instituicao": "Tribunal de Contas",
-"ano": "2026",
-"cargo": "Auditor de TI",
-"nivel": "Superior",
-"enunciado": "A técnica de Teste de Mutação visa verificar a eficácia do próprio conjunto de casos de teste, modificando o código do sistema e analisando o resultado. Em conformidade com o uso da ferramenta MUCLIPSE exposta no texto, ao rodar os testes e analisar os resultados do procedimento, espera-se que o usuário receba como saída:",
-"alternativas": {
-"A": "A separação física automatizada entre os códigos mutantes (arquivos danificados) e o código da aplicação limpa, impedindo que desenvolvedores corrompam ambientes produtivos.",
-"B": "A execução interativa em tempo real de uma GUI web apontando falhas e gerando novos testes automatizados em JUnit instantaneamente.",
-"C": "Um relatório sistemático listando um 'score de mutação' estatístico acompanhado dos rótulos 'killed' (morto) ou 'alive' (vivo) atribuídos a cada mutante gerado.",
-"D": "Uma lista padronizada de comandos para o framework Selenium e scripts do Jmockit visando injetar dependências falsas nos mutantes sobreviventes."
-},
-"resposta_correta": "C",
-"comentario": "A alternativa C está correta pois espelha os exatos resultados descritos na seção do MUCLIPSE de 'Rodar testes e analisar resultados', que define como 'Saída: Relatório com score de mutação e label killed ou alive associado a cada mutante' (Fontes 452 e 453). A alternativa A tenta misturar um conceito anterior ('Separação de código falho do original', Fonte 437, que diz respeito às características importantes e não à etapa estrita da saída final rodada). As alternativas B e D inserem características não associadas ao mecanismo estrito de geração de mutantes MuJava/MuClipse descrito no material."
-},
-{
-"id": "12",
-"disciplina": "Tecnologia da Informação",
-"assunto": "Teste de Software - Ferramentas de Automação",
-"banca": "CEBRASPE",
-"instituicao": "Banco Público",
-"ano": "2026",
-"cargo": "Analista Desenvolvedor",
-"nivel": "Médio/Técnico",
-"enunciado": "Uma variada matriz de soluções está disponível para o teste automatizado dependendo do nicho avaliado. Conforme o material instrucional, a plataforma LambdaTest e a ferramenta Kobiton diferenciam-se e são voltadas predominantemente para quais cenários, respectivamente?",
-"alternativas": {
-"A": "LambdaTest destina-se a realizar testes unitários robustos puramente no ambiente Windows desktop, enquanto o Kobiton é um framework de execução local para o navegador Opera.",
-"B": "LambdaTest é focada na execução de automação cross-browser suportando mais de 2.000 navegadores; o Kobiton é uma plataforma focada especificamente em acelerar a entrega e o teste manual e automatizado de aplicativos móveis em dispositivos reais.",
-"C": "LambdaTest foca em testes exploratórios manuais de interface (UI) exclusivamente via Visual Studio, enquanto Kobiton analisa coberturas de código em projetos importados do repositório MuJava.",
-"D": "Ambas operam essencialmente de forma paralela no mercado de servidores back-end, onde o LambdaTest realiza injeção em banco de dados Node.js e o Kobiton monitora transações SOAP."
-},
-"resposta_correta": "B",
-"comentario": "A alternativa correta é a B. O material define o LambdaTest como 'uma das ferramentas preferidas para executar testes automatizados entre navegadores. Portanto, os usuários podem executar seus testes em mais de 2.000 navegadores e sistemas operacionais' (Fontes 136 e 137). E para o Kobiton, o descreve como 'uma plataforma de teste móvel que acelera a entrega e o teste de aplicativos móveis, oferecendo testes manuais e automatizados... em vários dispositivos reais' (Fontes 146 e 147). As alternativas A, C e D mesclam equivocadamente conceitos aplicáveis a outras ferramentas distintas."
-}
+   {
+      "id":1,
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Habilidades Profissionais",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Fácil",
+      "enunciado":"De acordo com o material apresentado, qual a principal distinção entre Hard Skills e Soft Skills?",
+      "alternativas":{
+         "A":"Hard Skills são habilidades socioemocionais, enquanto Soft Skills são técnicas.",
+         "B":"Hard Skills são habilidades técnicas e específicas da profissão, enquanto Soft Skills são habilidades sociocomportamentais.",
+         "C":"Hard Skills são adquiridas apenas na prática, e Soft Skills, na teoria.",
+         "D":"Não há distinção clara, pois ambas são igualmente importantes para qualquer carreira."
+      },
+      "resposta_correta":"B",
+      "comentario":"O material define Hard Skill como 'Habilidades principais, o que você realmente faz na sua profissão.' e Soft Skill como 'Habilidades sócio comportamentais do candidato/profissional.' (Página 2)."
+   },
+   {
+      "id":2,
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Funções do Analista de Sistemas",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"Qual das seguintes opções NÃO representa uma função relacionada ao Analista de Sistemas, conforme listado no material?",
+      "alternativas":{
+         "A":"Analista Programador",
+         "B":"Analista de O&M (Organização e métodos)",
+         "C":"Analista de Marketing Digital",
+         "D":"Analista de BI (Business Intelligence)"
+      },
+      "resposta_correta":"C",
+      "comentario":"Na seção 'Funções' (Página 2), são listadas diversas funções como Analista Programador, Analista de O&M e Analista de BI. Analista de Marketing Digital não é mencionado como uma função relacionada ao Analista de Sistemas no documento."
+   },
+   {
+      "id":3,
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Tipos de Carreiras",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"A Carreira 'Y' ou '//' apresentada no material permite que um profissional de TI siga qual tipo de progressão?",
+      "alternativas":{
+         "A":"Apenas a progressão em cargos de gestão, como Diretor de TI.",
+         "B":"Apenas a progressão em cargos técnicos especializados, como Programador Consultor.",
+         "C":"Tanto a progressão em cargos de gestão quanto em cargos técnicos especializados.",
+         "D":"A progressão é limitada a um único nível hierárquico, sem possibilidade de avanço."
+      },
+      "resposta_correta":"C",
+      "comentario":"A ilustração da 'Carreira Y' ou '//' (Página 1) mostra claramente duas trilhas de progressão: uma para cargos de gestão (Diretor de TI, Gerente de TI, Líder de Projetos) e outra para cargos técnicos especializados (Analista de Software SR/PL/JR, Prog. Consultor III/II/I)."
+   },
+   {
+      "id":4,
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Habilidades Essenciais",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Difícil",
+      "enunciado":"Considerando as Hard Skills e Soft Skills mencionadas no material, qual das seguintes combinações representa uma Hard Skill e uma Soft Skill, respectivamente, que são cruciais para um profissional de TI?",
+      "alternativas":{
+         "A":"Gestão de projetos e Não ser floco de neve.",
+         "B":"Domínio de Java / Python e Resolução de conflitos.",
+         "C":"Contabilidade e Liderança.",
+         "D":"Internet of Things (IOT) e Persuasão."
+      },
+      "resposta_correta":"B",
+      "comentario":"Na seção 'Hard Skill' (Página 2), 'Domínio de Java / Python' é listado como uma habilidade técnica. Na seção 'Soft Skill' (Página 2), 'Resolução de conflitos' é listado como uma habilidade sociocomportamental. As outras opções misturam incorretamente ou não representam as melhores combinações de acordo com a categorização do documento."
+   },
+   {
+      "id":5,
+      "disciplina":"Metodologia de Desenvolvimento de Sistemas",
+      "assunto":"Conceitos Fundamentais",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Fácil",
+      "enunciado":"De acordo com o Dicionário Prof. Aurélio, qual a definição de Metodologia?",
+      "alternativas":{
+         "A":"Caminho pelo qual se atinge um objetivo.",
+         "B":"Estudo dos métodos e, especialmente, dos métodos das ciências.",
+         "C":"Conjunto de procedimentos para a construção do software.",
+         "D":"Técnica para a elaboração de procedimentos."
+      },
+      "resposta_correta":"B",
+      "comentario":"O Dicionário Prof. Aurélio define Metodologia como 'estudo dos métodos e, especialmente, dos métodos das ciências.' (Página 1)."
+   },
+   {
+      "id":6,
+      "disciplina":"Metodologia de Desenvolvimento de Sistemas",
+      "assunto":"Metodologia X Método",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"Qual a principal diferença entre Metodologia e Método, conforme a conclusão apresentada no material?",
+      "alternativas":{
+         "A":"Metodologia especifica a técnica, enquanto método apresenta os procedimentos globais.",
+         "B":"Metodologia e método são termos sinônimos e intercambiáveis.",
+         "C":"Metodologia apresenta os procedimentos globais, e método especifica a técnica para a elaboração desses procedimentos.",
+         "D":"Método é utilizado apenas em ciências exatas, enquanto metodologia é para todas as áreas."
+      },
+      "resposta_correta":"C",
+      "comentario":"A conclusão sobre Metodologia X Método afirma que 'a metodologia apresenta, de maneira global, os procedimentos para a construção do software e o método especifica a técnica para a elaboração destes procedimentos' (Página 1)."
+   },
+   {
+      "id":7,
+      "disciplina":"Metodologia de Desenvolvimento de Sistemas",
+      "assunto":"Razões para implantar MDS",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Fácil",
+      "enunciado":"Qual das seguintes NÃO é uma razão para se implantar/utilizar uma Metodologia de Desenvolvimento de Sistemas (MDS), de acordo com o material?",
+      "alternativas":{
+         "A":"Padronização.",
+         "B":"Aumento da complexidade do projeto.",
+         "C":"Facilidade no treinamento.",
+         "D":"Documentação automática."
+      },
+      "resposta_correta":"B",
+      "comentario":"As razões para se implantar/utilizar uma MDS incluem padronização, facilidade no treinamento, redução da manutenção, estipulação de prazos/custos reais, eliminação de erros e documentação automática. O aumento da complexidade do projeto não é listado como uma razão (Página 1)."
+   },
+   {
+      "id":8,
+      "disciplina":"Metodologia de Desenvolvimento de Sistemas",
+      "assunto":"Mitos da Prática",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Difícil",
+      "enunciado":"Sobre os 'Mitos da Prática' e o tempo dedicado às fases do projeto de software, o material sugere que: ",
+      "alternativas":{
+         "A":"É necessário investir mais tempo nas fases finais do projeto.",
+         "B":"O tempo dedicado deve ser distribuído igualmente entre todas as fases.",
+         "C":"Há necessidade de se investir mais tempo nas fases iniciais do projeto de software.",
+         "D":"O investimento de tempo é irrelevante para o sucesso do projeto."
+      },
+      "resposta_correta":"C",
+      "comentario":"Na seção 'Mitos da Prática', o material afirma: 'Há necessidade de se investir mais tempo nas fases iniciais do projeto de software' (Página 1)."
+   },
+   {
+      "id":9,
+      "disciplina":"Metodologia de Desenvolvimento de Sistemas",
+      "assunto":"Técnicas de Levantamento de Dados",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"Qual das seguintes técnicas é apresentada no material como uma forma de levantamento de dados/requisitos?",
+      "alternativas":{
+         "A":"Análise SWOT.",
+         "B":"Benchmarking.",
+         "C":"Prototipação.",
+         "D":"Diagrama de Ishikawa."
+      },
+      "resposta_correta":"C",
+      "comentario":"A seção 'Técnicas para Levantamento de dados / Requisitos' lista 'Prototipação' como uma das técnicas. As outras opções não são mencionadas no documento (Página 2)."
+   },
+   {
+      "id":10,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Modelos de Processo",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Fácil",
+      "enunciado":"De acordo com o material, um Modelo de Processo é também conhecido como um paradigma de: ",
+      "alternativas":{
+         "A":"Gerenciamento de Projetos",
+         "B":"Engenharia de Software",
+         "C":"Análise de Negócios",
+         "D":"Desenvolvimento Ágil"
+      },
+      "resposta_correta":"B",
+      "comentario":"O material afirma que um Modelo de Processo é também conhecido como um paradigma de engenharia de software (Página 1)."
+   },
+   {
+      "id":11,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Modelo Linear/Cascata",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"Qual das seguintes características NÃO se aplica ao Modelo Linear (Cascata) de desenvolvimento de software?",
+      "alternativas":{
+         "A":"Sistemático e Sequencial",
+         "B":"Etapas principais de análise, projeto, código e testes",
+         "C":"Alta flexibilidade para mudanças em fases avançadas",
+         "D":"Também conhecido como Modelo Clássico ou Convencional"
+      },
+      "resposta_correta":"C",
+      "comentario":"O Modelo Linear (Cascata) é sistemático e sequencial, com etapas bem definidas. Sua natureza sequencial o torna pouco flexível para mudanças em fases avançadas, o que é um dos problemas da análise convencional (Página 1 e 2)."
+   },
+   {
+      "id":12,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Problemas da Análise Convencional",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"Um dos problemas da Análise Convencional, conforme o material, é que o cliente conhece o produto apenas quando ele está pronto. Qual a consequência direta desse problema?",
+      "alternativas":{
+         "A":"Redução do custo de retrabalho.",
+         "B":"Aumento da satisfação do cliente.",
+         "C":"Dificuldade de detecção de defeitos antes do término do projeto.",
+         "D":"Maior facilidade na descrição de procedimentos."
+      },
+      "resposta_correta":"C",
+      "comentario":"O material lista entre os problemas da Análise Convencional a \\'Dificuldade de detecção de defeito antes do término do projeto\\' e que o \\'Cliente conhece o produto apenas quando ele está pronto\\', o que implica que a detecção de defeitos ocorre tardiamente (Página 2)."
+   },
+   {
+      "id":13,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Modelo de Prototipagem",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Fácil",
+      "enunciado":"Qual é uma das fases do Modelo de Prototipagem?",
+      "alternativas":{
+         "A":"Codificação final.",
+         "B":"Escutar o Cliente.",
+         "C":"Manutenção preventiva.",
+         "D":"Geração da Aplicação."
+      },
+      "resposta_correta":"B",
+      "comentario":"O diagrama do Modelo de Prototipagem inclui a fase de \\'Escutar o Cliente\\' (Página 2)."
+   },
+   {
+      "id":14,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Modelo RAD",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"O Modelo RAD (Rapid Application Development) tem como objetivo principal criar um sistema em qual período de tempo?",
+      "alternativas":{
+         "A":"6 a 12 meses.",
+         "B":"60 a 90 dias.",
+         "C":"1 a 2 anos.",
+         "D":"Mais de 2 anos."
+      },
+      "resposta_correta":"B",
+      "comentario":"O material especifica que o objetivo do Modelo RAD é de \\'60 a 90 dias para criar um sistema\\' (Página 2)."
+   },
+   {
+      "id":15,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Modelos Evolucionários",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Fácil",
+      "enunciado":"Qual a principal característica dos Modelos Evolucionários?",
+      "alternativas":{
+         "A":"Não permitem alterações após a fase de projeto.",
+         "B":"Reconhecem que sistemas complexos se alteram com o tempo.",
+         "C":"Focam exclusivamente na entrega rápida de um produto final.",
+         "D":"São modelos estritamente sequenciais."
+      },
+      "resposta_correta":"B",
+      "comentario":"Os Modelos Evolucionários \\'Reconhecem que sistemas complexos se alteram com o tempo\\' e \\'Usam a iteração do ciclo de desenvolvimento para acompanhar a evolução do sistema\\' (Página 2)."
+   },
+   {
+      "id":16,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Modelo Incremental",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"No Modelo Incremental, qual é o foco principal em relação à entrega do produto?",
+      "alternativas":{
+         "A":"Entregar todas as funcionalidades de uma vez no final do projeto.",
+         "B":"Focar na entrega do produto, implementando funcionalidades essenciais o mais cedo possível.",
+         "C":"Atrasar a entrega de funcionalidades para garantir a qualidade.",
+         "D":"Não há foco específico na entrega, apenas no processo."
+      },
+      "resposta_correta":"B",
+      "comentario":"O Modelo Incremental tem como foco \\'Foco na entrega do produto\\' e \\'Busca implementar funcionalidades essenciais o mais cedo possível\\' (Página 3)."
+   },
+   {
+      "id":17,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Modelo Espiral",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Difícil",
+      "enunciado":"Qual é o principal problema associado ao Modelo Espiral, conforme mencionado no material?",
+      "alternativas":{
+         "A":"Não permite a adição de novas características e recursos.",
+         "B":"Requer gestão sofisticada para ser previsível e confiável, podendo se tornar um \\'Projeto interminável\\'.",
+         "C":"Não há comunicação com o cliente durante o processo.",
+         "D":"É um modelo estritamente linear e sequencial."
+      },
+      "resposta_correta":"B",
+      "comentario":"O material aponta que o principal problema do Modelo Espiral é que \\'requer gestão sofisticada para ser previsível e confiável. \\'Projeto interminável\\'\\' (Página 3)."
+   },
+   {
+      "id":18,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Modelos de Processo",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Médio",
+      "enunciado":"A Metodologia de Desenvolvimento de Sistemas (MDS) é uma estratégia que junta quais elementos?",
+      "alternativas":{
+         "A":"Apenas o processo e as ferramentas.",
+         "B":"Apenas os métodos e as ferramentas.",
+         "C":"O processo, os métodos e as ferramentas.",
+         "D":"Somente o processo."
+      },
+      "resposta_correta":"C",
+      "comentario":"O material define Modelos de Processo como \\'Uma estratégia de desenvolvimento que junta o processo, os métodos e as ferramentas\\' (Página 1)."
+   },
+   {
+      "id":19,
+      "disciplina":"Engenharia de Software",
+      "assunto":"Problemas da Análise Convencional",
+      "banca":"Não informado",
+      "instituicao":"Não informado",
+      "ano":"Não informado",
+      "cargo":"Não informado",
+      "nivel":"Difícil",
+      "enunciado":"Qual dos seguintes problemas NÃO é explicitamente listado como um problema da Análise Convencional no material?",
+      "alternativas":{
+         "A":"Dificuldade de descrever procedimentos.",
+         "B":"Falta de linguagem comum.",
+         "C":"Excesso de ferramentas adequadas para apoio.",
+         "D":"Custo do retrabalho."
+      },
+      "resposta_correta":"C",
+      "comentario":"O material lista \\'Poucas Ferramentas adequadas para apoio\\' como um problema da Análise Convencional, o oposto de \\'Excesso de ferramentas adequadas para apoio\\' (Página 2)."
+   },
+   {
+      "id":"1",
+      "disciplina":"Engenharia de Software",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"FGV",
+      "instituicao":"Órgão Público",
+      "ano":"2026",
+      "cargo":"Analista de Tecnologia da Informação",
+      "nivel":"Superior",
+      "enunciado":"O Selenium estabeleceu-se como uma ferramenta confiável para testes da web. Analisando as características técnicas e limitações desta ferramenta apresentadas no material, assinale a afirmativa correta.",
+      "alternativas":{
+         "A":"Sua execução é consideravelmente mais rápida que as ferramentas mais modernas, sendo o padrão ouro para scripts complexos de front-end.",
+         "B":"O Selenium suporta o teste em modo headless, onde o navegador é executado em segundo plano sem uma Interface Gráfica de Usuário (GUI), o que acelera a execução dos testes.",
+         "C":"A ferramenta é recomendada para equipes leigas devido à sua curva de aprendizado suave e interface de gravação nativa (record and playback) que dispensa codificação.",
+         "D":"O Selenium Grid é utilizado primariamente para integrar o Selenium a outras linguagens não suportadas, simulando um repositório de objetos."
+      },
+      "resposta_correta":"B",
+      "comentario":"A alternativa correta é a B. O material afirma nos 'Detalhes Técnicos' que o Selenium 'Suporta teste em um modo headless, onde o navegador é executado em segundo plano sem uma GUI, acelerando a execução dos testes' (Fonte 26). A alternativa A está incorreta pois o material relata como contra que a 'execução dos testes pode ser mais lenta em comparação com ferramentas mais modernas' (Fonte 36). A alternativa C está incorreta pois o Selenium possui 'Curva de Aprendizado Íngreme: Requer uma compreensão sólida de programação' (Fonte 35). A alternativa D está incorreta pois o Selenium Grid 'Permite execução paralela de testes em várias máquinas' (Fonte 25)."
+   },
+   {
+      "id":"2",
+      "disciplina":"Engenharia de Software",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"CESPE/Cebraspe",
+      "instituicao":"Órgão Público",
+      "ano":"2026",
+      "cargo":"Analista de Sistemas",
+      "nivel":"Superior",
+      "enunciado":"Dentre as ferramentas de testes automatizados, o Cypress.io tornou-se rapidamente um favorito entre desenvolvedores front-end por sua abordagem. Sobre o Cypress, qual alternativa descreve corretamente sua arquitetura ou funcionamento fundamental?",
+      "alternativas":{
+         "A":"É focado exclusivamente em testes de aplicativos móveis nativos e híbridos usando o protocolo do WebDriver.",
+         "B":"Utiliza a linguagem Python como servidor e interpretador principal de seus scripts de testes distribuídos.",
+         "C":"Requer a instalação prévia de um agente no código-fonte do servidor back-end para viabilizar as esperas automáticas.",
+         "D":"É executado diretamente no navegador e utiliza o Node.js como servidor e interpretador de sua linguagem JavaScript, permitindo testes end-to-end (E-2-E)."
+      },
+      "resposta_correta":"D",
+      "comentario":"A alternativa correta é a D. Segundo o material, o Cypress 'Executando diretamente no navegador, oferece testes rápidos' (Fonte 42) e 'Utiliza o node JS como servidor e interpretador de sua linguagem JavaScript, permitindo testes E-2-E e com um conjunto completo de frameworks' (Fonte 43). A alternativa A está errada porque o Cypress é 'Apenas Web: Limitado a testes de aplicações web, sem suporte nativo para aplicativos móveis' (Fonte 72). A alternativa B está incorreta pois ele utiliza JavaScript/TypeScript e Node.js. A alternativa C não tem respaldo no texto, sendo que sua execução rápida dispensa modificação de back-end com agentes."
+   },
+   {
+      "id":"3",
+      "disciplina":"Engenharia de Software",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"FCC",
+      "instituicao":"Órgão Público",
+      "ano":"2026",
+      "cargo":"Engenheiro de Software",
+      "nivel":"Superior",
+      "enunciado":"A respeito do Katalon Studio, avalie suas características operacionais e limitações e assinale a alternativa correta de acordo com as informações fornecidas.",
+      "alternativas":{
+         "A":"Oferece personalização ilimitada de código, superando em níveis de customização estrutural frameworks puramente baseados em código.",
+         "B":"Destaca-se por sua altíssima velocidade de desempenho, processando suítes de testes muito grandes e cenários complexos mais rápido que seus concorrentes diretos.",
+         "C":"O Katalon aproveita o poder do Selenium e do Appium como motores integrados para fornecer uma base robusta tanto para testes web quanto para testes móveis.",
+         "D":"Não possui palavras-chave (keywords) embutidas, exigindo estritamente que todos os testadores saibam codificar frameworks a partir do zero."
+      },
+      "resposta_correta":"C",
+      "comentario":"A alternativa correta é a C, pois o documento aponta em 'Detalhes Técnicos' que o Katalon é 'Baseado em Selenium e Appium: Aproveita o poder do Selenium e do Appium para testes web e móveis, fornecendo uma base robusta para testes' (Fonte 94). A alternativa A está errada pois, nos 'Contras', é mencionado: 'Personalização Limitada: Embora poderosa, pode não oferecer o mesmo nível de personalização que frameworks puramente baseados em código' (Fonte 108). A alternativa B está incorreta porque um dos contras é 'Desempenho: Pode ser lenta para suítes de teste muito grandes, particularmente aquelas com cenários complexos' (Fonte 109). A alternativa D está errada pois a ferramenta 'Oferece uma ampla gama de palavras-chaves embutidas' permitindo testes sem codificação (Fonte 88)."
+   },
+   {
+      "id":"4",
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"VUNESP",
+      "instituicao":"Órgão Público",
+      "ano":"2026",
+      "cargo":"Desenvolvedor de Software",
+      "nivel":"Superior",
+      "enunciado":"O uso de ferramentas específicas direcionadas para plataformas móveis traz particularidades cruciais ao processo de automação de testes. Segundo o material abordado sobre o ecossistema de testes, a ferramenta Robotium é focada principalmente em:",
+      "alternativas":{
+         "A":"Automação de testes para Android, sendo compatível com aplicações nativas e híbridas, simulando procedimentos e facilitando a escrita de testes de caixa-preta.",
+         "B":"Testes de desempenho e carga em servidores web, validando o tempo de resposta através de bibliotecas exclusivas de injeção de dados.",
+         "C":"Testes de regressão estruturais em ambientes desktop Windows e macOS, utilizando primordialmente linguagens como VBScript e Python.",
+         "D":"Automação da substituição de versões originais em mock-up para testes unitários em aplicativos unicamente para o ecossistema iOS."
+      },
+      "resposta_correta":"A",
+      "comentario":"A correta é a alternativa A. O PDF deixa claro que 'O Robotium é um framework gratuito bastante popular em automação de testes para Android. compatível com aplicações nativas e híbridas' (Fonte 111) e 'Uma das grandes vantagens é que facilita a escrita da automação de testes de caixa preta' (Fonte 113). As alternativas B, C e D descrevem incorretamente funcionalidades e escopos de outras ferramentas (TestComplete, Ranorex, Jmockit etc.) ou não fazem parte da finalidade do Robotium."
+   },
+   {
+      "id":"5",
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"IBAM",
+      "instituicao":"Prefeitura Municipal",
+      "ano":"2026",
+      "cargo":"Analista de TI",
+      "nivel":"Superior",
+      "enunciado":"A ferramenta Watir é descrita como 'leve e elegante', sendo adotada para automação web. Qual das seguintes alternativas apresenta de forma precisa as propriedades técnicas e as desvantagens dessa solução?",
+      "alternativas":{
+         "A":"O Watir é voltado para testes orientados a palavras-chave (Keyword-driven), no entanto, apresenta uma curva de aprendizado inacessível para usuários sem conhecimentos em Java.",
+         "B":"O Watir incentiva fortemente o Modelo de Objeto de Página e integra-se com frameworks de BDD como Cucumber, porém sua principal desvantagem é limitar-se a testes web e depender do ecossistema Ruby.",
+         "C":"Possui suporte nativo e multiplataforma para ambientes desktop e mobile por padrão, contudo sofre com uma comunidade incipiente e falta de documentação oficial confiável.",
+         "D":"É projetada para realizar instrumentação em tempo de execução através do protocolo Node.js, substituindo classes originais, o que gera alto risco de erros silenciosos."
+      },
+      "resposta_correta":"B",
+      "comentario":"A correta é a B. Segundo o material, o Watir 'Incentiva o uso do Modelo de Objeto de Página' (Fonte 173) e 'Integra-se com frameworks BDD como RSpec e Cucumber' (Fonte 174). Contudo, em seus Contras: 'Limitado a Testes Web' (Fonte 182) e 'Dependência do Ruby: Como uma ferramenta específica do Ruby, é mais adequada para equipes que já usam Ruby' (Fonte 183). A alternativa A confunde com o Robot Framework (que é orientado a palavras-chave). A alternativa C é o oposto da verdade (Watir foca em Web e tem comunidade ativa - Fonte 180). A alternativa D descreve características do Jmockit."
+   },
+   {
+      "id":"6",
+      "disciplina":"Engenharia de Software",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"CEBRASPE",
+      "instituicao":"Órgão Público",
+      "ano":"2026",
+      "cargo":"Perito em Tecnologia da Informação",
+      "nivel":"Superior",
+      "enunciado":"No ecossistema Java, JUnit e TestNG são amplamente conhecidos. Comparando as duas ferramentas baseadas no material técnico analisado, marque a afirmação correta sobre as capacidades de ambas.",
+      "alternativas":{
+         "A":"Ambos os frameworks, TestNG e JUnit, são inteiramente agnósticos de linguagem, podendo ser utilizados sem configurações extras em projetos Node.js e Python.",
+         "B":"O JUnit destaca-se por possuir ferramentas nativas avançadas para elaboração de relatórios (out of the box), não sendo necessário utilizar nenhuma solução terceira para análises detalhadas.",
+         "C":"O JUnit é amplamente superior ao TestNG em flexibilidade técnica, dado que introduziu nativamente o conceito de execução paralela de testes, algo estritamente impossível no TestNG.",
+         "D":"O TestNG oferece recursos mais avançados e maior flexibilidade do que o JUnit, dispondo de suporte embutido para testes de dependência e controle apurado sobre a ordem de execução."
+      },
+      "resposta_correta":"D",
+      "comentario":"A correta é a D. O material atesta sobre o TestNG: 'oferece recursos mais avançados e maior flexibilidade em comparação com o JUnit' (Fonte 187) e em detalhes técnicos: 'Testes de Dependência: Suporte embutido para testes de dependência, permitindo que você defina dependências entre testes e controle a ordem de execução' (Fonte 206). A alternativa A erra, pois ambos são focados no ecossistema Java. A alternativa B está incorreta porque o JUnit tem 'Relatórios Básicos: As capacidades de relatório de prateleira são limitadas' (Fonte 309). A alternativa C inverte a situação, já que é o TestNG que 'Suporta execução paralela de testes' de forma mais eficiente (Fonte 194)."
+   },
+   {
+      "id":"7",
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"Instituto Consulplan",
+      "instituicao":"Câmara Municipal",
+      "ano":"2026",
+      "cargo":"Analista Desenvolvedor",
+      "nivel":"Superior",
+      "enunciado":"As APIs (Application Programming Interfaces) exigem soluções próprias de teste. Considerando o Postman e o Apidog, descritos no material, é correto afirmar a respeito de suas funcionalidades que:",
+      "alternativas":{
+         "A":"Ambas as ferramentas exigem a escrita manual do código das requisições via JavaScript no console, já que não oferecem Interfaces Gráficas Intuitivas (GUIs) para desenvolvedores.",
+         "B":"O Postman oferece ferramentas de relatórios visuais avançados ilimitados em suas licenças gratuitas, ao passo que o Apidog é inteiramente desprovido de análises e relatórios de progresso.",
+         "C":"O Apidog destaca-se pelo suporte robusto a múltiplos protocolos de API, como REST, GraphQL e SOAP, enquanto o Postman permite testes automatizados via Newman CLI em fluxos de CI/CD.",
+         "D":"O Postman foca estritamente em sistemas legados do tipo SOAP, não suportando configurações contemporâneas baseadas em variáveis de ambiente, diferentemente do Apidog."
+      },
+      "resposta_correta":"C",
+      "comentario":"A correta é a C. Sobre o Apidog, a Fonte 356 garante: 'Lida com protocolos REST, GraphQL e SOAP'. Sobre o Postman, a Fonte 227 afirma: 'Newman CLI: Integra-se com pipelines de CI/CD, permitindo testes automatizados'. A alternativa A erra pois ambas ferramentas possuem interfaces GUI intuitivas. A alternativa B está incorreta pois o material cita no Postman: 'Relatórios Limitados na Versão Gratuita' (Fonte 243). A alternativa D está errada pois o Postman facilita o 'Gerenciamento de Ambiente', lidando sim com variáveis (Fonte 235), e não atua estritamente sobre SOAP."
+   },
+   {
+      "id":"8",
+      "disciplina":"Engenharia de Software",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"AOCP",
+      "instituicao":"Órgão Público",
+      "ano":"2026",
+      "cargo":"Analista de Qualidade e Testes",
+      "nivel":"Superior",
+      "enunciado":"O Robot Framework se diferencia de outros frameworks de automação por sua abordagem metodológica e arquitetural. Com base no material, qual afirmação traduz as características técnicas, vantagens ou desvantagens dessa ferramenta?",
+      "alternativas":{
+         "A":"O Robot Framework impossibilita o uso em testes web modernos, focando sua abordagem de palavras-chave unicamente em automação restrita a bases de dados corporativas fechadas.",
+         "B":"Adota uma arquitetura orientada a palavras-chave (Keyword-driven), permitindo a criação de casos fáceis de ler por perfis não técnicos, mas essa metodologia e o próprio framework carregam uma curva de aprendizado inicial.",
+         "C":"Embora seja amigável, uma grande desvantagem do Robot Framework é a sua arquitetura fechada que impede a integração de bibliotecas Python ou Java criadas pelas equipes técnicas.",
+         "D":"Possui um motor de renderização nativo e fechado que confere à ferramenta execuções instantâneas, tornando-o sempre a opção mais rápida do mercado para imensas suítes de testes orientadas a código."
+      },
+      "resposta_correta":"B",
+      "comentario":"A alternativa correta é a B. O material informa que o Robot Framework fornece 'Testes Orientados a Palavras-Chave: Permite a criação de casos de teste usando palavras-chave legíveis por humanos' (Fonte 256). Contudo, nos contras: 'Curva de Aprendizado: A metodologia orientada a palavras-chave pode exigir algum tempo para dominar' (Fonte 276). A alternativa A está errada pois ele 'Funciona perfeitamente com o Selenium para testes web' (Fonte 269). A alternativa C é oposta ao texto, que diz ser 'Extensível com Bibliotecas: Pode ser estendido com bibliotecas Python e Java' (Fonte 257). A alternativa D está incorreta porque um de seus contras é o 'Desempenho: A execução de testes pode ser mais lenta em comparação com frameworks mais centrados em código' (Fonte 277)."
+   },
+   {
+      "id":"9",
+      "disciplina":"Engenharia de Software",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"CEBRASPE",
+      "instituicao":"Tribunal de Justiça",
+      "ano":"2026",
+      "cargo":"Analista Judiciário - Apoio Especializado em TI",
+      "nivel":"Superior",
+      "enunciado":"O Appium é apresentado como líder no setor de testes móveis, solucionando o desafio da fragmentação de plataformas e linguagens. Assinale a alternativa que reflete corretamente as propriedades técnicas e operacionais da ferramenta Appium.",
+      "alternativas":{
+         "A":"Utiliza APIs de automação padrão (standard) o que garante uma vantagem crítica: possibilita a realização e criação de testes automatizados sem a necessidade de alterar ou compilar o código-fonte original do aplicativo sob teste.",
+         "B":"Sua principal vulnerabilidade e razão da sua configuração simplificada é a total ausência de integração com outros frameworks de execução de testes como JUnit e TestNG, obrigando o uso exclusivo da linguagem Python.",
+         "C":"Devido a dependências de interface profundas (deep hooking), o Appium obriga o desenvolvedor a recompilar a aplicação injetando bibliotecas exclusivas fornecidas pelo próprio Appium no código-fonte.",
+         "D":"Sua arquitetura destina-se puramente a simulações visuais em aplicativos web móveis (mobile web), não detendo capacidades técnicas para testar aplicativos compilados como Nativos ou Híbridos para lojas de aplicativos (App Stores)."
+      },
+      "resposta_correta":"A",
+      "comentario":"A resposta correta é a A. O texto detalha nos principais recursos do Appium: 'APIs de Automação Padrão: Usa frameworks de automação padrão, o que significa que você não precisa modificar seu aplicativo para criar testes' (Fonte 321) e ressalta que 'Os testes podem ser escritos sem alterar o código-fonte da aplicação' (Fonte 323). A alternativa B está incorreta pois ele 'Integra-se com frameworks de teste populares como TestNG e JUnit' (Fonte 333). A alternativa C afirma o contrário da A e do texto (não precisa alterar código-fonte). A alternativa D está errada porque o Appium testa 'aplicativos nativos, híbridos e da web móvel' (Fonte 332)."
+   },
+   {
+      "id":"10",
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"VUNESP",
+      "instituicao":"Empresa Pública",
+      "ano":"2026",
+      "cargo":"Arquiteto de Software",
+      "nivel":"Superior",
+      "enunciado":"Dentro do escopo de testes, simulações através de mock-up (escarnecimento) são técnicas que requerem instrumentação apropriada. Analisando as informações disponibilizadas sobre o Jmockit, identifique a opção que descreve corretamente sua dinâmica de funcionamento ou suas falhas.",
+      "alternativas":{
+         "A":"O Jmockit previne todos os tipos de exceções técnicas em tempo de execução validando rigorosamente as assinaturas de método em tempo de compilação, o que impede falhas silenciosas nos testes.",
+         "B":"A instrumentação pela ferramenta ocorre estritamente em tempo de compilação (compile-time), substituindo o código-fonte diretamente sem necessidade de parâmetros de JVM adicionais.",
+         "C":"Ele automatiza a substituição de versões originais em tempo de execução através da redefinição de métodos (e.g. Mockit.redefineMethods), devendo a chamada receber argumentos específicos como '-javaagent'.",
+         "D":"A maior desvantagem do Jmockit está atrelada à intensa modificação permanente imposta à base do código-fonte e do design arquitetural das classes envolvidas."
+      },
+      "resposta_correta":"C",
+      "comentario":"A alternativa correta é a C. De acordo com o documento, a 'Instrumentação ocorre em tempo de execução' (Fonte 380), e é realizada utilizando a instrução: 'Mockit.redefineMethods (Class, Class/Object)' (Fonte 387/392). É exigido que 'A execução precisa receber o seguinte parâmetro: -ea -javaagent:""libs\\jmockit.jar""' (Fonte 395). A alternativa A está errada pois um dos contras explícitos é o 'Erro silencioso: E.g., assinatura de método fonte e destino não casa' e 'Exceção em tempo de execução' (Fonte 406 a 408). A alternativa B erra ao dizer 'tempo de compilação'. A alternativa D também erra, pois um dos Prós é que o Jmockit 'Não interfere no código fonte/design' (Fonte 404)."
+   },
+   {
+      "id":"11",
+      "disciplina":"Engenharia de Software",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"FGV",
+      "instituicao":"Tribunal de Contas",
+      "ano":"2026",
+      "cargo":"Auditor de TI",
+      "nivel":"Superior",
+      "enunciado":"A técnica de Teste de Mutação visa verificar a eficácia do próprio conjunto de casos de teste, modificando o código do sistema e analisando o resultado. Em conformidade com o uso da ferramenta MUCLIPSE exposta no texto, ao rodar os testes e analisar os resultados do procedimento, espera-se que o usuário receba como saída:",
+      "alternativas":{
+         "A":"A separação física automatizada entre os códigos mutantes (arquivos danificados) e o código da aplicação limpa, impedindo que desenvolvedores corrompam ambientes produtivos.",
+         "B":"A execução interativa em tempo real de uma GUI web apontando falhas e gerando novos testes automatizados em JUnit instantaneamente.",
+         "C":"Um relatório sistemático listando um 'score de mutação' estatístico acompanhado dos rótulos 'killed' (morto) ou 'alive' (vivo) atribuídos a cada mutante gerado.",
+         "D":"Uma lista padronizada de comandos para o framework Selenium e scripts do Jmockit visando injetar dependências falsas nos mutantes sobreviventes."
+      },
+      "resposta_correta":"C",
+      "comentario":"A alternativa C está correta pois espelha os exatos resultados descritos na seção do MUCLIPSE de 'Rodar testes e analisar resultados', que define como 'Saída: Relatório com score de mutação e label killed ou alive associado a cada mutante' (Fontes 452 e 453). A alternativa A tenta misturar um conceito anterior ('Separação de código falho do original', Fonte 437, que diz respeito às características importantes e não à etapa estrita da saída final rodada). As alternativas B e D inserem características não associadas ao mecanismo estrito de geração de mutantes MuJava/MuClipse descrito no material."
+   },
+   {
+      "id":"12",
+      "disciplina":"Tecnologia da Informação",
+      "assunto":"Teste de Software - Ferramentas de Automação",
+      "banca":"CEBRASPE",
+      "instituicao":"Banco Público",
+      "ano":"2026",
+      "cargo":"Analista Desenvolvedor",
+      "nivel":"Médio/Técnico",
+      "enunciado":"Uma variada matriz de soluções está disponível para o teste automatizado dependendo do nicho avaliado. Conforme o material instrucional, a plataforma LambdaTest e a ferramenta Kobiton diferenciam-se e são voltadas predominantemente para quais cenários, respectivamente?",
+      "alternativas":{
+         "A":"LambdaTest destina-se a realizar testes unitários robustos puramente no ambiente Windows desktop, enquanto o Kobiton é um framework de execução local para o navegador Opera.",
+         "B":"LambdaTest é focada na execução de automação cross-browser suportando mais de 2.000 navegadores; o Kobiton é uma plataforma focada especificamente em acelerar a entrega e o teste manual e automatizado de aplicativos móveis em dispositivos reais.",
+         "C":"LambdaTest foca em testes exploratórios manuais de interface (UI) exclusivamente via Visual Studio, enquanto Kobiton analisa coberturas de código em projetos importados do repositório MuJava.",
+         "D":"Ambas operam essencialmente de forma paralela no mercado de servidores back-end, onde o LambdaTest realiza injeção em banco de dados Node.js e o Kobiton monitora transações SOAP."
+      },
+      "resposta_correta":"B",
+      "comentario":"A alternativa correta é a B. O material define o LambdaTest como 'uma das ferramentas preferidas para executar testes automatizados entre navegadores. Portanto, os usuários podem executar seus testes em mais de 2.000 navegadores e sistemas operacionais' (Fontes 136 e 137). E para o Kobiton, o descreve como 'uma plataforma de teste móvel que acelera a entrega e o teste de aplicativos móveis, oferecendo testes manuais e automatizados... em vários dispositivos reais' (Fontes 146 e 147). As alternativas A, C e D mesclam equivocadamente conceitos aplicáveis a outras ferramentas distintas."
+   }
 ]
