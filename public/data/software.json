@@ -548,7 +548,7 @@
       "D": "A maior desvantagem do Jmockit está atrelada à intensa modificação permanente imposta à base do código-fonte e do design arquitetural das classes envolvidas."
     },
     "resposta_correta": "C",
-    "comentario": "A alternativa correta é a C. De acordo com o documento, a 'Instrumentação ocorre em tempo de execução' (Fonte 380), e é realizada utilizando a instrução: 'Mockit.redefineMethods (Class, Class/Object)' (Fonte 387/392). É exigido que 'A execução precisa receber o seguinte parâmetro: -ea -javaagent:\"libs\\jmockit.jar\"' (Fonte 395). A alternativa A está errada pois um dos contras explícitos é o 'Erro silencioso: E.g., assinatura de método fonte e destino não casa' e 'Exceção em tempo de execução' (Fonte 406 a 408). A alternativa B erra ao dizer 'tempo de compilação'. A alternativa D também erra, pois um dos Prós é que o Jmockit 'Não interfere no código fonte/design' (Fonte 404)."
+    "comentario": "A alternativa correta é a C. De acordo com o documento, a 'Instrumentação ocorre em tempo de execução' (Fonte 380), e é realizada utilizando a instrução: 'Mockit.redefineMethods (Class, Class/Object)' (Fonte 387/392). É exigido que 'A execução precisa receber o seguinte parâmetro: -ea -javaagent: libs  jmockit.jar  (Fonte 395). A alternativa A está errada pois um dos contras explícitos é o 'Erro silencioso: E.g., assinatura de método fonte e destino não casa' e 'Exceção em tempo de execução' (Fonte 406 a 408). A alternativa B erra ao dizer 'tempo de compilação'. A alternativa D também erra, pois um dos Prós é que o Jmockit 'Não interfere no código fonte/design' (Fonte 404)."
   },
   {
     "id": 30,
@@ -587,5 +587,290 @@
     },
     "resposta_correta": "B",
     "comentario": "A alternativa correta é a B. O material define o LambdaTest como 'uma das ferramentas preferidas para executar testes automatizados entre navegadores. Portanto, os usuários podem executar seus testes em mais de 2.000 navegadores e sistemas operacionais' (Fontes 136 e 137). E para o Kobiton, o descreve como 'uma plataforma de teste móvel que acelera a entrega e o teste de aplicativos móveis, oferecendo testes manuais e automatizados... em vários dispositivos reais' (Fontes 146 e 147). As alternativas A, C e D mesclam equivocadamente conceitos aplicáveis a outras ferramentas distintas."
-  }
+  },
+  {
+"id": "40",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Interface Humano-Computador",
+"banca": "FGV",
+"instituicao": "Órgão Público",
+"ano": "2026",
+"cargo": "Analista de Sistemas",
+"nivel": "Superior",
+"enunciado": "De acordo com os conceitos introdutórios de Interface Humano-Computador (IHC) apresentados no material, assinale a afirmativa que define corretamente o papel e o impacto da interface com o usuário.",
+"alternativas": {
+"A": "A interface representa o sistema computacional em sua totalidade lógica, ocultando o banco de dados e dispensando a necessidade de estudo do perfil etário do usuário.",
+"B": "É um mecanismo secundário que, embora facilite o diálogo entre programa e máquina, raramente influencia na aceitação ou rejeição de um sistema.",
+"C": "É a parte do sistema visível para o usuário, através da qual ele se comunica; se mal projetada, pode se transformar em um ponto decisivo na rejeição do sistema.",
+"D": "Consiste exclusivamente na parte física do computador (hardware) que transmite as heurísticas do sistema operacional de forma sequencial ao cérebro do usuário."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta conforme a Fonte 483 e 484, que definem a interface como 'a parte do sistema visível para o usuário, através da qual, ele se comunica para realizar suas tarefas' e ressaltam que, 'se mal projetada, pode se transformar em um ponto decisivo na rejeição de um sistema'. A alternativa A contraria a premissa de Shneiderman de estudar o perfil etário (Fonte 494). A alternativa B erra ao dizer que é secundária e raramente influencia. A alternativa D erra ao limitar a interface ao hardware."
+},
+{
+"id": "41",
+"disciplina": "Engenharia de Software",
+"assunto": "Perfil de Usuários em IHC",
+"banca": "CESPE/Cebraspe",
+"instituicao": "Tribunal Regional",
+"ano": "2026",
+"cargo": "Analista Judiciário - TI",
+"nivel": "Superior",
+"enunciado": "A classificação dos usuários é essencial para o projeto de interfaces. Como o material classifica o usuário que possui 'bom conhecimento semântico e sintático' e que 'procura atalhos e modos de abreviação de interação'?",
+"alternativas": {
+"A": "Principiantes.",
+"B": "Instruídos e frequentes.",
+"C": "Instruídos e intermitentes.",
+"D": "Especialistas em heurística avançada."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. Segundo a Fonte 499, 'Instruídos e frequentes: bom conhecimento semântico e sintático, procuram atalhos e modos de abreviação de interação'. Principiantes possuem pouco conhecimento sintático e semântico (Fonte 497). Instruídos e intermitentes têm razoável conhecimento semântico, mas pouca lembrança de informações sintáticas (Fonte 498). A alternativa D não é uma classificação apresentada no documento."
+},
+{
+"id": "42",
+"disciplina": "Ergonomia e Usabilidade",
+"assunto": "Fatores Humanos e Cognição",
+"banca": "FCC",
+"instituicao": "Empresa Estatal",
+"ano": "2026",
+"cargo": "Designer de Interação",
+"nivel": "Superior",
+"enunciado": "Ao tratar da percepção humana, o material explora as funções dos hemisférios cerebrais. Quais características e áreas estão associadas diretamente às funções do lado esquerdo do cérebro?",
+"alternativas": {
+"A": "Emprego da lógica, orientação a detalhes, pensamento prático, linguagem, matemática e ciência.",
+"B": "Uso de sentimentos, percepção espacial, imagens metafóricas, filosofia e religião.",
+"C": "Apresentação de possibilidades impetuosas, pensamento divergente focado no TODO das coisas.",
+"D": "Processamento imaginativo que compreende a função dos objetos baseando-se unicamente na fantasia."
+},
+"resposta_correta": "A",
+"comentario": "A alternativa A está correta pois as Fontes 563 a 576 listam as funções do lado esquerdo do cérebro: 'emprego da lógica, orientado a detalhes, baseado em fatos, palavras e linguagem... Matemáticas e ciência... prático, seguro'. As alternativas B, C e D descrevem explicitamente as características do lado direito do cérebro (Fontes 577 a 591), tais como sentimentos, imagens, filosofia, fantasia e impetuosidade."
+},
+{
+"id": "43",
+"disciplina": "Ergonomia e Usabilidade",
+"assunto": "Fatores Humanos e Cognição",
+"banca": "VUNESP",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Desenvolvedor Front-end",
+"nivel": "Superior",
+"enunciado": "O texto descreve como cada usuário tem uma personalidade única ligada ao seu estilo cognitivo e como o cérebro processa informações. Sobre a comunicação visual e o processamento cerebral, é correto afirmar que:",
+"alternativas": {
+"A": "A comunicação visual apresenta uma característica estritamente linear e sequencial, exigindo o foco isolado em uma parte de cada vez.",
+"B": "O lado esquerdo do cérebro é responsável pela intuição e pelo pensamento abstrato subjetivo associado aos artistas.",
+"C": "Para ler eficientemente, o ser humano utiliza predominantemente o lado direito do cérebro para analisar a linguagem verbal das interfaces gráficas.",
+"D": "A comunicação visual apresenta característica 'paralela' (simultaneidade), e olhos e cérebro processam essas informações com base em tamanho, forma, cor, orientação e movimento."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta. A Fonte 536 afirma textualmente que 'A comunicação visual apresenta característica paralela (simultaneidade)' e a Fonte 535 diz que 'Olhos e cérebro processam informações visuais com base em tamanho, forma, cor, orientação, movimento'. A alternativa A está incorreta pois a comunicação não é linear, mas sim 'paralela'. A alternativa B atribui as qualidades do lado direito (artistas, subjetivo) ao esquerdo (Fonte 551). A alternativa C está incorreta porque a linguagem verbal e o intelecto estão associados ao lado esquerdo (Fonte 544)."
+},
+{
+"id": "44",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Usabilidade",
+"banca": "Instituto Consulplan",
+"instituicao": "Câmara Municipal",
+"ano": "2026",
+"cargo": "Analista de Suporte",
+"nivel": "Médio",
+"enunciado": "A usabilidade de um sistema é definida por uma combinação de várias características centradas no usuário. Segundo o documento, qual conjunto abaixo representa fielmente essas características?",
+"alternativas": {
+"A": "Rapidez na compilação do código, taxa de erros da máquina, interface colorida e padronização do hardware.",
+"B": "Facilidade de aprendizagem, rapidez na execução de tarefas, taxa de erros baixa, satisfação subjetiva do usuário e fidelização ao longo do tempo.",
+"C": "Utilização exclusiva de teclas aceleradoras, multitarefa em janelas, manipulação direta de atalhos e ausência de navegação.",
+"D": "Design estritamente focado no sistema, rejeição a usuários novatos, inércia gráfica nula e complexidade organizacional elevada."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta, pois a definição de usabilidade listada nas Fontes 597 a 603 inclui exatamente: 'facilidade de aprendizagem; rapidez na execução de tarefas; taxa de erros baixa; satisfação subjetiva do usuário; fidelização ao longo do tempo'. As demais alternativas inventam conceitos ou contrariam o texto, como a alternativa D que sugere design focado no sistema, quando as diretrizes recomendam o design centrado no usuário (Fonte 605)."
+},
+{
+"id": "45",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Design de Interação",
+"banca": "CEBRASPE",
+"instituicao": "Órgão Público",
+"ano": "2026",
+"cargo": "Analista de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "As linhas de orientação do design de interação trazem práticas recomendadas para a interface. No que tange às operações e controle do usuário, assinale a recomendação expressa no material.",
+"alternativas": {
+"A": "O sistema deve assumir o controle total, inibindo a familiarização do usuário para evitar manipulações acidentais em campos sensíveis.",
+"B": "Deve-se abolir o uso de macros e teclas aceleradoras, pois estas prejudicam a curva de aprendizagem de usuários principiantes.",
+"C": "As ações do usuário devem ser facilmente reversíveis, recomendando-se a existência de um comando de desfazer ('undo') e a possibilidade de navegar através do sistema.",
+"D": "A inércia na visualização deve ser eliminada completamente para garantir que a tela seja redesenhada sem nenhuma complexidade aparente a cada clique."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta, fundamentada nas Fontes 621 e 622, que dizem: 'As ações do usuário devem ser facilmente reversíveis: Existência de um comando undo; Possibilidade de navegar através do sistema'. A alternativa A contraria a Fonte 618 ('Manter o controle do lado do usuário'). A alternativa B está incorreta pois a Fonte 615 orienta exatamente a 'Otimizar as operações realizadas pelo usuário: teclas aceleradoras... macros'. A alternativa D está errada pois a diretriz manda 'Manter inércia na visualização' (Fonte 623)."
+},
+{
+"id": "46",
+"disciplina": "Engenharia de Software",
+"assunto": "Estilos de Interação",
+"banca": "AOCP",
+"instituicao": "Polícia Científica",
+"ano": "2026",
+"cargo": "Perito Criminal - Computação",
+"nivel": "Superior",
+"enunciado": "Entre os estilos de interação Homem-Máquina, destaca-se o WYSIWYG. Qual a definição desse estilo e uma desvantagem atrelada a ele descrita no material?",
+"alternativas": {
+"A": "Significa 'What You See Is What You Get', em que a imagem da interface é a mesma que a aplicação cria; sua desvantagem é ser um estilo restrito, visto que existem aplicações que não conseguem ser implementadas nele.",
+"B": "Refere-se ao modelo Windows, Icons, Menus and Pointers; sua desvantagem é depender exclusivamente da digitação constante de linhas de comando para sua ativação.",
+"C": "É um framework voltado exclusivamente para preenchimento de formulários; sua desvantagem é apresentar uma diferença brutal entre a tela e a impressão de documentos.",
+"D": "Significa 'What You Say Is What You Get', um tipo de interface por linguagem natural; sua principal falha é a fobia de teclado que causa em usuários instruídos."
+},
+"resposta_correta": "A",
+"comentario": "A alternativa A está correta. A Fonte 680 define a sigla como 'What You See Is What You Get', indicando que 'A imagem de manipulação da interface é a mesma que a aplicação cria' (Fonte 681). Suas desvantagens (Fonte 684) incluem o fato de que 'Existem aplicações que não conseguem ser implementadas neste estilo (estilo restrito)'. A alternativa B confunde com WIMP (Fonte 686). A alternativa C erra pois a tela diferir da impressão é uma característica do 'estilo NÃO WYSIWYG'. A alternativa D inventa uma tradução falsa (Say)."
+},
+{
+"id": "47",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Estilos de Interação",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Técnico em Informática",
+"nivel": "Médio",
+"enunciado": "O estilo de interação conhecido pela sigla WIMP pode ser considerado tanto um estilo isolado quanto um framework de interface. O que a sigla WIMP significa e em qual tecnologia ela se apoia fortemente?",
+"alternativas": {
+"A": "Work, Image, Macro, Print; apoiado em impressoras e drivers não-gráficos.",
+"B": "Web, Interface, Mobile, Processing; apoiado em Inteligência Artificial e heurísticas cognitivas intermitentes.",
+"C": "Word, Interaction, Model, Presentation; apoiado por Sistemas Operacionais baseados em texto e comandos de shell.",
+"D": "Windows, Icons, Menus and Pointers; apoiado pela tecnologia de interfaces gráficas (GUI) utilizando componentes denominados widgets."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta, sendo embasada nas Fontes 686 ('Windows, Icons, Menus and Pointers (WIMP)'), 687 ('Permite a interação através de componentes de interação virtuais denominados widgets') e 689 ('apoiado pela tecnologia de interfaces gráficas (GUI)'). As alternativas A, B e C apresentam expansões incorretas para a sigla e pressupostos técnicos falsos segundo o material estudado."
+},
+{
+"id": "48",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Estilos de Interação",
+"banca": "FGV",
+"instituicao": "Tribunal de Justiça",
+"ano": "2026",
+"cargo": "Analista Judiciário - Sistemas",
+"nivel": "Superior",
+"enunciado": "Diferentes componentes de interação resolvem problemas distintos para os usuários. Conforme o material instrucional, por que o uso de ícones, scrolling e botões é vantajoso para a interação homem-máquina?",
+"alternativas": {
+"A": "Porque estruturam a informação hierarquicamente, garantindo que usuários principiantes não consigam utilizar atalhos prejudiciais ao sistema.",
+"B": "Porque eliminam completamente a necessidade de monitores WIMP de terceira geração, forçando o aprendizado sintático do lado esquerdo do cérebro.",
+"C": "Porque reduzem a quantidade de digitação, eliminam a fobia de teclado e admitem usuários não muito amigos da digitação.",
+"D": "Porque são a base fundamental da linguagem de comandos natural (What You See Is What You Get), focados no preenchimento de formulários e caixas de diálogo."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está perfeitamente alinhada à Fonte 693, que afirma sobre 'ícones, scrolling, botões: reduzem a quantidade de digitação (eliminam fobia de teclado, admitem usuários não muito amigos da digitação)'. A alternativa A confunde com menus pull-down, que organizam hierarquicamente (Fonte 692). A alternativa B mistura conceitos sem sentido de gerações e cérebro. A alternativa D confunde linguagem natural e o significado da sigla WYSIWYG."
+},
+{
+"id": "49",
+"disciplina": "Engenharia de Software",
+"assunto": "Evolução das Interfaces",
+"banca": "CESPE/Cebraspe",
+"instituicao": "Órgão Federal",
+"ano": "2026",
+"cargo": "Desenvolvedor de Software",
+"nivel": "Superior",
+"enunciado": "A evolução das interfaces computacionais passou por diversas fases até chegar à chamada 'Terceira Geração'. Qual a principal característica atrelada a esta geração, de acordo com as informações presentes no PDF?",
+"alternativas": {
+"A": "A popularização irrestrita de formulários em terminais textuais puramente analíticos e de resposta lenta (single-task).",
+"B": "A utilização de janelas, permitindo que tipos diferentes de informação sejam exibidas simultaneamente e o conceito de multitarefa na visão do usuário.",
+"C": "A transição do uso exclusivo da percepção espacial do lado direito do cérebro para ferramentas voltadas inteiramente à linguagem orientada a detalhes (menus pull-down puros).",
+"D": "A adoção das linguagens naturais não-gráficas como a única fonte viável de entrada (input), suplantando os estilos clássicos WYSIWYG."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. O material expõe na Fonte 717 a 720 que a 'Terceira geração' envolve a 'utilização de: janelas: tipos diferentes de informação podem ser exibidas simultaneamente e sem frustração' e 'multitarefa (fazer várias coisas ao mesmo tempo, na visão do usuário)'. A alternativa A erra por falar de terminal puramente textual. A alternativa C inventa limitações cerebrais relacionadas às gerações. A alternativa D está errada pois a terceira geração foca em gráficos (janelas) e não suplantou o gráfico em favor do texto natural."
+},
+{
+"id": "50",
+"disciplina": "Ergonomia e Usabilidade",
+"assunto": "Avaliação de Interface",
+"banca": "FCC",
+"instituicao": "Tribunal de Contas",
+"ano": "2026",
+"cargo": "Auditor de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "Para aferir a eficácia de uma interface, o Formulário de Julgamento de Qualidade da Interface (Rating), desenvolvido por Reeves, estipula critérios opostos para medição. Dentre as opções abaixo, qual representa um par válido (extremos de avaliação) estipulado por este formulário?",
+"alternativas": {
+"A": "Carga Cognitiva: Confusa vs. Intuitiva.",
+"B": "Estética: Poderosa vs. Incompatível.",
+"C": "Navegação: Disfuncional vs. Altamente Funcional.",
+"D": "Apresentação de Informação: Desagradável vs. Agradável."
+},
+"resposta_correta": "A",
+"comentario": "A alternativa A está correta. A Fonte 743 atesta o critério: 'Carga Cognitiva: Confusa (Fonte 743) / Intuitiva (Fonte 746)'. A alternativa B mistura Estética (que é Desagradável/Agradável - Fontes 761, 759) com Mapeamento (Nenhum/Poderoso) ou Compatibilidade. A alternativa C relaciona os valores de Funcionalidade Geral (Disfuncional/Altamente Funcional - Fontes 762, 763) erroneamente ao critério Navegação (Difícil/Fácil - Fontes 742, 745). A alternativa D relaciona valores de Estética ao critério Apresentação Informação (que possui os extremos Obtusa/Clara - Fontes 755, 757)."
+},
+{
+"id": "51",
+"disciplina": "Ergonomia e Usabilidade",
+"assunto": "Avaliação de Interface",
+"banca": "VUNESP",
+"instituicao": "Empresa de Processamento de Dados",
+"ano": "2026",
+"cargo": "Analista de Qualidade e Testes",
+"nivel": "Superior",
+"enunciado": "Em relação à aplicação do Formulário de Julgamento de Qualidade da Interface (Rating), o documento aponta uma restrição essencial sobre quem deve participar da avaliação. Qual é essa restrição metodológica?",
+"alternativas": {
+"A": "O formulário deve ser aplicado somente por engenheiros de software seniores, evitando o contato de usuários leigos com versões beta.",
+"B": "Deve-se realizar a avaliação exclusivamente com usuários classificados como 'instruídos e intermitentes', pois detêm equilíbrio entre sintaxe e semântica.",
+"C": "Todos os critérios listados são obrigatórios em absolutamente todo tipo de software, portanto, a avaliação não possui restrição de perfil, mas sim de abrangência.",
+"D": "Não se deve fazer esta avaliação com usuários novatos em softwares interativos."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta, refletindo com precisão o que está contido na Fonte 737: 'Não se deve fazer esta avaliação com usuários novatos em software interativos'. A alternativa A restringe incorretamente aos engenheiros de software, sem base no texto. A alternativa B exige classificação que não está vinculada a essa restrição específica no documento. A alternativa C está incorreta pois a Fonte 736 afirma justamente o oposto: 'Nem todos os critérios são relevantes em todo tipo de software'."
+},
+{
+"id": "52",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Projeto de IHC",
+"banca": "CEBRASPE",
+"instituicao": "Ministério Público",
+"ano": "2026",
+"cargo": "Técnico Especializado em TI",
+"nivel": "Superior",
+"enunciado": "A respeito das diretrizes iniciais de um projeto de software descritas no material (segundo Shneiderman), qual é a primeira ação fundamental que todo projeto deve adotar ao se planejar a interface?",
+"alternativas": {
+"A": "Aprovar os fundos orçamentários baseando-se unicamente nas metas organizacionais de negócios estabelecidas pelo lado esquerdo do cérebro.",
+"B": "Iniciar-se com um entendimento dos usuários a que se destina, inclusive analisando perfis como idade, sexo, capacidades físicas, educação e background cultural.",
+"C": "Investir imediatamente na construção de protótipos de alta fidelidade sem consulta prévia, utilizando ferramentas exclusivas para WYSIWYG.",
+"D": "Ignorar a satisfação subjetiva e a personalidade do indivíduo a fim de manter inércia e foco exclusivo no processamento de banco de dados."
+},
+"resposta_correta": "B",
+"comentario": "A correta é a B. De acordo com a citação de Scnheiderman presente na Fonte 494: 'todo projeto deve iniciar-se com um entendimento dos usuários a que se destina, inclusive perfis de sua idade, sexo, capacidades físicas, educação, background cultural ou étnico, motivação, metas e personalidade'. As demais opções ignoram o papel do usuário no planejamento e ferem os princípios fundamentais da IHC destacados no documento."
+},
+{
+"id": "53",
+"disciplina": "Ergonomia e Usabilidade",
+"assunto": "Fatores Humanos e Cognição",
+"banca": "AOCP",
+"instituicao": "Secretaria de Fazenda",
+"ano": "2026",
+"cargo": "Auditor Fiscal - Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "No estudo da cognição e das limitações humanas voltadas à IHC, define-se no texto o significado de 'cognição'. Qual é a definição exata atribuída a este termo no material fornecido?",
+"alternativas": {
+"A": "É a arte de converter imagens icônicas em linguagem sintática (macros).",
+"B": "É a medida de retenção fotográfica operada pela visão paralela simultânea.",
+"C": "É a capacidade de adquirir e processar conhecimento.",
+"D": "É o pensamento divergente e não linear, concentrado unicamente no 'todo' metafórico das coisas."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta conforme a Fonte 528: 'estilo cognitivo (cognição: capacidade de adquirir e processar conhecimento)'. A alternativa A e B são invenções tecnológicas. A alternativa D descreve características do pensamento ligado ao hemisfério direito do cérebro (Fonte 551), não a definição global de cognição fornecida no slide inicial."
+},
+{
+"id": "54",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Projeto de IHC",
+"banca": "Instituto Consulplan",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Analista de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "O 'Projeto de Interface Humano-Computador' abrange um conjunto crítico de processos e decisões estruturais. De acordo com o documento, quais das seguintes questões ou etapas fazem parte diretamente das preocupações do projeto da interface?",
+"alternativas": {
+"A": "Delinear as tarefas orientadas ao computador e ao ser humano, definir as ferramentas para protótipos, implementar o modelo e avaliar a qualidade do resultado.",
+"B": "Desenvolver exclusivamente os drivers de teclado, eliminando o scrolling e forçando a padronização WYSIWYG em aplicações de engenharia civil.",
+"C": "Priorizar o ensino do lado direito do cérebro dos programadores para que possam elaborar estilos de interação restritos sem uso de formulários.",
+"D": "Adotar cegamente o framework WIMP, anulando menus pull-down e removendo toda e qualquer tecla aceleradora visando uma redução de bugs no backend."
+},
+"resposta_correta": "A",
+"comentario": "A alternativa A é a correta. O slide sobre 'Projeto de Interface Humano-Computador. No que concerne?' (Fontes 727 a 732) lista os seguintes itens: 'delinear as tarefas orientadas ao computador e ao ser humano'; 'questões do projeto que interagem com o projeto da interface'; 'quais ferramentas utilizar para construir protótipos?'; 'implementar um modelo'; 'avaliar o resultado final em termos de qualidade'. As demais opções citam bizarramente recortes desconexos do documento, contrariando boas práticas descritas em outros slides."
+}
 ]
