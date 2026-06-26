@@ -872,5 +872,196 @@
 },
 "resposta_correta": "A",
 "comentario": "A alternativa A é a correta. O slide sobre 'Projeto de Interface Humano-Computador. No que concerne?' (Fontes 727 a 732) lista os seguintes itens: 'delinear as tarefas orientadas ao computador e ao ser humano'; 'questões do projeto que interagem com o projeto da interface'; 'quais ferramentas utilizar para construir protótipos?'; 'implementar um modelo'; 'avaliar o resultado final em termos de qualidade'. As demais opções citam bizarramente recortes desconexos do documento, contrariando boas práticas descritas em outros slides."
+},
+  [
+{
+"id": "55",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Interface Humano-Computador",
+"banca": "CEBRASPE",
+"instituicao": "Órgão Público",
+"ano": "2026",
+"cargo": "Analista de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "O material conceitua a Interface com o Usuário (IU) como uma parte fundamental de um software. Com base nesse conceito primário, assinale a alternativa que reflete corretamente o impacto que a interface gera na relação entre o usuário e o sistema.",
+"alternativas": {
+"A": "É um componente estritamente restrito ao processamento lógico em background, que raramente afeta a aceitação ou avaliação geral do sistema pelo usuário.",
+"B": "Trata-se da camada invisível do sistema operacional, responsável por traduzir comandos visuais para o hardware sem a percepção do operador humano.",
+"C": "Pode se tornar uma fonte de motivação ou, alternativamente, se for mal projetada, pode se transformar em um ponto decisivo na rejeição total do sistema.",
+"D": "Representa exclusivamente o modelo de automação de escritórios e independe de fatores humanos, isolando as funções de processamento da experiência visual."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta conforme a Fonte 484, que define que a interface 'Pode se tornar uma fonte de motivação e até (...) uma grande ferramenta para o usuário, ou então, se mal projetada, pode se transformar em um ponto decisivo na rejeição de um sistema'. As demais alternativas contrariam as diretrizes de IHC, desconsiderando a visibilidade da interface e o seu impacto na aceitação do produto."
+},
+{
+"id": "56",
+"disciplina": "Ergonomia e Usabilidade",
+"assunto": "Perfil de Usuários em IHC",
+"banca": "FGV",
+"instituicao": "Tribunal de Contas",
+"ano": "2026",
+"cargo": "Auditor de TI",
+"nivel": "Superior",
+"enunciado": "Na classificação dos tipos de usuário para projetos de IHC, como são caracterizados tecnicamente os usuários definidos como 'Principiantes' no que diz respeito ao seu conhecimento sobre o sistema?",
+"alternativas": {
+"A": "Possuem bom conhecimento semântico e sintático, procurando sempre atalhos e modos de abreviação para agilizar a interação diária.",
+"B": "Apresentam razoável conhecimento semântico a respeito do domínio, mas detêm pouca lembrança de informações sintáticas de como usar a interface.",
+"C": "Demonstram alta proficiência e destreza na mecânica da interação, mas ignoram completamente o significado das metas e dos processos de negócio da aplicação.",
+"D": "Possuem pouco conhecimento sintático (relativo à mecânica da interação) e pouco conhecimento semântico (referente ao significado das metas e objetivos da aplicação)."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta com base na Fonte 497, que descreve explicitamente os Principiantes como tendo 'pouco conhecimento sintático (mecânica da interação para utilizar a interface de forma eficiente) e semântico (significado das metas e objetivos da aplicação)'. A alternativa A descreve os usuários 'Instruídos e frequentes' (Fonte 499). A alternativa B descreve os usuários 'Instruídos e intermitentes' (Fonte 498)."
+},
+{
+"id": "57",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Fatores Humanos e Cognição",
+"banca": "FCC",
+"instituicao": "Ministério Público",
+"ano": "2026",
+"cargo": "Analista de Sistemas",
+"nivel": "Superior",
+"enunciado": "Ao abordar o processamento de informações e a cognição humana, o documento diferencia as funções dos hemisférios cerebrais. Quais características estão diretamente e exclusivamente associadas ao lado direito do cérebro?",
+"alternativas": {
+"A": "Emprego primário da lógica, orientação a detalhes, pensamento convergente e conhecimento baseado em fatos concretos e palavras.",
+"B": "Pensamento divergente, uso predominante de sentimentos, percepção espacial, abstração metafórica e foco no todo das coisas.",
+"C": "Reconhecimento de modelos lineares, processamento de fórmulas matemáticas, ciências e conhecimento baseado estritamente na realidade prática.",
+"D": "Pensamento vertical, direto, realista, calculista e direcionado exclusivamente à linguagem sintática sequencial e objetiva."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. O material elenca as características do lado direito do cérebro nas Fontes 550, 551, 552 e 577 a 591: intuição, pensamento divergente, imaginativo, metafórico, não-linear, subjetivo, concentra-se no TODO, uso de sentimentos, percepção espacial, etc. As alternativas A, C e D descrevem, na verdade, as características listadas para o lado esquerdo do cérebro (Fontes 544, 547 e 563 a 576)."
+},
+{
+"id": "58",
+"disciplina": "Engenharia de Software",
+"assunto": "Usabilidade",
+"banca": "VUNESP",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Arquiteto de Software",
+"nivel": "Superior",
+"enunciado": "O conceito central de usabilidade é definido no material como uma combinação de várias características métricas e perceptivas centradas no usuário. Qual das alternativas lista com precisão e integralmente essas características?",
+"alternativas": {
+"A": "Inércia absoluta na visualização gráfica, uso intenso e obrigatório de macros, eliminação de menus aninhados e foco total na redução do processamento em lote.",
+"B": "Estética agradável, integração coordenada de mídias pesadas, mapeamento espacial poderoso e funcionalidade geral voltada para usuários de automação corporativa.",
+"C": "Facilidade de aprendizagem, rapidez na execução de tarefas, taxa de erros baixa, satisfação subjetiva do usuário e fidelização ao longo do tempo.",
+"D": "Otimização puramente sistêmica de operações, uso generalizado de teclas aceleradoras, multitarefa intermitente e controle mantido de forma velada pelo back-end."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está perfeitamente alinhada ao material, que lista em 'Definições de usabilidade' (Fontes 597 a 603) exatamente os seguintes tópicos: facilidade de aprendizagem, rapidez na execução de tarefas, taxa de erros baixa, satisfação subjetiva do usuário, e fidelização ao longo do tempo. As demais alternativas misturam diretrizes de design, avaliação de formulários (Rating) ou inventam conceitos não aplicáveis à definição estrutural de usabilidade."
+},
+{
+"id": "59",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Estilos de Interação",
+"banca": "Instituto Consulplan",
+"instituicao": "Câmara Municipal",
+"ano": "2026",
+"cargo": "Analista Desenvolvedor",
+"nivel": "Superior",
+"enunciado": "Os diferentes estilos de interação homem-máquina trazem componentes virtuais e widgets que oferecem vantagens específicas. Segundo o documento, qual é a principal utilidade e o diferencial proporcionado pelo uso de menus pull-down?",
+"alternativas": {
+"A": "Eles reduzem significativamente a quantidade de digitação, sendo projetados para eliminar a fobia de teclado de usuários novatos ao exibir apenas botões sem texto.",
+"B": "Eles garantem a inércia da visualização do sistema, impedindo ativamente que tipos diferentes de informações conflitantes sejam exibidos simultaneamente em multitarefa.",
+"C": "Eles substituem a necessidade de janelas e de hardware gráfico (WIMP), centralizando todas as operações em uma única barra de comandos processada via linguagem natural.",
+"D": "Eles possibilitam a execução de tarefas de diálogo mais facilmente através de uma organização hierárquica, permitindo que o usuário vá diretamente na opção desejada."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta, embasada diretamente na Fonte 692, que afirma que os menus pull-down 'possibilitam a execução de tarefas de diálogo mais facilmente (organização hierárquica, vou na opção diretamente)'. A alternativa A refere-se às vantagens dos 'ícones, scrolling, botões' (Fonte 693). As alternativas B e C inventam falsas funcionalidades incompatíveis com as diretrizes e a estrutura dos menus pull-down no modelo GUI/WIMP."
+},
+{
+"id": "60",
+"disciplina": "Ergonomia e Usabilidade",
+"assunto": "Avaliação de Interface",
+"banca": "AOCP",
+"instituicao": "Secretaria Estadual de Saúde",
+"ano": "2026",
+"cargo": "Técnico de Suporte em Informática",
+"nivel": "Médio",
+"enunciado": "O 'Formulário de Julgamento de Qualidade da Interface (Rating)', desenvolvido por Reeves e adotado por Campos, estabelece pares de critérios com extremos de avaliação opostos. Qual alternativa apresenta de forma correta e exata a associação de um critério aos seus respectivos extremos estabelecidos no formulário?",
+"alternativas": {
+"A": "Estética da Interface: Confusa (pior cenário) x Intuitiva (melhor cenário).",
+"B": "Mapeamento: Nenhum (pior cenário) x Poderoso (melhor cenário).",
+"C": "Desenho de Tela: Disfuncional (pior cenário) x Altamente Funcional (melhor cenário).",
+"D": "Carga Cognitiva: Desagradável (pior cenário) x Agradável (melhor cenário)."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a única correta. O material indica os extremos do critério 'Mapeamento' como 'Nenhum' (Fonte 750) e 'Poderoso' (Fonte 747). A alternativa A confunde os extremos da 'Carga Cognitiva' (Confusa/Intuitiva) aplicando-os erroneamente à 'Estética'. A alternativa C usa os extremos da 'Funcionalidade Geral' (Disfuncional/Altamente funcional) para o 'Desenho de Tela' (cujos extremos são Viola/Segue Princípios). A alternativa D atribui os extremos da 'Estética' (Desagradável/Agradável) ao critério de 'Carga Cognitiva'."
+},
+{
+"id": "61",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Design de Interação",
+"banca": "IBAM",
+"instituicao": "Empresa Pública de TI",
+"ano": "2026",
+"cargo": "Analista de Negócios TI",
+"nivel": "Superior",
+"enunciado": "O projeto de interfaces exige o cumprimento de certas diretrizes conhecidas como 'Linhas de orientação do design de interação'. Qual das seguintes condutas metodológicas é expressamente recomendada pelo material como boa prática?",
+"alternativas": {
+"A": "O design da interface deve ser centrado estritamente na capacidade de processamento do sistema, evitando ao máximo o envolvimento precoce do usuário para não comprometer os prazos.",
+"B": "Deve-se garantir que as ações executadas pelo usuário sejam irreversíveis de forma padrão para manter a integridade do banco de dados, desencorajando o uso de comandos de 'undo'.",
+"C": "Recomenda-se envolver ativamente os usuários no projeto através de entrevistas, observação do seu modo de trabalhar, levantamento e análise de perfil, tarefas e fluxo de informação.",
+"D": "O controle de execução deve ser transferido do usuário para macros sistêmicas independentes (do lado do sistema), desabilitando atalhos e teclas de função complexas."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C reflete fielmente as diretrizes apontadas nas Fontes 607 a 612: 'Envolver os usuários no projeto: entrevistas aos usuário; observação dos usuário a trabalhar; análise do perfil dos usuário; análise de tarefas; análise do fluxo de informação'. A alternativa A contraria o princípio primordial de 'Praticar o design de interfaces centrado no usuário (e não no sistema)' (Fontes 605/606). A alternativa B ofende o princípio de que 'As ações do usuário devem ser facilmente reversíveis: Existência de um comando undo' (Fontes 621/622). A alternativa D contraria 'Manter o controle do lado do usuário' (Fonte 618)."
+},
+{
+"id": "62",
+"disciplina": "Engenharia de Software",
+"assunto": "Estilos de Interação",
+"banca": "CEBRASPE",
+"instituicao": "Órgão Federal",
+"ano": "2026",
+"cargo": "Engenheiro de Dados",
+"nivel": "Superior",
+"enunciado": "O estilo de interação computacional conhecido pela sigla WYSIWYG (What You See Is What You Get) se tornou um padrão em processadores de texto e diversas interfaces. Conforme o material, além de suas vantagens inerentes, qual é a principal característica limitante ou desvantagem atrelada especificamente a este estilo?",
+"alternativas": {
+"A": "Trata-se de um estilo altamente restrito, dado o fato irrefutável de que existem certas aplicações que não conseguem ser implementadas seguindo esse paradigma.",
+"B": "A imagem gerada e trabalhada ativamente na tela difere de forma substancial da impressão final do documento, provocando alto índice de rejeição em escritórios.",
+"C": "A sua tecnologia base depende exclusivamente de linguagens naturais não gráficas, limitando o uso para principiantes desprovidos de conhecimentos sintáticos apurados.",
+"D": "Esse estilo anula a utilização do framework WIMP, obrigando a conversão de todos os menus e ícones gráficos para linhas sequenciais baseadas em comandos Unix."
+},
+"resposta_correta": "A",
+"comentario": "A correta é a alternativa A. Nas desvantagens apontadas na Fonte 684, destaca-se que 'Existem aplicações que não conseguem ser implementadas neste estilo (estilo restrito)'. A alternativa B aponta o oposto da verdade; a tela diferir da impressão é uma desvantagem listada para estilos NÃO WYSIWYG (Fonte 684) - no WYSIWYG a imagem manipulada é a mesma que é gerada. As alternativas C e D misturam conceitos técnicos avulsos de linguagens naturais e comandos, o que nada tem a ver com a restrição do WYSIWYG."
+},
+{
+"id": "63",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Projeto de IHC",
+"banca": "FCC",
+"instituicao": "Tribunal de Justiça",
+"ano": "2026",
+"cargo": "Analista Judiciário - Sistemas",
+"nivel": "Superior",
+"enunciado": "A modelagem e o planejamento inicial da interação humano-computador são cruciais para a usabilidade e adoção do sistema. Com base nas premissas de Scnheiderman trazidas no documento, qual é a exigência primordial para o início do projeto no que se refere ao 'Modelo de usuário'?",
+"alternativas": {
+"A": "Deve haver uma farta formulação imediata de protótipos em terceira dimensão (3D), fundamentando-se somente no conhecimento pragmático de usuários peritos, visando otimizar prazos.",
+"B": "O projeto deve iniciar a prototipação apenas através da implementação do hardware WIMP e de teclados adaptados que reprimam e reduzam a carga estritamente do lado direito do cérebro.",
+"C": "O projeto deve se eximir da coleta de dados pessoais, dispensando análises de cultura, motivações e personalidade a fim de respeitar os princípios paralelos do design neutro focado unicamente na máquina.",
+"D": "Todo projeto deve iniciar-se impreterivelmente com um entendimento profundo dos usuários a que se destina, abarcando perfis sobre idade, sexo, capacidades físicas, educação, cultura, motivação e personalidade."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta por refletir a citação direta de Scnheiderman, presente na Fonte 494: 'todo projeto deve iniciar-se com um entendimento dos usuários a que se destina, inclusive perfis de sua idade, sexo, capacidades físicas, educação, background cultural ou étnico, motivação, metas e personalidade'. As alternativas A, B e C oferecem recomendações inteiramente conflitantes com o princípio de design centrado no usuário estabelecido no documento, privilegiando hardware ou abordagens excludentes."
+},
+{
+"id": "64",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Evolução das Interfaces",
+"banca": "FGV",
+"instituicao": "Empresa Estadual",
+"ano": "2026",
+"cargo": "Designer Gráfico / UX",
+"nivel": "Superior",
+"enunciado": "A evolução tecnológica propiciou saltos geracionais nos recursos apresentados aos usuários nas interfaces computacionais. De acordo com o documento em tela, quais elementos fundamentais marcaram e caracterizam o que é chamado de 'Terceira geração' de interfaces?",
+"alternativas": {
+"A": "O preenchimento ríspido de formulários textuais em lote aliada ao uso exclusivo e central de macros acionadas por sequências do teclado.",
+"B": "A transição definitiva para linguagens naturais controladas por comandos de voz, resultando na eliminação e obsolescência total da interação via telas gráficas.",
+"C": "A adoção ampla e sistemática de linguagens de comando de baixo nível alinhada a diretrizes restritas ao terminal estilo prompt.",
+"D": "A utilização de janelas, permitindo a exibição simultânea e organizada de diferentes tipos de informações, associada intrinsecamente ao conceito operacional de multitarefa."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está rigorosamente correta conforme as Fontes 717 a 720, que atestam sobre a 'Terceira geração: utilização de: janelas (tipos diferentes de informação podem ser exibidas simultaneamente e sem frustração); multitarefa (fazer várias coisas ao mesmo tempo, na visão do usuário)'. As alternativas A, B e C se referem equivocadamente a estágios anteriores, ao estilo de linha de comando ou a tecnologias que escapam à definição visual e conceitual atrelada à terceira geração."
 }
 ]
