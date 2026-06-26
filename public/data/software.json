@@ -1633,5 +1633,290 @@
 },
 "resposta_correta": "C",
 "comentario": "A alternativa C responde perfeitamente conforme a narrativa da Fonte 1274, 1275 e 1276. As empresas têm 'dificuldades em avaliar o conhecimento e experiência de um profissional' e adotam a certificação como base eliminatória. Dessa forma, 'é muito provável que um profissional experiente... seja descartado... por não possuir uma certificação. Este é o principal motivo das críticas direcionadas às certificações'. As demais opções não constam em nenhum ponto do documento."
+},
+    {
+"id": "95",
+"disciplina": "Engenharia de Software",
+"assunto": "Manutenção de Software - Definição",
+"banca": "CESPE/Cebraspe",
+"instituicao": "Órgão Federal",
+"ano": "2026",
+"cargo": "Analista de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "O conceito de Manutenção de Software engloba diversas vertentes econômicas e tecnológicas. Com base na definição oficial do SEI (2005) presente no material, a manutenção de software é corretamente definida como:",
+"alternativas": {
+"A": "O conjunto de estratégias estáticas de teste de regressão feitas obrigatoriamente antes da entrega final ao cliente, visando assegurar a portabilidade sistêmica.",
+"B": "O custo associado à modificação de um sistema de software ou componente depois de entregue para corrigir falhas, melhorar o desempenho ou outros atributos, ou para adaptá-lo a um ambiente modificado.",
+"C": "O processo orçamentário destinado exclusivamente à correção de defeitos em sistemas operacionais embarcados, não abrangendo atributos de reengenharia evolutiva.",
+"D": "O esforço em homens-hora despendido na etapa de levantamento de requisitos para prevenir o cancelamento do projeto de software."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B reproduz fielmente a definição do SEI (2005). As demais alternativas distorcem o conceito, restringindo-o a testes, requisitos ou a sistemas embarcados de forma arbitrária."
+},
+{
+"id": "96",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Tipos de Manutenção",
+"banca": "FGV",
+"instituicao": "Tribunal de Contas",
+"ano": "2026",
+"cargo": "Auditor de TI",
+"nivel": "Superior",
+"enunciado": "A manutenção de software classifica-se em quatro tipos fundamentais, de acordo com o objetivo da intervenção. Assinale a alternativa que relaciona corretamente o tipo de manutenção à sua respectiva descrição, conforme o material apresentado.",
+"alternativas": {
+"A": "Adaptativa: acréscimo de funcionalidades não previstas em seu documento de requisitos original.",
+"B": "Preventiva (reengenharia): adaptação do software para acomodar mudanças em políticas governamentais ou novas regras de negócio.",
+"C": "Evolutiva (ou perfectiva): o software é modificado para oferecer uma base melhor para futuras manutenções, melhorando sua confiabilidade.",
+"D": "Corretiva: correção de erros/falhas no sistema."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta. A alternativa A confunde Adaptativa com Evolutiva. A alternativa B confunde Preventiva com Adaptativa. A alternativa C confunde Evolutiva com Preventiva."
+},
+{
+"id": "97",
+"disciplina": "Engenharia de Software",
+"assunto": "Estatísticas de Manutenção",
+"banca": "FCC",
+"instituicao": "Empresa Pública",
+"ano": "2026",
+"cargo": "Analista de Sistemas",
+"nivel": "Superior",
+"enunciado": "A manutenção consome a maior parcela do orçamento de software de uma organização. De acordo com os gráficos de consumo e custo de manutenção presentes no PDF, qual dos tipos de manutenção consome a maior porcentagem individual dos esforços operacionais?",
+"alternativas": {
+"A": "Preventiva, consumindo 25% dos esforços para evitar a obsolescência.",
+"B": "Adaptativa, que representa 21% do volume de manutenção devido a constantes mudanças de leis.",
+"C": "Evolutiva, que consome cerca de 50% dos esforços para o acréscimo de funcionalidades.",
+"D": "Corretiva, sendo responsável por 70% do orçamento para reparo de bugs críticos de segurança."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C é a correta. O gráfico 'Quanto consome?' estabelece os percentuais: Evolutiva (50%), Adaptativa (25%), Corretiva (21%) e Preventiva (4%). A alternativa D mistura o percentual de orçamento global (70%) com a parcela de Corretiva (21%)."
+},
+{
+"id": "98",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Atividades da Manutenção",
+"banca": "VUNESP",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Desenvolvedor",
+"nivel": "Superior",
+"enunciado": "As 'Atividades Gerais' de manutenção seguem um fluxo para garantir que a modificação não impacte negativamente o sistema. Uma dessas atividades fundamentais consiste na 'repetição de testes passados a fim de garantir que as modificações não introduziram falhas no software anteriormente operacional'. Essa definição refere-se aos:",
+"alternativas": {
+"A": "Testes de Regressão.",
+"B": "Testes de Validação Alfa.",
+"C": "Testes Intertarefas.",
+"D": "Testes Estáticos."
+},
+"resposta_correta": "A",
+"comentario": "A alternativa A está correta. A definição fornecida no enunciado é exatamente a transcrição da atividade 'Testes de Regressão' listada no slide de Atividades Gerais. As demais opções não correspondem a essa etapa específica de repetição de testes para evitar a quebra de funcionalidades já existentes."
+},
+{
+"id": "99",
+"disciplina": "Engenharia de Software",
+"assunto": "Documentação na Manutenção",
+"banca": "Instituto Consulplan",
+"instituicao": "Câmara Municipal",
+"ano": "2026",
+"cargo": "Analista Desenvolvedor",
+"nivel": "Superior",
+"enunciado": "O processo de manutenção envolve artefatos formais. O 'Formulário de Pedido de Manutenção', que possui origem externa, possui exigências documentais diferentes dependendo da natureza do chamado. Se a manutenção for do tipo Adaptativa ou Perfectiva, o que deve constar essencialmente nesse formulário?",
+"alternativas": {
+"A": "Uma descrição completa das circunstâncias que levaram ao erro, incluindo dados de entrada e saída (screen shots).",
+"B": "A especificação da mudança, atuando como uma especificação de requisitos abreviada.",
+"C": "O registro prioritário da modificação com a lista completa e homologada dos artefatos de software que serão impactados pela reengenharia.",
+"D": "O cálculo exato do esforço exigido em horas para a manutenção da configuração do Bugzilla."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. O slide 'Documentos na Manutenção' orienta que, para a 'Manutenção Adaptativa ou Perfectiva', deve constar a 'especificação da mudança (i.e. uma especificação de requisitos abreviada)'. A alternativa A corresponde à 'Manutenção Corretiva'. As alternativas C e D referem-se ao 'Relatório de Mudanças de Software (origem interna)'."
+},
+{
+"id": "100",
+"disciplina": "Governança de TI",
+"assunto": "Normas de Processo de Manutenção",
+"banca": "AOCP",
+"instituicao": "Secretaria de Saúde",
+"ano": "2026",
+"cargo": "Analista em TI",
+"nivel": "Superior",
+"enunciado": "A padronização das atividades de manutenção é governada por normativas específicas. O material aponta uma norma internacional de manutenção que define um processo idêntico ao da NBR ISO 12207, porém de forma mais detalhada, abrangendo a definição e estrutura de um plano de manutenção. Qual é esta norma?",
+"alternativas": {
+"A": "ISO 9000",
+"B": "ISO/IEC 9126",
+"C": "ISO 14764",
+"D": "ISO/IEC 14958"
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta. O slide 'Processo de Manutenção - Norma ISO 14764' declara textualmente que se trata da 'Norma internacional de manutenção', que 'Define um processo de manutenção idêntico ao da ISO 12207, mas mais detalhado' e 'Define outros procedimentos... Definição e estrutura de um plano de manutenção'. As demais normas referem-se a qualidade geral ou avaliação de produto."
+},
+{
+"id": "101",
+"disciplina": "Engenharia de Software",
+"assunto": "Manutenibilidade e Princípios",
+"banca": "IBAM",
+"instituicao": "Empresa de Processamento",
+"ano": "2026",
+"cargo": "Arquiteto de Software",
+"nivel": "Superior",
+"enunciado": "A 'Manutenibilidade' é definida como a facilidade com que um software pode ser entendido, corrigido e adaptado. Diversos fatores influenciam esse atributo de qualidade. Assinale a opção que apresenta corretamente um Princípio de Projeto que favorece a manutenibilidade, conforme citado no texto.",
+"alternativas": {
+"A": "Acréscimo de Código Espaguete e Remoção de Encapsulamento.",
+"B": "Modularidade (focando em alta Coesão e baixo Acoplamento) e Ocultação de Informação.",
+"C": "Desconstrução de Camadas (Tubos e Filtros) para a unificação de toda a lógica em um único arquivo-fonte.",
+"D": "Ausência de Padrões de Projeto (Design Patterns) a fim de garantir a liberdade criativa e abstrata do programador."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B está correta. O slide 'Manutenibilidade - Fatores que influenciam' elenca explicitamente a 'Adoção de Princípios de Projeto: Modularidade (Coesão e Acoplamento), Ocultação de Informação, Encapsulamento, Separação de Objetivos, Generalização (Abstração)'. As demais alternativas descrevem práticas não recomendadas (como retirar encapsulamento, anular padrões e desfazer arquitetura em camadas) que contrariam o material."
+},
+{
+"id": "102",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Métricas de Manutenção",
+"banca": "CEBRASPE",
+"instituicao": "Tribunal Judiciário",
+"ano": "2026",
+"cargo": "Analista de Qualidade",
+"nivel": "Superior",
+"enunciado": "A manutenibilidade do software é uma medida indireta, mensurada através dos atributos da atividade de manutenção. Dentre as métricas de projeto e complexidade indicadas no documento para mensurar esse esforço, qual se destaca como uma métrica reconhecida de complexidade?",
+"alternativas": {
+"A": "Métrica de McCabe.",
+"B": "Modelo Bugzilla.",
+"C": "Métrica de Encapsulamento de MVC.",
+"D": "Diagrama P-CMM de reestruturação temporal."
+},
+"resposta_correta": "A",
+"comentario": "A alternativa A é a correta. O documento menciona explicitamente em 'Outras métricas' o uso de 'métricas de complexidade do software (ex: McCabe)'. O Bugzilla é um software de relatório de defeitos, MVC é um padrão de arquitetura e P-CMM é um modelo de maturidade focado em pessoas."
+},
+{
+"id": "103",
+"disciplina": "Engenharia de Software",
+"assunto": "Desafios na Manutenção",
+"banca": "FGV",
+"instituicao": "Órgão Público",
+"ano": "2026",
+"cargo": "Analista de Sistemas Pleno",
+"nivel": "Superior",
+"enunciado": "Profissionais de TI frequentemente encontram sérios problemas durante a fase de manutenção de sistemas legados. Qual dos fatores abaixo é apontado pelo material como um dos principais problemas sociotécnicos encontrados na manutenção?",
+"alternativas": {
+"A": "A enorme disponibilidade de desenvolvedores originais, que acabam gerando conflitos de interesse ao competir pelo conserto do código.",
+"B": "O excesso de documentação de análise e projeto, que costuma estar sempre tão atualizada que retarda o tempo de leitura da equipe.",
+"C": "A facilidade natural em se realizar testes de regressão graças à abundante presença de registros de testes automatizados.",
+"D": "A baixa estima dos mantenedores, pois geralmente os profissionais acham que é mais 'nobre' a tarefa de desenvolver novos sistemas do que a de manter sistemas existentes."
+},
+"resposta_correta": "D",
+"comentario": "A alternativa D está correta, figurando exatamente no slide 'Problemas na Manutenção'. As alternativas A, B e C afirmam justamente o inverso dos problemas apontados no material, que ressalta que 'Geralmente, a única fonte de informação disponível... é o código fonte', que há 'Dificuldade em se realizar Testes de Regressão quando não existe nenhum registro' e que 'os desenvolvedores originais nem sempre se encontram disponíveis'."
+},
+{
+"id": "104",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Métodos para Apoio à Manutenção",
+"banca": "FCC",
+"instituicao": "Empresa Estadual",
+"ano": "2026",
+"cargo": "Desenvolvedor Sênior",
+"nivel": "Superior",
+"enunciado": "Para superar as dificuldades inerentes à manutenção, técnicas avançadas são aplicadas ao código legado. Qual é a definição exata de 'Engenharia Reversa' de acordo com o PDF estudado?",
+"alternativas": {
+"A": "É o processo iterativo de incorporar em um novo produto códigos e especificações geradas durante desenvolvimentos anteriores para poupar tempo de codificação.",
+"B": "É a disciplina que aplica direcionamento técnico para controlar as modificações sobre as características físicas de um item de configuração.",
+"C": "É o processo de análise dos componentes do sistema e dos seus relacionamentos, a fim de descrever este sistema em um nível de abstração mais alto do que o código fonte.",
+"D": "É a recuperação de informações de projeto a fim de reconstituir e alterar fisicamente o sistema para melhorar a sua qualidade global (envolvendo reestruturação)."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C reproduz a definição literal de Engenharia Reversa encontrada no documento. A alternativa A descreve 'Reutilização de Software'. A alternativa B descreve 'Gerência de Configuração'. A alternativa D descreve 'Reengenharia'."
+},
+{
+"id": "105",
+"disciplina": "Engenharia de Software",
+"assunto": "Ciclo de Vida e Custos",
+"banca": "VUNESP",
+"instituicao": "Polícia Civil",
+"ano": "2026",
+"cargo": "Perito em Informática",
+"nivel": "Superior",
+"enunciado": "Analisando a divisão dos recursos financeiros ao longo do tempo de vida útil de uma aplicação, o 'Custo de Manutenção' representa uma parcela significativa. Conforme o material instrucional, a fase de 'Operação e Manutenção' compromete, frequentemente, qual faixa percentual do Custo Total do Projeto?",
+"alternativas": {
+"A": "De 20% a 40%",
+"B": "Aproximadamente 50%",
+"C": "De 60% a 80%",
+"D": "Menos de 10%"
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C é a correta. O documento afirma na seção 'Custo de Manutenção' que 'O custo de Manutenção de Software está freqüentemente orçado entre 60% e 80% de todo o Custo do Projeto', sendo este o valor destinado à fase de 'Operação e Manutenção'. A fase de 'Desenvolvimento' consome de '20 a 40%'."
+},
+{
+"id": "106",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Reengenharia vs. Engenharia Reversa",
+"banca": "Instituto Consulplan",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Analista Judiciário",
+"nivel": "Superior",
+"enunciado": "Os conceitos de Engenharia Reversa e Reengenharia são frequentemente confundidos. Baseando-se nas definições estritas do material, assinale a opção que distingue corretamente a Reengenharia.",
+"alternativas": {
+"A": "A Reengenharia é apenas uma ferramenta de diagrama lógico que não permite modificação física do sistema, diferentemente da Engenharia Reversa, que reescreve o código.",
+"B": "A Reengenharia envolve um processo mais amplo e destrutivo, sendo formada por: Engenharia Reversa, Reestruturação e Engenharia Progressa (visando melhorar a qualidade global do software).",
+"C": "A Reengenharia atua exclusivamente no banco de dados via formulários de manutenção do tipo 'Perfectiva', abstendo-se do código-fonte.",
+"D": "Ambos os termos significam exatamente a mesma coisa na norma NBR ISO 12207, focando na reestruturação exclusiva do hardware."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B é a correta. A definição de Reengenharia estabelece que ela envolve 'Engenharia Reversa, Reestruturação e Engenharia Progressa' para 'melhorar a sua qualidade global'. As demais alternativas propõem definições limitantes ou incorretas."
+},
+{
+"id": "107",
+"disciplina": "Engenharia de Software",
+"assunto": "Gerência de Configuração",
+"banca": "AOCP",
+"instituicao": "Polícia Militar",
+"ano": "2026",
+"cargo": "Oficial Técnico",
+"nivel": "Superior",
+"enunciado": "O controle estrutural do software é balizado pela IEEE por meio da 'Gerência de Configuração'. Dentre as responsabilidades dessa disciplina citadas no texto, encontra-se:",
+"alternativas": {
+"A": "Projetar interfaces gráficas e adaptar o software aos novos sistemas operacionais.",
+"B": "Aumentar a coesão do código de forma autônoma sem a interferência dos programadores.",
+"C": "Identificar e documentar as características físicas e funcionais de um item de configuração, controlar suas modificações e relatar o status da mudança.",
+"D": "Desenvolver testes alfa nas instalações do cliente focando unicamente na redução de carga cognitiva."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta e transcreve a definição da IEEE para Gerência de Configuração apresentada no material: 'disciplina... para identificar e documentar as características físicas e funcionais de um item de configuração, controlar as modificações... e relatar o processamento da mudança'. As outras opções referem-se a manutenção adaptativa, refatoração de código (princípios) ou testes."
+},
+{
+"id": "108",
+"disciplina": "Tecnologia da Informação",
+"assunto": "Processos Iniciais",
+"banca": "CEBRASPE",
+"instituicao": "Ministério Público",
+"ano": "2026",
+"cargo": "Analista de Tecnologia da Informação",
+"nivel": "Superior",
+"enunciado": "O ciclo da manutenção precisa de marcos de início e fim. Conforme a norma NBR ISO 12207, qual evento deflagra (inicia) formalmente o processo de Manutenção de Software?",
+"alternativas": {
+"A": "A manutenção se inicia quando a equipe de desenvolvedores originais é desmobilizada para o início do treinamento no projeto seguinte.",
+"B": "Inicia-se rigorosamente durante a fase de engenharia reversa do código após a entrega final de protótipos WIMP.",
+"C": "A manutenção se inicia quando uma necessidade de modificação é identificada, ou seja, quando se necessita corrigir problemas, realizar adaptações ou melhorias.",
+"D": "Ocorre estritamente a partir da descontinuação do software pelo cliente (end-of-life)."
+},
+"resposta_correta": "C",
+"comentario": "A alternativa C está correta conforme a Fonte 7, que afirma: 'A Manutenção se inicia quando uma necessidade de modificação é identificada, ou seja, quando se necessita corrigir problemas, realizar adaptações ou melhorias'. A alternativa D está errada pois a descontinuação do software marca o 'final' do processo de manutenção."
+},
+{
+"id": "109",
+"disciplina": "Governança de TI",
+"assunto": "Reutilização de Software",
+"banca": "IBAM",
+"instituicao": "Prefeitura Municipal",
+"ano": "2026",
+"cargo": "Arquiteto de Soluções",
+"nivel": "Superior",
+"enunciado": "A 'Reutilização de Software' não se limita exclusivamente a copiar blocos de código-fonte. Segundo os métodos de apoio à manutenção delineados no PDF, o processo de Reutilização pode incorporar em um novo Produto:",
+"alternativas": {
+"A": "Unicamente o código-fonte executável, sendo vetada a reutilização de documentação por questões de copyright.",
+"B": "Código, especificações de requisito e de projeto, planos de teste, e qualquer produto gerado durante desenvolvimentos anteriores.",
+"C": "Apenas o banco de dados populado com a massa de testes gerada via FillDB ou bibliotecas Faker.",
+"D": "Modelos de hardware físico legados que devem ser integrados à nova plataforma corporativa em nuvem."
+},
+"resposta_correta": "B",
+"comentario": "A alternativa B reproduz fielmente o escopo da 'Reutilização de Software' conforme o documento: 'Processo de Incorporar em um novo Produto: código, especificações de requisito e de projeto, planos de teste, qualquer produto gerado durante desenvolvimentos anteriores'. As demais alternativas restringem erroneamente o escopo apenas a código, dados de teste ou introduzem conceitos alheios (hardware em nuvem)."
 }
 ]
