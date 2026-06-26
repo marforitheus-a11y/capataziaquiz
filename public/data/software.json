@@ -244,7 +244,7 @@
          "D":"Geração da Aplicação."
       },
       "resposta_correta":"B",
-      "comentario":"O diagrama do Modelo de Prototipagem inclui a fase de \\'Escutar o Cliente\\' (Página 2)."
+      "comentario":"O diagrama do Modelo de Prototipagem inclui a fase de 'Escutar o Cliente' (Página 2)."
    },
    {
       "id":14,
@@ -263,7 +263,7 @@
          "D":"Mais de 2 anos."
       },
       "resposta_correta":"B",
-      "comentario":"O material especifica que o objetivo do Modelo RAD é de \\'60 a 90 dias para criar um sistema\\' (Página 2)."
+      "comentario":"O material especifica que o objetivo do Modelo RAD é de '60 a 90 dias para criar um sistema' (Página 2)."
    },
    {
       "id":15,
@@ -282,7 +282,7 @@
          "D":"São modelos estritamente sequenciais."
       },
       "resposta_correta":"B",
-      "comentario":"Os Modelos Evolucionários \\'Reconhecem que sistemas complexos se alteram com o tempo\\' e \\'Usam a iteração do ciclo de desenvolvimento para acompanhar a evolução do sistema\\' (Página 2)."
+      "comentario":"Os Modelos Evolucionários 'Reconhecem que sistemas complexos se alteram com o tempo' e 'Usam a iteração do ciclo de desenvolvimento para acompanhar a evolução do sistema' (Página 2)."
    },
    {
       "id":16,
@@ -301,7 +301,7 @@
          "D":"Não há foco específico na entrega, apenas no processo."
       },
       "resposta_correta":"B",
-      "comentario":"O Modelo Incremental tem como foco \\'Foco na entrega do produto\\' e \\'Busca implementar funcionalidades essenciais o mais cedo possível\\' (Página 3)."
+      "comentario":"O Modelo Incremental tem como foco 'Foco na entrega do produto' e 'Busca implementar funcionalidades essenciais o mais cedo possível' (Página 3)."
    },
    {
       "id":17,
@@ -315,12 +315,12 @@
       "enunciado":"Qual é o principal problema associado ao Modelo Espiral, conforme mencionado no material?",
       "alternativas":{
          "A":"Não permite a adição de novas características e recursos.",
-         "B":"Requer gestão sofisticada para ser previsível e confiável, podendo se tornar um \\'Projeto interminável\\'.",
+         "B":"Requer gestão sofisticada para ser previsível e confiável, podendo se tornar um 'Projeto interminável'.",
          "C":"Não há comunicação com o cliente durante o processo.",
          "D":"É um modelo estritamente linear e sequencial."
       },
       "resposta_correta":"B",
-      "comentario":"O material aponta que o principal problema do Modelo Espiral é que \\'requer gestão sofisticada para ser previsível e confiável. \\'Projeto interminável\\'\\' (Página 3)."
+      "comentario":"O material aponta que o principal problema do Modelo Espiral é que 'requer gestão sofisticada para ser previsível e confiável. 'Projeto interminável'' (Página 3)."
    },
    {
       "id":18,
@@ -339,7 +339,7 @@
          "D":"Somente o processo."
       },
       "resposta_correta":"C",
-      "comentario":"O material define Modelos de Processo como \\'Uma estratégia de desenvolvimento que junta o processo, os métodos e as ferramentas\\' (Página 1)."
+      "comentario":"O material define Modelos de Processo como 'Uma estratégia de desenvolvimento que junta o processo, os métodos e as ferramentas' (Página 1)."
    },
    {
       "id":19,
@@ -358,7 +358,7 @@
          "D":"Custo do retrabalho."
       },
       "resposta_correta":"C",
-      "comentario":"O material lista \\'Poucas Ferramentas adequadas para apoio\\' como um problema da Análise Convencional, o oposto de \\'Excesso de ferramentas adequadas para apoio\\' (Página 2)."
+      "comentario":"O material lista 'Poucas Ferramentas adequadas para apoio' como um problema da Análise Convencional, o oposto de 'Excesso de ferramentas adequadas para apoio' (Página 2)."
    },
    {
       "id":"1",
@@ -548,7 +548,7 @@
          "D":"A maior desvantagem do Jmockit está atrelada à intensa modificação permanente imposta à base do código-fonte e do design arquitetural das classes envolvidas."
       },
       "resposta_correta":"C",
-      "comentario":"A alternativa correta é a C. De acordo com o documento, a 'Instrumentação ocorre em tempo de execução' (Fonte 380), e é realizada utilizando a instrução: 'Mockit.redefineMethods (Class, Class/Object)' (Fonte 387/392). É exigido que 'A execução precisa receber o seguinte parâmetro: -ea -javaagent:""libs\\jmockit.jar""' (Fonte 395). A alternativa A está errada pois um dos contras explícitos é o 'Erro silencioso: E.g., assinatura de método fonte e destino não casa' e 'Exceção em tempo de execução' (Fonte 406 a 408). A alternativa B erra ao dizer 'tempo de compilação'. A alternativa D também erra, pois um dos Prós é que o Jmockit 'Não interfere no código fonte/design' (Fonte 404)."
+      "comentario":"A alternativa correta é a C. De acordo com o documento, a 'Instrumentação ocorre em tempo de execução' (Fonte 380), e é realizada utilizando a instrução: 'Mockit.redefineMethods (Class, Class/Object)' (Fonte 387/392). É exigido que 'A execução precisa receber o seguinte parâmetro: -ea -javaagent:""libsjmockit.jar""' (Fonte 395). A alternativa A está errada pois um dos contras explícitos é o 'Erro silencioso: E.g., assinatura de método fonte e destino não casa' e 'Exceção em tempo de execução' (Fonte 406 a 408). A alternativa B erra ao dizer 'tempo de compilação'. A alternativa D também erra, pois um dos Prós é que o Jmockit 'Não interfere no código fonte/design' (Fonte 404)."
    },
    {
       "id":"11",
