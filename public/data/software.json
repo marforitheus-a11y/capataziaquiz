@@ -46,7 +46,7 @@
     "ano": "Não informado",
     "cargo": "Não informado",
     "nivel": "Médio",
-    "enunciado": "A Carreira 'Y' ou '//' apresentada no material permite que um profissional de TI siga qual tipo de progressão?",
+    "enunciado": "A Carreira 'Y' ou '' apresentada no material permite que um profissional de TI siga qual tipo de progressão?",
     "alternativas": {
       "A": "Apenas a progressão em cargos de gestão, como Diretor de TI.",
       "B": "Apenas a progressão em cargos técnicos especializados, como Programador Consultor.",
@@ -54,7 +54,7 @@
       "D": "A progressão é limitada a um único nível hierárquico, sem possibilidade de avanço."
     },
     "resposta_correta": "C",
-    "comentario": "A ilustração da 'Carreira Y' ou '//' (Página 1) mostra claramente duas trilhas de progressão: uma para cargos de gestão (Diretor de TI, Gerente de TI, Líder de Projetos) e outra para cargos técnicos especializados (Analista de Software SR/PL/JR, Prog. Consultor III/II/I)."
+    "comentario": "A ilustração da 'Carreira Y' ou '' (Página 1) mostra claramente duas trilhas de progressão: uma para cargos de gestão (Diretor de TI, Gerente de TI, Líder de Projetos) e outra para cargos técnicos especializados (Analista de Software SR/PL/JR, Prog. Consultor III/II/I)."
   },
   {
     "id": 4,
