@@ -169,5 +169,195 @@
         },
         "resposta_correta": "C",
         "comentario": "A seção 'Técnicas para Levantamento de dados / Requisitos' lista 'Prototipação' como uma das técnicas. As outras opções não são mencionadas no documento (Página 2)."
+    },
+    {
+        "id": 10,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Modelos de Processo",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Fácil",
+        "enunciado": "De acordo com o material, um Modelo de Processo é também conhecido como um paradigma de: ",
+        "alternativas": {
+            "A": "Gerenciamento de Projetos",
+            "B": "Engenharia de Software",
+            "C": "Análise de Negócios",
+            "D": "Desenvolvimento Ágil"
+        },
+        "resposta_correta": "B",
+        "comentario": "O material afirma que um Modelo de Processo é também conhecido como um paradigma de engenharia de software (Página 1)."
+    },
+    {
+        "id": 11,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Modelo Linear/Cascata",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "Qual das seguintes características NÃO se aplica ao Modelo Linear (Cascata) de desenvolvimento de software?",
+        "alternativas": {
+            "A": "Sistemático e Sequencial",
+            "B": "Etapas principais de análise, projeto, código e testes",
+            "C": "Alta flexibilidade para mudanças em fases avançadas",
+            "D": "Também conhecido como Modelo Clássico ou Convencional"
+        },
+        "resposta_correta": "C",
+        "comentario": "O Modelo Linear (Cascata) é sistemático e sequencial, com etapas bem definidas. Sua natureza sequencial o torna pouco flexível para mudanças em fases avançadas, o que é um dos problemas da análise convencional (Página 1 e 2)."
+    },
+    {
+        "id": 12,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Problemas da Análise Convencional",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "Um dos problemas da Análise Convencional, conforme o material, é que o cliente conhece o produto apenas quando ele está pronto. Qual a consequência direta desse problema?",
+        "alternativas": {
+            "A": "Redução do custo de retrabalho.",
+            "B": "Aumento da satisfação do cliente.",
+            "C": "Dificuldade de detecção de defeitos antes do término do projeto.",
+            "D": "Maior facilidade na descrição de procedimentos."
+        },
+        "resposta_correta": "C",
+        "comentario": "O material lista entre os problemas da Análise Convencional a \'Dificuldade de detecção de defeito antes do término do projeto\' e que o \'Cliente conhece o produto apenas quando ele está pronto\', o que implica que a detecção de defeitos ocorre tardiamente (Página 2)."
+    },
+    {
+        "id": 13,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Modelo de Prototipagem",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Fácil",
+        "enunciado": "Qual é uma das fases do Modelo de Prototipagem?",
+        "alternativas": {
+            "A": "Codificação final.",
+            "B": "Escutar o Cliente.",
+            "C": "Manutenção preventiva.",
+            "D": "Geração da Aplicação."
+        },
+        "resposta_correta": "B",
+        "comentario": "O diagrama do Modelo de Prototipagem inclui a fase de \'Escutar o Cliente\' (Página 2)."
+    },
+    {
+        "id": 14,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Modelo RAD",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "O Modelo RAD (Rapid Application Development) tem como objetivo principal criar um sistema em qual período de tempo?",
+        "alternativas": {
+            "A": "6 a 12 meses.",
+            "B": "60 a 90 dias.",
+            "C": "1 a 2 anos.",
+            "D": "Mais de 2 anos."
+        },
+        "resposta_correta": "B",
+        "comentario": "O material especifica que o objetivo do Modelo RAD é de \'60 a 90 dias para criar um sistema\' (Página 2)."
+    },
+    {
+        "id": 15,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Modelos Evolucionários",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Fácil",
+        "enunciado": "Qual a principal característica dos Modelos Evolucionários?",
+        "alternativas": {
+            "A": "Não permitem alterações após a fase de projeto.",
+            "B": "Reconhecem que sistemas complexos se alteram com o tempo.",
+            "C": "Focam exclusivamente na entrega rápida de um produto final.",
+            "D": "São modelos estritamente sequenciais."
+        },
+        "resposta_correta": "B",
+        "comentario": "Os Modelos Evolucionários \'Reconhecem que sistemas complexos se alteram com o tempo\' e \'Usam a iteração do ciclo de desenvolvimento para acompanhar a evolução do sistema\' (Página 2)."
+    },
+    {
+        "id": 16,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Modelo Incremental",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "No Modelo Incremental, qual é o foco principal em relação à entrega do produto?",
+        "alternativas": {
+            "A": "Entregar todas as funcionalidades de uma vez no final do projeto.",
+            "B": "Focar na entrega do produto, implementando funcionalidades essenciais o mais cedo possível.",
+            "C": "Atrasar a entrega de funcionalidades para garantir a qualidade.",
+            "D": "Não há foco específico na entrega, apenas no processo."
+        },
+        "resposta_correta": "B",
+        "comentario": "O Modelo Incremental tem como foco \'Foco na entrega do produto\' e \'Busca implementar funcionalidades essenciais o mais cedo possível\' (Página 3)."
+    },
+    {
+        "id": 17,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Modelo Espiral",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Difícil",
+        "enunciado": "Qual é o principal problema associado ao Modelo Espiral, conforme mencionado no material?",
+        "alternativas": {
+            "A": "Não permite a adição de novas características e recursos.",
+            "B": "Requer gestão sofisticada para ser previsível e confiável, podendo se tornar um \'Projeto interminável\'.",
+            "C": "Não há comunicação com o cliente durante o processo.",
+            "D": "É um modelo estritamente linear e sequencial."
+        },
+        "resposta_correta": "B",
+        "comentario": "O material aponta que o principal problema do Modelo Espiral é que \'requer gestão sofisticada para ser previsível e confiável. \'Projeto interminável\'\' (Página 3)."
+    },
+    {
+        "id": 18,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Modelos de Processo",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Médio",
+        "enunciado": "A Metodologia de Desenvolvimento de Sistemas (MDS) é uma estratégia que junta quais elementos?",
+        "alternativas": {
+            "A": "Apenas o processo e as ferramentas.",
+            "B": "Apenas os métodos e as ferramentas.",
+            "C": "O processo, os métodos e as ferramentas.",
+            "D": "Somente o processo."
+        },
+        "resposta_correta": "C",
+        "comentario": "O material define Modelos de Processo como \'Uma estratégia de desenvolvimento que junta o processo, os métodos e as ferramentas\' (Página 1)."
+    },
+    {
+        "id": 19,
+        "disciplina": "Engenharia de Software",
+        "assunto": "Problemas da Análise Convencional",
+        "banca": "Não informado",
+        "instituicao": "Não informado",
+        "ano": "Não informado",
+        "cargo": "Não informado",
+        "nivel": "Difícil",
+        "enunciado": "Qual dos seguintes problemas NÃO é explicitamente listado como um problema da Análise Convencional no material?",
+        "alternativas": {
+            "A": "Dificuldade de descrever procedimentos.",
+            "B": "Falta de linguagem comum.",
+            "C": "Excesso de ferramentas adequadas para apoio.",
+            "D": "Custo do retrabalho."
+        },
+        "resposta_correta": "C",
+        "comentario": "O material lista \'Poucas Ferramentas adequadas para apoio\' como um problema da Análise Convencional, o oposto de \'Excesso de ferramentas adequadas para apoio\' (Página 2)."
     }
 ]
