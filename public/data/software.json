@@ -225,7 +225,7 @@
          "D":"Maior facilidade na descrição de procedimentos."
       },
       "resposta_correta":"C",
-      "comentario":"O material lista entre os problemas da Análise Convencional a \\'Dificuldade de detecção de defeito antes do término do projeto\\' e que o \\'Cliente conhece o produto apenas quando ele está pronto\\', o que implica que a detecção de defeitos ocorre tardiamente (Página 2)."
+      "comentario":"O material lista entre os problemas da Análise Convencional a 'Dificuldade de detecção de defeito antes do término do projeto' e que o 'Cliente conhece o produto apenas quando ele está pronto', o que implica que a detecção de defeitos ocorre tardiamente (Página 2)."
    },
    {
       "id":13,
