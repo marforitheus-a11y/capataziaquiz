@@ -873,7 +873,6 @@
 "resposta_correta": "A",
 "comentario": "A alternativa A é a correta. O slide sobre 'Projeto de Interface Humano-Computador. No que concerne?' (Fontes 727 a 732) lista os seguintes itens: 'delinear as tarefas orientadas ao computador e ao ser humano'; 'questões do projeto que interagem com o projeto da interface'; 'quais ferramentas utilizar para construir protótipos?'; 'implementar um modelo'; 'avaliar o resultado final em termos de qualidade'. As demais opções citam bizarramente recortes desconexos do documento, contrariando boas práticas descritas em outros slides."
 },
-  [
 {
 "id": "55",
 "disciplina": "Tecnologia da Informação",
@@ -1919,4 +1918,4 @@
 "resposta_correta": "B",
 "comentario": "A alternativa B reproduz fielmente o escopo da 'Reutilização de Software' conforme o documento: 'Processo de Incorporar em um novo Produto: código, especificações de requisito e de projeto, planos de teste, qualquer produto gerado durante desenvolvimentos anteriores'. As demais alternativas restringem erroneamente o escopo apenas a código, dados de teste ou introduzem conceitos alheios (hardware em nuvem)."
 }
-]]
+]
